@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 5. Workflow Details
+title: 6. Workflow Details
 ---
 
 # The Gulf of Riga DGA Workflow

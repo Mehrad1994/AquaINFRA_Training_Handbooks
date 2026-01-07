@@ -57,11 +57,15 @@ It is divided into chapters corresponding to the video sections.
                 <td>Introduction to the Virtual Research Environment.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/05_workflow_details' | relative_url }}"><strong>5. Workflow Details</strong></a></td>
-                <td>Step-by-step guide to the DGA workflow (Input -> Analysis).</td>
+                <td><a href="{{ '/trainings/gulf-of-riga/05_hands_on_tutorial' | relative_url }}"><strong>5. Hands-On Tutorial</strong></a></td>
+                <td>Step-by-step guide to importing data and running the workflow.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/06_results' | relative_url }}"><strong>6. Results & Conclusion</strong></a></td>
+                <td><a href="{{ '/trainings/gulf-of-riga/06_workflow_details' | relative_url }}"><strong>6. Workflow Details</strong></a></td>
+                <td>Technical breakdown of the DGA workflow components.</td>
+            </tr>
+            <tr>
+                <td><a href="{{ '/trainings/gulf-of-riga/07_results' | relative_url }}"><strong>7. Results & Conclusion</strong></a></td>
                 <td>Findings of the trend analysis and future outlook.</td>
             </tr>
         </tbody>

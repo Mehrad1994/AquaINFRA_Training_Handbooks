@@ -1,0 +1,1175 @@
+1
+00:00:06,000 --> 00:00:12,440
+The Aqua Infra project aims to develop a virtual environment equipped with fair
+
+2
+00:00:12,440 --> 00:00:17,680
+multidisciplinary data and services to support marine and freshwater scientists
+
+3
+00:00:17,680 --> 00:00:25,439
+and stakeholders in restoring healthy oceans, seas, coastal and inland waters.
+
+4
+00:00:25,439 --> 00:00:31,760
+The Aqua Infra virtual environment will enable the target stakeholders to store,
+
+5
+00:00:31,760 --> 00:00:37,840
+share, access, analyze and process research data and other research digital
+
+6
+00:00:37,840 --> 00:00:43,520
+objects from their own discipline across research infrastructures, disciplines
+
+7
+00:00:43,520 --> 00:00:49,200
+and national borders leveraging on EOS and the other existing operational data
+
+8
+00:00:49,200 --> 00:00:55,920
+spaces. Aqua Infra is addressing the specific need for enabling researchers
+
+9
+00:00:55,920 --> 00:01:01,960
+from the marine and freshwater communities to work and collaborate across those two
+
+10
+00:01:01,960 --> 00:01:08,080
+domains. a set of strategic use cases, including a Pan European use case as well
+
+11
+00:01:08,080 --> 00:01:13,720
+as more focused use cases in the Baltic Sea, the North Sea, and the
+
+12
+00:01:13,720 --> 00:01:21,600
+Mediterranean, will provide the setting for co-designing and testing services in the targeted research communities. This
+
+13
+00:01:21,600 --> 00:01:29,920
+training video focuses on the Gulf of Riga and the Daugava River catchment use case in the Baltic Sea region. by
+
+14
+00:01:29,920 --> 00:01:37,439
+presenting the story behind this compelling use case and its developed workflow. We will also introduce key
+
+15
+00:01:37,439 --> 00:01:43,040
+components of the Aqua Infra interaction platform and demonstrate how the data to
+
+16
+00:01:43,040 --> 00:01:48,720
+knowledge package concept is implemented within the Aqua Infra project. Coming up
+
+17
+00:01:48,720 --> 00:01:55,840
+next, the lead scientist involved in the research and development of this use case will present the story and outline
+
+18
+00:01:55,840 --> 00:01:59,039
+the main research
+
+19
+00:02:07,959 --> 00:02:13,200
+question. Hello, my name is Astra Labuce and I'm a researcher at Latvian
+
+20
+00:02:13,200 --> 00:02:20,080
+Institute of Aquatic Ecology. I'm currently involved in the Aqua Info project. Within this project,
+
+21
+00:02:20,080 --> 00:02:26,239
+researchers across Europe are working on many research questions and issues. And in our case, the research question began
+
+22
+00:02:26,239 --> 00:02:32,280
+with the story. A few years ago, scuba divers from our institute shared a personal
+
+23
+00:02:32,280 --> 00:02:37,920
+observation that the underwater world in the Gulf of Riga was becoming darker.
+
+24
+00:02:37,920 --> 00:02:44,480
+Naturally, there could be many explanations. One explanation they joked is that they are simply getting older
+
+25
+00:02:44,480 --> 00:02:49,840
+and their eyesight isn't what it used to be. But even so, the observation raised
+
+26
+00:02:49,840 --> 00:02:56,239
+a serious hypothesis. To begin answering the question, do the optical properties in
+
+27
+00:02:56,239 --> 00:03:03,720
+the Gulf of Riga change over the long term. We developed a reproducible and reusable workflow as part of Aqua
+
+28
+00:03:03,720 --> 00:03:12,040
+project. And because the largest river flowing into the Gulf of Riga is the river Daugava, we call this DGA
+
+29
+00:03:12,040 --> 00:03:20,280
+workflow. This workflow includes temporal and spatial aggregation, data interpolation, trend analysis, and some
+
+30
+00:03:20,280 --> 00:03:27,760
+visualizations. A key data set in this use case is the Secchi depth measurements. It's obtained by a simple method using a
+
+31
+00:03:27,760 --> 00:03:33,360
+Secchi disc. Basically, a black and white disc is lowered into the water and we
+
+32
+00:03:33,360 --> 00:03:39,760
+record the depth where it's no longer visible. And this shows us how transparent the water is and helps us
+
+33
+00:03:39,760 --> 00:03:47,200
+understand the amount of algae, tiny particles, and organic matter floating in it. The Gulf of Riga is a unique
+
+34
+00:03:47,200 --> 00:03:53,840
+marine environment. It's shallow, semi-enclosed, and exchanges water slowly with the open Baltic Sea. Because
+
+35
+00:03:53,840 --> 00:04:00,239
+of that, it's more strongly impacted by river runoffs and land-based activities. and seasonal changes like spring
+
+36
+00:04:00,239 --> 00:04:07,439
+nutrient inputs, summer algal blooms or winter ice have a major influence on its ecology. That's why time and seasonality
+
+37
+00:04:07,439 --> 00:04:13,840
+are central to our analysis. Coming up next, the Aqua Infra interaction
+
+38
+00:04:13,840 --> 00:04:21,959
+platform and the data to knowledge package related to the Gulf of Riga use case will be introduced.
+
+39
+00:04:32,960 --> 00:04:38,240
+This is the starting page of the Aqua Infra interaction platform. It serves as
+
+40
+00:04:38,240 --> 00:04:44,000
+the central gateway for scientific communities to find, access, and reuse
+
+41
+00:04:44,000 --> 00:04:49,919
+aquatic digital resources such as research data, tools, and workflows
+
+42
+00:04:49,919 --> 00:04:55,919
+associated with the Aqua Infra project. On the starting page, you will also find
+
+43
+00:04:55,919 --> 00:05:01,120
+basic training videos provided by the Aqua Infra development team offering
+
+44
+00:05:01,120 --> 00:05:08,400
+guidance on how to use the platform. Let's begin by exploring the search functionality to find resources related
+
+45
+00:05:08,400 --> 00:05:14,400
+to the Gulf of Riga workflow. In the search bar, enter your search term.
+
+46
+00:05:14,400 --> 00:05:21,120
+After clicking search, you will be redirected to a page where the search results are displayed.
+
+47
+00:05:21,120 --> 00:05:28,960
+To locate the data to knowledge package associated with the Gulf of Riga workflow, use data to knowledge as your
+
+48
+00:05:28,960 --> 00:05:34,639
+search term. On the search results page, you will find several options to filter
+
+49
+00:05:34,639 --> 00:05:41,039
+your results. First, there is the ontology search feature which categorizes the
+
+50
+00:05:41,039 --> 00:05:46,160
+results into four groups based on the relationship to the search term. You can
+
+51
+00:05:46,160 --> 00:05:52,720
+also filter results by data providers. The Aqua Infra interaction platform
+
+52
+00:05:52,720 --> 00:05:59,280
+includes resources from several data providers such as Inspire, Arctic Data
+
+53
+00:05:59,280 --> 00:06:06,479
+Center, Copernicus Marine, HELCOM, and EMODnet. You can narrow your search by
+
+54
+00:06:06,479 --> 00:06:12,080
+selecting one or more specific data providers. In addition, you can explore
+
+55
+00:06:12,080 --> 00:06:17,120
+the spatial coverage of the search results using the interactive map. You
+
+56
+00:06:17,120 --> 00:06:22,919
+can further refine your search area by selecting a European catchment
+
+57
+00:06:22,919 --> 00:06:28,080
+area or by drawing a custom bounding
+
+58
+00:06:31,800 --> 00:06:37,759
+box for our search related to the Gulf of Riga workflow. Select Zenodo as the
+
+59
+00:06:37,759 --> 00:06:43,840
+data provider and click search again to focus the results. All the necessary
+
+60
+00:06:43,840 --> 00:06:50,639
+materials to run and reproduce the Gulf of Riga workflow are available through the data to knowledge package for
+
+61
+00:06:50,639 --> 00:06:56,800
+reproducible spatiotemporal trend detection analysis. A data to knowledge package
+
+62
+00:06:56,800 --> 00:07:02,240
+links data and computational code to support a reproducible spatiotemporal
+
+63
+00:07:02,240 --> 00:07:07,360
+trend detection analysis. The selected package is specifically
+
+64
+00:07:07,360 --> 00:07:12,639
+designed to structure and integrate meta objects, providing a framework for
+
+65
+00:07:12,639 --> 00:07:18,400
+addressing the research question, do the optical properties in the Gulf of Riga in
+
+66
+00:07:18,400 --> 00:07:24,720
+the Baltic Sea change over the long term? Within the package, you will find
+
+67
+00:07:24,720 --> 00:07:31,400
+a step-by-step guide on how to run the workflow. You will also find links to a
+
+68
+00:07:31,400 --> 00:07:38,440
+MyBinder-based virtual lab and detailed information on the developed web API
+
+69
+00:07:38,440 --> 00:07:45,800
+services available in the virtual research environment section. The virtual lab provides a computational
+
+70
+00:07:45,800 --> 00:07:52,240
+environment based on the reproducible source code and data. It offers users a
+
+71
+00:07:52,240 --> 00:07:58,160
+ready to use setup with pre-installed packages allowing them to work with the
+
+72
+00:07:58,160 --> 00:08:05,599
+code directly within the MyBinder computational environment. In the web API section, you
+
+73
+00:08:05,599 --> 00:08:11,080
+can explore the toolbox associated with Spatio-temporal trend detection
+
+74
+00:08:11,080 --> 00:08:16,879
+analysis. It is accessible through platforms such as Zenodo and GitHub.
+
+75
+00:08:16,879 --> 00:08:23,000
+The toolbox includes a set of predefined functions designed for reproducible data
+
+76
+00:08:23,000 --> 00:08:29,840
+processing, statistical assessment, and visualization of results. It acts as the
+
+77
+00:08:29,840 --> 00:08:37,200
+computational backbone of the workflow, supporting the identification of long-term trends across spatial and
+
+78
+00:08:37,200 --> 00:08:43,760
+temporal scales. Finally, in the reproducible basis section, you will find detailed
+
+79
+00:08:43,760 --> 00:08:48,839
+information about the toolbox and the input data sets required to run the
+
+80
+00:08:48,839 --> 00:08:54,519
+workflow. The workflow is the first entry point for users to get an overview of the
+
+81
+00:08:54,519 --> 00:09:02,080
+analysis. To learn more about the data to knowledge package concept and how the workflow is structured, you can read the
+
+82
+00:09:02,080 --> 00:09:08,080
+open access method article written by the Aqua Infra development team. The
+
+83
+00:09:08,080 --> 00:09:13,120
+article is titled encouraging reusability of computational research
+
+84
+00:09:13,120 --> 00:09:18,880
+through data to knowledge packages a hydrological use case. Next we will
+
+85
+00:09:18,880 --> 00:09:25,080
+explore Aqua Galaxy the main component of the Aqua Infra virtual research
+
+86
+00:09:25,080 --> 00:09:33,959
+environment. We'll also take a closer look at the workflow section within the selected data to knowledge package.
+
+87
+00:09:42,000 --> 00:09:49,480
+Before starting a comprehensive review of the workflow components and steps, you first need to register in the Aqua
+
+88
+00:09:49,480 --> 00:09:54,640
+Galaxy. The Aqua Galaxy is a virtual research environment developed within
+
+89
+00:09:54,640 --> 00:09:59,839
+the Aqua Infra project. It is a subdomain within open-source web-based
+
+90
+00:09:59,839 --> 00:10:06,080
+Galaxy platform. It consists of a set of tools to analyze multidisciplinary fair
+
+91
+00:10:06,080 --> 00:10:11,680
+data and services to support marine and freshwater scientists and stakeholders
+
+92
+00:10:11,680 --> 00:10:18,800
+in restoring healthy oceans, seas, coastal and inland waters. The virtual
+
+93
+00:10:18,800 --> 00:10:24,320
+environment will enable target stakeholders to store, share, access,
+
+94
+00:10:24,320 --> 00:10:31,560
+analyze, and process research data and other digital research objects.
+
+95
+00:10:31,839 --> 00:10:37,920
+You can register here by filling in the required information. By staying signed in to
+
+96
+00:10:37,920 --> 00:10:43,680
+Aqua Galaxy, you can directly import the workflow and most of the Aqua Infra data
+
+97
+00:10:43,680 --> 00:10:49,920
+sets into the Aqua Infra research environment. We return to the data to
+
+98
+00:10:49,920 --> 00:10:55,600
+knowledge package page in the Aqua Infra interaction platform. Here by clicking
+
+99
+00:10:55,600 --> 00:11:02,959
+on the workflow you have several options to get detailed information about the workflow and to access and download
+
+100
+00:11:02,959 --> 00:11:11,040
+associated files. Selecting the Aqua Infra will take you to the workflow page on the interaction platform and the
+
+101
+00:11:11,040 --> 00:11:20,519
+detailed information about the workflow for Spatio-temporal trend detection analysis is provided on this page.
+
+102
+00:11:20,880 --> 00:11:26,560
+It also provides access to the workflow repository page in Zenodo. Here you have
+
+103
+00:11:26,560 --> 00:11:34,120
+access to the information about the workflow components and you can download the repository as a zip
+
+104
+00:11:34,120 --> 00:11:39,360
+file. It includes files such as text files including links to the results of
+
+105
+00:11:39,360 --> 00:11:46,399
+each step of the workflow to make it reproducible. The other file is the workflow file
+
+106
+00:11:46,399 --> 00:11:51,519
+compatible with the Aqua Galaxy and it can be used to import the workflow into
+
+107
+00:11:51,519 --> 00:11:57,279
+the virtual research environment. The other two options
+
+108
+00:11:57,279 --> 00:12:04,519
+associated with the workflow in the data to knowledge package page will take you to the reviewed repository page in
+
+109
+00:12:04,519 --> 00:12:10,399
+Zenodo and the workflow preview page in Aqua Galaxy. Next, we will explore the
+
+110
+00:12:10,399 --> 00:12:18,240
+workflow input data sets and learn how to import them into the Aqua Infra virtual research
+
+111
+00:12:29,320 --> 00:12:37,320
+environment. To begin running the workflow, we'll follow the steps outlined in the data to knowledge package.
+
+112
+00:12:39,839 --> 00:12:44,480
+Step one is to make sure you're signed into Aqua
+
+113
+00:12:48,279 --> 00:12:56,760
+Galaxy. Next, we need to import the required input data into the virtual research environment.
+
+114
+00:12:57,440 --> 00:13:04,560
+To import the point input data related to water transparency and Secchi measurements, start by clicking on
+
+115
+00:13:04,560 --> 00:13:12,279
+Latvian Secchi depth and water color. This gives you access to three
+
+116
+00:13:12,279 --> 00:13:19,279
+options. One is a direct download link for the point data. Another takes you to the Zenodo
+
+117
+00:13:19,279 --> 00:13:24,920
+page for the data to knowledge input data sets.
+
+118
+00:13:25,200 --> 00:13:30,240
+This includes both the Latvian Secchi depth and water color data set as well as the
+
+119
+00:13:30,240 --> 00:13:37,519
+HELCOM subbasins data set which can be downloaded here. Through the third one you can
+
+120
+00:13:37,519 --> 00:13:42,880
+visit the data set page on the aqua infra interaction platform where you'll
+
+121
+00:13:42,880 --> 00:13:50,240
+find basic details such as spatial coverage and metadata information. Since this data set is
+
+122
+00:13:50,240 --> 00:13:55,839
+already part of Aqua Infra, you can import it directly into Aqua Galaxy by
+
+123
+00:13:55,839 --> 00:14:03,440
+clicking the import to Galaxy. This opens the OGC API features
+
+124
+00:14:03,440 --> 00:14:12,000
+sub setting window where you can filter and select the data that will be imported. Here you can define a bounding
+
+125
+00:14:12,000 --> 00:14:18,279
+box to limit spatial coverage. Select the number of data points to
+
+126
+00:14:18,279 --> 00:14:23,360
+import or filter attributes using query
+
+127
+00:14:24,920 --> 00:14:30,920
+parameters. To answer the research question, we need all available data points
+
+128
+00:14:30,920 --> 00:14:37,279
+5,871 in total. So set the point number to
+
+129
+00:14:37,880 --> 00:14:46,480
+5,871. Click regenerate to receive the updated link. Then click import.
+
+130
+00:14:47,760 --> 00:14:54,720
+You will be redirected to the virtual research environment. The import may take some time to be deployed and be
+
+131
+00:14:54,720 --> 00:15:00,240
+implemented on the servers and be completed. Here in the history section,
+
+132
+00:15:00,240 --> 00:15:06,160
+a gray box means the step is cued. Orange means it's currently processing.
+
+133
+00:15:06,160 --> 00:15:12,000
+Green means the step is complete. And if there's an issue, the box will turn red.
+
+134
+00:15:12,000 --> 00:15:18,320
+Now let's return to the data to knowledge page to import the second data
+
+135
+00:15:23,000 --> 00:15:28,199
+set. Clicking on the second data set gives you similar
+
+136
+00:15:28,199 --> 00:15:35,360
+options. Click on the Aqua Infra to get access to the data set page on the interaction
+
+137
+00:15:36,360 --> 00:15:42,199
+platform where basic metadata is available.
+
+138
+00:15:45,600 --> 00:15:53,199
+Click visit to explore the original metadata. You'll find two useful links
+
+139
+00:15:54,199 --> 00:15:59,920
+here. One, a direct link to access the data
+
+140
+00:16:00,279 --> 00:16:06,480
+set. Two, a link to the HELCOM interactive map. Since this data set is
+
+141
+00:16:06,480 --> 00:16:11,759
+provided by HELCOM, it's not directly accessible through Aqua Infra data sets.
+
+142
+00:16:11,759 --> 00:16:18,480
+So you need to accept a data usage disclaimer first and follow some additional steps to import it into Aqua
+
+143
+00:16:18,480 --> 00:16:23,680
+Galaxy. The reason for this complexity is that some data providers do not yet
+
+144
+00:16:23,680 --> 00:16:29,600
+offer their data in a fully accessible or machine readable format.
+
+145
+00:16:29,600 --> 00:16:35,040
+To address this, the Aqua Infra development team must include additional
+
+146
+00:16:35,040 --> 00:16:42,240
+steps to ensure the data can be properly integrated and used within the virtual research environment. First, open the
+
+147
+00:16:42,240 --> 00:16:50,519
+direct download link from the metadata page in a new browser tab. Then accept the data usage
+
+148
+00:16:50,519 --> 00:16:56,880
+disclaimer. The download link will activate shortly afterward.
+
+149
+00:16:56,880 --> 00:17:01,959
+You don't need to download the file to your computer. Just copy the activated download
+
+150
+00:17:01,959 --> 00:17:09,038
+link. Return to the data set page on the interaction platform and paste the link into the
+
+151
+00:17:09,039 --> 00:17:15,760
+import field. Then click import. This will import the second data set into the
+
+152
+00:17:15,760 --> 00:17:22,959
+virtual research environment. Once the data is imported, it appears under a generic name like
+
+153
+00:17:22,959 --> 00:17:29,280
+Aqua Infra resource. It is a good idea to rename it for clarity. Click edit,
+
+154
+00:17:29,280 --> 00:17:34,960
+then rename the first data set to something meaningful, for example,
+
+155
+00:17:36,760 --> 00:17:42,720
+points. You can also add additional info or annotations
+
+156
+00:17:43,720 --> 00:17:49,120
+here. Once the box for the second data set turns green, go ahead and rename
+
+157
+00:17:49,120 --> 00:17:55,200
+this one to region. By clicking on the eye icon within each green box, you can access
+
+158
+00:17:55,200 --> 00:18:01,679
+the output. These are usually text files which include a link to the output of
+
+159
+00:18:01,679 --> 00:18:08,000
+each step. It's important to note that the data itself is not imported into the
+
+160
+00:18:08,000 --> 00:18:15,919
+Galaxy platform. Instead, users import only the access URL to the data. This
+
+161
+00:18:15,919 --> 00:18:22,000
+URL is then passed to the OGCAPI process which executes the
+
+162
+00:18:22,000 --> 00:18:27,600
+function and downloads the data as part of the process. For the point data set,
+
+163
+00:18:27,600 --> 00:18:35,200
+open the output link in a new browser tab to review it. You'll see that the Latvian Secchi depth and watercolor data
+
+164
+00:18:35,200 --> 00:18:42,200
+set is a point layer. Each point includes attributes such as latitude,
+
+165
+00:18:42,200 --> 00:18:50,799
+longitude, visit date, color ID, and transparency measured using the Saki
+
+166
+00:18:52,600 --> 00:18:57,679
+method. The second input data set provided by HELCOM includes water
+
+167
+00:18:57,679 --> 00:19:04,480
+assessment units at scale 4 delivered as a zip file. Inside it, you'll find a shape file of
+
+168
+00:19:04,480 --> 00:19:10,240
+the division of the Baltic Sea into 17 subbasins and further division into
+
+169
+00:19:10,240 --> 00:19:16,000
+coastal and offshore areas and division of the coastal areas by WFD water types
+
+170
+00:19:16,000 --> 00:19:19,559
+or water bodies.
+
+171
+00:19:23,600 --> 00:19:28,720
+As you can see, the import process for the second data set is completed and the
+
+172
+00:19:28,720 --> 00:19:34,720
+box turned green. As planned, let's rename it to
+
+173
+00:19:37,559 --> 00:19:44,720
+regions. The input data have been imported into the Aqua Infra virtual research environment. Let's return to
+
+174
+00:19:44,720 --> 00:19:50,440
+the interaction platform and import the workflow.
+
+175
+00:20:03,200 --> 00:20:11,280
+to import the workflow. In the workflow section in the interaction platform, click on Galaxy. As we've reviewed, this
+
+176
+00:20:11,280 --> 00:20:16,320
+will redirect you to the workflow preview page in Aqua Galaxy. Click on
+
+177
+00:20:16,320 --> 00:20:21,520
+import to complete the import process. On the next page, click on start using
+
+178
+00:20:21,520 --> 00:20:27,480
+this workflow and you'll be redirected to the main workflow section within Aqua
+
+179
+00:20:27,480 --> 00:20:34,159
+Galaxy. Alternatively, you can import the workflow manually. In the workflow section, each
+
+180
+00:20:34,159 --> 00:20:41,159
+workflow comes with multiple options. You can copy, download, share, or edit
+
+181
+00:20:41,159 --> 00:20:47,320
+them. By clicking edit, you can explore details about each workflow
+
+182
+00:20:47,320 --> 00:20:55,159
+component. Selecting a specific component reveals information about the step annotations and the underlying
+
+183
+00:20:55,159 --> 00:21:00,640
+processes. Let's run the workflow now. While it's running, we'll walk through
+
+184
+00:21:00,640 --> 00:21:07,360
+each component and step. Click run the workflow. You'll be taken to a page
+
+185
+00:21:07,360 --> 00:21:12,600
+where you can select input data. These data sets have already been
+
+186
+00:21:12,600 --> 00:21:18,799
+imported. Choose the point data set and the shape file polygons as region data.
+
+187
+00:21:18,799 --> 00:21:24,280
+Here another option is available for users by clicking on expand to full
+
+188
+00:21:24,280 --> 00:21:29,400
+workflow. You can also modify the input parameters for each step of the
+
+189
+00:21:29,400 --> 00:21:35,919
+workflow. After selecting the appropriate files, click run workflow.
+
+190
+00:21:35,919 --> 00:21:42,799
+You'll be taken to a progress page where you can monitor scheduled, running, and completed steps both through an
+
+191
+00:21:42,799 --> 00:21:48,159
+interactive workflow graph and the history section. The workflow begins
+
+192
+00:21:48,159 --> 00:21:55,120
+with the two input data sets, the point data and the polygon data. Next, the
+
+193
+00:21:55,120 --> 00:22:03,520
+pre-processing stage begins with spatial aggregation. In this step in situ, environmental data
+
+194
+00:22:03,520 --> 00:22:08,919
+points are assigned to spatial units based on the boundaries of the assessment unit
+
+195
+00:22:08,919 --> 00:22:14,799
+polygons. The data sets are merged and a new attribute is added to each point to
+
+196
+00:22:14,799 --> 00:22:21,919
+reflect its associated assessment unit. Clicking on each workflow step
+
+197
+00:22:21,919 --> 00:22:27,760
+shows details about inputs, outputs, and job metrics on the servers.
+
+198
+00:22:27,760 --> 00:22:34,159
+The next pre-processing step is temporal aggregation. It assigns a season to each
+
+199
+00:22:34,159 --> 00:22:41,280
+point based on the visit date and defined season's time interval. The output now includes a season attribute
+
+200
+00:22:41,280 --> 00:22:47,679
+for each data point. Then the data analysis starts. The first step is
+
+201
+00:22:47,679 --> 00:22:54,080
+calculate mean values by group one. Using the temporally aggregated data, it
+
+202
+00:22:54,080 --> 00:23:00,400
+calculates the average transparency for each group defined by season, year,
+
+203
+00:23:00,400 --> 00:23:07,520
+assessment unit ID, and location, and outputs the results as a CSV file. The
+
+204
+00:23:07,520 --> 00:23:13,120
+following step, calculate mean values by group 2, builds on this by further
+
+205
+00:23:13,120 --> 00:23:18,720
+averaging values for each assessment unit ID across seasons and years. The
+
+206
+00:23:18,720 --> 00:23:24,400
+result is a structured CSV file where each record corresponds to a single
+
+207
+00:23:24,400 --> 00:23:30,640
+transparency value for a specific unit, year, and season based on available
+
+208
+00:23:30,640 --> 00:23:39,520
+data. The next step is focusing on selecting time series with sufficient data and interpolating missing values.
+
+209
+00:23:39,520 --> 00:23:45,559
+First, any assessment unit with fewer than 10 data points is excluded.
+
+210
+00:23:45,559 --> 00:23:52,440
+Moreover, this step will analyze the available data points within each assessment unit through time series
+
+211
+00:23:52,440 --> 00:23:58,400
+length, which is the difference between the first and last year with data. If
+
+212
+00:23:58,400 --> 00:24:04,480
+the share of missing data is over 80% of the time series length, that unit is
+
+213
+00:24:04,480 --> 00:24:11,279
+also excluded. For the remaining units, missing values are interpolated across
+
+214
+00:24:11,279 --> 00:24:16,799
+the time series. This results in a structured time series data set
+
+215
+00:24:16,799 --> 00:24:24,520
+optimized for trend detection. The final data analysis step is Mann-Kendall trend
+
+216
+00:24:24,520 --> 00:24:29,679
+analysis. This non-parametric statistical test detects whether a data
+
+217
+00:24:29,679 --> 00:24:35,600
+set shows a significant upward or downward trend over time. The final
+
+218
+00:24:35,600 --> 00:24:41,200
+section of the workflow is visualization. It contains two steps.
+
+219
+00:24:41,200 --> 00:24:48,720
+The first uses the assessment unit polygons and the results from the spatial aggregation step to create an
+
+220
+00:24:48,720 --> 00:24:54,880
+interactive map. The second visualizes the man Kendall analysis results by
+
+221
+00:24:54,880 --> 00:25:00,400
+generating a bar chart that displays Kendall's tow values for the accepted
+
+222
+00:25:00,400 --> 00:25:09,720
+assessment unit. Next, we'll review the workflow results and wrap up this training video.
+
+223
+00:25:17,600 --> 00:25:24,520
+As you can see, all the boxes have turned green, indicating that every step of the workflow has been completed
+
+224
+00:25:24,520 --> 00:25:29,919
+successfully. Let's now review the results. By clicking on the eye icon in
+
+225
+00:25:29,919 --> 00:25:35,520
+each box, we can access the outputs, which are simple text files containing
+
+226
+00:25:35,520 --> 00:25:41,039
+links to the result of each step. Let's examine the result of the final
+
+227
+00:25:41,039 --> 00:25:48,320
+step in the data analysis, the man Kendall trend analysis. Clicking the provided link
+
+228
+00:25:48,320 --> 00:25:54,440
+will open a CSV file in a new browser tab and it will be downloaded
+
+229
+00:25:54,440 --> 00:26:01,679
+automatically. You can open this file in Excel or any other software that supports CSV files.
+
+230
+00:26:01,679 --> 00:26:06,799
+The Mann-Kendall trend test is a statistical method used to detect whether there is a
+
+231
+00:26:06,799 --> 00:26:13,039
+consistent increasing or decreasing trend in a time series of data such as
+
+232
+00:26:13,039 --> 00:26:18,480
+temperature, rainfall or water transparency. It is especially useful
+
+233
+00:26:18,480 --> 00:26:26,320
+for environmental and climate data because it does not require the data to follow a normal distribution and can
+
+234
+00:26:26,320 --> 00:26:31,919
+handle missing values or outliers. The test compares all possible pairs of
+
+235
+00:26:31,919 --> 00:26:38,640
+data points in the time series to determine if values tend to increase or decrease over time. The result is
+
+236
+00:26:38,640 --> 00:26:46,320
+expressed as a tow value which ranges from minus1 to + one. A tow value close to + one
+
+237
+00:26:46,320 --> 00:26:52,559
+indicates a strong increasing trend. A tow value close to minus1 indicates a
+
+238
+00:26:52,559 --> 00:26:59,600
+strong decreasing trend. A value near zero means there is no consistent trend.
+
+239
+00:26:59,600 --> 00:27:06,039
+The test also produces a p value which shows whether the trend is statistically
+
+240
+00:27:06,039 --> 00:27:12,279
+significant. If the p value is less than 0.05, the trend is considered
+
+241
+00:27:12,279 --> 00:27:17,360
+significant. In the results file, you will find the tow values and p values
+
+242
+00:27:17,360 --> 00:27:23,080
+for each accepted assessment unit with sufficient data. Now let's check the
+
+243
+00:27:23,080 --> 00:27:29,640
+visualization and identify which units show statistically significant changes in water
+
+244
+00:27:29,640 --> 00:27:34,960
+transparency. To do this, open the bar plot output by clicking on the eye icon
+
+245
+00:27:34,960 --> 00:27:40,799
+in the related box and follow the URL provided. As you can see, the bar chart
+
+246
+00:27:40,799 --> 00:27:46,400
+presents the trend analysis results using the same CSV file.
+
+247
+00:27:46,400 --> 00:27:52,200
+Units with statistically insignificant trends are shown with translucent
+
+248
+00:27:52,200 --> 00:27:58,279
+colors. Units with significant trends, meaning a p value below
+
+249
+00:27:58,279 --> 00:28:05,440
+0.05, are shown with solid fil bars. In this example, all three significant
+
+250
+00:28:05,440 --> 00:28:11,039
+results show a negative trend, which means water transparency has decreased.
+
+251
+00:28:11,039 --> 00:28:16,919
+Specifically, we observe negative trends in summer at
+
+252
+00:28:16,919 --> 00:28:23,360
+LA-00003 and LAT-004 and a similar negative trend in
+
+253
+00:28:23,360 --> 00:28:28,480
+autumn at LA-00005. Let's locate these three
+
+254
+00:28:28,480 --> 00:28:33,520
+assessment units on the interactive map generated by the workflow. Click the
+
+255
+00:28:33,520 --> 00:28:38,640
+output link provided in the relevant workflow step that is named map shape
+
+256
+00:28:38,640 --> 00:28:44,320
+file points. As you can see, all three assessment units are located along the
+
+257
+00:28:44,320 --> 00:28:52,760
+Latvian coastline. The LAT-05 unit includes the Daugava River
+
+258
+00:28:52,760 --> 00:28:59,200
+catchment which covers the coastal area near Ria, the capital of Latvia.
+
+259
+00:28:59,200 --> 00:29:05,840
+With this example, we have demonstrated how the data to knowledge package and workflow support the application of fair
+
+260
+00:29:05,840 --> 00:29:11,200
+principles in the Aqua Infra project. All data software and
+
+261
+00:29:11,200 --> 00:29:18,320
+processing steps are findable, accessible, interoperable, and reusable.
+
+262
+00:29:18,320 --> 00:29:25,399
+For example, in the workflow run page, you can substitute your own data set that is compatible with this
+
+263
+00:29:25,399 --> 00:29:32,159
+workflow by clicking on expand to full workflow form. You can also adjust all
+
+264
+00:29:32,159 --> 00:29:37,600
+input parameters for each step such as the threshold for missing values or the
+
+265
+00:29:37,600 --> 00:29:44,159
+minimum number of data points for the interpolation step. This allows you to customize the
+
+266
+00:29:44,159 --> 00:29:49,919
+workflow for your own research. The workflow is designed to be generic,
+
+267
+00:29:49,919 --> 00:29:56,000
+so you can reuse it in different regions such as the Gulf of Finland or apply it
+
+268
+00:29:56,000 --> 00:30:01,840
+to analyze trends in other variables like temperature. Additionally, in the tools
+
+269
+00:30:01,840 --> 00:30:07,679
+section of Aqua Galaxy, you can search for Aqua Infra to access all the
+
+270
+00:30:07,679 --> 00:30:12,720
+developed OGCAPI processes used in the workflow.
+
+271
+00:30:12,720 --> 00:30:18,200
+Each process can be customized and used independently or integrated into new
+
+272
+00:30:18,200 --> 00:30:24,320
+workflows by adopting OGCAPI standards. These processes are
+
+273
+00:30:24,320 --> 00:30:30,120
+fully compatible with other initiatives such as the European digital twin of the
+
+274
+00:30:30,120 --> 00:30:36,080
+ocean. Let's conclude this training video by returning to the research story.
+
+275
+00:30:36,080 --> 00:30:42,159
+Based on the identified significant trends, the first research question addressed in this video has been
+
+276
+00:30:42,159 --> 00:30:47,679
+answered. Let's hear how Astra addresses the reviewed research question using the
+
+277
+00:30:47,679 --> 00:30:54,799
+results of the workflow. And I have to say that trend analysis confirmed the diverse intuition. Transparency is
+
+278
+00:30:54,799 --> 00:31:00,320
+decreasing and watercolor is changing in some of the regions in the Gulf of Riga.
+
+279
+00:31:00,320 --> 00:31:05,360
+But this is just the beginning. Our main research question is what environmental
+
+280
+00:31:05,360 --> 00:31:10,480
+processes are driving these changes in optical properties and how are they
+
+281
+00:31:10,480 --> 00:31:15,520
+connected to seasonal and land-based influences. So what began with a
+
+282
+00:31:15,520 --> 00:31:21,200
+divers's personal feeling has grown into a scientific investigation and we as a researchers
+
+283
+00:31:21,200 --> 00:31:27,360
+are excited to keep diving deeper. Astra and her research team will
+
+284
+00:31:27,360 --> 00:31:34,480
+continue this research by exploring the following questions. What explanatory components contribute
+
+285
+00:31:34,480 --> 00:31:39,679
+to the change in water optical properties? Are there any indications of
+
+286
+00:31:39,679 --> 00:31:47,159
+changes in riverine loads or concentrations of these components in rivers discharging into the Gulf of
+
+287
+00:31:47,159 --> 00:31:53,200
+Ria? Which activities and pressures such as land use or climate change are most
+
+288
+00:31:53,200 --> 00:31:58,840
+likely affecting the water's optical properties? And finally, which
+
+289
+00:31:58,840 --> 00:32:04,080
+socioeconomic drivers influence those activities? This video was created as
+
+290
+00:32:04,080 --> 00:32:10,039
+part of the Aqua Infra work package 6 led by the Bochum University of Applied
+
+291
+00:32:10,039 --> 00:32:17,919
+Sciences. On behalf of the Aqua Infra team, thank you for watching this training video. We appreciate your
+
+292
+00:32:17,919 --> 00:32:25,679
+interest in the Aqua Infra project and we hope it supports your research and encourages further exploration of Aqua
+
+293
+00:32:25,679 --> 00:32:31,039
+Infra tools and services. Together, let's make data driven research
+
+294
+00:32:31,039 --> 00:32:34,799
+fair and more impactful.
