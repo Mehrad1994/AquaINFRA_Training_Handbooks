@@ -9,7 +9,7 @@ The goal of this project is to transform technical training videos from the Aqua
 ## 📖 View the Handbook
 
 The live version of the specific **Gulf of Riga** handbook is available here:
-👉 **[https://mehrad1994.github.io/Gulf_Of_Riga_Handbook/](https://mehrad1994.github.io/Gulf_Of_Riga_Handbook/)**
+👉 **[https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
 
 ---
 

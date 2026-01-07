@@ -3,7 +3,7 @@ description: A collection of training handbooks and use case documentation for t
 
 # Branding
 # logo: "assets/images/logo_white.svg"  <-- Removed, used in header.html
-baseurl: "/Gulf_Of_Riga_Handbook"
+baseurl: "/AquaINFRA_Training_Handbooks"
 url: "https://mehrad1994.github.io"
 
 # Features
@@ -12,5 +12,5 @@ mermaid:
 search_enabled: false # Search not implemented in lite template yet
 
 # Footer & Citations
-gh_url: https://github.com/Mehrad1994/Gulf_Of_Riga_Handbook
+gh_url: https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks
 # footer_content handled in _includes/footer.html
