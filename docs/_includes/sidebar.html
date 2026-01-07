@@ -1,0 +1,48 @@
+<aside class="page-sidebar">
+    <!-- Section 1: How to Use -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Guide</h3>
+        <p class="sidebar__text">
+            Learn how these training handbooks are structured and how to navigate them.
+        </p>
+        <a href="{{ '/how-to-use/' | relative_url }}" class="sidebar__link">
+            Read guidelines &rarr;
+        </a>
+    </section>
+
+    <!-- Section 2: Resources -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Resources</h3>
+        <ul class="sidebar__list">
+            <li><a href="https://aquainfra.eu" target="_blank" class="sidebar__link">AquaINFRA Website</a></li>
+            <li><a href="{{ '/guidelines/' | relative_url }}" class="sidebar__link">General OERs</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3: Use Cases -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Use Cases</h3>
+
+        {% for region in site.data.use_cases %}
+        <div class="sidebar__region">
+            <span class="sidebar__region-title">{{ region.region }}</span>
+            {% if region.trainings and region.trainings.size > 0 %}
+            <ul class="sidebar__list">
+                {% for training in region.trainings %}
+                <li>
+                    <a href="{{ training.url | relative_url }}" class="sidebar__link">
+                        {{ training.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="sidebar__text"
+                style="font-size: 0.85rem; color: var(--gray-600); font-style: italic; margin-bottom: 0.5rem;">
+                Coming soon
+            </p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </section>
+</aside>

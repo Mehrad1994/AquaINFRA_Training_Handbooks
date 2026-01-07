@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Gulf of Riga Handbook</title>
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- Favicon/Brand Colors -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/aquainfra_logo.svg' | relative_url }}">
+
+    <!-- System Fonts -->
+    <style>
+        :root {
+            --font-system: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Global Header -->
+    {% include header.html %}
+
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper">
+        <div class="handbook-grid">
+            <!-- Sidebar Navigation -->
+            {% include sidebar.html %}
+
+            <!-- Page Content -->
+            <div class="handbook-content">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    {% include footer.html %}
+
+    <!-- Anchor JS for TOC links (optional, simple script) -->
+    <script>
+        // Simple script to handle smooth scroll offset for fixed header if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    {% if site.mermaid.enabled %}
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mermaid.initialize({ startOnLoad: false, theme: 'default' });
+            // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+            document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                const pre = block.parentElement;
+                const content = block.textContent;
+                const div = document.createElement('div');
+                div.className = 'mermaid';
+                div.textContent = content;
+                if (pre && pre.tagName === 'PRE') {
+                    pre.parentNode.replaceChild(div, pre);
+                } else {
+                    block.parentNode.replaceChild(div, block);
+                }
+            });
+            mermaid.init(undefined, '.mermaid');
+        });
+    </script>
+    {% endif %}
+</body>
+
+</html>

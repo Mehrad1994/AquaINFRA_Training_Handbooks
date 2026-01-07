@@ -1,0 +1,16 @@
+title: AquaINFRA Training Handbooks
+description: A collection of training handbooks and use case documentation for the AquaINFRA project.
+
+# Branding
+# logo: "assets/images/logo_white.svg"  <-- Removed, used in header.html
+baseurl: "/Gulf_Of_Riga_Handbook"
+url: "https://mehrad1994.github.io"
+
+# Features
+mermaid:
+  enabled: true
+search_enabled: false # Search not implemented in lite template yet
+
+# Footer & Citations
+gh_url: https://github.com/Mehrad1994/Gulf_Of_Riga_Handbook
+# footer_content handled in _includes/footer.html

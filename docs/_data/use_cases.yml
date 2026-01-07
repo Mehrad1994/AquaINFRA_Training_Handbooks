@@ -1,0 +1,19 @@
+# Sidebar Navigation Structure
+# Grouped by Region -> List of Trainings
+
+- region: "Baltic Sea"
+  trainings:
+    - title: "Gulf of Riga Case Study"
+      url: "/trainings/gulf-of-riga/"
+    # Add more trainings here
+
+- region: "North Sea"
+  trainings:
+    # - title: "Example Training"
+    #   url: "/trainings/example/"
+
+- region: "Pan-European"
+  trainings:
+
+- region: "Mediterranean"
+  trainings:
