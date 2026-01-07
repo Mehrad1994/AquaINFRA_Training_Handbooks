@@ -1,19 +1,38 @@
-# Sidebar Navigation Structure
-# Grouped by Region -> List of Trainings
+# ============================================
+# Training Navigation Structure
+# ============================================
+# This file defines the sidebar navigation for all training materials.
+# Trainings are grouped by geographic region.
+#
+# HOW TO ADD A NEW TRAINING:
+# 1. Choose the appropriate region (or create a new one)
+# 2. Add a new entry under "trainings:" with:
+#    - title: Display name in sidebar
+#    - url: Path to training directory (must start with /)
+# 3. Ensure the URL matches your training directory in docs/trainings/
+#
+# EXAMPLE:
+# - region: "Your Region"
+#   trainings:
+#     - title: "Your Training Name"
+#       url: "/trainings/your-training-name/"
 
 - region: "Baltic Sea"
   trainings:
     - title: "Gulf of Riga Case Study"
       url: "/trainings/gulf-of-riga/"
-    # Add more trainings here
+    # Add more Baltic Sea trainings here
 
 - region: "North Sea"
   trainings:
     # - title: "Example Training"
     #   url: "/trainings/example/"
+    # Uncomment and modify the above template to add trainings
 
 - region: "Pan-European"
   trainings:
+    # Add cross-regional trainings here
 
 - region: "Mediterranean"
   trainings:
+    # Add Mediterranean trainings here

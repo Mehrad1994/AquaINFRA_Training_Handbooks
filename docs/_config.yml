@@ -1,16 +1,27 @@
+# ============================================
+# AquaINFRA Training Handbooks Configuration
+# ============================================
+# This file controls the Jekyll site settings.
+# Changes require restarting the Jekyll server.
+
+# Site Metadata
 title: AquaINFRA Training Handbooks
 description: A collection of training handbooks and use case documentation for the AquaINFRA project.
 
 # Branding
-# logo: "assets/images/logo_white.svg"  <-- Removed, used in header.html
+# Logo is handled in _includes/header.html for better control
+
+# GitHub Pages Configuration
+# IMPORTANT: baseurl must match your GitHub repository name
+# For local testing, site will be at: http://localhost:4000/AquaINFRA_Training_Handbooks/
 baseurl: "/AquaINFRA_Training_Handbooks"
 url: "https://mehrad1994.github.io"
 
 # Features
 mermaid:
-  enabled: true
-search_enabled: false # Search not implemented in lite template yet
+  enabled: true  # Enables Mermaid.js for rendering diagrams in markdown
+search_enabled: false  # Search functionality not yet implemented
 
 # Footer & Citations
 gh_url: https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks
-# footer_content handled in _includes/footer.html
+# Footer content is managed in _includes/footer.html

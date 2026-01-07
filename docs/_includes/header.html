@@ -1,14 +1,21 @@
+<!-- 
+    SITE HEADER
+    Layout: Logo (left) | Navigation Menu (right)
+    Responsive: Stacks vertically on mobile (<900px)
+-->
 <header class="site-header">
     <div class="site-header__inner">
+        <!-- Left Side: AquaINFRA Logo -->
         <div class="site-header__brand">
-            <!-- AquaINFRA Logo -->
             <a href="https://aquainfra.eu" target="_blank">
                 <img src="{{ '/assets/images/aquainfra_logo.svg' | relative_url }}" alt="AquaINFRA"
                     class="site-header__logo">
             </a>
         </div>
 
-        <!-- Navigation Menu -->
+        <!-- Right Side: Navigation Menu -->
+        <!-- Links to internal pages use relative_url filter for correct baseurl -->
+        <!-- External links (News, Contact) point to main AquaINFRA website -->
         <nav class="site-header__nav">
             <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
             <a href="{{ '/how-to-use/' | relative_url }}" class="nav-link">How to Use</a>
