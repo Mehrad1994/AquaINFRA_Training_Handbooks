@@ -1,6 +1,7 @@
 /* Header Navigation Styles */
 .site-header__nav {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 2rem;
     align-items: center;
 }
