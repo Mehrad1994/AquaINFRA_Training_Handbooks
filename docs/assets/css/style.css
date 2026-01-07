@@ -499,36 +499,51 @@ img {
    ========================================= */
 
 .site-header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
+    /* Space between brand and nav */
     align-items: center !important;
     position: relative;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
 }
 
 .site-header__brand {
     display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     gap: 1.5rem !important;
-    width: 100%;
-    justify-content: center !important;
+    width: auto !important;
+    justify-content: flex-start !important;
+    /* Left align */
 }
 
 .site-header__title {
     font-size: 1.5rem !important;
-    border-left: none !important;
-    padding-left: 0 !important;
-    text-align: center;
+    border-left: 2px solid #e9ecef !important;
+    /* Restore separator */
+    padding-left: 1.5rem !important;
+    text-align: left !important;
+    color: #3564ac;
 }
 
 .site-header__title-container {
     flex: 1;
-    text-align: center;
+    text-align: left;
+    /* Ensure title text aligns left against the separator */
 }
 
 /* Push logo to the left absolute to keep title centered in the whole header */
+/* Remove absolute positioning to allow stacking */
+/* Remove absolute positioning to keep valid flow */
 .site-header__brand a[href*="aquainfra.eu"] {
-    position: absolute;
-    left: 0;
+    position: static !important;
+    margin-bottom: 0;
+    display: flex;
+    /* Ensure link wraps image tightly */
 }
 
 

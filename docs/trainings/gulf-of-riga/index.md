@@ -16,8 +16,6 @@ It is divided into chapters corresponding to the video sections.
     <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0 0;">
         <li><strong>Source:</strong> YouTube (AquaINFRA Channel)</li>
         <li><strong>Duration:</strong> ~29 minutes</li>
-        <li style="margin-top: 0.5rem;"><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs" target="_blank"
-                style="font-weight: 600;">Watch on YouTube &rarr;</a></li>
     </ul>
 </div>
 
