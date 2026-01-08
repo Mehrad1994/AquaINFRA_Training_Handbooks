@@ -143,22 +143,21 @@ Visit `http://localhost:4000/AquaINFRA_Training_Handbooks/` to preview.
    - Brief description of content
    - Checklist confirmation
 
-## 📁 File Structure
+## 📁 Content Structure
 
+New trainings should follow this layout within the `docs/trainings/` directory:
+
+```text
+docs/trainings/
+└── your-training-name/
+    ├── index.md           # Training landing page
+    ├── 01_introduction.md # Numbered chapters
+    ├── 02_chapter_name.md
+    └── assets/            # Training-specific media
+        └── images/
 ```
-docs/
-├── _data/
-│   └── use_cases.yml          # Register your training here
-├── trainings/
-│   ├── your-training-name/
-│   │   ├── index.md           # Landing page
-│   │   ├── 01_chapter.md      # Chapter files
-│   │   ├── 02_chapter.md
-│   │   └── assets/            # Images/diagrams (optional)
-│   │       └── images/
-└── assets/
-    └── images/                # Shared images
-```
+
+Refer to the **[Architecture Guide](ARCHITECTURE.md)** for a full overview of the project's technical layout.
 
 ## ✅ Checklist Before Submitting
 

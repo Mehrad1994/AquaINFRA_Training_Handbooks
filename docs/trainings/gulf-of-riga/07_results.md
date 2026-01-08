@@ -26,3 +26,9 @@ The workflow established *what* is happening. Future work aims to understand *wh
 ## Conclusion
 
 The AquaINFRA "Gulf of Riga" use case demonstrates how **FAIR data services** and **Virtual Research Environments (VREs)** can empower researchers. By automating the path from "raw data" to "trend detection," scientists can focus on interpreting the ecological story—turning a diver's observation into actionable scientific knowledge.
+
+---
+
+<div style="text-align: center; margin-top: 3rem;">
+    <a href="index.html" class="btn btn--outline">Back to Training Overview</a>
+</div>

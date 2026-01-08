@@ -17,7 +17,15 @@ The live version of the specific **Gulf of Riga** handbook is available here:
 
 The **AquaINFRA project** is developing a virtual environment equipped with FAIR (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. 
 
-Its primary mission is to support **marine and freshwater scientists** and stakeholders in restoring healthy oceans, seas, coastal, and inland waters by providing a unified platform to:
-*   Store and share research data.
-*   Collaborate across borders and disciplines.
-*   Leverage the European Open Science Cloud (EOSC).
+## 🛠️ Developer Resources
+
+- 🏗️ **[Architecture Guide](ARCHITECTURE.md)**: Technical blueprint and system design.
+- ✍️ **[Contributor Guide](CONTRIBUTING.md)**: How to add new YouTube training materials.
+- 📦 **[Training Template](docs/trainings/_TEMPLATE/)**: Quick-start starter kit for new content.
+
+## ✅ Project Status
+
+This repository is fully documented and structured for community contribution.
+- **Gulf of Riga Case Study**: Fully implemented and aligned with workshop videos.
+- **Workflow Support**: Native Mermaid.js diagram support for workflows.
+- **Mobile Optimized**: Fully responsive layout matching AquaINFRA branding.

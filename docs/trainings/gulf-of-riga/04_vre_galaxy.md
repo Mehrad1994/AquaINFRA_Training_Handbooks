@@ -18,4 +18,4 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
 
 ---
 
-<a href="05_workflow_details.html" class="btn">Next Chapter: Workflow Details &rarr;</a>
+<a href="05_hands_on_tutorial.html" class="btn">Next Chapter: Hands-On Tutorial &rarr;</a>

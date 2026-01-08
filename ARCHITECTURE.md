@@ -27,33 +27,29 @@ graph TB
 
 ## 📂 Directory Structure
 
-```
+```text
 AquaINFRA_Training_Handbooks/
-├── docs/                          # Jekyll site root
-│   ├── _config.yml               # Site configuration
-│   ├── _data/                    # Data files
-│   │   └── use_cases.yml        # Training navigation structure
+├── docs/                          # Jekyll site root (Content)
+│   ├── _config.yml               # Global site configuration
+│   ├── _data/                    # Structured data
+│   │   └── use_cases.yml        # Navigation & training registry
 │   ├── _layouts/                 # Page templates
-│   │   └── default.html         # Main layout template
-│   ├── _includes/                # Reusable components
-│   │   ├── header.html          # Site header with navigation
-│   │   ├── footer.html          # Site footer
-│   │   └── sidebar.html         # Left sidebar navigation
-│   ├── assets/                   # Static assets
-│   │   ├── css/
-│   │   │   ├── style.css        # Main stylesheet
-│   │   │   └── header-nav.css   # Header navigation styles
-│   │   └── images/              # Logos and images
-│   ├── trainings/                # Training content
-│   │   └── [region]/            # Organized by region
-│   │       └── [training-name]/ # Individual training
-│   │           ├── index.md     # Landing page
-│   │           └── *.md         # Chapter files
-│   ├── index.md                  # Homepage
-│   └── how-to-use.md            # Usage guide
-├── README.md                     # Project overview
-├── CONTRIBUTING.md               # Contribution guide
-└── ARCHITECTURE.md               # This file
+│   │   └── default.html         # Main layout wrapper
+│   ├── _includes/                # Modular UI components
+│   │   ├── header.html          # Branding & top nav
+│   │   ├── footer.html          # Funding & partner info
+│   │   └── sidebar.html         # Dynamic navigation logic
+│   ├── assets/                   # Static files
+│   │   ├── css/                 # style.css, header-nav.css
+│   │   └── images/              # Logos & training assets
+│   ├── trainings/                # Training modules
+│   │   ├── _TEMPLATE/           # Starter kit for new trainings
+│   │   └── gulf-of-riga/        # Example training case study
+│   ├── index.md                  # Landing page
+│   └── how-to-use.md            # Contributor guidelines
+├── README.md                     # Project landing page
+├── CONTRIBUTING.md               # Guide for adding new content
+└── ARCHITECTURE.md               # Technical blueprint
 ```
 
 ## 🔄 Data Flow
