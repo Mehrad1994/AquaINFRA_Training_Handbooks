@@ -1,38 +1,43 @@
-# ============================================
-# Training Navigation Structure
-# ============================================
-# This file defines the sidebar navigation for all training materials.
-# Trainings are grouped by geographic region.
-#
-# HOW TO ADD A NEW TRAINING:
-# 1. Choose the appropriate region (or create a new one)
-# 2. Add a new entry under "trainings:" with:
-#    - title: Display name in sidebar
-#    - url: Path to training directory (must start with /)
-# 3. Ensure the URL matches your training directory in docs/trainings/
-#
-# EXAMPLE:
-# - region: "Your Region"
-#   trainings:
-#     - title: "Your Training Name"
-#       url: "/trainings/your-training-name/"
-
 - region: "Baltic Sea"
   trainings:
     - title: "Gulf of Riga Case Study"
       url: "/trainings/gulf-of-riga/"
-    # Add more Baltic Sea trainings here
+      description: "Step-by-step documentation for the Service by the Gulf of Riga."
+      status: "Active"
+    - title: "Gulf of Finland"
+      url: "/wp6_tasks"
+      description: "Proposed training for Vantaanjoen river basin and coastal interaction."
+      status: "Planned"
+    - title: "Helcom"
+      url: "/wp6_tasks"
+      description: "Upcoming case study by Helcom."
+      status: "Planned"
 
 - region: "North Sea"
   trainings:
-    # - title: "Example Training"
-    #   url: "/trainings/example/"
-    # Uncomment and modify the above template to add trainings
+    - title: "Hereon"
+      url: "/wp6_tasks"
+      description: "Cosine modelling and web service in the German Bight."
+      status: "Planned"
+    - title: "Oslofjord & Glomma River"
+      url: "/wp6_tasks"
+      description: "Hydrological modeling and coastal impact analysis in Norway."
+      status: "Planned"
+    - title: "Elbe"
+      url: "/wp6_tasks"
+      description: "River to sea modelling and ecosystem assessment by the Elbe estuary."
+      status: "Planned"
 
 - region: "Pan-European"
   trainings:
-    # Add cross-regional trainings here
+    - title: "BOKU"
+      url: "/wp6_tasks"
+      description: "Large scale European hydrological data integration and analysis."
+      status: "Planned"
 
 - region: "Mediterranean"
   trainings:
-    # Add Mediterranean trainings here
+    - title: "All Use Cases (Merged)"
+      url: "/wp6_tasks"
+      description: "Collaborative case studies for the Doñana Delta, Mar Menor, and Malta."
+      status: "Planned"

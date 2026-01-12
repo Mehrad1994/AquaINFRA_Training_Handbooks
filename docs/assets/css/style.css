@@ -3,23 +3,26 @@
    ========================================= */
 
 :root {
-    /* Brand Colors */
+    /* Brand Colors (Updated from official site) */
     --aqua-blue: #3564ac;
-    --aqua-blue-dark: #2a4d85;
+    --aqua-blue-dark: #09184f;
+    /* Deeper navy from official site */
     --aqua-green: #76b943;
+    --aqua-teal: #0dcaf0;
+    /* Info color from official site */
     --aqua-green-light: #e6f4dc;
 
     /* Neutrals */
-    --gray-900: #1a1a1a;
-    --gray-800: #2d2d2d;
-    --gray-600: #555555;
+    --gray-900: #212529;
+    /* Standard Bootstrap dark */
+    --gray-800: #343a40;
+    --gray-600: #6c757d;
     --gray-200: #e9ecef;
     --gray-100: #f8f9fa;
     --white: #ffffff;
 
     /* Layout */
     --max-width: 1200px;
-    /* Wider container for TOC layout */
     --content-width: 960px;
     --header-height: 80px;
 }
@@ -32,14 +35,15 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: var(--gray-800);
+    /* Mona Sans is the official font. Fallback to system-ui. */
+    font-family: "Mona Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--gray-900);
     line-height: 1.6;
-    background-color: var(--gray-100);
+    background-color: var(--white);
+    /* Official site is cleaner/white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Responsive base font size with fallback for older browsers */
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
 }
@@ -50,17 +54,21 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--aqua-blue);
+    color: var(--aqua-blue-dark);
+    /* Headings often dark in brand */
     line-height: 1.25;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    /* Bolder headings as per brand */
 }
 
 h1 {
-    font-size: 2.25rem;
-    border-bottom: 2px solid var(--aqua-green);
+    font-size: 2.5rem;
+    border-bottom: none;
+    /* Official site uses clean spacers, removing border */
     padding-bottom: 0.5rem;
     margin-top: 1rem;
+    color: var(--aqua-blue);
 }
 
 h2 {
@@ -741,10 +749,10 @@ img {
 /* Responsive Tables */
 /* Ensure tables don't overflow */
 .handbook-content table {
-    display: block;
+    display: table;
+    /* Reverting to table so it respects width: 100% properly */
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    /* Overflow handling should be on the wrapper, not the table itself if we want full width table behavior */
 }
 
 /* Responsive Images */
@@ -809,6 +817,22 @@ img {
 .table-wrapper table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
+    /* Enforce consistent column widths if width is specified, or at least respect 100% */
+}
+
+/* Ensure data cells don't overflow awkwardly */
+.table-wrapper td,
+.table-wrapper th {
+    word-wrap: break-word;
+    vertical-align: top;
+}
+
+/* Make first column slightly smaller if needed, or let them auto-distribute but keep table 100% */
+.table-wrapper th:first-child,
+.table-wrapper td:first-child {
+    width: 30%;
+    /* Approximate width for 'Focus Area' */
 }
 
 /* Small Screen Content Spacing */
@@ -840,5 +864,96 @@ img {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         width: auto;
+    }
+}
+
+/* =========================================
+   Training Cards Redesign
+   ========================================= */
+
+.training-grid {
+    display: grid;
+    /* responsive grid with min-width constraint */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.training-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: 1;
+    /* Square card */
+    background: linear-gradient(135deg, var(--aqua-blue), var(--aqua-blue-dark));
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.training-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(53, 100, 172, 0.25);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.training-card h3 {
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+.training-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.training-card .badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.training-card:hover .badge {
+    background: var(--white);
+    color: var(--aqua-blue-dark);
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .training-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .training-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-card {
+        aspect-ratio: auto;
+        min-height: 250px;
     }
 }
