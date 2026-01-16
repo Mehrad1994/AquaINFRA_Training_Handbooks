@@ -54,4 +54,12 @@ Or include images:
 
 ---
 
-<a href="02_main_content.html" class="btn">Next Chapter: Main Content →</a>
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="YOUTUBE_LINK_HERE" target="_blank">[MM:SS]</a> [Video Chapter Title]
+</div>
+
+<div class="btn-group">
+    <a href="PREVIOUS_CHAPTER.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="NEXT_CHAPTER.html" class="btn">Next Chapter &rarr;</a>
+</div>

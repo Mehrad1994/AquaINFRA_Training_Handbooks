@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 6. Workflow Details
+title: 8. Workflow Details
 ---
 
 # The Gulf of Riga DGA Workflow
@@ -68,4 +68,12 @@ The workflow automatically generates:
 
 ---
 
-<a href="07_results.html" class="btn">Next Chapter: Results & Conclusion &rarr;</a>
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank">21:29</a> Detailed Review of the Workflow Components
+</div>
+
+<div class="btn-group">
+    <a href="07_hands_on_tutorial.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="09_results.html" class="btn">Next Chapter: Results & Conclusion &rarr;</a>
+</div>

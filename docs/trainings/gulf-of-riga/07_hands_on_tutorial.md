@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 5. Hands-On Tutorial
+title: 7. Hands-On Tutorial
 ---
 
 # Hands-On: Running the Gulf of Riga Workflow
@@ -228,4 +228,7 @@ After successfully running the workflow:
 
 ---
 
-<a href="06_workflow_details.html" class="btn">Next Chapter: Workflow Details →</a>
+<div class="btn-group">
+    <a href="06_workflow_concept.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="08_workflow_details.html" class="btn">Next Chapter: Workflow Details &rarr;</a>
+</div>

@@ -52,19 +52,27 @@ It is divided into chapters corresponding to the video sections.
                 <td>How to use the AIP to find data and resources.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/04_vre_galaxy' | relative_url }}"><strong>4. Aqua Galaxy (VRE)</strong></a></td>
+                <td><a href="{{ '/trainings/gulf-of-riga/04_d2k_package' | relative_url }}"><strong>4. Data-to-Knowledge Package</strong></a></td>
+                <td>Introduction to the D2K package concept.</td>
+            </tr>
+            <tr>
+                <td><a href="{{ '/trainings/gulf-of-riga/05_vre_galaxy' | relative_url }}"><strong>5. Aqua Galaxy (VRE)</strong></a></td>
                 <td>Introduction to the Virtual Research Environment.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/05_hands_on_tutorial' | relative_url }}"><strong>5. Hands-On Tutorial</strong></a></td>
+                <td><a href="{{ '/trainings/gulf-of-riga/06_workflow_concept' | relative_url }}"><strong>6. Workflow Concept</strong></a></td>
+                <td>Conceptual overview of the Gulf of Riga workflow.</td>
+            </tr>
+            <tr>
+                <td><a href="{{ '/trainings/gulf-of-riga/07_hands_on_tutorial' | relative_url }}"><strong>7. Hands-On Tutorial</strong></a></td>
                 <td>Step-by-step guide to importing data and running the workflow.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/06_workflow_details' | relative_url }}"><strong>6. Workflow Details</strong></a></td>
+                <td><a href="{{ '/trainings/gulf-of-riga/08_workflow_details' | relative_url }}"><strong>8. Workflow Details</strong></a></td>
                 <td>Technical breakdown of the DGA workflow components.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/gulf-of-riga/07_results' | relative_url }}"><strong>7. Results & Conclusion</strong></a></td>
+                <td><a href="{{ '/trainings/gulf-of-riga/09_results' | relative_url }}"><strong>9. Results & Conclusion</strong></a></td>
                 <td>Findings of the trend analysis and future outlook.</td>
             </tr>
         </tbody>

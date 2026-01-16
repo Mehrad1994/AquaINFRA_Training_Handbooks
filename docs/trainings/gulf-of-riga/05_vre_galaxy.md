@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 4. Aqua Galaxy (VRE)
+title: 5. Aqua Galaxy (VRE)
 ---
 
 # Virtual Research Environment: Aqua Galaxy
@@ -18,4 +18,12 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
 
 ---
 
-<a href="05_hands_on_tutorial.html" class="btn">Next Chapter: Hands-On Tutorial &rarr;</a>
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s" target="_blank">9:32</a> Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
+</div>
+
+<div class="btn-group">
+    <a href="04_d2k_package.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="06_workflow_concept.html" class="btn">Next Chapter: Workflow Concept &rarr;</a>
+</div>

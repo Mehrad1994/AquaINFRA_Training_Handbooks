@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 7. Results & Conclusion
+title: 9. Results & Conclusion
 ---
 
 # Findings & Future Directions
@@ -29,6 +29,12 @@ The AquaINFRA "Gulf of Riga" use case demonstrates how **FAIR data services** an
 
 ---
 
-<div style="text-align: center; margin-top: 3rem;">
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1507s" target="_blank">25:07</a> Summary of the Gulf of Riga Workflow Results and Conclusion Remarks
+</div>
+
+<div class="btn-group">
+    <a href="08_workflow_details.html" class="btn btn--outline">&larr; Previous Chapter</a>
     <a href="index.html" class="btn btn--outline">Back to Training Overview</a>
 </div>

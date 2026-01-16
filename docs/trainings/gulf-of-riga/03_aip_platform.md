@@ -29,4 +29,12 @@ An **Interactive Map** allows for spatial filtering:
 
 ---
 
-<a href="04_vre_galaxy.html" class="btn">Next Chapter: Aqua Galaxy (VRE) &rarr;</a>
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=261s" target="_blank">4:21</a> Introduction to AIP and the Data-to-Knowledge Package
+</div>
+
+<div class="btn-group">
+    <a href="02_case_study.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="04_d2k_package.html" class="btn">Next Chapter: Data-to-Knowledge Package &rarr;</a>
+</div>
