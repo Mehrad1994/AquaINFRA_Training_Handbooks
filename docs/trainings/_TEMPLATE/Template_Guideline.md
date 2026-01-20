@@ -56,8 +56,28 @@ This directory contains template files for creating new training materials.
 
 - Keep chapter files focused (one topic per chapter)
 - Use descriptive titles
-- Include code examples where relevant
-- Add diagrams using Mermaid syntax
+
+## Navigation Buttons (Required)
+At the bottom of every chapter (except the introduction, which only has Next), include **Previous** and **Next** buttons using the `.btn-group` container.
+
+**Example:**
+```html
+<div class="btn-group">
+    <a href="01_introduction.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="03_next_topic.html" class="btn">Next Chapter &rarr;</a>
+</div>
+```
+
+## Video References (Required)
+If the handbook has an accompanying video, place a **Video Reference** callout at the *bottom* of the page, just *above* the navigation buttons.
+- Use the detailed timestamps provided in the video description.
+- **Link ONLY the timestamp**.
+
+**Example:**
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="VIDEO_URL&t=TIMESTAMP" target="_blank">MM:SS</a> Section Title
+</div>
 - Link between chapters for easy navigation
 
 For more details, see [CONTRIBUTING.md](../../../CONTRIBUTING.md)

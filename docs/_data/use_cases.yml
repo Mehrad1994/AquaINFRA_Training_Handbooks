@@ -30,10 +30,10 @@
 
 - region: "Pan-European"
   trainings:
-    - title: "BOKU"
-      url: "/wp6_tasks"
+    - title: "Pan-European Biodiversity Use Case"
+      url: "/trainings/pan-european-use-case/"
       description: "Large scale European hydrological data integration and analysis."
-      status: "Planned"
+      status: "Active"
 
 - region: "Mediterranean"
   trainings:
