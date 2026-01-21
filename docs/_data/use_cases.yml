@@ -1,6 +1,6 @@
 - region: "Baltic Sea"
   trainings:
-    - title: "Gulf of Riga Case Study"
+    - title: "Gulf of Riga"
       url: "/trainings/gulf-of-riga/"
       description: "Step-by-step documentation for the Service by the Gulf of Riga."
       status: "Active"
@@ -30,7 +30,7 @@
 
 - region: "Pan-European"
   trainings:
-    - title: "Pan-European Biodiversity Use Case"
+    - title: "Pan-European Biodiversity"
       url: "/trainings/pan-european-use-case/"
       description: "Large scale European hydrological data integration and analysis."
       status: "Active"
