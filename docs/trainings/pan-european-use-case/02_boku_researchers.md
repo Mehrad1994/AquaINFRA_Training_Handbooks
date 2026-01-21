@@ -19,10 +19,11 @@ BOKU is a life science university that covers a multitude of environmental topic
 In this training, you will hear from the key researchers driving the technical story behind these use cases:
 
 ### Dr. Florian Borgwardt
-Professor at BOKU University, specializing in river biodiversity across Europe. He highlights the challenge of using fragmented datasets from different sources with varying quality.
+**Assoc. Prof. Dipl.-Ing. Dr.nat.techn.** at the **Institute of Hydrobiology and Aquatic Ecosystem Management (IHG)**, BOKU University. He specializes in river biodiversity across Europe and highlights the challenge of using fragmented datasets from different sources with varying quality.
 
-### Dr. Anthony Basooma
-A PhD researcher at BOKU (originally from Uganda), who developed the **Specleaner** R package and the primary workflow used in this use case.
+### Anthony Basooma
+**M.Sc. and PhD Researcher** at the **Institute of Hydrobiology and Aquatic Ecosystem Management (IHG)**, BOKU University. He developed the **Specleaner** R package and the primary workflow used in this use case.
+
 
 <div class="callout">
     <strong>📹 Video Reference</strong>
