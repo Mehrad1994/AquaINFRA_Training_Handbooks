@@ -11,6 +11,10 @@ description: A collection of training handbooks and use case documentation for t
 # Branding
 # Logo is handled in _includes/header.html for better control
 
+# Build Configuration
+destination: ../build
+cache_dir: ../build/.jekyll-cache
+
 # GitHub Pages Configuration
 # IMPORTANT: baseurl must match your GitHub repository name
 # For local testing, site will be at: http://localhost:4000/AquaINFRA_Training_Handbooks/
