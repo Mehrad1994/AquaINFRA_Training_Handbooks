@@ -1,34 +1,26 @@
 ---
 layout: default
-title: Introduction
+title: 1. Introduction
 parent: Pan-European Biodiversity Use Case
+nav_order: 1
 ---
 
-# Introduction to Pan-European Use Case
+# 1. Introduction to AquaINFRA and the Use-case
 
-The **Pan-European Biodiversity** use case focuses on creating larger scale, more robust estimates of biodiversity all across Europe by including fragmented datasets.
-
-## The Goal
-The primary objective is to empower *marine and freshwater scientists* and stakeholders to:
-*   Store, share, and access research data.
-*   Analyze and process digital research objects.
-*   Restore healthy aquatic ecosystems, oceans, seas, and inland waters.
+The **AquaINFRA** project is developing a virtual environment designed to assist marine and freshwater scientists and stakeholders in restoring healthy aquatic ecosystems, including oceans, seas, and coastal and inland waters.
 
 ## The Virtual Environment
-The AquaINFRA project is developing a virtual environment featuring **FAIR** (Findable, Accessible, Interoperable, Reusable) multidisciplinary data and services. This environment facilitates collaboration across:
-1.  Different research infrastructures.
-2.  Scientific fields.
-3.  National borders.
+This environment features **FAIR** (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. It enables stakeholders to:
+*   **Store, share, and access** research data.
+*   **Analyze and process** digital research objects.
+*   **Collaborate** across scientific fields and national borders.
 
-It leverages the **European Open Science Cloud (EOSC)** and other existing operational data spaces.
+By leveraging the **European Open Science Cloud (EOSC)** and other existing operational data spaces, AquaINFRA facilitates seamless cross-domain research.
 
-## Focus of this Training
-This training handbook concentrates on the **Pan-European Use Case**, providing:
-*   A compelling backstory about freshwater biodiversity.
-*   A comprehensive overview of the **Data to Knowledge Package**.
-*   A walkthrough of the developed workflow involved.
+## The Pan-European Use Case
+A key focus of AquaINFRA is enabling collaboration between researchers in the marine and freshwater domains. This is tested through strategic use cases, including the **Pan-European Use Case** highlighted in this training.
 
-In the next chapter, we will travel to the beautiful city of Vienna to meet the team at BOKU University.
+The primary goal of this use case is to include fragmented datasets to provide **more robust estimates of biodiversity** all across Europe.
 
 <div class="callout">
     <strong>📹 Video Reference</strong>
@@ -36,5 +28,5 @@ In the next chapter, we will travel to the beautiful city of Vienna to meet the 
 </div>
 
 <div class="btn-group">
-    <a href="02_freshwater_biodiversity.html" class="btn">Next Chapter &rarr;</a>
+    <a href="02_boku_researchers.html" class="btn">Next Chapter &rarr;</a>
 </div>
