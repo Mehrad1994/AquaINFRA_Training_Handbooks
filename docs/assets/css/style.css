@@ -948,8 +948,8 @@ img {
 
 .training-grid {
     display: grid;
-    /* responsive grid with min-width constraint */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* Enforce 3 columns always as requested */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -1018,13 +1018,21 @@ img {
 /* Responsive Grid */
 @media (max-width: 1024px) {
     .training-grid {
-        grid-template-columns: repeat(2, 1fr);
+        /* Keep 3 columns even on tablet if feasible, or drop to 2 if too tight */
+        /* User said "widest to narrowest... always 3. only for mobile size make it two" */
+        /* But 3 columns on tablet (768px) might be squished. */
+        /* I will stick to 3 until mobile breakpoint as per "always 3" instruction, unless really broken. */
+        /* Actually, 1024px is tablet landscape. */
+        /* Let's trust the "widest to narrowest" instruction implies maintaining 3 as long as possible. */
+        /* Removing the 2-col override here to fallback to base 3-col. */
+        /* Or explicitely setting it if needed. */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 640px) {
     .training-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .training-card {

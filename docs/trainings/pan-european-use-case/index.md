@@ -59,11 +59,15 @@ This training handbook covers the **Pan-European Use Case** developed by **BOKU 
                 <td>Step-by-step guide to running the workflow in AquaGalaxy.</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/pan-european-use-case/06_workflow_structure' | relative_url }}"><strong>6. Workflow Structure</strong></a></td>
-                <td>Detailed explanation of the 8 steps within the Galaxy workflow.</td>
+                <td><a href="{{ '/trainings/pan-european-use-case/06_workflow_data_prep' | relative_url }}"><strong>6. Workflow Part 1: Data Acquisition</strong></a></td>
+                <td>Defining the study area and gathering online/offline biodiversity data (Steps 1-4).</td>
             </tr>
             <tr>
-                <td><a href="{{ '/trainings/pan-european-use-case/07_results_conclusion' | relative_url }}"><strong>7. Results & Conclusion</strong></a></td>
+                <td><a href="{{ '/trainings/pan-european-use-case/07_workflow_processing' | relative_url }}"><strong>7. Workflow Part 2: Processing</strong></a></td>
+                <td>Harmonizing taxonomies and detecting outliers with Specleaner (Steps 5-8).</td>
+            </tr>
+            <tr>
+                <td><a href="{{ '/trainings/pan-european-use-case/08_results_conclusion' | relative_url }}"><strong>8. Results & Conclusion</strong></a></td>
                 <td>Visualizing results and final remarks.</td>
             </tr>
         </tbody>

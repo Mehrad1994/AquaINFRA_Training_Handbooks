@@ -43,5 +43,5 @@ It will take some time for all steps to complete (turn green).
 
 <div class="btn-group">
     <a href="04_data_to_knowledge.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="06_workflow_structure.html" class="btn">Next Chapter &rarr;</a>
+    <a href="06_workflow_data_prep.html" class="btn">Next Chapter &rarr;</a>
 </div>

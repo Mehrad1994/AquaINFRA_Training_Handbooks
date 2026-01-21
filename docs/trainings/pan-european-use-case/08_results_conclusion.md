@@ -4,9 +4,9 @@ title: Results & Conclusion
 parent: Pan-European Biodiversity Use Case
 ---
 
-# Results Included
+# 8. Results & Conclusion
 
-Once the workflow run is complete (all steps are green), you can visualize and export the results.
+The final step of the workflow generates the outputs that allow you to visualize the cleaned data.
 
 ## Visualizing Results
 1.  Click on the final step (Flag Outliers).
@@ -27,10 +27,10 @@ This enhances our ability to monitor and protect freshwater biodiversity across 
 
 <div class="callout">
     <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s" target="_blank">18:42</a> Review the Workflow Results
+    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1140s" target="_blank">19:00</a> Review Results and Conclusion
 </div>
 
 <div class="btn-group">
-    <a href="06_workflow_structure.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="index.html" class="btn btn--outline">Back to Overview</a>
+    <a href="07_workflow_processing.html" class="btn btn--outline">&larr; Previous Chapter</a>
+    <a href="index.html" class="btn btn--outline">Back to Overview &rarr;</a>
 </div>

@@ -17,30 +17,37 @@ This package is designed for **outlier detection and removal** in species occurr
 
 ## Outlier Detection Process
 
-The process within Specleaner involves several steps:
+The process within Specleaner involves several detailed steps tailored for species distribution modeling:
 
-1.  **Data Collection/Standardization**:
-    *   **Species Data**: From GBIF, VertNet, or local storage.
-    *   **Environmental Data**: From CHELSA, WorldClim, etc.
-    *   Extract environmental predictors for the species locations to create a reference dataset.
+1.  **Data Collection & Standardization**:
+    *   **Species Data**: Can be sourced from global repositories like **GBIF**, **VertNet**, or local storage.
+    *   **Environmental Data**: Essential for creating predictors. Sources include **CHELSA** and **WorldClim**.
+    *   **Reference Dataset**: The species data is used to extract environmental predictors from the environmental layers, creating a reference dataset for analysis.
 
 2.  **Outlier Identification Methods**:
-    *   **Univariate Methods** (e.g., Z-score, Interquartile Range): Checks if values fall outside suitable ecological ranges for a single predictor.
-    *   **Multivariate Methods** (e.g., Isolation Forest, One-Class Support Vector Machines): Checks for outliers in multidimensional space.
+    *   **Univariate Methods**: These require a single environmental predictor (e.g., Temperature or Precipitation). Examples include:
+        *   **Z-score**
+        *   **Interquartile Range (IQR)**
+        *   *Logic*: Checks if values fall outside suitable ecological ranges for that specific variable.
+    *   **Multivariate Methods**: These analyze multiple variables simultaneously. Examples include:
+        *   **Isolation Forest**
+        *   **One-Class Support Vector Machines**
+        *   *Logic*: Identifies records that are anomalous in the multidimensional environmental space.
 
 3.  **Compilation (`m_detect`)**:
-    *   The function `m_detect` compiles results from selected methods.
-    *   Each record is assessed as a potential outlier.
+    *   The core function `m_detect` compiles results from all selected methods.
+    *   Each occurrence record is assessed against **20 different potential detection methods**.
 
-4.  **Weighting**:
-    *   Records are weighted based on how many methods flagged them.
-    *   **Poor/Fair Outlier**: Flagged by few methods (e.g., 1 out of 10).
-    *   **Perfect Outlier**: Flagged by all methods (e.g., 10 out of 10).
+4.  **Weighting System**:
+    Instead of a binary "clean/dirty" classification, Specleaner uses a voting system:
+    *   Records are **weighted** based on how many methods flagged them.
+    *   **Poor/Fair Outlier**: Flagged by very few methods (e.g., 1 out of 20).
+    *   **Perfect Outlier**: Flagged by all or nearly all methods (e.g., 20 out of 20).
 
-5.  **Filtering/Classification**:
-    *   Based on thresholds, data is filtered as potential or absolute outliers.
-    *   Records can be classified as **Poor, Fair, Moderate, Strong, or Perfect** outliers.
-    *   Expert knowledge can be used to decide whether to remove "perfect" outliers based on ecological consequences.
+5.  **Filtering & Expert Classification**:
+    *   Records are classified into categories: **Poor, Fair, Moderate, Strong, or Perfect** outliers.
+    *   **Thresholding**: Users can set a threshold (e.g., "Remove only Strong and Perfect outliers").
+    *   **Expert Review**: This nuanced approach allows ecologists to decide whether to keep a "perfect" outlier that might represent a real but rare ecological event, or remove it as an error.
 
 For a comprehensive understanding, reading the [Specleaner documentation](https://anthonybasooma.github.io/specleaner) is highly recommended.
 
