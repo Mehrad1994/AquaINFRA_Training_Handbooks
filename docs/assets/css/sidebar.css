@@ -1,0 +1,89 @@
+/* Sidebar Navigation Styles */
+.page-sidebar {
+    padding-top: 2rem;
+}
+
+.sidebar__section {
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+}
+
+.sidebar__heading {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: rgb(7, 6, 8);
+    letter-spacing: 0.12em;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--aqua-blue);
+    padding-bottom: 0.6rem;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__list li {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar__link {
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.sidebar__link:hover {
+    color: var(--aqua-blue);
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+.sidebar__link.active {
+    color: var(--aqua-blue);
+    font-weight: 700;
+}
+
+/* Accordion Specific */
+.region-accordion {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    transition: color 0.2s;
+}
+
+.region-accordion:hover {
+    color: var(--aqua-blue);
+}
+
+.region-accordion__chevron {
+    width: 0.7rem;
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+}
+
+.region-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--gray-200);
+    margin-left: 0.25rem;
+    margin-top: 0.5rem;
+}

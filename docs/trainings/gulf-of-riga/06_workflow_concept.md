@@ -29,5 +29,5 @@ The workflow is available in the **AquaINFRA Interaction Platform** and can be i
 
 <div class="btn-group">
     <a href="05_vre_galaxy.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="07_hands_on_tutorial.html" class="btn">Next Chapter: Hands-On Tutorial &rarr;</a>
+    <a href="07_hands_on_tutorial.html" class="btn">Next Chapter &rarr;</a>
 </div>

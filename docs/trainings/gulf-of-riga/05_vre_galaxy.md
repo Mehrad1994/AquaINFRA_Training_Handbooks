@@ -25,5 +25,5 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
 
 <div class="btn-group">
     <a href="04_d2k_package.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="06_workflow_concept.html" class="btn">Next Chapter: Workflow Concept &rarr;</a>
+    <a href="06_workflow_concept.html" class="btn">Next Chapter &rarr;</a>
 </div>

@@ -11,3 +11,4 @@ _site/
 # Exclude documentation from publishing for now
 ARCHITECTURE.md
 CONTRIBUTING.md
+Comments.md

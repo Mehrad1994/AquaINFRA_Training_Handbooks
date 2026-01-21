@@ -36,5 +36,5 @@ An **Interactive Map** allows for spatial filtering:
 
 <div class="btn-group">
     <a href="02_case_study.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="04_d2k_package.html" class="btn">Next Chapter: Data-to-Knowledge Package &rarr;</a>
+    <a href="04_d2k_package.html" class="btn">Next Chapter &rarr;</a>
 </div>

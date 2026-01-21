@@ -75,5 +75,5 @@ The workflow automatically generates:
 
 <div class="btn-group">
     <a href="07_hands_on_tutorial.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="09_results.html" class="btn">Next Chapter: Results & Conclusion &rarr;</a>
+    <a href="09_results.html" class="btn">Next Chapter &rarr;</a>
 </div>

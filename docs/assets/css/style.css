@@ -2,21 +2,30 @@
    AquaINFRA Design System
    ========================================= */
 
+/* Import Mona Sans */
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2-variations'),
+        url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
 :root {
     /* Brand Colors (Updated from official site) */
     --aqua-blue: #3564ac;
-    --aqua-blue-dark: #09184f;
-    /* Deeper navy from official site */
+    --aqua-blue-dark: #070608;
+    /* Dark navy/black for text */
     --aqua-green: #76b943;
-    --aqua-teal: #0dcaf0;
-    /* Info color from official site */
-    --aqua-green-light: #e6f4dc;
+    /* New primary action color */
+    --aqua-bg-light: #eaf1fc;
+    /* Light section variable */
 
     /* Neutrals */
-    --gray-900: #212529;
-    /* Standard Bootstrap dark */
+    --gray-900: #070608;
     --gray-800: #343a40;
-    --gray-600: #6c757d;
+    --gray-600: #555555;
     --gray-200: #e9ecef;
     --gray-100: #f8f9fa;
     --white: #ffffff;
@@ -294,26 +303,27 @@ img {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-weight: 600;
     text-align: center;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    transition: all 0.2s ease;
     cursor: pointer;
     border: 2px solid transparent;
-    font-size: 1rem;
-    /* Default Primary Button */
-    background: linear-gradient(135deg, var(--aqua-blue), var(--aqua-blue-dark));
+    font-size: 0.95rem;
+    /* Brand Blue Gradient Button */
+    background: linear-gradient(135deg, var(--aqua-blue) 0%, #2a5291 100%);
     color: var(--white);
-    box-shadow: 0 4px 6px rgba(53, 100, 172, 0.2);
+    box-shadow: none;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(53, 100, 172, 0.3);
+    transform: translateY(-1px);
+    box-shadow: none;
     color: var(--white);
     text-decoration: none;
-    background: linear-gradient(135deg, var(--aqua-blue-dark), var(--aqua-blue));
+    opacity: 0.9;
+    background: linear-gradient(135deg, #2a5291 0%, var(--aqua-blue) 100%);
 }
 
 .btn--outline {
@@ -514,13 +524,13 @@ img {
 }
 
 .sidebar__heading {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    color: var(--gray-600);
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--aqua-green);
-    padding-bottom: 0.5rem;
+    color: rgb(7, 6, 8);
+    letter-spacing: 0.12em;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--aqua-blue);
+    padding-bottom: 0.6rem;
     margin-top: 0;
     font-weight: 700;
 }
@@ -528,8 +538,8 @@ img {
 .sidebar__text {
     font-size: 0.9rem;
     color: var(--gray-600);
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
 }
 
 .sidebar__list {
@@ -539,32 +549,34 @@ img {
 }
 
 .sidebar__list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .sidebar__link {
     display: block;
-    color: var(--gray-600);
-    font-size: 0.95rem;
+    color: var(--gray-800);
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
+    font-weight: 500;
 }
 
 .sidebar__link:hover {
     color: var(--aqua-blue);
-    padding-left: 4px;
+    transform: translateX(4px);
+    text-decoration: none;
 }
 
 .sidebar__region {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .sidebar__region-title {
     display: block;
     font-weight: 600;
-    color: var(--aqua-blue-dark);
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    color: rgb(7, 6, 8);
+    margin-bottom: 0;
+    font-size: 1rem;
 }
 
 /* Content Area */

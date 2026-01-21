@@ -230,5 +230,5 @@ After successfully running the workflow:
 
 <div class="btn-group">
     <a href="06_workflow_concept.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="08_workflow_details.html" class="btn">Next Chapter: Workflow Details &rarr;</a>
+    <a href="08_workflow_details.html" class="btn">Next Chapter &rarr;</a>
 </div>

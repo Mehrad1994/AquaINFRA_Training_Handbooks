@@ -36,5 +36,5 @@ This acts as the computational backbone, supporting long-term trend identificati
 
 <div class="btn-group">
     <a href="03_aip_platform.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="05_vre_galaxy.html" class="btn">Next Chapter: Aqua Galaxy (VRE) &rarr;</a>
+    <a href="05_vre_galaxy.html" class="btn">Next Chapter &rarr;</a>
 </div>

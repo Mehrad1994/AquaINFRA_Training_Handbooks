@@ -25,4 +25,4 @@ The AquaINFRA virtual environment enables target stakeholders to:
     <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=0s" target="_blank">0:00</a> Introduction to AquaINFRA
 </div>
 
-<a href="02_case_study.html" class="btn">Next Chapter: Case Study Story &rarr;</a>
+<a href="02_case_study.html" class="btn">Next Chapter &rarr;</a>

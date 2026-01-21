@@ -49,5 +49,5 @@ To answer the question, the team developed a reproducible **DGA (Data Gathering 
 
 <div class="btn-group">
     <a href="01_introduction.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="03_aip_platform.html" class="btn">Next Chapter: Interaction Platform &rarr;</a>
+    <a href="03_aip_platform.html" class="btn">Next Chapter &rarr;</a>
 </div>
