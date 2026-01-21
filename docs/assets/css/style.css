@@ -1071,9 +1071,20 @@ img {
         /* Keep 3 as requested */
     }
 
-    /* Reduce font size on smaller desktop/tablet width to prevent overflow */
+    /* Tablet/Intermediate - Reduce size and weight */
     .training-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        /* Semi-bold */
+    }
+}
+
+/* Specific adjustment for narrower tablet portrait/small desktop */
+@media (max-width: 900px) {
+    .training-card h3 {
+        font-size: 1.15rem;
+        font-weight: 500;
+        /* Medium weight, no longer bold */
     }
 }
 
@@ -1097,6 +1108,8 @@ img {
     .training-card h3 {
         font-size: 1rem;
         /* Smaller title */
+        font-weight: 500;
+        /* Not bold */
         padding: 0 0.25rem;
         width: 100%;
     }
