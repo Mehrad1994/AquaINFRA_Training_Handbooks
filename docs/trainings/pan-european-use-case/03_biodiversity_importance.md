@@ -32,5 +32,5 @@ Both are powerful indicators of river health and are currently considered endang
 
 <div class="btn-group">
     <a href="02_boku_researchers.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="04_specleaner_package.md" class="btn">Next Chapter &rarr;</a>
+    <a href="04_specleaner_package.html" class="btn">Next Chapter &rarr;</a>
 </div>
