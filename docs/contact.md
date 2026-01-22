@@ -8,10 +8,10 @@ title: Contact Us
 Have questions about the training handbooks or need support? Reach out to the team directly using the form below.
 
 <div class="contact-container" style="max-width: 600px; margin: 2rem 0;">
-    <form action="https://formsubmit.co/sadra.Matmir@hs-bochum.de" method="POST" class="contact-form">
+    <form action="https://formsubmit.co/Mehrad.Moradipour@hs-bochum.de" method="POST" class="contact-form">
         
         <!-- Hidden Configuration Fields -->
-        <input type="hidden" name="_cc" value="mehrad.moradipour@hs-bochum.de">
+        <input type="hidden" name="_cc" value="Sadra.Matmir@hs-bochum.de">
         <input type="hidden" name="_subject" value="New Inquiry: AquaINFRA Training Handbooks">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
