@@ -7,32 +7,59 @@ title: Contact Us
 
 Have questions about the training handbooks or need support? Reach out to the team directly using the form below.
 
-<div class="contact-container" style="max-width: 600px; margin: 2rem 0;">
-    <form action="https://formsubmit.co/Mehrad.Moradipour@hs-bochum.de" method="POST" class="contact-form">
-        
-        <!-- Hidden Configuration Fields -->
-        <input type="hidden" name="_cc" value="Sadra.Matmir@hs-bochum.de">
-        <input type="hidden" name="_subject" value="New Inquiry: AquaINFRA Training Handbooks">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-
-        <div style="margin-bottom: 1rem;">
-            <label for="name" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Your Name</label>
-            <input type="text" id="name" name="name" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required>
-        </div>
-
-        <div style="margin-bottom: 1rem;">
-            <label for="email" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Your Email</label>
-            <input type="email" id="email" name="email" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required>
-        </div>
-
-        <div style="margin-bottom: 1.5rem;">
-            <label for="message" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Message</label>
-            <textarea id="message" name="message" rows="6" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #004080; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">
-            Send Message
-        </button>
-    </form>
+<div class="contact-hero" style="background-color: #3564AC; color: white; padding: 4rem 2rem; margin: -2rem -2rem 3rem -2rem; text-align: center;">
+    <h1 style="color: white; margin: 0; font-size: 3rem;">Get In Touch</h1>
+    <p style="margin-top: 1rem; font-size: 1.2rem; opacity: 0.9;">Home / Get In Touch</p>
 </div>
+
+<div class="contact-grid" style="display: flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 4rem;">
+    <!-- Left Column: Contact Form Placeholder/Email Box -->
+    <div style="flex: 1; min-width: 300px;">
+        <div style="border-top: 4px solid #7AC143; background: #fff; padding: 2.5rem; border-radius: 0 0 8px 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <h2 style="color: #3564AC; margin-top: 0; margin-bottom: 1.5rem;">Contact Us</h2>
+            <p style="margin-bottom: 2rem; line-height: 1.6;">
+                Have questions about the training handbooks or need support? Reach out to our team directly.
+            </p>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #3564AC;">Mehrad Moradipour</h4>
+                <p style="margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:Mehrad.Moradipour@hs-bochum.de" style="color: #3564AC; text-decoration: none;">Mehrad.Moradipour@hs-bochum.de</a></p>
+            </div>
+
+            <div style="margin-bottom: 2.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #3564AC;">Sadra Matmir</h4>
+                <p style="margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:Sadra.Matmir@hs-bochum.de" style="color: #3564AC; text-decoration: none;">Sadra.Matmir@hs-bochum.de</a></p>
+            </div>
+
+            <a href="mailto:Mehrad.Moradipour@hs-bochum.de?cc=Sadra.Matmir@hs-bochum.de&subject=AquaINFRA%20Training%20Inquiry" class="btn btn-primary" style="display: block; text-align: center; padding: 1rem; background-color: #3564AC; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1.1rem; transition: background 0.3s ease;">
+                Send an Email Now
+            </a>
+            <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                Standard email client will open.
+            </p>
+        </div>
+    </div>
+
+    <!-- Right Column: Info Text -->
+    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 2rem;">
+            Whether you are interested in our research, seeking technical support with the Virtual Environment, or looking for general information about the AquaINFRA project, we are here to help.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 2rem;">
+            Our project inboxes are monitored daily, and we typically respond within 1-2 business days.
+        </p>
+        
+        <div style="margin-top: 1rem;">
+            <h4 style="color: #3564AC; margin-bottom: 1rem;">Follow Our Progress</h4>
+            <div style="display: flex; gap: 1rem;">
+                <a href="https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks" style="color: #3564AC; text-decoration: none; font-weight: bold;">GitHub</a>
+                <span style="color: #ddd;">|</span>
+                <a href="https://aquainfra.eu" style="color: #3564AC; text-decoration: none; font-weight: bold;">Official Site</a>
+                <span style="color: #ddd;">|</span>
+                <a href="https://zenodo.org" style="color: #3564AC; text-decoration: none; font-weight: bold;">Zenodo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

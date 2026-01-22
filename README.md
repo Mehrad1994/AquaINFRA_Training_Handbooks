@@ -1,6 +1,6 @@
 # AquaINFRA Video Handbooks
 
-![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Live-success)
+![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Live-success) ![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen)
 
 This repository contains the source code and documentation for the **AquaINFRA Video Handbooks**.
 
@@ -26,6 +26,7 @@ The **AquaINFRA project** is developing a virtual environment equipped with FAIR
 ## ✅ Project Status
 
 This repository is fully documented and structured for community contribution.
+- **100% Open Source**: All tools and contact methods (standard `mailto`) are strictly open-source compliant.
 - **Gulf of Riga Case Study**: Fully implemented and aligned with workshop videos.
 - **Workflow Support**: Native Mermaid.js diagram support for workflows.
 - **Mobile Optimized**: Fully responsive layout matching AquaINFRA branding.
