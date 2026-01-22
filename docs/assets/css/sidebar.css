@@ -1,6 +1,5 @@
-/* Sidebar Navigation Styles */
 .page-sidebar {
-    padding-top: 2rem;
+    padding: 1.5rem; /* Standardizing padding */
 }
 
 .sidebar__section {

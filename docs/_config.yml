@@ -12,8 +12,8 @@ description: A collection of training handbooks and use case documentation for t
 # Logo is handled in _includes/header.html for better control
 
 # Build Configuration
-destination: ../build
-cache_dir: ../build/.jekyll-cache
+# destination: ../build
+# cache_dir: ../build/.jekyll-cache
 
 # GitHub Pages Configuration
 # IMPORTANT: baseurl must match your GitHub repository name

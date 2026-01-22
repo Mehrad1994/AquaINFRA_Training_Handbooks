@@ -37,6 +37,12 @@
 
     <!-- Main Content Wrapper -->
     <main class="main-wrapper">
+        {% if page.hero_title %}
+        <div class="page-hero"
+            style="background-color: #3564AC; color: white; padding: 4rem 2rem; margin: -2rem -1.5rem 3rem -1.5rem; text-align: center; border-radius: 8px 8px 0 0;">
+            <h1 style="color: white; margin: 0; font-size: 3rem;">{{ page.hero_title }}</h1>
+        </div>
+        {% endif %}
         <div class="handbook-grid">
             <!-- Sidebar Navigation -->
             {% include sidebar.html %}
