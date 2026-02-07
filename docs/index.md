@@ -10,6 +10,14 @@ title: Home
     </p>
 </div>
 
+<div class="homepage-section" style="padding-top: 0; margin-bottom: 2rem;">
+    <div class="step-content" style="background: var(--bg-light); border-left: 5px solid var(--aqua-blue);">
+        <h3 style="margin-top: 0; color: var(--aqua-blue);">🌊 Project Context</h3>
+        <p>AquaINFRA (2023-2026) is a Horizon Europe project dedicated to restoring healthy oceans and inland waters. This handbook provides the technical bridge to our official research infrastructure, focusing on reproducible workflows for the scientific community.</p>
+        <a href="https://aquainfra.eu/about" target="_blank" style="font-weight: 600; text-decoration: none; color: var(--aqua-blue);">Learn more about our methodology at aquainfra.eu &rarr;</a>
+    </div>
+</div>
+
 <!-- Simplified Step-by-Step Path -->
 <div class="homepage-section">
     <div class="section-container">
