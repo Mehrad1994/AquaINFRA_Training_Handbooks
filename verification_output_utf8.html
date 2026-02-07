@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Gulf of Riga Handbook</title>
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="/AquaINFRA_Training_Handbooks/assets/css/style.css">
+    <link rel="stylesheet" href="/AquaINFRA_Training_Handbooks/assets/css/header-nav.css">
+    <link rel="stylesheet" href="/AquaINFRA_Training_Handbooks/assets/css/components.css">
+    <link rel="stylesheet" href="/AquaINFRA_Training_Handbooks/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/AquaINFRA_Training_Handbooks/assets/css/homepage.css">
+
+    <!-- Favicon/Brand Colors -->
+    <link rel="icon" type="image/svg+xml" href="/AquaINFRA_Training_Handbooks/assets/images/aquainfra_logo.svg">
+
+    <!-- System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-system);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper">
+        
+        <div class="handbook-grid">
+            <!-- Sidebar Navigation -->
+            <aside class="page-sidebar">
+    <!-- Section 0: Main -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="/AquaINFRA_Training_Handbooks/" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 1 & 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="/AquaINFRA_Training_Handbooks/instruction#1-introduction-to-aquainfra" class="sidebar__link">1. Intro AquaInfra</a></li>
+            <li><a href="/AquaINFRA_Training_Handbooks/instruction#2-intro-aqua-vre-galaxy--tools" class="sidebar__link">2. Intro Aqua VRE</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3: Partners & Target -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Context</h3>
+        <ul class="sidebar__list">
+            <li><a href="/AquaINFRA_Training_Handbooks/partners" class="sidebar__link">3. Partners & Target</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic) -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Use Cases</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="/AquaINFRA_Training_Handbooks/contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+            <!-- Page Content -->
+            <div class="handbook-content">
+                <div class="hero-section">
+    <h1 class="hero-title">Video Tutorial Handbook</h1>
+    <p class="hero-subtitle">
+        Your sequential guide to marine and freshwater science using the AquaINFRA Virtual Environment.
+    </p>
+</div>
+
+<!-- Simplified Step-by-Step Path -->
+<div class="homepage-section">
+    <div class="section-container">
+        
+        <div class="learning-path">
+            
+            <!-- STEP 1 -->
+            <div class="path-step">
+                <div class="step-marker">1</div>
+                <div class="step-content">
+                    <h2 class="step-title">General Material</h2>
+                    <p class="step-desc">Start here to understand the core mission and goals of the AquaINFRA project.</p>
+                    <div class="step-links">
+                        <a href="/AquaINFRA_Training_Handbooks/instruction#1-introduction-to-aquainfra" class="step-link">Intro Handbook &rarr;</a>
+                        <span class="step-divider">|</span>
+                        <a href="https://aquainfra.eu" target="_blank" class="step-link">Official Project Site &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="path-step">
+                <div class="step-marker">2</div>
+                <div class="step-content">
+                    <h2 class="step-title">Virtual Research Environment</h2>
+                    <p class="step-desc">Learn how to access and navigate the Aqua VRE and the Galaxy analysis platform.</p>
+                    <a href="/AquaINFRA_Training_Handbooks/instruction#2-intro-aqua-vre-galaxy--tools" class="step-link">Intro Aqua VRE (Galaxy) &rarr;</a>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="path-step">
+                <div class="step-marker">3</div>
+                <div class="step-content">
+                    <h2 class="step-title">Partners &amp; Target</h2>
+                    <p class="step-desc">Understand who this platform is for and why it matters for the research community.</p>
+                    <a href="/AquaINFRA_Training_Handbooks/partners" class="step-link">Who, Why, How, What &rarr;</a>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="path-step">
+                <div class="step-marker">4</div>
+                <div class="step-content">
+                    <h2 class="step-title">Applied Use Case Material</h2>
+                    <p class="step-desc">Dive into specific training modules with dedicated code, data, and video resources.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Use Cases Section -->
+<div class="homepage-section homepage-section--alt">
+    <div class="section-container">
+        <h2 class="section-header">Use Case Library</h2>
+
+        
+        <div class="region-group">
+            <div class="region-tag-wrapper">
+                <span class="badge-tag badge-tag--blue">
+                    Baltic Sea
+                </span>
+            </div>
+            <div class="use-case-grid">
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Gulf of Riga</h3>
+                        <p class="use-case-card__desc">Step-by-step documentation for the Service by the Gulf of Riga.</p>
+                        
+                        <div class="resource-links">
+                            
+                            <a href="https://zenodo.org/records/11102928" target="_blank" class="resource-btn resource-btn--zenodo" title="Data on Zenodo">Zenodo</a>
+                            
+                            
+                            <a href="https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks/tree/main/docs/trainings/gulf-of-riga" target="_blank" class="resource-btn resource-btn--github" title="Code on GitHub">GitHub</a>
+                            
+                            
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="resource-btn resource-btn--youtube" title="Watch on YouTube">YouTube</a>
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/trainings/gulf-of-riga/" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Gulf of Finland</h3>
+                        <p class="use-case-card__desc">Proposed training for Vantaanjoen river basin and coastal interaction.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Helcom</h3>
+                        <p class="use-case-card__desc">Upcoming case study by Helcom.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="region-group">
+            <div class="region-tag-wrapper">
+                <span class="badge-tag badge-tag--blue">
+                    North Sea
+                </span>
+            </div>
+            <div class="use-case-grid">
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Hereon</h3>
+                        <p class="use-case-card__desc">Cosine modelling and web service in the German Bight.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Oslofjord and Glomma River</h3>
+                        <p class="use-case-card__desc">Hydrological modeling and coastal impact analysis in Norway.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Elbe</h3>
+                        <p class="use-case-card__desc">River to sea modelling and ecosystem assessment by the Elbe estuary.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="region-group">
+            <div class="region-tag-wrapper">
+                <span class="badge-tag badge-tag--blue">
+                    Pan-European
+                </span>
+            </div>
+            <div class="use-case-grid">
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">Pan-European Biodiversity</h3>
+                        <p class="use-case-card__desc">Large scale European hydrological data integration and analysis.</p>
+                        
+                        <div class="resource-links">
+                            
+                            <a href="https://zenodo.org/" target="_blank" class="resource-btn resource-btn--zenodo" title="Data on Zenodo">Zenodo</a>
+                            
+                            
+                            <a href="https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks/tree/main/docs/trainings/pan-european-use-case" target="_blank" class="resource-btn resource-btn--github" title="Code on GitHub">GitHub</a>
+                            
+                            
+                            <a href="https://www.youtube.com/" target="_blank" class="resource-btn resource-btn--youtube" title="Watch on YouTube">YouTube</a>
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/trainings/pan-european-use-case/" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="region-group">
+            <div class="region-tag-wrapper">
+                <span class="badge-tag badge-tag--blue">
+                    Mediterranean
+                </span>
+            </div>
+            <div class="use-case-grid">
+                
+                <div class="use-case-card">
+                    <div class="card-body">
+                        <h3 class="use-case-card__title">All Use Cases (Merged)</h3>
+                        <p class="use-case-card__desc">Collaborative case studies for the Doñana Delta, Mar Menor, and Malta.</p>
+                        
+                        <div class="resource-links">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <a href="/AquaINFRA_Training_Handbooks/wp6_tasks" class="use-case-card__footer">
+                        View Handbook &rarr;
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+.learning-path {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.path-step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.path-step::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    bottom: -50px;
+    width: 2px;
+    background: #e1e9f6;
+    z-index: 0;
+}
+
+.path-step:last-child::before {
+    display: none;
+}
+
+.step-marker {
+    width: 50px;
+    height: 50px;
+    background: #3564AC;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    z-index: 1;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(53, 100, 172, 0.2);
+}
+
+.step-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    border: 1px solid #f0f0f0;
+}
+
+.step-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    border: none;
+}
+
+.step-desc {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.step-link {
+    display: inline-block;
+    color: #3564AC;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.use-case-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e9f6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.use-case-card__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: #3564AC;
+    border: none;
+}
+
+.use-case-card__desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.resource-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.resource-btn {
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resource-btn--zenodo { background: #0072b2; color: white; }
+.resource-btn--github { background: #24292e; color: white; }
+.resource-btn--youtube { background: #ff0000; color: white; }
+
+.use-case-card__footer {
+    background: #f8fafd;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #3564AC;
+    font-weight: 700;
+    border-top: 1px solid #e1e9f6;
+    transition: background 0.2s;
+}
+
+.step-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.step-divider {
+    color: #ddd;
+    font-weight: 300;
+}
+</style>
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Anchor JS for TOC links (optional, simple script) -->
+    <script>
+        // Simple script to handle smooth scroll offset for fixed header if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+        integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mermaid.initialize({ startOnLoad: false, theme: 'default' });
+            // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+            document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                const pre = block.parentElement;
+                const content = block.textContent;
+                const div = document.createElement('div');
+                div.className = 'mermaid';
+                div.textContent = content;
+                if (pre && pre.tagName === 'PRE') {
+                    pre.parentNode.replaceChild(div, pre);
+                } else {
+                    block.parentNode.replaceChild(div, block);
+                }
+            });
+            mermaid.init(undefined, '.mermaid');
+        });
+    </script>
+    
+    <script src="/AquaINFRA_Training_Handbooks/assets/js/sidebar.js"></script>
+</body>
+
+</html>

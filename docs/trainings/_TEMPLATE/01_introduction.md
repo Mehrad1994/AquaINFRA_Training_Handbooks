@@ -1,65 +1,24 @@
 ---
 layout: default
-title: 1. Introduction
+title: "1. Introduction"
 ---
-
-<!-- 
-    CHAPTER TEMPLATE
-    Replace this content with your actual chapter content from the YouTube video
--->
 
 # 1. Introduction
 
-Brief introduction to this chapter (what will be covered).
+This is the first chapter of your training. Use this page to provide deeper scientific background, describe the study area, or list the specific datasets involved.
 
-## Overview
+## Scientific Context
+Explain why this analysis is important for marine or freshwater research.
 
-Provide context and background information.
-
-## Key Concepts
-
-### Concept 1
-
-Explanation of the first key concept.
-
-```python
-# Example code if applicable
-def example_function():
-    return "Hello, AquaINFRA!"
-```
-
-### Concept 2
-
-Explanation of the second key concept.
-
-## Visual Aids
-
-If you have diagrams, add them here:
-
-```mermaid
-graph LR
-    A[Start] --> B[Process]
-    B --> C[End]
-```
-
-Or include images:
-
-![Description of image](../assets/images/your-image.png)
-
-## Summary
-
-- Key point 1
-- Key point 2
-- Key point 3
+### Methodology
+Briefly outline the analytical steps that will be covered in the following chapters.
 
 ---
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="YOUTUBE_LINK_HERE" target="_blank">[MM:SS]</a> [Video Chapter Title]
+<!-- Navigation Buttons -->
+<div class="sequence-navigation">
+    <a href="index.html" class="btn-seq btn-seq--prev">&larr; Back to Overview</a>
+    <a href="02_main_content.html" class="btn-seq btn-seq--next">Next Chapter &rarr;</a>
 </div>
 
-<div class="btn-group">
-    <a href="PREVIOUS_CHAPTER.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="NEXT_CHAPTER.html" class="btn">Next Chapter &rarr;</a>
-</div>
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

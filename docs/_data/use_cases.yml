@@ -4,6 +4,9 @@
       url: "/trainings/gulf-of-riga/"
       description: "Step-by-step documentation for the Service by the Gulf of Riga."
       status: "Active"
+      zenodo_url: "https://zenodo.org/records/11102928"
+      github_url: "https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks/tree/main/docs/trainings/gulf-of-riga"
+      youtube_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" # Placeholder, update with actual
     - title: "Gulf of Finland"
       url: "/wp6_tasks"
       description: "Proposed training for Vantaanjoen river basin and coastal interaction."
@@ -34,7 +37,9 @@
       url: "/trainings/pan-european-use-case/"
       description: "Large scale European hydrological data integration and analysis."
       status: "Active"
-
+      zenodo_url: "https://zenodo.org/"
+      github_url: "https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks/tree/main/docs/trainings/pan-european-use-case"
+      youtube_url: "https://www.youtube.com/"
 - region: "Mediterranean"
   trainings:
     - title: "All Use Cases (Merged)"

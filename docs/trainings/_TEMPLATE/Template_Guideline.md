@@ -1,83 +1,40 @@
-# Training Template Directory
+# Training Template Guide
 
-This directory contains template files for creating new training materials.
+This directory provides the building blocks for new AquaINFRA training handbooks.
 
-## How to Use This Template
+## 🚀 Quick Start
 
-1. **Copy the entire `_TEMPLATE` directory**:
+1. **Copy the directory**:
    ```bash
-   cp -r docs/trainings/_TEMPLATE docs/trainings/your-training-name
+   cp -r docs/trainings/_TEMPLATE docs/trainings/your-use-case
    ```
 
-2. **Edit the files**:
-   - `index.md` - Landing page with overview and chapter links
-   - `01_introduction.md` - First chapter template
-   - Add more chapter files as needed (`02_*.md`, `03_*.md`, etc.)
+2. **Update the filenames and content**:
+   - `index.md`: The landing page with video embed.
+   - `01_introduction.md`: The first content page.
+   - Add more numbered files as needed.
 
-3. **Update front matter** in each file:
-   ```yaml
-   ---
-   layout: default
-   title: Your Chapter Title
-   ---
-   ```
+3. **Register in `docs/_data/use_cases.yml`**:
+   Add your training under the correct region to make it appear in the library and sidebar.
 
-4. **Register in navigation**:
-   Edit `docs/_data/use_cases.yml` to add your training to the sidebar
+## 🎨 Styling Best Practices
+We use a centralized design system. **Do not use inline styles**.
 
-5. **Test locally**:
-   ```bash
-   cd docs
-   jekyll serve
-   ```
+- **Cards**: Use the `step-content` class for introductory blocks.
+- **Buttons**: Use `.btn-seq` with `.btn-seq--next` or `.btn-seq--prev`.
+- **Callouts**: Use Jekyll/GitHub alerts:
+  ```markdown
+  > [!IMPORTANT]
+  > This is a critical technical note.
+  ```
 
-## File Naming Convention
+## 🛤️ Navigation Structure
+Every page should maintain the "Guided Path" feeling:
+- **Index Pages**: Should always have a `<a href="{{ '/trainings' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>` button.
+- **Chapter Pages**: Should have both **Previous** and **Next** buttons.
 
-- Use lowercase letters
-- Separate words with hyphens
-- Number chapter files: `01_`, `02_`, `03_`, etc.
-- Examples:
-  - `index.md` (required)
-  - `01_introduction.md`
-  - `02_getting_started.md`
-  - `03_advanced_features.md`
+## 📹 Video Referencing
+Use the `<div class="callout">` block provided in `index.md` for video stats. If linking to specific timestamps in chapters, use the syntax:
+`[MM:SS](https://youtube.com/...)`
 
-## Required Files
-
-- ✅ `index.md` - Landing page (required)
-- ✅ At least one chapter file (e.g., `01_introduction.md`)
-
-## Optional Files
-
-- `assets/images/` - Directory for training-specific images
-- `README.md` - Additional notes about the training
-
-## Tips
-
-- Keep chapter files focused (one topic per chapter)
-- Use descriptive titles
-
-## Navigation Buttons (Required)
-At the bottom of every chapter (except the introduction, which only has Next), include **Previous** and **Next** buttons using the `.btn-group` container.
-
-**Example:**
-```html
-<div class="btn-group">
-    <a href="01_introduction.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="03_next_topic.html" class="btn">Next Chapter &rarr;</a>
-</div>
-```
-
-## Video References (Required)
-If the handbook has an accompanying video, place a **Video Reference** callout at the *bottom* of the page, just *above* the navigation buttons.
-- Use the detailed timestamps provided in the video description.
-- **Link ONLY the timestamp**.
-
-**Example:**
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="VIDEO_URL&t=TIMESTAMP" target="_blank">MM:SS</a> Section Title
-</div>
-- Link between chapters for easy navigation
-
-For more details, see [CONTRIBUTING.md](../../../CONTRIBUTING.md)
+For more details on the site architecture, see [ARCHITECTURE.md](../../../ARCHITECTURE.md).
