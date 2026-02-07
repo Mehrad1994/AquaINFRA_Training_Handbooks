@@ -36,7 +36,7 @@ Coordinated by **Aalborg University (AAU)** in Denmark, our partnership brings t
 - **Infrastructures & Organizations**: HELCOM (Baltic Sea), CSC (Finland), Maanmittauslaitos (Finland).
 - **Technical Specialists**: 52°North (Germany), Blue Lobster IT (UK).
 
-[View the full partner list on the official site](https://aquainfra.eu/consortium)
+[View the full partner list on the official site](https://aquainfra.eu/partners)
 
 ---
 
