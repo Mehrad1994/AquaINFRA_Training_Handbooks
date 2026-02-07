@@ -19,7 +19,7 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible
 3.  **High-Performance Computing**: Access the resources needed for large-scale spatio-temporal modeling.
 
 > [!TIP]
-> Visit the [AquaINFRA VRE Portal](https://vre.aquainfra.eu) to explore community-tailored tools and start your first analysis.
+> Visit the [AquaINFRA VRE Portal](https://aquainfra.dev.52north.org/) to explore community-tailored tools and start your first analysis.
 
 ---
 
