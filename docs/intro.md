@@ -18,40 +18,10 @@ Our mission is to support marine and freshwater scientists and stakeholders in *
 - **Spatio-temporal Analysis**: Providing standardized services for biological, chemical, and physical data modeling.
 - **Reproducible Science**: Ensuring that every analytical workflow can be shared, reused, and validated by the community.
 
-### Project Methodology: From Data to Knowledge
+### Project Methodology: Official Architecture
 The AquaINFRA ecosystem connects disparate data sources through a unified analytical pipeline, ensuring interoperability with the **Digital Twin of the Ocean (DTO)** and **EOSC** components.
 
-```mermaid
-graph TD
-    subgraph "Data Sources (Inland & Marine)"
-        DS[FAIR Data Infrastructures]
-        EO[Earth Observation Data]
-    end
-
-    subgraph "AquaINFRA Interaction Platform (AIP)"
-        AIP[Search & Discovery Mechanism]
-    end
-
-    subgraph "Virtual Research Environment (VRE)"
-        VRE[Galaxy Platform / R / Python]
-        WP[Reproducible Workflows]
-    end
-
-    subgraph "Research Output"
-        O1[Open Science OERs]
-        O2[EOSC research graph]
-    end
-
-    DS --> AIP
-    EO --> AIP
-    AIP --> VRE
-    VRE --> WP
-    WP --> O1
-    WP --> O2
-    
-    style AIP fill:#e1e9f6,stroke:#3564AC,stroke-width:2px
-    style VRE fill:#e1e9f6,stroke:#3564AC,stroke-width:2px
-```
+![AquaINFRA Architecture]({{ '/assets/images/architecture.webp' | relative_url }})
 
 > [!NOTE]
 > AquaINFRA works in close collaboration with projects like **Blue-Cloud**, **ILIAD**, and **EDITO** to enhance the Digital Twins of the Ocean with high-quality aquatic data and models.
