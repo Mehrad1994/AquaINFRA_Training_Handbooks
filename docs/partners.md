@@ -3,11 +3,9 @@ layout: default
 title: Partners & Target
 ---
 
-# Partners & Target
+# 3. Partners & Target
 
-<div class="partners-intro">
-    <p class="lead">Understanding the ecosystem and the audience of the AquaINFRA project.</p>
-</div>
+The AquaINFRA project is a collaborative effort involving a consortium of **21 international partners** across Europe, including universities, SMEs, and research institutions.
 
 <div class="grid-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
     <div class="info-block">
@@ -30,11 +28,15 @@ title: Partners & Target
 
 <hr style="margin: 3rem 0;">
 
-## Our Partners
+## Our Consortium
+Coordinated by **Aalborg University (AAU)** in Denmark, our partnership brings together leading experts in aquatic science and data technology.
 
-The AquaINFRA project is a collaborative effort involving multiple European institutions dedicated to marine and freshwater research. 
+**Representative Partners:**
+- **Scientific Institutions**: BOKU (Austria), CSIC (Spain), CREAF (Spain), SYKE (Finland), NIVA (Norway), HEREON (Germany).
+- **Infrastructures & Organizations**: HELCOM (Baltic Sea), CSC (Finland), Maanmittauslaitos (Finland).
+- **Technical Specialists**: 52°North (Germany), Blue Lobster IT (UK).
 
-[Learn more about our consortium on the official site](https://aquainfra.eu/consortium)
+[View the full partner list on the official site](https://aquainfra.eu/consortium)
 
 ---
 

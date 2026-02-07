@@ -5,15 +5,18 @@ title: 1. Introduction to AquaINFRA
 
 # 1. Introduction to AquaINFRA
 
-The **AquaINFRA project** is developing a virtual environment equipped with FAIR (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. It aims to support marine and freshwater scientists in their research by providing a unified platform for data analysis.
+The **AquaINFRA project** (2023–2026) is developing a next-generation virtual environment equipped with **FAIR** (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. 
+
+Our mission is to support marine and freshwater scientists and stakeholders in **restoring healthy oceans, seas, coastal, and inland waters** by bridging the gap between isolated research infrastructures and national borders.
 
 > [!IMPORTANT]
-> **Main Resource:** For the most up-to-date project news, research goals, and partner information, visit the official **[AquaINFRA Website](https://aquainfra.eu)**.
+> **Main Resource:** For the most up-to-date project news and developments, visit the official **[AquaINFRA Website](https://aquainfra.eu)**.
 
-### Key Goals:
-- **Data Harmonization**: Bringing together disparate datasets.
-- **Reproducibility**: Ensuring scientific workflows can be repeated.
-- **Accessibility**: Providing high-performance tools to the entire community.
+### Core Objectives:
+- **Marine-Freshwater Integration**: Breaking silos to enable joint collaboration across the entire land-sea continuum.
+- **EOSC-Based Infrastructure**: Building a cross-country discovery mechanism as part of the European Open Science Cloud (EOSC).
+- **Spatio-temporal Analysis**: Providing standardized services for biological, chemical, and physical data modeling.
+- **Reproducible Science**: Ensuring that every analytical workflow can be shared, reused, and validated by the community.
 
 ---
 

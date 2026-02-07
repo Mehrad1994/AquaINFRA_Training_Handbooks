@@ -5,16 +5,21 @@ title: 2. Intro Aqua VRE (Galaxy)
 
 # 2. Intro Aqua VRE (Galaxy & Tools)
 
-The **AquaINFRA Virtual Research Environment (VRE)** is the technical heart of the project. It primarily utilizes the **Galaxy** platform—a web-based gateway to complex data analysis.
+The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible platform built on established open-source technologies. It serves as the analytical engine of the project, enabling researchers to run complex workflows through a user-friendly interface.
 
-### Accessing the VRE
-To start using the tools, you will typically need to:
-1.  **Register/Login**: Use your institutional credentials or a public provider.
-2.  **Explore the Tool Shed**: Find specific modules for spatial analysis, statistics, or modeling.
-3.  **Import Data**: Connect to Zenodo or other repositories directly within the VRE.
+### Key Technologies
+- **Galaxy Platform**: A powerful web-based gateway for accessible and reproducible genomic and spatial analysis.
+- **Aqua Interaction Platform (AIP)**: Seamlessly search and discover data across Earth observations and European hydrography.
+- **Binder & OGC API**: Integrated services for interactive computing and standardized data processing.
+- **Language Support**: Native support for **R** and **Python** environments.
+
+### Why use the VRE?
+1.  **FAIR Processing**: Workflows developed in our case studies are published via Zenodo with full provenance.
+2.  **Cross-Domain Discovery**: Discover aquatic digital resources across disciplines and national borders.
+3.  **High-Performance Computing**: Access the resources needed for large-scale spatio-temporal modeling.
 
 > [!TIP]
-> Visit the [AquaINFRA VRE Portal](https://vre.aquainfra.eu) to get started with your first analysis.
+> Visit the [AquaINFRA VRE Portal](https://vre.aquainfra.eu) to explore community-tailored tools and start your first analysis.
 
 ---
 

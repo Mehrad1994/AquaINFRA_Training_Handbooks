@@ -5,7 +5,13 @@ title: 4. Applied Use Case Material
 
 # 4. Applied Use Case Material
 
-Explore our library of specific training modules, each containing dedicated data, code, and video tutorial links.
+Explore our comprehensive library of focused training modules. These materials demonstrate the practical application of the AquaINFRA Research Infrastructure across diverse European aquatic environments.
+
+Each module is co-designed with domain experts and provides:
+- **Guided Workflows**: Step-by-step technical instructions.
+- **FAIR Data**: Searchable and reproducible datasets hosted on Zenodo.
+- **Open Code**: Source code and Jupyter/Galaxy workflows available on GitHub.
+- **Video Tutorials**: Recorded workshops and technical walkthroughs.
 
 <!-- Use Case Library Section (Moved from Homepage) -->
 <div class="use-case-library">
