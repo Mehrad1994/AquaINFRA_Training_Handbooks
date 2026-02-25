@@ -5,7 +5,7 @@ title: 3. Interaction Platform
 
 # AquaINFRA Interaction Platform (AIP)
 
-The **AquaINFRA Interaction Platform (AIP)** serves as the central gateway for scientific communities to find, access, and reuse aquatic digital resources.
+The **[AquaINFRA Interaction Platform (AIP)](https://aquainfra.dev.52north.org/)** serves as the central gateway for scientific communities to find, access, and reuse aquatic digital resources.
 
 ## Search Functionality
 *   **Usage**: In the search bar, users can enter terms (e.g., "Gulf of Riga") to find relevant workflows, data, and tools.

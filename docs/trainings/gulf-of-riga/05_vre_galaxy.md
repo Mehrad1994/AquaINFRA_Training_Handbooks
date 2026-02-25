@@ -8,7 +8,7 @@ title: 5. Aqua Galaxy (VRE)
 The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the AquaINFRA project.
 
 ## Platform Technicals
-*   **Base**: It is a subdomain of the popular **Galaxy platform**, an open-source, web-based platform for data intensive biomedical research which has been adapted here for aquatic sciences.
+*   **Base**: It is a subdomain of the popular **[Galaxy platform](https://aqua.usegalaxy.eu/)**, an open-source, web-based platform for data intensive biomedical research which has been adapted here for aquatic sciences.
 *   **Purpose**: To allow researchers to store, analyze, and process multidisciplinary FAIR data without needing complex local computing setups.
 
 ## Key Features

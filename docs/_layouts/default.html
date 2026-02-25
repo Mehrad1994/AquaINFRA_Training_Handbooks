@@ -34,6 +34,7 @@
 
 <body>
 
+
     <!-- Main Content Wrapper -->
     <main class="main-wrapper">
         {% if page.hero_title %}
@@ -52,6 +53,7 @@
             </div>
         </div>
     </main>
+
 
     <!-- Anchor JS for TOC links (optional, simple script) -->
     <script>
@@ -91,6 +93,30 @@
     </script>
     {% endif %}
     <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
+
+    <!-- GitHub-style Alerts Transformer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blockquotes = document.querySelectorAll('blockquote');
+            blockquotes.forEach(bq => {
+                const firstP = bq.querySelector('p');
+                if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                    const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                    if (match) {
+                        const type = match[1].toUpperCase();
+                        bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                        // Remove the trigger text [!TYPE]
+                        firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                        // Prepend a title/icon if desired
+                        const label = document.createElement('div');
+                        label.className = 'alert-box__label';
+                        label.innerHTML = `<strong>${type}</strong>`;
+                        bq.insertBefore(label, bq.firstChild);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

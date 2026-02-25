@@ -5,6 +5,7 @@ build/
 .jekyll-cache/
 .jekyll-metadata
 
+archive/
 # Ruby/Bundler
 .bundle/
 vendor/

@@ -6,7 +6,7 @@
     --aqua-blue: #3564AC;
     --aqua-blue-light: #e1e9f6;
     --aqua-hover: #2a5291;
-    --shadow-soft: 0 4px 15px rgba(0,0,0,0.05);
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
     --border-light: 1px solid #e1e9f6;
 }
 
@@ -149,13 +149,13 @@
     display: flex;
     flex-direction: column;
     border: var(--border-light);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
 }
 
 .use-case-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card-body {
@@ -191,9 +191,20 @@
     text-decoration: none;
 }
 
-.resource-btn--zenodo { background: #0072b2; color: white; }
-.resource-btn--github { background: #24292e; color: white; }
-.resource-btn--youtube { background: #ff0000; color: white; }
+.resource-btn--zenodo {
+    background: #0072b2;
+    color: white;
+}
+
+.resource-btn--github {
+    background: #24292e;
+    color: white;
+}
+
+.resource-btn--youtube {
+    background: #ff0000;
+    color: white;
+}
 
 .use-case-card__footer {
     background: #f8fafd;
@@ -216,7 +227,7 @@
     background: #fff;
     padding: 2.5rem;
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .contact-title {
@@ -247,4 +258,147 @@
     font-size: 1.15rem;
     line-height: 1.8;
     color: #333;
+}
+
+/* Hero Section (Homepage) - Matching aquainfra.eu/training */
+.hero-section {
+    background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 102, 204));
+    padding: 64px 32px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: white;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 34px;
+    max-width: 850px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 48px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* GitHub-style Alerts Styling */
+.alert-box {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid transparent;
+    background-color: #f8f9fa;
+    color: #24292f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.alert-box p {
+    margin-bottom: 0 !important;
+}
+
+.alert-box__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Specific Alert Types */
+.alert-box--note {
+    background-color: #f0f7ff;
+    border-left-color: #0969da;
+}
+
+.alert-box--note .alert-box__label {
+    color: #0969da;
+}
+
+.alert-box--note .alert-box__label::before {
+    content: 'ℹ️';
+    /* Note icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--tip {
+    background-color: #f0fdf4;
+    border-left-color: #1a7f37;
+}
+
+.alert-box--tip .alert-box__label {
+    color: #1a7f37;
+}
+
+.alert-box--tip .alert-box__label::before {
+    content: '💡';
+    /* Tip icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--important {
+    background-color: #f6f0ff;
+    border-left-color: #8250df;
+}
+
+.alert-box--important .alert-box__label {
+    color: #8250df;
+}
+
+.alert-box--important .alert-box__label::before {
+    content: '💎';
+    /* Important icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--warning {
+    background-color: #fff9eb;
+    border-left-color: #9a6700;
+}
+
+.alert-box--warning .alert-box__label {
+    color: #9a6700;
+}
+
+.alert-box--warning .alert-box__label::before {
+    content: '⚠️';
+    /* Warning icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--caution {
+    background-color: #fff8f8;
+    border-left-color: #cf222e;
+}
+
+.alert-box--caution .alert-box__label {
+    color: #cf222e;
+}
+
+.alert-box--caution .alert-box__label::before {
+    content: '🛑';
+    /* Caution icon */
+    margin-right: 0.75rem;
 }

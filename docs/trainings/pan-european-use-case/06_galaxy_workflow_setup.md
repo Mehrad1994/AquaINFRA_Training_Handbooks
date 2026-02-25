@@ -7,7 +7,7 @@ nav_order: 6
 
 # 6. Galaxy Workflow Setup
 
-Before you can run the outlier detection, you must import the workflow and its required data into **Aqua Galaxy**.
+Before you can run the outlier detection, you must import the workflow and its required data into **[Aqua Galaxy](https://aqua.usegalaxy.eu/)**.
 
 ## Importing the Workflow
 1.  From the D2K Package page, click the **Galaxy** link in the VRE section.
