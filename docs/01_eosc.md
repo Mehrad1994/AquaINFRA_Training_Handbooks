@@ -21,6 +21,22 @@ Watch this concise overview to understand the core mission and architecture of t
 
 ---
 
+## 🌍 Understanding the EOSC Initiative
+
+The **European Open Science Cloud (EOSC)** is a primary initiative under the EU’s Policy of Open Science and a key pillar of the European Data Strategy. Its core mission is to champion research data management, ensuring that European scientists can fully leverage the benefits of data-driven science.
+
+### Main Goals
+- **Global Leadership**: Establish the EU as a global leader in research data management.
+- **Reducing Fragmentation**: Unify the European research landscape by providing a standardized way to access and process data.
+- **Seamless Access & Reliable Re-use**: Provide researchers across borders and disciplines with a trusted, open ecosystem for research data and digital outputs.
+
+### Benefits for Researchers
+- **FAIR Data**: Champions the FAIR principles, making data Findable, Accessible, Interoperable, and Reusable.
+- **Interoperable Services**: Offers a suite of services that fluidly facilitate data hosting, processing, and management.
+- **Infrastructure Federation**: Allows various scientific research infrastructures like AquaINFRA to federate, sharing resources and knowledge securely and efficiently.
+
+---
+
 ## 🚀 The EOSC EU Node: Your Starting Point
 
 The [EOSC EU Node](https://open-science-cloud.ec.europa.eu/) is the first operational deployment of this infrastructure, designed to help you get started quickly and securely.
