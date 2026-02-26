@@ -54,7 +54,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-size: 1rem;
-    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+    font-size: clamp(0.8rem, 0.75rem + 0.15vw, 0.88rem);
 }
 
 h1,
@@ -64,38 +64,35 @@ h4,
 h5,
 h6 {
     color: var(--aqua-blue-dark);
-    /* Headings often dark in brand */
-    line-height: 1.25;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
     font-weight: 700;
-    /* Bolder headings as per brand */
 }
 
 h1 {
-    font-size: 2.5rem;
-    border-bottom: none;
-    /* Official site uses clean spacers, removing border */
-    padding-bottom: 0.5rem;
-    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding-bottom: 0.3rem;
+    margin-top: 0.4rem;
     color: var(--aqua-blue);
+    border-bottom: none;
 }
 
 h2 {
-    font-size: 1.75rem;
-    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
     border-bottom: 1px solid var(--gray-200);
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.15rem;
 }
 
 h3 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
+    font-size: 1.05rem;
+    margin-top: 1rem;
     color: var(--gray-900);
 }
 
 p {
-    margin-bottom: 1.5rem;
-    font-size: 1em;
+    margin-bottom: 1rem;
+    font-size: 1.05em;
     /* Scales with body */
 }
 
@@ -244,21 +241,21 @@ a:hover {
 
 .callout strong {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     color: var(--aqua-blue-dark);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Badges */
 .badge {
     display: inline-block;
-    padding: 0.25rem 0.6rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 600;
     background: var(--aqua-green-light);
     color: var(--aqua-blue-dark);
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
 }
 
 /* Tables */
