@@ -51,8 +51,8 @@ title: Home
         <h2 class="step-title">AquaINFRA Interaction Platform (AIP)</h2>
         <p class="step-desc">Discover the Aqua Interaction Platform.</p>
         <div class="step-links">
-            <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">Aqua’s Galaxy →</a>
             <a href="{{ '/03_aip' | relative_url }}" class="step-link"> AIP in Handbook →</a>
+            <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">Aqua’s Galaxy →</a>
         </div>
     </div>
 </div>
