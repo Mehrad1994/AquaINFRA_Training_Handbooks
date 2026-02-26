@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introduction AquaINFRA
+title: Introduction to AquaINFRA
 ---
 # Introduction AquaINFRA
 
@@ -10,6 +10,15 @@ Our mission is to support marine and freshwater scientists and stakeholders in *
 
 > [!IMPORTANT]
 > **Main Resource:** For the most up-to-date project news and developments, visit the official **[AquaINFRA Website](https://aquainfra.eu)**.
+
+## 📽️ Video Tutorial: Getting Started
+
+Learn how to search for data on the AIP, subset it via DDAS, and import it directly into your analysis history in Galaxy.
+
+
+<div class="video-container" style="text-align: center; margin: 2rem 0;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/v_0zyUVY--E?si=r0Zy6qJLRFdxNqYB&start=0&end=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+</div>
 
 ### Core Objectives:
 

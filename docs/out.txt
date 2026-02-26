@@ -1,0 +1,8 @@
+Configuration file: B:/Projects/AquaINFRA_Training_Handbooks/docs/_config.yml
+            Source: B:/Projects/AquaINFRA_Training_Handbooks/docs
+       Destination: B:/Projects/AquaINFRA_Training_Handbooks/docs/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.669 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

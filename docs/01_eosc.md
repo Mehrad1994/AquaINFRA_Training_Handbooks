@@ -70,7 +70,7 @@ Your personal **User Space** dashboard provides direct access to tools tailored 
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
     <a href="{{ '/' | relative_url }}" class="btn-seq btn-seq--prev">← Home</a>
-    <a href="{{ '/02_intro' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Introduction AquaINFRA →</a>
+    <a href="{{ '/02_aquainfra' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AquaINFRA →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Applied Use Case Material
+title: Applied Use Case 
 ---
-# Applied Use Case Material
+# Applied Use Cases
 
 Explore our comprehensive library of focused training modules. These materials demonstrate the practical application of the AquaINFRA Research Infrastructure across diverse European aquatic environments.
 
@@ -37,7 +37,7 @@ Each module is co-designed with domain experts and provides:
                 </div>
             </div>
             <a href="{{ training.url | relative_url }}" class="use-case-card__footer">
-                View Handbook &rarr;
+                View Handbook →
             </a>
         </div>
         {% endfor %}
@@ -45,13 +45,12 @@ Each module is co-designed with domain experts and provides:
 </div>
 {% endfor %}
 
-</div>
 
 ---
 
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/04_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Data to Knowledge Package</a>
-    <a href="{{ '/06_contact' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
+    <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Data to Knowledge Package</a>
+    <a href="{{ '/07_contact' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
 </div>

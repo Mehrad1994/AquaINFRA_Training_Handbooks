@@ -12,23 +12,29 @@ The **AquaINFRA Interaction Platform (AIP)** and **Data Discovery and Orchestrat
 
 Learn how to search for data on the AIP, subset it via DDAS, and import it directly into your analysis history in Galaxy.
 
+
 <div class="video-container" style="text-align: center; margin: 2rem 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KPdFnbUIASU?si=mgq8uAYpGcqz93qi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
 </div>
+
 
 ---
 
 ## 🛠️ Step-by-Step Guide
 
 ### 1. Preparation
+
 Before starting, ensure you are **logged into the Galaxy platform**. The integration requires an active session to automatically target your analysis history.
 
 ### 2. Finding Data on the AIP
+
 Visit the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** and use the search interface:
+
 - **Keywords**: Use specific terms like "Secchi" or "water quality".
 - **Providers**: Filter results to show only **AquaINFRA datasets** for the most direct integration path.
 
 ### 3. Importing Data to Galaxy
+
 Depending on the data source, there are two primary paths:
 
 > [!TIP]
@@ -40,7 +46,9 @@ Depending on the data source, there are two primary paths:
 > If a direct import button is missing, visit the metadata source to find the download link. Copy the data address (ensure it ends in an extension like `.zip`) and paste it into the **"Insert URL"** field in the AIP interface to bridge it to Galaxy.
 
 ### 4. Running OGC API Processes
+
 Once your data URLs are in Galaxy (appearing as `.txt` files in your history), use the **AquaINFRA OGC API processes** tool:
+
 1. **Select Process**: Choose from available operations like `points_at_polygon` or `period_grouping`.
 2. **Configure Parameters**: Map your imported URLs (Points, Regions, etc.) to the tool's input fields.
 3. **Execute**: The processing happens on the backend servers to reduce heavy data transfer, returning a URL to your final results.
@@ -50,8 +58,8 @@ Once your data URLs are in Galaxy (appearing as `.txt` files in your history), u
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/02_intro' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Introduction AquaINFRA</a>
-    <a href="{{ '/04_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Data to Knowledge Package →</a>
+    <a href="{{ '/02_aquainfra' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Introduction AquaINFRA</a>
+    <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AquaINFRA VRE →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

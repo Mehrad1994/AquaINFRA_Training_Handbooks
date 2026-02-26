@@ -28,7 +28,7 @@ hero_title: Contact & Support
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/05_trainings' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Use Case Library</a>
+    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Applied Use Cases</a>
     <a href="{{ '/' | relative_url }}" class="btn-seq btn-seq--next">Return Home →</a>
 </div>
 
