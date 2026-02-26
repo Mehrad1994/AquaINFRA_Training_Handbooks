@@ -6,7 +6,7 @@ hero_title: Contact & Support
 
 <div class="contact-grid">
     <!-- Left Column: Primary Contact Card -->
-    <div style="flex: 1; min-width: 300px;">
+    <div class="contact-card-wrapper">
         <div class="contact-card">
             <h2 class="contact-title">Get in Touch</h2>
             
@@ -21,6 +21,10 @@ hero_title: Contact & Support
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Right Column: Info Text -->
+<!-- Navigation Buttons -->
+<div class="sequence-navigation">
+    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Applied Use Case Training</a>
+    <a href="{{ '/' | relative_url }}" class="btn-seq btn-seq--next">Back to Home</a>
 </div>

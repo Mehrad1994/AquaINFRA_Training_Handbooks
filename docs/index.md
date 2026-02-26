@@ -24,7 +24,7 @@ title: Home
         <h2 class="step-title">European Open Science Cloud (EOSC)</h2>
         <p class="step-desc">Understand how AquaINFRA integrates with the European Open Science Cloud infrastructure.</p>
         <div class="step-links">
-            <a href="{{ '/01_eosc' | relative_url }}" class="step-link"> EOSC →</a>
+            <a href="{{ '/01_eosc' | relative_url }}" class="step-link"> EOSC in Handbook →</a>
         </div>
     </div>
 </div>
@@ -37,8 +37,7 @@ title: Home
         <h2 class="step-title">Introduction to AquaINFRA</h2>
         <p class="step-desc">Core mission and goals of the AquaINFRA project and the broader ecosystem.</p>
         <div class="step-links">
-            <a href="{{ '/02_aquainfra' | relative_url }}" class="step-link"> Introduction AquaINFRA →</a>
-            <span class="step-divider">|</span>
+            <a href="{{ '/02_aquainfra' | relative_url }}" class="step-link"> Intro AquaINFRA →</a>
             <a href="https://aquainfra.eu" target="_blank" class="step-link">Official Project Site →</a>
         </div>
     </div>
@@ -51,10 +50,10 @@ title: Home
     <div class="step-content">
         <h2 class="step-title">AquaINFRA Interaction Platform (AIP)</h2>
         <p class="step-desc">Discover the Aqua Interaction Platform.</p>
-        <span class="step-divider">|</span>
-        <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">Aqua’s Galaxy →</a>
-        <span class="step-divider">|</span>
-        <a href="{{ '/03_aip' | relative_url }}" class="step-link"> AIP  →</a>
+        <div class="step-links">
+            <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">Aqua’s Galaxy →</a>
+            <a href="{{ '/03_aip' | relative_url }}" class="step-link"> AIP in Handbook →</a>
+        </div>
     </div>
 </div>
 
@@ -65,9 +64,10 @@ title: Home
     <div class="step-content">
         <h2 class="step-title">Virtual Research Environment (VRE)</h2>
         <p class="step-desc">Utilize the Virtual Research Environment for seamless analysis execution.</p>
-        <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="step-link"> VRE →</a>
-        <span class="step-divider">|</span>
-        <a href="https://aquainfra.dev.52north.org" target="_blank" class="step-link">AquaINFRA VRE →</a>
+        <div class="step-links">
+            <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="step-link"> VRE in Handbook →</a>
+            <a href="https://aquainfra.dev.52north.org" target="_blank" class="step-link">AquaINFRA VRE →</a>
+        </div>
     </div>
 </div>
 
@@ -78,7 +78,9 @@ title: Home
     <div class="step-content">
         <h2 class="step-title">Data to Knowledge Package</h2>
         <p class="step-desc">Converting raw environmental data into actionable knowledge indicators.</p>
-        <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="step-link"> Data to Knowledge →</a>
+        <div class="step-links">
+            <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="step-link"> Data to Knowledge →</a>
+        </div>
     </div>
 </div>
 
@@ -89,7 +91,9 @@ title: Home
     <div class="step-content">
         <h2 class="step-title">Applied Use Case Training</h2>
         <p class="step-desc">Dive into specific training modules with dedicated code, data, and video resources.</p>
-        <a href="{{ '/06_use_cases' | relative_url }}" class="step-link"> Explore Training Library →</a>
+        <div class="step-links">
+            <a href="{{ '/06_use_cases' | relative_url }}" class="step-link"> Explore Training Library →</a>
+        </div>
     </div>
 </div>
 

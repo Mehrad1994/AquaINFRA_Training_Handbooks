@@ -46,7 +46,7 @@ Each module is co-designed with domain experts and provides:
 
 <!-- Navigation Buttons -->
 
-<div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Data to Knowledge Package</a>
+<div class="sequence-navigation">
+    <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
     <a href="{{ '/07_contact' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
 </div>

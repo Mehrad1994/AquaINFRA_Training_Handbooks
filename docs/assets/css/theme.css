@@ -89,9 +89,10 @@
 
 .step-links {
     display: flex;
-    gap: 1.1rem;
+    gap: 0.7rem;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 }
 
 .step-divider {
@@ -292,16 +293,25 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 48px 20px;
+        padding: 32px 16px;
+        margin-bottom: 32px;
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 20px;
     }
 
     .hero-subtitle {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 12.5px;
+        line-height: 1.5;
+    }
+
+    .step-title {
+        font-size: 0.95rem;
+    }
+
+    .step-desc {
+        font-size: 0.82rem;
     }
 }
 

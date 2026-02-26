@@ -12,8 +12,8 @@ Creating readily sharable and reusable workflows is a key ambition of the **Aqua
 
 Explore how D2KPs organize resources and provide multiple entry points for researchers, from high-level workflow execution to low-level code exploration.
 
-<div class="video-container" style="text-align: center; margin: 2rem 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ---
@@ -49,9 +49,9 @@ The foundation of every package includes:
 
 <!-- Navigation Buttons -->
 
-<div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: AquaINFRA VRE</a>
-    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Use Cases →</a>
+<div class="sequence-navigation">
+    <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: VRE</a>
+    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Applied Use Case Training →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

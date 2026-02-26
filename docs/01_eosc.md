@@ -15,8 +15,8 @@ For AquaINFRA users, EOSC is the overarching infrastructure that makes our multi
 
 Watch this concise overview to understand the core mission and architecture of the EOSC initiative.
 
-<div class="video-container" style="text-align: center; margin: 2rem 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/67mirPt-FhY?si=_7O6aVIqHEyQ0SW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/67mirPt-FhY?si=_7O6aVIqHEyQ0SW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ---
@@ -68,7 +68,7 @@ Your personal **User Space** dashboard provides direct access to tools tailored 
 
 <!-- Navigation Buttons -->
 
-<div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
+<div class="sequence-navigation">
     <a href="{{ '/' | relative_url }}" class="btn-seq btn-seq--prev">← Home</a>
     <a href="{{ '/02_aquainfra' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AquaINFRA →</a>
 </div>
