@@ -38,8 +38,8 @@ The foundation of every package includes:
 ## 🔍 Finding and Using D2KPs
 
 > [!TIP]
-> **Zenodo Integration**
-> All official AquaINFRA workflows are released on **Zenodo** to provide citable records (DOIs). You can find these packages directly via the **[AIP Search Interface](https://aquainfra.dev.52north.org/)** by filtering for "Data to Knowledge Package".
+> **D2KP Publication**
+> All official AquaINFRA workflows are released as **Data-to-Knowledge Packages (D2KP)** to provide citable records (DOIs). You can find these packages directly via the **[AIP Search Interface](https://aquainfra.dev.52north.org/)** by filtering for "Data to Knowledge Package".
 
 > [!NOTE]
 > **Interconnectivity**

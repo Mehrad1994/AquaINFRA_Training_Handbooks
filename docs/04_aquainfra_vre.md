@@ -23,7 +23,7 @@ Built on the **Galaxy platform**, **Binder**, and **OGC API processes**, the VRE
 Researchers can:
 1. **Run Workflows**: Execute workflows developed in AquaINFRA’s case studies.
 2. **Modify & Extend**: Tailor existing workflows to meet specific research needs.
-3. **Publish Outputs**: Share results and analyses via Zenodo with full data provenance.
+3. **Publish Outputs**: Share results and analyses via **D2KP** with full data provenance.
 
 > [!TIP]
 > **Extensibility**

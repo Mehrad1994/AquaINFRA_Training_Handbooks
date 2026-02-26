@@ -9,9 +9,7 @@ Explore our comprehensive library of focused training modules. These materials d
 Each module is co-designed with domain experts and provides:
 
 - **Guided Workflows**: Step-by-step technical instructions.
-- **FAIR Data**: Searchable and reproducible datasets hosted on Zenodo.
-- **Open Code**: Source code and Jupyter/Galaxy workflows available on GitHub.
-- **Video Tutorials**: Recorded workshops and technical walkthroughs.
+- **D2KP**: Searchable and reproducible Data-to-Knowledge Packages.
 
 <!-- Use Case Library Section (Moved from Homepage) -->
 
@@ -27,17 +25,17 @@ Each module is co-designed with domain experts and provides:
             {% for training in region_group.trainings %}
             <div class="use-case-card">
                 <div class="card-body">
-                    <h3 class="use-case-card__title">{{ training.title }}</h3>
+                    <h1 class="use-case-card__title">{{ training.title }}</h1>
                     <p class="use-case-card__desc">{{ training.description }}</p>
 
 <div class="resource-links">
-                    {% if training.zenodo_url %}
-                    <a href="{{ training.zenodo_url }}" target="_blank" class="resource-btn resource-btn--zenodo" title="Data on Zenodo">Zenodo</a>
+                    {% if training.d2kp_url %}
+                    <a href="{{ training.d2kp_url }}" target="_blank" class="resource-btn resource-btn--zenodo" title="Data to Knowledge Package">D2KP</a>
                     {% endif %}
                 </div>
             </div>
             <a href="{{ training.url | relative_url }}" class="use-case-card__footer">
-                View Handbook →
+                View In Handbook →
             </a>
         </div>
         {% endfor %}
@@ -45,8 +43,6 @@ Each module is co-designed with domain experts and provides:
 </div>
 {% endfor %}
 
-
----
 
 <!-- Navigation Buttons -->
 

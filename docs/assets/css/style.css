@@ -505,18 +505,20 @@ img {
 /* Sidebar Styles */
 .page-sidebar {
     background: var(--gray-100);
-    padding: 1.5rem;
+    padding: 0.6rem;
     border-radius: 6px;
     border: 1px solid var(--gray-200);
     position: sticky;
-    top: 2rem;
+    top: 1.5rem;
     height: fit-content;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 3rem);
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray-200) transparent;
 }
 
 .sidebar__section {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.3rem !important;
 }
 
 .sidebar__section:last-child {
@@ -524,22 +526,21 @@ img {
 }
 
 .sidebar__heading {
-    font-size: clamp(0.75rem, 1vw, 0.8rem);
-    text-transform: uppercase;
-    color: rgb(7, 6, 8);
-    letter-spacing: 0.12em;
-    margin-bottom: 0.75rem;
-    border-bottom: 2px solid var(--aqua-blue);
-    padding-bottom: 0.4rem;
-    margin-top: 0;
+    font-size: 0.72rem !important;
+    color: var(--gray-900);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem !important;
+    border-bottom: 1.5px solid var(--aqua-blue);
+    padding-bottom: 0.1rem !important;
+    margin-top: 0 !important;
     font-weight: 700;
 }
 
 .sidebar__text {
-    font-size: 0.9rem;
+    font-size: 0.75rem !important;
     color: var(--gray-600);
-    margin-bottom: 1.25rem;
-    line-height: 1.6;
+    margin-bottom: 0.2rem !important;
+    line-height: 1.15;
 }
 
 .sidebar__list {
@@ -549,16 +550,17 @@ img {
 }
 
 .sidebar__list li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.05rem !important;
 }
 
 .sidebar__link {
     display: block;
     color: var(--gray-800);
-    font-size: clamp(0.85rem, 1.2vw, 0.92rem);
+    font-size: 0.78rem !important;
     text-decoration: none;
     transition: all 0.2s ease;
     font-weight: 500;
+    line-height: 1.15 !important;
 }
 
 .sidebar__link:hover {
@@ -568,7 +570,7 @@ img {
 }
 
 .sidebar__region {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.15rem !important;
 }
 
 .sidebar__region-title {
@@ -576,7 +578,7 @@ img {
     font-weight: 600;
     color: rgb(7, 6, 8);
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* Content Area */

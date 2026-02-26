@@ -90,7 +90,7 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible
 
 ### Why use the VRE?
 
-1. **FAIR Processing**: Workflows developed in our case studies are published via Zenodo with full provenance.
+1. **FAIR Processing**: Workflows developed in our case studies are published as **D2KP** with full provenance.
 2. **Cross-Domain Discovery**: Discover aquatic digital resources across disciplines and national borders.
 3. **High-Performance Computing**: Access the resources needed for large-scale spatio-temporal modeling.
 
