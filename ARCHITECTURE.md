@@ -4,7 +4,7 @@ This document describes the technical blueprint and system design of the AquaINF
 
 ## 🛠️ Technology Stack
 - **Framework**: [Jekyll](https://jekyllrb.com/) (Static Site Generator).
-- **Styling**: Vanilla CSS with a centralized Design System (`theme.css`).
+- **Styling**: Vanilla CSS with a modularized Design System (`sidebar.css`, `theme.css`, `style.css`).
 - **Templating**: Liquid (Jekyll default).
 - **Hosting**: GitHub Pages.
 
@@ -16,26 +16,30 @@ This document describes the technical blueprint and system design of the AquaINF
 │   ├── _includes/          # Reusable components (sidebar, header)
 │   ├── _layouts/           # Page templates (default.html)
 │   ├── assets/             # Global CSS, Images, and JS
-│   │   └── css/            # theme.css, style.css
+│   │   └── css/            # sidebar.css, theme.css, style.css
 │   ├── trainings/          # Use Case folders
 │   │   └── _TEMPLATE/      # Starter kit for new trainings
-│   ├── index.md            # Home page (The 4-Step Entry)
-│   ├── intro.md            # Step 1: Intro AquaINFRA
-│   ├── vre.md              # Step 2: Intro Aqua VRE
-│   ├── partners.md         # Step 3: Partners & Target
-│   └── trainings.md        # Step 4: Use Case Library
+│   ├── index.md            # Home page (High-level entry)
+│   ├── 01_eosc.md          # Step 1: EOSC Context
+│   ├── 02_aquainfra.md     # Step 2: AquaINFRA Overview
+│   ├── 03_aip.md           # Step 3: AIP platform
+│   ├── 04_aquainfra_vre.md # Step 4: VRE tools
+│   ├── 05_data_to_knowledge.md # Step 5: D2KP indicators
+│   ├── 06_use_cases.md     # Step 6: Full Library
+│   └── 07_contact.md       # Step 7: Support
 └── README.md               # Project overview
 ```
 
-## 🛤️ The 4-Step Sequence Logic
-The site is structured to enforce a logical learning flow. Each of the main step pages (`intro.md` to `trainings.md`) uses the `btn-seq` class for navigation:
+## 🛤️ The Guided Sequence Logic
+The site is structured to enforce a logical learning flow. Each of the main step pages uses the `btn-seq` class for navigation:
 - **Consistent UI**: Every page must have a `sequence-navigation` container at the bottom.
-- **Entry Point**: The homepage (`index.md`) introduces these steps but does not contain the training material itself.
+- **Path Steps**: The homepage (`index.md`) defines the sequence while the sub-pages provide the content.
 
-## 🎨 Design System
-We avoid inline styling to maintainbrand consistency.
-- **`theme.css`**: Contains all premium UI elements (Steps, Cards, Buttons, Wave decorations).
-- **`style.css`**: Legacy/Base styles for layout and typography.
+## 🎨 Modular Design System
+We use decoupled CSS for maximum control and performance:
+- **`sidebar.css`**: Controls the navigation bar sizes, Title Case headers, and compact layout rules.
+- **`theme.css`**: Contains premium UI elements (Hero, Step Cards, Callouts, Wave decorations).
+- **`style.css`**: Global base styles for typography, layout grid, and fundamental resets.
 - **Primary Color**: `#3564AC` (AquaINFRA Blue).
 
 ## 🗂️ Data-Driven Sidebar

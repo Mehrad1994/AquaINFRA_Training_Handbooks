@@ -22,15 +22,12 @@ We use a centralized design system. **Do not use inline styles**.
 
 - **Cards**: Use the `step-content` class for introductory blocks.
 - **Buttons**: Use `.btn-seq` with `.btn-seq--next` or `.btn-seq--prev`.
-- **Callouts**: Use Jekyll/GitHub alerts:
-  ```markdown
-  > [!IMPORTANT]
-  > This is a critical technical note.
-  ```
+- **Callouts**: Use Jekyll/GitHub alerts (`> [!NOTE]`).
+- **Unified Logic**: Ensure all content fits the "smaller" font proportions (Headers ~1.4rem).
 
 ## 🛤️ Navigation Structure
 Every page should maintain the "Guided Path" feeling:
-- **Index Pages**: Should always have a `<a href="{{ '/trainings' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>` button.
+- **Index Pages**: Should always have a `<a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>` button.
 - **Chapter Pages**: Should have both **Previous** and **Next** buttons.
 
 ## 📹 Video Referencing

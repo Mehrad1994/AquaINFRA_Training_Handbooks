@@ -20,7 +20,7 @@ cp -r docs/trainings/_TEMPLATE docs/trainings/your-training-name
 
 ### 3. Register your Training
 
-Add your training to `docs/_data/use_cases.yml` so it appears in the sidebar and the Step 4 library:
+Add your training to `docs/_data/use_cases.yml` so it appears in the sidebar and the library:
 
 ```yaml
 - region: "Your Region"
@@ -28,9 +28,9 @@ Add your training to `docs/_data/use_cases.yml` so it appears in the sidebar and
     - title: "Training Title"
       description: "Short summary."
       url: "/trainings/your-training-name/"
-      zenodo_url: "..."
-      github_url: "..."
-      youtube_url: "..."
+      d2kp_url: "..." # Required: Link to Zenodo/D2KP package
+      github_url: "..." # Optional: Data/Code path
+      youtube_url: "..." # Optional: Video path
 ```
 
 ## 🎨 Styling Rules
@@ -38,9 +38,10 @@ Add your training to `docs/_data/use_cases.yml` so it appears in the sidebar and
 To keep the site looking "premium" and professional:
 
 - **No Inline Styles**: Do not use `style="..."` attributes.
+- **Unified Logic**: All fonts and spacing must match the centralized design system.
 - **Use Theme Classes**:
   - Buttons: `.btn-seq .btn-seq--next` or `.btn-seq--prev`.
-  - Cards: `.use-case-card`.
+  - Cards: `.use-case-card` or `.step-content`.
   - Callouts: Use the `> [!NOTE]` or `> [!IMPORTANT]` syntax.
 - **Wave Decoration**: Add the `<div class="wave-decoration"></div>` at the very bottom of main landing pages.
 
@@ -62,4 +63,4 @@ bundle exec jekyll serve --livereload
 
 ## 📜 Code of Conduct
 
-Focus on clarity, scientific accuracy, and reproducibility. Ensure all links to external data (Zenodo/GitHub) are functional.
+Focus on clarity, scientific accuracy, and reproducibility. Ensure all links to external resources (D2KP/GitHub) are functional.

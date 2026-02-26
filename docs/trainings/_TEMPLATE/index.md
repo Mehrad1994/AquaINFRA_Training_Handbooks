@@ -68,9 +68,9 @@ title: "TEMPLATE: Training Title"
 
 ---
 
-<!-- Navigation Buttons (Aligned with Step 4 Sequence) -->
+<!-- Navigation Buttons (Aligned with Step 6 Sequence) -->
 <div class="sequence-navigation" style="margin-top: 4rem;">
-    <a href="{{ '/trainings' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
+    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
