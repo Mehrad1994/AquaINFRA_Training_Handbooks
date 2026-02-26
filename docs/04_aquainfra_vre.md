@@ -34,7 +34,7 @@ Researchers can:
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ '/03_aip_ddas' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: AIP & DDAS</a>
+    <a href="{{ '/03_aip' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: AIP</a>
     <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Data to Knowledge Package →</a>
 </div>
 

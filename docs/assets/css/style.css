@@ -516,7 +516,7 @@ img {
 }
 
 .sidebar__section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .sidebar__section:last-child {
@@ -524,13 +524,13 @@ img {
 }
 
 .sidebar__heading {
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1vw, 0.8rem);
     text-transform: uppercase;
     color: rgb(7, 6, 8);
     letter-spacing: 0.12em;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
     border-bottom: 2px solid var(--aqua-blue);
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
     margin-top: 0;
     font-weight: 700;
 }
@@ -549,13 +549,13 @@ img {
 }
 
 .sidebar__list li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
 }
 
 .sidebar__link {
     display: block;
     color: var(--gray-800);
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 1.2vw, 0.92rem);
     text-decoration: none;
     transition: all 0.2s ease;
     font-weight: 500;

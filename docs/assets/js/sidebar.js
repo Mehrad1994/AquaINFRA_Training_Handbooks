@@ -4,10 +4,10 @@
 function toggleRegion(btn) {
     const region = btn.parentElement;
     const content = btn.nextElementSibling;
-    
+
     // Toggle expanded class
     region.classList.toggle('expanded');
-    
+
     if (region.classList.contains('expanded')) {
         content.style.maxHeight = content.scrollHeight + "px";
         const chevron = btn.querySelector('.sidebar__chevron');

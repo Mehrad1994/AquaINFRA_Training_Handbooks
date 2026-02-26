@@ -103,7 +103,7 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible
 
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
     <a href="{{ '/01_eosc' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: EOSC</a>
-    <a href="{{ '/03_aip_ddas' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AIP & DDAS →</a>
+    <a href="{{ '/03_aip' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AIP →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
