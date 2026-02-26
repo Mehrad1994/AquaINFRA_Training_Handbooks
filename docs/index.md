@@ -60,9 +60,9 @@ title: Home
 <div class="path-step">
     <div class="step-marker">4</div>
     <div class="step-content">
-        <h2 class="step-title">AquaINFRA VRE</h2>
+        <h2 class="step-title">Virtual Research Environment (VRE)</h2>
         <p class="step-desc">Utilize the Virtual Research Environment for seamless analysis execution.</p>
-        <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="step-link">Step 4: AquaINFRA VRE →</a>
+        <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="step-link">Step 4: VRE →</a>
     </div>
 </div>
 
@@ -82,9 +82,9 @@ title: Home
 <div class="path-step">
     <div class="step-marker">6</div>
     <div class="step-content">
-        <h2 class="step-title">Applied Use Cases</h2>
+        <h2 class="step-title">Applied Use Case Training</h2>
         <p class="step-desc">Dive into specific training modules with dedicated code, data, and video resources.</p>
-        <a href="{{ '/06_use_cases' | relative_url }}" class="step-link">Step 6: Explore Use Case Library →</a>
+        <a href="{{ '/06_use_cases' | relative_url }}" class="step-link">Step 6: Explore Training Library →</a>
     </div>
 </div>
 
