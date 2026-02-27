@@ -1,7 +1,5 @@
-{% assign base = site.github.baseurl | default: site.baseurl | default: "" %}
-{% if base == "/" %}{% assign base = "" %}{% endif %}
-{% comment %}
-This file defines a global 'base' variable that correctly handles
-both local development and GitHub Pages subfolder hosting.
-Use it as: {{ base }}/assets/css/style.css
-{% endcomment %}
+{% assign path_depth = page.url | append: 'X' | split: '/' | size | minus: 2 %}
+{% if path_depth < 0 %}{% assign path_depth=0 %}{% endif %} {% capture relative_root %}{% for i in (1..path_depth)
+    %}../{% endfor %}{% endcapture %} {% assign base=relative_root | append: "./" | replace: "//" , "/" %} {% comment %}
+    This file calculates 'relative_root' dynamically based on page depth. 'base' is an alias that ensures links stay
+    root-relative without leading slashes. Use as: {{ base }}assets/css/style.css {% endcomment %}

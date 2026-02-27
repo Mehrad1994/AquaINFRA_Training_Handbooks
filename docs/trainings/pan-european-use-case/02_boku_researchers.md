@@ -32,8 +32,8 @@ Based at the **Institute of Hydrobiology and Aquatic Ecosystem Management (IHG)*
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}/trainings/pan-european-use-case/01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
-    <a href="{{ base }}/trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--next">Next Chapter: Biodiversity →</a>
+    <a href="{{ base }}trainings/pan-european-use-case/01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
+    <a href="{{ base }}trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--next">Next Chapter: Biodiversity →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

@@ -39,8 +39,8 @@ Researchers can then use thresholds (e.g., Poor, Fair, Moderate, Strong, Perfect
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}/trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>
-    <a href="{{ base }}/trainings/pan-european-use-case/05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
+    <a href="{{ base }}trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>
+    <a href="{{ base }}trainings/pan-european-use-case/05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

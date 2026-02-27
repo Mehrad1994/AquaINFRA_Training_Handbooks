@@ -3,7 +3,7 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Home</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}/index" class="sidebar__link">Home Page</a></li>
+            <li><a href="{{ base }}index" class="sidebar__link">Home Page</a></li>
         </ul>
     </section>
 
@@ -11,8 +11,8 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Getting Started</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}/01_eosc" class="sidebar__link">EOSC</a></li>
-            <li><a href="{{ base }}/02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+            <li><a href="{{ base }}01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="{{ base }}02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
         </ul>
     </section>
 
@@ -20,10 +20,10 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Basic Training</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}/03_aip" class="sidebar__link">AIP</a></li>
-            <li><a href="{{ base }}/04_aquainfra_vre" class="sidebar__link">VRE</a></li>
-            <li><a href="{{ base }}/05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
-            <li><a href="{{ base }}/06_use_cases" class="sidebar__link">Use Cases</a></li>
+            <li><a href="{{ base }}03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="{{ base }}04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="{{ base }}05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="{{ base }}06_use_cases" class="sidebar__link">Use Cases</a></li>
         </ul>
     </section>
 
@@ -43,7 +43,7 @@
                 <ul class="sidebar__list">
                     {% for training in region.trainings %}
                     <li>
-                        <a href="{{ base }}{{ training.url }}" class="sidebar__link">
+                        <a href="{{ base }}{{ training.url | remove_first: '/' }}" class="sidebar__link">
                             {{ training.title }}
                         </a>
                     </li>
@@ -65,7 +65,7 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Contact</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}/07_contact" class="sidebar__link">Contact Us</a></li>
+            <li><a href="{{ base }}07_contact" class="sidebar__link">Contact Us</a></li>
         </ul>
     </section>
 </aside>
