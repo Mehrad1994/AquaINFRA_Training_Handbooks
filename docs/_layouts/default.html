@@ -1,5 +1,5 @@
 {% assign path_parts = page.url | split: '/' %}
-{% assign path_depth = path_parts.size | minus: 2 %}
+{% assign path_depth = path_parts.size | minus: 1 %}
 {% if path_depth < 0 %}{% assign path_depth=0 %}{% endif %} {% capture relative_root %}{% for i in (1..path_depth)
     %}../{% endfor %}{% endcapture %} <!DOCTYPE html>
     <html lang="en">
