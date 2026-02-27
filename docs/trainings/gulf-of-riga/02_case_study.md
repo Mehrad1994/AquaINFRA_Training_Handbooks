@@ -47,7 +47,9 @@ To answer the question, the team developed a reproducible **DGA (Data Gathering 
     <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=118s" target="_blank">1:58</a> Exploring the Gulf of Riga Usec Cae: Story and Research Question
 </div>
 
-<div class="btn-group">
-    <a href="01_introduction.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="03_aip_platform.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/gulf-of-riga/01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
+    <a href="{{ relative_root }}trainings/gulf-of-riga/03_aip_platform" class="btn-seq btn-seq--next">Next Chapter: AIP Platform →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

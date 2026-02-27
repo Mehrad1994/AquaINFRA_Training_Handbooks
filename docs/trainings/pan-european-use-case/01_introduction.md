@@ -27,6 +27,9 @@ The primary goal of this use case is to include fragmented datasets to provide *
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=0s" target="_blank">0:00</a> Introduction to AquaINFRA and Use-case
 </div>
 
-<div class="btn-group">
-    <a href="02_boku_researchers.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/" class="btn-seq btn-seq--prev">← Overview</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/02_boku_researchers" class="btn-seq btn-seq--next">Next Chapter: Meet the Researchers →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

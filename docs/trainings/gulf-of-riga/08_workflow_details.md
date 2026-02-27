@@ -73,7 +73,9 @@ The workflow automatically generates:
     <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank">21:29</a> Detailed Review of the Workflow Components
 </div>
 
-<div class="btn-group">
-    <a href="07_hands_on_tutorial.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="09_results.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/gulf-of-riga/07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>
+    <a href="{{ relative_root }}trainings/gulf-of-riga/09_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

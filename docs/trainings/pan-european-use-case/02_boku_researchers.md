@@ -31,7 +31,9 @@ Based at the **Institute of Hydrobiology and Aquatic Ecosystem Management (IHG)*
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s" target="_blank">1:15</a> Meet the Researchers
 </div>
 
-<div class="btn-group">
-    <a href="01_introduction.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="03_biodiversity_importance.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--next">Next Chapter: Biodiversity →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

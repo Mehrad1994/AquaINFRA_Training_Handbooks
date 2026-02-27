@@ -38,7 +38,9 @@ Researchers can then use thresholds (e.g., Poor, Fair, Moderate, Strong, Perfect
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s" target="_blank">6:20</a> Review the Specleaner R Package
 </div>
 
-<div class="btn-group">
-    <a href="03_biodiversity_importance.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="05_data_to_knowledge.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

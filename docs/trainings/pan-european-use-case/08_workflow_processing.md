@@ -42,7 +42,9 @@ The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1000s" target="_blank">16:40</a> Review the Workflow Structure Part 2
 </div>
 
-<div class="btn-group">
-    <a href="07_workflow_acquisition.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="09_reviewing_results.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

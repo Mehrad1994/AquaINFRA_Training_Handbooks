@@ -34,7 +34,9 @@ This acts as the computational backbone, supporting long-term trend identificati
     <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s" target="_blank">6:51</a> Introduction to the Data to Knowledge Package
 </div>
 
-<div class="btn-group">
-    <a href="03_aip_platform.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="05_vre_galaxy.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/gulf-of-riga/03_aip_platform" class="btn-seq btn-seq--prev">← Previous: AIP Platform</a>
+    <a href="{{ relative_root }}trainings/gulf-of-riga/05_vre_galaxy" class="btn-seq btn-seq--next">Next Chapter: VRE Galaxy →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

@@ -34,7 +34,9 @@ Researchers can use these flags to create a more robust "cleaned" dataset for th
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s" target="_blank">18:42</a> Review the Workflow Results
 </div>
 
-<div class="btn-group">
-    <a href="08_workflow_processing.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="10_conclusion.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/08_workflow_processing" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 2</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/10_conclusion" class="btn-seq btn-seq--next">Next Chapter: Conclusion →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

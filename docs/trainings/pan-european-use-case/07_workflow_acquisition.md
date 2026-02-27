@@ -33,7 +33,9 @@ The workflow consists of **8 interconnected steps** categorized into two phases.
     <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=941s" target="_blank">15:41</a> Review the Workflow Structure Part 1
 </div>
 
-<div class="btn-group">
-    <a href="06_galaxy_workflow_setup.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="08_workflow_processing.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/pan-european-use-case/06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>
+    <a href="{{ relative_root }}trainings/pan-european-use-case/08_workflow_processing" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 2 →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

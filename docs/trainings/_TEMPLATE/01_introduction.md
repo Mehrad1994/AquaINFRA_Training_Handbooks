@@ -17,8 +17,8 @@ Briefly outline the analytical steps that will be covered in the following chapt
 
 <!-- Navigation Buttons -->
 <div class="sequence-navigation">
-    <a href="index.html" class="btn-seq btn-seq--prev">&larr; Back to Overview</a>
-    <a href="02_main_content.html" class="btn-seq btn-seq--next">Next Chapter &rarr;</a>
+    <a href="{{ relative_root }}trainings/YOUR_FOLDER/" class="btn-seq btn-seq--prev">&larr; Back to Overview</a>
+    <a href="{{ relative_root }}trainings/YOUR_FOLDER/02_main_content" class="btn-seq btn-seq--next">Next Chapter &rarr;</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

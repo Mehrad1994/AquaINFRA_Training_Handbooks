@@ -23,7 +23,9 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
     <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s" target="_blank">9:32</a> Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
 </div>
 
-<div class="btn-group">
-    <a href="04_d2k_package.html" class="btn btn--outline">&larr; Previous Chapter</a>
-    <a href="06_workflow_concept.html" class="btn">Next Chapter &rarr;</a>
+<div class="sequence-navigation">
+    <a href="{{ relative_root }}trainings/gulf-of-riga/04_d2k_package" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>
+    <a href="{{ relative_root }}trainings/gulf-of-riga/06_workflow_concept" class="btn-seq btn-seq--next">Next Chapter: Workflow Concept →</a>
 </div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
