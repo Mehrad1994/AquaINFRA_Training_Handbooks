@@ -43,8 +43,8 @@ The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/pan-european-use-case/07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>
-    <a href="{{ base }}trainings/pan-european-use-case/09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
+    <a href="./07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>
+    <a href="./09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

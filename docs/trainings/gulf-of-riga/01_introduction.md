@@ -26,8 +26,8 @@ The AquaINFRA virtual environment enables target stakeholders to:
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/gulf-of-riga/" class="btn-seq btn-seq--prev">← Overview</a>
-    <a href="{{ base }}trainings/gulf-of-riga/02_case_study" class="btn-seq btn-seq--next">Next Chapter: Case Study →</a>
+    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
+    <a href="./02_case_study" class="btn-seq btn-seq--next">Next Chapter: Case Study →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

@@ -28,8 +28,8 @@ The primary goal of this use case is to include fragmented datasets to provide *
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/pan-european-use-case/" class="btn-seq btn-seq--prev">← Overview</a>
-    <a href="{{ base }}trainings/pan-european-use-case/02_boku_researchers" class="btn-seq btn-seq--next">Next Chapter: Meet the Researchers →</a>
+    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
+    <a href="./02_boku_researchers" class="btn-seq btn-seq--next">Next Chapter: Meet the Researchers →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

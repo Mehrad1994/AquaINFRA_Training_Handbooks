@@ -28,8 +28,8 @@ The workflow is available in the **AquaINFRA Interaction Platform** and can be i
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/gulf-of-riga/05_vre_galaxy" class="btn-seq btn-seq--prev">← Previous: VRE Galaxy</a>
-    <a href="{{ base }}trainings/gulf-of-riga/07_hands_on_tutorial" class="btn-seq btn-seq--next">Next Chapter: Hands-On Tutorial →</a>
+    <a href="./05_vre_galaxy" class="btn-seq btn-seq--prev">← Previous: VRE Galaxy</a>
+    <a href="./07_hands_on_tutorial" class="btn-seq btn-seq--next">Next Chapter: Hands-On Tutorial →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

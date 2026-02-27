@@ -229,8 +229,8 @@ After successfully running the workflow:
 ---
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/gulf-of-riga/06_workflow_concept" class="btn-seq btn-seq--prev">← Previous: Workflow Concept</a>
-    <a href="{{ base }}trainings/gulf-of-riga/08_workflow_details" class="btn-seq btn-seq--next">Next Chapter: Workflow Details →</a>
+    <a href="./06_workflow_concept" class="btn-seq btn-seq--prev">← Previous: Workflow Concept</a>
+    <a href="./08_workflow_details" class="btn-seq btn-seq--next">Next Chapter: Workflow Details →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

@@ -48,8 +48,8 @@ To answer the question, the team developed a reproducible **DGA (Data Gathering 
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/gulf-of-riga/01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
-    <a href="{{ base }}trainings/gulf-of-riga/03_aip_platform" class="btn-seq btn-seq--next">Next Chapter: AIP Platform →</a>
+    <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
+    <a href="./03_aip_platform" class="btn-seq btn-seq--next">Next Chapter: AIP Platform →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

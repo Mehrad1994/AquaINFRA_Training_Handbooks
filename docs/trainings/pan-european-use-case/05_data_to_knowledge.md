@@ -36,8 +36,8 @@ Provides information and **direct download links** for the input datasets requir
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/pan-european-use-case/04_specleaner_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>
-    <a href="{{ base }}trainings/pan-european-use-case/06_galaxy_workflow_setup" class="btn-seq btn-seq--next">Next Chapter: Galaxy Setup →</a>
+    <a href="./04_specleaner_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>
+    <a href="./06_galaxy_workflow_setup" class="btn-seq btn-seq--next">Next Chapter: Galaxy Setup →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

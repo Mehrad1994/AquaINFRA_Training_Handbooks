@@ -35,8 +35,8 @@ Once imported, you can click **Run** on the workflow, select your input dataset,
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ base }}trainings/pan-european-use-case/05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>
-    <a href="{{ base }}trainings/pan-european-use-case/07_workflow_acquisition" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 1 →</a>
+    <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>
+    <a href="./07_workflow_acquisition" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 1 →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
