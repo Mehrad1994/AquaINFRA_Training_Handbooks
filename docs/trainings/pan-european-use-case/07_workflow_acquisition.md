@@ -34,8 +34,9 @@ The workflow consists of **8 interconnected steps** categorized into two phases.
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}trainings/pan-european-use-case/06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>
-    <a href="{{ relative_root }}trainings/pan-european-use-case/08_workflow_processing" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 2 →</a>
+    <a href="{{ base }}/trainings/pan-european-use-case/06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>
+    <a href="{{ base }}/trainings/pan-european-use-case/08_workflow_processing" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 2 →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+

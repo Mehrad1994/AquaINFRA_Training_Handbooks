@@ -1,0 +1,7 @@
+{% assign base = site.github.baseurl | default: site.baseurl | default: "" %}
+{% if base == "/" %}{% assign base = "" %}{% endif %}
+{% comment %}
+This file defines a global 'base' variable that correctly handles
+both local development and GitHub Pages subfolder hosting.
+Use it as: {{ base }}/assets/css/style.css
+{% endcomment %}

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gulf of Riga Case Study
+hero_title: "Gulf of Riga: DGA Workflow"
 region: "Baltic Sea"
 use_case: true
 ---
@@ -40,39 +41,39 @@ It is divided into chapters corresponding to the video sections.
         </thead>
         <tbody>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/01_introduction"><strong>1. Introduction</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/01_introduction"><strong>1. Introduction</strong></a></td>
                 <td>Overview of the AquaINFRA project and goals.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/02_case_study"><strong>2. Case Study Story</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/02_case_study"><strong>2. Case Study Story</strong></a></td>
                 <td>The "water darkening" hypothesis and research question.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/03_aip_platform"><strong>3. Interaction Platform</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/03_aip_platform"><strong>3. Interaction Platform</strong></a></td>
                 <td>How to use the AIP to find data and resources.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/04_d2k_package"><strong>4. Data-to-Knowledge Package</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/04_d2k_package"><strong>4. Data-to-Knowledge Package</strong></a></td>
                 <td>Introduction to the D2K package concept.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/05_vre_galaxy"><strong>5. Aqua Galaxy (VRE)</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/05_vre_galaxy"><strong>5. Aqua Galaxy (VRE)</strong></a></td>
                 <td>Introduction to the Virtual Research Environment.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/06_workflow_concept"><strong>6. Workflow Concept</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/06_workflow_concept"><strong>6. Workflow Concept</strong></a></td>
                 <td>Conceptual overview of the Gulf of Riga workflow.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/07_hands_on_tutorial"><strong>7. Hands-On Tutorial</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/07_hands_on_tutorial"><strong>7. Hands-On Tutorial</strong></a></td>
                 <td>Step-by-step guide to importing data and running the workflow.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/08_workflow_details"><strong>8. Workflow Details</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/08_workflow_details"><strong>8. Workflow Details</strong></a></td>
                 <td>Technical breakdown of the DGA workflow components.</td>
             </tr>
             <tr>
-                <td><a href="{{ relative_root }}trainings/gulf-of-riga/09_results"><strong>9. Results & Conclusion</strong></a></td>
+                <td><a href="{{ base }}/trainings/gulf-of-riga/09_results"><strong>9. Results & Conclusion</strong></a></td>
                 <td>Findings of the trend analysis and future outlook.</td>
             </tr>
         </tbody>
@@ -83,7 +84,8 @@ It is divided into chapters corresponding to the video sections.
 
 <!-- Navigation Buttons -->
 <div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
-    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
+    <a href="{{ base }}/06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+

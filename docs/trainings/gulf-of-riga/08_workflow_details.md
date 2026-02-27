@@ -74,8 +74,9 @@ The workflow automatically generates:
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}trainings/gulf-of-riga/07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>
-    <a href="{{ relative_root }}trainings/gulf-of-riga/09_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
+    <a href="{{ base }}/trainings/gulf-of-riga/07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>
+    <a href="{{ base }}/trainings/gulf-of-riga/09_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+

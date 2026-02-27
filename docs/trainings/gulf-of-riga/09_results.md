@@ -38,3 +38,4 @@ The AquaINFRA "Gulf of Riga" use case demonstrates how **FAIR data services** an
     <a href="08_workflow_details.html" class="btn btn--outline">&larr; Previous Chapter</a>
     <a href="index.html" class="btn btn--outline">Back to Training Overview</a>
 </div>
+

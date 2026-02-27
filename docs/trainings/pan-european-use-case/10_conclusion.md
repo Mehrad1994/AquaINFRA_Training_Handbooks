@@ -26,8 +26,9 @@ The AquaINFRA team hopes this workflow supports your research and encourages fur
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}trainings/pan-european-use-case/09_reviewing_results" class="btn-seq btn-seq--prev">← Previous: Results</a>
-    <a href="{{ relative_root }}index" class="btn-seq btn-seq--next">Return Home</a>
+    <a href="{{ base }}/trainings/pan-european-use-case/09_reviewing_results" class="btn-seq btn-seq--prev">← Previous: Results</a>
+    <a href="{{ base }}/index" class="btn-seq btn-seq--next">Return Home</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+

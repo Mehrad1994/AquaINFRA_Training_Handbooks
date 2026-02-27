@@ -35,8 +35,9 @@ An **Interactive Map** allows for spatial filtering:
 </div>
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}trainings/gulf-of-riga/02_case_study" class="btn-seq btn-seq--prev">← Previous: Case Study</a>
-    <a href="{{ relative_root }}trainings/gulf-of-riga/04_d2k_package" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
+    <a href="{{ base }}/trainings/gulf-of-riga/02_case_study" class="btn-seq btn-seq--prev">← Previous: Case Study</a>
+    <a href="{{ base }}/trainings/gulf-of-riga/04_d2k_package" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
