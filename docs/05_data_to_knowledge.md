@@ -50,8 +50,8 @@ The foundation of every package includes:
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation">
-    <a href="{{ '/04_aquainfra_vre' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: VRE</a>
-    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Applied Use Case Training →</a>
+    <a href="{{ relative_root }}04_aquainfra_vre" class="btn-seq btn-seq--prev">← Previous: VRE</a>
+    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--next">Next Step: Applied Use Case Training →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

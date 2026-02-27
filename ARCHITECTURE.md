@@ -10,23 +10,17 @@ This document describes the technical blueprint and system design of the AquaINF
 
 ## 📁 Directory Structure
 ```
-.
-├── docs/                   # Jekyll source directory
+├── docs/                   # Jekyll source directory (DEPLOY FROM HERE)
 │   ├── _data/              # Data files (use_cases.yml)
 │   ├── _includes/          # Reusable components (sidebar, header)
 │   ├── _layouts/           # Page templates (default.html)
 │   ├── assets/             # Global CSS, Images, and JS
-│   │   └── css/            # sidebar.css, theme.css, style.css
 │   ├── trainings/          # Use Case folders
-│   │   └── _TEMPLATE/      # Starter kit for new trainings
 │   ├── index.md            # Home page (High-level entry)
-│   ├── 01_eosc.md          # Step 1: EOSC Context
-│   ├── 02_aquainfra.md     # Step 2: AquaINFRA Overview
-│   ├── 03_aip.md           # Step 3: AIP platform
-│   ├── 04_aquainfra_vre.md # Step 4: VRE tools
-│   ├── 05_data_to_knowledge.md # Step 5: D2KP indicators
-│   ├── 06_use_cases.md     # Step 6: Full Library
-│   └── 07_contact.md       # Step 7: Support
+│   ├── _config.yml         # Site configuration (Zero-Config)
+│   └── ...                 # Content pages (01_eosc.md, etc.)
+├── ARCHITECTURE.md         # This file
+├── CONTRIBUTING.md         # Contributor guide
 └── README.md               # Project overview
 ```
 
@@ -44,6 +38,11 @@ We use decoupled CSS for maximum control and performance:
 
 ## 🗂️ Data-Driven Sidebar
 The sidebar is dynamically generated from `docs/_data/use_cases.yml`. To add a new training to the library, it must be registered in this YAML file under the appropriate region.
+
+## 🗺️ Universal Pathing (Zero-Config)
+To ensure the handbook is 100% portable across any GitHub account or repository name, we use **Universal Pathing** logic in `_layouts/default.html`.
+- **Dynamic Roots**: The site automatically calculates the depth of the current page (e.g., `../` or `../../`) and prepends it to all assets and links.
+- **Config-Free**: This removes the need for hardcoding `baseurl` or `url` in `_config.yml`.
 
 ## 🧜 Workflow Support
 The site includes `Mermaid.js` support. You can add diagrams directly in Markdown:

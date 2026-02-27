@@ -34,8 +34,8 @@ Researchers can:
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation">
-    <a href="{{ '/03_aip' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: AIP</a>
-    <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--next">Next Step: D2KP →</a>
+    <a href="{{ relative_root }}03_aip" class="btn-seq btn-seq--prev">← Previous: AIP</a>
+    <a href="{{ relative_root }}05_data_to_knowledge" class="btn-seq btn-seq--next">Next Step: D2KP →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

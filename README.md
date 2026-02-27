@@ -5,8 +5,10 @@
 This repository contains the source code for the reconstructed **AquaINFRA Training Handbooks**. The site is designed as a sequential learning path to guide researchers from project overview to technical implementation.
 
 ## 📖 Live Handbook
-The handbooks are served via GitHub Pages:
-👉 **[https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
+The handbook is **Zero-Config**. This means you can fork or upload this repository to any GitHub account, and it will work immediately without changing any code.
+
+1. Find your link in the **Settings** > **Pages** section of your repository.
+2. Ensure you select the **`/docs`** folder as the deployment source.
 
 ## 🛤️ The Complete Learning Path
 1.  **EOSC**: Understanding how AquaINFRA integrates with the European Open Science Cloud.
@@ -18,9 +20,9 @@ The handbooks are served via GitHub Pages:
 7.  **Contact**: Project support and contact information.
 
 ## 🛠️ Developer & Contributor Resources
-- 🏗️ **[Architecture Guide](ARCHITECTURE.md)**: Overview of the codebase, styling (sidebar/theme modules), and data structure.
-- ✍️ **[Contributor Guide](CONTRIBUTING.md)**: Instructions for scientists on adding new trainings or updating content.
-- 📦 **[Training Template](docs/trainings/_TEMPLATE/)**: The starter-kit for creating new use case handbook pages.
+- 🏗️ **[Architecture Guide](ARCHITECTURE.md)**: Overview of the codebase.
+- ✍️ **[Contributor Guide](CONTRIBUTING.md)**: Instructions for adding new trainings.
+- 📦 **[Training Template](docs/trainings/_TEMPLATE/)**: The starter-kit for new pages.
 
 ## ✅ Project Features
 - **Sequential Navigation**: Built-in "Next/Previous" flow for a guided user experience.

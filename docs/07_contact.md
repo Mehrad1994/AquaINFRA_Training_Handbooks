@@ -25,6 +25,6 @@ hero_title: Contact & Support
 
 <!-- Navigation Buttons -->
 <div class="sequence-navigation">
-    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: Applied Use Case Training</a>
-    <a href="{{ '/' | relative_url }}" class="btn-seq btn-seq--next">Back to Home</a>
+    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">← Previous: Applied Use Case Training</a>
+    <a href="{{ relative_root }}index" class="btn-seq btn-seq--next">Back to Home</a>
 </div>

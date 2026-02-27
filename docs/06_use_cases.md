@@ -34,7 +34,7 @@ Each module is co-designed with domain experts and provides:
                     {% endif %}
                 </div>
             </div>
-            <a href="{{ training.url | relative_url }}" class="use-case-card__footer">
+            <a href="{{ training.url | remove_first: '/' | prepend: relative_root }}" class="use-case-card__footer">
                 View In Handbook →
             </a>
         </div>
@@ -47,6 +47,6 @@ Each module is co-designed with domain experts and provides:
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation">
-    <a href="{{ '/05_data_to_knowledge' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
-    <a href="{{ '/07_contact' | relative_url }}" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
+    <a href="{{ relative_root }}05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
+    <a href="{{ relative_root }}07_contact" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
 </div>

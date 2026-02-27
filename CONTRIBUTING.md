@@ -50,7 +50,7 @@ To keep the site looking "premium" and professional:
 We recommend testing your changes before pushing.
 
 1. Install Ruby and Jekyll.
-2. Run
+2. Run:
 
 ```bash
 # Navigate into the docs directory
@@ -59,7 +59,10 @@ cd docs
 bundle exec jekyll serve --livereload
 ```
 
-3. Open `http://localhost:4000/AquaINFRA_Training_Handbooks/`.
+3. Open `http://localhost:4000/`. 
+
+> [!IMPORTANT]
+> **Do not change `baseurl`** in `_config.yml`. The site uses dynamic pathing and will work automatically on GitHub and locally without any changes.
 
 ## 📜 Code of Conduct
 

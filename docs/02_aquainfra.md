@@ -31,7 +31,7 @@ Learn how to search for data on the AIP, subset it via DDAS, and import it direc
 
 The AquaINFRA ecosystem connects disparate data sources through a unified analytical pipeline, ensuring interoperability with the **Digital Twin of the Ocean (DTO)** and **EOSC** components.
 
-![AquaINFRA Architecture]({{ '/assets/images/aip_vre.png' | relative_url }})
+![AquaINFRA Architecture]({{ relative_root }}assets/images/aip_vre.png)
 
 > [!NOTE]
 > AquaINFRA works in close collaboration with projects like **Blue-Cloud**, **ILIAD**, and **EDITO** to enhance the Digital Twins of the Ocean with high-quality aquatic data and models.
@@ -102,8 +102,8 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible
 <!-- Navigation Buttons -->
 
 <div class="sequence-navigation">
-    <a href="{{ '/01_eosc' | relative_url }}" class="btn-seq btn-seq--prev">← Previous: EOSC</a>
-    <a href="{{ '/03_aip' | relative_url }}" class="btn-seq btn-seq--next">Next Step: AIP →</a>
+    <a href="{{ relative_root }}01_eosc" class="btn-seq btn-seq--prev">← Previous: EOSC</a>
+    <a href="{{ relative_root }}03_aip" class="btn-seq btn-seq--next">Next Step: AIP →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
