@@ -37,8 +37,8 @@ title: Home
         <h2 class="step-title">Introduction to AquaINFRA</h2>
         <p class="step-desc">Core mission and goals of the AquaINFRA project and the broader ecosystem.</p>
         <div class="step-links">
-            <a href="{{ '/02_aquainfra' | relative_url }}" class="step-link"> Intro AquaINFRA →</a>
-            <a href="https://aquainfra.eu" target="_blank" class="step-link">Official Project Site →</a>
+            <a href="{{ '/02_aquainfra' | relative_url }}" class="step-link"> AquaINFRA in Handbook →</a>
+            <a href="https://aquainfra.eu" target="_blank" class="step-link"> Project Website →</a>
         </div>
     </div>
 </div>
@@ -52,7 +52,7 @@ title: Home
         <p class="step-desc">Discover the Aqua Interaction Platform.</p>
         <div class="step-links">
             <a href="{{ '/03_aip' | relative_url }}" class="step-link"> AIP in Handbook →</a>
-            <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">Aqua’s Galaxy →</a>
+            <a href="https://aquainfra.dev.52north.org/" target="_blank" class="step-link">AIP Homepage →</a>
         </div>
     </div>
 </div>
