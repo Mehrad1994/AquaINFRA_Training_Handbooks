@@ -11,13 +11,13 @@ hero_title: Contact & Support
             <h2 class="contact-title">Get in Touch</h2>
             
             <div class="contact-info-block">
-                <h4>Prof. Dr. Carsten Keßler</h4>
-                <p><strong>Email:</strong> <a href="mailto:Carsten.Kessler@hs-bochum.de">Carsten.Kessler@hs-bochum.de</a></p>
+             <h4>Sadra Matmir</h4>
+                <p><strong>Email:</strong> <a href="mailto:Sadra.Matmir@hs-bochum.de">Sadra.Matmir@hs-bochum.de</a></p>
             </div>
 
             <div class="contact-info-block">
-                <h4>Sadra Matmir</h4>
-                <p><strong>Email:</strong> <a href="mailto:Sadra.Matmir@hs-bochum.de">Sadra.Matmir@hs-bochum.de</a></p>
+                <h4>Prof. Carsten Keßler</h4>
+                <p><strong>Email:</strong> <a href="mailto:Carsten.Kessler@hs-bochum.de">Carsten.Kessler@hs-bochum.de</a></p>
             </div>
         </div>
     </div>

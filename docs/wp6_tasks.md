@@ -33,7 +33,7 @@ This page provides an overview of the Work Package 6 (WP6) tasks, focus regions,
 
 | Focus Area | Status / Activity |
 | :--- | :--- |
-| **All Use Cases (Merged)** | Video prep session planned with CREAF, CSIC, and UMALTA (Barcelona, April 2026); Text-based OERs. |
+| **Tordera & Llobregat delta and Malta (Merged)** | Video prep session planned with CREAF, CSIC, and UMALTA (Barcelona, April 2026); Text-based OERs. |
 
 ## General OERs
 

@@ -24,10 +24,11 @@
       url: "/wp6_tasks"
       description: "Hydrological modeling and coastal impact analysis in Norway."
       status: "Planned"
-    - title: "Elbe"
+    - title: "Elbe River"
       url: "/wp6_tasks"
       description: "River to sea modelling and ecosystem assessment by the Elbe estuary."
-      status: "Planned"
+      status: "Active"
+      d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:18607604"
 
 - region: "Pan-European"
   trainings:
@@ -38,7 +39,7 @@
       d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:17175591"
 - region: "Mediterranean"
   trainings:
-    - title: "All Use Cases (Merged)"
+    - title: "Tordera & Llobregat delta and Malta (Merged)"
       url: "/wp6_tasks"
       description: "Collaborative case studies for the Doñana Delta, Mar Menor, and Malta."
       status: "Planned"

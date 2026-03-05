@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Introduction to AquaINFRA
+title: AquaINFRA
 ---
-# Introduction AquaINFRA
+# The AquaINFRA Project
 
 The **AquaINFRA project** (2023–2026) is developing a next-generation virtual environment equipped with **FAIR** (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services.
 
@@ -13,7 +13,7 @@ Our mission is to support marine and freshwater scientists and stakeholders in *
 
 ## 📽️ Video Tutorial: Getting Started
 
-Learn how to search for data on the AIP, subset it via DDAS, and import it directly into your analysis history in Galaxy.
+Learn how to search for data on the AquaINFRA Interaction Platform (AIP), subset it via the Data Discorvery and Access Service (DDAS), and import it directly into your analysis history in Galaxy.
 
 
 <div class="video-container">
@@ -107,3 +107,4 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular and extensible
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
