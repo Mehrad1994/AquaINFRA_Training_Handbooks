@@ -4,57 +4,97 @@ title: AquaINFRA
 ---
 # The AquaINFRA Project
 
-Traditionally, marine and freshwater research have lived in two different worlds. **AquaINFRA (2023–2026)** was built to change that. We are creating a unified space where the entire "land-to-sea" continuum is treated as one connected system.
+The **AquaINFRA project** (2023–2026) is developing a next-generation virtual environment equipped with **FAIR** (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services.
 
-Our goal is simple: to give scientists the tools they need to restore healthy oceans and inland waters by removing the technical barriers that usually keep data locked away in different countries or institutions.
+Our mission is to help marine and freshwater scientists and stakeholders restore healthy oceans, seas, and inland waters by bridging the gap between isolated research infrastructures and national borders.
 
 > [!IMPORTANT]
-> **Stay Updated**
-> For the latest news, partner updates, and official announcements, keep an eye on the **[Official AquaINFRA Website](https://aquainfra.eu)**.
-
----
+> **Main Resource:** For the most up-to-date project news and developments, visit the official **[AquaINFRA Website](https://aquainfra.eu)**.
 
 ## 📽️ Video Tutorial: Getting Started
 
-This walkthrough shows you how to move from discovery to analysis—searching for data on the Interaction Platform (AIP) and pulling it directly into Galaxy for processing.
+Learn how to search for data on the AquaINFRA Interaction Platform (AIP), subset it via the Data Discovery and Access Service (DDAS), and import it directly into your analysis history in Galaxy.
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=r0Zy6qJLRFdxNqYB&start=0&end=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
----
+### Core Objectives:
 
-## 🌊 One Water, One Infrastructure
+- **Marine-Freshwater Integration**: Breaking down barriers to support collaboration across the entire land-sea continuum.
+- **EOSC-Based Infrastructure**: Establishing a cross-country discovery mechanism powered by the European Open Science Cloud (EOSC).
+- **Spatio-temporal Analysis**: Offering standardized services to model biological, chemical, and physical data.
+- **Reproducible Science**: Ensuring analytical workflows can be openly shared, reused, and validated.
 
-AquaINFRA isn't just about storage; it’s about making sure that biological, chemical, and physical data can "talk" to each other across borders. 
+### Project Methodology: Official Architecture
 
-### What we are building together:
-
-- **The Land-Sea Bridge**: Breaking down the silos between river data and ocean data so you can model the whole water cycle.
-- **Reproducible Results**: Every workflow you build here can be shared and validated. We want to move past "one-off" studies into a world of open, reusable science.
-- **A Seamless Workflow**: We connect disparate data sources into a single pipeline that works harmoniously with the European Open Science Cloud (EOSC) and the Digital Twin of the Ocean (DTO).
+The AquaINFRA ecosystem connects disparate data sources into a unified analytical pipeline. This ensures smooth integration with both the **Digital Twin of the Ocean (DTO)** and **EOSC** components.
 
 ![AquaINFRA Architecture]({{ relative_root }}assets/images/aip_vre.png)
 
+> [!NOTE]
+> AquaINFRA works closely with projects like **Blue-Cloud**, **ILIAD**, and **EDITO** to supply the Digital Twins of the Ocean with high-quality aquatic data and models.
+
 ---
 
-## 🤝 A Collaborative Effort
+# Partners & Target
 
-AquaINFRA is powered by a consortium of **21 international partners**, including leading universities, research centers, and technical specialists across Europe. By bringing together experts from Aalborg University (Denmark) to SYKE (Finland) and CSIC (Spain), we ensure the platform scales to meet real-world needs.
+The AquaINFRA project is a joint effort of **21 international partners** across Europe, including universities, SMEs, and research institutions.
 
-[See our full list of partner institutions here](https://aquainfra.eu/partners)
+<div class="grid-container">
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">Who</span> is it for?</h3>
+        <p>Marine and freshwater scientists or data analysts looking to build reproducible workflows using FAIR data services.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">Why</span> use it?</h3>
+        <p>To access diverse aquatic data, high-performance computing, and standard analytical pipelines all within one virtual space.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">What</span> is provided?</h3>
+        <p>Pre-configured tools like Galaxy and Jupyter, harmonized data collections, and guided training modules for real-world scenarios.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">How</span> to contribute?</h3>
+        <p>Researchers can share their own notebooks, tools, and datasets via AquaINFRA to foster community collaboration.</p>
+    </div>
+</div>
 
-### Is AquaINFRA for you?
+<hr style="margin: 3rem 0;">
 
-- **If you are a researcher** tired of manually cleaning fragmented datasets from different national sources.
-- **If you are a data scientist** looking for high-performance computing (VRE) to run complex spatio-temporal models.
-- **If you are a stakeholder** who needs reproducible evidence to support environmental policies.
+# Our Consortium
+
+Coordinated by **Aalborg University (AAU)** (Denmark), our partnership unites top experts in aquatic science and data technology.
+
+**Representative Partners:**
+
+- **Scientific Institutions**: BOKU (Austria), CSIC (Spain), CREAF (Spain), SYKE (Finland), NIVA (Norway), HEREON (Germany).
+- **Infrastructures & Organizations**: HELCOM (Baltic Sea), CSC (Finland), Maanmittauslaitos (Finland).
+- **Technical Specialists**: 52°North (Germany), Blue Lobster IT (UK).
+
+[View the full partner list on the official site](https://aquainfra.eu/partners)
+
+---
+
+# The AquaINFRA Virtual Research Environment
+
+The **AquaINFRA Virtual Research Environment (VRE)** is a modular, open-source platform. It acts as the analytical engine of the project, allowing researchers to run complex operations via an intuitive interface.
+
+### Key Technologies
+
+- **[Galaxy Platform](https://aqua.usegalaxy.eu/)**: A powerful web-based gateway for accessible and reproducible spatial analysis.
+- **[Aqua Interaction Platform (AIP)](https://aquainfra.dev.52north.org/)**: A tool to seamlessly search Earth observations and European hydrography.
+- **Binder & OGC API**: Services providing interactive computing and standardized data processing.
+- **Language Support**: Native environments for **R** and **Python**.
+
+### Why use the VRE?
+
+1. **FAIR Processing**: Workflows developed in our case studies are published as **D2KP** with full provenance.
+2. **Cross-Domain Discovery**: Discover digital resources across different scientific disciplines and borders.
+3. **High-Performance Computing**: Use robust cloud resources for large spatio-temporal modeling without managing local hardware.
 
 > [!TIP]
-> **Ready to explore?**
-> The next few steps of this handbook will take you through the specific platforms (AIP and VRE) where this science actually happens. If you want to jump straight into the lab, visit the **[AquaINFRA VRE Portal](https://aquainfra.dev.52north.org/)**.
-
----
+> Visit the [AquaINFRA VRE Portal](https://aquainfra.dev.52north.org/) to explore community-tailored tools and launch your first analysis.
 
 <!-- Navigation Buttons -->
 
