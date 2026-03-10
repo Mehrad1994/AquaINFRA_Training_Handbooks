@@ -4,13 +4,15 @@ title: AIP
 ---
 # AquaINFRA Interaction Platform (AIP)
 
-The **AquaINFRA Interaction Platform (AIP)** provide a seamless pathway from finding aquatic data to analyzing it in the **Galaxy Virtual Research Environment**.
+If EOSC provides the raw computational power, the **AquaINFRA Interaction Platform (AIP)** is the specialized map that helps you find the exact aquatic data you need.
+
+Instead of scouring different national databases, the AIP allows you to seamlessly search Earth observations and European hydrography in one place, and then pipe that data directly into a high-performance analysis environment.
 
 ---
 
 ## 📽️ Video Tutorial: Getting Started
 
-Learn how to search for data on the AIP, subset it via DDAS, and import it directly into your analysis history in Galaxy.
+This walkthrough shows you exactly how to navigate the AIP interface. It covers searching for relevant datasets, subsetting them graphically, and importing them straight into your Galaxy history.
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -18,38 +20,33 @@ Learn how to search for data on the AIP, subset it via DDAS, and import it direc
 
 ---
 
-## 🛠️ Step-by-Step Guide
+## 🛠️ The Search-to-Analysis Workflow
 
-### 1. Preparation
+The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own laptop.
 
-Before starting, ensure you are **logged into the Galaxy platform**. The integration requires an active session to automatically target your analysis history.
+### 1. The Seamless Route (OGC API)
 
-### 2. Finding Data on the AIP
+> [!TIP]
+> **Before you start**
+> Make sure you are already logged into the Galaxy platform in another tab. This allows the AIP to find your active session.
 
-Visit the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** and use the search interface:
+When you find a dataset on the AIP hosted as an **OGC API Feature service**, the workflow is incredibly smooth:
 
-- **Keywords**: Use specific terms like "Data-to-knowlegde".
-- **Providers**: Filter results to show only **AquaINFRA datasets** for the most direct integration path.
+1. Visually subset the data on the map (e.g., drawing a polygon around a specific coastline).
+2. Click **"Import to Galaxy"**.
+3. In Galaxy, use the dedicated **AquaINFRA OGC API processes** tool to map that data URL to powerful backend operations like `points_at_polygon`.
 
-### 3. Importing Data to Galaxy
+Because the data is processed on the backend servers, you avoid heavy data transfers and get straight to analyzing your results.
 
-Depending on the data source, there are two primary paths:
+### 2. The Manual Detour
 
-> [!First Path]
-> **The "Best Case" Scenario (OGC API)**
-> For datasets sitting on the DDAS as an **OGC API Feature service**, simply click the **"Import to Galaxy"** button on the landing page. You can subset the data by drawing a polygon or limiting the number of data points before regenerating the import URL.
+Not all data partners support direct API ingestion yet. If you find a dataset you want but the "Import to Galaxy" button is missing:
 
-> [!Second Path]
-> **The Manual Detour**
-> If a direct import button is missing, visit the metadata source to find the download link. Copy the data address (ensure it ends in an extension like `.zip`) and paste it into the **"Insert URL"** field in the AIP interface to bridge it to Galaxy.
-
-### 4. Running OGC API Processes
-
-Once your data URLs are in Galaxy (appearing as `.txt` files in your history), use the **AquaINFRA OGC API processes** tool:
-
-1. **Select Process**: Choose from available operations like `points_at_polygon` or `period_grouping`.
-2. **Configure Parameters**: Map your imported URLs (Points, Regions, etc.) to the tool's input fields.
-3. **Execute**: The processing happens on the backend servers to reduce heavy data transfer, returning a URL to your final results.
+> [!NOTE]
+> **Bridging the Gap**
+>
+> 1. Visit the dataset's external metadata page and copy the direct download link (e.g., ending in `.zip`).
+> 2. Look for the **"Insert URL"** option on the AIP interface. Pasting the link here will manually bridge the external file into your Galaxy environment.
 
 ---
 

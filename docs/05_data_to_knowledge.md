@@ -4,13 +4,15 @@ title: Data to Knowledge Package
 ---
 # Data to Knowledge Package (D2KP)
 
-Creating readily sharable and reusable workflows is a key ambition of the **AquaINFRA project**. The **Data-to-Knowledge Package (D2KP)** is the bridge that makes this possible, linking raw aquatic data with the source code and scientific workflows needed for reproducible research.
+The end goal of the AquaINFRA project isn't just to do good science; it's to create science that can be verified and reused by anyone.
+
+If a published paper is the menu, the **Data-to-Knowledge Package (D2KP)** is the recipe and the ingredients. It is the structured package that bundles your raw aquatic data, your analysis scripts, and your exact software environment together.
 
 ---
 
 ## 📽️ Video Tutorial: The D2KP Concept
 
-Explore how D2KPs organize resources and provide multiple entry points for researchers, from high-level workflow execution to low-level code exploration.
+Explore how D2KPs organize these resources and why they are essential for moving away from "black-box" environmental research.
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -18,20 +20,14 @@ Explore how D2KPs organize resources and provide multiple entry points for resea
 
 ---
 
-## 🏗️ The Anatomy of a D2KP
+## 🏗️ Inside a D2KP
 
-A D2KP is more than just a file; it is a **collection of interconnected resources** categorized into two main layers:
+A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed to offer different interaction levels depending on what the next researcher needs:
 
-### 1. The Virtual Research Environment (VRE)
-The top tier of the package provides three ways to interact with the analysis:
-- **Galaxy Workflow**: Execute the pre-configured workflow directly in the [Galaxy platform](https://aqua.usegalaxy.eu/).
-- **Web API (PyGEOAPI)**: Interact directly with the underlying **OGC API Processes** for integration into your own custom scripts or digital twin infrastructures.
-- **Virtual Lab (R Studio)**: Launch a containerized R Studio environment via **MyBinder**, pre-installed with all necessary packages for deep-dive code exploration.
-
-### 2. The Reproducible Basis
-The foundation of every package includes:
-- **Source Code**: The raw analytical scripts (e.g., R or Python) stored in repositories like GitHub.
-- **Raw Data**: Direct links to the datasets used, ensuring provenance and transparency.
+- **The Data & Code**: Every D2KP contains direct links to the raw data sources and the foundational source code (like Python or R scripts), guaranteeing full transparency.
+- **The Application (Galaxy)**: For those who want to use your methodology without writing code, the package includes a pre-configured workflow that can be executed directly in the [Galaxy interface](https://aqua.usegalaxy.eu/).
+- **The Raw Engine (API)**: Developers can use the underlying **Web API (PyGEOAPI)** to directly hook your analytical processes into their own custom systems or Digital Twins.
+- **The Developer Sandbox**: For those who want to deeply interrogate or edit your code, they can launch a containerized **Virtual Lab (R Studio via MyBinder)** linked directly to your package.
 
 ---
 

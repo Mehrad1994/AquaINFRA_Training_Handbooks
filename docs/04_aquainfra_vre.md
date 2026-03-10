@@ -4,13 +4,13 @@ title: AquaINFRA VRE
 ---
 # The AquaINFRA Virtual Research Environment
 
-The **AquaINFRA Virtual Research Environment (VRE)** provides researchers in the aquatic sciences with a powerful, open platform for reproducible data analysis and workflow sharing.
+Once you have found your data on the AIP, the next step is the heavy lifting.
 
-Designed to support FAIR and open data principles, the VRE is fully integrated with the AquaINFRA Interaction Platform (AIP) and connected to the European Open Science Cloud (EOSC). 
+The **AquaINFRA Virtual Research Environment (VRE)** is where the actual science happens. Rather than wrestling with software versions on your local machine or struggling with limited compute power, the VRE provides a stable, cloud-based platform specifically tailored for aquatic data modeling.
 
 ## 📽️ Video Tutorial: Getting Started
 
-Learn how to use the VRE, subset data, and import it directly into your analysis history in Galaxy.
+Watch this short guide to see the VRE in action. It demonstrates how seamlessly the environment handles data subsetting and analysis through the Galaxy interface.
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=573&end=670" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -18,12 +18,11 @@ Learn how to use the VRE, subset data, and import it directly into your analysis
 
 ## Core Features & Workflow
 
-Built on the **Galaxy platform**, **Binder**, and **OGC API processes**, the VRE enables users to access, process, and publish data using a flexible, user-friendly canvas that supports widely used programming languages such as **R** and **Python**.
+The environment runs on established open-source technologies (**Galaxy**, **Binder**, and **OGC API**) but is customized for environmental researchers. Whether you prefer a drag-and-drop interface or writing custom code in **R** or **Python**, the VRE gives you the freedom to:
 
-Researchers can:
-1. **Run Workflows**: Execute workflows developed in AquaINFRA’s case studies.
-2. **Modify & Extend**: Tailor existing workflows to meet specific research needs.
-3. **Publish Outputs**: Share results and analyses via **D2KP** with full data provenance.
+1. **Run Open Workflows**: Instantly execute complex models developed by AquaINFRA experts.
+2. **Modify & Experiment**: Take a peer's workflow and tweak the parameters to fit your own research question.
+3. **Publish with Confidence**: Share your finalized analysis as a structured package, ensuring anyone can reproduce your results.
 
 > [!TIP]
 > **Extensibility**
