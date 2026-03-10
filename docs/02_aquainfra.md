@@ -9,7 +9,7 @@ The **AquaINFRA project** (2023–2026) is developing a next-generation virtual 
 Our mission is to help marine and freshwater scientists and stakeholders restore healthy oceans, seas, and inland waters by bridging the gap between isolated research infrastructures and national borders.
 
 > [!IMPORTANT]
-> **Main Resource:** For the most up-to-date project news and developments, visit the official **[AquaINFRA Website](https://aquainfra.eu)**.
+> **Main Resource:** For the most up-to-date project news and developments, visit the **[AquaINFRA Homepage](https://aquainfra.eu)**.
 
 ## 📽️ Video Tutorial: Getting Started
 
@@ -104,4 +104,3 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular, open-source p
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
-

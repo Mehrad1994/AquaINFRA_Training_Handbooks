@@ -28,18 +28,18 @@ Before starting, ensure you are **logged into the Galaxy platform**. The integra
 
 Visit the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** and use the search interface:
 
-- **Keywords**: Use specific terms like "Secchi" or "water quality".
+- **Keywords**: Use specific terms like "Data-to-knowlegde".
 - **Providers**: Filter results to show only **AquaINFRA datasets** for the most direct integration path.
 
 ### 3. Importing Data to Galaxy
 
 Depending on the data source, there are two primary paths:
 
-> [!TIP]
+> [!First Path]
 > **The "Best Case" Scenario (OGC API)**
 > For datasets sitting on the DDAS as an **OGC API Feature service**, simply click the **"Import to Galaxy"** button on the landing page. You can subset the data by drawing a polygon or limiting the number of data points before regenerating the import URL.
 
-> [!NOTE]
+> [!Second Path]
 > **The Manual Detour**
 > If a direct import button is missing, visit the metadata source to find the download link. Copy the data address (ensure it ends in an extension like `.zip`) and paste it into the **"Insert URL"** field in the AIP interface to bridge it to Galaxy.
 
