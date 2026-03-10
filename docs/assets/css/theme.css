@@ -241,6 +241,58 @@
     border: none;
 }
 
+/* =========================================
+   Info Block Cards (Partners & Target)
+   ========================================= */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: stretch;
+}
+
+.info-block {
+    background: #fff;
+    border: var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(53, 100, 172, 0.12); /* Subtle AquaINFRA blue glow */
+}
+
+.info-block h3 {
+    font-size: 1.05rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #f0f4fa;
+    line-height: 1.3;
+}
+
+.info-block h3 span {
+    color: var(--aqua-blue) !important;
+    font-weight: 700;
+}
+
+.info-block p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+    flex-grow: 1; /* Pushes content down evenly if cards are different heights */
+}
+
+/* Contact Page Enhancements Continued */
 .contact-grid {
     display: flex;
     flex-wrap: wrap;
