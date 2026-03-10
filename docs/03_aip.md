@@ -4,7 +4,7 @@ title: AIP
 ---
 # AquaINFRA Interaction Platform (AIP)
 
-If EOSC provides the raw computational power, the **AquaINFRA Interaction Platform (AIP)** is the specialized map that helps you find the exact aquatic data you need.
+EOSC provides the raw computational power, the **AquaINFRA Interaction Platform (AIP)** is the specialized map that helps you find the exact aquatic data you need.
 
 Instead of scouring different national databases, the AIP allows you to seamlessly search Earth observations and European hydrography in one place, and then pipe that data directly into a high-performance analysis environment.
 
