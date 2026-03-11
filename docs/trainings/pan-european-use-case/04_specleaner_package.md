@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 4. Specleaner R Package
+title: Specleaner R Package
 parent: Pan-European Biodiversity Use Case
 nav_order: 4
 ---
 
-# 4. Specleaner R Package
+# Specleaner R Package
 
 The technical foundation of the Pan-European workflow is the **Specleaner** R package. It provides a homogeneous and robust approach for identifying outliers in species occurrence records.
 
@@ -16,14 +16,20 @@ Rather than relying on a single method, Specleaner combines **20 different outli
 
 ### Univariate Methods
 These require a **single environmental predictor** (e.g., Temperature).
-*   **Z-score**: Flags records that deviate significantly from the mean.
-*   **Interquartile Range (IQR)**: Flags records outside the statistical "whiskers."
-*   **Ecological Ranges**: Checks if records exceed known suitable ecological ranges for the species.
+
+| Method | Description |
+| :--- | :--- |
+| **Z-score** | Flags records that deviate significantly from the mean. |
+| **Interquartile Range (IQR)** | Flags records outside the statistical "whiskers." |
+| **Ecological Ranges** | Checks if records exceed known suitable ecological ranges for the species. |
 
 ### Multivariate Methods
 These check for outliers in **multi-dimensional space**, considering multiple predictors simultaneously.
-*   **Isolation Forest**: Isolates anomalies by randomly partitioning data.
-*   **One-Class Support Vector Machines (SVM)**: Learns the boundary of "normal" points and flags those outside.
+
+| Method | Description |
+| :--- | :--- |
+| **Isolation Forest** | Isolates anomalies by randomly partitioning data. |
+| **One-Class Support Vector Machines (SVM)** | Learns the boundary of "normal" points and flags those outside. |
 
 ## 2. Weighting & Voting System
 Specleaner doesn't just say "Outlier" or "Not Outlier." It uses the function `m_detect` to compile results and **weight** each record:
@@ -33,10 +39,8 @@ Specleaner doesn't just say "Outlier" or "Not Outlier." It uses the function `m_
 
 Researchers can then use thresholds (e.g., Poor, Fair, Moderate, Strong, Perfect) to filter data or apply expert knowledge to decide which records have an "ecological consequence" and should be removed.
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s" target="_blank">6:20</a> Review the Specleaner R Package
-</div>
+> [!NOTE] 📹 **Video Reference**
+> [6:20](https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s) Review the Specleaner R Package
 
 <div class="sequence-navigation">
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>

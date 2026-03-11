@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 10. Conclusion
+title: Conclusion
 parent: Pan-European Biodiversity Use Case
 nav_order: 10
 ---
 
-# 10. Conclusion and Final Remarks
+# Conclusion and Final Remarks
 
 The Pan-European Biodiversity Workflow is a powerful demonstration of how the AquaINFRA Virtual Environment simplifies complex, multi-domain research.
 
@@ -20,10 +20,8 @@ As we conclude, remember the species that drive this work. Protecting the **Danu
 ## Final Remarks from the Team
 The AquaINFRA team hopes this workflow supports your research and encourages further exploration of our tools and services. Together, let's make data-driven research FAIR and more impactful.
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1182s" target="_blank">19:42</a> Conclusion and Final Remarks
-</div>
+> [!NOTE] 📹 **Video Reference**
+> [19:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1182s) Conclusion and Final Remarks
 
 <div class="sequence-navigation">
     <a href="./09_reviewing_results" class="btn-seq btn-seq--prev">← Previous: Results</a>

@@ -64,30 +64,37 @@ h4,
 h5,
 h6 {
     color: var(--aqua-blue-dark);
-    line-height: 1.2;
-    margin-bottom: 0.8rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
 h1 {
-    font-size: 1.4rem;
-    padding-bottom: 0.3rem;
-    margin-top: 0.4rem;
+    font-size: 1.85rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
     color: var(--aqua-blue);
-    border-bottom: none;
+    border-bottom: 2px solid var(--aqua-blue-light, #e1e9f6);
 }
 
 h2 {
-    font-size: 1.25rem;
-    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    margin-top: 1.75rem;
+    color: var(--aqua-blue-dark);
     border-bottom: 1px solid var(--gray-200);
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.25rem;
 }
 
 h3 {
-    font-size: 1.05rem;
-    margin-top: 1rem;
-    color: var(--gray-900);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: var(--gray-800);
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+    color: var(--gray-800);
 }
 
 p {
@@ -603,6 +610,7 @@ img {
 /* Content Area */
 .handbook-content {
     min-width: 0;
+    max-width: 800px;
 }
 
 /* Responsive */

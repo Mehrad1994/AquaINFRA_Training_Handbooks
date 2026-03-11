@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 6. Galaxy Workflow Setup
+title: Galaxy Workflow Setup
 parent: Pan-European Biodiversity Use Case
 nav_order: 6
 ---
 
-# 6. Galaxy Workflow Setup
+# Galaxy Workflow Setup
 
 Before you can run the outlier detection, you must import the workflow and its required data into **[Aqua Galaxy](https://aqua.usegalaxy.eu/)**.
 
@@ -23,16 +23,16 @@ The workflow requires an **Area of Interest (GeoJSON)** file. To import it:
 
 ## Execution Status
 As the workflow runs, the status boxes in the history panel will change color:
-*   <span style="color: #FFA500; font-weight: bold;">Orange</span>: The process is currently running.
-*   <span style="color: #008000; font-weight: bold;">Green</span>: The step has successfully completed.
-*   <span style="color: #FF0000; font-weight: bold;">Red</span>: The step has failed.
+> [!WARNING] **Orange**: The process is currently running.
+
+> [!TIP] **Green**: The step has successfully completed.
+
+> [!CAUTION] **Red**: The step has failed.
 
 Once imported, you can click **Run** on the workflow, select your input dataset, and wait for all steps to turn green.
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s" target="_blank">13:12</a> Running the Workflow
-</div>
+> [!NOTE] 📹 **Video Reference**
+> [13:12](https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s) Running the Workflow
 
 <div class="sequence-navigation">
     <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

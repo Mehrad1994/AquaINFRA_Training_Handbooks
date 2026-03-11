@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 5. Data to Knowledge Package
+title: Data to Knowledge Package
 parent: Pan-European Biodiversity Use Case
 nav_order: 5
 ---
 
-# 5. Data to Knowledge (D2K) Package
+# Data to Knowledge (D2K) Package
 
 To access the resources developed for this use case, navigate to the **AquaINFRA Interaction Platform** and search for "Data to Knowledge Package."
 
@@ -30,10 +30,8 @@ Contains the complete toolbox, including scripts and tools hosted permanently on
 ### 5. Datasets
 Provides information and **direct download links** for the input datasets required (e.g., the GeoJSON area of interest).
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s" target="_blank">11:11</a> Review the Pan-European Data to Knowledge Package
-</div>
+> [!NOTE] 📹 **Video Reference**
+> [11:11](https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s) Review the Pan-European Data to Knowledge Package
 
 <div class="sequence-navigation">
     <a href="./04_specleaner_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>

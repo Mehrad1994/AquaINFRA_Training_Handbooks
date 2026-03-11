@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3. Freshwater Biodiversity
+title: Freshwater Biodiversity
 parent: Pan-European Biodiversity Use Case
 nav_order: 3
 ---
 
-# 3. Importance of Freshwater Biodiversity
+# Importance of Freshwater Biodiversity
 
 Biodiversity forms the foundation of healthy ecosystems. Understanding it has become a central focus of international frameworks, such as:
 *   **UN Sustainable Development Goals (SDG 15)**: Life on Land (which includes protecting inland freshwater ecosystems).
@@ -25,10 +25,8 @@ The Danube River acts as an "important living laboratory" for this research. It 
 *   **Huchen (Danube Salmon)**
 Both are powerful indicators of river health and are currently considered endangered.
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s" target="_blank">1:15</a> Review the importance of Freshwater Biodiversity
-</div>
+> [!NOTE] 📹 **Video Reference**
+> [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Review the importance of Freshwater Biodiversity
 
 <div class="sequence-navigation">
     <a href="./02_boku_researchers" class="btn-seq btn-seq--prev">← Previous: Researchers</a>

@@ -21,4 +21,9 @@ Comments.md
 # Windows/System files
 Thumbs.db
 .DS_Store
-.agents
+
+# AI Agents & Dev Environment
+.agents/
+.cursorrules
+.windsurfrules
+AGENCY_SKILLS_ROSTER.md
