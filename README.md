@@ -4,6 +4,10 @@
 
 This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbooks**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
 
+## 🌐 Live Handbook
+Access the interactive training modules here:  
+**[mehrad1994.github.io/AquaINFRA_Training_Handbooks](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
+
 ## 📖 Project Scope
 The handbook covers the full research lifecycle within the project:
 1.  **Foundations**: EOSC integration and the AquaINFRA mission.
