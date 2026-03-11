@@ -21,11 +21,11 @@ The handbook covers the full research lifecycle within the project:
 - ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
 
 ## 👥 Core Team & Leadership
-The AquaINFRA Training Handbooks are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/)** within the AquaINFRA project team.
+The AquaINFRA Training Handbooks are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
 
 - **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead & Principal Investigator.
 - **[Sadra Matmir](https://github.com/smatmir)** — Project Supervisor & Developer.
-- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer & Architect.
+- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer.
 
 ---
 *For official project news and research goals, visit [aquainfra.eu](https://aquainfra.eu).*
