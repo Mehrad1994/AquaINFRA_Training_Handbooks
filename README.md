@@ -1,32 +1,31 @@
-# AquaINFRA Video Handbooks
+# 🌊 AquaINFRA Training Handbooks
 
-![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Live-success) ![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen)
+![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Active-success) ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-orange)
 
-This repository contains the source code and documentation for the **AquaINFRA Video Handbooks**.
+This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbooks**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
 
-The goal of this project is to transform technical training videos from the AquaINFRA workshops into structured, searchable, and easy-to-read "Video Handbooks" using GitHub Pages.
+## 📖 Project Scope
+The handbook covers the full research lifecycle within the project:
+1.  **Foundations**: EOSC integration and the AquaINFRA mission.
+2.  **Environments**: Exploration of AIP (Interaction Platform) and VRE (Virtual Research Environment).
+3.  **Packages**: D2KP (Data-to-Knowledge) implementation.
+4.  **Training Library**: Practical, video-driven use cases and technical training modules.
 
-## 📖 View the Handbook
+## 🚀 Key Features
+- **Zero-Config Portability**: Fork and deploy to GitHub Pages instantly without editing code.
+- **Guided Navigation**: A sequential UI optimized for learning retention and progression.
+- **Premium Design System**: Lightweight Vanilla CSS providing a premium look on all devices.
 
-The live version of the specific **Gulf of Riga** handbook is available here:
-👉 **[https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
+## 🗺️ Documentation
+- 🏗️ **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
+- ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
+
+## 👥 Core Team & Leadership
+The AquaINFRA Training Handbooks are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/)** within the AquaINFRA project team.
+
+- **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead & Principal Investigator.
+- **[Sadra Matmir](https://github.com/smatmir)** — Project Supervisor & Contributor.
+- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Lead Developer & Architect.
 
 ---
-
-## 🌊 About AquaINFRA
-
-The **AquaINFRA project** is developing a virtual environment equipped with FAIR (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. 
-
-## 🛠️ Developer Resources
-
-- 🏗️ **[Architecture Guide](ARCHITECTURE.md)**: Technical blueprint and system design.
-- ✍️ **[Contributor Guide](CONTRIBUTING.md)**: How to add new YouTube training materials.
-- 📦 **[Training Template](docs/trainings/_TEMPLATE/)**: Quick-start starter kit for new content.
-
-## ✅ Project Status
-
-This repository is fully documented and structured for community contribution.
-- **100% Open Source**: All tools and contact methods (standard `mailto`) are strictly open-source compliant.
-- **Gulf of Riga Case Study**: Fully implemented and aligned with workshop videos.
-- **Workflow Support**: Native Mermaid.js diagram support for workflows.
-- **Mobile Optimized**: Fully responsive layout matching AquaINFRA branding.
+*For official project news and research goals, visit [aquainfra.eu](https://aquainfra.eu).*
