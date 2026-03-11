@@ -12,6 +12,3 @@ We welcome technical trainings, use cases, and documentation improvements. Our p
 To test your changes locally, you must have **Ruby** and **Jekyll** installed.
 - Navigate to the `docs/` folder.
 - Execute: `bundle exec jekyll serve --livereload`.
-
----
-*For detailed styling classes and callout syntax, refer to the [Project Rules](.gemini/rules/).*
