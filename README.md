@@ -1,4 +1,4 @@
-# 🌊 AquaINFRA Training Handbooks
+# 🌊 AquaINFRA Training Handbook
 
 ![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Active-success) ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-orange)
 
