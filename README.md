@@ -16,6 +16,15 @@ The handbook covers the full research lifecycle within the project:
 - **Guided Navigation**: A sequential UI optimized for learning retention and progression.
 - **Premium Design System**: Lightweight Vanilla CSS providing a premium look on all devices.
 
+## 🛤️ The Complete Learning Path
+1.  **EOSC**: Understanding how AquaINFRA integrates with the European Open Science Cloud.
+2.  **AquaINFRA**: Core mission, goals, and official project resources.
+3.  **AIP**: The AquaINFRA Interaction Platform overview.
+4.  **AquaINFRA VRE**: Technical guide to the Virtual Research Environment.
+5.  **D2KP**: Data to Knowledge Package: From raw data to actionable knowledge.
+6.  **Use Case Library**: Technical training modules with video tutorials and reproducible code.
+7.  **Contact**: Project support and contact information.
+
 ## 🗺️ Documentation
 - 🏗️ **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
 - ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
