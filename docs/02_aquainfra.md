@@ -16,7 +16,7 @@ Our mission is to help marine and freshwater scientists and stakeholders restore
 Learn how to search for data on the AquaINFRA Interaction Platform (AIP), subset it via the Data Discovery and Access Service (DDAS), and import it directly into your analysis history in Galaxy.
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=r0Zy6qJLRFdxNqYB&start=0&end=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sphUGI2_WlI?si=Bzd_J5h4MXKSeoQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ### Core Objectives:

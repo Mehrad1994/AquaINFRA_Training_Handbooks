@@ -13,7 +13,7 @@ The **AquaINFRA Virtual Research Environment (VRE)** is where the actual science
 Watch this short guide to see the VRE in action. It demonstrates how seamlessly the environment handles data subsetting and analysis through the Galaxy interface.
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=573&end=670" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fdnxH0Lnirs?si=oZxdpCn9xabOB_vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Core Features & Workflow

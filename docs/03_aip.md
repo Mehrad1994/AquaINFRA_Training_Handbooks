@@ -15,7 +15,7 @@ Instead of scouring different national databases, the AIP allows you to seamless
 This walkthrough shows you exactly how to navigate the AIP interface. It covers searching for relevant datasets, subsetting them graphically, and importing them straight into your Galaxy history.
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&start=262&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/peGqhL4_iQ8?si=dLi2SsVTtmYlr6Yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ---
