@@ -4,6 +4,14 @@ title: Workflow Concept
 ---
 
 # Gulf of Riga Workflow Concept
+> [!NOTE] 📹 **Video Reference**
+> [11:11](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=671s) Introduction to the Gulf of Riga Workflow
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=671&end=738" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 Before running the analysis, it is important to understand the conceptual design of the **Gulf of Riga DGA Workflow**.
 
@@ -21,14 +29,6 @@ The workflow consists of several key stages:
 The workflow is available in the **AquaINFRA Interaction Platform** and can be imported directly into the **Aqua Galaxy** VRE. This ensures that the analysis is not only performant but also fully reproducible by other scientists.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [11:11](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=671s) Introduction to the Gulf of Riga Workflow
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=671&end=738" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./05_vre_galaxy" class="btn-seq btn-seq--prev">← Previous: VRE Galaxy</a>

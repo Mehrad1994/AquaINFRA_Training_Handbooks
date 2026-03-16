@@ -6,6 +6,14 @@ nav_order: 6
 ---
 
 # Galaxy Workflow Setup
+> [!NOTE] 📹 **Video Reference**
+> [13:12](https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s) Running the Workflow
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=792&end=941" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 Before you can run the outlier detection, you must import the workflow and its required data into **[Aqua Galaxy](https://aqua.usegalaxy.eu/)**.
 
@@ -30,13 +38,6 @@ As the workflow runs, the status boxes in the history panel will change color:
 > [!CAUTION] **Red**: The step has failed.
 
 Once imported, you can click **Run** on the workflow, select your input dataset, and wait for all steps to turn green.
-
-> [!NOTE] 📹 **Video Reference**
-> [13:12](https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s) Running the Workflow
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=792&end=941" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

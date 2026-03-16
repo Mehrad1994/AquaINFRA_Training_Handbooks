@@ -6,6 +6,14 @@ nav_order: 9
 ---
 
 # Reviewing the Workflow Results
+> [!NOTE] 📹 **Video Reference**
+> [18:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s) Review the Workflow Results
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1122&end=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 Once all steps in your Galaxy history have turned **green**, your results are ready for exploration and analysis.
 
@@ -32,13 +40,6 @@ The final output includes all extracted environmental predictors and a classific
 *   **Not an Outlier**
 
 Researchers can use these flags to create a more robust "cleaned" dataset for their final Species Distribution Models.
-
-> [!NOTE] 📹 **Video Reference**
-> [18:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s) Review the Workflow Results
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1122&end=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./08_workflow_processing" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 2</a>

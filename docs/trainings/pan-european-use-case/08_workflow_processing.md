@@ -6,6 +6,14 @@ nav_order: 8
 ---
 
 # Workflow Structure (Part 2)
+> [!NOTE] 📹 **Video Reference**
+> [16:40](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1000s) Review the Workflow Structure Part 2
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1000&end=1122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization, and the core outlier detection logic powered by Specleaner.
 
@@ -17,13 +25,6 @@ The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization
 | **Step 6: Harmonize Species Names** | Ensure taxonomic consistency. | Connects to FishBase. Resolves scientific synonyms and ensures all records use the currently accepted scientific name. |
 | **Step 7: Extract Environmental Predictors** | Add environmental context to each occurrence point. | Uses WorldClim raster files. For every coordinate pair, it extracts environmental values (e.g., Mean Annual Temperature). |
 | **Step 8: Flag Outliers (The Core)** | Apply Specleaner algorithms. | Tests a chosen variable (e.g., Temp) against selected univariate and multivariate methods. Flagged by outlier strength (Poor, Fair, Strong, Perfect). |
-
-> [!NOTE] 📹 **Video Reference**
-> [16:40](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1000s) Review the Workflow Structure Part 2
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1000&end=1122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>

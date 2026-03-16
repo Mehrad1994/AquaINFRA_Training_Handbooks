@@ -4,6 +4,14 @@ title: Data-to-Knowledge Package
 ---
 
 # Data-to-Knowledge Package
+> [!NOTE] 📹 **Video Reference**
+> [6:51](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s) Introduction to the Data to Knowledge Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=411&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The **Data-to-Knowledge Package (D2K)** is a core concept in AquaINFRA. It links data and computational code to support reproducible spatiotemporal trend detection analysis.
 
@@ -28,14 +36,6 @@ The package includes a toolbox of predefined functions for:
 This acts as the computational backbone, supporting long-term trend identification.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [6:51](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s) Introduction to the Data to Knowledge Package
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=411&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./03_aip_platform" class="btn-seq btn-seq--prev">← Previous: AIP Platform</a>

@@ -4,6 +4,14 @@ title: Aqua Galaxy (VRE)
 ---
 
 # Virtual Research Environment: Aqua Galaxy
+> [!NOTE] 📹 **Video Reference**
+> [9:32](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s) Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=572&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the AquaINFRA project.
 
@@ -17,14 +25,6 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
 *   **Reproducibility**: Experiments managed in Galaxy are inherently reproducible, recording every step, tool version, and parameter used.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [9:32](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s) Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=572&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./04_d2k_package" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

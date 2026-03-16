@@ -4,9 +4,6 @@ title: Hands-On Tutorial
 ---
 
 # Hands-On: Running the Gulf of Riga Workflow
-
-This chapter provides **step-by-step instructions** for running the DGA workflow in Aqua Galaxy. Follow along with the video for visual guidance.
-
 > [!NOTE] 📹 **Video Reference**
 > [YouTube video](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=738s) .
 
@@ -14,6 +11,9 @@ This chapter provides **step-by-step instructions** for running the DGA workflow
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=738&end=1289" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+
+
+This chapter provides **step-by-step instructions** for running the DGA workflow in Aqua Galaxy. Follow along with the video for visual guidance.
 
 ---
 

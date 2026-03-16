@@ -4,6 +4,14 @@ title: Workflow Details
 ---
 
 # The Gulf of Riga DGA Workflow
+> [!NOTE] 📹 **Video Reference**
+> [21:29](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s) Detailed Review of the Workflow Components
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1289&end=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 This chapter details the specific "Data Gathering and Analysis" (DGA) workflow used in the case study. The workflow integrates **eight distinct tools** into a pipeline.
 
@@ -67,14 +75,6 @@ The workflow automatically generates:
 2.  **Bar Chart**: Displaying **Kendall's Tau** values. A negative Tau indicates a decreasing trend (darkening), while positive indicates clearing.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [21:29](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s) Detailed Review of the Workflow Components
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1289&end=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>

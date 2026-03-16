@@ -6,6 +6,14 @@ nav_order: 4
 ---
 
 # Specleaner R Package
+> [!NOTE] 📹 **Video Reference**
+> [6:20](https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s) Review the Specleaner R Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=380&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The technical foundation of the Pan-European workflow is the **Specleaner** R package. It provides a homogeneous and robust approach for identifying outliers in species occurrence records.
 
@@ -38,13 +46,6 @@ Specleaner doesn't just say "Outlier" or "Not Outlier." It uses the function `m_
 *   **Not an Outlier**: Flagged by none.
 
 Researchers can then use thresholds (e.g., Poor, Fair, Moderate, Strong, Perfect) to filter data or apply expert knowledge to decide which records have an "ecological consequence" and should be removed.
-
-> [!NOTE] 📹 **Video Reference**
-> [6:20](https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s) Review the Specleaner R Package
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=380&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>

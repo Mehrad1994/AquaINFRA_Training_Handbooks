@@ -4,6 +4,14 @@ title: Results & Conclusion
 ---
 
 # Findings & Future Directions
+> [!NOTE] 📹 **Video Reference**
+> [25:07](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1507s) Summary of the Gulf of Riga Workflow Results and Conclusion Remarks
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 ## Key Findings
 
@@ -28,14 +36,6 @@ The workflow established *what* is happening. Future work aims to understand *wh
 The AquaINFRA "Gulf of Riga" use case demonstrates how **FAIR data services** and **Virtual Research Environments (VREs)** can empower researchers. By automating the path from "raw data" to "trend detection," scientists can focus on interpreting the ecological story—turning a diver's observation into actionable scientific knowledge.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [25:07](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1507s) Summary of the Gulf of Riga Workflow Results and Conclusion Remarks
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="btn-group">
     <a href="08_workflow_details.html" class="btn btn--outline">&larr; Previous Chapter</a>

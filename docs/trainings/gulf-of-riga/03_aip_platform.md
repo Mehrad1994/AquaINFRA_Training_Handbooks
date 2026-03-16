@@ -4,6 +4,14 @@ title: Interaction Platform
 ---
 
 # AquaINFRA Interaction Platform (AIP)
+> [!NOTE] 📹 **Video Reference**
+> [4:21](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=261s) Introduction to AIP and the Data-to-Knowledge Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=261&end=411" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The **[AquaINFRA Interaction Platform (AIP)](https://aquainfra.dev.52north.org/)** serves as the central gateway for scientific communities to find, access, and reuse aquatic digital resources.
 
@@ -28,14 +36,6 @@ An **Interactive Map** allows for spatial filtering:
 *   Draw a **Custom Bounding Box** directly on the map to find data within a specific region of interest.
 
 ---
-
-> [!NOTE] 📹 **Video Reference**
-> [4:21](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=261s) Introduction to AIP and the Data-to-Knowledge Package
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=261&end=411" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./02_case_study" class="btn-seq btn-seq--prev">← Previous: Case Study</a>

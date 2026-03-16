@@ -6,6 +6,14 @@ nav_order: 2
 ---
 
 # Meet the Lead Researchers
+> [!NOTE] 📹 **Video Reference**
+> [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Meet the Researchers
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 Leading the development of the Pan-European use case is the **Institute of Hydrobiology and Aquatic Ecosystem Management** at **BOKU University** (University of Natural Resources and Life Sciences) in Vienna, Austria.
 
@@ -24,13 +32,6 @@ In this training, you will hear from the key researchers driving the technical s
 | **[Anthony Basooma, M.Sc.](https://boku.ac.at/en/personen/person/06473192FC3B0438)** | PhD Researcher, IHG | Developed the **Specleaner** R package and the primary workflow used in this use case. |
 
 
-
-> [!NOTE] 📹 **Video Reference**
-> [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Meet the Researchers
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>

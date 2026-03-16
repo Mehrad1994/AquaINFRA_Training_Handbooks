@@ -6,6 +6,14 @@ nav_order: 5
 ---
 
 # Data to Knowledge (D2K) Package
+> [!NOTE] 📹 **Video Reference**
+> [11:11](https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s) Review the Pan-European Data to Knowledge Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=671&end=792" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 To access the resources developed for this use case, navigate to the **AquaINFRA Interaction Platform** and search for "Data to Knowledge Package."
 
@@ -29,13 +37,6 @@ Contains the complete toolbox, including scripts and tools hosted permanently on
 
 ### 5. Datasets
 Provides information and **direct download links** for the input datasets required (e.g., the GeoJSON area of interest).
-
-> [!NOTE] 📹 **Video Reference**
-> [11:11](https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s) Review the Pan-European Data to Knowledge Package
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=671&end=792" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <div class="sequence-navigation">
     <a href="./04_specleaner_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>

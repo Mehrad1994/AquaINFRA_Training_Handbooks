@@ -4,6 +4,14 @@ title: Case Study Story
 ---
 
 # The Gulf of Riga & Daugava River Case Study
+> [!NOTE] 📹 **Video Reference**
+> [1:58](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=118s) Exploring the Gulf of Riga Usec Cae: Story and Research Question
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=118&end=261" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 <div style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">Exploring long-term optical changes in a semi-enclosed marine environment.</div>
 
@@ -17,14 +25,6 @@ title: Case Study Story
 The research question for this use case began with a personal observation from scuba divers at the **Latvian Institute of Aquatic Ecology**.
 
 They jokingly noted that the underwater world in the Gulf of Riga seemed to be becoming "darker" over the years.
-
-> [!NOTE] 📹 **Video Reference**
-> [1:58](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=118s) Exploring the Gulf of Riga Usec Cae: Story and Research Question
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=118&end=261" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 <div class="sequence-navigation">
     <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
