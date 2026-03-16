@@ -1,6 +1,6 @@
 # Training Template Guide
 
-This directory provides the building blocks for new AquaINFRA training handbooks.
+This directory provides the building blocks for new AquaINFRA training handbook.
 
 ## 🚀 Quick Start
 

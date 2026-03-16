@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div class="hero-section">
-    <h1 class="hero-title">AquaINFRA Handbooks</h1>
+    <h1 class="hero-title">AquaINFRA Handbook</h1>
     <p class="hero-subtitle">
         This handbook provides a video-based training resource designed to help users understand and apply AquaINFRA services and tools through guided demonstrations. It introduces the AquaINFRA infrastructure architecture, explains its core components and their interactions within the broader digital research ecosystem, and presents applied use cases showing how AquaINFRA enables aquatic research communities to manage and reuse data effectively in alignment with FAIR principles and the European Open Science Cloud (EOSC).
     </p>

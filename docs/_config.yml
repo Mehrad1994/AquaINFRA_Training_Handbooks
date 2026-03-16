@@ -1,12 +1,12 @@
 # ============================================
-# AquaINFRA Training Handbooks Configuration
+# AquaINFRA Training Handbook Configuration
 # ============================================
 # This file controls the Jekyll site settings.
 # Changes require restarting the Jekyll server.
 
 # Site Metadata
-title: AquaINFRA Training Handbooks
-description: A collection of training handbooks and use case documentation for the AquaINFRA project.
+title: AquaINFRA Training Handbook
+description: A collection of training handbook and use case documentation for the AquaINFRA project.
 
 # Branding
 # Logo is handled in _includes/header.html for better control
