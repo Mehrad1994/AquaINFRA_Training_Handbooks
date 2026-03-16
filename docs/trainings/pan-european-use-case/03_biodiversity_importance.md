@@ -28,6 +28,10 @@ Both are powerful indicators of river health and are currently considered endang
 > [!NOTE] 📹 **Video Reference**
 > [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Review the importance of Freshwater Biodiversity
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./02_boku_researchers" class="btn-seq btn-seq--prev">← Previous: Researchers</a>
     <a href="./04_specleaner_package" class="btn-seq btn-seq--next">Next Chapter: Specleaner →</a>

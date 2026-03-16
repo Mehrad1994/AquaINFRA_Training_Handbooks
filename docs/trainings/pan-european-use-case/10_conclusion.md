@@ -23,6 +23,10 @@ The AquaINFRA team hopes this workflow supports your research and encourages fur
 > [!NOTE] 📹 **Video Reference**
 > [19:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1182s) Conclusion and Final Remarks
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./09_reviewing_results" class="btn-seq btn-seq--prev">← Previous: Results</a>
     <a href="../../" class="btn-seq btn-seq--next">Return Home</a>

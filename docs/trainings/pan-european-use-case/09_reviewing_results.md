@@ -36,6 +36,10 @@ Researchers can use these flags to create a more robust "cleaned" dataset for th
 > [!NOTE] 📹 **Video Reference**
 > [18:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s) Review the Workflow Results
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1122&end=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./08_workflow_processing" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 2</a>
     <a href="./10_conclusion" class="btn-seq btn-seq--next">Next Chapter: Conclusion →</a>

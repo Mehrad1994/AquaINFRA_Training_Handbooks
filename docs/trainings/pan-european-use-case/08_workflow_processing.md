@@ -21,6 +21,10 @@ The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization
 > [!NOTE] 📹 **Video Reference**
 > [16:40](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1000s) Review the Workflow Structure Part 2
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1000&end=1122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>
     <a href="./09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>

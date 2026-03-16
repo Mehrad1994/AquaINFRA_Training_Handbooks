@@ -25,6 +25,10 @@ The primary goal of this use case is to include fragmented datasets to provide *
 > [!NOTE] 📹 **Video Reference**
 > [0:00](https://www.youtube.com/watch?v=v_0zyUVY--E&t=0s) Introduction to AquaINFRA and Use-case
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=0&end=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
     <a href="./02_boku_researchers" class="btn-seq btn-seq--next">Next Chapter: Meet the Researchers →</a>

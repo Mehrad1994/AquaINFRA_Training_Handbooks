@@ -28,6 +28,10 @@ In this training, you will hear from the key researchers driving the technical s
 > [!NOTE] 📹 **Video Reference**
 > [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Meet the Researchers
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <div class="sequence-navigation">
     <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--next">Next Chapter: Biodiversity →</a>
