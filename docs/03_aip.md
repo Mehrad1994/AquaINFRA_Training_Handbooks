@@ -22,13 +22,14 @@ This walkthrough shows you exactly how to navigate the AIP interface. It covers 
 
 ## 🛠️ The Search-to-Analysis Workflow
 
-The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own laptop.
+The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own Computer.
 
 ### 1. The Seamless Route (OGC API)
 
 > [!TIP]
 > **Before you start**
-> Make sure you are already logged into the Galaxy platform in another tab. This allows the AIP to find your active session.
+> Make sure you are already logged into the Galaxy platform in another tab.
+This allows the AIP to find your active session.
 
 When you find a dataset on the AIP hosted as an **OGC API Feature service**, the workflow is incredibly smooth:
 
