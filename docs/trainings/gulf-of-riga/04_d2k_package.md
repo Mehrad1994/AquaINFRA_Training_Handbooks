@@ -19,7 +19,7 @@ The **Data-to-Knowledge Package (D2K)** is a core concept in AquaINFRA. It links
 A D2K package is specifically designed to structure and integrate meta-objects, providing a framework for addressing specific research questions—in this case: *"Do the optical properties in the Gulf of Riga change over the long term?"*
 
 ## Contents of the Package
-Within the package, you will find:
+Within the package, the user will find:
 *   **Step-by-step Guide**: Instructions on how to run the workflow.
 *   **Virtual Lab**: Links to a MyBinder-based virtual lab.
 *   **Web API Services**: Detailed info on developed services.

@@ -19,7 +19,7 @@ This chapter provides **step-by-step instructions** for running the DGA workflow
 
 ## Prerequisites
 
-Before starting, ensure you have:
+Before starting, ensure the user have:
 1. ✅ Registered for an **Aqua Galaxy** account
 2. ✅ Signed into the **AquaINFRA Interaction Platform**
 
@@ -42,7 +42,7 @@ The workflow requires **two datasets** to run.
 
 4. On the dataset page, click **"Import to Galaxy"**
 5. The **OGC API Features subsetting window** opens:
-   - **Bounding Box**: Leave default (or customize for specific area)
+   - **Bounding Box**: Leave default (or customise for specific area)
    - **Number of Points**: Set to **`5871`** (total available points)
    - **Query Parameters**: Leave empty (we need all data)
 
@@ -131,7 +131,7 @@ The workflow requires **two datasets** to run.
    - **Input 1 (Point Data)**: Select **`points`**
    - **Input 2 (Region Data)**: Select **`regions`**
 
-4. **(Optional)** Click **"Expand to full workflow"** to customize parameters:
+4. **(Optional)** Click **"Expand to full workflow"** to customise parameters:
    - Threshold for missing values
    - Minimum number of data points
    - Interpolation settings
@@ -211,7 +211,7 @@ The workflow identified **significant negative trends** in:
 ## Troubleshooting
 
 ### Issue: Import Fails (Red Status)
-- **Solution**: Check your internet connection, try re-importing
+- **Solution**: Check the internet connection, try re-importing
 
 ### Issue: Workflow Stuck (Orange for >10 minutes)
 - **Solution**: Refresh the page, check server status
@@ -224,9 +224,9 @@ The workflow identified **significant negative trends** in:
 ## Next Steps
 
 After successfully running the workflow:
-1. ✅ Download the results for your records
+1. ✅ Download the results for the records
 2. ✅ Experiment with different parameters
-3. ✅ Try applying the workflow to your own data
+3. ✅ Try applying the workflow to the own data
 4. ✅ Explore other AquaINFRA workflows
 
 ---

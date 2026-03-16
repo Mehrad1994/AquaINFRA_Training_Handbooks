@@ -18,7 +18,7 @@ nav_order: 4
 The technical foundation of the Pan-European workflow is the **Specleaner** R package. It provides a homogeneous and robust approach for identifying outliers in species occurrence records.
 
 ## Automated Flagging & Ensemble Methods
-Rather than relying on a single method, Specleaner combines **20 different outlier detection methods** into one approach. This "ensemble" logic ensures higher reliability for data used in species distribution modeling.
+Rather than relying on a single method, Specleaner combines **20 different outlier detection methods** into one approach. This "ensemble" logic ensures higher reliability for data used in species distribution modelling.
 
 ## 1. Outlier Identification Methods
 

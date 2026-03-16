@@ -15,7 +15,7 @@ nav_order: 9
 
 
 
-Once all steps in your Galaxy history have turned **green**, your results are ready for exploration and analysis.
+Once all steps in the Galaxy history have turned **green**, the results are ready for exploration and analysis.
 
 ## Visualizing Output in Galaxy
 To view the results of any step (especially Step 8: Flag Outliers):
@@ -25,7 +25,7 @@ To view the results of any step (especially Step 8: Flag Outliers):
 
 ## Accessing the Result Files
 Each workflow step produces a text file containing a direct link to the actual results. In this use case, the results are provided in **CSV format**.
-*   You can follow the link to download the final CSV file for use in your own local R or Python environments.
+*   users can follow the link to download the final CSV file for use in the own local R or Python environments.
 
 ## Interpreting Outlier Classifications
 The final output includes all extracted environmental predictors and a classification for each record based on the strength of evidence provided by the ensemble methods:

@@ -21,11 +21,11 @@ The workflow consists of **8 interconnected steps** categorized into two phases.
 
 | Step | Goal | Action |
 | :--- | :--- | :--- |
-| **Step 1: Input Data (Area of Interest)** | Define the geographical boundaries of your study. | Highlights the area on the map where biodiversity records will be analyzed. |
+| **Step 1: Input Data (Area of Interest)** | Define the geographical boundaries of the study. | Highlights the area on the map where biodiversity records will be analysed. |
 | **Step 2: Retrieve Biodiversity Data** | Fetch global occurrence records directly into Galaxy. | Connects to VertNet, GBIF, and iNaturalist. Retrieves up to a maximum number of points for defined target species. |
-| **Steps 3 & 4: Offline/Local Data** | Incorporate your own locally stored datasets. | Handles tabular files uploaded directly to Galaxy. Used to complement online data or as the sole source. |
+| **Steps 3 & 4: Offline/Local Data** | Incorporate the own locally stored datasets. | Handles tabular files uploaded directly to Galaxy. Used to complement online data or as the sole source. |
 
-*Note: If you don't have local data, Steps 3 & 4 can be skipped in a custom run.*
+*Note: If the user don't have local data, Steps 3 & 4 can be skipped in a custom run.*
 
 <div class="sequence-navigation">
     <a href="./06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>

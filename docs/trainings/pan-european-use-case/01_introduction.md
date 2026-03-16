@@ -20,7 +20,7 @@ The **AquaINFRA** project is developing a virtual environment designed to assist
 ## The Virtual Environment
 This environment features **FAIR** (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. It enables stakeholders to:
 *   **Store, share, and access** research data.
-*   **Analyze and process** digital research objects.
+*   **Analyse and process** digital research objects.
 *   **Collaborate** across scientific fields and national borders.
 
 By leveraging the **European Open Science Cloud (EOSC)** and other existing operational data spaces, AquaINFRA facilitates seamless cross-domain research.

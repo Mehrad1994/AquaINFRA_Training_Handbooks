@@ -24,10 +24,10 @@ Select the package titled: **"Data to Knowledge Package for Specleaner: A toolki
 The D2K package is structured into five key sections:
 
 ### 1. Virtual Research Environment (Workflow)
-Clicking here provides detailed documentation and redirects you to **Galaxy** (the execution environment) or **Zenodo** (the data repository).
+Clicking here provides detailed documentation and redirects the user to **Galaxy** (the execution environment) or **Zenodo** (the data repository).
 
 ### 2. Virtual Lab (Binder)
-Redirects to a **MyBinder** environment where you can interact directly with the **R and Python code** and explore the underlying Docker image in your browser.
+Redirects to a **MyBinder** environment where the user can interact directly with the **R and Python code** and explore the underlying Docker image in the browser.
 
 ### 3. Web API (pygeoapi)
 Lists all API services linked to the workflow. The Pan-European processes are found under the identifier **"Boku"**.

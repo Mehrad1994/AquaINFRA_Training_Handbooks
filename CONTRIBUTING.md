@@ -1,4 +1,4 @@
-# ✍️ Contributing to AquaINFRA Handbooks
+# ✍️ Contributing to AquaINFRA Handbook
 
 We welcome technical trainings, use cases, and documentation improvements. Our pipeline ensures that all content maintains a sequential and uniform learning experience.
 

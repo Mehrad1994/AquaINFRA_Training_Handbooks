@@ -24,7 +24,7 @@ BOKU is a life science university that covers a multitude of environmental topic
 *   Water Management
 
 ## The Lead Team
-In this training, you will hear from the key researchers driving the technical story behind these use cases:
+In this training, the user will hear from the key researchers driving the technical story behind these use cases:
 
 | Name | Role | Focus |
 | :--- | :--- | :--- |

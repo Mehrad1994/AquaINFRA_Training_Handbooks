@@ -22,11 +22,11 @@ The Pan-European Biodiversity Workflow is a powerful demonstration of how the Aq
 *   **Accessibility**: It targets both **proficient coders** (who want to save time) and **non-proficient users** (who can access advanced R scripts through a simple interface).
 *   **Fairness**: The entire process ensures that data, tools, and models are FAIR, leading to greater transparency and reproducibility in biodiversity insights.
 
-## Our Friends in the Background
-As we conclude, remember the species that drive this work. Protecting the **Danube Sturgeon** and the **Huchen (Danube Salmon)** means protecting the ecological balance of our river systems.
+## The Friends in the Background
+As the researchers conclude, remember the species that drive this work. Protecting the **Danube Sturgeon** and the **Huchen (Danube Salmon)** means protecting the ecological balance of the river systems.
 
 ## Final Remarks from the Team
-The AquaINFRA team hopes this workflow supports your research and encourages further exploration of our tools and services. Together, let's make data-driven research FAIR and more impactful.
+The AquaINFRA team hopes this workflow supports the research and encourages further exploration of the tools and services. Together, let's make data-driven research FAIR and more impactful.
 
 <div class="sequence-navigation">
     <a href="./09_reviewing_results" class="btn-seq btn-seq--prev">← Previous: Results</a>

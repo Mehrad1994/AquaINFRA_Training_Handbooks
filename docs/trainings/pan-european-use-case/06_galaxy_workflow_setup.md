@@ -15,12 +15,12 @@ nav_order: 6
 
 
 
-Before you can run the outlier detection, you must import the workflow and its required data into **[Aqua Galaxy](https://aqua.usegalaxy.eu/)**.
+Before the user can run the outlier detection, the user must import the workflow and its required data into **[Aqua Galaxy](https://aqua.usegalaxy.eu/)**.
 
 ## Importing the Workflow
 1.  From the D2K Package page, click the **Galaxy** link in the VRE section.
-2.  In the Galaxy interface, click **Import** to add the workflow to your list.
-3.  Ensure you are logged in to save your progress.
+2.  In the Galaxy interface, click **Import** to add the workflow to the list.
+3.  Ensure the user are logged in to save the progress.
 
 ## Importing Data from Zenodo
 The workflow requires an **Area of Interest (GeoJSON)** file. To import it:
@@ -37,7 +37,7 @@ As the workflow runs, the status boxes in the history panel will change color:
 
 > [!CAUTION] **Red**: The step has failed.
 
-Once imported, you can click **Run** on the workflow, select your input dataset, and wait for all steps to turn green.
+Once imported, the user can click **Run** on the workflow, select the input dataset, and wait for all steps to turn green.
 
 <div class="sequence-navigation">
     <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

@@ -15,10 +15,10 @@ This directory provides the building blocks for new AquaINFRA training handbooks
    - Add more numbered files as needed.
 
 3. **Register in `docs/_data/use_cases.yml`**:
-   Add your training under the correct region to make it appear in the library and sidebar.
+   Add the training under the correct region to make it appear in the library and sidebar.
 
 ## 🎨 Styling Best Practices
-We use a centralized design system. **Do not use inline styles**.
+The researchers use a centralized design system. **Do not use inline styles**.
 
 - **Cards**: Use the `step-content` class for introductory blocks.
 - **Buttons**: Use `.btn-seq` with `.btn-seq--next` or `.btn-seq--prev`.

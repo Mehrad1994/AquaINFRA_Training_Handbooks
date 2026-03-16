@@ -22,7 +22,7 @@ Its primary goal is to support marine and freshwater scientists and stakeholders
 ## Capabilities
 The AquaINFRA virtual environment enables target stakeholders to:
 *   **Store, share, and access** research data.
-*   **Analyze and process** research digital objects.
+*   **Analyse and process** research digital objects.
 *   **Collaborate** across disciplines (marine & freshwater) and national borders.
 *   Leverage the **European Open Science Cloud (EOSC)** and existing operational data spaces.
 

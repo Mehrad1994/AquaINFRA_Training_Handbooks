@@ -2,7 +2,7 @@
 
 ![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Active-success) ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-orange)
 
-This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbooks**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
+This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbook**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
 
 ## 🌐 Live Handbook
 Access the interactive training modules here:  
@@ -34,7 +34,7 @@ The handbook covers the full research lifecycle within the project:
 - ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
 
 ## 👥 Core Team & Leadership
-The AquaINFRA Training Handbooks are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
+The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
 
 - **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead & Principal Investigator.
 - **[Sadra Matmir](https://github.com/smatmir)** — Project Supervisor & Developer.

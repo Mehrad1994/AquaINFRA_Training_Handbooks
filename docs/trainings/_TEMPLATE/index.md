@@ -8,9 +8,9 @@ title: "TEMPLATE: Training Title"
 <!-- 
     INSTRUCTIONS FOR SCIENTISTS:
     1. Copy this entire _TEMPLATE directory.
-    2. Rename it to your use case name (e.g., "gulf-of-riga").
+    2. Rename it to the use case name (e.g., "gulf-of-riga").
     3. Edit this index.md and create corresponding chapter files.
-    4. Register your training in "docs/_data/use_cases.yml".
+    4. Register the training in "docs/_data/use_cases.yml".
     5. Delete these instruction comments before publishing.
 -->
 

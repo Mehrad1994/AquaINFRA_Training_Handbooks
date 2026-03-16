@@ -5,7 +5,7 @@ title: "1. Introduction"
 
 # 1. Introduction
 
-This is the first chapter of your training. Use this page to provide deeper scientific background, describe the study area, or list the specific datasets involved.
+This is the first chapter of the training. Use this page to provide deeper scientific background, describe the study area, or list the specific datasets involved.
 
 ## Scientific Context
 Explain why this analysis is important for marine or freshwater research.
