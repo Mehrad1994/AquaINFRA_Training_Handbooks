@@ -400,6 +400,118 @@
     }
 }
 
+/* =========================================
+   Copy-to-clipboard buttons on code blocks
+   ========================================= */
+.code-block-wrapper {
+    position: relative;
+    margin: 1.5rem 0;
+}
+.code-block-wrapper pre {
+    margin: 0;
+}
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #fff;
+    border: 1px solid #d0d7de;
+    color: #57606a;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.78rem;
+    font-family: var(--font-system, sans-serif);
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+    z-index: 2;
+}
+.code-block-wrapper:hover .copy-btn,
+.copy-btn:focus {
+    opacity: 1;
+}
+.copy-btn:hover {
+    background: #f6f8fa;
+    color: #24292f;
+}
+.copy-btn--success {
+    background: #dafbe1;
+    border-color: #1a7f37;
+    color: #1a7f37;
+    opacity: 1;
+}
+
+/* =========================================
+   Glossary tooltips
+   ========================================= */
+.glossary-term {
+    border-bottom: 1px dotted var(--aqua-blue);
+    text-decoration: none;
+    cursor: help;
+}
+.glossary-tooltip {
+    position: absolute;
+    max-width: 320px;
+    background: #1f2937;
+    color: #fff;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    z-index: 1000;
+}
+.glossary-tooltip--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================
+   Per-page feedback widget
+   ========================================= */
+.page-feedback {
+    margin: 3.5rem 0 1.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: #f8fafd;
+    border: 1px solid var(--aqua-blue-light);
+    border-radius: 8px;
+    text-align: center;
+}
+.page-feedback__prompt {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+.page-feedback__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+}
+.page-feedback__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--aqua-blue);
+    background: #fff;
+    border: 1px solid var(--aqua-blue-light);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+.page-feedback__btn:hover {
+    background: var(--aqua-blue-light);
+    transform: translateY(-1px);
+}
+
 /* GitHub-style Alerts Styling */
 .alert-box {
     margin: 2rem 0;

@@ -31,7 +31,9 @@ The handbook covers the full research lifecycle within the project:
 
 ## 🗺️ Documentation
 - 🏗️ **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
-- ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
+- ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow and pre-publish checklist for adding new training content.
+- 📝 **[Style Guide](STYLEGUIDE.md)**: Tone, capitalisation, and writing conventions.
+- 📐 **[Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md)**: Page anatomy and CSS conventions for new chapters.
 
 ## 👥 Core Team & Leadership
 The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.

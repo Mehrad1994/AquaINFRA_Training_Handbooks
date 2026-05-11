@@ -6,7 +6,16 @@
 
 # Site Metadata
 title: AquaINFRA Training Handbook
-description: A collection of training handbook and use case documentation for the AquaINFRA project.
+description: Companion handbook to the AquaINFRA YouTube trainings. Find data, run reproducible workflows, and review what you learned.
+
+# Canonical URL used only for OpenGraph / Twitter card absolute links.
+# Update to the aquainfra.eu/training URL once the handbook migrates.
+canonical_root: "https://mehrad1994.github.io/AquaINFRA_Training_Handbooks"
+og_image: assets/images/aip_vre.png
+
+# Source repository (for "Edit on GitHub" links and feedback issues)
+repo_url: "https://github.com/Mehrad1994/AquaINFRA_Training_Handbooks"
+repo_branch: "May_2026_Update"
 
 # Branding
 # Logo is handled in _includes/header.html for better control
