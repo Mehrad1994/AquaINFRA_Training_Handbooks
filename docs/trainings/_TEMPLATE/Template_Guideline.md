@@ -22,15 +22,16 @@ cp -r docs/trainings/_TEMPLATE docs/trainings/your-use-case
 
 Every chapter page should be built from these blocks (top to bottom):
 
-1. **Page header** - chapter number, title, est. read/video time, chapter position. (`Chapter X of N`)
-2. **At-a-glance callout** - 2-3 bullets summarising what the reader will know after this chapter.
-3. **Video companion block** - the pre-clipped iframe (`start=` / `end=`) **plus a chapter-index table** that links each sub-moment with `&t=Xs` deep links.
-4. **Key concepts** - short conceptual recap. **Don't transcribe the video** - frame *why it matters* and *what to watch for*. Diagrams or Mermaid when they help.
-5. **Step-by-step** (procedural chapters only) - numbered steps with per-step timestamp links. Each step says *what to do* and *why*, with callouts for pitfalls.
-6. **`<details>` deep dive** (optional) - code, internals, parameter tables, API examples for technical readers. Hide by default.
-7. **✅ Key takeaways** - 3-5 bullets for fast review.
-8. **Troubleshooting** (when relevant) - short list, or link to the global `/reference/faq` page.
-9. **Sequential nav** - `Previous` / `Next` buttons.
+1. **Chapter title (H1)** - `# Chapter X - Title`. The site CSS automatically adds the blue accent bar; do not wrap it in any container.
+2. **Meta line** - small grey line below the title showing read time, video time, and `Chapter X of N`.
+3. **At-a-glance callout** - 2-3 bullets summarising what the reader will know after this chapter.
+4. **Video companion** - the pre-clipped iframe (`start=` / `end=`) followed by a **timestamp table** (no sub-heading above it) with per-moment YouTube `&t=Xs` deep links. For short chapters, a single-line "📍 Jump to ..." paragraph below the embed is enough.
+5. **Key concepts** - short conceptual recap. **Don't transcribe the video** - frame *why it matters* and *what to watch for*. Diagrams or Mermaid when they help.
+6. **Step-by-step** (procedural chapters only) - numbered steps with per-step timestamp links. Each step says *what to do* and *why*, with callouts for pitfalls.
+7. **`<details>` deep dive** (optional) - code, internals, parameter tables, API examples for technical readers. Hide by default.
+8. **✅ Key takeaways** - 3-5 bullets for fast review.
+9. **Troubleshooting** (when relevant) - short list, or link to the global `/reference/faq` page.
+10. **Sequential nav** - `Previous` / `Next` buttons.
 
 > Don't repeat the video in prose. The page exists to help reviewers *find what they want fast* - not to be an alternative to watching the video.
 
@@ -81,10 +82,11 @@ After saving, your training will appear automatically in the sidebar under **App
 
 Before opening a PR, verify every chapter has:
 
-- [ ] Page header with read/video time and `Chapter X of N`.
+- [ ] Chapter title as H1 (`# Chapter X - Title`) - the CSS adds the blue accent bar automatically.
+- [ ] Meta line beneath the title with read/video time and `Chapter X of N`.
 - [ ] At-a-glance callout (2-3 bullets).
 - [ ] Pre-clipped iframe (`start=...&end=...`) embedding the right video segment.
-- [ ] Chapter-index table with per-moment YouTube `&t=Xs` deep links - **this is the supervisor's required feature**, never remove it.
+- [ ] Timestamp table (or single "📍 Jump to ..." paragraph for short chapters) with YouTube `&t=Xs` deep links - **this is the supervisor's required feature**, never remove it. Do **not** add a "Chapter index" sub-heading above the table.
 - [ ] Conceptual recap that does *not* transcribe the video.
 - [ ] Key takeaways at the end.
 - [ ] First mention of technical terms links to `{{ relative_root }}reference/glossary#anchor`.

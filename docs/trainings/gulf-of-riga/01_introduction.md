@@ -26,10 +26,6 @@ title: Introduction
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=0&end=118" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-### Chapter index
-
-Jump straight to the moment you want to review.
-
 <div class="table-wrapper">
     <table>
         <thead>

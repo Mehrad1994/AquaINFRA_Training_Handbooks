@@ -77,6 +77,45 @@ h1 {
     border-bottom: 2px solid var(--aqua-blue-light, #e1e9f6);
 }
 
+/* Page title (first H1) gets a left accent bar matching the region
+   headings on the Use Cases page. Applies to every page automatically. */
+.handbook-content h1:first-of-type,
+.handbook-content > h1:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    padding-bottom: 0.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.handbook-content h1:first-of-type::before,
+.handbook-content > h1:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 1.5rem;
+    background: var(--aqua-blue);
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+/* Mobile: keep accent visible but tighten gap */
+@media (max-width: 768px) {
+    .handbook-content h1:first-of-type,
+    .handbook-content > h1:first-child {
+        font-size: 1.5rem;
+        gap: 0.7rem;
+    }
+    .handbook-content h1:first-of-type::before,
+    .handbook-content > h1:first-child::before {
+        height: 1.3rem;
+    }
+}
+
 h2 {
     font-size: 1.5rem;
     margin-top: 1.75rem;
