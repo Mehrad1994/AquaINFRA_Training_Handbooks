@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 9
 ---
 
-# Chapter 9 — Reviewing the Workflow Results
+# Chapter 9 - Reviewing the Workflow Results
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 9 of 10
@@ -55,15 +55,15 @@ Each step writes a text file that contains a **direct link to the actual results
 The final table extends every record with the environmental predictors *and* an outlier class:
 
 <div class="callout">
-    <strong>✅ Not an outlier</strong> — keep, no method flagged.
+    <strong>✅ Not an outlier</strong> - keep, no method flagged.
 </div>
 
-> [!TIP] **Minor outliers** — usually keep, but worth inspecting:
+> [!TIP] **Minor outliers** - usually keep, but worth inspecting:
 > - Poor outlier
 > - Fair outlier
 > - Moderate outlier
 
-> [!WARNING] **Major outliers** — usually remove:
+> [!WARNING] **Major outliers** - usually remove:
 > - Very Strong outlier
 > - Perfect outlier
 
@@ -79,9 +79,9 @@ The right cut-off depends on your downstream model:
 
 ## ✅ Key takeaways
 
-- The **eye icon** in Galaxy is your fastest preview tool — use it on every step output.
+- The **eye icon** in Galaxy is your fastest preview tool - use it on every step output.
 - The final CSV download is what you use **outside** Galaxy.
-- Outlier classes are **strength of evidence**, not binary — pick a threshold consciously.
+- Outlier classes are **strength of evidence**, not binary - pick a threshold consciously.
 - For high-stakes work, treat borderline classes as **flag for expert review**, not auto-delete.
 
 ---

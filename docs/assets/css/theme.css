@@ -140,6 +140,39 @@
     margin-top: 2rem;
 }
 
+/* Region section headings */
+.use-case-library .region-group {
+    margin-bottom: 3.5rem;
+}
+
+.use-case-library .region-tag-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.85rem;
+    border-bottom: 2px solid var(--aqua-blue-light);
+}
+
+.use-case-library .region-tag-wrapper::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    background: var(--aqua-blue);
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.use-case-library .badge-tag {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--aqua-blue);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
 .use-case-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

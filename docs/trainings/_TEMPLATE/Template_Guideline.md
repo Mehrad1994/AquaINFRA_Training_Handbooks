@@ -22,17 +22,17 @@ cp -r docs/trainings/_TEMPLATE docs/trainings/your-use-case
 
 Every chapter page should be built from these blocks (top to bottom):
 
-1. **Page header** — chapter number, title, est. read/video time, chapter position. (`Chapter X of N`)
-2. **At-a-glance callout** — 2–3 bullets summarising what the reader will know after this chapter.
-3. **Video companion block** — the pre-clipped iframe (`start=` / `end=`) **plus a chapter-index table** that links each sub-moment with `&t=Xs` deep links.
-4. **Key concepts** — short conceptual recap. **Don't transcribe the video** — frame *why it matters* and *what to watch for*. Diagrams or Mermaid when they help.
-5. **Step-by-step** (procedural chapters only) — numbered steps with per-step timestamp links. Each step says *what to do* and *why*, with callouts for pitfalls.
-6. **`<details>` deep dive** (optional) — code, internals, parameter tables, API examples for technical readers. Hide by default.
-7. **✅ Key takeaways** — 3–5 bullets for fast review.
-8. **Troubleshooting** (when relevant) — short list, or link to the global `/reference/faq` page.
-9. **Sequential nav** — `Previous` / `Next` buttons.
+1. **Page header** - chapter number, title, est. read/video time, chapter position. (`Chapter X of N`)
+2. **At-a-glance callout** - 2-3 bullets summarising what the reader will know after this chapter.
+3. **Video companion block** - the pre-clipped iframe (`start=` / `end=`) **plus a chapter-index table** that links each sub-moment with `&t=Xs` deep links.
+4. **Key concepts** - short conceptual recap. **Don't transcribe the video** - frame *why it matters* and *what to watch for*. Diagrams or Mermaid when they help.
+5. **Step-by-step** (procedural chapters only) - numbered steps with per-step timestamp links. Each step says *what to do* and *why*, with callouts for pitfalls.
+6. **`<details>` deep dive** (optional) - code, internals, parameter tables, API examples for technical readers. Hide by default.
+7. **✅ Key takeaways** - 3-5 bullets for fast review.
+8. **Troubleshooting** (when relevant) - short list, or link to the global `/reference/faq` page.
+9. **Sequential nav** - `Previous` / `Next` buttons.
 
-> Don't repeat the video in prose. The page exists to help reviewers *find what they want fast* — not to be an alternative to watching the video.
+> Don't repeat the video in prose. The page exists to help reviewers *find what they want fast* - not to be an alternative to watching the video.
 
 ---
 
@@ -59,7 +59,7 @@ title: "Chapter Title"
 
 ---
 
-## 📋 Registry entry — `docs/_data/use_cases.yml`
+## 📋 Registry entry - `docs/_data/use_cases.yml`
 
 Add your training under the correct region. Example:
 
@@ -82,12 +82,12 @@ After saving, your training will appear automatically in the sidebar under **App
 Before opening a PR, verify every chapter has:
 
 - [ ] Page header with read/video time and `Chapter X of N`.
-- [ ] At-a-glance callout (2–3 bullets).
+- [ ] At-a-glance callout (2-3 bullets).
 - [ ] Pre-clipped iframe (`start=...&end=...`) embedding the right video segment.
-- [ ] Chapter-index table with per-moment YouTube `&t=Xs` deep links — **this is the supervisor's required feature**, never remove it.
+- [ ] Chapter-index table with per-moment YouTube `&t=Xs` deep links - **this is the supervisor's required feature**, never remove it.
 - [ ] Conceptual recap that does *not* transcribe the video.
 - [ ] Key takeaways at the end.
-- [ ] First mention of technical terms links to `{{ '/reference/glossary' | relative_url }}#anchor`.
+- [ ] First mention of technical terms links to `{{ relative_root }}reference/glossary#anchor`.
 - [ ] Previous / Next navigation present and correct.
 - [ ] Wave decoration block at the bottom (consistency with rest of site).
 
@@ -108,13 +108,13 @@ The handbook uses a centralised design system. **Do not use inline styles** beyo
 - **Buttons**: `.btn-seq` with `.btn-seq--next` / `.btn-seq--prev`
 - **Callouts**: GitHub-style alerts (`> [!NOTE]` / `> [!TIP]` / `> [!WARNING]`) or `<div class="callout">` with optional `callout--warning` / `callout--info`.
 - **Tables**: wrap in `<div class="table-wrapper">` for responsive overflow.
-- **Diagrams**: Mermaid is enabled — use fenced ` ```mermaid ` blocks.
+- **Diagrams**: Mermaid is enabled - use fenced ` ```mermaid ` blocks.
 
 ---
 
 ## 🔗 Related references
 
-- [Glossary](../../reference/glossary.md) — link first-mention terms here.
-- [Prerequisites & Sign-Up](../../reference/prerequisites.md) — link from any chapter that requires an account.
-- [FAQ & Troubleshooting](../../reference/faq.md) — link from troubleshooting sections rather than duplicating answers.
-- [ARCHITECTURE.md](../../../ARCHITECTURE.md) — site-wide architecture overview.
+- [Glossary](../../reference/glossary.md) - link first-mention terms here.
+- [Prerequisites & Sign-Up](../../reference/prerequisites.md) - link from any chapter that requires an account.
+- [FAQ & Troubleshooting](../../reference/faq.md) - link from troubleshooting sections rather than duplicating answers.
+- [ARCHITECTURE.md](../../../ARCHITECTURE.md) - site-wide architecture overview.

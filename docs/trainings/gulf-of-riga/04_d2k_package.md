@@ -3,7 +3,7 @@ layout: default
 title: Data-to-Knowledge Package
 ---
 
-# Chapter 4 — The Gulf of Riga Data-to-Knowledge Package
+# Chapter 4 - The Gulf of Riga Data-to-Knowledge Package
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 4 of 9
@@ -12,9 +12,9 @@ title: Data-to-Knowledge Package
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What a <a href="{{ '/reference/glossary' | relative_url }}#d2kp">D2KP</a> packages together (data, workflow, code, virtual lab).</li>
+        <li>What a <a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a> packages together (data, workflow, code, virtual lab).</li>
         <li>How the Gulf of Riga D2KP supports the darkening research question end-to-end.</li>
-        <li>The four "doors" into a D2KP — pick the one that matches your skill level.</li>
+        <li>The four "doors" into a D2KP - pick the one that matches your skill level.</li>
     </ul>
 </div>
 
@@ -26,7 +26,7 @@ title: Data-to-Knowledge Package
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=411&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s" target="_blank" rel="noopener">Jump to 6:51 → 9:32 in YouTube</a> — Introduction to the Data-to-Knowledge Package.</p>
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s" target="_blank" rel="noopener">Jump to 6:51 → 9:32 in YouTube</a> - Introduction to the Data-to-Knowledge Package.</p>
 
 ---
 
@@ -40,7 +40,7 @@ A **D2KP** structures everything needed to reproduce a specific analysis. For th
 |---|---|
 | **Step-by-step guide** | Plain-language walkthrough of running the workflow. |
 | **Galaxy workflow** | The `.ga` file you'll import in Chapter 7. |
-| **Virtual lab** (MyBinder) | Interactive RStudio with the code pre-loaded — edit and re-run live. |
+| **Virtual lab** (MyBinder) | Interactive RStudio with the code pre-loaded - edit and re-run live. |
 | **Web API services** | OGC API endpoints if you want to drive the analysis from your own scripts. |
 
 ### Why this matters
@@ -53,7 +53,7 @@ Each component is a different **interaction level**. A domain researcher can run
 
 ## ✅ Key takeaways
 
-- A D2KP is **not** a zip of files — it's a multi-modal reproducibility bundle with four interaction paths.
+- A D2KP is **not** a zip of files - it's a multi-modal reproducibility bundle with four interaction paths.
 - The Gulf of Riga D2KP **answers a specific research question** by tying its data, workflow, and code to the darkening hypothesis.
 - Use the **AIP "Related Content"** sidebar to find the D2KP from any of its component datasets.
 - All D2KPs are citable via **DOI on Zenodo**.

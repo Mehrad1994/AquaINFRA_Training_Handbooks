@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 2
 ---
 
-# Chapter 2 — Meet the BOKU Team
+# Chapter 2 - Meet the BOKU Team
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>5 min video</strong> · Chapter 2 of 10
@@ -34,7 +34,7 @@ nav_order: 2
 
 ## Key concepts
 
-The use case is led by the **Institute of Hydrobiology and Aquatic Ecosystem Management** at [BOKU University](https://boku.ac.at) (University of Natural Resources and Life Sciences) in Vienna, Austria. BOKU's environmental-sciences mandate covers forestry, agriculture, and water management — the cross-domain framing that makes their team a natural fit for AquaINFRA.
+The use case is led by the **Institute of Hydrobiology and Aquatic Ecosystem Management** at [BOKU University](https://boku.ac.at) (University of Natural Resources and Life Sciences) in Vienna, Austria. BOKU's environmental-sciences mandate covers forestry, agriculture, and water management - the cross-domain framing that makes their team a natural fit for AquaINFRA.
 
 ## The lead team
 
@@ -62,7 +62,7 @@ The use case is led by the **Institute of Hydrobiology and Aquatic Ecosystem Man
 
 ## ✅ Key takeaways
 
-- Workflow is built by domain experts who **face the data-fragmentation problem themselves** — not by infrastructure-only teams.
+- Workflow is built by domain experts who **face the data-fragmentation problem themselves** - not by infrastructure-only teams.
 - **Specleaner** (the R package) is purpose-built for the messy reality of occurrence data.
 - BOKU's cross-domain stance (forestry, water, agriculture) maps cleanly onto AquaINFRA's marine ↔ freshwater agenda.
 

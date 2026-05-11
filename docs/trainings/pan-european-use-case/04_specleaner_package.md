@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 4
 ---
 
-# Chapter 4 — The Specleaner Package
+# Chapter 4 - The Specleaner Package
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~4 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10
@@ -63,15 +63,15 @@ Consider **multiple predictors at once**, so an unusual combination flags even w
 
 The `m_detect` function compiles results and **weights each record** by how many methods flagged it. Output classes:
 
-- **Not an outlier** — no method flagged.
-- **Poor / Fair outlier** — flagged by a few methods.
-- **Moderate / Strong outlier** — flagged by most methods.
-- **Perfect outlier** — flagged by every method run.
+- **Not an outlier** - no method flagged.
+- **Poor / Fair outlier** - flagged by a few methods.
+- **Moderate / Strong outlier** - flagged by most methods.
+- **Perfect outlier** - flagged by every method run.
 
 You then choose your **threshold**: be conservative (remove only Perfect) or aggressive (remove everything ≥ Moderate), depending on your downstream Species Distribution Model's sensitivity to noise.
 
 <details>
-<summary><strong>🔬 Deep dive — calling Specleaner directly from R</strong></summary>
+<summary><strong>🔬 Deep dive - calling Specleaner directly from R</strong></summary>
 
 If you'd rather run Specleaner outside Galaxy (e.g. in the MyBinder lab or your own RStudio), the API looks roughly like:
 
@@ -91,7 +91,7 @@ result <- m_detect(
 clean <- result$data[result$data$outlier_class != "perfect", ]
 ```
 
-The Galaxy tool wraps exactly this call — picking it via the Galaxy UI sets `methods` and `threshold` for you.
+The Galaxy tool wraps exactly this call - picking it via the Galaxy UI sets `methods` and `threshold` for you.
 </details>
 
 ---
@@ -101,7 +101,7 @@ The Galaxy tool wraps exactly this call — picking it via the Galaxy UI sets `m
 - **Ensemble beats any single method** at outlier detection in messy occurrence data.
 - **Univariate** = one variable at a time; **multivariate** = combinations matter.
 - The **voting + weighting** system gives you a *strength of evidence* per record, not just a binary flag.
-- Choose your threshold based on downstream model sensitivity — it's not one-size-fits-all.
+- Choose your threshold based on downstream model sensitivity - it's not one-size-fits-all.
 
 ---
 

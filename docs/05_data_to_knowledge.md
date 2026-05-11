@@ -7,8 +7,8 @@ title: Data to Knowledge Package
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What a <strong><a href="{{ '/reference/glossary' | relative_url }}#d2kp">D2KP</a></strong> is and why it goes beyond "a zip of files".</li>
-        <li>The four interaction levels — data, Galaxy workflow, Web API, MyBinder lab.</li>
+        <li>What a <strong><a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a></strong> is and why it goes beyond "a zip of files".</li>
+        <li>The four interaction levels - data, Galaxy workflow, Web API, MyBinder lab.</li>
         <li>How to find existing D2KPs and how to cite them.</li>
     </ul>
 </div>
@@ -51,7 +51,7 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 > When you find a dataset on the AIP, look for the "Related Content" section on the right side. This will indicate if an associated D2KP exists, showing you exactly how that data was used in previous research.
 
 <details>
-<summary><strong>🔬 Deep dive — typical D2KP folder layout</strong></summary>
+<summary><strong>🔬 Deep dive - typical D2KP folder layout</strong></summary>
 
 A published D2KP on Zenodo typically contains:
 
@@ -73,7 +73,7 @@ my-d2kp/
     └── postBuild          ← MyBinder configuration
 ```
 
-The key idea: a reader can choose **their preferred level of engagement** — run the Galaxy workflow as-is, hit the OGC API from their own script, or open the MyBinder lab to edit the code live.
+The key idea: a reader can choose **their preferred level of engagement** - run the Galaxy workflow as-is, hit the OGC API from their own script, or open the MyBinder lab to edit the code live.
 
 </details>
 
@@ -82,8 +82,8 @@ The key idea: a reader can choose **their preferred level of engagement** — ru
 ## ✅ Key takeaways
 
 - A **D2KP** bundles data, workflow, code, environment, and docs into a single citable package.
-- Each D2KP exposes **four interaction paths**: data/code, Galaxy workflow, Web API, MyBinder lab — pick what matches your skill level.
-- D2KPs are published on **Zenodo with a DOI** — cite them like any other research output.
+- Each D2KP exposes **four interaction paths**: data/code, Galaxy workflow, Web API, MyBinder lab - pick what matches your skill level.
+- D2KPs are published on **Zenodo with a DOI** - cite them like any other research output.
 - Find D2KPs via the **AIP search** by filtering for "Data to Knowledge Package."
 
 ---

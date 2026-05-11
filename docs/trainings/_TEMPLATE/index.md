@@ -12,7 +12,7 @@ use_case: true
     INSTRUCTIONS FOR CONTRIBUTORS:
     1. Copy this entire _TEMPLATE directory to docs/trainings/your-use-case/
     2. Edit this index.md and each chapter file.
-    3. Register the training in docs/_data/use_cases.yml — see Template_Guideline.md for the exact YAML.
+    3. Register the training in docs/_data/use_cases.yml - see Template_Guideline.md for the exact YAML.
     4. Delete this comment block before publishing.
     5. Every chapter should follow the page anatomy documented in Template_Guideline.md.
 -->
@@ -66,12 +66,12 @@ After completing this training the reader will be able to:
 </div>
 
 > [!TIP]
-> First-time visitor? Start at Chapter 1 — every chapter links forward via the Next button at the bottom. Reviewing? Use the table above to jump to a specific chapter, or the in-chapter index to jump to a specific video moment.
+> First-time visitor? Start at Chapter 1 - every chapter links forward via the Next button at the bottom. Reviewing? Use the table above to jump to a specific chapter, or the in-chapter index to jump to a specific video moment.
 
 ---
 
 <div class="sequence-navigation" style="margin-top: 4rem;">
-    <a href="{{ '/06_use_cases' | relative_url }}" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
+    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

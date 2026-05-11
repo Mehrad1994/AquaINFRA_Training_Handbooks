@@ -3,7 +3,7 @@ layout: default
 title: Introduction
 ---
 
-# Chapter 1 — Introduction to AquaINFRA
+# Chapter 1 - Introduction to AquaINFRA
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>2 min video</strong> · Chapter 1 of 9
@@ -56,7 +56,7 @@ Jump straight to the moment you want to review.
 </div>
 
 > [!TIP]
-> Already watched the video? Skim **Key concepts** and **Key takeaways** below — that is the fastest way to refresh what you learned.
+> Already watched the video? Skim **Key concepts** and **Key takeaways** below - that is the fastest way to refresh what you learned.
 
 ---
 
@@ -66,26 +66,26 @@ Jump straight to the moment you want to review.
 AquaINFRA is building a **virtual research environment** that gives marine and freshwater scientists one place to find data, run analyses, and share reproducible workflows. The aim is to make research on healthy oceans, seas, coasts, and inland waters faster and more open.
 
 ### Why FAIR
-All data and services in AquaINFRA follow **FAIR principles** — they must be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable. Practically, that means a dataset you discover through AquaINFRA has standard metadata, an open-access endpoint, and a clear licence — so you can re-use it in your own analysis without guesswork.
+All data and services in AquaINFRA follow **FAIR principles** - they must be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable. Practically, that means a dataset you discover through AquaINFRA has standard metadata, an open-access endpoint, and a clear licence - so you can re-use it in your own analysis without guesswork.
 
 ### Where EOSC fits
 The **European Open Science Cloud (EOSC)** is the wider European research-data ecosystem. AquaINFRA plugs into EOSC so that aquatic datasets are visible alongside other domains, and so that the tools researchers use here interoperate with services across Europe.
 
 ### What you can do inside AquaINFRA
 - **Store, share, and access** research data across institutional and national borders.
-- **Analyse and process** datasets without installing software locally — using the **VRE** (Virtual Research Environment, powered by Galaxy).
+- **Analyse and process** datasets without installing software locally - using the **VRE** (Virtual Research Environment, powered by Galaxy).
 - **Collaborate** across the marine ↔ freshwater divide, which has historically been siloed.
 
 <details>
-<summary><strong>🔬 Deep dive — the three pillars you'll meet in this case study</strong></summary>
+<summary><strong>🔬 Deep dive - the three pillars you'll meet in this case study</strong></summary>
 
 Across the remaining chapters you'll work hands-on with three AquaINFRA components. Knowing the role of each up front makes the rest of the handbook easier to navigate:
 
 | Component | What it is | Where you'll meet it |
 |---|---|---|
-| **AIP** — AquaINFRA Interaction Platform | A unified web portal that lets you search for datasets, tools, and workflows across many providers (Zenodo, DDAS, OGC services, …) from one interface. | Chapter 3 |
-| **D2KP** — Data-to-Knowledge Package | A bundle that ties together the *dataset(s)*, *workflow*, *code*, and *documentation* needed to reproduce a specific analysis end-to-end. | Chapter 4 |
-| **VRE / Aqua Galaxy** | A browser-based Galaxy server (`aqua.usegalaxy.eu`) where you actually execute workflows on the data — no local installation. | Chapters 5–8 |
+| **AIP** - AquaINFRA Interaction Platform | A unified web portal that lets you search for datasets, tools, and workflows across many providers (Zenodo, DDAS, OGC services, …) from one interface. | Chapter 3 |
+| **D2KP** - Data-to-Knowledge Package | A bundle that ties together the *dataset(s)*, *workflow*, *code*, and *documentation* needed to reproduce a specific analysis end-to-end. | Chapter 4 |
+| **VRE / Aqua Galaxy** | A browser-based Galaxy server (`aqua.usegalaxy.eu`) where you actually execute workflows on the data - no local installation. | Chapters 5-8 |
 
 If you're new to Galaxy: it's a workflow engine that chains analysis "tools" into reproducible pipelines, with every input, parameter, and output tracked. You don't need to know it deeply to follow this case study.
 

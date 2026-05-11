@@ -8,7 +8,7 @@ title: EOSC
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What <strong><a href="{{ '/reference/glossary' | relative_url }}#eosc">EOSC</a></strong> is and which problem it solves for European researchers.</li>
+        <li>What <strong><a href="{{ relative_root }}reference/glossary#eosc">EOSC</a></strong> is and which problem it solves for European researchers.</li>
         <li>Why AquaINFRA builds on top of EOSC instead of reinventing the wheel.</li>
         <li>Where to log in and start using EOSC services right now.</li>
     </ul>
@@ -16,7 +16,7 @@ title: EOSC
 
 The **European Open Science Cloud (EOSC)** is an initiative by the European Commission to provide researchers with a unified, trusted virtual environment for storing, analyzing, and sharing data across borders and disciplines.
 
-For AquaINFRA users, EOSC is the overarching infrastructure that makes our multidisciplinary approach possible, providing the underlying framework for [**FAIR**]({{ '/reference/glossary' | relative_url }}#fair) (Findable, Accessible, Interoperable, and Reusable) data sharing.
+For AquaINFRA users, EOSC is the overarching infrastructure that makes our multidisciplinary approach possible, providing the underlying framework for [**FAIR**]({{ relative_root }}reference/glossary#fair) (Findable, Accessible, Interoperable, and Reusable) data sharing.
 
 ---
 
@@ -62,10 +62,10 @@ Instead of worrying about hardware or securing funding for data centers, the Nod
 
 ## ✅ Key takeaways
 
-- **EOSC** is Europe's federated research-data ecosystem — one umbrella for many disciplines.
+- **EOSC** is Europe's federated research-data ecosystem - one umbrella for many disciplines.
 - AquaINFRA **plugs into EOSC** so aquatic datasets are visible alongside everything else researchers consume.
-- The **EOSC EU Node** is the operational entry point — login uses your existing institutional / EU Login account, no new password.
-- For the trainings in this handbook, an EOSC account is **optional** ([Prerequisites]({{ '/reference/prerequisites' | relative_url }})).
+- The **EOSC EU Node** is the operational entry point - login uses your existing institutional / EU Login account, no new password.
+- For the trainings in this handbook, an EOSC account is **optional** ([Prerequisites]({{ relative_root }}reference/prerequisites)).
 
 ---
 

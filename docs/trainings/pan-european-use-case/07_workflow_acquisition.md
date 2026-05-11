@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 7
 ---
 
-# Chapter 7 — Workflow Steps 1–4: Data Acquisition
+# Chapter 7 - Workflow Steps 1-4: Data Acquisition
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 7 of 10
@@ -42,9 +42,9 @@ flowchart LR
     C --> M
 ```
 
-This chapter covers Steps 1–4. The processing half (Steps 5–8) is in [Chapter 8](./08_workflow_processing).
+This chapter covers Steps 1-4. The processing half (Steps 5-8) is in [Chapter 8](./08_workflow_processing).
 
-## Phase 1 — Data acquisition
+## Phase 1 - Data acquisition
 
 <div class="table-wrapper">
     <table>
@@ -53,7 +53,7 @@ This chapter covers Steps 1–4. The processing half (Steps 5–8) is in [Chapte
             <tr>
                 <td><strong>1. Input data (AOI)</strong></td>
                 <td>Define the spatial boundary.</td>
-                <td>Highlights the GeoJSON polygon you uploaded — every subsequent query is clipped to this area.</td>
+                <td>Highlights the GeoJSON polygon you uploaded - every subsequent query is clipped to this area.</td>
             </tr>
             <tr>
                 <td><strong>2. Retrieve biodiversity data</strong></td>
@@ -70,14 +70,14 @@ This chapter covers Steps 1–4. The processing half (Steps 5–8) is in [Chapte
 </div>
 
 > [!TIP]
-> **No local data?** Skip Steps 3 & 4 in a custom run — set them to "no input" on the workflow form. The remaining steps will work fine with online-only data.
+> **No local data?** Skip Steps 3 & 4 in a custom run - set them to "no input" on the workflow form. The remaining steps will work fine with online-only data.
 
 ---
 
 ## ✅ Key takeaways
 
 - Step 1 fixes the **where**; Step 2 fetches the **what** from three global aggregators.
-- Steps 3–4 are **optional** — only needed if you have your own occurrence records to mix in.
+- Steps 3-4 are **optional** - only needed if you have your own occurrence records to mix in.
 - The output of this phase is one consolidated dataset, ready for the cleaning steps in Chapter 8.
 
 ---

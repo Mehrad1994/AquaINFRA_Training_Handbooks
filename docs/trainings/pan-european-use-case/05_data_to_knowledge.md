@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 5
 ---
 
-# Chapter 5 — The Pan-European D2KP
+# Chapter 5 - The Pan-European D2KP
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2 min video</strong> · Chapter 5 of 10
@@ -14,7 +14,7 @@ nav_order: 5
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>How to find the Specleaner <a href="{{ '/reference/glossary' | relative_url }}#d2kp">D2KP</a> on the AIP.</li>
+        <li>How to find the Specleaner <a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a> on the AIP.</li>
         <li>The five sections inside it and what each unlocks for you.</li>
         <li>Which entry point to choose based on your skill level.</li>
     </ul>
@@ -46,7 +46,7 @@ On the AIP, search for **"Data to Knowledge Package"** and select **"Data to Kno
         <tbody>
             <tr><td><strong>1. VRE (workflow)</strong></td><td>Redirects to the Galaxy workflow or its Zenodo backup.</td><td>Anyone who wants to <em>run</em> the analysis.</td></tr>
             <tr><td><strong>2. Virtual Lab (Binder)</strong></td><td>Containerised RStudio with the Specleaner code pre-loaded.</td><td>R users who want to <em>edit</em> the algorithm.</td></tr>
-            <tr><td><strong>3. Web API (pygeoapi)</strong></td><td>OGC-compliant endpoints — BOKU's processes are under <code>"Boku"</code>.</td><td>Developers integrating Specleaner into other systems.</td></tr>
+            <tr><td><strong>3. Web API (pygeoapi)</strong></td><td>OGC-compliant endpoints - BOKU's processes are under <code>"Boku"</code>.</td><td>Developers integrating Specleaner into other systems.</td></tr>
             <tr><td><strong>4. Reproducible basis</strong></td><td>Full toolbox on GitHub + Zenodo with permanent DOIs.</td><td>Methodologists, peer reviewers, archivists.</td></tr>
             <tr><td><strong>5. Datasets</strong></td><td>Direct download links for inputs (e.g. the GeoJSON area of interest).</td><td>Anyone needing the demo inputs to verify a run.</td></tr>
         </tbody>
@@ -54,15 +54,15 @@ On the AIP, search for **"Data to Knowledge Package"** and select **"Data to Kno
 </div>
 
 > [!TIP]
-> If you're not sure which to pick, **start with section 1 (VRE)**. You can always drop down to sections 2–4 later if you need more control.
+> If you're not sure which to pick, **start with section 1 (VRE)**. You can always drop down to sections 2-4 later if you need more control.
 
 ---
 
 ## ✅ Key takeaways
 
-- The D2KP is structured by **interaction level** — pick the section that matches your goals.
+- The D2KP is structured by **interaction level** - pick the section that matches your goals.
 - Use the **VRE** path for one-click running, **Virtual Lab** for live R editing, **Web API** for integration.
-- All artefacts are **permanently archived** on Zenodo and GitHub — link rot is not a concern.
+- All artefacts are **permanently archived** on Zenodo and GitHub - link rot is not a concern.
 - Cite the D2KP via its **Zenodo DOI** when publishing.
 
 ---

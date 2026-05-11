@@ -7,8 +7,8 @@ title: AquaINFRA VRE
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What the <strong><a href="{{ '/reference/glossary' | relative_url }}#vre">VRE</a></strong> is and why "VRE" and "<a href="{{ '/reference/glossary' | relative_url }}#aqua-galaxy">Aqua Galaxy</a>" mean the same thing in practice.</li>
-        <li>What you can do inside it — drag-and-drop workflows, R, Python, all in the browser.</li>
+        <li>What the <strong><a href="{{ relative_root }}reference/glossary#vre">VRE</a></strong> is and why "VRE" and "<a href="{{ relative_root }}reference/glossary#aqua-galaxy">Aqua Galaxy</a>" mean the same thing in practice.</li>
+        <li>What you can do inside it - drag-and-drop workflows, R, Python, all in the browser.</li>
         <li>How the VRE makes your analysis reproducible by default.</li>
     </ul>
 </div>
@@ -38,17 +38,17 @@ The environment runs on established open-source technologies (**Galaxy**, **Bind
 > While Galaxy is currently the core component of the VRE, it offers a robust foundation for future integration of additional tools. A dedicated subdomain ensures that tools are tailored to the AquaINFRA user community, combining ease of access with powerful analytical capabilities.
 
 <details>
-<summary><strong>🔬 Deep dive — anatomy of a Galaxy session</strong></summary>
+<summary><strong>🔬 Deep dive - anatomy of a Galaxy session</strong></summary>
 
 When you log into Aqua Galaxy at `aqua.usegalaxy.eu`, the interface splits into three regions:
 
 | Region | What it shows | What you do here |
 |---|---|---|
-| **Left — Tools panel** | Searchable catalogue of every analysis tool installed on the server. | Pick a tool, configure its inputs, click **Run**. |
-| **Centre — Working area** | The currently active tool form, workflow editor, or dataset preview. | Build workflows visually; preview intermediate results. |
-| **Right — History panel** | Every input/output of your session, colour-coded (grey → orange → green → red). | Track progress; rename, tag, or delete results. |
+| **Left - Tools panel** | Searchable catalogue of every analysis tool installed on the server. | Pick a tool, configure its inputs, click **Run**. |
+| **Centre - Working area** | The currently active tool form, workflow editor, or dataset preview. | Build workflows visually; preview intermediate results. |
+| **Right - History panel** | Every input/output of your session, colour-coded (grey → orange → green → red). | Track progress; rename, tag, or delete results. |
 
-Every action you take is **logged in the history**, which makes the entire session inherently reproducible — you can re-run any tool with one click, or export the whole sequence as a `.ga` workflow file.
+Every action you take is **logged in the history**, which makes the entire session inherently reproducible - you can re-run any tool with one click, or export the whole sequence as a `.ga` workflow file.
 
 </details>
 
@@ -56,10 +56,10 @@ Every action you take is **logged in the history**, which makes the entire sessi
 
 ## ✅ Key takeaways
 
-- The VRE = **Aqua Galaxy** at `aqua.usegalaxy.eu` — a browser-based, cloud-hosted Galaxy server.
+- The VRE = **Aqua Galaxy** at `aqua.usegalaxy.eu` - a browser-based, cloud-hosted Galaxy server.
 - It supports both **GUI workflows** (drag-and-drop) and **code** (R, Python, OGC API).
 - Reproducibility is built-in: every input, parameter, and output is tracked in your **history**.
-- Workflows are portable — share via `.ga` file or publish inside a **D2KP**.
+- Workflows are portable - share via `.ga` file or publish inside a **D2KP**.
 
 ---
 

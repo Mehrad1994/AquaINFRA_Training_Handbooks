@@ -20,7 +20,7 @@ Everything you need to set up **before** starting a training. Allow ~10 minutes 
 
 ## Account map
 
-AquaINFRA touches three different platforms. You don't necessarily need an account on all of them — it depends on what you want to do.
+AquaINFRA touches three different platforms. You don't necessarily need an account on all of them - it depends on what you want to do.
 
 <div class="table-wrapper">
     <table>
@@ -60,11 +60,11 @@ AquaINFRA touches three different platforms. You don't necessarily need an accou
 
 ---
 
-## Step 1 — Register on Aqua Galaxy
+## Step 1 - Register on Aqua Galaxy
 
 1. Go to [aqua.usegalaxy.eu](https://aqua.usegalaxy.eu/).
 2. Click **Login or Register** (top right).
-3. If your institution participates in **ELIXIR / LifeScience AAI**, prefer that path — it reuses your university login.
+3. If your institution participates in **ELIXIR / LifeScience AAI**, prefer that path - it reuses your university login.
 4. Otherwise, register with email and a password.
 5. After confirming your email, return to Aqua Galaxy and verify you can see the **History** panel on the right.
 
@@ -72,17 +72,17 @@ AquaINFRA touches three different platforms. You don't necessarily need an accou
 
 ---
 
-## Step 2 — Get familiar with the AIP
+## Step 2 - Get familiar with the AIP
 
 No sign-up required for browsing.
 
 1. Open [aquainfra.dev.52north.org](https://aquainfra.dev.52north.org/) in a new tab.
-2. Try a search: type *secchi* (used in the Gulf of Riga training) — you should see dataset results.
-3. Keep this tab open during hands-on chapters — you'll switch between AIP and Galaxy frequently.
+2. Try a search: type *secchi* (used in the Gulf of Riga training) - you should see dataset results.
+3. Keep this tab open during hands-on chapters - you'll switch between AIP and Galaxy frequently.
 
 ---
 
-## Step 3 (optional) — EOSC EU Node
+## Step 3 (optional) - EOSC EU Node
 
 Only follow this step if your research needs **dedicated cloud compute**, **shared group workspaces**, or **tools outside Galaxy** (e.g. JupyterLab on EOSC infrastructure).
 
@@ -94,7 +94,7 @@ Only follow this step if your research needs **dedicated cloud compute**, **shar
 
 ## Browser & system requirements
 
-- A modern browser (Chrome, Firefox, Edge, Safari — current major versions).
+- A modern browser (Chrome, Firefox, Edge, Safari - current major versions).
 - Stable broadband; some imports stream multi-MB GIS files.
 - No local software installation required for any training in this handbook.
 
@@ -106,13 +106,13 @@ Before starting Chapter 1 of any training, confirm you can:
 
 - [ ] Open Aqua Galaxy and see your username top-right.
 - [ ] Open the AIP and run a keyword search.
-- [ ] Open both tabs side-by-side — most workflows switch between them.
+- [ ] Open both tabs side-by-side - most workflows switch between them.
 
 ---
 
 <div class="sequence-navigation">
-    <a href="{{ '/reference/glossary' | relative_url }}" class="btn-seq btn-seq--prev">← Glossary</a>
-    <a href="{{ '/reference/faq' | relative_url }}" class="btn-seq btn-seq--next">Next: FAQ →</a>
+    <a href="{{ relative_root }}reference/glossary" class="btn-seq btn-seq--prev">← Glossary</a>
+    <a href="{{ relative_root }}reference/faq" class="btn-seq btn-seq--next">Next: FAQ →</a>
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>

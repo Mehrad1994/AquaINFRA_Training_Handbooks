@@ -8,12 +8,12 @@ title: AquaINFRA
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What the AquaINFRA project is, who runs it, and what timeframe it covers.</li>
-        <li>The three core components you'll meet: <a href="{{ '/reference/glossary' | relative_url }}#aip">AIP</a>, <a href="{{ '/reference/glossary' | relative_url }}#vre">VRE</a>, and <a href="{{ '/reference/glossary' | relative_url }}#d2kp">D2KP</a>.</li>
+        <li>The three core components you'll meet: <a href="{{ relative_root }}reference/glossary#aip">AIP</a>, <a href="{{ relative_root }}reference/glossary#vre">VRE</a>, and <a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a>.</li>
         <li>How AquaINFRA connects to EOSC, the Digital Twin of the Ocean, and sister projects.</li>
     </ul>
 </div>
 
-The **AquaINFRA project** (2023–2026) is developing a next-generation virtual environment equipped with [**FAIR**]({{ '/reference/glossary' | relative_url }}#fair) (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services.
+The **AquaINFRA project** (2023-2026) is developing a next-generation virtual environment equipped with [**FAIR**]({{ relative_root }}reference/glossary#fair) (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services.
 
 Our mission is to help marine and freshwater scientists and stakeholders restore healthy oceans, seas, and inland waters by bridging the gap between isolated research infrastructures and national borders.
 
@@ -109,9 +109,9 @@ The **AquaINFRA Virtual Research Environment (VRE)** is a modular, open-source p
 
 ## ✅ Key takeaways
 
-- AquaINFRA is a **2023–2026 EU project** coordinated by Aalborg University, with 21 partners.
+- AquaINFRA is a **2023-2026 EU project** coordinated by Aalborg University, with 21 partners.
 - The ecosystem has three user-facing components: **AIP** (find data), **VRE / Aqua Galaxy** (run analyses), **D2KP** (share reproducible bundles).
-- The project deliberately spans **marine + freshwater** — a historically siloed pair of communities.
+- The project deliberately spans **marine + freshwater** - a historically siloed pair of communities.
 - AquaINFRA feeds the **Digital Twin of the Ocean** and interoperates with Blue-Cloud, ILIAD, and EDITO.
 
 ---

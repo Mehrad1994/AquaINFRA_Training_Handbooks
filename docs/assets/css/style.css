@@ -268,11 +268,31 @@ img {
     margin: 2rem 0;
 }
 
-.callout strong {
+.callout > strong:first-child {
     display: block;
     margin-bottom: 0.4rem;
     color: var(--aqua-blue-dark);
     font-size: 1rem;
+}
+
+/* Inline strong tags inside callout content stay inline */
+.callout li strong,
+.callout p strong,
+.callout td strong {
+    display: inline;
+    color: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+/* Tighten bullet spacing inside callouts */
+.callout ul {
+    margin: 0.5rem 0 0 1.2rem;
+    padding: 0;
+}
+.callout ul li {
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
 }
 
 /* Badges */

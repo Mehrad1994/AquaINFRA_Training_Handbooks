@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 6
 ---
 
-# Chapter 6 — Galaxy Workflow Setup
+# Chapter 6 - Galaxy Workflow Setup
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 6 of 10
@@ -21,7 +21,7 @@ nav_order: 6
 </div>
 
 > [!IMPORTANT]
-> Confirm an <a href="{{ '/reference/prerequisites' | relative_url }}">Aqua Galaxy account</a> first — you can't save workflow imports without being logged in.
+> Confirm an <a href="{{ relative_root }}reference/prerequisites">Aqua Galaxy account</a> first - you can't save workflow imports without being logged in.
 
 ---
 
@@ -35,13 +35,13 @@ nav_order: 6
 
 ---
 
-## Step 1 — Import the workflow
+## Step 1 - Import the workflow
 
 1. From the D2K Package page on AIP, click the **Galaxy** link in the VRE section.
 2. In Galaxy, click **Import** to add the workflow to your list.
 3. Verify you're **logged in** (username top-right) so the import is saved.
 
-## Step 2 — Import the input data (GeoJSON Area of Interest)
+## Step 2 - Import the input data (GeoJSON Area of Interest)
 
 The workflow needs a **GeoJSON polygon** defining where to query occurrences.
 
@@ -64,7 +64,7 @@ Once the workflow is imported and the GeoJSON shows green, click **Run** on the 
 ## ✅ Key takeaways
 
 - The Galaxy workflow comes from AIP; the demo input data comes from Zenodo.
-- **Copy the Zenodo URL, don't download** — the Insert URL path streams it into Galaxy directly.
+- **Copy the Zenodo URL, don't download** - the Insert URL path streams it into Galaxy directly.
 - Wait for the GeoJSON to go **green** before clicking Run on the workflow.
 
 ---

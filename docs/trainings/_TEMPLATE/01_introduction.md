@@ -3,7 +3,7 @@ layout: default
 title: "1. Introduction"
 ---
 
-# Chapter 1 — Introduction
+# Chapter 1 - Introduction
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~X min read</strong> · <strong>X min video</strong> · Chapter 1 of N
@@ -11,13 +11,13 @@ title: "1. Introduction"
 
 <!--
   PAGE ANATOMY (delete this comment when filling in):
-  1. Page header (above) — read time / video time / chapter position
-  2. At a glance callout — 2–3 bullets
+  1. Page header (above) - read time / video time / chapter position
+  2. At a glance callout - 2-3 bullets
   3. Video companion block (embed + chapter index table)
-  4. Key concepts — short conceptual recap, NOT a transcript
+  4. Key concepts - short conceptual recap, NOT a transcript
   5. (Procedural chapters) Step-by-step with per-step timestamp links
   6. Optional: <details> deep-dive collapsible
-  7. ✅ Key takeaways — 3–5 bullets
+  7. ✅ Key takeaways - 3-5 bullets
   8. Sequential nav
 -->
 
@@ -59,7 +59,7 @@ title: "1. Introduction"
 </div>
 
 > [!TIP]
-> Already watched? Skim **Key concepts** and **Key takeaways** below — fastest way to review.
+> Already watched? Skim **Key concepts** and **Key takeaways** below - fastest way to review.
 
 ---
 
@@ -68,7 +68,7 @@ title: "1. Introduction"
 Short, structured prose that **complements** rather than transcribes the video. Use diagrams, tables, or Mermaid where they clarify more than words.
 
 <details>
-<summary><strong>🔬 Deep dive — optional collapsible for technical readers</strong></summary>
+<summary><strong>🔬 Deep dive - optional collapsible for technical readers</strong></summary>
 
 Include code snippets, API examples, parameter tables, or internals here. Hidden by default so the page stays approachable for newcomers.
 
@@ -77,7 +77,7 @@ Include code snippets, API examples, parameter tables, or internals here. Hidden
 result <- some_function(x, y)
 ```
 
-Use only when the deep dive adds genuine value — not on every chapter.
+Use only when the deep dive adds genuine value - not on every chapter.
 
 </details>
 

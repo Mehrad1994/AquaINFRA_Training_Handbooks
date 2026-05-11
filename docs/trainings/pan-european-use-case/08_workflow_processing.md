@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 8
 ---
 
-# Chapter 8 — Workflow Steps 5–8: Processing & Detection
+# Chapter 8 - Workflow Steps 5-8: Processing & Detection
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~4 min read</strong> · <strong>2 min video</strong> · Chapter 8 of 10
@@ -32,7 +32,7 @@ nav_order: 8
 
 ---
 
-## Phase 2 — Processing & detection
+## Phase 2 - Processing & detection
 
 <div class="table-wrapper">
     <table>
@@ -63,7 +63,7 @@ nav_order: 8
 </div>
 
 <details>
-<summary><strong>🔬 Deep dive — the harmonized schema (Step 5 output)</strong></summary>
+<summary><strong>🔬 Deep dive - the harmonized schema (Step 5 output)</strong></summary>
 
 After Step 5, every record in your dataset has at minimum these columns:
 
@@ -86,9 +86,9 @@ After Step 7 it picks up extra columns from WorldClim (e.g. `bio1` mean annual t
 
 ## ✅ Key takeaways
 
-- The four-step processing chain is **deterministic and idempotent** — you can re-run with new parameters without re-importing data.
-- **FishBase harmonization** is small but critical — it prevents synonym-driven false-positive flags later.
-- **WorldClim variables** are the most common predictors for Step 8 — but any covariate column you attach can be used.
+- The four-step processing chain is **deterministic and idempotent** - you can re-run with new parameters without re-importing data.
+- **FishBase harmonization** is small but critical - it prevents synonym-driven false-positive flags later.
+- **WorldClim variables** are the most common predictors for Step 8 - but any covariate column you attach can be used.
 - Step 8's output carries the outlier classification you'll inspect in [Chapter 9](./09_reviewing_results).
 
 ---

@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 10
 ---
 
-# Chapter 10 — Conclusion & What's Next
+# Chapter 10 - Conclusion & What's Next
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>~3 min video</strong> · Chapter 10 of 10
@@ -15,7 +15,7 @@ nav_order: 10
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>Why this workflow generalises beyond Europe.</li>
-        <li>Who it serves — from non-coders to method developers.</li>
+        <li>Who it serves - from non-coders to method developers.</li>
         <li>Where to go for further AquaINFRA exploration.</li>
     </ul>
 </div>
@@ -36,16 +36,16 @@ nav_order: 10
 
 ### Applicability beyond Europe
 
-Although built for Pan-European biodiversity, the workflow is **geography-agnostic**. Drop in a different GeoJSON area-of-interest and rerun — every step downstream just works.
+Although built for Pan-European biodiversity, the workflow is **geography-agnostic**. Drop in a different GeoJSON area-of-interest and rerun - every step downstream just works.
 
 ### Accessibility for two audiences
 
-- **Non-coders** — point-and-click the workflow in Galaxy; never see a line of R.
-- **Proficient coders** — bypass Galaxy entirely and call Specleaner from MyBinder, your own RStudio, or the Web API.
+- **Non-coders** - point-and-click the workflow in Galaxy; never see a line of R.
+- **Proficient coders** - bypass Galaxy entirely and call Specleaner from MyBinder, your own RStudio, or the Web API.
 
 ### FAIR end-to-end
 
-Data, code, and methods are findable, accessible, interoperable, reusable — *and citable* via the [D2KP Zenodo DOI](https://aquainfra.dev.52north.org/result/zenodo:17175591). Other researchers can re-create your analysis exactly.
+Data, code, and methods are findable, accessible, interoperable, reusable - *and citable* via the [D2KP Zenodo DOI](https://aquainfra.dev.52north.org/result/zenodo:17175591). Other researchers can re-create your analysis exactly.
 
 ---
 
@@ -59,10 +59,10 @@ The workflow is a tool; the underlying purpose is ecological protection.
 
 ## What's next
 
-- 🧭 Browse the other [Applied Use Case Trainings]({{ '/06_use_cases' | relative_url }}) (Gulf of Riga, more coming).
-- 📘 Refresh terminology in the [Glossary]({{ '/reference/glossary' | relative_url }}).
+- 🧭 Browse the other [Applied Use Case Trainings]({{ relative_root }}06_use_cases) (Gulf of Riga, more coming).
+- 📘 Refresh terminology in the [Glossary]({{ relative_root }}reference/glossary).
 - 🧪 Try the workflow with **your own GeoJSON** for an area you care about.
-- 💬 Reach the team via the [Contact page]({{ '/07_contact' | relative_url }}).
+- 💬 Reach the team via the [Contact page]({{ relative_root }}07_contact).
 
 ---
 
