@@ -25,14 +25,6 @@
            aria-label="Suggest an improvement">
             👎 Suggest improvement
         </a>
-        {% if page.path %}
-        <a class="page-feedback__btn page-feedback__btn--edit"
-           href="{{ repo }}/edit/{{ branch }}/docs/{{ page.path }}"
-           target="_blank" rel="noopener"
-           aria-label="Edit this page on GitHub">
-            ✏️ Edit on GitHub
-        </a>
-        {% endif %}
     </div>
 </aside>
 {% endif %}
