@@ -3,76 +3,115 @@ layout: default
 title: Workflow Details
 ---
 
-# The Gulf of Riga DGA Workflow
-> [!NOTE] 📹 **Video Reference**
-> [21:29](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s) Detailed Review of the Workflow Components
+# Chapter 8 — DGA Workflow: Tool-by-Tool Breakdown
+
+<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+  <strong>~5 min read</strong> · <strong>3.5 min video</strong> · Chapter 8 of 9
+</p>
+
+<div class="callout">
+    <strong>📌 At a glance</strong>
+    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+        <li>How the eight tools in the DGA workflow connect.</li>
+        <li>What each tool does and what it outputs.</li>
+        <li>The exclusion rules that protect the Mann-Kendall step from noise.</li>
+    </ul>
+</div>
+
+---
+
+## 📹 Watch this chapter
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1289&end=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank" rel="noopener">Jump to 21:29 → 25:07 in YouTube</a> — Detailed workflow review.</p>
 
+---
 
-This chapter details the specific "Data Gathering and Analysis" (DGA) workflow used in the case study. The workflow integrates **eight distinct tools** into a pipeline.
-
-## Input Data
-The workflow starts with two datasets:
+## Pipeline overview
 
 ```mermaid
-graph LR
-    A[Input Data] --> B[Pre-Processing]
-    B --> C[Spatial Aggregation]
-    B --> D[Temporal Aggregation]
-    C --> E[Trend Analysis]
-    D --> E
-    E --> F[Results]
+flowchart LR
+    A[Input: points] --> B[Spatial aggregation]
+    A2[Input: polygons] --> B
+    B --> C[Temporal aggregation]
+    C --> D1[Mean per group 1]
+    D1 --> D2[Mean per group 2]
+    D2 --> E[Time-series interpolation]
+    E --> F[Mann-Kendall test]
+    F --> G1[Interactive map]
+    F --> G2[Tau bar chart]
 ```
 
-1.  **Point Data**: In-situ measurements of Secchi depth (water transparency).
-2.  **Polygon Data**: Assessment unit polygons defining the spatial boundaries of the regions being studied.
+## Pre-processing
 
-## Pre-Processing
+### Spatial aggregation
+- **Goal**: assign each point to an Assessment Unit polygon.
+- **Output**: each point gains a `unit_id` attribute.
 
-### Spatial Aggregation
-*   **Goal**: Assign scattered data points to specific administrative or geographical units.
-*   **Process**: Points are mapped to "Assessment Unit" polygons. A new attribute is added to each data point indicating which unit it falls into.
+### Temporal aggregation
+- **Goal**: assign each point a **season** based on the measurement date.
+- **Output**: each point gains a `season` attribute (Spring / Summer / Autumn / Winter).
 
-### Temporal Aggregation
-*   **Goal**: Account for seasonality (crucial in the Gulf of Riga).
-*   **Process**: Based on the visit date, each point is assigned a **Season** (e.g., Spring, Summer).
+## Aggregation
 
-## Data Analysis Steps
+### Mean per group (1)
+Averages transparency within each (season, year, unit, location) group — the most granular level.
 
-### Calculate Mean Values (Group 1)
-Calculates the average transparency for granular groups defined by:
-*   Season
-*   Year
-*   Assessment Unit ID
-*   Location
+### Mean per group (2)
+Further aggregates to one value per **(unit, year, season)**. Output is a structured CSV — each row is one observation in the trend test.
 
-### Calculate Mean Values (Group 2)
-Further aggregates the data to get a single value per unit-year-season.
-*   **Output**: A structured CSV file where each record represents a transparency value for a specific unit, year, and season.
+## Time-series interpolation
 
-### Time Series Interpolation
-To prepare for trend analysis, the data must be continuous.
+To run Mann-Kendall properly, the time series must be continuous. The interpolation step fills small gaps — but only for units that meet quality thresholds.
 
-{: .important }
-> **Exclusion Criteria**:
-> *   Units with **< 10 data points** are excluded.
-> *   Units where **> 80% of data is missing** (compared to the time series length) are excluded.
+> [!IMPORTANT]
+> **Exclusion criteria** (applied before interpolation):
+> - Units with **fewer than 10 data points** → excluded.
+> - Units missing **more than 80%** of the expected time series → excluded.
 
-*   **Interpolation**: For the remaining units, missing values are statistically interpolated to fill gaps.
+This protects the trend test from being run on units where any "trend" would be statistical noise.
 
-### Mann-Kendall Trend Analysis
-The final analytical step.
-*   **Method**: A **Mann-Kendall test** (non-parametric statistical test) is applied.
-*   **Purpose**: To detect if there is a monotonic upward or downward trend in the Secchi depth variable over time.
+## Trend analysis
 
-## Visualization
-The workflow automatically generates:
-1.  **Interactive Map**: Showing the assessment units.
-2.  **Bar Chart**: Displaying **Kendall's Tau** values. A negative Tau indicates a decreasing trend (darkening), while positive indicates clearing.
+### Mann-Kendall test
+- **Type**: non-parametric — no normality assumption needed.
+- **Detects**: monotonic upward or downward trend (not necessarily linear).
+- **Output**: **Kendall's Tau** (–1 to +1) and a p-value per unit.
+
+## Visualisation
+
+1. **Interactive map** — assessment units coloured by Tau; click for details.
+2. **Bar chart** — Tau per unit. Negative bars = darkening (decreasing transparency). Significance threshold applied at `alpha = 0.05` by default.
+
+<details>
+<summary><strong>🔬 Deep dive — why Mann-Kendall (and not linear regression)?</strong></summary>
+
+Mann-Kendall is a **rank-based** test: it asks whether later values tend to be larger or smaller than earlier ones, without assuming a particular functional form.
+
+Compared to ordinary least-squares linear regression on the time series:
+
+| Concern | Linear regression | Mann-Kendall |
+|---|---|---|
+| Outliers in Secchi readings | Pulls the slope | Barely affected |
+| Non-normal residuals (common in environmental data) | Violates assumptions | No assumption made |
+| Non-linear monotonic trends | Underestimates | Detects fine |
+| Statistical interpretation | Slope coefficient | Tau (effect size) + p-value |
+
+For long-term environmental time series with sparse, noisy data, Mann-Kendall is the standard choice across hydrology and water quality literature.
+
+</details>
+
+---
+
+## ✅ Key takeaways
+
+- **Pre-processing first, statistics second** — assigning unit + season is what makes the trend test meaningful.
+- **Two exclusion rules** (≥10 points, ≤80% missing) gate which units enter the Mann-Kendall step.
+- **Kendall's Tau** in [−1, +1]; sign = direction, magnitude = strength.
+- The workflow ships sensible defaults — tweak only when you understand the trade-off.
 
 ---
 
@@ -82,4 +121,3 @@ The workflow automatically generates:
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
-

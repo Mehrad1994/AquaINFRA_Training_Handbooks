@@ -3,231 +3,197 @@ layout: default
 title: Hands-On Tutorial
 ---
 
-# Hands-On: Running the Gulf of Riga Workflow
-> [!NOTE] 📹 **Video Reference**
-> [YouTube video](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=738s) .
+# Chapter 7 — Hands-On: Running the Gulf of Riga Workflow
+
+<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+  <strong>~10 min read</strong> · <strong>9 min video</strong> · Chapter 7 of 9
+</p>
+
+<div class="callout">
+    <strong>📌 At a glance</strong>
+    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+        <li>Import the two input datasets (Secchi points + HELCOM polygons) into Galaxy.</li>
+        <li>Import the DGA workflow and run it on those inputs.</li>
+        <li>Monitor progress and inspect the outputs.</li>
+    </ul>
+</div>
+
+> [!IMPORTANT]
+> **Before you start:** confirm you have an <a href="{{ '/reference/prerequisites' | relative_url }}">Aqua Galaxy account</a> and that you can see your username top-right at <code>aqua.usegalaxy.eu</code>.
+
+---
+
+## 📹 Watch this chapter
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=738&end=1289" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+### Chapter index
 
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr><th style="width: 22%;">Timestamp</th><th>Step</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=769s" target="_blank" rel="noopener">12:49 → 15:19</a></td><td><a href="#step-1-1">Step 1.1 — Import Secchi depth points</a></td></tr>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=919s" target="_blank" rel="noopener">15:19 → 19:51</a></td><td><a href="#step-1-2">Step 1.2 — Import HELCOM regions</a></td></tr>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1191s" target="_blank" rel="noopener">19:51 → 21:29</a></td><td><a href="#step-2">Step 2 — Import the workflow</a></td></tr>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank" rel="noopener">21:29 → 21:35</a></td><td><a href="#step-3">Step 3 — Run the workflow</a></td></tr>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1295s" target="_blank" rel="noopener">21:35 → 25:18</a></td><td><a href="#step-4">Step 4 — Monitor progress</a></td></tr>
+            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1518s" target="_blank" rel="noopener">25:18 → 29:08</a></td><td><a href="#step-5">Step 5 — Review outputs</a></td></tr>
+        </tbody>
+    </table>
+</div>
 
-This chapter provides **step-by-step instructions** for running the DGA workflow in Aqua Galaxy. Follow along with the video for visual guidance.
+> [!TIP]
+> Already watched the video? Skim **Key takeaways** at the bottom and use the chapter index above to jump back to any moment.
 
 ---
 
-## Prerequisites
+## Step 1 — Import input data
 
-Before starting, ensure the user have:
-1. ✅ Registered for an **Aqua Galaxy** account
-2. ✅ Signed into the **AquaINFRA Interaction Platform**
+The workflow needs two datasets: **point data** (Secchi measurements) and **polygon data** (HELCOM assessment units).
 
----
+### 1.1 Secchi depth points {#step-1-1}
 
-## Step 1: Import Input Data
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=769s" target="_blank" rel="noopener">12:49 → 15:19</a> — Smooth OGC API path.</p>
 
-The workflow requires **two datasets** to run.
+This dataset uses the **smooth path** — AquaINFRA hosts it as an OGC API Feature service, so import is one click.
 
-### 1.1 Import Secchi Depth Point Data
-
-**📹 Video: [12:49 - 15:19](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=769s)**
-
-1. Navigate to the **Data-to-Knowledge Package** page on the AIP
-2. Click on **"Latvian Secchi depth and water color"**
-3. You'll see three options:
-   - Direct download link
-   - Zenodo repository page
-   - **AquaINFRA dataset page** ← Select this one
-
-4. On the dataset page, click **"Import to Galaxy"**
-5. The **OGC API Features subsetting window** opens:
-   - **Bounding Box**: Leave default (or customise for specific area)
-   - **Number of Points**: Set to **`5871`** (total available points)
-   - **Query Parameters**: Leave empty (we need all data)
-
-6. Click **"Regenerate"** to update the link
-7. Click **"Import"**
-8. You'll be redirected to **Aqua Galaxy**
+1. On the AIP, open the **Data-to-Knowledge Package** page → click **"Latvian Secchi depth and water color"**.
+2. Choose the **AquaINFRA dataset page** (not the direct download, not Zenodo).
+3. Click **"Import to Galaxy"** — the **OGC API Features subsetting window** opens.
+4. Configure:
+   - **Bounding Box** — leave default (full coverage) unless you want to focus on a smaller area.
+   - **Number of Points** — `5871` (the full count).
+   - **Query Parameters** — leave empty.
+5. Click **Regenerate**, then **Import**. You're redirected to Aqua Galaxy.
+6. In the **History panel** (right side), watch the status:
 
 <div class="callout">
-    <strong>⏳ Import Status</strong><br>
-    In the History panel (right side):<br>
-    • <strong>Gray</strong> = Queued<br>
-    • <strong>Orange</strong> = Processing<br>
-    • <strong>Green</strong> = Complete<br>
-    • <strong>Red</strong> = Error
+    <strong>⏳ Import status colours</strong><br>
+    <strong>Grey</strong> = Queued · <strong>Orange</strong> = Processing · <strong>Green</strong> = Complete · <strong>Red</strong> = Error
 </div>
 
-9. **Rename the dataset** for clarity:
-   - Click the **pencil icon** (Edit)
-   - Rename to: **`points`**
-   - Add annotation: "Latvian Secchi depth measurements"
+7. **Rename** the dataset (pencil icon) to `points`. Add annotation: *"Latvian Secchi depth measurements"*.
 
----
+> [!TIP]
+> Renaming inputs to short names (`points`, `regions`) makes the workflow run form much easier to fill in correctly at Step 3.
 
-### 1.2 Import HELCOM Assessment Unit Regions
+### 1.2 HELCOM assessment-unit regions {#step-1-2}
 
-**📹 Video: [15:19 - 19:51](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=919s)**
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=919s" target="_blank" rel="noopener">15:19 → 19:51</a> — Manual path with disclaimer.</p>
 
-1. Return to the **Data-to-Knowledge Package** page
-2. Click on **"HELCOM subbasins"**
-3. Click **"AquaINFRA"** to view the dataset page
-4. Click **"Visit"** to explore original metadata
-5. You'll find two links:
-   - Direct data access link
-   - HELCOM interactive map
+This is the **manual path** — HELCOM requires accepting a disclaimer before serving the data, so a one-click import isn't possible.
+
+1. From the D2KP page, click **"HELCOM subbasins"** → **"AquaINFRA"** → **"Visit"** to reach HELCOM's site.
+2. Open the **direct download link** in a new tab.
+3. **Accept the data-usage disclaimer**. Wait until the download link activates — but **do not download**.
+4. **Copy the activated URL.**
+5. Return to the AIP dataset page → paste into the **Insert URL** field → **Import**.
+6. Wait for the green status indicator.
+7. Rename the dataset to `regions`. Annotation: *"HELCOM assessment unit polygons"*.
 
 <div class="callout callout--warning">
-    <strong>⚠️ Important: Data Usage Disclaimer</strong><br>
-    HELCOM data requires accepting a usage disclaimer before import.
+    <strong>⚠️ Common gotcha</strong> — If you skip the disclaimer step, you'll get a broken URL and a <strong>red</strong> status. See <a href="{{ '/reference/faq' | relative_url }}">FAQ — My dataset turned red</a>.
 </div>
 
-6. **Accept the disclaimer**:
-   - Open the **direct download link** in a new tab
-   - Accept the **data usage disclaimer**
-   - Wait for the download link to activate (don't download the file)
-   - **Copy the activated download URL**
+---
 
-7. **Import to Galaxy**:
-   - Return to the AIP dataset page
-   - Paste the URL into the **import field**
-   - Click **"Import"**
+## Step 2 — Import the workflow {#step-2}
 
-8. Wait for the green status indicator
-9. **Rename the dataset**:
-   - Click the pencil icon
-   - Rename to: **`regions`**
-   - Add annotation: "HELCOM assessment unit polygons"
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1191s" target="_blank" rel="noopener">19:51 → 21:29</a></p>
+
+**Method 1 — Direct from AIP** (recommended):
+1. In the D2KP page, click **"Galaxy"** under the workflow section.
+2. On the workflow preview page in Aqua Galaxy → **Import** → **Start using this workflow**.
+
+**Method 2 — Manual `.ga` upload**:
+1. Aqua Galaxy → top menu **Workflows** → **Import**.
+2. Upload the `.ga` file from the [Zenodo D2KP page](https://aquainfra.dev.52north.org/result/zenodo:17175368).
 
 ---
 
-## Step 2: Import the Workflow
+## Step 3 — Run the workflow {#step-3}
 
-**📹 Video: [19:51 - 21:29](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1191s)**
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank" rel="noopener">21:29 → 21:35</a></p>
 
-### Method 1: Direct Import from AIP
+1. **Workflows** → find **"Gulf of Riga DGA Workflow"** → dropdown → **Run**.
+2. On the run page, set inputs:
+   - **Input 1 (Point Data)** → `points`
+   - **Input 2 (Region Data)** → `regions`
+3. *(Optional)* **Expand to full workflow** to tweak parameters — missing-value threshold, minimum point count, interpolation settings.
+4. Click **Run Workflow**.
 
-1. In the Data-to-Knowledge Package, click **"Galaxy"** under the workflow section
-2. You'll be redirected to the **workflow preview page** in Aqua Galaxy
-3. Click **"Import"**
-4. Click **"Start using this workflow"**
+<details>
+<summary><strong>🔬 Deep dive — what those parameters actually do</strong></summary>
 
-### Method 2: Manual Import
+| Parameter | Default | Effect |
+|---|---|---|
+| `min_points_per_unit` | 10 | Units with fewer points are excluded from trend analysis (insufficient sample). |
+| `max_missing_fraction` | 0.8 | Units missing >80% of expected timesteps are excluded (interpolation would be misleading). |
+| `interpolation_method` | linear | Method used to fill gaps in the time series before Mann-Kendall. |
+| `significance_alpha` | 0.05 | p-value threshold used when flagging significant trends in the visualisation. |
 
-1. Navigate to **Workflows** in Aqua Galaxy (top menu)
-2. Click **"Import"**
-3. Upload the workflow file (`.ga` format) from Zenodo
-
----
-
-## Step 3: Run the Workflow
-
-**📹 Video: [21:29 - 25:07](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s)**
-
-1. In the **Workflows** section, find "Gulf of Riga DGA Workflow"
-2. Click the **dropdown arrow** → Select **"Run"**
-3. On the workflow run page:
-   - **Input 1 (Point Data)**: Select **`points`**
-   - **Input 2 (Region Data)**: Select **`regions`**
-
-4. **(Optional)** Click **"Expand to full workflow"** to customise parameters:
-   - Threshold for missing values
-   - Minimum number of data points
-   - Interpolation settings
-
-5. Click **"Run Workflow"**
+Tightening `min_points_per_unit` (e.g. to 20) gives more confidence in each unit's trend at the cost of fewer reported units. Loosening it does the opposite.
+</details>
 
 ---
 
-## Step 4: Monitor Progress
+## Step 4 — Monitor progress {#step-4}
 
-**📹 Video: [21:35 - 25:07](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1295s)**
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1295s" target="_blank" rel="noopener">21:35 → 25:18</a></p>
 
-You'll be taken to a **progress page** showing:
+You'll be taken to a progress page with:
 
-### Interactive Workflow Graph
-- Visual representation of each step
-- Color-coded status (gray → orange → green)
-- Click on any step to see details
+- **Interactive workflow graph** — each tool node coloured by status. Click a node for details.
+- **History panel** — chronological list of all outputs with runtime and memory metrics.
 
-### History Panel
-- Lists all outputs chronologically
-- Shows job metrics (runtime, memory usage)
-- Provides download links for results
+Total runtime is typically a few minutes on this dataset. Stuck on grey for >15 min? See [FAQ — Import stuck]({{ '/reference/faq' | relative_url }}).
 
 ---
 
-## Step 5: Review Outputs
+## Step 5 — Review outputs {#step-5}
 
-**📹 Video: [25:18 - 29:08](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1518s)**
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1518s" target="_blank" rel="noopener">25:18 → 29:08</a></p>
 
-### Key Outputs to Check:
+<div class="table-wrapper">
+    <table>
+        <thead><tr><th>Output</th><th>What to look for</th></tr></thead>
+        <tbody>
+            <tr><td>Spatial-aggregation result</td><td>Each point now carries a <code>unit_id</code> attribute.</td></tr>
+            <tr><td>Temporal-aggregation result</td><td>New <code>season</code> column (Spring / Summer / Autumn / Winter).</td></tr>
+            <tr><td>Interpolated time series</td><td>Gaps filled; units with &lt;10 points excluded.</td></tr>
+            <tr><td>Mann-Kendall results</td><td>Kendall's Tau per unit — <strong>negative = darkening</strong>.</td></tr>
+            <tr><td><code>map_shape_file_points.html</code></td><td>Click the 👁 eye → "Open in new tab" — units coloured by trend.</td></tr>
+            <tr><td>Bar chart of Kendall's Tau</td><td>Negative bars = decreasing transparency.</td></tr>
+        </tbody>
+    </table>
+</div>
 
-#### 1. Spatial Aggregation Output
-- **File**: Points with assessment unit IDs
-- **What to look for**: Each point now has a `unit_id` attribute
+### Example findings (from the video)
 
-#### 2. Temporal Aggregation Output
-- **File**: Points with season assignments
-- **What to look for**: New `season` column (Spring, Summer, Autumn, Winter)
-
-#### 3. Interpolated Time Series
-- **File**: CSV with continuous data
-- **What to look for**: Gaps filled, units with <10 points excluded
-
-#### 4. Mann-Kendall Results
-- **File**: Statistical test results
-- **What to look for**: Kendall's Tau values (negative = darkening trend)
-
-#### 5. Interactive Map
-- **File**: `map_shape_file_points.html`
-- **Action**: Click the eye icon → Open in new tab
-- **What to see**: Assessment units color-coded by trend
-
-#### 6. Bar Chart
-- **File**: Kendall's Tau visualization
-- **What to see**: Negative bars indicate decreasing transparency
+Significant **negative trends** found in **LAT-003 (Summer)**, **LAT-004 (Summer)**, and **LAT-005 (Autumn)** — all Latvian coastline units. **LAT-005** covers the Daugava River outflow near Riga, consistent with the catchment-runoff hypothesis.
 
 ---
 
-## Step 6: Interpret Results
+## ✅ Key takeaways
 
-**📹 Video: [28:11 - 29:08](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1691s)**
-
-### Example Results from Video:
-
-The workflow identified **significant negative trends** in:
-- **LAT-003** (Summer) - Negative Tau
-- **LAT-004** (Summer) - Negative Tau  
-- **LAT-005** (Autumn) - Negative Tau
-
-**Location**: All three units are along the **Latvian coastline**. LAT-005 includes the **Daugava River catchment** near Riga.
-
-**Interpretation**: Water transparency is **decreasing** (darkening) in these coastal regions, confirming the scuba divers' observations.
+- Two data import paths: **smooth (OGC API)** for AquaINFRA-hosted data, **manual (Insert URL)** for providers with disclaimers like HELCOM.
+- **Rename inputs to `points` and `regions`** before running — saves errors at the run-form step.
+- Workflow parameters have sensible defaults; tighten `min_points_per_unit` for more confidence per unit.
+- Map outputs are HTML files — open them in a new tab via the eye icon.
+- Negative Kendall's Tau = water transparency decreasing.
 
 ---
 
 ## Troubleshooting
 
-### Issue: Import Fails (Red Status)
-- **Solution**: Check the internet connection, try re-importing
-
-### Issue: Workflow Stuck (Orange for >10 minutes)
-- **Solution**: Refresh the page, check server status
-
-### Issue: No Results Generated
-- **Solution**: Verify both input datasets were correctly imported and renamed
-
----
-
-## Next Steps
-
-After successfully running the workflow:
-1. ✅ Download the results for the records
-2. ✅ Experiment with different parameters
-3. ✅ Try applying the workflow to the own data
-4. ✅ Explore other AquaINFRA workflows
+- **Red status on import** → re-accept disclaimers and copy a fresh URL. See [FAQ]({{ '/reference/faq' | relative_url }}).
+- **Workflow stuck on orange >10 min** → refresh; check [Galaxy status](https://status.galaxyproject.org/).
+- **No results** → verify both inputs imported green and are renamed exactly as the workflow expects.
 
 ---
 
@@ -237,4 +203,3 @@ After successfully running the workflow:
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
-

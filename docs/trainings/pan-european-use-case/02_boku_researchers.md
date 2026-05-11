@@ -5,33 +5,68 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 2
 ---
 
-# Meet the Lead Researchers
-> [!NOTE] 📹 **Video Reference**
-> [1:15](https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s) Meet the Researchers
+# Chapter 2 — Meet the BOKU Team
+
+<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+  <strong>~2 min read</strong> · <strong>5 min video</strong> · Chapter 2 of 10
+</p>
+
+<div class="callout">
+    <strong>📌 At a glance</strong>
+    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+        <li>Who built the Pan-European workflow and why their expertise matters.</li>
+        <li>The two lead researchers behind the Specleaner package.</li>
+        <li>Where BOKU sits in the European biodiversity-research landscape.</li>
+    </ul>
+</div>
+
+---
+
+## 📹 Watch this chapter
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s" target="_blank" rel="noopener">Jump to 1:15 → 6:20 in YouTube</a>.</p>
 
+---
 
-Leading the development of the Pan-European use case is the **Institute of Hydrobiology and Aquatic Ecosystem Management** at **BOKU University** (University of Natural Resources and Life Sciences) in Vienna, Austria.
+## Key concepts
 
-## About BOKU University
-BOKU is a life science university that covers a multitude of environmental topics, including:
-*   Forestry
-*   Agriculture
-*   Water Management
+The use case is led by the **Institute of Hydrobiology and Aquatic Ecosystem Management** at [BOKU University](https://boku.ac.at) (University of Natural Resources and Life Sciences) in Vienna, Austria. BOKU's environmental-sciences mandate covers forestry, agriculture, and water management — the cross-domain framing that makes their team a natural fit for AquaINFRA.
 
-## The Lead Team
-In this training, the user will hear from the key researchers driving the technical story behind these use cases:
+## The lead team
 
-| Name | Role | Focus |
-| :--- | :--- | :--- |
-| **[Ass.Prof. Florian Borgwardt](https://boku.ac.at/personen/person/5940E26847F9046A)** | Researcher, IHG | Specializes in river biodiversity across Europe and highlights the challenge of using fragmented datasets from different sources with varying quality. |
-| **[Anthony Basooma, M.Sc.](https://boku.ac.at/en/personen/person/06473192FC3B0438)** | PhD Researcher, IHG | Developed the **Specleaner** R package and the primary workflow used in this use case. |
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr><th>Researcher</th><th>Role</th><th>What they bring</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong><a href="https://boku.ac.at/personen/person/5940E26847F9046A" target="_blank" rel="noopener">Ass.Prof. Florian Borgwardt</a></strong></td>
+                <td>Researcher, IHG</td>
+                <td>Specialises in river biodiversity across Europe. Frames the data-fragmentation problem this workflow solves.</td>
+            </tr>
+            <tr>
+                <td><strong><a href="https://boku.ac.at/en/personen/person/06473192FC3B0438" target="_blank" rel="noopener">Anthony Basooma, M.Sc.</a></strong></td>
+                <td>PhD Researcher, IHG</td>
+                <td>Developed the <strong>Specleaner</strong> R package and the primary workflow at the centre of this case study.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
+---
 
+## ✅ Key takeaways
+
+- Workflow is built by domain experts who **face the data-fragmentation problem themselves** — not by infrastructure-only teams.
+- **Specleaner** (the R package) is purpose-built for the messy reality of occurrence data.
+- BOKU's cross-domain stance (forestry, water, agriculture) maps cleanly onto AquaINFRA's marine ↔ freshwater agenda.
+
+---
 
 <div class="sequence-navigation">
     <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
@@ -39,4 +74,3 @@ In this training, the user will hear from the key researchers driving the techni
 </div>
 
 <div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
-

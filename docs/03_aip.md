@@ -4,6 +4,15 @@ title: AIP
 ---
 # AquaINFRA Interaction Platform (AIP)
 
+<div class="callout">
+    <strong>📌 At a glance</strong>
+    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+        <li>What the <strong><a href="{{ '/reference/glossary' | relative_url }}#aip">AIP</a></strong> does and how it relates to <a href="{{ '/reference/glossary' | relative_url }}#ddas">DDAS</a> behind the scenes.</li>
+        <li>The two import paths into Galaxy: smooth (OGC API) vs. manual (insert URL).</li>
+        <li>How to subset data visually before importing — saving bandwidth and time.</li>
+    </ul>
+</div>
+
 EOSC provides the raw computational power, the **AquaINFRA Interaction Platform (AIP)** is the specialized map that helps you find the exact aquatic data you need.
 
 Instead of scouring different national databases, the AIP allows you to seamlessly search Earth observations and European hydrography in one place, and then pipe that data directly into a high-performance analysis environment.
@@ -48,6 +57,37 @@ Not all data partners support direct API ingestion yet. If you find a dataset yo
 >
 > 1. Visit the dataset's external metadata page and copy the direct download link (e.g., ending in `.zip`).
 > 2. Look for the **"Insert URL"** option on the AIP interface. Pasting the link here will manually bridge the external file into your Galaxy environment.
+
+<details>
+<summary><strong>🔬 Deep dive — what an OGC API Features request looks like</strong></summary>
+
+When you visually draw a bounding box on AIP and click "Import to Galaxy," DDAS builds a URL like:
+
+```
+https://aquainfra.dev.52north.org/dasas/collections/secchi/items
+  ?bbox=21.5,57.3,24.8,58.9
+  &limit=5871
+  &f=geojson
+```
+
+That URL is what gets handed to Galaxy. You can hit it directly from any HTTP client (curl, requests, R `httr`, …) to integrate AquaINFRA datasets into your own scripts:
+
+```bash
+curl "https://aquainfra.dev.52north.org/dasas/collections/secchi/items?bbox=21.5,57.3,24.8,58.9&limit=100&f=geojson"
+```
+
+This is what makes the data **FAIR-by-construction**: anyone with the URL can reproduce the exact slice you used.
+
+</details>
+
+---
+
+## ✅ Key takeaways
+
+- AIP is the **single search interface** spanning many aquatic data providers.
+- Prefer the **OGC API path** when it's offered — no manual downloads, easy spatial subsetting.
+- For datasets requiring disclaimers (e.g. HELCOM), use **Insert URL** after accepting on the source site.
+- AIP works without an account for browsing; running workflows still needs an [Aqua Galaxy account]({{ '/reference/prerequisites' | relative_url }}).
 
 ---
 
