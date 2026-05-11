@@ -98,7 +98,7 @@ Don't reorder. Don't omit. Especially don't drop the timestamp table - it's the 
   - `{{ relative_root }}reference/glossary#fair`
   - `{{ relative_root }}06_use_cases`
   - **Never** use `{{ '/path' | relative_url }}` - it breaks under the GitHub Pages subpath.
-- **External links** include `target="_blank" rel="noopener"` when written in raw HTML.
+- **External links** open in a new tab automatically via `external-links.js` - no need to add `target="_blank"` yourself.
 - **YouTube deep links** use the `&t=Xs` form so they jump to the exact second.
 
 ---

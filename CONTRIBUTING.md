@@ -51,7 +51,7 @@ Before opening the PR, verify:
 - [ ] Sequential `Previous` / `Next` buttons point to the right files.
 - [ ] No em/en dashes (`—`, `–`).
 - [ ] Code blocks have a language tag.
-- [ ] All external links open with `target="_blank" rel="noopener"`.
+- [ ] External links use plain markdown syntax - the site script adds `target="_blank"` automatically.
 
 **Use-case index page**
 - [ ] Hero block with workshop recording metadata.
