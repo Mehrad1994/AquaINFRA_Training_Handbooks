@@ -36,13 +36,25 @@ nav_order: 7
 
 ```mermaid
 flowchart LR
-    A[1. AOI] --> B[2. Online data<br/>GBIF, iNat, VertNet]
-    A --> C[3-4. Offline data<br/>optional]
-    B --> M[5. Merge & harmonize<br/>see Ch. 8]
+    A["1. AOI<br/>GeoJSON"] --> B["2. Online data<br/>GBIF, iNat, VertNet"]
+    A --> C["3-4. Offline data<br/>optional CSV"]
+    B --> M["5. Merge &<br/>harmonize"]
     C --> M
+    M --> N["6. Harmonize<br/>species names"]
+    N --> O["7. Extract<br/>predictors"]
+    O --> P["8. Flag outliers<br/>Specleaner"]
+
+    style A fill:#e1e9f6,stroke:#3564AC
+    style B fill:#e1e9f6,stroke:#3564AC
+    style C fill:#e1e9f6,stroke:#3564AC
+    style M fill:#fff4d6,stroke:#9a6700
+    style N fill:#fff4d6,stroke:#9a6700
+    style O fill:#fff4d6,stroke:#9a6700
+    style P fill:#fff4d6,stroke:#9a6700
 ```
 
-This chapter covers Steps 1-4. The processing half (Steps 5-8) is in [Chapter 8](./08_workflow_processing).
+🔵 **This chapter covers Steps 1-4** (data acquisition).
+🟡 The processing half (Steps 5-8) is detailed in [Chapter 8](./08_workflow_processing).
 
 ## Phase 1 - Data acquisition
 

@@ -46,7 +46,7 @@ title: Hands-On Tutorial
 </div>
 
 > [!TIP]
-> Already watched the video? Skim **Key takeaways** at the bottom and use the chapter index above to jump back to any moment.
+> Already watched the video? Skim **Key takeaways** at the bottom and use the timestamp table above to jump back to any moment.
 
 ---
 

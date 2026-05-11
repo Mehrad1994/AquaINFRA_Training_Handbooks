@@ -13,7 +13,7 @@ title: "1. Introduction"
   PAGE ANATOMY (delete this comment when filling in):
   1. Page header (above) - read time / video time / chapter position
   2. At a glance callout - 2-3 bullets
-  3. Video companion block (embed + chapter index table)
+  3. Video companion block (embed + timestamp table)
   4. Key concepts - short conceptual recap, NOT a transcript
   5. (Procedural chapters) Step-by-step with per-step timestamp links
   6. Optional: <details> deep-dive collapsible
