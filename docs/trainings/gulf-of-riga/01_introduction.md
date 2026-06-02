@@ -3,9 +3,9 @@ layout: default
 title: Introduction
 ---
 
-# Chapter 1 - Introduction to AquaINFRA
+# Introduction to AquaINFRA
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~2 min read</strong> · <strong>2 min video</strong> · Chapter 1 of 9
 </p>
 
@@ -102,4 +102,4 @@ If you're new to Galaxy: it's a workflow engine that chains analysis "tools" int
     <a href="./02_case_study" class="btn-seq btn-seq--next">Next Chapter: Case Study →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

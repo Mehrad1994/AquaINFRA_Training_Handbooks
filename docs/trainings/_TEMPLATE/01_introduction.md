@@ -3,9 +3,9 @@ layout: default
 title: "1. Introduction"
 ---
 
-# Chapter 1 - Introduction
+# Introduction
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~X min read</strong> · <strong>X min video</strong> · Chapter 1 of N
 </p>
 
@@ -94,4 +94,4 @@ Use only when the deep dive adds genuine value - not on every chapter.
     <a href="./02_main_content" class="btn-seq btn-seq--next">Next Chapter →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

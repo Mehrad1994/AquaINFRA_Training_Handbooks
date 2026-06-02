@@ -471,47 +471,6 @@
     transform: translateY(0);
 }
 
-/* =========================================
-   Per-page feedback widget
-   ========================================= */
-.page-feedback {
-    margin: 3.5rem 0 1.5rem 0;
-    padding: 1.25rem 1.5rem;
-    background: #f8fafd;
-    border: 1px solid var(--aqua-blue-light);
-    border-radius: 8px;
-    text-align: center;
-}
-.page-feedback__prompt {
-    margin: 0 0 0.75rem 0;
-    font-size: 0.95rem;
-    color: #4a5568;
-    font-weight: 500;
-}
-.page-feedback__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: center;
-}
-.page-feedback__btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--aqua-blue);
-    background: #fff;
-    border: 1px solid var(--aqua-blue-light);
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.15s ease, transform 0.15s ease;
-}
-.page-feedback__btn:hover {
-    background: var(--aqua-blue-light);
-    transform: translateY(-1px);
-}
-
 /* GitHub-style Alerts Styling */
 .alert-box {
     margin: 2rem 0;
@@ -611,4 +570,69 @@
     content: '🛑';
     /* Caution icon */
     margin-right: 0.75rem;
+}
+
+/* =========================================
+   Layout components (was inline styles)
+   ========================================= */
+
+/* In-content hero banner (training index / contact pages) */
+.page-hero {
+    background-color: var(--aqua-blue);
+    color: #fff;
+    padding: 4rem 2rem;
+    margin: -2rem -1.5rem 3rem -1.5rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.page-hero h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 3rem;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* Chapter meta line (read time / video time / position) */
+.chapter-meta {
+    color: var(--text-muted);
+    margin-top: -0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Breadcrumb trail */
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-bottom: 1.25rem;
+}
+
+.breadcrumb a {
+    color: var(--aqua-blue);
+}
+
+.breadcrumb__sep {
+    margin: 0 0.4rem;
+    color: #bbb;
+}
+
+.breadcrumb__current {
+    color: var(--gray-600);
+}
+
+/* Decorative wave at the foot of content pages */
+.wave-decoration {
+    margin: 0 -2rem -2rem -2rem;
+    height: 100px;
+    background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);
 }

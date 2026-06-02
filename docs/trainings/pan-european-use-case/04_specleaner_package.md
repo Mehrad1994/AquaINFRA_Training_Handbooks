@@ -5,9 +5,9 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 4
 ---
 
-# Chapter 4 - The Specleaner Package
+# The Specleaner Package
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~4 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10
 </p>
 
@@ -38,7 +38,7 @@ nav_order: 4
 
 Any single outlier-detection method has known weaknesses. Z-score breaks down with skewed distributions. Isolation Forest can over-flag in sparse regions. Domain-specific rules miss novel patterns.
 
-**Specleaner combines ~20 detection methods** and votes. A record flagged by *every* method is almost certainly an error. One flagged by only one method is probably fine. This consensus approach mirrors how an expert ecologist would actually evaluate a suspicious record.
+**[Specleaner]({{ relative_root }}reference/glossary#specleanr)** (the R package `specleanr`) combines around 20 detection methods and votes. A record flagged by *every* method is almost certainly an error. One flagged by only one method is probably fine. This consensus approach mirrors how an expert ecologist would actually evaluate a suspicious record.
 
 ### Univariate methods
 
@@ -61,37 +61,36 @@ Consider **multiple predictors at once**, so an unusual combination flags even w
 
 ### The voting system
 
-The `m_detect` function compiles results and **weights each record** by how many methods flagged it. Output classes:
+The `multidetect()` function compiles results and **weights each record** by how many methods flagged it. The output classes, from weakest to strongest evidence, are:
 
-- **Not an outlier** - no method flagged.
-- **Poor / Fair outlier** - flagged by a few methods.
-- **Moderate / Strong outlier** - flagged by most methods.
-- **Perfect outlier** - flagged by every method run.
+- **Not an outlier** - no method flagged it.
+- **Poor / Fair** - flagged by only a few methods; usually keep.
+- **Moderate** - borderline; worth inspecting before deciding.
+- **Very Strong** - flagged by most methods; usually remove.
+- **Perfect** - flagged by every method run; almost certainly an error.
 
-You then choose your **threshold**: be conservative (remove only Perfect) or aggressive (remove everything ≥ Moderate), depending on your downstream Species Distribution Model's sensitivity to noise.
+You then choose your **threshold**: be conservative (remove only Perfect / Very Strong) or aggressive (remove from Moderate up), depending on your downstream [Species Distribution Model]({{ relative_root }}reference/glossary#sdm)'s sensitivity to noise. You'll apply this choice in [Chapter 9](./09_reviewing_results).
 
 <details>
-<summary><strong>🔬 Deep dive - calling Specleaner directly from R</strong></summary>
+<summary><strong>🔬 Deep dive - calling specleanr directly from R</strong></summary>
 
-If you'd rather run Specleaner outside Galaxy (e.g. in the MyBinder lab or your own RStudio), the API looks roughly like:
+If you'd rather run the package outside Galaxy (e.g. in the MyBinder lab or your own RStudio), it centres on the `multidetect()` function, which runs the ensemble of methods over your occurrence records.
+
+<em>The snippet below is illustrative. For the exact function arguments, see the <a href="https://anthonybasooma.github.io/specleanr/">specleanr documentation</a>.</em>
 
 ```r
-library(specleaner)
+library(specleanr)
 
-# `occurrences` is a data.frame with Species, Decimal Latitude, Decimal Longitude,
-# Date, and one or more environmental predictor columns.
+# `occurrences` is a data.frame of records with environmental predictor
+# columns (e.g. bio1 = mean annual temperature from WorldClim).
 
-result <- m_detect(
-  data = occurrences,
-  variable = "MeanAnnualTemperature",
-  methods = c("zscore", "iqr", "isolation_forest", "ocsvm", "ecorange"),
-  threshold = "moderate"
-)
+out <- multidetect(data = occurrences, var = "bio1", ...)
 
-clean <- result$data[result$data$outlier_class != "perfect", ]
+# Each record is classified non-outlier / poor / fair / moderate /
+# very strong / perfect, based on how many methods flagged it.
 ```
 
-The Galaxy tool wraps exactly this call - picking it via the Galaxy UI sets `methods` and `threshold` for you.
+The Galaxy tool wraps this call - picking options via the Galaxy UI sets the methods and threshold for you.
 </details>
 
 ---
@@ -107,7 +106,7 @@ The Galaxy tool wraps exactly this call - picking it via the Galaxy UI sets `met
 
 <div class="sequence-navigation">
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>
-    <a href="./05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2K Package →</a>
+    <a href="./05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2KP →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

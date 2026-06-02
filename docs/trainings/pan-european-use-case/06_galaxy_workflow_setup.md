@@ -5,9 +5,9 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 6
 ---
 
-# Chapter 6 - Galaxy Workflow Setup
+# Galaxy Workflow Setup
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 6 of 10
 </p>
 
@@ -37,7 +37,7 @@ nav_order: 6
 
 ## Step 1 - Import the workflow
 
-1. From the D2K Package page on AIP, click the **Galaxy** link in the VRE section.
+1. From the D2KP page on AIP, click the **Galaxy** link in the VRE section.
 2. In Galaxy, click **Import** to add the workflow to your list.
 3. Verify you're **logged in** (username top-right) so the import is saved.
 
@@ -45,10 +45,10 @@ nav_order: 6
 
 The workflow needs a **GeoJSON polygon** defining where to query occurrences.
 
-1. Open the **Datasets** section of the D2K Package.
+1. Open the **Datasets** section of the D2KP.
 2. Click **Zenodo** to see the file list.
 3. **Right-click** the GeoJSON download link → **Copy link address**.
-4. Back on the D2K Package page, choose **Aqua Galaxy** → paste the URL into **Import to Galaxy** → import.
+4. Back on the D2KP page, choose **Aqua Galaxy** → paste the URL into **Import to Galaxy** → import.
 
 ## Status colours
 
@@ -70,8 +70,8 @@ Once the workflow is imported and the GeoJSON shows green, click **Run** on the 
 ---
 
 <div class="sequence-navigation">
-    <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>
+    <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
     <a href="./07_workflow_acquisition" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 1 →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

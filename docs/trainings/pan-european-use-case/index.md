@@ -49,7 +49,7 @@ This training handbook covers the **Pan-European Use Case** developed by **BOKU 
                 <td>Deep dive into ensemble outlier detection methods (Univariate & Multivariate).</td>
             </tr>
             <tr>
-                <td><a href="./05_data_to_knowledge"><strong>5. D2K Package</strong></a></td>
+                <td><a href="./05_data_to_knowledge"><strong>5. D2KP</strong></a></td>
                 <td>Overview of the FAIR research package resources and segments.</td>
             </tr>
             <tr>
@@ -66,7 +66,7 @@ This training handbook covers the **Pan-European Use Case** developed by **BOKU 
             </tr>
             <tr>
                 <td><a href="./09_reviewing_results"><strong>9. Reviewing the Results</strong></a></td>
-                <td>Visualizing results in Galaxy and interpreting outlier classifications.</td>
+                <td>Visualising results in Galaxy and interpreting outlier classifications.</td>
             </tr>
             <tr>
                 <td><a href="./10_conclusion"><strong>10. Conclusion</strong></a></td>
@@ -79,9 +79,9 @@ This training handbook covers the **Pan-European Use Case** developed by **BOKU 
 ---
 
 <!-- Navigation Buttons -->
-<div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
+<div class="sequence-navigation">
     <a href="../../06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>
 

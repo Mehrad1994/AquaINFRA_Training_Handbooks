@@ -9,14 +9,14 @@
       url: "/wp6_tasks"
       description: "Proposed training for Vantaanjoen river basin and coastal interaction."
       status: "Planned"
-    - title: "Helcom"
+    - title: "HELCOM"
       url: "/wp6_tasks"
-      description: "Upcoming case study by Helcom."
+      description: "Upcoming case study by HELCOM."
       status: "Planned"
 
 - region: "North Sea"
   trainings:
-    - title: "Hereon"
+    - title: "HEREON"
       url: "/wp6_tasks"
       description: "Cosine modelling and web service in the German Bight."
       status: "Planned"
@@ -27,7 +27,7 @@
     - title: "Elbe River"
       url: "/wp6_tasks"
       description: "River to sea modelling and ecosystem assessment by the Elbe estuary."
-      status: "Active"
+      status: "Planned"
       d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:18607604"
 
 - region: "Pan-European"

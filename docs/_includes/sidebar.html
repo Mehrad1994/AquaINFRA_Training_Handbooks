@@ -3,7 +3,7 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Home</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}index" class="sidebar__link">Home Page</a></li>
+            <li><a href="{{ base }}index" class="sidebar__link{% if page.title == 'Home' %} active{% endif %}">Home Page</a></li>
         </ul>
     </section>
 
@@ -11,29 +11,33 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Getting Started</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}01_eosc" class="sidebar__link">EOSC</a></li>
-            <li><a href="{{ base }}02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+            <li><a href="{{ base }}01_eosc" class="sidebar__link{% if page.url contains '01_eosc' %} active{% endif %}">EOSC</a></li>
+            <li><a href="{{ base }}02_aquainfra" class="sidebar__link{% if page.url contains '02_aquainfra' %} active{% endif %}">AquaINFRA</a></li>
         </ul>
     </section>
 
-    <!-- Section 3 & 4: Context & Trainings -->
+    <!-- Section 3: Basic Training -->
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Basic Training</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}03_aip" class="sidebar__link">AIP</a></li>
-            <li><a href="{{ base }}04_aquainfra_vre" class="sidebar__link">VRE</a></li>
-            <li><a href="{{ base }}05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
-            <li><a href="{{ base }}06_use_cases" class="sidebar__link">Use Cases</a></li>
+            <li><a href="{{ base }}03_aip" class="sidebar__link{% if page.url contains '03_aip' %} active{% endif %}">AIP</a></li>
+            <li><a href="{{ base }}04_aquainfra_vre" class="sidebar__link{% if page.url contains '04_aquainfra_vre' %} active{% endif %}">VRE</a></li>
+            <li><a href="{{ base }}05_data_to_knowledge" class="sidebar__link{% if page.url contains '05_data_to_knowledge' %} active{% endif %}">D2KP</a></li>
+            <li><a href="{{ base }}06_use_cases" class="sidebar__link{% if page.url contains '06_use_cases' %} active{% endif %}">Use Cases</a></li>
         </ul>
     </section>
 
-    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <!-- Section 4: Training Use Cases (Dynamic) -->
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Applied Use Case Training</h3>
 
         {% for region in site.data.use_cases %}
-        <div class="sidebar__region">
-            <button class="region-accordion" onclick="toggleRegion(this)">
+        {% assign region_active = false %}
+        {% for training in region.trainings %}
+            {% if training.url != '/wp6_tasks' and page.url contains training.url %}{% assign region_active = true %}{% endif %}
+        {% endfor %}
+        <div class="sidebar__region{% if region_active %} is-active{% endif %}">
+            <button class="region-accordion" onclick="toggleRegion(this)" aria-expanded="{% if region_active %}true{% else %}false{% endif %}">
                 <span>{{ region.region }}</span>
                 <span class="sidebar__chevron">&#9654;</span>
             </button>
@@ -43,7 +47,7 @@
                 <ul class="sidebar__list">
                     {% for training in region.trainings %}
                     <li>
-                        <a href="{{ base }}{{ training.url | remove_first: '/' }}" class="sidebar__link">
+                        <a href="{{ base }}{{ training.url | remove_first: '/' }}" class="sidebar__link{% if training.url != '/wp6_tasks' and page.url contains training.url %} active{% endif %}">
                             {{ training.title }}
                         </a>
                     </li>
@@ -65,10 +69,10 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Reference</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}reference/glossary" class="sidebar__link">Glossary</a></li>
-            <li><a href="{{ base }}reference/prerequisites" class="sidebar__link">Prerequisites & Sign-Up</a></li>
-            <li><a href="{{ base }}reference/faq" class="sidebar__link">FAQ & Troubleshooting</a></li>
-            <li><a href="{{ base }}reference/quick-tasks" class="sidebar__link">Quick-Task Index</a></li>
+            <li><a href="{{ base }}reference/glossary" class="sidebar__link{% if page.url contains 'glossary' %} active{% endif %}">Glossary</a></li>
+            <li><a href="{{ base }}reference/prerequisites" class="sidebar__link{% if page.url contains 'prerequisites' %} active{% endif %}">Prerequisites & Sign-Up</a></li>
+            <li><a href="{{ base }}reference/faq" class="sidebar__link{% if page.url contains 'faq' %} active{% endif %}">FAQ & Troubleshooting</a></li>
+            <li><a href="{{ base }}reference/quick-tasks" class="sidebar__link{% if page.url contains 'quick-tasks' %} active{% endif %}">Quick-Task Index</a></li>
         </ul>
     </section>
 
@@ -76,7 +80,7 @@
     <section class="sidebar__section">
         <h3 class="sidebar__heading">Contact</h3>
         <ul class="sidebar__list">
-            <li><a href="{{ base }}07_contact" class="sidebar__link">Contact Us</a></li>
+            <li><a href="{{ base }}07_contact" class="sidebar__link{% if page.url contains '07_contact' %} active{% endif %}">Contact Us</a></li>
         </ul>
     </section>
 </aside>

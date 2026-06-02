@@ -5,9 +5,9 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 9
 ---
 
-# Chapter 9 - Reviewing the Workflow Results
+# Reviewing the Workflow Results
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 9 of 10
 </p>
 
@@ -91,4 +91,4 @@ The right cut-off depends on your downstream model:
     <a href="./10_conclusion" class="btn-seq btn-seq--next">Next Chapter: Conclusion →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

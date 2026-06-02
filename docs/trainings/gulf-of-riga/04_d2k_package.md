@@ -3,9 +3,9 @@ layout: default
 title: Data-to-Knowledge Package
 ---
 
-# Chapter 4 - The Gulf of Riga Data-to-Knowledge Package
+# The Gulf of Riga Data-to-Knowledge Package
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 4 of 9
 </p>
 
@@ -65,4 +65,4 @@ Each component is a different **interaction level**. A domain researcher can run
     <a href="./05_vre_galaxy" class="btn-seq btn-seq--next">Next Chapter: VRE Galaxy →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

@@ -25,7 +25,7 @@ Each module is co-designed with domain experts and provides:
             {% for training in region_group.trainings %}
             <div class="use-case-card">
                 <div class="card-body">
-                    <h1 class="use-case-card__title">{{ training.title }}</h1>
+                    <h2 class="use-case-card__title">{{ training.title }}</h2>
                     <p class="use-case-card__desc">{{ training.description }}</p>
 
 <div class="resource-links">
@@ -42,6 +42,7 @@ Each module is co-designed with domain experts and provides:
     </div>
 </div>
 {% endfor %}
+</div>
 
 
 <!-- Navigation Buttons -->

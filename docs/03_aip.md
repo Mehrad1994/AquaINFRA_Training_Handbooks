@@ -13,15 +13,15 @@ title: AIP
     </ul>
 </div>
 
-EOSC provides the raw computational power, the **AquaINFRA Interaction Platform (AIP)** is the specialized map that helps you find the exact aquatic data you need.
+EOSC provides the raw computational power; the **[AquaINFRA Interaction Platform (AIP)]({{ relative_root }}reference/glossary#aip)** is the specialised map that helps you find the exact aquatic data you need.
 
-Instead of scouring different national databases, the AIP allows you to seamlessly search Earth observations and European hydrography in one place, and then pipe that data directly into a high-performance analysis environment.
+Instead of scouring different national databases, the AIP lets you search Earth observations and European hydrography in one place, and then pipe that data directly into a high-performance analysis environment.
 
 ---
 
-## 📽️ Video Tutorial: Getting Started
+## 📽️ Video tutorial: getting started
 
-This walkthrough shows you exactly how to navigate the AIP interface. It covers searching for relevant datasets, subsetting them graphically, and importing them straight into your Galaxy history.
+This walkthrough shows you exactly how to use the AIP interface. It covers searching for relevant datasets, subsetting them graphically, and importing them straight into your Galaxy history.
 
 <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/peGqhL4_iQ8?si=dLi2SsVTtmYlr6Yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -29,11 +29,11 @@ This walkthrough shows you exactly how to navigate the AIP interface. It covers 
 
 ---
 
-## 🛠️ The Search-to-Analysis Workflow
+## 🛠️ The search-to-analysis workflow
 
-The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own Computer.
+The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own computer.
 
-### 1. The Seamless Route (OGC API)
+### 1. The seamless route (OGC API)
 
 > [!TIP]
 > **Before you start**
@@ -44,11 +44,11 @@ When you find a dataset on the AIP hosted as an **OGC API Feature service**, the
 
 1. Visually subset the data on the map (e.g., drawing a polygon around a specific coastline).
 2. Click **"Import to Galaxy"**.
-3. In Galaxy, use the dedicated **AquaINFRA OGC API processes** tool to map that data URL to powerful backend operations like `points_at_polygon`.
+3. In Galaxy, use the dedicated **AquaINFRA OGC API processes** tool to map that data URL to backend operations like `points_at_polygon`.
 
-Because the data is processed on the backend servers, you avoid heavy data transfers and get straight to analyzing your results.
+Because the data is processed on the backend servers, you avoid heavy data transfers and get straight to analysing your results.
 
-### 2. The Manual Detour
+### 2. The manual detour
 
 Not all data partners support direct API ingestion yet. If you find a dataset you want but the "Import to Galaxy" button is missing:
 
@@ -60,6 +60,8 @@ Not all data partners support direct API ingestion yet. If you find a dataset yo
 
 <details>
 <summary><strong>🔬 Deep dive - what an OGC API Features request looks like</strong></summary>
+
+<em>The endpoint path and parameters below are an illustrative example. Copy the exact request from the AIP "Import to Galaxy" dialog for the dataset you are using.</em>
 
 When you visually draw a bounding box on AIP and click "Import to Galaxy," DDAS builds a URL like:
 
@@ -98,4 +100,4 @@ This is what makes the data **FAIR-by-construction**: anyone with the URL can re
     <a href="{{ relative_root }}04_aquainfra_vre" class="btn-seq btn-seq--next">Next Step: VRE →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

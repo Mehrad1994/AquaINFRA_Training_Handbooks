@@ -5,9 +5,9 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 1
 ---
 
-# Chapter 1 - Introduction to AquaINFRA & the Use Case
+# Introduction to AquaINFRA & the Use Case
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~2 min read</strong> · <strong>1.5 min video</strong> · Chapter 1 of 10
 </p>
 
@@ -50,7 +50,7 @@ The result: estimates that are reproducible end-to-end and citable as a [D2KP]({
 
 - **Findable** - data and workflow indexed on AIP and Zenodo.
 - **Accessible** - open access via web APIs.
-- **Interoperable** - harmonized to a standard column schema (you'll meet this in Chapter 8).
+- **Interoperable** - harmonised to a standard column schema (you'll meet this in Chapter 8).
 - **Reusable** - workflow runs on any area of interest, anywhere in the world.
 
 ---
@@ -58,7 +58,7 @@ The result: estimates that are reproducible end-to-end and citable as a [D2KP]({
 ## ✅ Key takeaways
 
 - The use case targets a real problem: **fragmented biodiversity data** across European sources.
-- AquaINFRA's value-add is the **end-to-end workflow** - pull, merge, harmonize, clean - not just storage.
+- AquaINFRA's value-add is the **end-to-end workflow** - pull, merge, harmonise, clean - not just storage.
 - The output is **reusable** beyond Europe - same workflow, different area of interest.
 
 ---
@@ -68,4 +68,4 @@ The result: estimates that are reproducible end-to-end and citable as a [D2KP]({
     <a href="./02_boku_researchers" class="btn-seq btn-seq--next">Next Chapter: Meet the Researchers →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

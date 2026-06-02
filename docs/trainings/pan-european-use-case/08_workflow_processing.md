@@ -5,16 +5,16 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 8
 ---
 
-# Chapter 8 - Workflow Steps 5-8: Processing & Detection
+# Workflow Steps 5-8: Processing & Detection
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~4 min read</strong> · <strong>2 min video</strong> · Chapter 8 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>How the workflow merges and harmonizes data from different sources.</li>
+        <li>How the workflow merges and harmonises data from different sources.</li>
         <li>Why species-name resolution against <strong>FishBase</strong> matters.</li>
         <li>Where the Specleaner outlier-detection actually happens.</li>
     </ul>
@@ -39,12 +39,12 @@ nav_order: 8
         <thead><tr><th>Step</th><th>Goal</th><th>What it does</th></tr></thead>
         <tbody>
             <tr>
-                <td><strong>5. Merge & harmonize columns</strong></td>
+                <td><strong>5. Merge & harmonise columns</strong></td>
                 <td>Unify schema across sources.</td>
                 <td>Maps divergent column names to: <code>Species</code>, <code>Decimal Latitude</code>, <code>Decimal Longitude</code>, <code>Date</code>, <code>Country</code>.</td>
             </tr>
             <tr>
-                <td><strong>6. Harmonize species names</strong></td>
+                <td><strong>6. Harmonise species names</strong></td>
                 <td>Resolve taxonomic synonyms.</td>
                 <td>Queries <strong>FishBase</strong> to map every name to the currently accepted scientific name.</td>
             </tr>
@@ -63,7 +63,7 @@ nav_order: 8
 </div>
 
 <details>
-<summary><strong>🔬 Deep dive - the harmonized schema (Step 5 output)</strong></summary>
+<summary><strong>🔬 Deep dive - the harmonised schema (Step 5 output)</strong></summary>
 
 After Step 5, every record in your dataset has at minimum these columns:
 
@@ -87,7 +87,7 @@ After Step 7 it picks up extra columns from WorldClim (e.g. `bio1` mean annual t
 ## ✅ Key takeaways
 
 - The four-step processing chain is **deterministic and idempotent** - you can re-run with new parameters without re-importing data.
-- **FishBase harmonization** is small but critical - it prevents synonym-driven false-positive flags later.
+- **FishBase harmonisation** is small but critical - it prevents synonym-driven false-positive flags later.
 - **WorldClim variables** are the most common predictors for Step 8 - but any covariate column you attach can be used.
 - Step 8's output carries the outlier classification you'll inspect in [Chapter 9](./09_reviewing_results).
 
@@ -98,4 +98,4 @@ After Step 7 it picks up extra columns from WorldClim (e.g. `bio1` mean annual t
     <a href="./09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

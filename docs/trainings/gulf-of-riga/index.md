@@ -54,7 +54,7 @@ It is divided into chapters corresponding to the video sections.
             </tr>
             <tr>
                 <td><a href="./04_d2k_package"><strong>Data-to-Knowledge Package</strong></a></td>
-                <td>Introduction to the D2K package concept.</td>
+                <td>Introduction to the D2KP concept.</td>
             </tr>
             <tr>
                 <td><a href="./05_vre_galaxy"><strong>Aqua Galaxy (VRE)</strong></a></td>
@@ -83,9 +83,9 @@ It is divided into chapters corresponding to the video sections.
 ---
 
 <!-- Navigation Buttons -->
-<div class="sequence-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem;">
+<div class="sequence-navigation">
     <a href="../../06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>
 

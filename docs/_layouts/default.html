@@ -10,7 +10,6 @@
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="{{ base }}assets/css/style.css">
-    <link rel="stylesheet" href="{{ base }}assets/css/header-nav.css">
     <link rel="stylesheet" href="{{ base }}assets/css/theme.css">
     <link rel="stylesheet" href="{{ base }}assets/css/sidebar.css">
 
@@ -21,17 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            font-family: var(--font-system);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    </style>
 </head>
 
 <body>
@@ -40,9 +28,8 @@
     <!-- Main Content Wrapper -->
     <main class="main-wrapper">
         {% if page.hero_title %}
-        <div class="page-hero"
-            style="background-color: #3564AC; color: white; padding: 4rem 2rem; margin: -2rem -1.5rem 3rem -1.5rem; text-align: center; border-radius: 8px 8px 0 0;">
-            <h1 style="color: white; margin: 0; font-size: 3rem;">{{ page.hero_title }}</h1>
+        <div class="page-hero">
+            <h1>{{ page.hero_title }}</h1>
         </div>
         {% endif %}
         <div class="handbook-grid">
@@ -51,23 +38,30 @@
 
             <!-- Page Content -->
             <div class="handbook-content">
+                {% unless page.title == "Home" %}
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="{{ base }}index">Home</a>
+                    <span class="breadcrumb__sep">›</span>
+                    <span class="breadcrumb__current">{{ page.title }}</span>
+                </nav>
+                {% endunless %}
                 {{ content }}
-                {% include feedback.html %}
             </div>
         </div>
     </main>
 
 
-    <!-- Anchor JS for TOC links (optional, simple script) -->
+    <!-- Smooth scroll for in-page anchor links (event delegation, guarded) -->
     <script>
-        // Simple script to handle smooth scroll offset for fixed header if needed
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        document.addEventListener('click', function (e) {
+            var link = e.target.closest('a[href^="#"]');
+            if (!link) return;
+            var href = link.getAttribute('href');
+            if (!href || href === '#' || href.length < 2) return;
+            var target = document.getElementById(href.slice(1));
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
 
@@ -96,6 +90,7 @@
     </script>
     {% endif %}
     <script src="{{ base }}assets/js/sidebar.js"></script>
+    <script src="{{ base }}assets/js/toc.js"></script>
     <script src="{{ base }}assets/js/copy-code.js"></script>
     <script src="{{ base }}assets/js/glossary-tooltips.js"></script>
     <script src="{{ base }}assets/js/external-links.js"></script>

@@ -12,7 +12,7 @@ We welcome technical trainings, use cases, and documentation improvements. The h
 
 ## 📐 Page anatomy (every chapter)
 
-1. Chapter title H1 (`# Chapter X - Title`) - the blue accent bar is added automatically by CSS
+1. Chapter title H1 (`# Title`, no numeric prefix) - the blue accent bar is added automatically by CSS
 2. Meta line (read time, video time, chapter position)
 3. **At a glance** callout (2-3 bullets)
 4. **Video companion**: pre-clipped iframe + timestamp table with `&t=Xs` deep links (no "Chapter index" sub-heading above it)
@@ -40,7 +40,7 @@ The full style guide lives at [STYLEGUIDE.md](STYLEGUIDE.md). Highlights:
 Before opening the PR, verify:
 
 **Per chapter**
-- [ ] Chapter title as H1 (`# Chapter X - Title`) - the blue accent bar will appear automatically.
+- [ ] Chapter title as H1 (`# Title`, no numeric prefix) - the blue accent bar will appear automatically.
 - [ ] Meta line beneath the title with read time, video time, `Chapter X of N`.
 - [ ] At-a-glance callout (2-3 bullets, no more).
 - [ ] Pre-clipped video iframe (`start=...&end=...`) loads the right segment.

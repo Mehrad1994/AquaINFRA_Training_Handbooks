@@ -5,9 +5,9 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 7
 ---
 
-# Chapter 7 - Workflow Steps 1-4: Data Acquisition
+# Workflow Steps 1-4: Data Acquisition
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 7 of 10
 </p>
 
@@ -38,9 +38,9 @@ nav_order: 7
 flowchart LR
     A["1. AOI<br/>GeoJSON"] --> B["2. Online data<br/>GBIF, iNat, VertNet"]
     A --> C["3-4. Offline data<br/>optional CSV"]
-    B --> M["5. Merge &<br/>harmonize"]
+    B --> M["5. Merge &<br/>harmonise"]
     C --> M
-    M --> N["6. Harmonize<br/>species names"]
+    M --> N["6. Harmonise<br/>species names"]
     N --> O["7. Extract<br/>predictors"]
     O --> P["8. Flag outliers<br/>Specleaner"]
 
@@ -99,4 +99,4 @@ flowchart LR
     <a href="./08_workflow_processing" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 2 →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>
