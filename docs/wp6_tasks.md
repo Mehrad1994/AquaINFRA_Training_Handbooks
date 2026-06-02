@@ -19,9 +19,9 @@ This page provides an overview of the Work Package 6 (WP6) tasks, focus regions,
 
 | Focus Area | Status / Activity |
 | :--- | :--- |
-| **Hereon** | In planning phase with Martin. |
+| **HEREON** | In planning phase. |
 | **Oslofjord & Glomma River** | Video prep session planned with NIVA (Copenhagen, July 2026); Text-based OERs. |
-| **Elbe** | In planning phase with Ida. |
+| **Elbe** | In planning phase. |
 
 ## Pan-European
 

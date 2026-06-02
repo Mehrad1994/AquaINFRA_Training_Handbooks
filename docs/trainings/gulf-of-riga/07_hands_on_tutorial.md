@@ -128,6 +128,8 @@ This is the **manual path** - HELCOM requires accepting a disclaimer before serv
 <details>
 <summary><strong>🔬 Deep dive - what those parameters actually do</strong></summary>
 
+<em>The parameter names below are illustrative; the exact labels on the workflow run form may differ. The behaviour they control is what matters.</em>
+
 | Parameter | Default | Effect |
 |---|---|---|
 | `min_points_per_unit` | 10 | Units with fewer points are excluded from trend analysis (insufficient sample). |

@@ -14,15 +14,15 @@ title: EOSC
     </ul>
 </div>
 
-The **European Open Science Cloud (EOSC)** is an initiative by the European Commission to provide researchers with a unified, trusted virtual environment for storing, analyzing, and sharing data across borders and disciplines.
+The **European Open Science Cloud (EOSC)** is an initiative by the European Commission to provide researchers with a unified, trusted virtual environment for storing, analysing, and sharing data across borders and disciplines.
 
 For AquaINFRA users, EOSC is the overarching infrastructure that makes our multidisciplinary approach possible, providing the underlying framework for [**FAIR**]({{ relative_root }}reference/glossary#fair) (Findable, Accessible, Interoperable, and Reusable) data sharing.
 
 ---
 
-## 📽️ Video Tutorial: EOSC Explained
+## 📽️ Video tutorial: EOSC explained
 
-Before diving into how this relates to our project, watch this concise overview. It breaks down the core concepts and mechanics of the EOSC initiative so you know exactly what kind of environment we are building upon.
+This short overview breaks down the core concepts and mechanics of the EOSC initiative, so you know exactly what kind of environment AquaINFRA builds on.
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/67mirPt-FhY?si=_7O6aVIqHEyQ0SW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -30,26 +30,26 @@ Before diving into how this relates to our project, watch this concise overview.
 
 ---
 
-## 🌊 Why EOSC Matters for AquaINFRA
+## 🌊 Why EOSC matters for AquaINFRA
 
 Marine and freshwater data is often highly fragmented. Different countries and institutions have their own ways of storing information, making it incredibly hard to run large-scale environmental analyses.
 
 This is where EOSC comes in for AquaINFRA. We don't just use it for storage; we use it to federate all these different aquatic data sources into one cohesive system. By leaning on EOSC, we ensure that:
 
 - **Data is Actually Shared**: We can bridge the gap between marine and freshwater research communities across Europe.
-- **Computing Scales Up**: Running complex environmental models requires serious processing power. By hooking into EOSC, AquaINFRA researchers can spin up virtual machines and containers without needing their own local data centers.
+- **Computing Scales Up**: Running complex environmental models requires serious processing power. By hooking into EOSC, AquaINFRA researchers can spin up virtual machines and containers without needing their own local data centres.
 
 ---
 
-## 🚀 The EOSC EU Node: Your Starting Point
+## 🚀 The EOSC EU Node: your starting point
 
-While EOSC is the broad unifying concept, the [EOSC EU Node](https://open-science-cloud.ec.europa.eu/) is the actual, tangible platform where you can log in and start working. It is the first operational cloud environment built for this initiative, designed to get you up and running without dealing with complex IT setups.
+While EOSC is the broad unifying concept, the **[EOSC EU Node]({{ relative_root }}reference/glossary#eosc-eu-node)** is the actual, tangible platform where you can log in and start working. It is the first operational cloud environment built for this initiative, designed to get you up and running without dealing with complex IT setups.
 
 So, why should an AquaINFRA researcher specifically use this Node?
 
-Instead of worrying about hardware or securing funding for data centers, the Node gives you a personal User Space that solves immediate research bottlenecks:
+Instead of worrying about hardware or securing funding for data centres, the Node gives you a personal User Space that solves immediate research bottlenecks:
 
-- **Instant Environmental Analysis**: Through the **Tools Hub**, you can instantly launch interactive oceanographic and freshwater notebooks. This means you get pre-configured environments ready to visualize and process AquaINFRA data directly in your browser.
+- **Instant Environmental Analysis**: Through the **Tools Hub**, you can instantly launch interactive oceanographic and freshwater notebooks. This means you get pre-configured environments ready to visualise and process AquaINFRA data directly in your browser.
 - **Cost-Free Cross-Border Collaboration**: By using **Groups**, you can invite researchers from different countries and institutions to work in the same workspace. Groups automatically pool your cloud credits, allowing your team to share massive aquatic datasets and run heavy computations without worrying about who is footing the infrastructure bill.
 
 > [!TIP]

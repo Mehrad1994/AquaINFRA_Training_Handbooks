@@ -13,11 +13,11 @@ title: AquaINFRA VRE
     </ul>
 </div>
 
-Once you have found your data on the AIP, the next step is the heavy lifting.
+Once you have found your data on the AIP, the next step is to run the analysis.
 
-The **AquaINFRA Virtual Research Environment (VRE)** is where the actual science happens. Rather than wrestling with software versions on your local machine or struggling with limited compute power, the VRE provides a stable, cloud-based platform specifically tailored for aquatic data modeling.
+The **AquaINFRA Virtual Research Environment (VRE)** is where the actual science happens. Rather than wrestling with software versions on your local machine or struggling with limited compute power, the VRE provides a stable, cloud-based platform specifically tailored for aquatic data modelling.
 
-## 📽️ Video Tutorial: Getting Started
+## 📽️ Video tutorial: getting started
 
 Watch this short guide to see the VRE in action. It demonstrates how seamlessly the environment handles data subsetting and analysis through the Galaxy interface.
 
@@ -25,9 +25,9 @@ Watch this short guide to see the VRE in action. It demonstrates how seamlessly 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/fdnxH0Lnirs?si=oZxdpCn9xabOB_vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## Core Features & Workflow
+## Core features and workflow
 
-The environment runs on established open-source technologies (**Galaxy**, **Binder**, and **OGC API**) but is customized for environmental researchers. Whether you prefer a drag-and-drop interface or writing custom code in **R** or **Python**, the VRE gives you the freedom to:
+The environment runs on established open-source technologies (**[Galaxy]({{ relative_root }}reference/glossary#galaxy)**, **Binder**, and **[OGC API]({{ relative_root }}reference/glossary#ogc-api-features)**) but is customised for environmental researchers. Whether you prefer a drag-and-drop interface or writing custom code in **R** or **Python**, the VRE gives you the freedom to:
 
 1. **Run Open Workflows**: Instantly execute complex models developed by AquaINFRA experts.
 2. **Modify & Experiment**: Take a peer's workflow and tweak the parameters to fit your own research question.
@@ -35,7 +35,7 @@ The environment runs on established open-source technologies (**Galaxy**, **Bind
 
 > [!TIP]
 > **Extensibility**
-> While Galaxy is currently the core component of the VRE, it offers a robust foundation for future integration of additional tools. A dedicated subdomain ensures that tools are tailored to the AquaINFRA user community, combining ease of access with powerful analytical capabilities.
+> While Galaxy is currently the core component of the VRE, it offers a solid foundation for future integration of additional tools. A dedicated subdomain ensures that tools are tailored to the AquaINFRA user community, combining ease of access with strong analytical capabilities.
 
 <details>
 <summary><strong>🔬 Deep dive - anatomy of a Galaxy session</strong></summary>

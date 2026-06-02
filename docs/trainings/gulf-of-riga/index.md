@@ -54,7 +54,7 @@ It is divided into chapters corresponding to the video sections.
             </tr>
             <tr>
                 <td><a href="./04_d2k_package"><strong>Data-to-Knowledge Package</strong></a></td>
-                <td>Introduction to the D2K package concept.</td>
+                <td>Introduction to the D2KP concept.</td>
             </tr>
             <tr>
                 <td><a href="./05_vre_galaxy"><strong>Aqua Galaxy (VRE)</strong></a></td>

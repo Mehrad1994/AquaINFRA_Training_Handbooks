@@ -50,7 +50,7 @@ The result: estimates that are reproducible end-to-end and citable as a [D2KP]({
 
 - **Findable** - data and workflow indexed on AIP and Zenodo.
 - **Accessible** - open access via web APIs.
-- **Interoperable** - harmonized to a standard column schema (you'll meet this in Chapter 8).
+- **Interoperable** - harmonised to a standard column schema (you'll meet this in Chapter 8).
 - **Reusable** - workflow runs on any area of interest, anywhere in the world.
 
 ---
@@ -58,7 +58,7 @@ The result: estimates that are reproducible end-to-end and citable as a [D2KP]({
 ## ✅ Key takeaways
 
 - The use case targets a real problem: **fragmented biodiversity data** across European sources.
-- AquaINFRA's value-add is the **end-to-end workflow** - pull, merge, harmonize, clean - not just storage.
+- AquaINFRA's value-add is the **end-to-end workflow** - pull, merge, harmonise, clean - not just storage.
 - The output is **reusable** beyond Europe - same workflow, different area of interest.
 
 ---

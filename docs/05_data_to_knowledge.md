@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Data to Knowledge Package
+title: Data-to-Knowledge Package
 ---
-# Data to Knowledge Package (D2KP)
+# Data-to-Knowledge Package (D2KP)
 
 <div class="callout">
     <strong>📌 At a glance</strong>
@@ -21,7 +21,7 @@ If a published paper is the menu, the **Data-to-Knowledge Package (D2KP)** is th
 
 ## 📽️ Video Tutorial: The D2KP Concept
 
-Explore how D2KPs organize these resources and why they are essential for moving away from "black-box" environmental research.
+Explore how D2KPs organise these resources and why they are essential for moving away from "black-box" environmental research.
 
 <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sphUGI2_WlI?si=Bzd_J5h4MXKSeoQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -35,12 +35,12 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 
 - **The Data & Code**: Every D2KP contains direct links to the raw data sources and the foundational source code (like Python or R scripts), guaranteeing full transparency.
 - **The Application (Galaxy)**: For those who want to use your methodology without writing code, the package includes a pre-configured workflow that can be executed directly in the [Galaxy interface](https://aqua.usegalaxy.eu/).
-- **The Raw Engine (API)**: Developers can use the underlying **Web API (PyGEOAPI)** to directly hook your analytical processes into their own custom systems or Digital Twins.
-- **The Developer Sandbox**: For those who want to deeply interrogate or edit your code, they can launch a containerized **Virtual Lab (R Studio via MyBinder)** linked directly to your package.
+- **The Raw Engine (API)**: Developers can use the underlying **[Web API (pygeoapi)]({{ relative_root }}reference/glossary#pygeoapi)** to directly hook your analytical processes into their own custom systems or Digital Twins.
+- **The Developer Sandbox**: For those who want to deeply interrogate or edit your code, they can launch a containerised **Virtual Lab (RStudio via [MyBinder]({{ relative_root }}reference/glossary#mybinder))** linked directly to your package.
 
 ---
 
-## 🔍 Finding and Using D2KPs
+## 🔍 Finding and using D2KPs
 
 > [!TIP]
 > **D2KP Publication**
@@ -52,6 +52,8 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 
 <details>
 <summary><strong>🔬 Deep dive - typical D2KP folder layout</strong></summary>
+
+<em>The layout below is an illustrative example of how a D2KP is organised; the exact files vary by package. Check the package's own README on Zenodo for its real structure.</em>
 
 A published D2KP on Zenodo typically contains:
 

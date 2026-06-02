@@ -67,7 +67,7 @@ For publication-grade sharing, prefer exporting the workflow as a **`.ga` file**
 ---
 
 <div class="sequence-navigation">
-    <a href="./04_d2k_package" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>
+    <a href="./04_d2k_package" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
     <a href="./06_workflow_concept" class="btn-seq btn-seq--next">Next Chapter: Workflow Concept →</a>
 </div>
 

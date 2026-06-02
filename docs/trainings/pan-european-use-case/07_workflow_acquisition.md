@@ -38,9 +38,9 @@ nav_order: 7
 flowchart LR
     A["1. AOI<br/>GeoJSON"] --> B["2. Online data<br/>GBIF, iNat, VertNet"]
     A --> C["3-4. Offline data<br/>optional CSV"]
-    B --> M["5. Merge &<br/>harmonize"]
+    B --> M["5. Merge &<br/>harmonise"]
     C --> M
-    M --> N["6. Harmonize<br/>species names"]
+    M --> N["6. Harmonise<br/>species names"]
     N --> O["7. Extract<br/>predictors"]
     O --> P["8. Flag outliers<br/>Specleaner"]
 
