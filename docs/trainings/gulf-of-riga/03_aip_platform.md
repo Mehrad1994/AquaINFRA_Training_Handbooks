@@ -5,7 +5,7 @@ title: Interaction Platform
 
 # Using the AIP for this Case Study
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 3 of 9
 </p>
 
@@ -66,4 +66,4 @@ The **[AIP](https://aquainfra.dev.52north.org/)** is the single gateway you'll u
     <a href="./04_d2k_package" class="btn-seq btn-seq--next">Next Chapter: D2KP →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

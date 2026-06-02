@@ -114,4 +114,4 @@ This page is your map. You'll work with three user-facing components throughout 
     <a href="{{ relative_root }}03_aip" class="btn-seq btn-seq--next">Next Step: AIP →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

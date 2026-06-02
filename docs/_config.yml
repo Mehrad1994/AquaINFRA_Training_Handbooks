@@ -13,7 +13,8 @@ description: Companion handbook to the AquaINFRA YouTube trainings. Find data, r
 # via jekyll-github-metadata. No config changes needed when forking.
 
 # Branding
-# Logo is handled in _includes/header.html for better control
+# This handbook is embedded inside aquainfra.eu/training, which supplies the
+# global header, footer, and logo. The handbook itself renders no header/footer.
 
 # Build Configuration
 # destination: ../build
@@ -32,4 +33,4 @@ search_enabled: false  # Search functionality not yet implemented
 
 # Footer & Citations
 gh_url: ""
-# Footer content is managed in _includes/footer.html
+# No site footer: the parent site (aquainfra.eu/training) provides it.

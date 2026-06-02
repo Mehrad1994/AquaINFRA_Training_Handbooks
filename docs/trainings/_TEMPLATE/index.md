@@ -70,8 +70,8 @@ After completing this training the reader will be able to:
 
 ---
 
-<div class="sequence-navigation" style="margin-top: 4rem;">
+<div class="sequence-navigation">
     <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

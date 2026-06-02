@@ -9,6 +9,15 @@ title: Home
     </p>
 </div>
 
+<div class="callout">
+    <strong>🚀 Before you begin</strong>
+    <ul>
+        <li>New here? Start with <a href="{{ relative_root }}reference/prerequisites">Prerequisites &amp; Sign-Up</a> (about 10 minutes).</li>
+        <li>Unsure about a term? Keep the <a href="{{ relative_root }}reference/glossary">Glossary</a> handy.</li>
+        <li>Hit a snag? Check the <a href="{{ relative_root }}reference/faq">FAQ &amp; Troubleshooting</a>.</li>
+    </ul>
+</div>
+
 <!-- Simplified Step-by-Step Path -->
 
 <div class="homepage-section">

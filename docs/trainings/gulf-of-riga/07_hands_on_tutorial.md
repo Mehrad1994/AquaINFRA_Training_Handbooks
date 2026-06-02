@@ -5,7 +5,7 @@ title: Hands-On Tutorial
 
 # Hands-On: Running the Gulf of Riga Workflow
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~10 min read</strong> · <strong>9 min video</strong> · Chapter 7 of 9
 </p>
 
@@ -202,4 +202,4 @@ Significant **negative trends** found in **LAT-003 (Summer)**, **LAT-004 (Summer
     <a href="./08_workflow_details" class="btn-seq btn-seq--next">Next Chapter: Workflow Details →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

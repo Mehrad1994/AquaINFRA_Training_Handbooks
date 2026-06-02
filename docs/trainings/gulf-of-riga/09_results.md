@@ -5,7 +5,7 @@ title: Results & Conclusion
 
 # Findings & What's Next
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~3 min read</strong> · <strong>4 min video</strong> · Chapter 9 of 9
 </p>
 
@@ -90,4 +90,4 @@ The same pattern - find → bundle → run → publish - applies to every other 
     <a href="./" class="btn-seq btn-seq--next">Back to Training Overview →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

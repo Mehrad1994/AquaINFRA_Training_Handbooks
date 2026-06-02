@@ -7,7 +7,7 @@ nav_order: 8
 
 # Workflow Steps 5-8: Processing & Detection
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~4 min read</strong> · <strong>2 min video</strong> · Chapter 8 of 10
 </p>
 
@@ -98,4 +98,4 @@ After Step 7 it picks up extra columns from WorldClim (e.g. `bio1` mean annual t
     <a href="./09_reviewing_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

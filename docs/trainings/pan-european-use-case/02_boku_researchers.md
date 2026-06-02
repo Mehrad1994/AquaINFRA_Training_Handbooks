@@ -7,7 +7,7 @@ nav_order: 2
 
 # Meet the BOKU Team
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~2 min read</strong> · <strong>5 min video</strong> · Chapter 2 of 10
 </p>
 
@@ -73,4 +73,4 @@ The use case is led by the **Institute of Hydrobiology and Aquatic Ecosystem Man
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--next">Next Chapter: Biodiversity →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

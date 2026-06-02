@@ -5,7 +5,7 @@ title: Case Study Story
 
 # The Gulf of Riga & Daugava River Case Study
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~2 min read</strong> · <strong>2 min video</strong> · Chapter 2 of 9
 </p>
 
@@ -62,4 +62,4 @@ That throw-away comment turned out to be a testable hypothesis. **Secchi depth**
     <a href="./03_aip_platform" class="btn-seq btn-seq--next">Next Chapter: AIP Platform →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>

@@ -2,16 +2,6 @@
    AquaINFRA Design System
    ========================================= */
 
-/* Import Mona Sans */
-@font-face {
-    font-family: 'Mona Sans';
-    src: url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2 supports variations'),
-        url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2-variations'),
-        url('https://github.com/github/mona-sans/raw/v1.0.1/fonts/woff2/Mona-Sans.woff2') format('woff2');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-}
-
 :root {
     /* Brand Colors (Updated from official site) */
     --aqua-blue: #3564ac;
@@ -19,6 +9,8 @@
     /* Dark navy/black for text */
     --aqua-green: #76b943;
     /* New primary action color */
+    --aqua-green-light: #e8f5e0;
+    /* Light green tint (badges) */
     --aqua-bg-light: #eaf1fc;
     /* Light section variable */
 
@@ -29,11 +21,14 @@
     --gray-200: #e9ecef;
     --gray-100: #f8f9fa;
     --white: #ffffff;
+    --text-muted: #5a6b7a;
 
     /* Layout */
     --max-width: 1200px;
     --content-width: 960px;
-    --header-height: 80px;
+
+    /* Typography */
+    --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Base Reset & Typography */
@@ -44,8 +39,9 @@
 }
 
 body {
-    /* Mona Sans is the official font. Fallback to system-ui. */
-    font-family: "Mona Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--font-system);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: var(--gray-900);
     line-height: 1.6;
     background-color: var(--white);
@@ -54,7 +50,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-size: 1rem;
-    font-size: clamp(0.8rem, 0.75rem + 0.15vw, 0.88rem);
+    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
 }
 
 h1,
@@ -140,9 +136,7 @@ p {
     margin-bottom: 1rem;
     font-size: 1.05em;
     /* Scales with body */
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    text-align: left;
 }
 
 ul,
@@ -200,97 +194,6 @@ img {
         margin-top: 1rem;
         margin-bottom: 1rem;
         border-radius: 0;
-    }
-}
-
-/* =========================================
-   Header & Navigation
-   ========================================= */
-
-.site-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--gray-200);
-    padding: 0.75rem 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.header-inner {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.header-brand {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header-logo,
-.site-header__logo {
-    height: 50px !important;
-    width: auto !important;
-    max-width: 250px !important;
-    object-fit: contain;
-    display: block;
-}
-
-.site-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--aqua-blue);
-    border-left: 2px solid var(--gray-200);
-    padding-left: 1.5rem;
-}
-
-/* Navigation */
-.site-nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-link {
-    font-weight: 600;
-    color: var(--gray-600);
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--aqua-blue);
-    border-bottom-color: var(--aqua-green);
-    text-decoration: none;
-}
-
-/* Mobile Header */
-@media (max-width: 640px) {
-    .header-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .header-brand {
-        flex-direction: column;
-        /* Stack logos and title */
-        gap: 0.75rem;
-    }
-
-    .site-title {
-        border-left: none;
-        padding-left: 0;
-    }
-
-    .site-nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
     }
 }
 
@@ -378,13 +281,6 @@ tr:hover {
     background-color: #fafafa;
 }
 
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
 /* Buttons */
 .btn {
     display: inline-block;
@@ -463,116 +359,45 @@ img {
     }
 }
 
-/* Grid for pages with TOC */
-.page-with-toc {
-    display: grid;
-    grid-template-columns: 1fr 240px;
-    /* Main content | TOC Sidebar */
-    gap: 3rem;
-}
+/* =========================================
+   In-page "On this page" TOC
+   ========================================= */
 
-.toc-container {
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
-    padding: 1.5rem;
+.page-toc {
     background: var(--gray-100);
-    border-radius: 6px;
     border: 1px solid var(--gray-200);
+    border-left: 4px solid var(--aqua-blue);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 2.5rem 0;
 }
 
-.toc-title {
-    font-size: 1rem;
+.page-toc__title {
+    font-size: 0.8rem;
     text-transform: uppercase;
     color: var(--gray-600);
     letter-spacing: 0.05em;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--aqua-green);
-    padding-bottom: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
 }
 
-.toc-list {
+.page-toc__list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.toc-list li {
-    margin-bottom: 0.75rem;
+.page-toc__list li {
+    margin-bottom: 0.35rem;
 }
 
-.toc-list a {
-    color: var(--gray-600);
-    font-size: 0.95rem;
-}
-
-.toc-list a:hover {
-    color: var(--aqua-blue);
-}
-
-@media (max-width: 1024px) {
-    .page-with-toc {
-        grid-template-columns: 1fr;
-        /* Stack on smaller screens */
-    }
-
-    .toc-container {
-        position: static;
-        margin-bottom: 2.5rem;
-        background: var(--aqua-green-light);
-        /* Highlight TOC on mobile */
-    }
-}
-
-/* =========================================
-   Footer
-   ========================================= */
-
-.site-footer {
-    background: var(--aqua-blue-dark);
-    color: var(--white);
-    padding: 3rem 1.5rem;
-    margin-top: auto;
-}
-
-.footer-inner {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-logos {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-
-
-.site-footer__eu-flag {
-    height: 35px !important;
-    width: auto !important;
-    display: block;
-}
-
-.footer-text {
-    text-align: right;
+.page-toc__list a {
+    color: var(--gray-800);
     font-size: 0.9rem;
-    opacity: 0.8;
 }
 
-@media (max-width: 640px) {
-    .footer-inner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-text {
-        text-align: center;
-    }
+.page-toc__list a:hover {
+    color: var(--aqua-blue);
 }
 
 /* =========================================
@@ -587,7 +412,7 @@ img {
     align-items: start;
 }
 
-/* Sidebar Styles */
+/* Sidebar layout. Component rules (sections, links, accordion) live in sidebar.css */
 .page-sidebar {
     background: var(--gray-100);
     padding: 0.8rem;
@@ -602,68 +427,11 @@ img {
     scrollbar-color: var(--gray-200) transparent;
 }
 
-.sidebar__section {
-    margin-bottom: 1.2rem;
-}
-
-.sidebar__section:last-child {
-    margin-bottom: 0;
-}
-
-.sidebar__heading {
-    font-size: 0.95rem;
-    color: var(--gray-900);
-    letter-spacing: 0.03em;
-    margin-bottom: 0.5rem;
-    border-bottom: 1.5px solid var(--aqua-blue);
-    padding-bottom: 0.2rem;
-    margin-top: 0;
-    font-weight: 600;
-}
-
 .sidebar__text {
     font-size: 0.78rem;
     color: var(--gray-600);
     margin-bottom: 0.3rem;
     line-height: 1.25;
-}
-
-.sidebar__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar__list li {
-    margin-bottom: 0.4rem;
-}
-
-.sidebar__link {
-    display: block;
-    color: var(--gray-800);
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.sidebar__link:hover {
-    color: var(--aqua-blue);
-    transform: translateX(4px);
-    text-decoration: none;
-}
-
-.sidebar__region {
-    margin-bottom: 0.1rem;
-}
-
-.sidebar__region-title {
-    display: block;
-    font-weight: 400;
-    color: rgb(7, 6, 8);
-    margin-bottom: 0;
-    font-size: 0.9rem;
 }
 
 /* Content Area */
@@ -747,175 +515,6 @@ img {
 }
 
 /* =========================================
-   Header Centering
-   ========================================= */
-
-.site-header__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex !important;
-    justify-content: space-between !important;
-    /* Space between brand and nav */
-    align-items: center !important;
-    position: relative;
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
-}
-
-.site-header__brand {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 1.5rem !important;
-    width: auto !important;
-    justify-content: flex-start !important;
-    /* Left align */
-}
-
-.site-header__title {
-    font-size: 1.5rem !important;
-    border-left: 2px solid #e9ecef !important;
-    /* Restore separator */
-    padding-left: 1.5rem !important;
-    text-align: left !important;
-    color: #3564ac;
-}
-
-.site-header__title-container {
-    flex: 1;
-    text-align: left;
-    /* Ensure title text aligns left against the separator */
-}
-
-/* Push logo to the left absolute to keep title centered in the whole header */
-/* Remove absolute positioning to allow stacking */
-/* Remove absolute positioning to keep valid flow */
-.site-header__brand a[href*="aquainfra.eu"] {
-    position: static !important;
-    margin-bottom: 0;
-    display: flex;
-    /* Ensure link wraps image tightly */
-}
-
-
-/* =========================================
-   AquaINFRA Style Footer (Dark Theme)
-   ========================================= */
-
-.site-footer {
-    background-color: #000 !important;
-    color: #fff !important;
-    padding: 1.5rem 0 !important;
-    /* Reduced from 3rem */
-    border-top: none !important;
-}
-
-.site-footer__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    /* Reduced from 2.5rem */
-    text-align: left;
-    align-items: flex-start !important;
-}
-
-.site-footer__brand {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.site-footer__aquainfra-logo {
-    height: 40px !important;
-    /* Scaled down for better fit */
-    width: auto !important;
-}
-
-.site-footer__nav {
-    display: flex;
-    gap: 0.75rem;
-    /* Reduced from 1.5rem */
-    flex-wrap: wrap;
-}
-
-.site-footer__nav a {
-    color: #fff !important;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.site-footer__nav a:hover {
-    text-decoration: underline;
-}
-
-.site-footer__partners {
-    margin: 0.5rem 0;
-    /* Reduced from 1rem */
-}
-
-.site-footer__logo {
-    height: 45px !important;
-    /* Explicit height to prevent collapse */
-    width: auto !important;
-    /* Original colors restored (no filter) */
-    opacity: 0.9;
-    transition: opacity 0.2s;
-}
-
-.site-footer__logo:hover {
-    opacity: 1;
-}
-
-@media (max-width: 768px) {
-    .site-footer__logo {
-        max-height: 40px !important;
-        max-width: 200px !important;
-    }
-}
-
-.site-footer__funding-block {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 1000px;
-}
-
-.site-footer__eu-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.site-footer__eu-flag {
-    height: 40px !important;
-    width: auto !important;
-}
-
-.site-footer__funding-text strong {
-    font-size: 1.1rem;
-}
-
-.site-footer__disclaimer {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #ccc !important;
-    margin: 0;
-}
-
-.site-footer__bottom {
-    border-top: 1px solid #333;
-    padding-top: 1.5rem;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #888 !important;
-}
-
-/* =========================================
    Responsive Improvements (Appended)
    ========================================= */
 
@@ -932,9 +531,7 @@ img {
         /* Step up for large monitors */
     }
 
-    .main-wrapper,
-    .site-header__inner,
-    .footer-inner {
+    .main-wrapper {
         max-width: var(--max-width);
         /* Gently increase max-width but keep contained */
     }
@@ -954,19 +551,6 @@ img {
 
 /* Small Phones (<400px) */
 @media (max-width: 400px) {
-    .site-header__inner {
-        padding: 0.5rem 1rem !important;
-    }
-
-    .site-header__logo {
-        max-width: 180px !important;
-        /* Smaller logo */
-    }
-
-    .site-title {
-        font-size: 1.1rem !important;
-    }
-
     .main-wrapper {
         padding: 1.5rem 1rem;
     }
@@ -989,34 +573,6 @@ img {
 .handbook-content img {
     max-width: 100%;
     height: auto;
-}
-
-/* Footer Stacking Tweaks */
-@media (max-width: 640px) {
-    .site-footer__inner {
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .site-footer__brand,
-    .site-footer__nav,
-    .footer-logos,
-    .site-footer__eu-info {
-        align-items: center !important;
-        justify-content: center !important;
-        width: 100%;
-    }
-
-    .site-footer__nav {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .site-footer__funding-text {
-        text-align: center;
-    }
 }
 
 /* =========================================
@@ -1098,191 +654,3 @@ img {
         width: auto;
     }
 }
-
-/* =========================================
-   Training Cards Redesign
-   ========================================= */
-
-.training-grid {
-    display: grid;
-    /* Enforce 3 columns always as requested */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.training-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    aspect-ratio: 1;
-    /* Square card */
-    background: linear-gradient(135deg, var(--aqua-blue), var(--aqua-blue-dark));
-    color: var(--white);
-    padding: 1.5rem;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Card Content Layout */
-.training-card .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    width: 100%;
-    position: relative;
-    /* For absolute positioning of transitions if needed */
-    padding-bottom: 3rem;
-    /* Space for the button */
-}
-
-/* Default State: Title Visible, Desc Hidden */
-.training-card h3 {
-    color: var(--white);
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    /* Fluid font size */
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.3;
-    opacity: 1;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(0);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 1.5rem;
-}
-
-/* Description Hidden by Default */
-.training-card p {
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 1rem;
-    line-height: 1.5;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    /* Start slightly lower */
-    width: 100%;
-    padding: 0 1.5rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none;
-    /* Let clicks pass through */
-}
-
-/* Hover State: Hide Title, Show Desc */
-.training-card:hover h3 {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-    /* Move up */
-}
-
-.training-card:hover p {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    /* Center it */
-}
-
-/* Button (Badge) Styling - "Clean and Organized" */
-.training-card .badge {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    color: var(--white);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 0.5rem 1.25rem;
-    border-radius: 30px;
-    /* Pill shape */
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-}
-
-.training-card:hover .badge {
-    background: var(--white);
-    color: var(--aqua-blue-dark);
-    border-color: var(--white);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .training-grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* Keep 3 as requested */
-    }
-
-    /* Tablet/Intermediate - Reduce size and weight */
-    .training-card h3 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        /* Semi-bold */
-    }
-}
-
-/* Specific adjustment for narrower tablet portrait/small desktop */
-@media (max-width: 900px) {
-    .training-card h3 {
-        font-size: 1.15rem;
-        font-weight: 500;
-        /* Medium weight, no longer bold */
-    }
-}
-
-/* Removed 768px breakpoint to keep 3 columns on tablet as requested */
-/* Mobile Breakpoint */
-@media (max-width: 600px) {
-    .training-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* Force 2 columns on mobile */
-        gap: 0.75rem;
-    }
-
-    .training-card {
-        padding: 0.75rem;
-        /* Reduce padding to prevent overlap */
-        min-height: 180px;
-        /* Slightly shorter */
-        aspect-ratio: auto;
-    }
-
-    .training-card h3 {
-        font-size: 1rem;
-        /* Smaller title */
-        font-weight: 500;
-        /* Not bold */
-        padding: 0 0.25rem;
-        width: 100%;
-    }
-
-    .training-card p {
-        font-size: 0.8rem;
-        padding: 0 0.25rem;
-        width: 100%;
-    }
-
-    .training-card .badge {
-        bottom: 0.75rem;
-        /* Tighter button placement */
-        padding: 0.35rem 0.75rem;
-        font-size: 0.75rem;
-    }
-}
-
-/* Cleaned up duplicate 480px block */

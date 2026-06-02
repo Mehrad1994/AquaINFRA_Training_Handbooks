@@ -7,7 +7,7 @@ nav_order: 4
 
 # The Specleaner Package
 
-<p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
+<p class="chapter-meta">
   <strong>~4 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10
 </p>
 
@@ -109,4 +109,4 @@ The Galaxy tool wraps this call - picking options via the Galaxy UI sets the met
     <a href="./05_data_to_knowledge" class="btn-seq btn-seq--next">Next Chapter: D2KP →</a>
 </div>
 
-<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+<div class="wave-decoration"></div>
