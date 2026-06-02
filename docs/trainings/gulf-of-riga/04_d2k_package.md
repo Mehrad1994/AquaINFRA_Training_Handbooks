@@ -3,7 +3,7 @@ layout: default
 title: Data-to-Knowledge Package
 ---
 
-# Chapter 4 - The Gulf of Riga Data-to-Knowledge Package
+# The Gulf of Riga Data-to-Knowledge Package
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 4 of 9

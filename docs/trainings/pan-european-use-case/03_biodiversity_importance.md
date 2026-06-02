@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 3
 ---
 
-# Chapter 3 - Why Freshwater Biodiversity Matters
+# Why Freshwater Biodiversity Matters
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>5 min video</strong> · Chapter 3 of 10

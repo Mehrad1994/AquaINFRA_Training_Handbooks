@@ -3,7 +3,7 @@ layout: default
 title: Results & Conclusion
 ---
 
-# Chapter 9 - Findings & What's Next
+# Findings & What's Next
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>4 min video</strong> · Chapter 9 of 9

@@ -3,7 +3,7 @@ layout: default
 title: "1. Introduction"
 ---
 
-# Chapter 1 - Introduction
+# Introduction
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~X min read</strong> · <strong>X min video</strong> · Chapter 1 of N

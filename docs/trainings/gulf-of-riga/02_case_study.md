@@ -3,7 +3,7 @@ layout: default
 title: Case Study Story
 ---
 
-# Chapter 2 - The Gulf of Riga & Daugava River Case Study
+# The Gulf of Riga & Daugava River Case Study
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>2 min video</strong> · Chapter 2 of 9

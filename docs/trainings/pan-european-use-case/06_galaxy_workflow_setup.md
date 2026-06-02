@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 6
 ---
 
-# Chapter 6 - Galaxy Workflow Setup
+# Galaxy Workflow Setup
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 6 of 10

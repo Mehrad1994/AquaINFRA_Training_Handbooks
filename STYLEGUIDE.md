@@ -78,7 +78,7 @@ Then plain "VRE" is fine.
 
 Every chapter follows the same structure - see [Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md):
 
-1. Chapter title H1 (`# Chapter X - Title`) - blue accent bar is auto-applied by CSS
+1. Chapter title H1 (`# Title`, no numeric prefix) - blue accent bar is auto-applied by CSS
 2. Meta line (read time, video time, chapter position)
 3. **At a glance** callout
 4. **Video companion**: iframe + timestamp table (timestamps required, no "Chapter index" sub-heading)

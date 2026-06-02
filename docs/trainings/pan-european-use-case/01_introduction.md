@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 1
 ---
 
-# Chapter 1 - Introduction to AquaINFRA & the Use Case
+# Introduction to AquaINFRA & the Use Case
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>1.5 min video</strong> · Chapter 1 of 10

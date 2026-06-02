@@ -3,7 +3,7 @@ layout: default
 title: Workflow Details
 ---
 
-# Chapter 8 - DGA Workflow: Tool-by-Tool Breakdown
+# DGA Workflow: Tool-by-Tool Breakdown
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~5 min read</strong> · <strong>3.5 min video</strong> · Chapter 8 of 9

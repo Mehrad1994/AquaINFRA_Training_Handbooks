@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 9
 ---
 
-# Chapter 9 - Reviewing the Workflow Results
+# Reviewing the Workflow Results
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 9 of 10

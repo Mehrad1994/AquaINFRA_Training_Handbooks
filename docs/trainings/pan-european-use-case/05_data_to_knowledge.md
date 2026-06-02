@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 5
 ---
 
-# Chapter 5 - The Pan-European D2KP
+# The Pan-European D2KP
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2 min video</strong> · Chapter 5 of 10

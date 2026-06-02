@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 10
 ---
 
-# Chapter 10 - Conclusion & What's Next
+# Conclusion & What's Next
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>~3 min video</strong> · Chapter 10 of 10

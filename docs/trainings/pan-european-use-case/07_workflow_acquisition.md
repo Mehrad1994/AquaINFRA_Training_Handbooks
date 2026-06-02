@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 7
 ---
 
-# Chapter 7 - Workflow Steps 1-4: Data Acquisition
+# Workflow Steps 1-4: Data Acquisition
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>1 min video</strong> · Chapter 7 of 10

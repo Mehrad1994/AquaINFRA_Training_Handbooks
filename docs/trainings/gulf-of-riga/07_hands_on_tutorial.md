@@ -3,7 +3,7 @@ layout: default
 title: Hands-On Tutorial
 ---
 
-# Chapter 7 - Hands-On: Running the Gulf of Riga Workflow
+# Hands-On: Running the Gulf of Riga Workflow
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~10 min read</strong> · <strong>9 min video</strong> · Chapter 7 of 9

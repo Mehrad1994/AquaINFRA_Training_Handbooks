@@ -22,7 +22,7 @@ cp -r docs/trainings/_TEMPLATE docs/trainings/your-use-case
 
 Every chapter page should be built from these blocks (top to bottom):
 
-1. **Chapter title (H1)** - `# Chapter X - Title`. The site CSS automatically adds the blue accent bar; do not wrap it in any container.
+1. **Chapter title (H1)** - `# Title`, with **no numeric prefix** (sequence is shown by the meta line and `nav_order`, not the title). The site CSS automatically adds the blue accent bar; do not wrap it in any container.
 2. **Meta line** - small grey line below the title showing read time, video time, and `Chapter X of N`.
 3. **At-a-glance callout** - 2-3 bullets summarising what the reader will know after this chapter.
 4. **Video companion** - the pre-clipped iframe (`start=` / `end=`) followed by a **timestamp table** (no sub-heading above it) with per-moment YouTube `&t=Xs` deep links. For short chapters, a single-line "📍 Jump to ..." paragraph below the embed is enough.
@@ -82,7 +82,7 @@ After saving, your training will appear automatically in the sidebar under **App
 
 Before opening a PR, verify every chapter has:
 
-- [ ] Chapter title as H1 (`# Chapter X - Title`) - the CSS adds the blue accent bar automatically.
+- [ ] Chapter title as H1 (`# Title`, no numeric prefix) - the CSS adds the blue accent bar automatically.
 - [ ] Meta line beneath the title with read/video time and `Chapter X of N`.
 - [ ] At-a-glance callout (2-3 bullets).
 - [ ] Pre-clipped iframe (`start=...&end=...`) embedding the right video segment.

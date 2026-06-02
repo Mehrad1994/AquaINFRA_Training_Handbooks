@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 8
 ---
 
-# Chapter 8 - Workflow Steps 5-8: Processing & Detection
+# Workflow Steps 5-8: Processing & Detection
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~4 min read</strong> · <strong>2 min video</strong> · Chapter 8 of 10

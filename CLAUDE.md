@@ -23,6 +23,7 @@ This file is read automatically at the start of every Claude Code session (local
 
 ## Headings & structure
 - Exactly **one `# H1` per page**; descend logically `H1 → H2 → H3`, never skip levels. Sentence case, no trailing punctuation.
+- **No numeric prefixes in titles or H1 headings** (`# Introduction`, not `# Chapter 1 - Introduction`). Sequence is conveyed by the meta line ("Chapter X of N") and `nav_order`, not the title.
 - Do not set heading sizes with inline styles - `style.css` governs them globally.
 - Brand capitalisation: `AquaINFRA`, `AquaINFRA Interaction Platform (AIP)`, `Aqua Galaxy`, `VRE`, `D2KP` / `Data-to-Knowledge Package`, `FAIR`, `EOSC`, `DDAS`, `HELCOM`, `HEREON`, `Mann-Kendall`, `Zenodo`, `specleanr`.
 - On first mention of a technical term, link to the Glossary: `{{ relative_root }}reference/glossary#anchor`. Add new terms to `docs/reference/glossary.md` with a stable `{#anchor}`.

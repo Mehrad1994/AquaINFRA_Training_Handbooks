@@ -3,7 +3,7 @@ layout: default
 title: Interaction Platform
 ---
 
-# Chapter 3 - Using the AIP for this Case Study
+# Using the AIP for this Case Study
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 3 of 9

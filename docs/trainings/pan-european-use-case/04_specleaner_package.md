@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 4
 ---
 
-# Chapter 4 - The Specleaner Package
+# The Specleaner Package
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~4 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10

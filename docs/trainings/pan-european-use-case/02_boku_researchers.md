@@ -5,7 +5,7 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 2
 ---
 
-# Chapter 2 - Meet the BOKU Team
+# Meet the BOKU Team
 
 <p style="color: var(--text-muted, #5a6b7a); margin-top: -0.5rem; font-size: 0.95rem;">
   <strong>~2 min read</strong> · <strong>5 min video</strong> · Chapter 2 of 10
