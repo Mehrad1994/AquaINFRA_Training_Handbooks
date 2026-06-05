@@ -360,47 +360,6 @@ tr:hover {
 }
 
 /* =========================================
-   In-page "On this page" TOC
-   ========================================= */
-
-.page-toc {
-    background: var(--gray-100);
-    border: 1px solid var(--gray-200);
-    border-left: 4px solid var(--aqua-blue);
-    border-radius: 0 6px 6px 0;
-    padding: 1rem 1.25rem;
-    margin: 1.5rem 0 2.5rem 0;
-}
-
-.page-toc__title {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: var(--gray-600);
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    margin-bottom: 0.6rem;
-}
-
-.page-toc__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.page-toc__list li {
-    margin-bottom: 0.35rem;
-}
-
-.page-toc__list a {
-    color: var(--gray-800);
-    font-size: 0.9rem;
-}
-
-.page-toc__list a:hover {
-    color: var(--aqua-blue);
-}
-
-/* =========================================
    Handbook Framework Additions
    ========================================= */
 
