@@ -38,24 +38,6 @@ title: "1. Introduction"
     <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?start=START_SECONDS&end=END_SECONDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="table-wrapper">
-    <table>
-        <thead>
-            <tr><th style="width: 22%;">Timestamp</th><th>Topic</th></tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID&t=Xs" target="_blank" rel="noopener">M:SS → M:SS</a></td>
-                <td>First subtopic.</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID&t=Xs" target="_blank" rel="noopener">M:SS → M:SS</a></td>
-                <td>Second subtopic.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
 > [!TIP]
 > Already watched? Skim **Key concepts** and **Key takeaways** below - fastest way to review.
 

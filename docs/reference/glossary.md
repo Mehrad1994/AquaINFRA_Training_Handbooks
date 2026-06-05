@@ -39,8 +39,8 @@ A bundle that ties together every resource needed to reproduce a specific analys
 ### DDAS - Data Discovery and Access Service {#ddas}
 The backend service that powers AIP search and exposes datasets through standard APIs (notably OGC API Features). When you click "Import to Galaxy" on an AIP dataset page, DDAS is what wires the data through.
 
-### DGA - Data, Galaxy, Analysis workflow {#dga}
-Short-hand used in the Gulf of Riga training for the trend-detection workflow that combines a point dataset (Secchi depth) with assessment-unit polygons (HELCOM subbasins) and runs spatial aggregation, temporal aggregation, interpolation, and Mann-Kendall trend testing.
+### DGA - Daugava workflow {#dga}
+The trend-detection workflow at the centre of the Gulf of Riga training, named after the **Daugava** river - the largest river flowing into the Gulf of Riga. It combines a point dataset (Secchi depth) with assessment-unit polygons (HELCOM subbasins) and runs spatial aggregation, temporal aggregation, interpolation, and Mann-Kendall trend testing.
 
 ### Digital Twin of the Ocean - DTO {#dto}
 A dynamic, data-driven digital replica of the ocean used to model and forecast marine conditions. AquaINFRA supplies high-quality aquatic data and models to DTO initiatives such as EDITO, Blue-Cloud, and ILIAD.

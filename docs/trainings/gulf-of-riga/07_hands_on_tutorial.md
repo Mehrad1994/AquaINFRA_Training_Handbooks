@@ -29,24 +29,8 @@ title: Hands-On Tutorial
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=738&end=1289" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="table-wrapper">
-    <table>
-        <thead>
-            <tr><th style="width: 22%;">Timestamp</th><th>Step</th></tr>
-        </thead>
-        <tbody>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=769s" target="_blank" rel="noopener">12:49 → 15:19</a></td><td><a href="#step-1-1">Step 1.1 - Import Secchi depth points</a></td></tr>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=919s" target="_blank" rel="noopener">15:19 → 19:51</a></td><td><a href="#step-1-2">Step 1.2 - Import HELCOM regions</a></td></tr>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1191s" target="_blank" rel="noopener">19:51 → 21:29</a></td><td><a href="#step-2">Step 2 - Import the workflow</a></td></tr>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank" rel="noopener">21:29 → 21:35</a></td><td><a href="#step-3">Step 3 - Run the workflow</a></td></tr>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1295s" target="_blank" rel="noopener">21:35 → 25:18</a></td><td><a href="#step-4">Step 4 - Monitor progress</a></td></tr>
-            <tr><td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1518s" target="_blank" rel="noopener">25:18 → 29:08</a></td><td><a href="#step-5">Step 5 - Review outputs</a></td></tr>
-        </tbody>
-    </table>
-</div>
-
 > [!TIP]
-> Already watched the video? Skim **Key takeaways** at the bottom and use the timestamp table above to jump back to any moment.
+> Already watched the video? Skim **Key takeaways** at the bottom to jump straight to what you need.
 
 ---
 

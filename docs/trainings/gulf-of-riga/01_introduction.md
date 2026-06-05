@@ -26,31 +26,6 @@ title: Introduction
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=0&end=118" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="table-wrapper">
-    <table>
-        <thead>
-            <tr>
-                <th style="width: 22%;">Timestamp</th>
-                <th>Topic</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=0s" target="_blank" rel="noopener">0:00 → 0:45</a></td>
-                <td>Welcome and project context</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=45s" target="_blank" rel="noopener">0:45 → 1:30</a></td>
-                <td>FAIR data and the AquaINFRA mission</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=90s" target="_blank" rel="noopener">1:30 → 1:58</a></td>
-                <td>How the case study is structured</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
 > [!TIP]
 > Already watched the video? Skim **Key concepts** and **Key takeaways** below - that is the fastest way to refresh what you learned.
 

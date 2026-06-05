@@ -30,7 +30,7 @@ This file is read automatically at the start of every Claude Code session (local
 
 ## Adding a training (the pipeline)
 1. Copy `docs/trainings/_TEMPLATE/` to a new folder; keep `NN_name.md` numbering.
-2. Follow the standard chapter anatomy (meta line → at-a-glance → clipped video + **timestamp table with `&t=Xs` links** → key concepts → step-by-step → optional `<details>` deep dive → key takeaways → sequential nav). The timestamp table is supervisor-required - never drop it.
+2. Follow the standard chapter anatomy (meta line → at-a-glance → clipped video → key concepts → step-by-step → optional `<details>` deep dive → key takeaways → sequential nav). Note: per-segment timestamp tables have been retired - do not add them.
 3. Register the training in `docs/_data/use_cases.yml` (region, title, url, description, status, optional `d2kp_url`) so it appears in the sidebar and Use Cases library.
 
 ## Visuals
