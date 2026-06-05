@@ -26,13 +26,13 @@ title: Workflow Concept
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=671&end=738" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=671s" target="_blank" rel="noopener">Jump to 11:11 → 12:18 in YouTube</a> - Workflow conceptual overview.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=671s" target="_blank" rel="noopener">Jump to 11:11 → 12:18 in YouTube</a> - Workflow conceptual overview.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-The workflow detects long-term trends in water transparency. Conceptually, it has four stages:
+The DGA workflow turns scattered Secchi readings into one trend per region. Four stages:
 
 ```mermaid
 flowchart LR
@@ -41,16 +41,19 @@ flowchart LR
     C --> D[4. Visualisation<br/>map + bar chart]
 ```
 
-### Stage-by-stage
+- **Pre-processing is the whole point.** Tagging each reading with an **assessment unit** and a **season** is what makes the trend test meaningful - skip it and you average across geography and time, burying the signal.
+- **Mann-Kendall** is the trend test: non-parametric, so it tolerates gaps, outliers, and non-normal data.
+- The output is **one trend per unit per season** - the unit of everything you'll read in the results.
+
+<details>
+<summary><strong>Stage-by-stage detail</strong></summary>
 
 1. **Input data** - Secchi-depth point measurements + HELCOM assessment-unit polygons.
 2. **Pre-processing** - assign each point to a polygon (spatial) and a season (temporal); aggregate to one value per *unit × year × season*.
-3. **Analysis** - run a **Mann-Kendall** non-parametric test for monotonic trend.
-4. **Visualisation** - produce an interactive map and a bar chart of Kendall's Tau values per unit.
+3. **Analysis** - run a Mann-Kendall non-parametric test for a monotonic trend.
+4. **Visualisation** - produce an interactive map and a bar chart of Kendall's Tau per unit.
 
-### Why this structure
-
-The science question - *"is transparency changing over decades?"* - only makes sense per region (which unit?) and per season (some seasons naturally vary). Pre-processing is what makes the statistical step meaningful; without it, you'd be averaging across geography and time in a way that hides real signals.
+</details>
 
 ---
 
