@@ -3,18 +3,18 @@ layout: default
 title: Interaction Platform
 ---
 
-# Using the AIP for this Case Study
+# Using the AIP for this case study
 
 <p class="chapter-meta">
-  <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 3 of 9
+  <strong>~1 min read</strong> · <strong>2.5 min video</strong> · Chapter 3 of 9
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>How to search the <a href="{{ relative_root }}reference/glossary#aip">AIP</a> for Gulf-of-Riga-relevant resources.</li>
-        <li>The two filters that matter most: <strong>data provider</strong> and <strong>spatial coverage</strong>.</li>
-        <li>How ontology-based search surfaces related concepts you might not have searched for directly.</li>
+    <ul>
+        <li>How to find the case-study resources on the <a href="{{ relative_root }}reference/glossary#aip">AIP</a>.</li>
+        <li>The two filters that matter: data provider and spatial coverage.</li>
+        <li>What ontology search adds over a plain keyword.</li>
     </ul>
 </div>
 
@@ -26,38 +26,29 @@ title: Interaction Platform
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=261&end=411" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=261s" target="_blank" rel="noopener">Jump to 4:21 → 6:51 in YouTube</a> - Searching AIP for the case study resources.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=261s" target="_blank" rel="noopener">Jump to 4:21 → 6:51 in YouTube</a> - searching the AIP.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-The **[AIP](https://aquainfra.dev.52north.org/)** is the single gateway you'll use to find every resource for this case study - the Secchi point data, the HELCOM subbasin polygons, and the published D2KP.
-
-### Search functionality
-
-- **Keyword search** - type natural terms (e.g. *Gulf of Riga*, *secchi*).
-- **Ontology search** - surfaces semantically related resources even if the keyword doesn't match exactly. Useful when you don't know the precise vocabulary used by data providers.
-
-### The two filters worth knowing
-
-**1. Data Provider** - uncheck providers you don't need. For this case study you'll mostly use **AquaINFRA**, **HELCOM**, and **Copernicus Marine**.
-
-**2. Spatial coverage** - two ways to narrow geographically:
-- Pick a predefined **European Catchment Area** (the Daugava catchment for this study).
-- Draw a **custom bounding box** directly on the map.
+- The **AIP** is the single gateway to every resource for this case study - the Secchi points, the HELCOM polygons, and the published D2KP.
+- **Two search modes:** plain **keyword**, and **ontology search**, which surfaces semantically related resources even when your exact term doesn't match a provider's vocabulary.
+- **Two filters do the heavy lifting:**
+  - **Data provider** - the AIP federates Inspire, Arctic Data Center, Copernicus Marine, HELCOM, EMODnet, Zenodo, and more. To find this case study's D2KP, filter to **Zenodo**.
+  - **Spatial coverage** - narrow by a predefined **European catchment area** or a **custom bounding box** on the map.
+- For this case: **AquaINFRA** provider for the Secchi data, **HELCOM** for the assessment-unit polygons.
 
 > [!TIP]
-> Start with a generous bounding box. You can always tighten the subset *at import time* via the OGC API - no need to over-filter at search time.
+> Start with a generous bounding box - you can tighten the subset later, at import time, via the OGC API.
 
 ---
 
 ## ✅ Key takeaways
 
-- AIP search = **keyword + ontology** - try both phrasings if your first attempt returns too little.
-- Filter by **provider** to cut noise; filter by **spatial coverage** to focus on your region.
-- For Gulf of Riga: expect to use the **AquaINFRA** provider for Secchi data and **HELCOM** for assessment-unit polygons.
-- Browsing AIP needs no account - running anything you find still needs [Aqua Galaxy]({{ relative_root }}reference/prerequisites).
+- Search = **keyword + ontology**; filter by **provider** and **spatial coverage**.
+- Filter to **Zenodo** to find the D2KP; **AquaINFRA** for Secchi, **HELCOM** for polygons.
+- Browsing needs no account - running anything still needs an [Aqua Galaxy account]({{ relative_root }}reference/prerequisites).
 
 ---
 

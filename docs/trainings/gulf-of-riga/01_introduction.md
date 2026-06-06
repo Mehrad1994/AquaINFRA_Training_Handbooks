@@ -6,15 +6,15 @@ title: Introduction
 # Introduction to AquaINFRA
 
 <p class="chapter-meta">
-  <strong>~2 min read</strong> · <strong>2 min video</strong> · Chapter 1 of 9
+  <strong>~1 min read</strong> · <strong>2 min video</strong> · Chapter 1 of 9
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+    <ul>
         <li>What the <strong>AquaINFRA project</strong> is and the problem it solves.</li>
-        <li>Why <strong>FAIR</strong> data and the <strong>European Open Science Cloud (EOSC)</strong> matter for aquatic research.</li>
-        <li>Who the handbook is for and how the rest of this case study is organised.</li>
+        <li>Why <strong>FAIR</strong> data and the <strong>European Open Science Cloud (EOSC)</strong> matter here.</li>
+        <li>The three components this case study chains together.</li>
     </ul>
 </div>
 
@@ -26,39 +26,27 @@ title: Introduction
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=0&end=118" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-> [!TIP]
-> Already watched the video? Skim **Key concepts** and **Key takeaways** below - that is the fastest way to refresh what you learned.
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=0s" target="_blank" rel="noopener">Jump to 0:00 → 1:58 in YouTube</a>.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-### What AquaINFRA is
-AquaINFRA is building a **virtual research environment** that gives marine and freshwater scientists one place to find data, run analyses, and share reproducible workflows. The aim is to make research on healthy oceans, seas, coasts, and inland waters faster and more open.
-
-### Why FAIR
-All data and services in AquaINFRA follow **FAIR principles** - they must be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable. Practically, that means a dataset you discover through AquaINFRA has standard metadata, an open-access endpoint, and a clear licence - so you can re-use it in your own analysis without guesswork.
-
-### Where EOSC fits
-The **European Open Science Cloud (EOSC)** is the wider European research-data ecosystem. AquaINFRA plugs into EOSC so that aquatic datasets are visible alongside other domains, and so that the tools researchers use here interoperate with services across Europe.
-
-### What you can do inside AquaINFRA
-- **Store, share, and access** research data across institutional and national borders.
-- **Analyse and process** datasets without installing software locally - using the **VRE** (Virtual Research Environment, powered by Galaxy).
-- **Collaborate** across the marine ↔ freshwater divide, which has historically been siloed.
+- **AquaINFRA** is a virtual research environment for marine *and* freshwater science: one place to find data, run analyses, and share reproducible workflows.
+- Everything is **[FAIR]({{ relative_root }}reference/glossary#fair)** - datasets carry standard metadata, an open endpoint, and a clear licence, so you can reuse them without guesswork.
+- It plugs into **[EOSC]({{ relative_root }}reference/glossary#eosc)**, so aquatic resources are discoverable alongside every other European research domain.
+- This case study runs the full **AIP → D2KP → VRE** chain to answer one real question about water transparency.
 
 <details>
-<summary><strong>🔬 Deep dive - the three pillars you'll meet in this case study</strong></summary>
+<summary><strong>The three components you'll meet</strong></summary>
 
-Across the remaining chapters you'll work hands-on with three AquaINFRA components. Knowing the role of each up front makes the rest of the handbook easier to navigate:
-
-| Component | What it is | Where you'll meet it |
+| Component | What it is | Chapter |
 |---|---|---|
-| **AIP** - AquaINFRA Interaction Platform | A unified web portal that lets you search for datasets, tools, and workflows across many providers (Zenodo, DDAS, OGC services, …) from one interface. | Chapter 3 |
-| **D2KP** - Data-to-Knowledge Package | A bundle that ties together the *dataset(s)*, *workflow*, *code*, and *documentation* needed to reproduce a specific analysis end-to-end. | Chapter 4 |
-| **VRE / Aqua Galaxy** | A browser-based Galaxy server (`aqua.usegalaxy.eu`) where you actually execute workflows on the data - no local installation. | Chapters 5-8 |
+| **[AIP]({{ relative_root }}reference/glossary#aip)** | Web portal to search datasets, tools, and workflows across many providers. | 3 |
+| **[D2KP]({{ relative_root }}reference/glossary#d2kp)** | A bundle tying the data, workflow, code, and docs needed to reproduce one analysis. | 4 |
+| **[VRE / Aqua Galaxy]({{ relative_root }}reference/glossary#vre)** | Browser-based Galaxy server where you run the workflow - no local install. | 5-8 |
 
-If you're new to Galaxy: it's a workflow engine that chains analysis "tools" into reproducible pipelines, with every input, parameter, and output tracked. You don't need to know it deeply to follow this case study.
+New to Galaxy? It's a workflow engine that chains analysis tools into reproducible pipelines, tracking every input and output. You don't need to know it deeply to follow along.
 
 </details>
 
@@ -67,8 +55,8 @@ If you're new to Galaxy: it's a workflow engine that chains analysis "tools" int
 ## ✅ Key takeaways
 
 - AquaINFRA = **virtual environment + FAIR data + shared workflows** for aquatic science.
-- The project plugs into **EOSC** so its work is discoverable across European research infrastructures.
-- This case study (Gulf of Riga) will walk you end-to-end through the **AIP → D2KP → VRE** chain to answer a real research question about water transparency.
+- It plugs into **EOSC** for cross-domain discoverability.
+- This case study chains **AIP → D2KP → VRE** to test a real water-transparency question.
 
 ---
 
