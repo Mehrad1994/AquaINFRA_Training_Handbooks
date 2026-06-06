@@ -79,16 +79,15 @@ Then plain "VRE" is fine.
 Every chapter follows the same structure - see [Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md):
 
 1. Chapter title H1 (`# Title`, no numeric prefix) - blue accent bar is auto-applied by CSS
-2. Meta line (read time, video time, chapter position)
+2. Meta line (`<p class="chapter-meta">` - read time, video time, chapter position)
 3. **At a glance** callout
-4. **Video companion**: iframe + timestamp table (timestamps required, no "Chapter index" sub-heading)
-5. **Key concepts** (not a transcript)
-6. **Step-by-step** (procedural only)
-7. Optional `<details>` deep dive
-8. **Key takeaways**
-9. Sequential nav
+4. **Video companion**: pre-clipped iframe + a single `📍 Jump to …` line (`class="chapter-meta"`). Per-segment timestamp tables have been retired.
+5. **Key points** - concise keynotes that *assume the reader watched the video*. Capture the reusable facts and gotchas; never re-narrate the steps.
+6. Optional **`<details>` appendix** for the fuller walkthrough / technical detail trimmed out of the keynotes
+7. **Key takeaways**
+8. Sequential nav
 
-Don't reorder. Don't omit. Especially don't drop the timestamp table - it's the supervisor-required review feature.
+The page is the **reference layer**, not a replay of the video. Keep it scannable.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "1. Introduction"
+title: "Introduction"
 ---
 
 # Introduction
@@ -10,20 +10,21 @@ title: "1. Introduction"
 </p>
 
 <!--
-  PAGE ANATOMY (delete this comment when filling in):
+  LEAN PAGE ANATOMY (delete this comment when filling in):
   1. Page header (above) - read time / video time / chapter position
   2. At a glance callout - 2-3 bullets
-  3. Video companion block (embed + timestamp table)
-  4. Key concepts - short conceptual recap, NOT a transcript
-  5. (Procedural chapters) Step-by-step with per-step timestamp links
-  6. Optional: <details> deep-dive collapsible
-  7. ✅ Key takeaways - 3-5 bullets
-  8. Sequential nav
+  3. Video companion - embed + a single "📍 Jump to ..." line (class="chapter-meta")
+  4. Key points - concise keynotes that ASSUME the reader watched the video.
+     Do NOT re-narrate the steps; capture what's worth remembering + reusable facts.
+  5. Optional: <details> appendix holding the fuller walkthrough / technical detail
+  6. ✅ Key takeaways - 3-5 bullets
+  7. Sequential nav
+  No inline styles: use the .chapter-meta class and the .callout / .table-wrapper CSS.
 -->
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+    <ul>
         <li>First takeaway the reader gets from this chapter.</li>
         <li>Second takeaway.</li>
         <li>Third takeaway.</li>
@@ -38,26 +39,22 @@ title: "1. Introduction"
     <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?start=START_SECONDS&end=END_SECONDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-> [!TIP]
-> Already watched? Skim **Key concepts** and **Key takeaways** below - fastest way to review.
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID&t=Xs" target="_blank" rel="noopener">Jump to M:SS → M:SS in YouTube</a>.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-Short, structured prose that **complements** rather than transcribes the video. Use diagrams, tables, or Mermaid where they clarify more than words.
+Tight keynotes that complement the video - the reusable facts, decisions, and gotchas, not a replay of the clicks. Use bullets and small tables; a Mermaid diagram only where it clarifies more than words.
+
+- **Keynote** - one line on why it matters.
+- **Keynote** - …
+- **Keynote** - …
 
 <details>
-<summary><strong>🔬 Deep dive - optional collapsible for technical readers</strong></summary>
+<summary><strong>Appendix - full walkthrough / detail (optional)</strong></summary>
 
-Include code snippets, API examples, parameter tables, or internals here. Hidden by default so the page stays approachable for newcomers.
-
-```r
-# Example code block
-result <- some_function(x, y)
-```
-
-Use only when the deep dive adds genuine value - not on every chapter.
+The click-by-click walkthrough, parameter tables, code, or internals trimmed out of the keynotes above. Collapsed by default so the page stays scannable. Mark any illustrative example clearly.
 
 </details>
 

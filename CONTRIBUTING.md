@@ -13,14 +13,13 @@ We welcome technical trainings, use cases, and documentation improvements. The h
 ## 📐 Page anatomy (every chapter)
 
 1. Chapter title H1 (`# Title`, no numeric prefix) - the blue accent bar is added automatically by CSS
-2. Meta line (read time, video time, chapter position)
+2. Meta line (`<p class="chapter-meta">` - read time, video time, chapter position)
 3. **At a glance** callout (2-3 bullets)
-4. **Video companion**: pre-clipped iframe + timestamp table with `&t=Xs` deep links (no "Chapter index" sub-heading above it)
-5. **Key concepts** (a recap, *never* a transcript of the video)
-6. **Step-by-step** (procedural chapters only)
-7. Optional `<details>` deep dive for technical readers
-8. **Key takeaways** (3-5 bullets)
-9. Sequential `Previous` / `Next` navigation
+4. **Video companion**: pre-clipped iframe + a single `📍 Jump to …` line (`class="chapter-meta"`)
+5. **Key points** - concise keynotes that assume the reader watched the video; reusable facts and gotchas, *never* a re-narration of the steps
+6. Optional **`<details>` appendix** for the fuller walkthrough / technical detail
+7. **Key takeaways** (3-5 bullets)
+8. Sequential `Previous` / `Next` navigation
 
 Full template and CSS conventions: [`docs/trainings/_TEMPLATE/Template_Guideline.md`](docs/trainings/_TEMPLATE/Template_Guideline.md).
 
@@ -43,9 +42,10 @@ Before opening the PR, verify:
 - [ ] Chapter title as H1 (`# Title`, no numeric prefix) - the blue accent bar will appear automatically.
 - [ ] Meta line beneath the title with read time, video time, `Chapter X of N`.
 - [ ] At-a-glance callout (2-3 bullets, no more).
-- [ ] Pre-clipped video iframe (`start=...&end=...`) loads the right segment.
-- [ ] Timestamp table (or single "📍 Jump to ..." paragraph for short chapters) with `&t=Xs` deep links. **Required by the supervisor - never remove.** Do **not** add a "Chapter index" sub-heading above the table.
-- [ ] Prose **does not** retell the video step-by-step. It frames *why* and *what to watch for*.
+- [ ] Pre-clipped video iframe (`start=...&end=...`) loads the right segment, followed by a single `📍 Jump to …` line (`class="chapter-meta"`).
+- [ ] **Key points** assume the reader watched - keynotes and reusable facts, **not** a step-by-step re-narration.
+- [ ] Fuller walkthrough / technical detail tucked into a collapsible `<details>` appendix (when there is any).
+- [ ] No inline `style="..."` - use `.chapter-meta` and the `.callout` / `.table-wrapper` CSS.
 - [ ] First mention of every technical term links to the Glossary.
 - [ ] Key takeaways at the end (3-5 bullets).
 - [ ] Sequential `Previous` / `Next` buttons point to the right files.
