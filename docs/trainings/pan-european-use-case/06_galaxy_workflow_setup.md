@@ -5,23 +5,23 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 6
 ---
 
-# Galaxy Workflow Setup
+# Galaxy workflow setup
 
 <p class="chapter-meta">
-  <strong>~3 min read</strong> · <strong>2.5 min video</strong> · Chapter 6 of 10
+  <strong>~1 min read</strong> · <strong>2.5 min video</strong> · Chapter 6 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>Import the Pan-European workflow into Aqua Galaxy.</li>
-        <li>Import the Area-of-Interest GeoJSON from Zenodo.</li>
-        <li>Read the status colours so you know what's happening during a run.</li>
+    <ul>
+        <li>Where the workflow and the input data each come from.</li>
+        <li>The import gotcha (copy the URL, don't download).</li>
+        <li>What the status colours mean.</li>
     </ul>
 </div>
 
 > [!IMPORTANT]
-> Confirm an <a href="{{ relative_root }}reference/prerequisites">Aqua Galaxy account</a> first - you can't save workflow imports without being logged in.
+> Sign in to your <a href="{{ relative_root }}reference/prerequisites">Aqua Galaxy account</a> first - imports aren't saved otherwise.
 
 ---
 
@@ -31,41 +31,33 @@ nav_order: 6
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=792&end=941" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s" target="_blank" rel="noopener">Jump to 13:12 → 15:41 in YouTube</a>.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=792s" target="_blank" rel="noopener">Jump to 13:12 → 15:41 in YouTube</a>.</p>
 
 ---
 
-## Step 1 - Import the workflow
+## Key points
 
-1. From the D2KP page on AIP, click the **Galaxy** link in the VRE section.
-2. In Galaxy, click **Import** to add the workflow to your list.
-3. Verify you're **logged in** (username top-right) so the import is saved.
+- **Two sources:** the **workflow** comes from the AIP (D2KP → VRE section → Galaxy → **Import**); the **input data** (a GeoJSON area of interest) comes from the D2KP **Datasets → Zenodo**.
+- **Import gotcha:** **copy the Zenodo download link, don't download the file** - paste it into **Import to Galaxy** so it streams straight in.
+- **Status colours:** Grey = queued · Orange = running · Green = done · Red = error.
+- Wait for the GeoJSON to go **green**, then **Run** the workflow with it as the area-of-interest input.
 
-## Step 2 - Import the input data (GeoJSON Area of Interest)
+<details>
+<summary><strong>Step-by-step</strong></summary>
 
-The workflow needs a **GeoJSON polygon** defining where to query occurrences.
+1. **Workflow:** D2KP page → **Galaxy** (VRE section) → **Import** → confirm you're logged in (username top-right).
+2. **Data:** D2KP **Datasets** → **Zenodo** → right-click the GeoJSON link → **Copy link address** → back on the D2KP page choose **Aqua Galaxy** → paste into **Import to Galaxy** → **Import**.
+3. When the GeoJSON is green, **Run** the workflow and select it as the area-of-interest input.
 
-1. Open the **Datasets** section of the D2KP.
-2. Click **Zenodo** to see the file list.
-3. **Right-click** the GeoJSON download link → **Copy link address**.
-4. Back on the D2KP page, choose **Aqua Galaxy** → paste the URL into **Import to Galaxy** → import.
-
-## Status colours
-
-<div class="callout">
-    <strong>⏳ History colour key</strong><br>
-    <strong>Grey</strong> = Queued · <strong>Orange</strong> = Running · <strong>Green</strong> = Complete · <strong>Red</strong> = Error
-</div>
-
-Once the workflow is imported and the GeoJSON shows green, click **Run** on the workflow, select the GeoJSON as the area-of-interest input, and wait for every step to turn green.
+</details>
 
 ---
 
 ## ✅ Key takeaways
 
-- The Galaxy workflow comes from AIP; the demo input data comes from Zenodo.
-- **Copy the Zenodo URL, don't download** - the Insert URL path streams it into Galaxy directly.
-- Wait for the GeoJSON to go **green** before clicking Run on the workflow.
+- Workflow from **AIP**; demo data from **Zenodo**.
+- **Copy the URL, don't download.**
+- Wait for **green** before running.
 
 ---
 

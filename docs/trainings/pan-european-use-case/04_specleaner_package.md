@@ -5,18 +5,18 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 4
 ---
 
-# The Specleaner Package
+# The Specleaner package
 
 <p class="chapter-meta">
-  <strong>~4 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10
+  <strong>~2 min read</strong> · <strong>5 min video</strong> · Chapter 4 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What <strong>Specleaner</strong> does and why "ensemble" matters for outlier detection.</li>
-        <li>The two method families: <strong>univariate</strong> vs <strong>multivariate</strong>.</li>
-        <li>How the voting / weighting system turns 20 detectors into one classification.</li>
+    <ul>
+        <li>Why "ensemble" beats any single outlier method.</li>
+        <li>The two method families and what they need.</li>
+        <li>How voting turns ~20 detectors into one strength class.</li>
     </ul>
 </div>
 
@@ -28,79 +28,53 @@ nav_order: 4
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=380&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s" target="_blank" rel="noopener">Jump to 6:20 → 11:11 in YouTube</a>.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=380s" target="_blank" rel="noopener">Jump to 6:20 → 11:11 in YouTube</a>.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-### Why ensemble
+- **Why ensemble:** every single method has a blind spot (z-score breaks on skew, Isolation Forest over-flags sparse regions, fixed rules miss novel patterns). **[Specleaner]({{ relative_root }}reference/glossary#specleanr)** (`specleanr`) runs ~20 methods and **votes** - flagged by all ≈ an error; flagged by one ≈ fine. That mirrors how an expert would weigh a suspect record.
+- **Two method families:**
 
-Any single outlier-detection method has known weaknesses. Z-score breaks down with skewed distributions. Isolation Forest can over-flag in sparse regions. Domain-specific rules miss novel patterns.
+<div class="table-wrapper">
+<table>
+    <thead><tr><th>Family</th><th>Needs</th><th>Examples</th></tr></thead>
+    <tbody>
+        <tr><td><strong>Univariate</strong></td><td>one predictor (e.g. mean annual temperature)</td><td>Z-score · IQR · ecological range</td></tr>
+        <tr><td><strong>Multivariate</strong></td><td>several predictors at once (catches odd combinations)</td><td>Isolation Forest · One-Class SVM</td></tr>
+    </tbody>
+</table>
+</div>
 
-**[Specleaner]({{ relative_root }}reference/glossary#specleanr)** (the R package `specleanr`) combines around 20 detection methods and votes. A record flagged by *every* method is almost certainly an error. One flagged by only one method is probably fine. This consensus approach mirrors how an expert ecologist would actually evaluate a suspicious record.
-
-### Univariate methods
-
-Need a **single environmental predictor** (e.g. mean annual temperature):
-
-| Method | Idea |
-|---|---|
-| **Z-score** | Flags records whose value is many SDs from the mean. |
-| **Interquartile range (IQR)** | Flags records outside Q1 − 1.5·IQR or Q3 + 1.5·IQR. |
-| **Ecological ranges** | Flags records outside known suitable ranges for the species. |
-
-### Multivariate methods
-
-Consider **multiple predictors at once**, so an unusual combination flags even when each variable alone looks fine.
-
-| Method | Idea |
-|---|---|
-| **Isolation Forest** | Anomalies need fewer random splits to isolate from the rest. |
-| **One-Class SVM** | Learns the boundary of "normal" points; flags those outside. |
-
-### The voting system
-
-The `multidetect()` function compiles results and **weights each record** by how many methods flagged it. The output classes, from weakest to strongest evidence, are:
-
-- **Not an outlier** - no method flagged it.
-- **Poor / Fair** - flagged by only a few methods; usually keep.
-- **Moderate** - borderline; worth inspecting before deciding.
-- **Very Strong** - flagged by most methods; usually remove.
-- **Perfect** - flagged by every method run; almost certainly an error.
-
-You then choose your **threshold**: be conservative (remove only Perfect / Very Strong) or aggressive (remove from Moderate up), depending on your downstream [Species Distribution Model]({{ relative_root }}reference/glossary#sdm)'s sensitivity to noise. You'll apply this choice in [Chapter 9](./09_reviewing_results).
+- **Voting → a strength class per record**, weakest to strongest: **not an outlier → poor → fair → moderate → very strong → perfect**.
+- **You pick the threshold:** conservative (remove only *perfect / very strong*) or aggressive (remove from *moderate* up), depending on how sensitive your [SDM]({{ relative_root }}reference/glossary#sdm) is to noise. You'll apply this in [Chapter 9](./09_reviewing_results).
 
 <details>
-<summary><strong>🔬 Deep dive - calling specleanr directly from R</strong></summary>
+<summary><strong>Calling specleanr directly from R</strong></summary>
 
-If you'd rather run the package outside Galaxy (e.g. in the MyBinder lab or your own RStudio), it centres on the `multidetect()` function, which runs the ensemble of methods over your occurrence records.
-
-<em>The snippet below is illustrative. For the exact function arguments, see the <a href="https://anthonybasooma.github.io/specleanr/">specleanr documentation</a>.</em>
+Outside Galaxy (the MyBinder lab or your own RStudio), it centres on `multidetect()`. <em>The snippet is illustrative - see the <a href="https://anthonybasooma.github.io/specleanr/">specleanr documentation</a> for exact arguments.</em>
 
 ```r
 library(specleanr)
 
-# `occurrences` is a data.frame of records with environmental predictor
-# columns (e.g. bio1 = mean annual temperature from WorldClim).
-
+# `occurrences`: a data.frame with environmental predictor columns
+# (e.g. bio1 = mean annual temperature from WorldClim).
 out <- multidetect(data = occurrences, var = "bio1", ...)
-
-# Each record is classified non-outlier / poor / fair / moderate /
-# very strong / perfect, based on how many methods flagged it.
+# Each record is classified non-outlier / poor / fair / moderate / very strong / perfect.
 ```
 
-The Galaxy tool wraps this call - picking options via the Galaxy UI sets the methods and threshold for you.
+The Galaxy tool wraps this call - the UI sets the methods and threshold for you.
+
 </details>
 
 ---
 
 ## ✅ Key takeaways
 
-- **Ensemble beats any single method** at outlier detection in messy occurrence data.
-- **Univariate** = one variable at a time; **multivariate** = combinations matter.
-- The **voting + weighting** system gives you a *strength of evidence* per record, not just a binary flag.
-- Choose your threshold based on downstream model sensitivity - it's not one-size-fits-all.
+- **Ensemble beats any single method** on messy occurrence data.
+- **Univariate** = one variable; **multivariate** = combinations.
+- Voting gives a **strength of evidence**, not a binary flag - so the threshold is yours to choose.
 
 ---
 

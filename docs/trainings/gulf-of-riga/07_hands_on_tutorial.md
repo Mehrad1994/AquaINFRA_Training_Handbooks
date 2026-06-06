@@ -11,7 +11,7 @@ title: Hands-On Tutorial
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+    <ul>
         <li>The two import paths - one-click (Secchi points) vs manual disclaimer (HELCOM).</li>
         <li>The handful of settings that actually matter when you run it.</li>
         <li>A full click-by-click walkthrough, kept collapsed for when you need it.</li>

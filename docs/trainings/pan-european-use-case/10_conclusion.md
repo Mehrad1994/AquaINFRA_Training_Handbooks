@@ -5,18 +5,18 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 10
 ---
 
-# Conclusion & What's Next
+# Conclusion & what's next
 
 <p class="chapter-meta">
-  <strong>~2 min read</strong> · <strong>~3 min video</strong> · Chapter 10 of 10
+  <strong>~1 min read</strong> · <strong>~3 min video</strong> · Chapter 10 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>Why this workflow generalises beyond Europe.</li>
-        <li>Who it serves - from non-coders to method developers.</li>
-        <li>Where to go for further AquaINFRA exploration.</li>
+    <ul>
+        <li>Why the workflow generalises.</li>
+        <li>Who it serves.</li>
+        <li>Where to go next.</li>
     </ul>
 </div>
 
@@ -28,41 +28,31 @@ nav_order: 10
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1182s" target="_blank" rel="noopener">Jump to 19:42 → end in YouTube</a>.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1182s" target="_blank" rel="noopener">Jump to 19:42 → end in YouTube</a>.</p>
 
 ---
 
-## Key takeaways
+## Key points
 
-### Applicability beyond Europe
-
-Although built for Pan-European biodiversity, the workflow is **geography-agnostic**. Drop in a different GeoJSON area-of-interest and rerun - every step downstream just works.
-
-### Accessibility for two audiences
-
-- **Non-coders** - point-and-click the workflow in Galaxy; never see a line of R.
-- **Proficient coders** - bypass Galaxy entirely and call Specleaner from MyBinder, your own RStudio, or the Web API.
-
-### FAIR end-to-end
-
-Data, code, and methods are findable, accessible, interoperable, reusable - *and citable* via the [D2KP Zenodo DOI](https://aquainfra.dev.52north.org/result/zenodo:17175591). Other researchers can re-create your analysis exactly.
-
----
-
-## Remember why this matters
-
-Endangered species like the **Danube Sturgeon** and **Huchen (Danube Salmon)** depend on clean, defensible biodiversity data to inform conservation decisions. Cleaner occurrence datasets = better Species Distribution Models = better-targeted protection.
-
-The workflow is a tool; the underlying purpose is ecological protection.
-
----
+- **Geography-agnostic.** Built for Europe, but drop in a different GeoJSON area of interest and rerun - every step downstream just works.
+- **Two audiences, one workflow.** Non-coders point-and-click in Galaxy and never see R; proficient coders bypass Galaxy via MyBinder, their own RStudio, or the Web API.
+- **FAIR end to end** and citable via the [D2KP Zenodo DOI](https://aquainfra.dev.52north.org/result/zenodo:17175591) - others can re-create your analysis exactly.
+- **Why it matters:** endangered species like the **Danube sturgeon** and **Huchen** depend on defensible data. Cleaner occurrences → better SDMs → better-targeted protection.
 
 ## What's next
 
-- 🧭 Browse the other [Applied Use Case Trainings]({{ relative_root }}06_use_cases) (Gulf of Riga, more coming).
-- 📘 Refresh terminology in the [Glossary]({{ relative_root }}reference/glossary).
-- 🧪 Try the workflow with **your own GeoJSON** for an area you care about.
-- 💬 Reach the team via the [Contact page]({{ relative_root }}07_contact).
+- 🧭 Other [Applied Use Case Trainings]({{ relative_root }}06_use_cases).
+- 📘 The [Glossary]({{ relative_root }}reference/glossary).
+- 🧪 Try the workflow with **your own GeoJSON**.
+- 💬 The [Contact page]({{ relative_root }}07_contact).
+
+---
+
+## ✅ Key takeaways
+
+- Same workflow, **any region** - just change the area of interest.
+- Serves **non-coders and coders** alike.
+- FAIR and citable; the point is **ecological protection**.
 
 ---
 

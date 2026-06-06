@@ -5,18 +5,18 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 1
 ---
 
-# Introduction to AquaINFRA & the Use Case
+# Introduction to AquaINFRA & the use case
 
 <p class="chapter-meta">
-  <strong>~2 min read</strong> · <strong>1.5 min video</strong> · Chapter 1 of 10
+  <strong>~1 min read</strong> · <strong>1.5 min video</strong> · Chapter 1 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>What <a href="{{ relative_root }}reference/glossary#fair">FAIR</a> data means in practice for this biodiversity use case.</li>
-        <li>Why fragmented occurrence datasets are a Europe-wide problem.</li>
-        <li>How AquaINFRA's VRE helps you produce more robust biodiversity estimates.</li>
+    <ul>
+        <li>The problem: fragmented biodiversity data across Europe.</li>
+        <li>What the workflow does end to end.</li>
+        <li>What <a href="{{ relative_root }}reference/glossary#fair">FAIR</a> looks like for this case.</li>
     </ul>
 </div>
 
@@ -28,38 +28,24 @@ nav_order: 1
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=0&end=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=0s" target="_blank" rel="noopener">Jump to 0:00 → 1:15 in YouTube</a>.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=0s" target="_blank" rel="noopener">Jump to 0:00 → 1:15 in YouTube</a>.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-### Why this use case exists
-
-Pan-European biodiversity data comes from many sources - different countries, different projects, different quality standards. Combining them naïvely produces estimates dominated by sampling artefacts rather than real ecological signal.
-
-The Pan-European use case demonstrates how AquaINFRA's tools let you:
-1. **Pull occurrence records** from major aggregators (GBIF, iNaturalist, VertNet) for a defined area.
-2. **Mix in your own data** when you have it.
-3. **Clean the merged set** with ensemble outlier detection.
-4. **Produce a robust dataset** ready for Species Distribution Modelling.
-
-The result: estimates that are reproducible end-to-end and citable as a [D2KP]({{ relative_root }}reference/glossary#d2kp).
-
-### What "FAIR" looks like here
-
-- **Findable** - data and workflow indexed on AIP and Zenodo.
-- **Accessible** - open access via web APIs.
-- **Interoperable** - harmonised to a standard column schema (you'll meet this in Chapter 8).
-- **Reusable** - workflow runs on any area of interest, anywhere in the world.
+- **The problem:** species occurrence data comes from many countries, projects, and quality standards. Merge it naïvely and your estimates reflect **sampling artefacts, not ecology**.
+- **The workflow, end to end:** pull occurrence records (GBIF, iNaturalist, VertNet) for an area → optionally add your own → **clean with ensemble outlier detection** → a robust dataset ready for [Species Distribution Modelling]({{ relative_root }}reference/glossary#sdm).
+- **The value-add is the workflow, not storage** - and the result is reproducible and citable as a [D2KP]({{ relative_root }}reference/glossary#d2kp).
+- **FAIR here:** findable (AIP/Zenodo), accessible (web APIs), interoperable (a standard column schema, Chapter 8), reusable (run it on any area of interest, anywhere).
 
 ---
 
 ## ✅ Key takeaways
 
-- The use case targets a real problem: **fragmented biodiversity data** across European sources.
-- AquaINFRA's value-add is the **end-to-end workflow** - pull, merge, harmonise, clean - not just storage.
-- The output is **reusable** beyond Europe - same workflow, different area of interest.
+- Targets a real problem: **fragmented biodiversity data**.
+- The win is the **end-to-end pull → merge → harmonise → clean** pipeline.
+- Reusable beyond Europe - same workflow, different area of interest.
 
 ---
 

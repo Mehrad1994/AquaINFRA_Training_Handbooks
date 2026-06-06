@@ -11,7 +11,7 @@ title: Workflow Concept
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+    <ul>
         <li>The four-stage logical structure of the <a href="{{ relative_root }}reference/glossary#dga">DGA workflow</a>.</li>
         <li>What each stage does - and what it produces for the next.</li>
         <li>The mental model you need before clicking "Run" in Chapter 7.</li>

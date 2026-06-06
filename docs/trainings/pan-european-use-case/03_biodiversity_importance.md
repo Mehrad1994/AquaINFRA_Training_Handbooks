@@ -5,18 +5,18 @@ parent: Pan-European Biodiversity Use Case
 nav_order: 3
 ---
 
-# Why Freshwater Biodiversity Matters
+# Why freshwater biodiversity matters
 
 <p class="chapter-meta">
-  <strong>~3 min read</strong> · <strong>5 min video</strong> · Chapter 3 of 10
+  <strong>~1 min read</strong> · <strong>5 min video</strong> · Chapter 3 of 10
 </p>
 
 <div class="callout">
     <strong>📌 At a glance</strong>
-    <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
-        <li>Why freshwater ecosystems are among the most threatened on Earth.</li>
-        <li>The role of <strong>bioindicators</strong> in monitoring river health.</li>
-        <li>Why the Danube is the natural testbed for this workflow.</li>
+    <ul>
+        <li>Why freshwater is the front line for biodiversity loss.</li>
+        <li>What bioindicators are and why they're used.</li>
+        <li>Why the Danube is the testbed.</li>
     </ul>
 </div>
 
@@ -28,50 +28,36 @@ nav_order: 3
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p style="color: var(--text-muted, #5a6b7a); font-size: 0.9rem;">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s" target="_blank" rel="noopener">Jump to 1:15 → 6:20 in YouTube</a>.</p>
+<p class="chapter-meta">📍 <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=75s" target="_blank" rel="noopener">Jump to 1:15 → 6:20 in YouTube</a>.</p>
 
 ---
 
-## Key concepts
+## Key points
 
-### The international policy frame
+- **Freshwater punches above its weight:** under 1% of Earth's surface, ~10% of all known species - and among the most threatened, because short residence times and dense human use make declines show up fast.
+- **Bioindicators** stand in for ecosystem health: **fish** integrate change over years; **macro-invertebrates** flag short-term pollution and microhabitat shifts.
+- **The Danube is the testbed:** the EU's largest river, multi-country, with flagship endangered species (Danube sturgeon, Huchen). If the workflow produces robust estimates *here*, it generalises.
+- **Why clean data matters:** more defensible reporting under **UN SDG 15** and the **Convention on Biological Diversity**.
 
-Biodiversity research isn't just academic - it underpins concrete international commitments:
-
-- **UN SDG 15 - Life on Land**: includes protection of inland freshwater ecosystems.
-- **Convention on Biological Diversity**: binding global commitments on biodiversity protection.
-
-The cleaner your biodiversity data, the more defensible the reports countries submit under these frameworks.
-
-### Why freshwater is the front line
-
-Freshwater systems are **disproportionately threatened**: they occupy <1% of Earth's surface yet host ~10% of all known species. They're also highly sensitive - short residence times, dense human use, and pollution exposure mean declines show up fast.
-
-### Bioindicators
-
-Rather than measuring chemistry directly, researchers use living organisms as integrated signals of habitat health:
+<details>
+<summary><strong>Bioindicators, in a bit more detail</strong></summary>
 
 | Indicator | Why it's useful |
 |---|---|
 | **Fish** | Long-lived, mobile - integrate water-quality and habitat-connectivity changes over years. |
 | **Macro-invertebrates** | Sensitive to pollution and microhabitat change - short-term signals. |
 
-### Why the Danube
+The flagship species are both endangered: the **Danube sturgeon** (a habitat-fragmentation marker) and the **Huchen / Danube salmon** (a water-quality marker).
 
-The Danube is the largest river in the EU and supports iconic indicator species:
-
-- **Danube Sturgeon** - habitat fragmentation marker; currently endangered.
-- **Huchen (Danube Salmon)** - water-quality marker; currently endangered.
-
-If a workflow can produce robust biodiversity estimates *here* - across many countries, many datasets, and many decades of records - it generalises.
+</details>
 
 ---
 
 ## ✅ Key takeaways
 
-- Freshwater biodiversity is **threatened out of proportion** to its share of Earth's surface - better data means better policy response.
-- **Bioindicators** turn species occurrence into a proxy for ecosystem health.
-- The **Danube** is the natural testbed: large, multi-country, two flagship endangered species.
+- Freshwater biodiversity is **threatened out of proportion** to its footprint.
+- **Bioindicators** turn occurrence into a proxy for ecosystem health.
+- The **Danube** is large, multi-country, and flagship-rich - so it generalises.
 
 ---
 
