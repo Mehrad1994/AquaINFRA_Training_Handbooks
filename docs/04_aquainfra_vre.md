@@ -5,7 +5,7 @@ title: AquaINFRA VRE
 # The AquaINFRA Virtual Research Environment
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What the <strong><a href="{{ relative_root }}reference/glossary#vre">VRE</a></strong> is and why "VRE" and "<a href="{{ relative_root }}reference/glossary#aqua-galaxy">Aqua Galaxy</a>" mean the same thing in practice.</li>
         <li>What you can do inside it - drag-and-drop workflows, R, Python, all in the browser.</li>
@@ -17,7 +17,7 @@ Once you have found your data on the AIP, the next step is to run the analysis.
 
 The **AquaINFRA Virtual Research Environment (VRE)** is where the actual science happens. Rather than wrestling with software versions on your local machine or struggling with limited compute power, the VRE provides a stable, cloud-based platform specifically tailored for aquatic data modelling.
 
-## 📽️ Video tutorial: getting started
+## Video tutorial: getting started
 
 Watch this short guide to see the VRE in action. It demonstrates how seamlessly the environment handles data subsetting and analysis through the Galaxy interface.
 
@@ -38,7 +38,7 @@ The environment runs on established open-source technologies (**[Galaxy]({{ rela
 > While Galaxy is currently the core component of the VRE, it offers a solid foundation for future integration of additional tools. A dedicated subdomain ensures that tools are tailored to the AquaINFRA user community, combining ease of access with strong analytical capabilities.
 
 <details>
-<summary><strong>🔬 Deep dive - anatomy of a Galaxy session</strong></summary>
+<summary><strong>Deep dive - anatomy of a Galaxy session</strong></summary>
 
 When you log into Aqua Galaxy at `aqua.usegalaxy.eu`, the interface splits into three regions:
 
@@ -54,7 +54,7 @@ Every action you take is **logged in the history**, which makes the entire sessi
 
 ---
 
-## ✅ Key takeaways
+## Key takeaways
 
 - The VRE = **Aqua Galaxy** at `aqua.usegalaxy.eu` - a browser-based, cloud-hosted Galaxy server.
 - It supports both **GUI workflows** (drag-and-drop) and **code** (R, Python, OGC API).

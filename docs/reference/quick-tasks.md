@@ -8,7 +8,7 @@ title: Quick-Task Index
 *"I want to do X - where do I go?"* A jump-list for common tasks. Each row links to the most relevant handbook section.
 
 <div class="callout">
-    <strong>🚀 How to use this page</strong>
+    <strong>How to use this page</strong>
     Use Ctrl+F (Cmd+F) to find a verb - "import", "filter", "publish" - and click straight through to the right chapter or section.
 </div>
 

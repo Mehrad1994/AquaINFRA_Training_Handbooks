@@ -5,7 +5,7 @@ title: AquaINFRA
 # The AquaINFRA Project
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What the AquaINFRA project is, who runs it, and what timeframe it covers.</li>
         <li>The three core components you'll meet: <a href="{{ relative_root }}reference/glossary#aip">AIP</a>, <a href="{{ relative_root }}reference/glossary#vre">VRE</a>, and <a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a>.</li>
@@ -20,7 +20,7 @@ Our mission is to help marine and freshwater scientists and stakeholders restore
 > [!IMPORTANT]
 > **Main Resource:** For the most up-to-date project news and developments, visit the **[AquaINFRA Homepage](https://aquainfra.eu)**.
 
-## 📽️ Video tutorial: getting started
+## Video tutorial: getting started
 
 Learn how to search for data on the **[AquaINFRA Interaction Platform (AIP)]({{ relative_root }}reference/glossary#aip)**, subset it via the **[Data Discovery and Access Service (DDAS)]({{ relative_root }}reference/glossary#ddas)**, and import it directly into your analysis history in Galaxy.
 
@@ -98,7 +98,7 @@ This page is your map. You'll work with three user-facing components throughout 
 
 ---
 
-## ✅ Key takeaways
+## Key takeaways
 
 - AquaINFRA is a **2023-2026 EU project** coordinated by Aalborg University, with 21 partners.
 - The ecosystem has three user-facing components: **AIP** (find data), **VRE / Aqua Galaxy** (run analyses), **D2KP** (share reproducible bundles).

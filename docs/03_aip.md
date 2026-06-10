@@ -5,7 +5,7 @@ title: AIP
 # AquaINFRA Interaction Platform (AIP)
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What the <strong><a href="{{ relative_root }}reference/glossary#aip">AIP</a></strong> does and how it relates to <a href="{{ relative_root }}reference/glossary#ddas">DDAS</a> behind the scenes.</li>
         <li>The two import paths into Galaxy: smooth (OGC API) vs. manual (insert URL).</li>
@@ -19,7 +19,7 @@ Instead of scouring different national databases, the AIP lets you search Earth 
 
 ---
 
-## 📽️ Video tutorial: getting started
+## Video tutorial: getting started
 
 This walkthrough shows you exactly how to use the AIP interface. It covers searching for relevant datasets, subsetting them graphically, and importing them straight into your Galaxy history.
 
@@ -29,7 +29,7 @@ This walkthrough shows you exactly how to use the AIP interface. It covers searc
 
 ---
 
-## 🛠️ The search-to-analysis workflow
+## The search-to-analysis workflow
 
 The core strength of the **[AquaINFRA Interaction Platform](https://aquainfra.dev.52north.org/)** is that you never have to download massive environmental datasets to your own computer.
 
@@ -59,7 +59,7 @@ Not all data partners support direct API ingestion yet. If you find a dataset yo
 > 2. Look for the **"Insert URL"** option on the AIP interface. Pasting the link here will manually bridge the external file into your Galaxy environment.
 
 <details>
-<summary><strong>🔬 Deep dive - what an OGC API Features request looks like</strong></summary>
+<summary><strong>Deep dive - what an OGC API Features request looks like</strong></summary>
 
 <em>The endpoint path and parameters below are an illustrative example. Copy the exact request from the AIP "Import to Galaxy" dialog for the dataset you are using.</em>
 
@@ -84,7 +84,7 @@ This is what makes the data **FAIR-by-construction**: anyone with the URL can re
 
 ---
 
-## ✅ Key takeaways
+## Key takeaways
 
 - AIP is the **single search interface** spanning many aquatic data providers.
 - Prefer the **OGC API path** when it's offered - no manual downloads, easy spatial subsetting.

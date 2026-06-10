@@ -33,7 +33,7 @@ use_case: true
     </iframe>
 </div>
 
-## 🎓 Learning objectives
+## Learning objectives
 
 After completing this training the reader will be able to:
 
@@ -41,7 +41,7 @@ After completing this training the reader will be able to:
 - **Run** the workflow with their own ...
 - **Interpret** the results in the context of ...
 
-## 📚 Chapters
+## Chapters
 
 <div class="table-wrapper">
     <table>

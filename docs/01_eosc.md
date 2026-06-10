@@ -6,7 +6,7 @@ title: EOSC
 # The European Open Science Cloud (EOSC)
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What <strong><a href="{{ relative_root }}reference/glossary#eosc">EOSC</a></strong> is and which problem it solves for European researchers.</li>
         <li>Why AquaINFRA builds on top of EOSC instead of reinventing the wheel.</li>
@@ -20,7 +20,7 @@ For AquaINFRA users, EOSC is the overarching infrastructure that makes our multi
 
 ---
 
-## 📽️ Video tutorial: EOSC explained
+## Video tutorial: EOSC explained
 
 This short overview breaks down the core concepts and mechanics of the EOSC initiative, so you know exactly what kind of environment AquaINFRA builds on.
 
@@ -30,7 +30,7 @@ This short overview breaks down the core concepts and mechanics of the EOSC init
 
 ---
 
-## 🌊 Why EOSC matters for AquaINFRA
+## Why EOSC matters for AquaINFRA
 
 Marine and freshwater data is often highly fragmented. Different countries and institutions have their own ways of storing information, making it incredibly hard to run large-scale environmental analyses.
 
@@ -41,7 +41,7 @@ This is where EOSC comes in for AquaINFRA. We don't just use it for storage; we 
 
 ---
 
-## 🚀 The EOSC EU Node: your starting point
+## The EOSC EU Node: your starting point
 
 While EOSC is the broad unifying concept, the **[EOSC EU Node]({{ relative_root }}reference/glossary#eosc-eu-node)** is the actual, tangible platform where you can log in and start working. It is the first operational cloud environment built for this initiative, designed to get you up and running without dealing with complex IT setups.
 
@@ -60,7 +60,7 @@ Instead of worrying about hardware or securing funding for data centres, the Nod
 
 ---
 
-## ✅ Key takeaways
+## Key takeaways
 
 - **EOSC** is Europe's federated research-data ecosystem - one umbrella for many disciplines.
 - AquaINFRA **plugs into EOSC** so aquatic datasets are visible alongside everything else researchers consume.

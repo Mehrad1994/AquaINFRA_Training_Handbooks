@@ -496,7 +496,7 @@
     letter-spacing: 0.05em;
 }
 
-/* Specific Alert Types */
+/* Specific Alert Types (text label only, no injected icon) */
 .alert-box--note {
     background-color: #f0f7ff;
     border-left-color: #0969da;
@@ -504,12 +504,6 @@
 
 .alert-box--note .alert-box__label {
     color: #0969da;
-}
-
-.alert-box--note .alert-box__label::before {
-    content: 'ℹ️';
-    /* Note icon */
-    margin-right: 0.75rem;
 }
 
 .alert-box--tip {
@@ -521,12 +515,6 @@
     color: #1a7f37;
 }
 
-.alert-box--tip .alert-box__label::before {
-    content: '💡';
-    /* Tip icon */
-    margin-right: 0.75rem;
-}
-
 .alert-box--important {
     background-color: #f6f0ff;
     border-left-color: #8250df;
@@ -534,12 +522,6 @@
 
 .alert-box--important .alert-box__label {
     color: #8250df;
-}
-
-.alert-box--important .alert-box__label::before {
-    content: '💎';
-    /* Important icon */
-    margin-right: 0.75rem;
 }
 
 .alert-box--warning {
@@ -551,12 +533,6 @@
     color: #9a6700;
 }
 
-.alert-box--warning .alert-box__label::before {
-    content: '⚠️';
-    /* Warning icon */
-    margin-right: 0.75rem;
-}
-
 .alert-box--caution {
     background-color: #fff8f8;
     border-left-color: #cf222e;
@@ -566,15 +542,25 @@
     color: #cf222e;
 }
 
-.alert-box--caution .alert-box__label::before {
-    content: '🛑';
-    /* Caution icon */
-    margin-right: 0.75rem;
-}
-
 /* =========================================
    Layout components (was inline styles)
    ========================================= */
+
+/* "About this chapter" intro box - light AquaINFRA blue, no icon */
+.chapter-intro {
+    background-color: var(--aqua-bg-light);
+    border-left: 4px solid var(--aqua-blue);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem;
+    margin: 0 0 1.75rem 0;
+    color: var(--gray-900);
+}
+
+.chapter-intro p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 /* In-content hero banner (training index / contact pages) */
 .page-hero {

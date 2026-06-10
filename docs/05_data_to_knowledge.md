@@ -5,7 +5,7 @@ title: Data-to-Knowledge Package
 # Data-to-Knowledge Package (D2KP)
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>What a <strong><a href="{{ relative_root }}reference/glossary#d2kp">D2KP</a></strong> is and why it goes beyond "a zip of files".</li>
         <li>The four interaction levels - data, Galaxy workflow, Web API, MyBinder lab.</li>
@@ -19,7 +19,7 @@ If a published paper is the menu, the **Data-to-Knowledge Package (D2KP)** is th
 
 ---
 
-## 📽️ Video Tutorial: The D2KP Concept
+## Video Tutorial: The D2KP Concept
 
 Explore how D2KPs organise these resources and why they are essential for moving away from "black-box" environmental research.
 
@@ -29,7 +29,7 @@ Explore how D2KPs organise these resources and why they are essential for moving
 
 ---
 
-## 🏗️ Inside a D2KP
+## Inside a D2KP
 
 A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed to offer different interaction levels depending on what the next researcher needs:
 
@@ -40,7 +40,7 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 
 ---
 
-## 🔍 Finding and using D2KPs
+## Finding and using D2KPs
 
 > [!TIP]
 > **D2KP Publication**
@@ -51,7 +51,7 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 > When you find a dataset on the AIP, look for the "Related Content" section on the right side. This will indicate if an associated D2KP exists, showing you exactly how that data was used in previous research.
 
 <details>
-<summary><strong>🔬 Deep dive - typical D2KP folder layout</strong></summary>
+<summary><strong>Deep dive - typical D2KP folder layout</strong></summary>
 
 <em>The layout below is an illustrative example of how a D2KP is organised; the exact files vary by package. Check the package's own README on Zenodo for its real structure.</em>
 
@@ -81,7 +81,7 @@ The key idea: a reader can choose **their preferred level of engagement** - run 
 
 ---
 
-## ✅ Key takeaways
+## Key takeaways
 
 - A **D2KP** bundles data, workflow, code, environment, and docs into a single citable package.
 - Each D2KP exposes **four interaction paths**: data/code, Galaxy workflow, Web API, MyBinder lab - pick what matches your skill level.

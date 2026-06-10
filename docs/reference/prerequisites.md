@@ -8,7 +8,7 @@ title: Prerequisites & Sign-Up
 Everything you need to set up **before** starting a training. Allow ~10 minutes the first time.
 
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
         <li>Which accounts you need (and which you don't).</li>
         <li>How the EOSC, AIP, and Aqua Galaxy logins relate.</li>
@@ -68,7 +68,7 @@ AquaINFRA touches three different platforms. You don't necessarily need an accou
 4. Otherwise, register with email and a password.
 5. After confirming your email, return to Aqua Galaxy and verify you can see the **History** panel on the right.
 
-✅ You're done when you can see your username in the top-right corner.
+You're done when you can see your username in the top-right corner.
 
 ---
 

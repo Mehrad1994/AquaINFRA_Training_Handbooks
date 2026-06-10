@@ -8,7 +8,7 @@ title: Glossary
 Definitions of the terms you'll meet across the AquaINFRA handbook and training videos. Click any anchor to deep-link a term (e.g. `…/reference/glossary#d2kp`).
 
 <div class="callout">
-    <strong>📘 How to use this page</strong>
+    <strong>How to use this page</strong>
     Skim before your first training, then return whenever a term in a chapter feels unfamiliar. Where a term has its own dedicated handbook chapter, the entry links to it.
 </div>
 

@@ -9,7 +9,7 @@ nav_order: 3
 
 This training handbook covers the **Pan-European Use Case** developed by **BOKU University**. It demonstrates how to use the **Specleaner** package within the AquaINFRA Virtual Environment to detect and remove outliers in species occurrence data.
 
-> [!NOTE] 📹 **Video Reference**
+> [!NOTE] **Video Reference**
 > **Workshop Recording** (Source: YouTube AquaINFRA Channel | Duration: ~20 mins)
 
 <!-- Responsive Video Container -->

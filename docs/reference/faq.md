@@ -8,7 +8,7 @@ title: FAQ & Troubleshooting
 Quick answers to common questions and concrete fixes for the issues most learners hit.
 
 <div class="callout">
-    <strong>🆘 Where to go from here</strong>
+    <strong>Where to go from here</strong>
     Can't find your issue? See <a href="../07_contact">Contact</a> to reach the AquaINFRA team.
 </div>
 
@@ -83,7 +83,7 @@ Galaxy queues jobs when the server is busy. For small imports it usually clears 
 
 Map outputs (HTML files) need to be opened explicitly:
 1. Find the `map_*.html` file in your history.
-2. Click the **👁 eye icon** to preview, then **"Open in new tab"** for the full interactive view.
+2. Click the **eye icon** to preview, then **"Open in new tab"** for the full interactive view.
 </details>
 
 <details>

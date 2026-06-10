@@ -9,8 +9,8 @@ This file is read automatically at the start of every Claude Code session (local
 
 ## Styling
 - **No inline `style="..."`** in new content; use the decoupled classes in `sidebar.css`, `theme.css`, `style.css`.
-- Mandatory classes: containers `.use-case-card` / `.step-content`; nav `.btn-seq` + `.btn-seq--next` / `.btn-seq--prev`; tables wrapped in `<div class="table-wrapper">`; videos in `<div class="video-container">`.
-- Callouts: GitHub alerts (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`) or the `<div class="callout">` "At a glance" block.
+- **No emoji or icon glyphs, anywhere** - they don't match the aquainfra.eu style; keep the UI minimal. (Plain `←` `→` nav arrows and the `·` separator are fine.)
+- Mandatory classes: chapter intro box `.chapter-intro`; meta line `.chapter-meta`; containers `.use-case-card` / `.step-content`; nav `.btn-seq` + `.btn-seq--next` / `.btn-seq--prev`; tables wrapped in `<div class="table-wrapper">`; videos in `<div class="video-container">`.
 - Everything must stay responsive (test down to 375px).
 
 ## Content & tone
@@ -30,7 +30,7 @@ This file is read automatically at the start of every Claude Code session (local
 
 ## Adding a training (the pipeline)
 1. Copy `docs/trainings/_TEMPLATE/` to a new folder; keep `NN_name.md` numbering.
-2. Follow the lean chapter anatomy (meta line → at-a-glance → clipped video + single `📍 Jump to …` line → **Key points** that *assume the reader watched* the video → optional `<details>` appendix for the fuller walkthrough → key takeaways → sequential nav). The page is the reference layer, not a replay: never re-narrate the steps. Per-segment timestamp tables have been retired.
+2. Follow the minimal chapter anatomy: `Chapter X of N` meta line → **`.chapter-intro` box** (one short paragraph framing the video) → the clipped video → *then nothing*, except a **diagram/chart** for workflow chapters or the **research question / result + future** where they apply → sequential nav. The video does the teaching; the page is a brief, visual-first frame. No Key points, Key takeaways, appendices, re-narration, emoji, or timestamp tables.
 3. Register the training in `docs/_data/use_cases.yml` (region, title, url, description, status, optional `d2kp_url`) so it appears in the sidebar and Use Cases library.
 
 ## Visuals

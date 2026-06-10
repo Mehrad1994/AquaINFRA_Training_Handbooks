@@ -1,4 +1,4 @@
-# ✍️ AquaINFRA Handbook Style Guide
+# AquaINFRA Handbook Style Guide
 
 This guide codifies the writing conventions used across the handbook so that new chapters feel consistent with what's already there. Apply it whenever you author or review content. Pair it with [CONTRIBUTING.md](CONTRIBUTING.md) and the [Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md).
 
@@ -17,12 +17,12 @@ This guide codifies the writing conventions used across the handbook so that new
 
 These words and phrases are flags that the prose drifted into generic AI tone. Rewrite if they appear:
 
-- ❌ *delve, tapestry, journey, navigate the landscape, in the realm of, harness*
-- ❌ *Let's dive in / Let's explore / In this chapter we will explore*
-- ❌ *It's worth noting that, It is important to note*
-- ❌ *Comprehensive solution, robust framework, cutting-edge*
-- ❌ Em dashes (`—`) and en dashes (`–`) — use a regular hyphen (`-`), comma, parentheses, or rephrase
-- ❌ Triple-bullet padding ("First, ... Second, ... Third, ...") when two ideas would do
+- *delve, tapestry, journey, navigate the landscape, in the realm of, harness*
+- *Let's dive in / Let's explore / In this chapter we will explore*
+- *It's worth noting that, It is important to note*
+- *Comprehensive solution, robust framework, cutting-edge*
+- Em dashes (`—`) and en dashes (`–`) — use a regular hyphen (`-`), comma, parentheses, or rephrase
+- Triple-bullet padding ("First, ... Second, ... Third, ...") when two ideas would do
 
 ---
 
@@ -64,6 +64,7 @@ Then plain "VRE" is fine.
 
 ## 4. Punctuation & formatting
 
+- **No emoji or icon glyphs, anywhere.** They don't match the aquainfra.eu style; keep the UI minimal. This includes headings, callouts, and list bullets. Plain navigation arrows (`←` `→`) and the `·` separator are fine.
 - **No em or en dashes.** Use `-` or rephrase.
 - **No double spaces** after periods.
 - **Smart quotes off** — use straight quotes (`"..."`, `'...'`) for code compatibility.
@@ -79,15 +80,12 @@ Then plain "VRE" is fine.
 Every chapter follows the same structure - see [Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md):
 
 1. Chapter title H1 (`# Title`, no numeric prefix) - blue accent bar is auto-applied by CSS
-2. Meta line (`<p class="chapter-meta">` - read time, video time, chapter position)
-3. **At a glance** callout
-4. **Video companion**: pre-clipped iframe + a single `📍 Jump to …` line (`class="chapter-meta"`). Per-segment timestamp tables have been retired.
-5. **Key points** - concise keynotes that *assume the reader watched the video*. Capture the reusable facts and gotchas; never re-narrate the steps.
-6. Optional **`<details>` appendix** for the fuller walkthrough / technical detail trimmed out of the keynotes
-7. **Key takeaways**
-8. Sequential nav
+2. Meta line (`<p class="chapter-meta">Chapter X of N</p>` - position only)
+3. **"About this chapter" box** (`<div class="chapter-intro">`) - one short paragraph framing the video
+4. **Video** - the pre-clipped iframe
+5. **Then nothing**, except: a diagram/chart for workflow chapters, or the research question / result + future where they apply
 
-The page is the **reference layer**, not a replay of the video. Keep it scannable.
+The video does the teaching; the page is a brief, visual-first frame. Do **not** add Key points, Key takeaways, appendices, or any re-narration of the video.
 
 ---
 
@@ -148,7 +146,7 @@ Types: `NOTE`, `TIP`, `IMPORTANT`, `WARNING`, `CAUTION`.
 
 ```html
 <div class="callout">
-    <strong>📌 At a glance</strong>
+    <strong>At a glance</strong>
     <ul>...</ul>
 </div>
 ```
