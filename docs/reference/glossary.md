@@ -163,7 +163,7 @@ An open research-output repository run by CERN. AquaINFRA D2KPs are published th
 
 <div class="sequence-navigation">
     <a href="{{ relative_root }}index" class="btn-seq btn-seq--prev">← Home</a>
-    <a href="{{ relative_root }}reference/prerequisites" class="btn-seq btn-seq--next">Next: Prerequisites →</a>
+    <a href="./prerequisites" class="btn-seq btn-seq--next">Next: Prerequisites →</a>
 </div>
 
 <div class="wave-decoration"></div>

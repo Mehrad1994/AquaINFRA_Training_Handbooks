@@ -133,8 +133,8 @@ Yes - that's the whole point of FAIR workflows. After a successful run on the de
 ---
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}reference/prerequisites" class="btn-seq btn-seq--prev">← Prerequisites</a>
-    <a href="{{ relative_root }}reference/quick-tasks" class="btn-seq btn-seq--next">Next: Quick-Task Index →</a>
+    <a href="./prerequisites" class="btn-seq btn-seq--prev">← Prerequisites</a>
+    <a href="./quick-tasks" class="btn-seq btn-seq--next">Next: Quick-Task Index →</a>
 </div>
 
 <div class="wave-decoration"></div>

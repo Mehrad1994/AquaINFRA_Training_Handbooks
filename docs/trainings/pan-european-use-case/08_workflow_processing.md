@@ -17,15 +17,18 @@ nav_order: 8
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1000&end=1122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## Workflow: steps 5-8
+
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'lineColor':'#3564ac','fontFamily':'Inter, system-ui, sans-serif','fontSize':'14px'}}}%%
 flowchart LR
-    M["5. Merge &<br/>harmonise"] --> N["6. Harmonise names<br/>(FishBase)"]
-    N --> O["7. Extract predictors<br/>(WorldClim)"]
-    O --> P["8. Flag outliers<br/>(Specleaner)"]
-    style M fill:#fff4d6,stroke:#9a6700
-    style N fill:#fff4d6,stroke:#9a6700
-    style O fill:#fff4d6,stroke:#9a6700
-    style P fill:#fff4d6,stroke:#9a6700
+    M(["5. Merge &<br/>harmonise"]) --> N(["6. Harmonise names<br/>(FishBase)"])
+    N --> O(["7. Extract predictors<br/>(WorldClim)"])
+    O --> P(["8. Flag outliers<br/>(Specleaner)"])
+    style M fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style N fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style O fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style P fill:#76b943,stroke:#4f8a23,color:#ffffff
 ```
 
 ---

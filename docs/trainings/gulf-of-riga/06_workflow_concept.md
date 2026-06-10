@@ -15,11 +15,14 @@ title: Workflow Concept
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=671&end=738" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## The workflow
+
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#eaf1fc','primaryBorderColor':'#3564ac','primaryTextColor':'#070608','lineColor':'#3564ac','fontFamily':'Inter, system-ui, sans-serif','fontSize':'15px'}}}%%
 flowchart LR
-    A[Input data] --> B[Pre-processing<br/>spatial + temporal]
-    B --> C[Trend analysis<br/>Mann-Kendall]
-    C --> D[Visualisation<br/>map + bar chart]
+    A([Input data]) --> B([Pre-processing<br/>spatial + temporal])
+    B --> C([Trend analysis<br/>Mann-Kendall])
+    C --> D([Visualisation<br/>map + bar chart])
 ```
 
 ---

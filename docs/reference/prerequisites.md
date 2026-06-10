@@ -111,8 +111,8 @@ Before starting Chapter 1 of any training, confirm you can:
 ---
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}reference/glossary" class="btn-seq btn-seq--prev">← Glossary</a>
-    <a href="{{ relative_root }}reference/faq" class="btn-seq btn-seq--next">Next: FAQ →</a>
+    <a href="./glossary" class="btn-seq btn-seq--prev">← Glossary</a>
+    <a href="./faq" class="btn-seq btn-seq--next">Next: FAQ →</a>
 </div>
 
 <div class="wave-decoration"></div>

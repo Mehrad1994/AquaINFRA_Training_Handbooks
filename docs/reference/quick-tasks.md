@@ -112,7 +112,7 @@ title: Quick-Task Index
 ---
 
 <div class="sequence-navigation">
-    <a href="{{ relative_root }}reference/faq" class="btn-seq btn-seq--prev">← FAQ</a>
+    <a href="./faq" class="btn-seq btn-seq--prev">← FAQ</a>
     <a href="{{ relative_root }}index" class="btn-seq btn-seq--next">Home →</a>
 </div>
 

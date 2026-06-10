@@ -15,16 +15,19 @@ title: Workflow Details
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1289&end=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## Workflow structure
+
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#eaf1fc','primaryBorderColor':'#3564ac','primaryTextColor':'#070608','lineColor':'#3564ac','fontFamily':'Inter, system-ui, sans-serif','fontSize':'14px'}}}%%
 flowchart LR
-    A[points] --> B[Spatial agg]
-    A2[polygons] --> B
-    B --> C[Temporal agg]
-    C --> D[Mean per unit x year x season]
-    D --> E[Interpolate + quality gate]
-    E --> F[Mann-Kendall]
-    F --> G1[Interactive map]
-    F --> G2[Tau bar chart]
+    A([points]) --> B([Spatial agg])
+    A2([polygons]) --> B
+    B --> C([Temporal agg])
+    C --> D([Mean per unit x year x season])
+    D --> E([Interpolate + quality gate])
+    E --> F([Mann-Kendall])
+    F --> G1([Interactive map])
+    F --> G2([Tau bar chart])
 ```
 
 ---

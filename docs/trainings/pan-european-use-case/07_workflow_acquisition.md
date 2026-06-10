@@ -17,16 +17,19 @@ nav_order: 7
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=941&end=1000" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## Workflow: steps 1-4
+
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'lineColor':'#3564ac','fontFamily':'Inter, system-ui, sans-serif','fontSize':'14px'}}}%%
 flowchart LR
-    A["1. AOI<br/>GeoJSON"] --> B["2. Online data<br/>GBIF, iNat, VertNet"]
-    A --> C["3-4. Offline data<br/>optional CSV"]
-    B --> M["5-8. Processing<br/>(next chapter)"]
+    A(["1. AOI<br/>GeoJSON"]) --> B(["2. Online data<br/>GBIF, iNat, VertNet"])
+    A --> C(["3-4. Offline data<br/>optional CSV"])
+    B --> M(["5-8. Processing<br/>(next chapter)"])
     C --> M
-    style A fill:#e1e9f6,stroke:#3564AC
-    style B fill:#e1e9f6,stroke:#3564AC
-    style C fill:#e1e9f6,stroke:#3564AC
-    style M fill:#eef0f2,stroke:#9aa3ad
+    style A fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style B fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style C fill:#eaf1fc,stroke:#3564AC,color:#070608
+    style M fill:#eef0f2,stroke:#9aa3ad,color:#5a6b7a
 ```
 
 ---

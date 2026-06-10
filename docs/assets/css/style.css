@@ -136,7 +136,9 @@ p {
     margin-bottom: 1rem;
     font-size: 1.05em;
     /* Scales with body */
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 ul,
