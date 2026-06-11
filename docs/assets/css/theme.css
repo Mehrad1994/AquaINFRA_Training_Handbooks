@@ -635,3 +635,23 @@
     height: 100px;
     background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);
 }
+
+/* Diagram / flowchart figure - centred, responsive, click to enlarge */
+.diagram {
+    margin: 1.25rem 0 2rem 0;
+    text-align: center;
+}
+
+.diagram img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--aqua-blue-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(53, 100, 172, 0.07);
+}
+
+.diagram figcaption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+}

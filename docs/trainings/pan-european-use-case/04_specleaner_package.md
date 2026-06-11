@@ -17,6 +17,14 @@ nav_order: 4
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=380&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## How specleanr works
+
+<div class="diagram">
+    <a href="{{ relative_root }}assets/images/specleanr-workflow.png" target="_blank" rel="noopener">
+        <img src="{{ relative_root }}assets/images/specleanr-workflow.png" alt="The specleanr methodology in four phases: data collection and standardisation (harmonising local and online occurrence data with environmental predictors), outlier detection (univariate, ecological-range, and multivariate methods via multidetect), outlier weighting and threshold setting, and data extraction of clean records for species distribution models.">
+    </a>
+</div>
+
 ---
 
 <div class="sequence-navigation">

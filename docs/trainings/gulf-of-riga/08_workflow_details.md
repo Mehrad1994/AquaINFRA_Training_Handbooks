@@ -17,18 +17,11 @@ title: Workflow Details
 
 ## Workflow structure
 
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#eaf1fc','primaryBorderColor':'#3564ac','primaryTextColor':'#070608','lineColor':'#3564ac','fontFamily':'Inter, system-ui, sans-serif','fontSize':'14px'}}}%%
-flowchart LR
-    A([points]) --> B([Spatial agg])
-    A2([polygons]) --> B
-    B --> C([Temporal agg])
-    C --> D([Mean per unit x year x season])
-    D --> E([Interpolate + quality gate])
-    E --> F([Mann-Kendall])
-    F --> G1([Interactive map])
-    F --> G2([Tau bar chart])
-```
+<div class="diagram">
+    <a href="{{ relative_root }}assets/images/gulf-of-riga-dga-workflow.png" target="_blank" rel="noopener">
+        <img src="{{ relative_root }}assets/images/gulf-of-riga-dga-workflow.png" alt="The Gulf of Riga DGA workflow: input data (points, region polygons), data pre-processing (spatial and temporal aggregation), data analysis (mean values by group, time-series selection and interpolation, Mann-Kendall trend analysis), and visualisation (bar plot and interactive map).">
+    </a>
+</div>
 
 ---
 
