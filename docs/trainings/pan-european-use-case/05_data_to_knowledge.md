@@ -20,8 +20,8 @@ nav_order: 5
 ## How a D2KP fits together
 
 <div class="diagram">
-    <a href="{{ relative_root }}assets/images/d2kp-fair-architecture.jpg" target="_blank" rel="noopener">
-        <img src="{{ relative_root }}assets/images/d2kp-fair-architecture.jpg" alt="How the FAIR principles flow into a Data-to-Knowledge Package and its components - Virtual Research Environment, Workflow, Reproducible Basis Toolbox, Web API, and Dataset - and how these connect the AquaINFRA Interaction Platform, the VRE (Binder, pygeoapi, Galaxy), source code, the Data Discovery and Access Service, and Zenodo.">
+    <a href="../../assets/images/d2kp-fair-architecture.jpg" target="_blank" rel="noopener">
+        <img src="../../assets/images/d2kp-fair-architecture.jpg" alt="How the FAIR principles flow into a Data-to-Knowledge Package and its components - Virtual Research Environment, Workflow, Reproducible Basis Toolbox, Web API, and Dataset - and how these connect the AquaINFRA Interaction Platform, the VRE (Binder, pygeoapi, Galaxy), source code, the Data Discovery and Access Service, and Zenodo.">
     </a>
 </div>
 

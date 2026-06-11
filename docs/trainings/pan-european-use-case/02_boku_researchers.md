@@ -17,6 +17,17 @@ nav_order: 2
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=75&end=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## The lead team
+
+<div class="table-wrapper">
+
+| Researcher | Role | Research focus |
+|---|---|---|
+| [Florian Borgwardt](https://boku.ac.at/personen/person/5940E26847F9046A){:target="_blank" rel="noopener"} | Principal Investigator, BOKU University | River biodiversity assessment across Europe; freshwater ecology and bioassessment |
+| [Anthony Basooma](https://boku.ac.at/en/personen/person/06473192FC3B0438){:target="_blank" rel="noopener"} | Researcher, BOKU University | Species occurrence data cleaning; developer of the `specleanr` R package |
+
+</div>
+
 ---
 
 <div class="sequence-navigation">

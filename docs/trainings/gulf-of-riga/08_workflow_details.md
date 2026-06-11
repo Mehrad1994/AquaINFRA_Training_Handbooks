@@ -18,8 +18,8 @@ title: Workflow Details
 ## Workflow structure
 
 <div class="diagram">
-    <a href="{{ relative_root }}assets/images/gulf-of-riga-dga-workflow.png" target="_blank" rel="noopener">
-        <img src="{{ relative_root }}assets/images/gulf-of-riga-dga-workflow.png" alt="The Gulf of Riga DGA workflow: input data (points, region polygons), data pre-processing (spatial and temporal aggregation), data analysis (mean values by group, time-series selection and interpolation, Mann-Kendall trend analysis), and visualisation (bar plot and interactive map).">
+    <a href="../../assets/images/gulf-of-riga-dga-workflow.png" target="_blank" rel="noopener">
+        <img src="../../assets/images/gulf-of-riga-dga-workflow.png" alt="The Gulf of Riga DGA workflow: input data (points, region polygons), data pre-processing (spatial and temporal aggregation), data analysis (mean values by group, time-series selection and interpolation, Mann-Kendall trend analysis), and visualisation (bar plot and interactive map).">
     </a>
 </div>
 
