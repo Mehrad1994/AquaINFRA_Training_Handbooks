@@ -8,7 +8,7 @@ title: Importing Data
 <p class="chapter-meta">Chapter 5 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> Before running the workflow, the necessary input datasets must be imported into the VRE. This chapter walks through importing the Latvian Secchi depth point data and the HELCOM assessment unit polygons directly via OGC API endpoints and manual link imports, ensuring the data is ready for the workflow.</p>
+    <p>Before running the workflow, the necessary input datasets must be imported into the VRE. This chapter walks through importing the Latvian Secchi depth point data and the HELCOM assessment unit polygons directly via OGC API endpoints and manual link imports, ensuring the data is ready for the workflow.</p>
 </div>
 
 <div class="video-container">

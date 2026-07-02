@@ -8,7 +8,7 @@ title: Introduction
 <p class="chapter-meta">Chapter 1 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> Introduction to AquaINFRA and the general goals. The project aims to develop a virtual environment equipped with FAIR multidisciplinary data and services for marine and freshwater researchers. This training focuses on the Gulf of Riga and Daugava River use case, demonstrating the workflow and the Data-to-Knowledge Package.</p>
+    <p>Introduction to AquaINFRA and the general goals. The project aims to develop a virtual environment equipped with FAIR multidisciplinary data and services for marine and freshwater researchers. This training focuses on the Gulf of Riga and Daugava River use case, demonstrating the workflow and the Data-to-Knowledge Package.</p>
 </div>
 
 <div class="video-container">

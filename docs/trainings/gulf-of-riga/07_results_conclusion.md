@@ -8,7 +8,7 @@ title: Results & Conclusion
 <p class="chapter-meta">Chapter 7 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> Reviewing the final output reveals statistically significant decreasing transparency trends in three coastal assessment units, answering the primary research question. The chapter concludes by outlining future research directions to understand the driving forces behind this darkening.</p>
+    <p>Reviewing the final output reveals statistically significant decreasing transparency trends in three coastal assessment units, answering the primary research question. The chapter concludes by outlining future research directions to understand the driving forces behind this darkening.</p>
 </div>
 
 <div class="video-container">

@@ -8,7 +8,7 @@ title: Aqua Galaxy (VRE)
 <p class="chapter-meta">Chapter 4 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> Aqua Galaxy is the virtual research environment (VRE) built on the open-source Galaxy platform. This chapter covers how to register for Aqua Galaxy and how to directly import the reproducible workflow files from the Zenodo repository to prepare for analysis.</p>
+    <p>Aqua Galaxy is the virtual research environment (VRE) built on the open-source Galaxy platform. This chapter covers how to register for Aqua Galaxy and how to directly import the reproducible workflow files from the Zenodo repository to prepare for analysis.</p>
 </div>
 
 <div class="video-container">

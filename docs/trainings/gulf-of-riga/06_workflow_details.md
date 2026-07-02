@@ -8,7 +8,7 @@ title: Workflow Details
 <p class="chapter-meta">Chapter 6 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> With data imported, the workflow begins executing its tools. The process involves spatial aggregation (assigning points to polygons), temporal aggregation (assigning seasons), calculating mean values, filtering out regions with insufficient data, and finally running the nonparametric <a href="{{ relative_root }}reference/glossary#mann-kendall">Mann-Kendall</a> trend analysis to detect significant trends.</p>
+    <p>With data imported, the workflow begins executing its tools. The process involves spatial aggregation (assigning points to polygons), temporal aggregation (assigning seasons), calculating mean values, filtering out regions with insufficient data, and finally running the nonparametric <a href="{{ relative_root }}reference/glossary#mann-kendall">Mann-Kendall</a> trend analysis to detect significant trends.</p>
 </div>
 
 <div class="video-container">

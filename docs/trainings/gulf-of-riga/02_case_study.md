@@ -8,7 +8,7 @@ title: Case Study Story
 <p class="chapter-meta">Chapter 2 of 7</p>
 
 <div class="chapter-intro">
-    <p><strong>About this chapter:</strong> The case study begins with divers noticing the Gulf of Riga growing darker. To answer if optical properties change over the long term, a reproducible workflow was developed using <a href="{{ relative_root }}reference/glossary#secchi-depth">Secchi-depth</a> measurements (water transparency). The analysis is highly influenced by seasonal changes and river runoffs in this unique semi-enclosed environment.</p>
+    <p>The case study begins with divers noticing the Gulf of Riga growing darker. To answer if optical properties change over the long term, a reproducible workflow was developed using <a href="{{ relative_root }}reference/glossary#secchi-depth">Secchi-depth</a> measurements (water transparency). The analysis is highly influenced by seasonal changes and river runoffs in this unique semi-enclosed environment.</p>
 </div>
 
 <div class="video-container">
