@@ -87,7 +87,7 @@ Before opening a PR, verify every chapter has:
 - [ ] Nothing after the video **except**: a diagram for workflow chapters, or the research question / result + future where they apply.
 - [ ] No Key points, Key takeaways, or appendices; no re-narration of the video.
 - [ ] No emoji or icons anywhere; no inline `style="..."` (use `.chapter-intro`, `.chapter-meta`, `.callout`, `.table-wrapper`).
-- [ ] First mention of technical terms links to `{{ relative_root }}reference/glossary#anchor`.
+- [ ] First mention of technical terms links to `../../reference/glossary#anchor`. (No need for `target` or `title` attributes; JS handles the hover tooltip automatically).
 - [ ] Previous / Next navigation and the `.wave-decoration` block present.
 
 And on the index page:
