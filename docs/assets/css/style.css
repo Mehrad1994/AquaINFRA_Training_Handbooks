@@ -253,8 +253,10 @@ img {
 
 /* Tables */
 .table-wrapper {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 2rem 0;
     border-radius: 6px;
     border: 1px solid var(--gray-200);
@@ -568,8 +570,6 @@ tr:hover {
     border-collapse: collapse;
     table-layout: auto;
     /* Allow native table sizing based on content */
-    min-width: 450px;
-    /* Force horizontal scroll on very narrow screens rather than breaking words */
 }
 
 /* Ensure data cells don't overflow awkwardly */
@@ -577,6 +577,8 @@ tr:hover {
 .table-wrapper th {
     word-wrap: normal;
     word-break: normal;
+    -webkit-hyphens: auto;
+    hyphens: auto;
     vertical-align: top;
 }
 
