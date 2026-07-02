@@ -8,7 +8,7 @@ title: AIP and D2KP
 <p class="chapter-meta">Chapter 3 of 7</p>
 
 <div class="chapter-intro">
-    <p>The <a href="{{ relative_root }}reference/glossary#aip">AquaINFRA Interaction Platform</a> serves as the central gateway to find datasets and workflows. This chapter explains how to use the search functionality to locate the specific <a href="{{ relative_root }}reference/glossary#d2kp">Data-to-Knowledge Package</a> for the Gulf of Riga, which bundles the workflow, the Binder virtual lab, and the web API services required to address the research question.</p>
+    <p>The <a href="../../reference/glossary#aip" target="_blank" rel="noopener" title="The web portal at aquainfra.dev.52north.org where you discover datasets, tools, workflows, and Data-to-Knowledge Packages across multiple data providers.">AquaINFRA Interaction Platform</a> serves as the central gateway to find datasets and workflows. This chapter explains how to use the search functionality to locate the specific <a href="../../reference/glossary#d2kp" target="_blank" rel="noopener" title="A bundle that ties together every resource needed to reproduce a specific analysis end-to-end: the dataset(s), the workflow, the source code, a step-by-step guide, and a virtual lab.">Data-to-Knowledge Package</a> for the Gulf of Riga, which bundles the workflow, the Binder virtual lab, and the web API services required to address the research question.</p>
 </div>
 
 <div class="video-container">

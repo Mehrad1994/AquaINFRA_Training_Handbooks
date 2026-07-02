@@ -8,7 +8,7 @@ title: Workflow Details
 <p class="chapter-meta">Chapter 6 of 7</p>
 
 <div class="chapter-intro">
-    <p>With data imported, the workflow begins executing its tools. The process involves spatial aggregation (assigning points to polygons), temporal aggregation (assigning seasons), calculating mean values, filtering out regions with insufficient data, and finally running the nonparametric <a href="{{ relative_root }}reference/glossary#mann-kendall">Mann-Kendall</a> trend analysis to detect significant trends.</p>
+    <p>With data imported, the workflow begins executing its tools. The process involves spatial aggregation (assigning points to polygons), temporal aggregation (assigning seasons), calculating mean values, filtering out regions with insufficient data, and finally running the nonparametric <a href="../../reference/glossary#mann-kendall" target="_blank" rel="noopener" title="A non-parametric statistical test for a monotonic upward or downward trend in a time series. It makes no assumption about the data's distribution.">Mann-Kendall</a> trend analysis to detect significant trends.</p>
 </div>
 
 <div class="video-container">
