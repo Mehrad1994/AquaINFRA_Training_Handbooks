@@ -5,14 +5,14 @@ title: Results & Conclusion
 
 # Findings and what's next
 
-<p class="chapter-meta">Chapter 9 of 9</p>
+<p class="chapter-meta">Chapter 7 of 7</p>
 
 <div class="chapter-intro">
-    <p>The payoff: what 30+ years of Secchi data revealed about the darkening question, and where the research goes next.</p>
+    <p><strong>About this chapter:</strong> Reviewing the final output reveals statistically significant decreasing transparency trends in three coastal assessment units, answering the primary research question. The chapter concludes by outlining future research directions to understand the driving forces behind this darkening.</p>
 </div>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/rBlJ3jbJpP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="callout">
@@ -33,7 +33,7 @@ Cite the analysis via the <a href="https://aquainfra.dev.52north.org/result/zeno
 ---
 
 <div class="sequence-navigation">
-    <a href="./08_workflow_details" class="btn-seq btn-seq--prev">← Previous: Workflow Details</a>
+    <a href="./06_workflow_details" class="btn-seq btn-seq--prev">← Previous: Workflow Details</a>
     <a href="./" class="btn-seq btn-seq--next">Back to Training Overview →</a>
 </div>
 
