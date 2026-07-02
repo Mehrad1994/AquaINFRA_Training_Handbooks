@@ -50,10 +50,14 @@
         tip.style.left = (window.scrollX + rect.left) + 'px';
         tip.style.top = (window.scrollY + rect.bottom + 6) + 'px';
         tip.classList.add('glossary-tooltip--visible');
+        tip._currentLink = link;
     }
 
     function hideTooltip() {
-        if (tooltipEl) tooltipEl.classList.remove('glossary-tooltip--visible');
+        if (tooltipEl) {
+            tooltipEl.classList.remove('glossary-tooltip--visible');
+            tooltipEl._currentLink = null;
+        }
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -66,18 +70,40 @@
 
         links.forEach(link => {
             link.classList.add('glossary-term');
-            link.addEventListener('mouseenter', async () => {
+            
+            if (!link.hasAttribute('target')) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener');
+            }
+
+            const showHover = async () => {
                 const anchor = link.getAttribute('href').split('#')[1];
                 const terms = await loadGlossary(baseUrl);
                 if (terms[anchor]) showTooltip(link, terms[anchor]);
-            });
+            };
+
+            link.addEventListener('mouseenter', showHover);
             link.addEventListener('mouseleave', hideTooltip);
-            link.addEventListener('focus', async () => {
-                const anchor = link.getAttribute('href').split('#')[1];
-                const terms = await loadGlossary(baseUrl);
-                if (terms[anchor]) showTooltip(link, terms[anchor]);
-            });
+            link.addEventListener('focus', showHover);
             link.addEventListener('blur', hideTooltip);
+
+            // Touch support: First tap shows tooltip, second tap navigates
+            link.addEventListener('click', (e) => {
+                // If it's a touch device and tooltip isn't showing for THIS link
+                if (window.matchMedia("(hover: none)").matches || e.pointerType === 'touch') {
+                    if (!tooltipEl || tooltipEl._currentLink !== link || !tooltipEl.classList.contains('glossary-tooltip--visible')) {
+                        e.preventDefault();
+                        showHover();
+                    }
+                }
+            });
+        });
+
+        // Hide tooltip when tapping elsewhere on touch devices
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('a[href*="reference/glossary#"]')) {
+                hideTooltip();
+            }
         });
     });
 })();
