@@ -17,6 +17,13 @@ nav_order: 6
     <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=792&end=941" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/pan-european-use-case/image48.png" alt="Workflow in the Galaxy Platform detailing the acquisition and merging of multiple data sources">
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2: Workflow in the Galaxy Platform detailing the acquisition and merging of multiple data sources, the extraction of environmental predictors, and ensemble outlier detection and removal.</figcaption>
+    </figure>
+</div>
+
 ---
 
 <div class="sequence-navigation">

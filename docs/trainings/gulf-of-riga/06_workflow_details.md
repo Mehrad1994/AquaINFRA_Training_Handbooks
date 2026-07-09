@@ -25,10 +25,27 @@ flowchart LR
     C --> D([Visualisation<br/>map + bar chart])
 ```
 
-<div class="diagram">
-    <a href="../../assets/images/gulf-of-riga-dga-workflow.png" target="_blank" rel="noopener">
-        <img src="../../assets/images/gulf-of-riga-dga-workflow.png" alt="The Gulf of Riga DGA workflow: input data (points, region polygons), data pre-processing (spatial and temporal aggregation), data analysis (mean values by group, time-series selection and interpolation, Mann-Kendall trend analysis), and visualisation (bar plot and interactive map).">
-    </a>
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <a href="../../assets/images/gulf-of-riga-dga-workflow.png" target="_blank" rel="noopener">
+          <img src="../../assets/images/gulf-of-riga-dga-workflow.png" alt="The Gulf of Riga DGA workflow">
+      </a>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 2: The Gulf of Riga DGA workflow involving data pre-processing, Mann-Kendall trend analysis, and visualisation.</figcaption>
+    </figure>
+</div>
+
+### Workflow Transferability
+
+The reusability of this workflow has been demonstrated by successfully applying it to other regions, such as the Bothnian Bay and the Gulf of Finland.
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; align-items: flex-start;">
+        <img src="../../assets/images/gulf-of-riga/image49.png" alt="Workflow upscaling to the Bothnian Bay" style="flex: 1; min-width: 250px;">
+        <img src="../../assets/images/gulf-of-riga/image50.png" alt="Transferability to the Gulf of Finland" style="flex: 1; min-width: 250px;">
+      </div>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 3: Demonstration of workflow transferability. Left: Upscaling to the Bothnian Bay showing seasonal Mann-Kendall trend results for Secchi depth across HELCOM subbasins. Right: Transferability to the Gulf of Finland showing input monitoring stations and HELCOM spatial regions.</figcaption>
+    </figure>
 </div>
 
 ---

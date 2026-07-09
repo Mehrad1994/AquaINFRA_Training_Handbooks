@@ -20,6 +20,17 @@ title: Results & Conclusion
     <p>Darkening confirmed - water transparency is significantly decreasing in three Latvian coastal units (summer at LAT-003 and LAT-004, autumn at LAT-005). LAT-005 covers the Daugava catchment near Riga, pointing at a land or runoff driver.</p>
 </div>
 
+### Daugava River Nutrient Assessment
+
+To identify the potential effect of measures planned in the Latvian part of the Daugava catchment, an assessment was conducted on the availability of data required to estimate potential environmental, social, and economic effects. 
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/gulf-of-riga/image53.png" alt="Availability of data required for the assessment of effectiveness of measures">
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 4: Availability of data required for the assessment of effectiveness of measures to reduce nutrient input to the Baltic Sea and their sufficiency to achieve BSAP goals in the RBMP for the Latvian part of the Daugava River.</figcaption>
+    </figure>
+</div>
+
 ## What's next
 
 The workflow answered *what* is happening; the open questions are about *why*:

@@ -15,6 +15,16 @@ title: Case Study Story
     <iframe src="https://www.youtube.com/embed/x0oDIoH6tFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; align-items: flex-start;">
+        <img src="../../assets/images/gulf-of-riga/image51.jpg" alt="Generated assessment area and assessment grid" style="flex: 1; min-width: 250px;">
+        <img src="../../assets/images/gulf-of-riga/image52.png" alt="Sample data used in the analysis" style="flex: 1; min-width: 250px;">
+      </div>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 1: Visualisation of the generated assessment area and assessment grid (left) alongside the various types of sample data used in the Gulf of Riga analysis (right).</figcaption>
+    </figure>
+</div>
+
 <div class="callout">
     <strong><span class="badge">RESEARCH QUESTION</span></strong>
     <p>Do the optical properties in the Gulf of Riga change over the long term?</p>

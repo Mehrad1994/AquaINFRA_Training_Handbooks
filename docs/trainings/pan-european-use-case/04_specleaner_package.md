@@ -19,10 +19,11 @@ nav_order: 4
 
 ## How specleanr works
 
-<div class="diagram">
-    <a href="../../assets/images/specleanr-workflow.png" target="_blank" rel="noopener">
-        <img src="../../assets/images/specleanr-workflow.png" alt="The specleanr methodology in four phases: data collection and standardisation (harmonising local and online occurrence data with environmental predictors), outlier detection (univariate, ecological-range, and multivariate methods via multidetect), outlier weighting and threshold setting, and data extraction of clean records for species distribution models.">
-    </a>
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/pan-european-use-case/image47.png" alt="Specleanr methodology workflow">
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1: The principle of ensemble outlier detection and removal of species records obtained from open-access data repositories (Basooma et al. 2025).</figcaption>
+    </figure>
 </div>
 
 ---
