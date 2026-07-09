@@ -263,14 +263,16 @@ img {
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 0.85rem; /* Reduced further to make text smaller */
     /* Remove min-width to allow container to handle overflow */
 }
 
 th,
 td {
-    padding: 1rem;
+    padding: 0.5rem 0.75rem; /* Reduced padding significantly */
     text-align: left;
     border-bottom: 1px solid var(--gray-200);
+    line-height: 1.4; /* Tighter line height */
 }
 
 th {
