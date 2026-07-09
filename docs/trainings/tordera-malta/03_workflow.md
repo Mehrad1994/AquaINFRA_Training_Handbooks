@@ -1,0 +1,5532 @@
+---
+layout: default
+title: "Workflow"
+---
+# Workflow
+
+<p class="chapter-meta">Chapter 3 of 3</p>
+
+<div class="chapter-intro">
+    <p>Details about the data pipelines, modelling, and computational workflows implemented.</p>
+</div>
+
+48
+
+4
+
+Reusability analysis of the data sets and tools applied by the AquaINFRA Use Cases
+
+50
+
+4.1
+
+Reuse opportunities and tests of data sets and tools developed by the use cases
+
+50
+
+4.1.1
+
+Change of water optical properties in the Daugava River and the Gulf of Riga
+
+50
+
+4.1.2
+
+Vantaanjoki River and Gulf of Finland: analysing land–river–sea connections in a small urban catchment
+
+54
+
+4.1.3
+
+The Baltic Sea effectiveness of measures Use Case
+
+55
+
+4.1.4
+
+The North Sea - Baltic Sea region from a satellite perspective
+
+65
+
+4.1.5
+
+Land-Sea interactions and trend analysis in the Oslofjord coastal areas and the rivers in the catchment
+
+68
+
+4.1.6
+
+Effects of climate change and human activities on the quantity and quality of water in Tordera river basin and Maresme county
+
+70
+
+4.1.7
+
+Groundwater–sea interactions and coastal fluxes of water and solutes controlling coastal water quality in the Maltese Islands
+
+74
+
+4.1.8
+
+Pan-European freshwater biodiversity
+
+76
+
+4.2
+
+Common benefits
+
+78
+
+4.3
+
+Common data reuse challenges
+
+79
+
+4.3.1
+
+Data/API heterogeneity and harmonisation requirements
+
+79
+
+4.3.2
+
+Metadata, provenance, and data citation
+
+80
+
+4.3.3
+
+Licensing and access constraints
+
+80
+
+4.3.4
+
+Reuse of derived and intermediate datasets
+
+80
+
+4.3.5
+
+Implications for scaling and cross use case reuse
+
+81
+
+4.3.6
+
+Summary of lessons learned
+
+81
+
+4.4
+
+Common challenges with reuse of the AquaINFRA VRE beyond the original Use Cases
+
+82
+
+5
+
+Next steps towards broader uptake and expansion.
+
+82
+
+6
+
+References
+
+83
+
+I
+
+Appendix
+
+86
+
+Table of 
+
+Table
+
+s
+
+Table 1.
+
+Specific measures planned in the RBMP for Latvian part of Daugava River to reduce nutrient losses to inland waters.
+
+60
+
+Table 2.
+
+Inputs of total nitrogen and phosphorus from Daugava catchment area (t/year) (HELCOM 2022).
+
+61
+
+Table 3.
+
+Current nutrient input and its estimated reduction due to measures planned in the RBMP for Latvian part of Daugava.
+
+62
+
+Table 4.
+
+Estimated cost of 1 t/y reduction of total nitrogen and total phosphorus input from Latvian part of Daugava catchment area.
+
+62
+
+Table of Figures
+
+Figure 1.
+
+Daugava River basin with major land cover classes and regional context within the Baltic Sea catchment in smaller panel.
+
+10
+
+Figure 2.
+
+Spatiotemporal trend detection workflow in the Galaxy platform, illustrating the main processing stages from input data through preprocessing and analysis to visualisation. The workflow is available here for closer inspection: 
+
+https://aqua.usegalaxy.eu/published/workflow?id=bee43845245a3343
+
+12
+
+Figure 3.
+
+Example of an interactive map output showing spatial distribution of in situ Secchi depth observations across HELCOM subbasins, generated within the workflow. The attribute table illustrates an example of the underlying data.
+
+13
+
+Figure 4.
+
+Seasonal Mann–Kendall trend results for Secchi depth across analysed HELCOM L4 subbasins (identifiers on X-axis), showing the direction and magnitude of trends as Tau values (values on Y-axis); translucent bars indicate statistically insignificant results.
+
+14
+
+Figure 5.
+
+Workflow for the Vantaanjoki River and Gulf of Finland use case in the Galaxy platform, showing the main processing stages from input data through processing to visualisation. The workflow combines land-use, river, EO and FerryBox data to analyse land–river–sea connections.
+
+16
+
+Figure 6.
+
+Overall dataflow of River Vantaajoki use case.
+
+17
+
+Figure 7.
+
+Results of the workflow in Figure 5.
+
+18
+
+Figure 8.
+
+Combination of Ferry
+
+B
+
+ox and automated river station data. The map shows the locations of center points of the aggregation areas.
+
+18
+
+Figure 9.
+
+Satellite turbidity estimates as a function of time from the same locations as Ferry
+
+B
+
+ox data (Fig.
+
+ 
+
+8).
+
+19
+
+Figure 10.
+
+a) Illustration of source-to-sea system (Mathews et al., 2019) for pollution data management in HELCOM framework (sources, pathways, recipient). b) Map of Baltic Sea catchment color coded to HELOCM PLC sub-basin (HELCOM, 2021).
+
+20
+
+Figure 11.
+
+a) DPSIR is a causal framework used to describe the interactions between society and the environment (United Nations, 2016). b) HELCOM’s DAPSIM framework (HELCOM 2025b).
+
+21
+
+Figure 12.
+
+Generalized data flows in HELCOM pollution load compilation process.
+
+24
+
+Figure 13.
+
+HELCOM eutrophication assessment tool workflow.
+
+25
+
+Figure 14.
+
+HELCOM eutrophication assessment tool workflow in Galaxyplatform.
+
+25
+
+Figure 15.
+
+Visualization of final outputs of the eutrophication assessment tool workflow applied for the Baltic Sea (HELCOM 2023).
+
+26
+
+Figure 16.
+
+Daugava river catchment area.
+
+27
+
+Figure 17.
+
+Estimate of the concentration of particulate organic carbon in the upper water column averaged for July 2023 within the North Sea-Baltic Sea region from Hieronymi et al. [2026]. Contains modified Copernicus Sentinel-3 OLCI data [2023].
+
+29
+
+Figure 18.
+
+Merging of satellite data from Hieronymi et al. (2026) with in-situ measurements of remote-sensing reflectance. The symbols show the locations of the measurements from various measurement programmes.
+
+31
+
+Figure 19.
+
+Workflow for Optical Water Type classification of remote-sensing reflectance from diverse sources in the GALAXY environment. The results would allow feedback on data input quality, but this step is outside the workflow at GALAXY.  https://aqua.usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fecology%2Faquainfra_ogc_api_processes%2Faquainfra_ogc_api_processes%2F0.2.0&version=latest
+
+33
+
+Figure 20.
+
+Images of the Oslofjord in Southern Norway in the eastern North Sea with Glomma River landscape (top), the catchment area of the Oslofjord (bottom, left), marine monitoring time-series stations indicated with red and grey points (bottom, middle) and the stretch of route where the FerryBox data is collected between Kiel and Oslo (bottom, right).
+
+34
+
+Figure 21.
+
+Schematic workflow for calculating river fluxes and Marine-river chemistry trends based on either river fluxes of marine data.
+
+36
+
+Figure 22.
+
+Global workflow of FerryBox (FB) and River sensors in the Oslofjord for analyses of spatial and temporal variation before, during and after a storm event.
+
+38
+
+Figure 23.
+
+Map location, boundaries and topography of the Tordera catchment.
+
+39
+
+Figure 24.
+
+High variability in water quantity and quality patterns. Long dry periods and short flash floods.
+
+40
+
+Figure 25.
+
+Global workflow of coupled inland-marine model.
+
+41
+
+Figure 26.
+
+Detailed workflow of the marine component.
+
+42
+
+Figure 27.
+
+Simulated groundwater salinity distribution in the Maltese aquifer system, showing seawater intrusion and the freshwater–saltwater interface.
+
+43
+
+Figure 28.
+
+Simulated hydraulic head distribution in the Maltese aquifer system, illustrating groundwater flow patterns and gradients towards the coast.
+
+43
+
+Figure 29.
+
+Detailed workflow of the groundwater (SEAWAT) model.
+
+45
+
+Figure 30.
+
+Submarine groundwater discharge along the Maltese coastline with selected coastal cells used to extract fluxes for input to the MITgcm model.
+
+46
+
+Figure 31.
+
+The principle of ensemble outlier detection and removal of species records obtained from open-access data repositories, such as the Global Biodiversity Information Facility (GBIF) (Basooma et al. 2025).
+
+49
+
+Figure 32.
+
+Workflow in the Galaxy Platform detailing the acquisition and merging of multiple data sources, the extraction of environmental predictors, and ensemble outlier detection and removal (https://aqua.usegalaxy.eu/published/workflow?id=22056517c2390320)
+
+50
+
+Figure 33.
+
+Demonstration of workflow upscaling through transferability to the Bothnian Bay. The bar plot shows seasonal Mann–Kendall trend results (Tau values, Y-axis) for Secchi depth across HELCOM subbasins (X-axis), alongside corresponding spatial visualisations of significant trends derived from the workflow intermediate outputs.
+
+51
+
+Figure 34.
+
+Demonstration of workflow transferability to the Gulf of Finland, showing input monitoring stations and HELCOM spatial regions used for aggregation and analysis of water quality trends.
+
+52
+
+Figure 35.
+
+The results of the two C
+
+ORINE
+
+ tools from the Vantaanjoki drainage basin (area in ha).
+
+54
+
+Figure 36.
+
+Figure A to the left exemplifies the generated assessment area and assessment grid. Figure B visualizes various types of sample data used in the analysis.
+
+58
+
+Figure 37.
+
+Availability of data required for the assessment of effectiveness of measures to reduce nutrient input to the Baltic Sea and their sufficiency to achieve BSAP goals in the RBMP for Latvian part of Daugava River.
+
+60
+
+Figure 38.
+
+Specleanr package archived on GitHub.
+
+78
+
+Executive Summary
+
+ 
+
+[
+
+In the proposal, the corresponding task is formulated as: “Task 5.3 Upscaling to pan-European level [Task leader: SYKE; Other contributors: AAU, HELCOM, NIVA, UTARTU, LIAE, HSBO, FVB-IGB, CREAF, BOKU] (PMs: 30,5). Duration: M30-M48. Identify and consolidate the lessons learned from the regional use cases. Interact with the userbase outside the consortium and guide them in the use of the platform and the developed services. Formulate a plan/roadmap for upscaling the use of the platform and services into pan-European level.”]
+
+The AquaINFRA project addresses the fragmentation and challenges associated with marine and freshwater ecosystem data by promoting open and FAIR data practices. It focuses on four case study regions, including the Baltic Sea, North Sea, Mediterranean Sea, and Pan-European, catering to diverse research needs. AquaINFRA aims to establish a strong connection with the European Open Science Cloud (EOSC) through its AquaINFRA Interaction Platform (AIP) and Data Discovery and Access Service (DDAS), providing seamless access to resources and services. 
+
+Summary of the findings presented in this report.
+
+Introduction
+
+ 
+
+The common framework of the AquaINFRA Use Cases (UCs) is outlined in deliverable D5.1. 
+
+(ref)
+
+. AquaINFRA project focuses on four distinct Use Case regions: the Baltic Sea, North Sea, Mediterranean Sea, and Pan-European. As an important common feature, all selected Use Cases in these regions encompass a catchment-estuary-coast-sea continuum, but vary significantly in terms of geographic scales, climatic and geological conditions, as well as land use and socio-economic settings. Consequently, the selected Use Case regions provide essential contexts for the development of research questions and user stories on a wide scale. 
+
+Additionally, AquaINFRA seeks to establish a strong connection with the European Open Science Cloud (EOSC), utilising the AquaINFRA Interaction Platform (AIP) and Data Discovery and Access 
+
+Service (DDAS) as a gateway for research communities in the aquatic realm to interact with EOSC. Integration with EOSC ensures that AquaINFRA aligns with the broader European framework for open science and enables seamless access to a wider range of resources and services. While each case study addresses unique objectives and specific research questions, they share common needs and requirements within the case study regions and beyond. These needs and requirements 
+
+were
+
+ initially probed at the general level from the knowledge of the project partners and stakeholders in the kick-off meeting of the project through the lens of data access and search and are presented in Deliverable 3.1.  
+
+To address aquatic data challenges, the project continues to develop and test interoperable workflows, data access solutions, and reusable analytical services across the selected use case regions. 
+
+By providing access to the infrastructure's data and services, AquaINFRA enhances collaboration and knowledge sharing, ultimately contributing to the advancement of marine and freshwater ecosystem research within the EOSC framework.
+
+Outline of the content of this report. [TBD]
+
+AquaINFRA Use Cases
+
+Change of water optical properties in the Daugava River and the Gulf of Riga
+
+General characteristics
+
+The Daugava River basin (87 900 km2) drains a transboundary catchment spanning Russia, Belarus, Latvia, Lithuania and Estonia, discharging into the Gulf of Riga in the eastern Baltic Sea (Fig.
+
+1
+
+). Originating at about 220 m above sea level in Russia, the river flows 1 020 km to the sea, with an average longitudinal slope of 0.22 m km
+
+-
+
+¹.
+
+         
+
+ 
+
+Daugava River basin with major land cover classes and regional context within the Baltic Sea catchment in smaller panel
+
+.
+
+As the largest freshwater source to the Gulf of Riga, the Daugava represents a major pathway for nutrients and dissolved organic matter, including dissolved organic carbon, and thus plays a key role in shaping the ecological and optical conditions of coastal waters. Land cover in the catchment is dominated by forest (67%), followed by agriculture (26%) and urban areas (7%) (HELCOM 2025). 
+
+The Gulf of Riga is a shallow, semi-enclosed subbasin of the Baltic Sea with limited water exchange, which increases its sensitivity to riverine inputs. Water transparency, commonly measured using the Secchi disk, has been monitored in the Gulf for several decades, forming one of the longest continuous optical water quality records in the Baltic Sea region.
+
+ 
+
+Transparency is generally lower in coastal areas and higher offshore. Long-term satellite data indicate a decline in Secchi depth and brownification of water colour in the Gulf 
+
+of 
+
+Riga, especially in the eastern coastal waters (Aigars et al. 2024).
+
+ 
+
+The research question
+
+This use case explores how long-term, harmonised environmental observations can be used to detect systematic ecosystem changes using the Daugava River–Gulf of Riga system as a representative land-sea continuum example. This use case is structured around a set of logically linked research questions examining interactions between terrestrial, freshwater, and marine ecosystems. The aim is to assess whether the observed decrease in water transparency in the Gulf of Riga is also evident in long-term in situ observations and identify the main drivers of these changes (See Text box 1).
+
+Text box 1
+
+The list of the Research Questions formulated for the AquaINFRA use case
+
+“Change of water optical properties in the Daugava River and the Gulf of Riga”
+
+•
+
+Do the optical properties in the Gulf of Riga water change in the long term? 
+
+•
+
+What are the explanatory components contributing to the change in water optical properties?  
+
+•
+
+Are there any indications of change in the riverine loads and/or concentrations of these components in rivers discharging into the Gulf of Riga? 
+
+•
+
+Which activities and pressures (e.g., land-use, climate) most probably affect the changes in the water optical properties?
+
+Text box 1
+
+The list of the Research Questions formulated for the AquaINFRA use case
+
+“Change of water optical properties in the Daugava River and the Gulf of Riga”
+
+•
+
+Do the optical properties in the Gulf of Riga water change in the long term? 
+
+•
+
+What are the explanatory components contributing to the change in water optical properties?  
+
+•
+
+Are there any indications of change in the riverine loads and/or concentrations of these components in rivers discharging into the Gulf of Riga? 
+
+•
+
+Which activities and pressures (e.g., land-use, climate) most probably affect the changes in the water optical properties?
+
+The workflow
+
+A computational workflow implemented on the Galaxy platform was developed to address the 
+
+first research question
+
+: “Do the optical properties of the Gulf of Riga change over the long term?”.  This question is examined using long-term in situ measurements of water transparency (Konkol et al., 2025). The analysis is documented step-by-step in Data-to-Knowledge Package that links data and computational code to support reproducibility and integration (Labuce et al., 2025). The workflow consists of consecutive steps, each accepting URLs as inputs and producing outputs that are reused as inputs in subsequent steps (Fig. 2).  
+
+         
+
+Spatiotemporal trend detection workflow in the Galaxy platform, illustrating the main processing stages from input data through preprocessing and analysis to visualisation. The workflow is available here for closer inspection: 
+
+https://aqua.usegalaxy.eu/published/workflow?id=bee43845245a3343
+
+  
+
+This workflow integrates in situ Secchi depth measurements (georeferenced observations) from the Latvian national monitoring program, accessed via the 
+
+AquaINFRA data discovery and access service
+
+, with 
+
+HELCOM Level 4 subbasin spatial units
+
+. Following data ingestion, the analysis proceeds through a structured pipeline of data preprocessing, trend analysis, and visualisation (Fig. 2), designed to identify spatial and temporal patterns in environmental variables, in this use case – water transparency. Georeferenced observations are assigned to spatial units based on polygon boundaries and aggregated over time (e.g., monthly or yearly) to generate consistent time series. Within each spatial unit, average values are calculated and missing data are interpolated to ensure continuity. Trend detection is performed using the Mann–Kendall test to identify statistically significant changes across regions (Fig. 3). The results are visualised through interactive maps for spatial exploration (Fig. 3) and graphical summary that highlight statistical results (Fig. 4). 
+
+          
+
+Example of an interactive map output showing spatial distribution of in situ Secchi depth observations across HELCOM subbasins, generated within the workflow. The attribute table illustrates an example of the underlying data
+
+.
+
+Besides the final outputs each intermediate result generated by this workflow 
+
+is
+
+ saved and is accessible for export as CSV files via a link from Galaxy working History elements. This approach enables inspection, reuse, and integration for all – final or intermediate results - into alternative analytical contexts. Thus, the workflow is adaptable to other variables, regions, and temporal resolutions, enabling analyses at monthly, sub-seasonal, or user-defined temporal scales (see Section 
+
+4
+
+ for examples).
+
+Overall, the workflow results provide a positive answer to the research question: water optical properties, represented by Secchi depth, have decreased during summer and autumn in parts of the Gulf of Riga over the analysed period (Fig. 4). The most pronounced decline in summer is observed in spatial units LAT-003 and LAT-004, corresponding to the western and eastern coastal areas. In autumn, a significant decrease is evident in transitional waters in the southern part of the Gulf of Riga (LAT-005), directly influenced by the Daugava River plume. In contrast, no significant long-term trend in Secchi depth has been detected in the open waters of the Gulf of Riga (SEA-011) since the 1970s.
+
+However, the results should be interpreted in the context of data availability and defined thresholds for permissible missing value amount and required minimum number of years in a time series. Variations in these parameters may influence the detected trends. 
+
+           
+
+Seasonal Mann–Kendall trend results for Secchi depth across analysed HELCOM L4 subbasins (identifiers on X-axis), showing the direction and magnitude of trends as Tau values (values on Y-axis); translucent bars indicate statistically insignificant results
+
+.
+
+Vantaanjoki River and Gulf of Finland: analysing land–river–sea connections in a small urban catchment
+
+ 
+
+General characteristics
+
+The Vantaanjoki River flows into the Gulf of Finland in Helsinki. The river basin covers an area of 1680 km2 and represents a catchment with diverse land use. Forest and semi-natural areas count 57% of the catchment, while agriculture occupies 22% of the land (Finnish Environment Institute, 2018).  The river is highly important for recreation
+
+,
+
+ but is also under considerable environmental pressure due 
+
+to a large population living within the catchment and in the surrounding areas of the Helsinki metropolitan region. Urban and built areas with artificial areas cover presently over 19% of the land. Long-term monitoring data illustrate significant changes in land use, river water quality and riverine material loads from land to the coastal area (Piniewski et al. 2021). During the snowmelt season or flash floods, the turbid water of the Vantaanjoki River can spread far into the Gulf of Finland, visibly changing the colour of the coastal surface waters. The spatial spreading of riverine water into the coastal sea is regularly verified with processed Earth Observation (EO) imagery at Tarkka (
+
+https://tarkka.syke.fi/eo-tarkka?ver=0&lang=en
+
+) and supported by in-situ FerryBox observations
+
+ (
+
+https://itameri.fi/en/the-baltic-sea-now/automatic-observations-from-ships/current-observations/
+
+)
+
+. FerryBox systems are automated flow-through measurement systems installed on commercial vessels, producing georeferenced transect data on water-quality variables such as temperature, salinity, chlorophyll
+
+ 
+
+a
+
+ fluorescence, turbidity and coloured dissolved organic matter (CDOM). These observations provide in-situ reference data for interpreting and validating satellite-based observations (Petersen et al., 2008). In the Helsinki sea area, relevant Finnish FerryBox observations are produced by Syke’s Alg@line system on regular ferry routes, including Helsinki–Stockholm and Helsinki–Travemünde, supporting the analysis of coastal and offshore water-quality variation (e.g., Seppälä et al. 2007, Elovaara et al. 2022).
+
+The research question(s)
+
+Despite the availability of these datasets, there is currently a lack of research tools that integrate long-term catchment and river data with coastal sea observations, such as EO products, the results of coastal water sampling, and FerryBox measurements.  One aim of the workflow development is therefore to create tools that combine catchment and river datasets. In addition, there is a strong interest in analysing the source-to-sea continuum by linking information from catchment areas, rivers, and marine waters from the coastal zone towards the open sea. Thus, the workflow developed in 
+
+the 
+
+Vantaanjoki Use Case aims to address three research questions (see Text box 2).
+
+Text box 2
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Vantaanjoki River and Gulf of Finland: analysing land–river–sea connections in a small northern catchment”
+
+How have carbon loads from rivers to the sea varied over time?
+
+Is there a relationship between land use changes and river water quality or riverine material fluxes?
+
+How do coastal water quality and phytoplankton variables change from nearshore areas
+
+?
+
+Text box 2
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Vantaanjoki River and Gulf of Finland: analysing land–river–sea connections in a small northern catchment”
+
+How have carbon loads from rivers to the sea varied over time?
+
+Is there a relationship between land use changes and river water quality or riverine material fluxes?
+
+How do coastal water quality and phytoplankton variables change from nearshore areas
+
+?
+
+The workflow
+
+The workflow is designed to explore potential long-term relationships between land use change and river water quality. It connects the land–river–coast continuum and has been developed for the Vantaanjoki River and the Gulf of Finland within the AquaINFRA project.
+
+Workflow inputs include:
+
+time-series of river water quality concentrations (based on sensor data as well as water chemistry from water samples) 
+
+river discharge
+
+CORINE land-use datasets (2000-2018) for the Vantaanjoki basin, 
+
+EO data from the Gulf of Finland
+
+FerryBox transect data from the Gulf of Finland, including chlorophyll
+
+ 
+
+a
+
+, turbidity, and CDOM.
+
+           
+
+Workflow for the Vantaanjoki River and Gulf of Finland use case in the Galaxy platform, showing the main processing stages from input data through processing to visualisation. The workflow combines land-use, river, EO and FerryBox data to analyse land–river–sea connections
+
+.
+
+ Link to the workflow: https://aqua.usegalaxy.eu/u/sampsa_syke/w/workflow-syke-vantaa 
+
+The workflow (Fig. 5 and Fig. 6) first enables the discovery of relevant datasets, followed by filtering by geographic area and time period. The datasets are then harmonised (units, timestamps, coordinate systems) and quality controlled. The processing stage consists of three interconnected components. First, the workflow computes riverine loads by combining concentrations with discharge and aggregates them to monthly/annual values. Second, it quantifies land-use change for the basin and its sub-catchments over the study period, preparing metrics that can explain river load variability. Also, trend analyses are performed for riverine loads and land use changes to show the significance of changes. Third, it analyses coast-to-offshore gradients along FerryBox lines, comparing optical water variables to river export signals. 
+
+            
+
+Overall 
+
+chart
+
+ of 
+
+the 
+
+Vantaa
+
+n
+
+joki 
+
+River and Gulf of Finland (GoF) 
+
+workflow
+
+.
+
+The workflow produces the following results: 
+
+comparison charts linking land use changes to riverine loads and coastal responses (Fig. 7).
+
+time-series plots presenting trends and event dynamics. Another example is given in Figure 8, w
+
+h
+
+ere a combination of Ferry
+
+B
+
+ox (coastal data) and automated river station data (inland water) is presented. Figure 9 shows the satellite-based values from the same area. The values follow the same dynamics, with high values in the spring and fall. During July-August cyanobacteria blooms increase the turbidity while the discharge is low. The satellite data show higher values in spring and fall when compared to the Ferry
+
+B
+
+ox data. Satellites observe the surface layer of water while the water intake of Ferry
+
+B
+
+ox is at 
+
+a 
+
+5 m depth. In high discharge situations river water usually forms a layer on top of the marine water thus causing a vertical turbidity gradient.
+
+           
+
+Result
+
+ plots
+
+ of the 
+
+Vantaanjoki River and
+
+ Gulf of Finland
+
+ 
+
+workflow
+
+.
+
+ 
+
+The developed workflow tools produce visual timeserie
+
+s of 
+
+observed and modelled 
+
+data 
+
+as well as regression linear regression lines of riverine an
+
+d CORINE data.
+
+ 
+
+             
+
+Combination of 
+
+marine 
+
+Ferry
+
+B
+
+ox and automated river station data. The map shows the locations of center points of the 
+
+FerryBox data 
+
+aggregation areas.
+
+ 
+
+ 
+
+River discharge (Q) and 
+
+s
+
+atellite
+
+ (EO)
+
+ turbidity estimates as a function of time from the same 
+
+three 
+
+Gulf of Finland
+
+ 
+
+locations as Ferry
+
+B
+
+ox 
+
+turbidity 
+
+data (Fig
+
+.8
+
+)
+
+.
+
+All results can be exported for reporting and policy assessment. The workflow also preserves full data provenance, ensuring transparency and enabling reproducibility and reuse.
+
+The Baltic Sea effectiveness of measures Use Case
+
+General characteristics
+
+ 
+
+HELCOM, the Baltic Marine Environment Protection Commission, is an intergovernmental body established to safeguard the Baltic Sea from all sources of pollution and to promote regional environmental cooperation. It brings together the nine Baltic Sea countries and the European Union to implement a variety of tasks including developing common environmental objectives, coordinating monitoring, and supporting the sustainable use of marine resources. HELCOM also serves as a scientific and policy platform, translating environmental data and expert knowledge into regional strategies for a healthier Baltic Sea.
+
+To guide HELCOM’s work on land-based pollution, it adopted a source-to-sea approach. The source-to-sea approach centres the land-sea interaction with the coastal and open sea serving as the recipient of environmental pollutants transported from land-based sources. The approach includes three primary pathways of transportation – water, air and direct input (Fig. 10a). Water transportation is often the dominant pathway, with pollutants transported through the catchment’s freshwater system, i.e., rivers, lakes, aquifers etc. The approach can be applied at a variety of scales from small coastal 
+
+catchments up to a global level. HELCOM applies
+
+ a
+
+ source-to-sea system at a regional scale, covering the entire Baltic Sea catchment area (Fig. 10b).
+
+a.
+
+b.
+
+a.
+
+b.
+
+a) Illustration of source-to-sea system (Mathews et al., 2019) for pollution data management in HELCOM framework (sources, pathways, recipient). b) Map of Baltic Sea catchment 
+
+colour
+
+ coded to HEL
+
+CO
+
+M PLC sub-basin (HELCOM, 2021)
+
+.
+
+An analysis of the pressures and impacts on the Baltic Sea marine ecosystem (HELCOM, 2023) determined that the input of nutrients and hazardous substances have the highest impact on the environment. The largest sources of these pressures are land-based activities. In the Baltic Sea catchment, rivers are the dominant pathway transporting nutrients from land to sea (HELCOM, 2025a), where they are accumulating due to the semi-enclosed character of the sea basin. Transportation of hazardous substances is more varied based on the nature and use of the substance. For example, volatile compounds are primarily transported by air, and specific contaminants used in marine industries are released directly to the marine environment from sea-based activities. 
+
+However, the source-to-sea approach isn’t just environmental monitoring. It is also environmental management. The effort of environmental monitoring and status assessments provides the basis for more effective environmental management. They provide the scientific evidence needed for efficient allocation of measures to reduce pressures and impacts on the environment and, under certain conditions, generate a wide variety of data on the cost and effectiveness of both individual measures and broader programs. 
+
+Within HELCOM, the source-to-sea approach is applied alongside a DPSIR-family framework (European Environment Agency, 1999) to promote a holistic management approach
+
+.
+
+ 
+
+This framework connects
+
+ the full water continuum (source-to-sea) 
+
+with the broader
+
+ socio-ecological system 
+
+represented by the 
+
+DPSIR
+
+ concept
+
+ 
+
+(
+
+Fig. 
+
+11
+
+a). DPSIR framework aims to simplify complex environmental systems by 
+
+clarifying chains of cause and effect 
+
+between human activities and environmental changes
+
+. 
+
+Over time, several
+
+ related frameworks
+
+ have evolved from DPSIR
+
+, 
+
+including
+
+ HELCOM
+
+'s
+
+ 
+
+Driver-Activity-Pressure-State-Impact-Measure
+
+ (
+
+DAPSIM
+
+)
+
+ framework (HELCOM, 2025b) (Fig. 
+
+11
+
+b). 
+
+The DAPSIM framework organises the socio-ecological system into interconnected components that describe how human activities influence the environment and how management responses are applied. 
+
+DAPSIM divides a socio-ecological system into Drivers, Activities, Pressures, States, Impacts, and Measures. Some components of DAPSIM are well developed within HELOCM, with systematic monitoring, established indicators, and linked by relatively strong quantitative understandings of cause and effect i.e., Activities, Pressures, and States. Other components are either more qualitatively understood, i.e., Measures, require prohibitively expensive monitoring to regularly track, i.e., Impact, or are largely a black box, i.e., Drivers. 
+
+b.
+
+a.
+
+b.
+
+a.
+
+a) DPSIR is a causal framework used to describe the interactions between society and the environment (United Nations, 2016). b) HELCOM’s DAPSIM framework (HELCOM 2025b)
+
+.
+
+The HELCOM use-case seeks to improve the access to data and metadata used within HELCOM’s source-to-sea approach across all the DAPSIM components (excl. Drivers), and wherever possible demonstrate the increased value of that openness. Openness is defined through the FAIR principles: Findable, Accessible, Interoperable, Reusable (Wilkinson et al., 2016). Data becomes Findable when it’s accompanied by rich metadata and persistent identifiers; Accessible when retrieval is possible through open, standardized protocols; Interoperable when common formats, vocabularies, and standards are used to support machine
+
+‑
+
+to
+
+‑
+
+machine exchange; and Reusable when licensing, provenance, and detailed documentation allow others to confidently build on the work.
+
+The research questions
+
+However, as already noted, our understanding and quantification of each DAPSIM component varies significantly. Additionally, the data relevant to each component will have a distinct set of FAIR characteristics. Advancing openness, i.e., FAIRness, of these data will require different approaches, different expectations of progress, and different research questions. As a result, the HELCOM use-case is divided into two parts. 
+
+The first part targets highly quantified data and assessments covering Activities, Pressures, and States. HELCOM has worked on improving the data quality of these components of the source-to-sea approach from its inception. The first Pollution Load Compilation (PLC) was published in 1987, and the ninth 
+
+is 
+
+currently underway. During this time both data quality and data openness have increased. However, a combination of the significant impact assessment results can have on national policy and the highly technical nature of data processing, FAIR principles have not been a focus of PLC work. However, the AquaINFRA project provides an opportunity to change this and to demonstrate to HELCOM and the broader community the increased value FAIR principles bring to these data. This work targets fully FAIR data and transparent application of the PLC assessment within the AquaINFRA infrastructure.
+
+The second part of the HELCOM use-case focuses on data relevant to Impact and Measures. HELCOM has made the identification and application of cost-effective environmental measures a priority and has consistently applied a portion of its research capacity toward that goal. Additionally, EU Member States (8 of the 9 HELCOM countries) are obliged by various EU Directives to assess potential environmental measures in ways that suggest these data exist. However, despite broad expectations that data to support this goal existed in the region, HELCOM has made limited progress in bringing it to a regional level. To advance the FAIRness of these data and 
+
+the 
+
+regional environmental management of the Baltic Sea, AquaINFRA principles are being applied to a less technical goal. Namely understanding the data environments and data flows of environmental measures data relevant to the source-to-sea approach within the project partner countries
+
+,
+
+ Finland and Latvia
+
+.
+
+Text box 3
+
+The Research Questions formulated for the AquaINFRA use case 
+
+“Baltic Sea effectiveness of measures targeting nutrient inputs”
+
+Part 1
+
+What are the expected water quality changes in a river/sub-basin in a certain period?
+
+What are the projected changes in the state of the Baltic Sea marine environment?
+
+What affects observed environmental trends?
+
+Part 2
+
+What environmental measures data are and are not being produced?
+
+What institutions hold these various data?
+
+What are the barriers to applying FAIR principles to these data and how those barriers might be overcome?
+
+What is the environmental effect of measures pla
+
+n
+
+ned under WFD, MSFD?
+
+What are estimated costs of foreseen environmental measures?
+
+Text box 3
+
+The Research Questions formulated for the AquaINFRA use case 
+
+“Baltic Sea effectiveness of measures targeting nutrient inputs”
+
+Part 1
+
+What are the expected water quality changes in a river/sub-basin in a certain period?
+
+What are the projected changes in the state of the Baltic Sea marine environment?
+
+What affects observed environmental trends?
+
+Part 2
+
+What environmental measures data are and are not being produced?
+
+What institutions hold these various data?
+
+What are the barriers to applying FAIR principles to these data and how those barriers might be overcome?
+
+What is the environmental effect of measures pla
+
+n
+
+ned under WFD, MSFD?
+
+What are estimated costs of foreseen environmental measures?
+
+The workflow
+
+ 
+
+Part 1 of the use-case demonstrates 
+
+how 
+
+transparency and accessibility of assessment data on nutrient inputs to the Baltic Sea 
+
+can be improved 
+
+at 
+
+the 
+
+regional scale
+
+.
+
+ 
+
+T
+
+he use-case 
+
+also 
+
+illustrates the practical application of the source -to-sea approach by linking nutrient input data from land-based sources with assessment of eutrophication status in the marine environment. 
+
+The use-case includes both FAIR
+
+ness
+
+ 
+
+of
+
+ HELCOM Pollution Load Compilation (PLC) data flows (Fig
+
+.12
+
+) and
+
+ a 
+
+transparent implementation of the HELCOM assessment approach. 
+
+In accordance with the HELCOM Monitoring and Assessment Strategy all data reported to HELCOM by the Contracting Parties or produced in the frame of HELCOM projects is publicly available. However, access to working materials or datasets 
+
+that
+
+ are not verified or approved by national data providers or respective HELCOM entities can be restricted. All public datasets are supplemented by metadata produced in line with INSPIRE Directive requirements and organized in the HELCOM Metadata Catalogue.
+
+Generalized data flows in HELCOM pollution load compilation process.
+
+HELCOM Eutrophication Assessment Tool (HEAT), developed by the HELCOM expert community for the assessment of 
+
+the 
+
+eutrophication state of the marine environment, was modified and published as part of the Baltic Sea study case. Inclusion of this assessment tool in the case 
+
+study 
+
+illustrates continuity of the aquatic continuum connecting monitoring and assessment data on input of nutrients from land-based sources with the status of the marine environment. 
+
+The 
+
+HEAT tool is published in the AquaINFRA research environment (Galaxy platform). The tool is modified for application in unrestricted geographical areas and for various configurations of applied indicators. The tool’s workflow was split into stages ensuring data transparency and enabling quality control at each stage (Fig
+
+.
+
+ 
+
+13
+
+ and 
+
+14
+
+).
+
+HELCOM eutrophication assessment tool workflow.
+
+HELCOM eutrophication 
+
+assessment tool workflow in 
+
+the 
+
+Galaxy platform
+
+.
+
+An assessment of aggregated eutrophication status is the final product of the workflow. The status is computed based on ecological quality ratios averaged for the assessment period and attributed to assessment units. The assessment result is presented in the indicative form illustrating good, moderate, poor, and bad eutrophication status (Fig. 
+
+1
+
+5). 
+
+The workflow o
+
+utput is provided as a CSV file which can be related to spatial data delineating assessment units and visualized as a map. This visualization procedure is distinguished as a separate sixth stage in the workflow. Additionally, data confidence can be assessed based on the assessment grid generated at early stages of the assessment workflow.
+
+Visualization of final outputs of the eutrophication assessment tool workflow applied for the Baltic Sea (HELCOM 2023)
+
+.
+
+Part 2 of the use-case did not expand beyond an explorative/qualitative analysis phase. Numerous barriers to the production and sharing of various types of measures data were identified.
+
+The Baltic Sea use-case is intended to strengthen one of the key elements of the DIPSR framework, monitoring the effectiveness of the response to identified impacts. In other words, the case 
+
+study 
+
+investigates the availability of data on environmental social and economic effects of measures undertaken to reduce pressures as well as their sufficiency to achieve respective political goals. Two specific cases - Finland and Latvia - are considered to reveal data on
+
+ the
+
+ effects of measures to reduce 
+
+the 
+
+input of nutrients into the Baltic Sea marine environment and 
+
+analyse
+
+ them in connection with collected monitoring and assessment data.
+
+Daugava is one of the largest transboundary rivers in the Baltic Sea. Its water flow largely controls water quality and consequently the environmental state of the Gulf of Riga. The latest assessment (HELCOM 2023) revealed poor eutrophication status of the Gulf of Riga except for a minor area in the norther part of the sub-basin (Fig
+
+.
+
+ 
+
+1
+
+5). The area of the Daugava River’s drainage basin is 87,900 km
+
+2
+
+ and it is 1020 km long (Fig. 
+
+1
+
+6). The Daugava River begins in western Russia, in the Valdai Hills, and crosses the territories of Belarus and Latvia where it flows into the Gulf of Riga. Thirty-eight percent of the catchment belongs to Belarus, thirty-one percent to Russia and twenty-eight percent to Latvia. The rest of the Daugava catchment belongs to Lithuania and Estonia.
+
+Daugava 
+
+R
+
+iver catchment area.
+
+Data on total nutrient input to the Gulf of Riga from 
+
+the 
+
+Daugava River is available starting from 1995. Significant reduction in nitrogen input was observed at the end of 90s, when the target value for this nutrient 
+
+was
+
+ reached, and 
+
+has
+
+ remain
+
+ed
+
+ below the target value since then. There was no reduction of phosphorus input observed, and its input by the river exceeds target value. All that clearly demonstrates that urgent measures are to be taken to reduce 
+
+the 
+
+input of nutrients, especially phosphorus, to the Gulf of Riga by Daugava River. It’s obvious that such measures should be applied throughout th
+
+e
+
+ whole river basin. However, since Latvia is located at the river mouth measure at its territory theoretically have the highest effect, due to the lowest retention. Apportionment for nutrient sources 
+
+in 
+
+the Latvian territory allows to identify priority economic sectors where such measures are to be allocated. Domination of diffuse sources indicates that the focus should be on agriculture, scattered dwellings, and overall measures reducing losses of nutrients from diffuse sources. 
+
+Measures to reduce pressures on the aquatic environment, including nutrient load, are stipulated by various policies such as 
+
+the EU Marine Strategy Framework Directive (
+
+MSFD
+
+)
+
+, 
+
+the Water Framework Directive (
+
+WFD
+
+)
+
+, 
+
+the Urban Waste Water Treatment Directive (
+
+WWTPD
+
+)
+
+, and others. However, river basin management plans 
+
+(RBMPs) 
+
+are considered one of the documents where most of such measures are compiled. 
+
+The 
+
+River Basin Management Plan for 
+
+the 
+
+Latvian part of 
+
+the 
+
+Daugava River was adopted in 2021 and considers the period until 2027. The Plan is publicly available in national language and published 
+
+on the web page of national competent authority in 
+
+PDF
+
+ format. In general, the plan contains annexes with 
+
+a 
+
+detailed description of specific measures required to achieve good environmental status of water bodies in the Daugava River drainage area. However, these specific measures are designed for environmental targets set under the WFD and do not consider requirements for the reduction of nutrient load on the recipient body, the Gulf of Riga, set under MSFD or 
+
+the 
+
+Helsinki Convention. Nevertheless, revealed data can be utilized to assess expected reduction of nutrient input to the Gulf of Riga. In combination with time-series of nutrient input observations, the data demonstrate anticipated progress towards respective environmental targets as well as gaps needed to be bridged to achieve these targets, which is described in Chapter 3.1.2.
+
+The North Sea-Baltic Sea region from a satellite perspective
+
+General characteristics
+
+Satellites enable large-scale continuous observation of the Earth's surface, even in the most remote areas. From images of cloud-free water surfaces, information about water constituents and thus water quality in the upper water layer can be obtained from colour nuances characterised by spectral (remote sensing) reflectance.  
+
+Water bodies are optically very diverse. From land to ocean, there are gradients from fresh water to salt water, there are land-based inputs of dissolved organic matter into lakes and rivers and then into the sea, and there is sediment transport or resuspension due to tidal action. In addition, phytoplankton forms the basis for primary production and life in the water. Different types of algae have different functions in the aquatic ecosystem; some species can have harmful effects on the environment or human activities when they bloom. Phytoplankton occurs in concentrations over several orders of magnitude (based on chlorophyll 
+
+a 
+
+concentration in mg/m³), with the highest concentrations occurring in inland waters and the lowest concentrations in some particularly nutrient-poor ocean areas. The great natural optical variability of water bodies poses major challenges for satellite remote sensing and the quality of the derived water quality products, as the combinations of water constituents and their optical effects create complex ambiguities. 
+
+Images from the Ocean and Land Colour Instrument (OLCI) on Sentinel-3, part of the European Earth observation programme Copernicus, are particularly well suited for global monitoring of water bodies (and land). The satellite image width is 1270 km with a spatial resolution of approximately 300 m and a spectral resolution of 21 bands in the visible and near-infrared spectral range. A constellation of two satellites (currently Sentinel-3A & B) allows daily observations to be made for many areas – provided that clouds do not prevent a clear view of the Earth's surface. The spatial resolution allows inland waters such as larger lakes and, in some cases, wide rivers to be observed – smaller-scale bodies of water can be observed with high-resolution satellite missions such as Sentinel-2 MSI (however, these flyovers are less frequent and provide less spectral information). 
+
+In the field of aquatic remote sensing, atmospheric correction of satellite data is particularly critical; atmospheric influences dominate the signal across the entire spectral range, in some cases by more 
+
+than 90%. The performance of algorithms for atmospheric correction and the subsequent retrieval of water constituents from water reflectance also depends on the optical properties of the water bodies. In order to provide regionally optimised water quality information, Copernicus Services offer various specific products, e.g. for the North Sea (as part of the North-West European Shelf Sea), the Baltic Sea, larger lakes or coastal waters.
+
+One algorithm that has become particularly well established for coastal waters and is used operationally in some applications is the C2RCC algorithm (Case-2 Regional CoastColour), which has recently been described in detail by Müller et al. (2026). Hereon is working on further developing this type of neural network-based ocean colour algorithm. The objectives are: 1) reliable water products for all natural water types, 2) characterisation of the uncertainties in the observation data, 3) detection of algae groups and inclusion of phytoplankton-specific properties in the estimation of water constituents, 4) further development of water products, e.g. with regard to dissolved and particulate carbon in water, and 5) achieving high connectivity for data reusability, e.g. for the use of specialised water algorithms.
+
+As part of AquaINFRA, a dataset was generated based on Sentinel-3 OLCI data for the entire North Sea-Baltic Sea region and processed using the new A4O-ONNS algorithm (Hieronymi et al., 2025). A description of the dataset, the background to the processing chain and an optical water type analysis were published in Hieronymi et al. (2026). Figure 17 shows an image from this with a new product for estimating particulate organic carbon (POC) in water averaged over the month of July in 2023. The article shows that the region exhibits the natural optical variability of water bodies. Nevertheless, other regions have specific characteristics such as different algal blooms, sun positions, cloud cycles and land-sea interactions.
+
+Estimate of the concentration of particulate organic carbon in the upper water column averaged for July 2023 within the North Sea-Baltic Sea region from Hieronymi et al. 
+
+(
+
+2026
+
+)
+
+. Contains modified Copernicus Sentinel-3 OLCI data [2023].
+
+The research questions
+
+Text box 4
+
+The research questions formulated for the AquaINFRA use case 
+
+“Overcoming fragmentation in water quality monitoring”
+
+How can we bring more consistency to the fragmentation of water quality monitoring and make the results more comparable?
+
+How can we make better use of satellite remote sensing to assess water quality, particularly for the transition from inland waters (lakes, rivers) via coastal areas into marginal seas and the ocean?
+
+How can we achieve global comparability and transferability of these remote sensing methods?
+
+How should remote sensing data be made available to ensure broad usability and further exploitation?
+
+How can we characterise carbon in water and document its land-sea fluxes?
+
+Where can one find in-situ measured reference values, and how is it possible to contextualise diverse measurement data?
+
+Text box 4
+
+The research questions formulated for the AquaINFRA use case 
+
+“Overcoming fragmentation in water quality monitoring”
+
+How can we bring more consistency to the fragmentation of water quality monitoring and make the results more comparable?
+
+How can we make better use of satellite remote sensing to assess water quality, particularly for the transition from inland waters (lakes, rivers) via coastal areas into marginal seas and the ocean?
+
+How can we achieve global comparability and transferability of these remote sensing methods?
+
+How should remote sensing data be made available to ensure broad usability and further exploitation?
+
+How can we characterise carbon in water and document its land-sea fluxes?
+
+Where can one find in-situ measured reference values, and how is it possible to contextualise diverse measurement data?
+
+In this use case, novel satellite data products specifically from the optically diverse North Sea–Baltic Sea region are analysed. Various in situ measurement data must be found to contextualise and validate the satellite data.
+
+The workflow
+
+The primary interface between satellite data and in-situ measured data is remote-sensing reflectance, Rrs. It describes the ratio of water-leaving radiance (backscattered in the water body) to downwelling irradiance at the sea surface. Rrs is the primary product of satellite data after atmospheric correction, for which there are a variety of approaches and methods (e.g. Hieronymi et al., 2023). In situ, Rrs can be determined in various ways using a wide range of sensors (e.g. Ruddick et al. 2019 ab, 2019b). Comparisons of measurement data with satellite retrievals can be used in the context of optical water type classification (OWT) to assess performance and application limits. The classification scheme developed by Bi and Hieronymi (2024) has proven to be efficient in this regard because it covers the entire natural optical variability and can be easily transferred between different band configurations (satellite missions). The method determines three spectral analysis parameters that describe the shape, magnitude and rotation of the reflectance spectrum. Ten water types are distinguished, which often have a clearly descriptive characteristic or indicate specific phytoplankton groups.
+
+In principle, finding in-situ data for comparison (in this case Rrs, but also for all other parameters) poses a problem. The data sources vary greatly, and the formats, measurement methods and data availability also differ. There is data from stationary autonomous platforms with rigorous quality checks, from autonomous measurement systems on ferries along their tracks, or from targeted measurement campaigns, in which case measurements are often only taken at specific points. Not all Rrs data is suitable for satellite product validation, partly due to significant time differences with the satellite images, but OWT analysis also allows feedback on data quality and provides indications of problematic spectra, e.g. due to clouds. Figure 18 provides an overview of all available Rrs measurement data collected in the North Sea-Baltic Sea region from June to September 2023, this corresponds to the Sentinel-3 OLCI dataset (Hieronymi et al., 2025). The colours in the background show the most common OWT with maximum membership over the period.  
+
+ 
+
+Merging of satellite data from Hieronymi et al. (2026) with in-situ measurements of remote-sensing reflectance. The symbols show the locations of the measurements from various measurement programmes.
+
+ 
+
+The fuzzy logic-based method for optical water type classification developed by Bi and Hieronymi (2024) is documented with training fundamentals (Bi et al., 2024) and freely available as Python code. The Python library was adapted and expanded for use in G
+
+alaxy
+
+ as part of AquaINFRA (Bi et al., 2026). Basically, the classification determines the three optical parameters from remote sensing reflectance and derives the class memberships from them; in addition, the class with the largest contribution (maximum membership) and the sum of all membership contributions are defined as a measure of classifiability (or overrepresentation).
+
+In the 
+
+Galaxy 
+
+AquaINFRA OGC (Open Geospatial Consortium) API (Application Programming Interface) Process OWT-classification, a link is specified as input from which the system can download the required data. After processing, a link is generated for downloading the results. The workflow is illustrated in Fig
+
+ure
+
+ 19. 
+
+During the development and use of the tool, it became apparent that complex pre-processing is usually necessary and that further analysis of the results should be presented in a standardised manner. By default, a text file is provided in which the wavelengths (bands) are listed in the first line, followed by remote-sensing reflectance, whereby various band configurations are possible. The default output corresponds to the input, consisting of a text file containing the OWT parameters. In-situ Rrs measurement data are often available in specific data formats and must be extracted and processed accordingly. In some cases, Rrs must first be determined, e.g. from water-leaving reflectance (rhow = pi*Rrs) or through more complex operations. The data is available in formats such as HDF 
+
+(HyperCP), NetCDF (WATERHYPERNET) or SeaBass (So-Rad), sometimes in different sub-configurations. Satellite data with atmosphere-corrected water surfaces (Level-2 single scenes, Level-3 mission merged data, Level-4 multi-mission merged data) are often available in NetCDF, with large differences between data sources.
+
+To make the 
+
+Galaxy 
+
+tool easier to use and more sustainable in the long term, we have created various input configurations as an integrated workflow in the GUI. Since all code modules are freely available, users can customise individual solutions if desired. In our workflow, you specify the type of input; input-specific reading routines ensure that the reflectances can be used.
+
+The classification results and some basic visualizations for easy interpretation are output as a ZIP file. These are either freely readable text files or, if the input is satellite image data, corresponding NetCDF containers, which are common for remote sensing data and can be read with the Sentinel Application Toolbox SNAP or in QGIS, for example. Corresponding metadata with background information is included.  
+
+The development primarily aims to achieve interoperability and comparability of satellite and measurement data at sea by contextualising and processing the different band configurations.
+
+ 
+
+Workflow for Optical Water Type classification of remote-sensing reflectance from diverse sources in the 
+
+G
+
+alaxy
+
+ 
+
+environment. The results would allow feedback on data input quality, but this step is outside the workflow at 
+
+G
+
+alaxy
+
+.
+
+  
+
+https://aqua.usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fecology%2Faquainfra_ogc_api_processes%2Faquainfra_ogc_api_processes%2F0.2.0&version=latest
+
+Land-Sea interactions and trend analysis in the Oslofjord coastal areas and the rivers in the catchment
+
+ 
+
+General characteristics
+
+The Oslofjord is situated in Southern Norway with narrow fjords in the north and direct connections to Skagerrak in the southern outer areas. It is an open and dynamic fjord system with complex topographical conditions dividing it into several smaller or larger basins as well as fjord areas. The circulation in the Oslofjord and Skagerrak is complex, with a high degree of exchange with water masses from the Atlantic Ocean (greater than 70% of the total water mass) and the relatively fresh North Sea and Baltic Sea, in addition to freshwater discharges into the region. The Norwegian Coastal 
+
+Current is formed in this region and flows northward along the Norwegian coastline up to the Barents Sea. Several large Norwegian rivers drain into the Oslofjord, of which the largest is the Glomma River which creates a large estuary on the eastern side. The outflow of Drammenselva is situated in the north and in the south-west Numedalslågen enters the fjord.
+
+The surface layer (0–30 m) is largely impacted by freshwater inflow (local and advected) with a mixture of inputs from the southern central parts of the North Sea and the Kattegat and, depending on wind conditions, varying amounts of water from the German Bight, which is the area between Denmark, Germany, and the Netherlands. It is typically stratified from early spring to late fall. Since the mid
+
+‑
+
+1990s, long-range nutrient transport into the Skagerrak has diminished, increasing the relative importance of local nutrient sources for maintaining ecosystem quality, particularly within fjords and sheltered coastal areas.
+
+ 
+
+Images of the Oslofjord in Southern Norway in the eastern North Sea with Glomma River landscape (top), the catchment area of the Oslofjord (bottom, left), marine monitoring time-series stations indicated with red and grey points (bottom, middle) and the stretch of route where the FerryBox data is collected between Kiel and Oslo (bottom, right).
+
+  
+
+The research questions
+
+Excess nutrient inputs leading to eutrophication are of a major concern for water quality and are considered in the use case for Oslofjord.  The ecological dynamics in coastal waters and river outflows are not captured sufficiently by traditional in situ sampling. The temporal resolution can increase by the use of sensors measuring key parameters continuously. In the case study, the use of 
+
+discharge data and measurements in the rivers are connected and used to calculate fluxes over longer times.  Monitoring data from marine stations in the river catchments is also assessed. Continuous sensor data from FerryBox systems is able to follow e.g. extreme sudden events in real time.
+
+Text box 5
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Land-Sea interactions and trend analysis in the Oslofjord coastal areas and the rivers in the catchment”
+
+•
+
+What are the extent and impact of freshwater inflows into the Oslofjord?  
+
+•
+
+Are there similar trends in the rivers over time as in the marine environment? 
+
+•
+
+Can the land–sea interactions during and following an extreme weather event, and the effects from riverine inputs and marine waters, be better understood and detected by the use of multiple sources of FAIR data and FAIR data infrastructures?  
+
+Text box 5
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Land-Sea interactions and trend analysis in the Oslofjord coastal areas and the rivers in the catchment”
+
+•
+
+What are the extent and impact of freshwater inflows into the Oslofjord?  
+
+•
+
+Are there similar trends in the rivers over time as in the marine environment? 
+
+•
+
+Can the land–sea interactions during and following an extreme weather event, and the effects from riverine inputs and marine waters, be better understood and detected by the use of multiple sources of FAIR data and FAIR data infrastructures?  
+
+The research questions one and two investigate the long-term changes, and the third investigates how different data sources can help understand sudden extreme events. The first two studies are separated in 2 workflows, both deployed in Galaxy.
+
+The workflows
+
+Long-term land-sea interactions
+
+This workflow is designed to study the land-sea interactions and perform trend analysis in a use case where the river fluxes of nutrient and carbon dynamics in the rivers are related to the variations in the marine monitoring stations. This study includes statistical modelling approaches for coping with temporal data gaps and inconsistent measurement methods, a frequent limitation encountered when analysing long-term trends in land-sea interactions.   
+
+Data were compiled from several sources: river chemistry (nutrients and carbon) from the Norwegian Institute of 
+
+W
+
+ater 
+
+R
+
+esearch (NIVA) internal database, discharge from Norwegian Energy Regulatory Authority (NVE), and fjord chemistry, carbon, and chlorophyll
+
+ 
+
+a
+
+ 
+
+from AquaMonitor (NIVA), Norconsult AS, and the Institute of Marine Research (IMR). Datasets were harmonized through a common preprocessing procedure. For rivers, daily mean discharge was derived for 1990–2024 and riverine and marine chemistry were extracted from the same time 
+
+period (1990-2024), though station coverage varies. Data were standardized by aligning timestamps, correcting units, removing duplicates, reconstructing missing values, and flagging outliers. Derived parameters and metadata were added, and quality-controlled datasets were exported in NetCDF format and published through DASS to support FAIR and open data principles. 
+
+Schematic workflow for calculating river fluxes and Marine-river chemistry trends based on either river fluxes of marine data.
+
+ 
+
+The workflow outlines the general procedure applied after data cleaning. For each river, water chemistry and discharge were merged at the station level to estimate daily concentrations using four interpolation methods: linear interpolation (≤90-day gaps), generalized additive models (discharge + day-of-year), month-specific log–log regressions, and monthly-median interpolation. Methods were evaluated against observations, requiring ≥10 overlapping points, R² ≥ 0.80, and no extreme outliers. The best method was selected; if none passed, the workflow defaulted to linear interpolation. Remaining gaps were filled using the best alternative method. Daily nutrient and carbon fluxes (tonnes day
+
+-
+
+¹) were calculated as concentration multiplied by discharge and aggregated to monthly and annual totals. Finally, Mann–Kendall trend tests and Sen’s slope estimates were applied to river fluxes and fjord water chemistry on monthly, seasonal, and annual scales, restricted to stations with ≥10 years of observations. The approach is modular and reproducible, allowing similar datasets or regions to be analysed using the same workflow.
+
+Extreme storm event evaluated by FerryBox and river data
+
+The workflow analyses the spatial and temporal variation of water quality parameters, with particular focus on conditions before, during and after extreme weather events, such as the August 2023, Storm Hans. 
+
+Data sources
+
+The workflow uses quality controlled FerryBox (FB) and river logger data published through Norsk Institut
+
+t
+
+ for Vannforskning (NIVA) 
+
+THREDDS
+
+ server (
+
+https://thredds.niva.no/thredds/catalog/catalog.html
+
+). 
+
+FB data are collected along a transect from Oslo to Kiel (approx. 60°N–54°N) and include parameters salinity, chlorophyll
+
+ 
+
+a
+
+, turbidity, fDOM, temperature, and oxygen saturation.
+
+River data originates from the Baterød station in the Glomma River and includes parameters such as water temperature, pH, conductivity, turbidity and CDOM. All datasets are available from 2023 and onwards.
+
+Pre-processing
+
+Data are extracted from NetCDF files using dedicated R scripts and saved as .csv files. The extraction can be filtered by date ranges and spatial extent (e.g. latitude for FB data). The workflow supports integration with user-defined assessment areas (e.g. water bodies from environmental GIS layers), enabling spatial subsetting and contextualisation of the data. FB and river datasets can be combined into unified data frames, including calculation of daily mean values for selected parameters.
+
+Analyses
+
+The workflow includes multiple analysis and visualization steps:
+
+•
+
+Spatial assessment of data coverage within defined water bodies
+
+•
+
+Merging of FB and river datasets for comparative analysis
+
+•
+
+Scatterplots for exploring relationships between parameters (within and across datasets)
+
+•
+
+Hovmöller-style tile plots showing temporal and latitudinal variation in FB measurements
+
+The approach is modular and reproducible, allowing similar datasets or regions to be analysed using the same workflow.
+
+Global workflow of FerryBox (FB) and River sensors in the Oslofjord for analyses of spatial and temporal variation before, during and after a storm event.
+
+ 
+
+Effects of climate change and human activities on the quantity and quality of water in Tordera river basin and Maresme county
+
+ 
+
+General characteristics
+
+Map location, boundaries and topography of the Tordera catchment.
+
+Tordera is a small catchment (898 km
+
+2
+
+) with a delta affected by sea water intrusion. Maresme (398 km
+
+2
+
+ and 55 km coastline), the adjacent southern region and the main coastal area linked, is located to the north of Barcelona city (Fig. 23). The region exhibits a diverse landscape comprising croplands, shrublands, forests, urban areas, and industrial zones.  The uncontrolled expansion of urban areas, reforestation (with pine trees and associated shrubs replacing the original Quercus ilex forest), loss of traditional agricultural activities, and the growth of coastal tourism have had significant impacts on the ecosystems, freshwater use, leading to an increase in flash floods. It has a Mediterranean climate characterised by dry summers and seasonal flash floods in spring and autumn. 
+
+The study performed in this use case is valuable for understanding the effects of climate change conditions and human activities on both the quantity and quality of water in inland and marine areas.
+
+High variability in water quantity and quality patterns. Long dry periods and short flash floods
+
+.
+
+The research question
+
+Text box 6
+
+The Research Questions formulated for the AquaINFRA use case
+
+"Effects of climate change and human activities on the quantity and quality of water in Tordera river and Maresme county"
+
+What is the impact of climate change and land cover changes to the water quality of bathwaters in the Catalan coast?
+
+What are the changes in discharge in the deltas?
+
+How do extreme events affect the coastal environment and risks on human populations?
+
+Text box 6
+
+The Research Questions formulated for the AquaINFRA use case
+
+"Effects of climate change and human activities on the quantity and quality of water in Tordera river and Maresme county"
+
+What is the impact of climate change and land cover changes to the water quality of bathwaters in the Catalan coast?
+
+What are the changes in discharge in the deltas?
+
+How do extreme events affect the coastal environment and risks on human populations?
+
+Climate change poses significant risks to ecosystems and human well-being.  In particular water availability in the Mediterranean basins will decrease as a result of three main factors: 1) decreased precipitation in large periods (+ flash floods), 2) increased evapotranspiration caused by increase of temperature and 3) population growth (+ other anthropogenic factors).
+
+The workflow
+
+The global workflow has three main components:
+
+1) Inland model: SWAT
+
+2) Conversion SWAT outputs to the Marine Modelling System inputs
+
+3) Marine Modelling System  
+
+Global workflow of coupled inland-marine model
+
+.
+
+ Accessible at 
+
+https://aqua.usegalaxy.eu/published/workflow?id=34a36294f78e7261
+
+ 
+
+The implemented inland model is SWAT. The Soil and Water Assessment Tool (SWAT) is a watershed-scale model used to simulate water quantity and quality in rivers, basins, and catchments. It estimates the effects of land use, vegetation status, agriculture management, soil properties, and climate on processes such as runoff, erosion, evapotranspiration, and nutrient transport. 
+
+AquaINFRA’s Galaxy can execute two versions: SWAT (SWAT2012) and SWAT+. Both versions need a preparation step: the delineation of HRUs (hydrological response units). The inland model can be parametrized for main user purposes: temporal extension and resolution (monthly or daily), subset of interested output results, subset of HRUs and points of interest.
+
+The conversion tool is just a “translator formats” tool between SWAT and Marine Modelling System (based on MITgcm formats). Both models have their own formats and this connector is needed.  In the implemented workflow this conversion tool provides a simple text file with date, time, river flow discharge (m
+
+3
+
+/s) and water temperature (ºC) in columns. 
+
+At the same time, the marine modelling system is a workflow itself and has three main components:
+
+(i) the pre-processing tool, (ii) the tool for compilation and execution of the marine modelling code (MITgcm), and (iii) the plotting tool.
+
+Detailed workflow of the marine component
+
+ Accessible at 
+
+https://aqua.usegalaxy.eu/published/workflow?id=b8b555f98d073c21
+
+.
+
+The marine modelling system implemented in the AquaINFRA virtual research environment is based on the MITgcm marine hydrodynamical modelling code. It can be accessed as a workflow and it is an end-to-end pipeline, which includes data retrieval, preprocessing, model execution and postprocessing, and a plotting tool. 
+
+Input data of the marine modelling systems consists of bathymetry, river data and river configuration file, atmospheric data from the European Centre for Medium-Range Weather Forecasts (ECMWF), and marine physical data from the Copernicus Marine Service (CMEMS) for initial and boundary conditions. The workflow requires the user 
+
+to 
+
+upload the bathymetry file and river data files for all rivers except for the Tordera. The Tordera river data is given from the Conversion SWAT+ outputs to 
+
+the 
+
+MITgcm input tool. The rest of the input can be directly downloaded automatically through two tools that we have developed in Galaxy to retrieve data from the Copernicus Climate Data Store (CDS), for atmospheric data, and from the Copernicus Marine Service (CMEMS) for marine data to use as initial and boundary conditions. Additionally, configuration parameters must be provided through the user interface.
+
+All input data are given to the pre-processing tool, which generates the model grid from the bathymetry and parameters and performs several preprocessing processes on the data including variable transformations and model grid interpolations and formatting. Output of the pre-processing tool is given as input to the model compilation and execution tool, which performs the compilation of the model and subsequently runs the simulation. This tool 
+
+al
+
+s
+
+o 
+
+performs a post-processing phase in which the results of the simulation are merged and formatted as standard netCDF files. The user can then decide either to download the results or provide them as input to the plotting tool for visualisation.
+
+Groundwater–sea interactions and coastal fluxes of water and solutes controlling coastal water quality in the Maltese Islands
+
+General characteristics
+
+The Maltese archipelago, located in the central Mediterranean Sea, consists of three main islands: Malta, Gozo, and Comino. The islands are characterised by a semi-arid Mediterranean climate (Spatola et al., 2023), with hot, dry summers and mild, wetter winters. Freshwater resources are extremely limited and largely dependent on groundwater stored in coastal aquifers. The hydrogeological system is dominated by highly permeable carbonate formations, which host two main aquifer types: (i) mean sea-level aquifers (also referred to as basal aquifers) and (ii) perched aquifers (Barbagli et al., 2021). These systems are highly vulnerable to seawater intrusion, driven by groundwater abstraction, sea-level changes, and climate variability (Choi et al., 2024). The coastal setting of the Maltese Islands, combined with strong groundwater–sea interactions, positions Malta as a representative example for investigating land–sea coupling processes, particularly the transport of solutes from groundwater to the marine environment. Accordingly, this use case investigates groundwater–sea interactions in small island environments through integrated coupled modelling, quantifying groundwater discharge, solute transport, and their impacts on coastal and marine systems under long-term environmental change.
+
+Fig.
+
+2
+
+8
+
+Fig.
+
+2
+
+8
+
+Fig.
+
+27
+
+Fig.
+
+27
+
+ 
+
+         
+
+Simulated groundwater salinity distribution in the Maltese aquifer system, showing seawater intrusion and the freshwater–saltwater interface.
+
+ 
+
+Simulated hydraulic head distribution in the Maltese aquifer system, illustrating groundwater flow patterns and gradients towards the coast.
+
+The research question(s)
+
+Groundwater systems in small island environments are highly vulnerable to both natural and anthropogenic pressures (Bouchet et al., 2019). In the Maltese Islands, freshwater resources are limited and occur as a thin freshwater lens overlying saline groundwater (Holland & De Wiest, 2016), making them particularly sensitive to sea-level variations, groundwater abstraction, and contaminant inputs. These pressures can alter groundwater flow patterns, enhance seawater intrusion, and influence the transport of dissolved substances from land to sea (Moore & Joye, 2021), with potential impacts on coastal water quality and marine ecosystems.
+
+Text Box 7 
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Groundwater–sea interactions and coastal fluxes of water and solutes in the Maltese Islands”
+
+In the Malta case studies, the research questions addressed are:
+
+1.
+
+Can the coupled inland-marine model contribute to the understanding of the water quantity discharge of nutrients and solutes from land to the sea through groundwater?
+
+2.
+
+What are the changes in river flow discharge in the deltas? How do extreme events (drought and floods) affect the coastal environment and risks to human populations?
+
+3.
+
+What are the expected impacts on groundwater resources based on long-term climate projections? Specifically, what will be the impact of sea level rise on the extent of the freshwater lens?
+
+Text Box 7 
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Groundwater–sea interactions and coastal fluxes of water and solutes in the Maltese Islands”
+
+In the Malta case studies, the research questions addressed are:
+
+1.
+
+Can the coupled inland-marine model contribute to the understanding of the water quantity discharge of nutrients and solutes from land to the sea through groundwater?
+
+2.
+
+What are the changes in river flow discharge in the deltas? How do extreme events (drought and floods) affect the coastal environment and risks to human populations?
+
+3.
+
+What are the expected impacts on groundwater resources based on long-term climate projections? Specifically, what will be the impact of sea level rise on the extent of the freshwater lens?
+
+The workflow
+
+The Malta use case workflow comprises three main components: 
+
+1) Groundwater model
+
+The groundwater component is implemented as a fully integrated, containerised workflow based on SEAWAT and deployed within the Galaxy environment. The workflow is exposed as a single user-facing tool, while internally executing three sequential phases: pre-processing, model execution, and post-processing. Users interact with the model through a graphical interface in Galaxy, where key hydrogeological parameters can be defined, including sea-level conditions, stress period duration, and groundwater recharge rates. This enables flexible simulation of groundwater evolution under different environmental scenarios.
+
+Detailed workflow of the groundwater (SEAWAT) model
+
+.
+
+Phase 1: Pre-processing (model setup)
+
+User-defined inputs are combined with static geological and structural data derived from Petrel (SLB geological modelling software). This phase generates all required SEAWAT input files, including discretisation, boundary condition, and parameter files, which fully define the numerical model and simulation conditions.
+
+Phase 2: Model execution (simulation run)
+
+The SEAWAT engine is executed using the generated input files to simulate coupled groundwater flow and density-dependent solute transport over multiple stress periods. This phase produces raw binary outputs, including concentration files (.ucn), hydraulic head files (.hds), and cell-by-cell budget files (.cbc), representing the full three-dimensional evolution of salinity and flow within the aquifer system.
+
+Phase 3: Post-processing (data conversion)
+
+The raw model outputs are automatically processed and converted into standardised NetCDF format. Relevant variables, including salinity and solute concentrations (e.g. chloride), are extracted and mapped onto the model grid with associated spatial and temporal metadata.
+
+The final output of the groundwater workflow is a NetCDF dataset containing spatially distributed salinity and solute concentration fields across the full three-dimensional model domain and simulation time. This format ensures interoperability with downstream analysis tools and enables direct integration with the marine modelling workflow.
+
+2) Conversion of the output of the groundwater model as input for the marine model (in development)
+
+The conversion component acts as an interface between the groundwater and marine modelling systems, enabling the transfer of groundwater-derived fluxes into the marine model domain. As the two models operate with different spatial grids, data structures, and numerical frameworks, this component functions as a transformation step that ensures consistency between the inland and coastal ocean simulations.
+
+Groundwater point sources representing locations of submarine groundwater discharge along the Maltese coastline (Fig
+
+.
+
+ 30) are extracted from the SEAWAT model outputs, including discharge rates and associated solute concentrations (e.g. salinity and chloride). These sources are subsequently mapped onto the MITgcm ocean model grid, where each groundwater discharge point is assigned to the corresponding coastal grid cells. To ensure a physically realistic representation, the discharge is distributed vertically across the shallow MITgcm model layers in proportion to layer thickness, rather than being concentrated at a single depth level.
+
+Submarine groundwater discharge along the Maltese coastline with selected coastal cells used to extract fluxes for input to the MITgcm model.
+
+The spatially mapped groundwater fluxes are then converted into binary forcing files compatible with the MITgcm Relaxation Boundary Condition Scheme (RBCS), a method that introduces prescribed conditions such as salinity and horizontal velocity into selected model cells over a defined relaxation timescale. For each source cell, this relaxation timescale (tau) is calculated based on the ratio of cell volume to distributed discharge, ensuring that the rate at which groundwater properties are imposed on the marine model is physically consistent with the magnitude of the incoming flux.
+
+The resulting forcing files comprising salinity and velocity mask and field files are spatially and temporally aligned with the MITgcm grid and simulation time steps and are used directly as dynamic boundary condition inputs to the marine model. This approach enables submarine groundwater discharge to be represented not as a static input but as a spatially distributed, time-varying forcing, capturing its influence on coastal salinity and circulation patterns.
+
+3) Marine model based on the MITgcm (in development)
+
+The marine model component of the Malta workflow is the same as in the Tordera River and Maresme County (NW Mediterranean) case study. As described in the previous section, it is a workflow consisting of three main tools: (i) pre-processing tool, (ii) model compilation and
+
+ 
+
+execution tool based on the MITgcm (iii) Plotting tool.
+
+This modelling system has been developed to be scalable to other regions. The preprocessing scripts integrated in the Pre-processing tool have been parameterised so that they can be used in other regions of the Mediterranean, for models with different dimensions and resolutions. Moreover, the Model Compilation and Execution tool, has been implemented, parameterising model dimensions, so that the compilation step is automatically performed every time the simulation is run for the selected model dimensions. 
+
+The necessary inputs of this workflow are, as described in the Tordera river and Maresme county use case, the bathymetry, atmospheric data (precipitation, wind velocity, atmospheric temperature and pressure, solar radiation, etc.) and marine data (temperature, salinity and sea currents) to use as initial and boundary conditions for the model.  Indeed, these inputs need to be for the Malta region, therefore, the user needs to provide the Malta sea region bathymetry and regional atmospheric and marine data.
+
+Pan-European freshwater biodiversity
+
+General characteristics
+
+The pan-European freshwater biodiversity use case investigates changes in the spatial distribution and composition of freshwater species, primarily fish, across European river networks and basins. However, the proposed approach can be applied to other taxonomic groups using the developed 
+
+workflows and tools. The analysis spans multiple scales within Europe, including river basins and networks, while examining the influence of various anthropogenic pressures on freshwater species. 
+
+The pan-European scale helps harmonise ecological impacts across geographical ranges but ignores administrative boundaries because cross-border impacts span ecosystems. This enables the development of harmonized management strategies that can then be localised to account for context-specific conditions, thereby enabling better coordination of conservation and restoration across countries. However, the availability of open-access data across taxa may limit the analysis to regions in central, northern, and western Europe, as these regions are often better covered with occurrence records. Accordingly, the approach also highlights gaps in data availability and the need to generate more data in certain areas of Europe.
+
+The use case employed a range of biodiversity analysis tools, including species distribution models (determining when, where, and why species are present), functional diversity analyses (the nature of species present or absent), and systematic conservation planning (which areas to be managed based on the presence or absence of particular species), across different river basins or catchments.
+
+The research question(s)
+
+To understand changes in Pan-European freshwater biodiversity patterns, we initiate the process by developing a reproducible data quality control protocol to assess changes in the spatial distribution and prioritization of river basins across Europe. These were set into three objectives.
+
+Text box 8
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Pan-European freshwater biodiversity”
+
+•
+
+Are automatic quality checks necessary for data used in biodiversity analyses, such as species distribution, for species records collated from open-source repositories?
+
+•
+
+How do human pressures such as barriers, land use, and climate change affect the functional diversity of riverine freshwater fishes in European river basins?
+
+•
+
+How are species distributed across the European river basins, and how do they determine the selection of the river basin for systematic conservation across Europe?
+
+Text box 8
+
+The Research Questions formulated for the AquaINFRA use case
+
+“Pan-European freshwater biodiversity”
+
+•
+
+Are automatic quality checks necessary for data used in biodiversity analyses, such as species distribution, for species records collated from open-source repositories?
+
+•
+
+How do human pressures such as barriers, land use, and climate change affect the functional diversity of riverine freshwater fishes in European river basins?
+
+•
+
+How are species distributed across the European river basins, and how do they determine the selection of the river basin for systematic conservation across Europe?
+
+The workflow
+
+The pan-European use case used species data from open-access databases. By integrating open-access data, the approach's replicability is guaranteed from the very beginning. Open-access records collated from different sources are often riddled with suspiciously incorrect entries, making quality control indispensable before developing reliable biodiversity monitoring tools. The workflow has been conceptualised in a way that it is applicable to a wide variety of data types (Fig. 
+
+31
+
+).
+
+The workflow starts by obtaining data from various sources, including web-based and user-provided files, enabling data integration of different sources (Fig. 31). In contrast to earlier quality control protocols that include geographical and taxonomic checks, this workflow used environmental predictors, such as bioclimatic variables from WORLDCLIM, CHELSA, and Hydrography90m, extracted where species records were collated from multiple sources. In the next step, the data from different sources are merged. Subsequently, species names may be harmonized by cross-checking against standard databases, such as FishBase, to identify synonyms and incorrect taxonomic nomenclature (Fig
+
+.
+
+ 32) – another common issue in the analyses based on species occurrence records from different sources. 
+
+To identify suspicious records in the data describing environmental predictors, multiple outlier detection methods are used (Basooma et al. 2025). These methods flag records as either outlier or not, and then, using proportion weights, every record can be categorised as an absolute outlier or not (Fig
+
+. 
+
+3
+
+2). Also, user assessment allows either retaining or discarding records flagged as absolute or strong outliers, i.e., the user has full control over how the dataset and the records are further handled. These methods allow highlighting suspicious entries in large datasets used in the pan-European use case.
+
+The principle of ensemble outlier detection and removal of species records obtained from open-access data repositories, such as the Global Biodiversity Information Facility (GBIF) (Basooma et al. 2025).
+
+Workflow in the Galaxy Platform detailing the acquisition and merging of multiple data sources, the extraction of environmental predictors, and ensemble outlier detection and removal (
+
+https://aqua.usegalaxy.eu/published/workflow?id=22056517c2390320
+
+)
+
+Reusability analysis of the data sets and tools applied by the AquaINFRA Use 
+
+Cases
+
+Reuse opportunities and tests of data sets and tools developed by the use cases
+
+Change of water optical properties in the Daugava River and the Gulf of Riga
+
+Completed or potential replication
+
+The reusability and transferability of the workflow originally developed to explore change in optical properties in the Gulf of Riga water have been demonstrated through its successful application to the Bothnian Bay (Fig. 33) and the Gulf of Finland (Fig. 34). The complete workflow is published on the Galaxy platform
+
+ (
+
+https://aqua.usegalaxy.eu/published/workflow?id=bee43845245a3343
+
+) and is accessible for reuse, with individual tools available for integration into other analytical pipelines within the Galaxy Aqua workflow environment (
+
+https://aqua.usegalaxy.eu/
+
+).
+
+Demonstration of workflow upscaling through transferability to the Bothnian Bay. The bar plot shows seasonal Mann–Kendall trend results (Tau values, Y-axis) for Secchi depth across HELCOM subbasins (X-axis), alongside corresponding spatial visualisations of significant trends derived from the workflow intermediate outputs.
+
+ 
+
+For the Bothnian Bay case (Fig. 33), input data were manually collected from a Finnish data portal (
+
+https://merihavainnot.ymparisto.fi/merihavainnot/
+
+) and uploaded in .csv format to enable workflow execution. Testing the workflow with data from different sources revealed limitations in the initial version, particularly related to supported input formats and delimiter handling in the data ingestion step. These findings informed improvements to increase flexibility in data input options. Further refinements were made following a hands-on workshop (
+
+https://aquainfra.eu/events/hands-on-workshop-at-the-university-of-oulu
+
+), where the workflow was presented and tested by multiple participants. As a result, the workflow was adapted to better support user-provided data from various cloud platforms and to improve overall usability.
+
+Demonstration of workflow transferability to the Gulf of Finland, showing input monitoring stations and HELCOM spatial regions used for aggregation and analysis of water quality trends.
+
+The workflow developed to explore Gulf of Riga optical parameter trends was applied also to 
+
+the 
+
+Gulf of Finland. During the testing, Gulf of Finland water sample data were initially retrieved from the AquaINFRA data discovery and access service (DDAS) in JSON format, which was not supported by the workflow. As the workflow accepts input data in .txt or .csv formats, data were retrieved or converted into .csv format to ensure compatibility. 
+
+One result of the replicated workflow is a map showing selected input data monitoring stations and three HELCOM spatial regions (Fig. 34). 
+
+Overall, these replication efforts confirmed the technical transferability of the workflow while also highlighting the importance of data format compatibility, interoperability, and user-oriented design.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+This use case demonstrates how long-term in situ observations, when combined with standardised spatial units and reproducible workflows, can be scaled from national to regional assessments. The approach enables cross-basin comparisons and supports reuse of analytical pipelines across different marine regions.
+
+The workflow is flexible and can be applied beyond the Gulf of Riga, as demonstrated in the Gulf of Finland and the Bay of Bothnia cases. It allows the use of different spatial aggregation units, not limited to HELCOM regions, and can be adapted to analyse spatiotemporal trends in various seawater parameters across the Baltic Sea and other regions. This adaptability highlights the potential of the developed Virtual Research Environment (VRE) to support broader environmental assessments. The 
+
+workflow aggregates the input data based on selected regions and provides regional trends of environmental changes. The Workflow could be reused to analyse spatiotemporal trends of different sea water parameters around the Baltic Sea and other seas as well. Thus, the workflow is capable to use also other than HELCOM based regional data as input file for data aggregation, however, that remains to be tested and proved.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+The development and implementation of the workflow highlighted several key lessons related to data interoperability, usability, and overall workflow performance. Ensuring compatibility between data formats and analytical workflows proved critical, as differences in input formats (e.g., JSON vs. CSV) required additional handling and, in some cases, manual data conversion. This emphasises the importance of developing workflows capable of ingesting multiple standardised data formats, as well as integrating tools within the Galaxy Aqua environment that enable efficient transformation between formats.
+
+The implementation process also demonstrated the importance of clear and unambiguous workflow documentation. Technical details can be difficult to interpret for users unfamiliar with the Galaxy platform, which may limit broader adoption. In addition, user experience considerations are essential: in some cases, workflow outputs were distributed across multiple files and web links, making it difficult to interpret results efficiently. More integrated and user-friendly output visualisation within a single interface would significantly improve usability.
+
+Another key lesson relates to system performance. Workflow execution times within the Galaxy platform can be relatively long, even for moderately sized analyses, which may discourage use, especially when no warning or information about the expected time needed for the analysis is not provided. Improving computational capacity and optimising processing efficiency would enhance the usability and scalability of the platform.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+A key condition is the availability and direct accessibility of sustained, high-quality, and harmonised long-term datasets, which are essential for ensuring the robustness and comparability of analyses across regions. Continued investment in monitoring programmes and data standardisation efforts is therefore critical, as is reducing barriers between data discovery systems and data ingestion platforms. In several cases, data were available for manual download but not accessible for automated workflows due to technical or procedural constraints, such as authentication requirements, policy-related access confirmations, or mandatory user interactions.
+
+Vantaanjoki River and Gulf of Finland: analysing land–river–sea connections in a small 
+
+urban
+
+ catchment
+
+Completed or potential replication
+
+C
+
+ORINE
+
+ tool
+
+Two versions of the C
+
+ORINE
+
+ tool were made. The EU version uses C
+
+ORINE
+
+ data which covers the whole Europe. Thus, the analysis of changes in the C
+
+ORINE
+
+ classes can be done anywhere in Europe, although at a reduced resolution. We compared the results of both versions in 
+
+the 
+
+River Vantaanjoki drainage basin. The values in Figure 
+
+35
+
+ show that while the overall results are similar, there are also clear differences. The Finnish C
+
+ORINE
+
+ has higher resolution and includes more small areas of e.g. wetlands and waterbodies. Also, some roads visible in the Finnish version are not included in the EU version since they are too narrow, which reduces the area of Artificial surfaces.
+
+The EU tool was also tested in the catchment of the Daugava, Latvia
+
+ (Figure 36)
+
+.
+
+Finnish Corine
+
+Year
+
+Artificial surfaces
+
+Agricultural areas
+
+Forests and semi-natural areas
+
+Wetlands
+
+Water bodies 
+
+Sum
+
+2000
+
+29057
+
+39285
+
+95044
+
+932
+
+3984
+
+168302
+
+2006
+
+30010
+
+38785
+
+94604
+
+905
+
+3998
+
+168302
+
+2012
+
+31008
+
+38153
+
+94226
+
+895
+
+4020
+
+168302
+
+2018
+
+31555
+
+38050
+
+93776
+
+899
+
+4021
+
+168301
+
+EU Corine
+
+Year
+
+Artificial surfaces
+
+Agricultural areas
+
+Forest and semi natural areas
+
+Wetlands
+
+Water bodies
+
+Sum
+
+2000
+
+28492
+
+46793
+
+89350
+
+427
+
+3218
+
+168280
+
+2006
+
+29241
+
+46562
+
+88907
+
+352
+
+3218
+
+168280
+
+2012
+
+29885
+
+46329
+
+88496
+
+352
+
+3218
+
+168280
+
+2018
+
+30190
+
+46349
+
+88171
+
+352
+
+3218
+
+168280
+
+The results of the two C
+
+ORINE
+
+ tools from the Vantaanjoki drainage basin (area in ha).
+
+Year
+
+Artificial surfaces
+
+Agricultural areas
+
+Forest and semi natural areas
+
+Wetlands
+
+Water bodies
+
+Sum
+
+2000
+
+57396
+
+1092451
+
+1269961
+
+71733
+
+87442
+
+2578983
+
+2006
+
+57855
+
+1091875
+
+1270282
+
+71572
+
+87399
+
+2578983
+
+2012
+
+59278
+
+1089482
+
+1271075
+
+71679
+
+87469
+
+2578983
+
+2018
+
+59698
+
+1090168
+
+1269688
+
+71900
+
+87529
+
+2578983
+
+The results of 
+
+EU 
+
+CORINE tool from the 
+
+Daugava 
+
+drainage basin (area in ha).
+
+River load tool
+
+This tool uses discharge data from an automated station (daily observations) and manual water sample data (samplíng frequency days or weeks) to compute the load.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+T
+
+he CORINE 
+
+tools allow any Galaxy user to examine the land cover changes in any area in Europe
+
+. The analysis not limited to drainage basins as the CORINE data covers the whole Europe continuously. Thus, the tools can support investigations not related to water and the source-to-sea theme studied here.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+The original tool
+
+s
+
+ used regular GeoTIFFs 
+
+versions of CORINE 
+
+as input d
+
+ata
+
+.
+
+ The files were stored in the DDAS and
+
+ 
+
+using them 
+
+required the transfer of the 
+
+input files to GALAXY. Cloud Optimised GeoTIFF 
+
+(COG) 
+
+files were 
+
+created 
+
+to reduce the 
+
+require
+
+d data transfer
+
+ as they 
+
+allow 
+
+the transfer of
+
+ smaller area
+
+s within the CORINE are.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+The CORINE tools could be further extended by making modifications that allow rasters containing any kind of categorized data to be used as input. In the CORINE data the land cover classes are indicated with numbers so if another dataset is used, the tool will need to know what those mean. Alternatively, the output of the tools could be just the amounts of pixels in each separate number and interpretation of the results is done afterwards in another tool. This way the tool would be even more generic and applicable to other studies.
+
+The Baltic Sea effectiveness of measures Use Case
+
+Completed or potential replication
+
+Potential for replication of the HELCOM Pollution Load Compilation workflow.
+
+A workflow for the data collected and processed in HELCOM Pollution Load Compilation to the EOSC has been developed as a part of the Baltic Sea study case (Chapter 
+
+3
+
+.3.3). Pollution load compilation (PLC) has been an integral part of 
+
+the 
+
+HELCOM assessment system since 1987. PLC is focused on annual and periodic compilation of data on nutrients and selected hazardous substances in 
+
+the 
+
+aquatic system and transported by air to assess pressure on the Baltic Sea marine environment. It also assesses sources of nutrients 
+
+o
+
+n the regional scale and for each country individually.
+
+The workflow could be utilized as a blueprint for application in other regions and water basins experiencing eutrophication due to oversupply by nutrients. At first, it requires establishing of harmonized national monitoring programmes. 
+
+In the Baltic Sea region, data obtained through national monitoring programmes, is annually reported by all Contracting Parties to 
+
+the 
+
+HELCOM (PLC-water) database as part of 
+
+the 
+
+HELCOM Pollution Load Compilation (PLC) process (see Chapter 
+
+3
+
+.3.3). The data is reported utilising WEB reporting tool. All data pass through a four-stage quality control procedure (
+
+HELCOM PLC-Water Guideline
+
+). First two stages - technical verification and time series analysis - are performed automatically by the reporting tool. After expert quality control and final approval by national data reporters the dataset becomes publicly available. The dataset contains reported data on water flow, input of nutrients and selected hazardous substances to the Baltic Sea from monitored rivers and unmonitored areas within its catchment area. The input from transboundary rivers reflects the whole river catchment including its transboundary parts. Data reported in previous years might be revised to correct revealed analytical or methodological errors.
+
+All data on inputs of nutrients are geo-referenced. Spatial data is used as a background information for the input assessment, computation of specific input for river catchments and coastal areas and for visualization of reported data on maps. Spatial data primarily reflect hydrological and administrative borders as well as 
+
+the 
+
+location of monitoring stations, dividing river catchments to monitored and unmonitored parts. All spatial data are annually updated to ensure that changes in 
+
+the 
+
+national monitoring programme are reflected on maps. Spatial data is also used to analyse and illustrate spatial distribution of nutrient sources in the Baltic Sea catchment connecting this information with social and economic data (population density, land use, connectivity to wastewater treatment plants etc). 
+
+Reported data can be subdivided to two major types depending on the reporting frequency – annual and periodic. Annually reported data reflect nutrient inputs while periodic reporting is primarily focused on sources of nutrients. Assessment data derived from originally reported data and serve for the support of regional policy making process. This data is linked to policy relevant publications and publicly available ensuring transparency of policy messages.
+
+Annual data
+
+The following datasets constitute annual data reporting in the Baltic Sea region and became seamlessly available for EOSC through 
+
+AquaINFRA DDAS
+
+ 
+
+service:
+
+•
+
+Data on riverine inputs of nutrients and selected hazardous substances,
+
+•
+
+River monitoring stations (spatial data),
+
+•
+
+Monitored and unmonitored sub-catchments (spatial data) - the smallest entities for which inputs of nutrients to the Baltic Sea are reported,
+
+•
+
+PLC Assessment catchments (spatial data) - monitored and unmonitored catchments used for the assessment of waterborne nutrients inputs to the Baltic Sea sub-basins,
+
+•
+
+Catchment areas for the Baltic Sea sub-basins (spatial data) - catchment areas for the Baltic Sea sub-basins, with identified nutrient input reduction targets.
+
+Periodic data
+
+Periodically reported data on nutrient inputs to the sea from various sources demonstrate changes in major sources of waterborne nutrient input in the Baltic Sea region. Data is primarily based on national statistics and modelling, which is part of national monitoring programmes. That’s why datasets reported by countries significantly deviate from country to country. It became the main reason why publicly available datasets represent harmonized aggregated data but not originally reported nutrient sources. However, there are major sources of nitrogen and phosphorus 
+
+that
+
+ are deemed mandatory for allocation measures and enabling 
+
+the 
+
+follow-up
+
+ on
+
+ their environmental effects. These sources are:
+
+•
+
+Background (natural) inputs,
+
+•
+
+Aggregated diffuse sources,
+
+•
+
+Input from agriculture,
+
+•
+
+Input from inland point sources (industrial and municipal).
+
+Additionally, retention of both nutrients in inland waters should be estimated to assess the effect of measures addressing inland sources on the marine environment. 
+
+Some countries models in combination with statistical data allow to quantify such sources as forestry, scattered dwellings, airborne deposition on inland water areas and some other. 
+
+Since changes of inputs from inland sources of nutrients, especially diffuse sources, usually take several years to be noticed, there is no need in annual assessment, but once in a certain reasonable period. 
+
+Assessment data
+
+Assessment datasets are the results of the reported data processing, including data aggregation, gaps filling, statistical analysis, and evaluation against target values. The assessment results lay basis for environmental management in the Baltic Sea region and allocation measures to reduce pressure on the marine ecosystem. They are also used to follow-up the effect of overall effort in the region or individual country. Assessment datasets for the input of nutrients represent - time-series of waterborne input of nutrients and time-series for the core Indicator on nutrient input.
+
+Time-series of waterborne input of nutrients
+
+The assessment dataset contains data on water flow and annual nutrient inputs (total nitrogen and phosphorus loads) from catchments and from point sources (municipal, industrial and aquaculture) directly discharging to the Baltic Sea sub-basins. The dataset includes actual (non-normalized) and water flow normalized annual inputs of total nitrogen (TN) and total phosphorus (TP) from monitored and unmonitored areas.
+
+Time-series for the core Indicator on nutrient input
+
+The dataset contains time series of assessed nutrient input values for the whole observation period. It demonstrates flow normalized total input of nutrients via water and air pathways.
+
+Replicability of the HELCOM Eutrophication Assessment Tool (HEAT)
+
+The HELCOM Eutrophication Assessment Tool (HEAT) is the main instrument utilized for the assessment of the Baltic Sea eutrophication status in the frame of HELCOM Holistic Assessments of the state of the Baltic Sea marine environment. HEAT was developed solely for this assessment in fixed assessment areas as identified in the HELCOM assessment manuals and fixed assessment period. Additionally, the tool was designed as a single process without access to interim assessment results and, thus, without an opportunity to control or rerun individual assessment stages. 
+
+AquaINFRA project extended the tool’s application area by removing spatial and temporal restrictions and splitting 
+
+the 
+
+assessment process into several stages with defined outputs as described in Chapter 
+
+3
+
+.3.3. It made the tool applicable for any geographical area and period. Indicators 
+
+al
+
+s
+
+o 
+
+can be configured utilizing configuration files in MS Excel format. Furthermore, the set of indicators used in the assessment can also be customized depending on the data availability. All that enables replication of the tool in other European areas. 
+
+The assessment tool is based on computation of 11 individual indicators: Dissolved Inorganic Nitrogen, Total Nitrogen, Dissolved Inorganic Phosphorus, Total Phosphorus, Chlorophyll 
+
+a
+
+, Cyanobacteria Bloom Index, Secchi Depth, Oxygen Debt, Benthic Quality Index, Shallow water oxygen concentration, Shallow water oxygen area/volume. However, integration of indicators in the assessment depends on the availability of respective data, so the number of indicators can be adjusted utilizing configuration files. The same concerns thresholds 
+
+are 
+
+applied in the indicators. The tool utilizes three types of monitoring data: In-situ bottle sample data; depth profiles and 
+
+F
+
+erry
+
+B
+
+ox data.
+
+At the first stage of the workflow, researchers generate assessment areas and gridded assessment units to be used for the assessment using HELCOM's HEAT assessment tool (Fig. 36A). Assessment areas and grid cells can be configured by users. The outputs of this stage are assessment areas and assessment grid
+
+s
+
+ in shape, 
+
+CSV
+
+ or 
+
+JSON
+
+ formats. These outputs are further used in the assessment.
+
+At the next stage, various types of samples to be used for assessment using HELCOM's HEAT assessment tool are combined per assessment area. The configuration of spatial grid and assessment areas is defined at the first stage. Default data represents three sample types (bottle, pump/
+
+F
+
+erry
+
+B
+
+ox, CTD) 
+
+(Fig 36B). Users can also provide custom bottle samples, which will then be used instead of the default bottle data. Currently, usage of custom pump/
+
+F
+
+erry
+
+B
+
+ox and CTD data is not envisaged, but can be enabled, if required. The output of this stage is observed parameters aggregated per assessment unit on an annual basis. 
+
+The a
+
+ssessment grid generated at the first stage is used for the evaluation of data confidence. The user should ensure that samples match the defined assessment period.
+
+A
+
+B
+
+Figure A to the left exemplifies the generated assessment area and assessment grid. Figure B visualizes various types of sample data used in the analysis.
+
+ 
+
+Annual Indicators are computed at the third stage of the workflow. Indicators are computed for each assessment unit and for each year of the assessment period. Both parameters are configured at previous stages. 
+
+The o
+
+utput of this stage is
+
+ a
+
+ CSV file providing calculated Ecological Quality Ratios EQRs for each year of the assessment period. 
+
+Individual indicators for the whole assessment period are computed at the fourth stage of the workflow. Computation uses data on individual annual indicators computed at the previous stage for each assessment unit. The same parameters are used for 
+
+the 
+
+configuration of indicators as at previous stage. Output of the computation is ecological quality ratios (EQRs) for each individual indicator averaged within assessment unit for the whole assessment period provided as CSV file.
+
+An aggregated eutrophication status is assessed at the final fifth stage of the assessment process. The status is computed based on ecological quality ratios averaged for the assessment period and attributed to assessment units. The assessment result is presented in the indicative form illustrating good, moderate, poor, and bad eutrophication status. Output of the computation is provided as CSV file which can be related to spatial data delineating assessment units and visualized as a map. This visualization procedure is distinguished as a separate sixth stage in the workflow. Additionally, data confidence can be assessed based on the assessment grid generated at early stages of the assessment workflow.
+
+HELCOM Eutrophication Assessment Manual (HELCOM 2026) describes methodological background for the assessment. The document specifies data collection processes and describes indicators, and assessment units used in the assessment of the Baltic Sea eutrophication status. However, all configuration parameters can be adjusted to specific geographical and environmental conditions.
+
+Part 2’s data environment exploration and assessment included two target environments in the initial design: Finland and Latvia
+
+As it has 
+
+been 
+
+said before, the Baltic Sea case
+
+ study
+
+ is intended to strengthen one of the key elements of the DIPSR framework, monitoring the effectiveness of the response to identified impacts. In other words, the case 
+
+study 
+
+investigates the availability of data on environmental social and economic effects of measures undertaken to reduce pressures as well as their sufficiency to achieve respective political goals. 
+
+Daugava is one of the largest transboundary rivers in the Baltic Sea. Its water flow largely controls water quality and consequently the environmental state of the Gulf of Riga. The latest study (HELCOM 2023) revealed 
+
+the 
+
+poor status of the Gulf of Riga in relation to eutrophication. Also, input of nitrogen and phosphorus to the Gulf of Riga has not yet been reduced to achieve target values and should be further reduced by approximately 2.5 thousand tons of nitrogen and 120 tons of phosphorus per year.  Thus, in the case
+
+ study
+
+ the workflow described in the Chapter 
+
+3
+
+.3.3 was applied to identify
+
+ the
+
+ potential effect of measures planned in the Latvian part of 
+
+the 
+
+Daugava catchment on the respective pressure. 
+
+As a starting point, a table describing data required to estimate potential environmental, social, and economic effects of measures planned to reduce nutrient input was developed, and data availability 
+
+was 
+
+assessed (Fig. 37). The table demonstrates that in general the data needed for a test estimation is available through annexes to the Daugava River Basin Management Plan.
+
+Availability of data required for the assessment of effectiveness of measures to reduce nutrient input to the Baltic Sea and their sufficiency to achieve BSAP goals in the RBMP for 
+
+the 
+
+Latvian part of 
+
+the 
+
+Daugava River.
+
+At the next step, data on planned measures and their effects ha
+
+ve
+
+ been compiled and classified according to HELCOM requirements to harmonize with the data on nutrient input and its sources compiled through HELCOM Pollution Load Compilation (PLC) and made available through 
+
+AquaINFRA DDAS
+
+.  The study revealed 16 measures planned for implementation until 2027 addressing point sources, agriculture, forestry, and scattered dwellings.  (Table 1).
+
+Specific measures planned in the RBMP for Latvian part of Daugava River to reduce nutrient losses to inland waters.
+
+Sources
+
+Measure
+
+Point sources
+
+Construct new wastewater treatment plants 
+
+Improve the operation of wastewater treatment plants 
+
+Diffuse  sources
+
+Agriculture
+
+Establish permanent plantings on arable land
+
+Introducing preservative (minimum) tillage
+
+Reduce the use of nitrogen fertilizers (by 20% from norms)
+
+Create a sedimentation pond (basin).
+
+Install controlled drainage.
+
+To equip artificial wetlands (aboveground or underground).
+
+Switch to organic farming.
+
+Install a buffer strip along watercourses (drainage ditches) 6 m wide.
+
+Forestry
+
+Install a forest coastal protection zone (buffer zone) 15 m wide
+
+Create a maximum flow control dam with less intensive application (1-3 objects).
+
+Install a surface filtration area.
+
+Install a sedimentation pond (pool).
+
+Scattered dwellings
+
+Control decentralized sewerage systems and carry out appropriate management.
+
+Reduce the dispersed biogenic load in tourist accommodation, campsites, and recreation areas.
+
+Most of the measures aim to reduce nutrient losses from agriculture, which is the main source of nutrient load on the aquatic environment in the catchment. The same concerns spatial distribution of respective measures. Though the RBMP does not present spatial data outlining areas where foreseen measures should be implemented. However, it provides geographical names of respective water bodies which allow for their approximate geographical reference. Some measures are envisaged for implementation throughout the entire national part of the Daugava River drainage area, which primarily concerns the agricultural sector and partly forestry.
+
+According to the latest assessment (HELCOM 2022), input of nutrients from
+
+ the
+
+ Latvian part of 
+
+the 
+
+Daugava River catchment area constitutes about 28% of total nitrogen input and 18% of total input of phosphorus. The rest is transboundary input originating from upstream countries. Inputs of total nitrogen and phosphorus from
+
+ the
+
+ Daugava River are given in Table 2.
+
+Inputs of total nitrogen and phosphorus from 
+
+the 
+
+Daugava catchment area (t/year) (HELCOM 2022).
+
+Input from Latvian catchment
+
+transboundary
+
+Daugava total
+
+diffuse
+
+natural
+
+point
+
+Total N
+
+5738,5
+
+868,7
+
+79,2
+
+17326,8
+
+24013,2
+
+Total P
+
+101,6
+
+34,6
+
+13,4
+
+694,9
+
+844,6
+
+Estimated input reduction from all measures envisaged in the RBMP for 
+
+the 
+
+Latvian part of 
+
+the 
+
+Daugava River catchment area, aggregated according to HELCOM categories is given in Table 3. The table demonstrates an estimated reduction of nutrients’ input to inland waters and to the sea in comparison with current input of nitrogen and phosphorus from point and diffuse anthropogenic (without natural background) sources to the sea. Contribution of panned measures to overall reduction requirements for the Gulf of Riga is less than 1% for both nitrogen and phosphorus.
+
+Current nutrient input and its estimated reduction due to measures planned in the RBMP for Latvian part of Daugava.
+
+Point sources
+
+TN
+
+TP
+
+TN
+
+TP
+
+Current input to the sea (t/y)
+
+79,2
+
+13,4
+
+5738,5
+
+101,6
+
+Input reduction at source (t/y)
+
+2,0
+
+3,9
+
+100,5
+
+1,9
+
+Retention %
+
+60
+
+60
+
+60
+
+60
+
+Input reduction at sea (t/y)
+
+1,3
+
+2,2
+
+63,3
+
+1,1
+
+Input reduction at sea %
+
+1,6
+
+16,6
+
+1,1
+
+1,1
+
+Available data on provisional costs of planned measures enables estimation of effectiveness of measures for nutrient input reduction from diffuse and point sources. The calculation is performed for the effectiveness of measures at source (Table 4). Retention is to be applied to estimate the cost of reduction at sea.
+
+Estimated cost of 1 t/y reduction of total nitrogen and total phosphorus input from Latvian part of Daugava catchment area.
+
+TN
+
+TP
+
+Cost of measures (th EU)
+
+Cost of 1 t/y TN (th EU)
+
+Cost of 1 t/y TP (th EU)
+
+Point
+
+2
+
+4
+
+6075
+
+3053
+
+1554
+
+Diffuse
+
+101
+
+2
+
+25844
+
+257
+
+13370
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+Eutrophication is one of the most common environmental issues. It’s obvious that for any recipient body the solution l
+
+ie
+
+s in the involvement of the whole catchment area in the development of programmes of measures to reduce nutrient load on the environment. However, it requires scientifically evident identification of the state of the water basin with subsequent political agreement between all regional stakeholders to undertake respective mitigation measures. Forging such an agreement benefits from the application of a universal tool for the assessment of eutrophication status. The HELCOM Eutrophication Assessment Tool (HEAT) with the amendments made in the course of 
+
+the 
+
+AquaINFRA project might serve as such a tool. 
+
+The workflow developed for HELCOM Pollution Load Compilation is applicable for any region as a blueprint for regional systems to compile data on nutrient input from the entire catchment area. It’s a combination of regionally harmonized monitoring and statistic
+
+al
+
+ data with unified and transparent assessment methods. Though not all operations in the workflow are automated, publication of data at several consequent assessment stages ensures transparency and traceability of the assessment results. The workflow showcases
+
+ the
+
+ practical application of 
+
+the 
+
+source-to-sea approach in the water management framework. It also provides 
+
+a 
+
+scientific background for political agreements on environmental targets and programmes of mitigation measures. 
+
+Finally, the use case demonstrates where and how crucial, for 
+
+the 
+
+realization of the DIPSIR management framework information on responds of measures can be collected and how it can be applied. Replication in part 2 was critical for understanding what aspects of a national data environment might be common between EU Member States and what might vary. This example is replicable in all EU countries bound by a common legislative base. 
+
+This case 
+
+study 
+
+demonstrates that programmes of measures developed under the sole legal framework (e.g. MSFD) are not sufficient for achieving environmental goals related to eutrophication. Other frameworks and particularly WFD should be utilized to compile and analyze information on environmental and economic effects of measures, their effectiveness and sufficiency to achieve respective goals. The use case also clearly demonstrates the need for speeding up digital transformation in environmental management based on FAIR principles.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+Lessons learned from the case 
+
+study 
+
+could be divided into two groups. The first group is related to the development of regional policy and administrative procedures. Another group 
+
+is 
+
+primarily concern
+
+ed
+
+ 
+
+with 
+
+technical aspects of data collection processing and sharing. 
+
+1.
+
+Development of scientifically based regional policy, based on existing EU policies and legislation which motivates and coordinates joint effort
+
+s
+
+ to abate eutrophication is the prerequisite for 
+
+the 
+
+organization of regional system for collection and analysis of the data on nutrient inputs to the recipient water body. 
+
+2.
+
+Regular assessment of the state of the recipient water body should be organized utilizing a unified methodology. HELCOM Eutrophication Assessment Tool (HEAT) could be utilized not only as an assessment tool, but as a st
+
+eering
+
+ point for the development of regional assessment systems including sampling, analysis, data collection and processing.
+
+3.
+
+A harmonized monitoring system should be developed for the whole region to collect information on nutrients input to 
+
+the 
+
+recipient water body. The monitoring system should be integrated into national environmental monitoring programmes. 
+
+4.
+
+Statistical data on nutrient discharges from industrial and municipal sources in combination with modelling data on diffuse losses of nutrients should be regularly collected and assessed to quantify contributions of various groups of sources to total nutrient input.
+
+5.
+
+A regional coordination center should be established to collect regional data, maintain a regional dialogue platform, analyze collected data, and draft respective policy messages. 
+
+6.
+
+Measures to mitigate pressure caused by nutrient input should be developed under various policies (MSFD, WFD, UWWTD, CAP, IED
+
+,
+
+ etc) in a coordinated way. Estimation of potential environmental effect of measures is crucial for the assessment of their effectiveness and sufficiency to acheive regional goals. This information should be digitized and made available for compilation and analysis at 
+
+the 
+
+regional level. 
+
+7.
+
+An effective data reporting system, including annual and periodic procedures, depending on the character of reported data and assessment frequency, should be established at 
+
+the 
+
+regional level. It requires nomination of national data reporters and validators representing competent national authorities. A regional expert group, involving representatives of all partners, should be established to guide reporting procedures and perform data verification. 
+
+From a technical point of view, the workflow developed under the case 
+
+study 
+
+could be utilized as a blueprint for the regional data collection and sharing system. Respective lessons learned in the course of the case 
+
+study 
+
+could be formulated as follow
+
+s
+
+.
+
+1.
+
+To
+
+ organize an operational regional system, all processes should be well documented in a regularly updated technical guideline, which in turn should be agreed by all partners. 
+
+2.
+
+The organizational scheme described in this chapter could be utilized for establishing the data collection system at 
+
+the 
+
+regional level. 
+
+3.
+
+Data stored in the system should be quality assured and approved by data reporters or validators. QA/QC procedures should integrate automated technical control, semi-automated statistical quality assurance, and quality control at an expert level. Respective attributes should be assigned to the data to flag their quality.
+
+4.
+
+All collected data should be geo-referenced to ensure their traceability. 
+
+5.
+
+All data should be complemented by metadata. Metadata should be developed in line with 
+
+the 
+
+INSPIRE directive and use well defined and scientifically justified vocabulary of terms. 
+
+6.
+
+Publication of FAIR data enhances workflow transparency, removes administrative barriers, enhances cross-sectoral and cross-border cooperation, and enables adaptive regional governance.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+The d
+
+evelopment of policy background and establishing an adequate regional governance structure are basic prerequisites for replication of HELCOM Pollution Load Compilation and respective workflow in other regions. 
+
+The development of scientifically evidenced environmental management goals is a critical condition for the workflow. The same concerns harmonized nutrient input monitoring methodology and its integration into national environmental monitoring programmes. 
+
+A sufficient number of observed eutrophication-related parameters is a critical condition for highly confident assessment of eutrophication status using HEAT. Another critical condition for replication of HEAT in other regions is threshold values for indicators used in the assessment, agreed for the whole water basin. Scientific justification of assessment units and assessment grid is another critical condition for the tool application. 
+
+There are no critical conditions for further expansion of the exploration and analysis conducted in part 2 other than perhaps a degree of access to internal national data systems. However, much of the analysis can be conducted without such access.
+
+The North Sea - Baltic Sea region from 
+
+a
+
+ satellite perspective
+
+Completed or potential replication
+
+As part of the AquaINFRA project, Sentinel-3 OLCI remote sensing data was processed using a novel processing chain and made freely available for the North Sea and Baltic Sea region, specifically for the summer of 2023. To demonstrate transferability and enable free use and feedback, additional datasets for limited periods have been created and are also being published via WDCC (in progress): (1) the Mackenzie River region with the Beaufort Sea and Arctic Ocean, (2) the Black Sea with the Sea of Marmara and part of the Aegean Sea, and (3) the central North Atlantic. These test datasets serve to establish uniform flagging and useful information on the uncertainties of the specific parameters. This also includes validation of the new products, such as POC. In this respect, the processing chain itself with the A4O-ONNS algorithm for Sentinel-3 OLCI can only be published in the medium term and not within the framework of AquaINFRA.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+Satellite Data: Visualization of Sentinel-3 OLCI data provides a direct overview of data availability as well as relevant influencing factors such as cloud cover. By displaying all parameters, users can quickly assess the extent and quality of the available data for further analysis. The NetCDF data can be opened and visualised in the Sentinel Application Toolbox SNAP or in QGIS, for example. In addition, there is a visualisation of the content using cloud-optimised GeoTIFFs, which was provided by the AquaINFRA project partner Finnish Geospatial Research Institute at the National Land Survey of Finland. The Sentinel-3 OLCI ONNS dataset is provided in two projected coordinate systems, namely 
+
+•
+
+Pseudo Mercator: 
+
+https://vm4072.kaj.pouta.csc.fi/ddas/oapic/collections/sentinel-3-OLCI-ONNS3857
+
+ (12 February 2026) and
+
+•
+
+LAEA: 
+
+https://vm4072.kaj.pouta.csc.fi/ddas/oapic/collections/sentinel-3-OLCI-ONNS3035
+
+ (12 February 2026).
+
+River and Marine Data: The developed tools are designed to be generic and can therefore be readily transferred to other applications or geographic regions with similar data structures. In particular, trend analyses can be applied to any type of continuous time series, enabling the systematic investigation of long-term developments. In addition, fluxes can be calculated as long as both discharge data and temporally resolved measurements are available. The methodology is not restricted to specific 
+
+geographic areas or domains. While it is particularly suited for freshwater and marine systems, it also has the potential to be applied to other domains, such as terrestrial datasets.
+
+The Optical Water Type (OWT) tool is implemented within the web-based Galaxy environment and can be used without the need for programming skills or specialized technical knowledge. This lowers the barrier to entry and facilitates its application by a broad range of users. At the same time, individual modules of the tool can be extracted and integrated into custom user workflows. For example, they can be applied to remote sensing reflectance (Rrs) analysis as well as for conducting data quality checks, allowing flexible adaptation to specific research needs.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+Remote Sensing & River, and Marine Data: The application of remote sensing in aquatic sciences offers substantial potential, while also highlighting opportunities for methodological improvement. In particular, differences in CF-like naming conventions between limnology and oceanography pose a significant challenge. These inconsistencies hinder the efficient discovery, comparison, and integration of datasets, especially as standard naming conventions are often primarily defined for marine (saltwater) environments. This issue is further compounded by the emergence of novel data products such as particulate or dissolved organic carbon concentration (POC & DOC) that commonly 
+
+lack 
+
+agreed-upon naming scheme.
+
+Additionally, many key parameters, such as chlorophyll
+
+ 
+
+a
+
+ (Chl), exhibit variability across several orders of magnitude and are measured using diverse methods with varying levels of uncertainty. This variability complicates validation efforts, which must account for the full range of observed values. In this context, approaches such as Optical Water Type (OWT) classification provide a useful framework to ensure robust validation across different conditions.
+
+From a practical perspective, maintaining simplicity in tool and workflow design is essential. As complexity increases, the reusability and accessibility of methods tend to decline rapidly. This applies in particular to environments such as Galaxy, which, despite their capabilities, can also appear confusing and are not always straightforward to use. Moreover, challenges include the creation of content, adaptation of scripts to the Galaxy framework, deployment of data and tools, and the effective use of workflows, all of which can introduce bottlenecks in the research process. 
+
+Optical Water Type Classification: The application of OWT classification is challenged by the diversity of input data, which must be harmonized and standardized prior to analysis. This variability is partly addressed through the use of dedicated data readers that facilitate the ingestion and preprocessing of heterogeneous datasets. From a user perspective, there is a strong demand for intuitive and self-explanatory workflows. Providing additional interpretative support—such as standardized figures and harmonized visual outputs—can significantly enhance usability and facilitate the understanding of results. OWT classification also plays an important role as a quality control mechanism. By classifying input data into defined optical water types, it can reveal inconsistencies or anomalies, thereby 
+
+creating a feedback loop that supports the identification and improvement of input data quality (outside the workflow in Galaxy). 
+
+Despite these advances, accessing suitable remote sensing reflectance (Rrs) data and related datasets remains a persistent challenge. One common workaround involves hosting curated datasets on dedicated servers (e.g.
+
+,
+
+ NASA’s SeaBASS or EUMETSAT’s Ocean Colour In-Situ Database) for direct download, although more scalable and integrated solutions are still needed. Furthermore, the diversity of available Rrs datasets is often limited, with a large proportion of observations concentrated within a single optical water type (OWT 4a – greenish waters). This imbalance restricts the representativeness of analyses. In addition, many Rrs datasets do not meet the strict requirements for Fiducial Reference Measurements (FRM) validation, due to constraints such as temporal mismatches, proximity to coastal zones, or insufficient data quality control. It would be helpful, for example, to establish long-term monitoring stations in various waters, such as those in WATERHYPERNET (
+
+https://waterhypernet.org/
+
+)
+
+ 
+
+with similarly standardised data processing workflows and data accessibility.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+The validation of remote sensing products is essential but challenging, particularly under out-of-scope conditions such as smoke, dust, or unusual algal blooms, which can introduce significant uncertainties. Such efforts are often limited by time and resource constraints. Many relevant parameters are also measured only rarely or too imprecisely, particularly those relating to carbon or phytoplankton diversity. Additionally, effective use of platforms like Galaxy and specialized datasets requires both technical skills and domain-specific knowledge, which can pose a barrier for users.
+
+Land-Sea interactions and trend analysis in the Oslofjord coastal areas and the rivers in the catchment
+
+ 
+
+Completed or potential replication
+
+The tool for calculating fluxes and trend-analyses based on
+
+ the
+
+ Glomma 
+
+R
+
+iver and the Oslofjord use case is planned to also be tested with the Fin
+
+n
+
+ish data from 
+
+the 
+
+Vantaanjoki River and 
+
+the 
+
+Gulf of Finland use
+
+ 
+
+case and vi
+
+c
+
+e verse. The test will evaluate how transferable the methods and use of two similar tools are to another using similar datasets that cover the same type of input data and how replicable the analyses are. The results from the cross- analysis will be compared with each other and similarities, reusability, FAIR-ness and interoperability will be evaluated. The tests are currently being conducted and the results will also be included in Deliverable D5.3.
+
+A preliminary interoperability test of the FerryBox VRE-tool was conducted for W
+
+ork package 2
+
+.
+
+ 
+
+a
+
+nd task/Deliverable NN?
+
+ to transfer data import and analyzing modules to Common works that can be 
+
+used to launch a similar tool on e.g.
+
+,
+
+ EUDITO. The test was successful, and further interoperability tests with the VRE
+
+ 
+
+tools will be conducted. 
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+River fluxes for a set of parameters are commonly used for analyses of the land-sea interactions, to monitor mitigations or other policy implementations for e.g. reducing nutrient inputs in agriculture, in the catchment area and to assess change over time. Estimat
+
+e
+
+s of the specific parameter fluxes are normalized to 
+
+the 
+
+discharge water in the rivers. To calculate fluxes, you need 2 sets of data, river discharge and parameter observations. The method for estimating fluxes is done by model fitting and the VRE tool for AquaINFRA includes testing of the best models for specific data. This enables users to test different models without setting them up separately and to choose which has the best fit. Once the fluxes are calculated the tool includes a module for applying trend analysis over time, which can be applied to any type of continuous data with long time-series. This is demonstrated by applying the same trend test to data from rivers and marine stations, but it can in principle 
+
+also 
+
+be used for other domains. 
+
+The implementation of the FerryBox – river workflows provide easier access, handling, cleaning and preliminary analysis of large continuous datasets in both time and space. The VRE tools are also designed for collaboration between marine and freshwater scientists/stakeholders, strengthening interdisciplinary practices. The FerryBox and river use cases illustrate how automated, reproducible workflows can bridge observational gaps between river and marine monitoring data. 
+
+Both tools showcase how large datasets can be acquired via api solutions, which can be transferred into other platforms like Digital twins of the ocean. Both approaches are broadly applicable: trend analyses can be performed on any continuous time series, and fluxes can be estimated wherever discharge data and other parameters are available. It can also be extended to other types of continuous data with other temporal and spatial dimensions, such as transects derived from remote sensing. The methods used 
+
+are
+
+ not restricted by geography or domain and can, in principle, be applied beyond freshwater and marine systems, including terrestrial datasets. Hopefully, the tools can inspire users to conduct other types of analyses.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+The project and the use of DDAS and Galaxy facilitate interoperability and interdisciplinary work across domains like e.g.
+
+,
+
+ freshwater and marine data.
+
+ 
+
+The replicability of the VR
+
+ 
+
+tools. We have aimed for full transparency by publishing both raw and pre-processed datasets on THREDDS (accessible via DDAS), along with the scripts used for pre-processing. Pre-processing is not included in the tool, as it is often too complex and varies between datasets, making it unsuitable for standardised replication 
+
+within the tool. Utilizing standardized APIs facilitates easier sharing between organizational data nodes, national nodes, and AquaINFRA.
+
+We aimed to keep the solutions simple to increase the reusability of the tools, as increasing complexity quickly reduces reusability. Scripts have been modularised into separate blocks, following guidance from the data science team within AquaINFRA, to improve their reuse. The actual reusability of the tool is not yet fully assessed, but this is currently being tested using, for example, Finnish river datasets. 
+
+Setting up a Galaxy tool for AquaNFRA and similar using open data sources and platforms requires advanced software skills including coding in many different languages such as R, Python and other programming tools like Docker
+
+,
+
+ etc. One also need
+
+s
+
+ to know how to make the data available on open platforms like e.g.
+
+,
+
+ 
+
+THREDDS
+
+. Relevant research questions and understanding of the ecological systems are required to build useful VRE tools. All this requires a team with different expertise and skills that collaborate interdisciplinary, which is the case in AquaINFRA. Adapting the tool as a general researcher to Galaxy has been challenging due to its steep learning curve, and we have relied very much on support from data scientist
+
+s
+
+ to be able to implement the tools and workflows within the Galaxy framework. For a small research group or for a project with limited recourses the efforts needed and the engagement of people with different skills should not be underestimated, and the benefits gained compared to publishing the scripts and data on other open platforms like e.g.
+
+,
+
+ JyptHub or/and GitHub may be limited. However, for a project that needs a VRE
+
+ 
+
+tool it might be more useful as the number of users 
+
+who
+
+ can make use of the Galaxy tools without pre-knowledge would increase once those tools are in place. 
+
+Over the period of the AquaINFRA project, the development of powerful new coding tools has been exceptional, and we are operating in an environment characterized by rapid technological change. Considering the current AI era, it is reasonable to question whether the Galaxy tools we have developed 
+
+are
+
+ at risk 
+
+of 
+
+becoming outdated compared to emerging AI-driven and advanced coding platforms such as Claude and Mystic. For many developers and researchers, keeping pace with the rapid evolution of AI is increasingly challenging, as the field continues to progress at a very high rate. To remain competitive, there is a clear need to further integrate modern AI tools into our workflows. For non-expert users, students, environmental managers, as well as both junior and senior researchers, the use of AI tools for routine tasks is already becoming standard, often overlapping with functionalities currently implemented in Galaxy.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+The data quality and format govern the applicability of the functions. It is therefore important that users are aware of this and can interpret or have a basic understanding of the input dataset, so they avoid unintended misinterpretation of the results. It would be ideal that after deployment users could submit feedback so that the functions could be modified accordingly. This would also ensure/mitigate that the functions won’t become outdated.
+
+Effects of climate change and human activities on the quantity and quality of water in Tordera river basin and Maresme county
+
+  
+
+Completed or potential replication
+
+The workflow developed within this use case consists of two complementary but independently executable components: (i) an inland hydrological workflow based on the SWAT modelling framework, and (ii) a marine modelling workflow based on the MITgcm general circulation model. As described in the previous section, the integration of these two workflows enables a physically consistent representation of the hydrological continuum, linking processes occurring within the river basin to their impacts on the adjacent coastal ocean. This coupled approach has been demonstrated for the Tordera River basin.
+
+The inland modelling component provides quantitative estimates of hydrological fluxes within the catchment, including river discharge, surface runoff, and associated water quality variables. These outputs constitute the primary freshwater forcing to the coastal system. In contrast, the marine modelling component simulates the fate of this freshwater input upon reaching the coastal ocean. Specifically, it resolves the spatio-temporal evolution of salinity and assesses the influence of buoyancy-driven flows on coastal circulation. The model explicitly represents key physical processes, including vertical mixing as well as advective and diffusive transport mechanisms, which govern the dispersion and dilution of freshwater plumes.
+
+To assess the reusability and transferability of the developed workflows, replication experiments have been conducted independently for each component. The inland workflow has been reapplied to an alternative river basin, at Vantaanjoki (see the description in section 2.2.1). Similarly, the Marine Modelling System workflow has been implemented in the Malta Sea region, in alignment with the objectives of the Malta use case.
+
+In order to demonstrate the reusability of the Tordera inland model, some refinements were made. The main refinement was the addition of a bifurcation option in the initial workflow, allowing the execution of two different SWAT versions: SWAT+ (Tordera) and SWAT (the version used in Vantaanjoki, namely SWAT2012, the previous version). SWAT and SWAT+ require different input folder
+
+s
+
+ and file formats, so we adapted the functions that read the input parameters. These input files are generated during the preparation step, which includes the delineation of hydrological response units (HRUs) outside the VRE. With these minor adaptations, the inland model was successfully executed in the Vantaanjoki 
+
+R
+
+iver.
+
+Furthermore, this second application provides an additional demonstration of interoperability by coupling the Marine Modelling System workflow with the groundwater modelling framework developed for the Malta case study. In this configuration, the marine model requires specific input datasets derived from the groundwater system, including spatial masks, groundwater discharge fields (characterised by flow velocities and salinity), and high-resolution bathymetric data.
+
+ In addition to these user-provided inputs, atmospheric forcing and oceanic initial and boundary conditions can be readily accessed through dedicated data acquisition tools. These tools have been 
+
+specifically developed and integrated into the Galaxy Virtual Research Environment, thereby facilitating standardized data retrieval and ensuring reproducibility of the modelling workflow.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+The application of the inland component to different settings increased the interoperability of the first workflow version. Currently
+
+,
+
+ it is ready for at least two different (the most used) SWAT versions, and it much increases the potential user community. This will allow interesting comparison studies on diverse hydrological patterns in different geographic regions. The less dependence on SWAT versions is a key feature for the reproducibility (totally needed in Open Science) and for mid-term curation and preservation strategies.
+
+The marine component of this use case has resulted in the development of a flexible and modular modelling system that can be readily adapted to different coastal and regional sea environments. This adaptability enables its application across diverse settings, supporting comparative analyses of coastal dynamics under varying environmental conditions.
+
+The system is implemented as an end-to-end automated workflow, covering data acquisition, preprocessing, numerical simulation, post-processing, and visualization. Its deployment within the Galaxy Virtual Research Environment (VRE) provides a graphical user interface that removes the need for advanced programming or software engineering expertise typically required to run ocean general circulation models.
+
+The workflow architecture is both scalable and transferable, with all computations executed in a cloud-based environment. This eliminates the need for local computational resources and complex software installations, thereby facilitating accessibility and reproducibility across different users and institutions, enabling the transferability to different profiles of researchers and decision makers.
+
+The framework supports the analysis of coastal processes, including freshwater–sea interactions and their influence on circulation and stratification, and can be applied to different regions and environmental conditions, such as extreme events. In addition, it enables interoperability with watershed and groundwater models (e.g., SWAT+ and SEAWAT), allowing for integrated land–sea system assessments.
+
+Finally, the application of the workflow in multiple settings has helped identify limitations in the initial implementation developed for the Tordera case study. It has highlighted the need for improved parameterizations and more generic scripting, contributing to the progressive enhancement of the system’s robustness and reusability.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+The development and implementation of the marine component within the AquaINFRA Virtual Research Environment (VRE) have highlighted several technical and conceptual challenges. The modelling system is inherently complex, comprising hundreds of interdependent scripts written in multiple programming languages (e.g., Bash, Python, and Fortran), and encompassing the full modelling chain from data retrieval to preprocessing, numerical simulation, post-processing, and visualization. Integrating such a heterogeneous and comprehensive system into the VRE requires substantial effort in workflow orchestration and standardization.
+
+A key lesson concerns the iterative nature of scalability. The transition from a region-specific implementation (initially developed for the Tordera case study) to a more generic and reusable system cannot be achieved in a single step. Instead, it requires successive refinements, including the parameterization and generalization of scripts, to ensure adaptability across different geographical and environmental contexts.
+
+Another important consideration is the trade-off between flexibility and usability. Ocean modelling systems typically involve a large number of configurable parameters, including numerical settings (e.g., time step and simulation period), physical coefficients (e.g., diffusivities and viscosities), and alternative parameterization schemes (e.g., vertical mixing formulations or equations of state). While exposing all these options increases model flexibility, it also raises the complexity for end users. Conversely, constraining the number of user-defined parameters simplifies usability but may limit the applicability of the model to diverse regions. Achieving an appropriate balance between these two aspects is therefore essential.
+
+Finally, security constraints have played a significant role in shaping the implementation strategy. For instance, the automated retrieval of external datasets (e.g., from Copernicus services) requires user authentication and the handling of credentials. Integrating such functionalities within interoperable services (e.g., OGC API processes) raises potential security concerns related to credential management and transmission. To mitigate these risks, data access and downloading tools have been implemented directly within the Galaxy environment, where credential handling can be more securely managed.
+
+The example of reusability in 
+
+the 
+
+Vantaanjoki river allowed us to consider different SWAT versions. The first workflow version was well designed, and it just needed minor updates which consolidated the inland model Aquagalaxy (
+
+https://aqua.usegalaxy.eu/
+
+) implementation.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+The main critical condition in the implementing inland model refers to the preparation phase, the HRU delineation. High quality in-situ data is needed for achieving an accurate calibration pre-process step. Different simulations are based on this delineation which cannot be dynamically adapted to some updated configurations. The model implemented in the VRU can simulate new scenarios with some parametrization changes (updating meteorological variables, changes of land use land cover of selected specific HRUs), always maintaining the initial HRU delineation.  
+
+In addition, suitable computing resources are needed for large catchment areas or large time series with high time resolution for the set of output variables.
+
+The further expansion and operational scaling of the marine data tools developed in this use case is conditioned by a combination of technical, computational, and usability requirements.
+
+ From a technical perspective, flexibility and portability of the modelling system rely on a high degree of parameterisation across preprocessing and model execution workflows and supporting scripts. This enables consistent adaptation of the system to different geographical domains and modelling configurations. In addition, continuous updates of both frontend and backend components, including the Galaxy environment and associated interoperability services such as pygeoapi, are essential to ensure long-term sustainability, modularity, and integration within broader data infrastructures.
+
+ From an infrastructure standpoint, system scalability is fundamentally constrained by available computational resources. High-resolution ocean modelling applications, in particular, require parallel execution strategies and deployment on high-performance computing (HPC) systems in order to achieve acceptable runtimes and to support increased spatial and temporal resolution.
+
+ Although integration within a Virtual Research Environment (VRE) significantly enhances accessibility—especially for users without programming expertise—the system still requires a minimum level of user familiarity with the platform. Certain aspects of the Galaxy interface are not fully intuitive, and basic training is therefore necessary to ensure correct configuration and efficient execution of the modelling workflows.
+
+In the Mediterranean, we demonstrated the reusability with small adaptations of the inland workflow model (SWAT+) developed in the Tordera catchment to the Vantaanjoki 
+
+R
+
+iver (SWAT2012).  For the marine component we reuse the MITgcm model in the Catalonia coastal region to the Malta region.
+
+Groundwater–sea interactions and coastal fluxes of water and solutes controlling coastal water quality in the Maltese Islands
+
+ 
+
+Completed or potential replication
+
+The workflow implemented in this use case combines a groundwater component based on SEAWAT with a coastal ocean component based on the MITgcm general circulation model, adapted from the marine workflow originally developed for the Tordera River basin use case (Catalonian Mediterranean coast). This configuration represents the land–sea hydrological continuum in the Maltese coastal system, where submarine groundwater discharge forms the dominant freshwater pathway to the marine environment, in contrast to the river-dominated systems of the Tordera and Vantaanjoki (Finland) use cases.
+
+The groundwater component provides quantitative estimates of subsurface flow dynamics, including freshwater discharge rates and three-dimensional salinity distributions within the coastal aquifer, which serve as the primary freshwater forcing to the marine system. The marine component then simulates the transport and transformation of this freshwater signal within the coastal ocean, resolving salinity evolution and its influence on coastal circulation via vertical mixing, advection, and turbulent diffusion.
+
+The replication of the MITgcm marine component from the Catalonian coastal region to the Malta Sea region represents the primary demonstrated replication within this use case — a cross-Mediterranean transfer to a distinct physical and oceanographic setting. This required adaptation of the model domain, bathymetry, and boundary conditions, while retaining the core workflow architecture within the Galaxy VRE.
+
+The coupling of the SEAWAT and MITgcm components is currently under development and represents the planned replication effort of this use case. Once implemented, this will extend the framework beyond river-dominated land–sea coupling to groundwater-dominated coastal systems. The NetCDF output of the groundwater model has been designed with this integration in mind, ensuring format compatibility with the marine model input requirements.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+The Malta use case demonstrates the reusability of the AquaINFRA modelling infrastructure across fundamentally different hydrogeological settings. While the Tordera and Vantaanjoki cases are characterised by surface water-dominated land–sea connectivity, the Maltese system is representative of coastal and island environments where groundwater serves as the primary freshwater pathway to the sea. This broadens the potential user community to include researchers and practitioners working on groundwater-dominated coastal systems globally.
+
+The Docker containerisation of the SEAWAT workflow ensures full reproducibility of the simulation environment across institutions, eliminating dependency on local software installation and enabling deployment through EOSC. The adoption of OGC API Processes as the integration standard further 
+
+ensures the groundwater component can be incorporated into any compatible VRE, avoiding platform dependency on Galaxy. The use of NetCDF as the common output format ensures compatibility with a wide range of downstream analysis tools and ocean circulation models beyond MITgcm.
+
+The structured scenario interface in Galaxy exposing sea-level conditions, recharge rates, and stress period duration, enables non-specialist users, including resource managers and decision-makers, to explore aquifer sensitivity to projected environmental changes without requiring groundwater modelling expertise. More broadly, the framework is applicable across limestone island and coastal settings worldwide, where modelling of sea-level rise, groundwater abstraction, and recharge variability can directly inform water resource management and coastal planning.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case
+
+The development of the Malta groundwater workflow highlighted several technical and practical lessons relevant to future tool implementation within the AquaINFRA VRE.
+
+Maintaining a focused user interface proved important for usability. Exposing only sea-level conditions, recharge rate, and stress period duration enabled meaningful scenario exploration without exposing non-specialist users to the full parameter space of the underlying numerical model. This is recommended as a design principle for future tools.
+
+A significant technical challenge arose from porting the SEAWAT model, originally developed in a Windows environment, to a Linux-based containerised infrastructure for EOSC deployment. Future modelling tools should therefore be developed natively on Linux from the outset to avoid compatibility issues and implementation delays.
+
+The initial monolithic workflow is structured as bundling pre-processing, model execution, and post-processing into a single pipeline with limited access to intermediate outputs. Users could not apply the SEAWAT-to-NetCDF conversion independently of a full model run. Decomposing the workflow into modular, standalone components improved flexibility and is recommended for future development.
+
+Finally, coupling the groundwater and marine components required careful alignment of spatial and temporal metadata between the two model grids, despite the use of NetCDF as a common exchange format. This effort should be planned for explicitly in future coupled modelling systems.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+Expansion of the Malta modelling tools to additional sites requires sufficient site-specific data, completion of ongoing technical development, and access to appropriate computational infrastructure.
+
+Site-specific hydrogeological data of sufficient quality are essential for model construction and calibration. This includes geological layering and stratigraphy, hydraulic parameters, groundwater recharge and abstraction rates, sea-level boundary conditions, and observed salinity or chloride distributions. Where such data are unavailable, the model can be used for scenario exploration, but quantitative predictions should be interpreted with caution and validated against independent observations where possible.
+
+On the technical side, consolidation of the SEAWAT-to-MITgcm conversion workflow within the Galaxy VRE is a prerequisite for operational deployment of the full coupled system. High-resolution marine model configurations additionally require parallel execution on HPC infrastructure to achieve acceptable runtimes.
+
+The most suitable candidates for geographic expansion are coastal and island groundwater systems where seawater intrusion is an active concern. These settings share the same core research questions addressed in the Malta use case such as quantifying coastal water quality impacts, assessing the effect of sea-level rise on freshwater lens extent, and identifying risks from over-abstraction and saltwater intrusion, making the framework directly transferable once the necessary local hydrogeological data are available.
+
+Pan-European freshwater biodiversity
+
+Completed or potential replication
+
+Developed an R package for easy replicability across studies: The package enables broader use in other studies. For example, it can be used to check the consistency and spelling of species taxonomic names, a common issue in studies where species taxonomy must not be compromised. 
+
+Incorporated in the species distribution models for the Danube River Basin fishes. The tool has been incorporated into species distribution models for the Danube River basin, which are being used to develop a restoration plan for the basin. 
+
+Integrated into the digital twin model (DT) to automatically flag suspicious records on the fly. The tool is included in the DT workflow to enable the identification and consideration of environmental outliers or records that raise suspicions in environmental analysis during preparation.
+
+Used in examining the suspicious macroinvertebrates records in assessing the reconnection of the Danube River Basin side arms. Also, the tool was used in a respiration study to flash abundance data that were suspicious in the macroinvertebrates data.
+
+The benefits of applying in different settings the data gathering mechanism and VRE developed in this Use Case
+
+Provides an objective data quality control tool. Because the tool uses multiple outlier detection methods to automatically identify outliers in the dataset. Instead of users identifying outliers in the dataset using a single method, the tool raises multiple outliers and flags the absolute outlier (records raised across multiple outlier detection methods). It provides a visual representation of the outliers flagged on both two- and three-dimensional scales.
+
+The lessons learned while developing and implementing AquaINFRA data tools in this Use Case.
+
+Data accessibility and usage criteria should be identified or harmonized at the start of workflow development to ensure the FAIR data principles are met.   
+
+The tool still requires technical knowledge of the data groups to avoid flagging true data as outliers since they come from different groups. This is especially important for invasive species that colonize novel environments, which may appear as outliers in the dataset.
+
+Suspicious records in ecological datasets are the hardest to objectively identify and remove without introducing the subjectivity of the data handler. This arises because even the outliers flagged by multiple methods cannot be discarded with utmost certainty from the dataset. However, the tool provides the user with confidence that the flagged records are suspicious and warrant further review before retaining or discarding them from the dataset.
+
+The critical conditions for further expansion of the data tools developed in this Use Case
+
+1.
+
+A better understanding of how outlier detection methods work in setting the tool for outlier detection and removal.
+
+2.
+
+A critical understanding of the data groupings, which may be temporal, spatial, or taxonomic entities. 
+
+Pan European use case: The reusability of the workflow involves a well-maintained R package archive on GitHub (
+
+https://github.com/AnthonyBasooma/specleanr
+
+).
+
+ Several demonstrations with different data formats and usages are also provided for the user to test the package's functionality during outlier detection and removal (Fig
+
+.
+
+ 38). Also, a published manuscript is available as a user guide detailing the workflow's concept and principles (
+
+https://nsojournals.onlinelibrary.wiley.com/doi/full/10.1002/ecog.08221
+
+).
+
+As proof of usage, the package has been used in the data quality control for the Danube4All data records and in the study that evaluated the restoration potential in the Danube region (Recinos Brizuela et al. 2025).
+
+S
+
+pecleanr package archived on GitHub.
+
+Common benefits
+
+ 
+
+                                                                                                                                                                                                                        
+
+-
+
+Once 
+
+deployed on the Galaxy platform, the 
+
+workflows 
+
+become 
+
+reproducible
+
+, accessible,
+
+ and 
+
+reusable analytic tools.
+
+-
+
+The developed spatio-temporal trend analysis tool
+
+ can be readily adapted and 
+
+appli
+
+ed
+
+ to European seas, coastal areas, lakes and
+
+ other aquatic systems.
+
+-
+
+The 
+
+CORINE land cover data extraction tool can be 
+
+readily 
+
+applied 
+
+to different
+
+ Europe
+
+an catch
+
+ments and study areas
+
+.
+
+-
+
+The approach enables combined analysis of data and simulation results along the source-to-sea continuum. 
+
+E.g. t
+
+he
+
+ workflow combining catchment 
+
+surface
+
+ 
+
+hydrological model (SWAT), 
+
+a 
+
+groundwater model
+
+ (
+
+SEAWAT
+
+)
+
+,
+
+ and 
+
+a 
+
+marine circulation model
+
+ (MITgcm)
+
+, 
+
+demonstrat
+
+es
+
+ interoperability across
+
+ different
+
+ environmental
+
+ dom
+
+a
+
+ins.
+
+ 
+
+The 
+
+Catalonian government has 
+
+already 
+
+shown interest 
+
+in the operational 
+
+use
+
+ of
+
+ 
+
+such 
+
+drift and spreading model
+
+.
+
+-
+
+AquaINFRA project improves access to observation 
+
+a
+
+nd
+
+ assessment data used in the water management cycle (DAPSIM
+
+ framework) 
+
+particular
+
+ly
+
+ targeting such 
+
+components as
+
+ 
+
+A
+
+ctivities, 
+
+P
+
+ressures and 
+
+S
+
+tate
+
+. Availability of such quality assured
+
+ and neatly 
+
+document
+
+ed
+
+ data 
+
+enables
+
+ 
+
+cross-sectorial and cross-policy decision making when developing programmes of measures addressing the most 
+
+acute
+
+ 
+
+environmental problems in European sea basins. 
+
+-
+
+A broad array of assessment tools targeting various aspects of
+
+ the
+
+ 
+
+aquatic 
+
+environment
+
+ published in Galaxy platform in combination with 
+
+workflows for their application 
+
+builds new 
+
+analytical capacity
+
+ and thus, strengthen scientific evidence supporting decision making process in all European regions. 
+
+-
+
+Assessment of the ef
+
+fectiveness of planned and implemented measures integrating 
+
+their
+
+ environmental, social and economic effects is one 
+
+of the most challenging tasks 
+
+due to extremely poor availability of respective data and lack of
+
+ connection with nature observations
+
+. 
+
+The project first demonstrates an approach to compilation of quantified information on
+
+ environmental and socio
+
+economic 
+
+parameters describing effectiveness of measures and
+
+ 
+
+their
+
+ integrative analysis with nature o
+
+bservations. A blueprint for such data publication can be further replicated
+
+ by the EU member states 
+
+in 
+
+all EU regions. 
+
+Common data reuse challenges
+
+While this deliverable focuses on the reusability of analytical tools and workflows developed within the AquaINFRA use cases, the reusability of the underlying data 
+
+is 
+
+equally
+
+ important
+
+ for replication, upscaling, and long
+
+-
+
+term impact of the project. 
+
+Analytical t
+
+ools can only be effectively reused if they can be applied to new datasets with minimal manual intervention
+
+.
+
+ 
+
+This also requires that
+
+ the 
+
+underlying 
+
+data are discoverable, accessible, interoperable, and reusable in accordance with FAIR principles. 
+
+Ideally, applying a workflow
+
+ to a new study area
+
+ should not be substantially more complex than applying i
+
+t
+
+ to a different spatial extent within the original dataset
+
+, provided that structurally comparable data 
+
+is 
+
+available.
+
+Across the AquaINFRA use cases, a wide range of data products are 
+
+utilised
+
+, including in situ monitoring data, Earth Observation products, model outputs, derived indicators, and socio
+
+-
+
+environmental datasets. These data originate from diverse national, regional, and international providers and span freshwater, coastal, and marine 
+
+environments
+
+. This diversity creates 
+
+valuable
+
+ opportunities for 
+
+data reuse a
+
+cross use 
+
+cases
+
+.
+
+ 
+
+At the same time, it 
+
+also reveals structural challenges that
+
+ can
+
+ limit the transferability of data-driven workflows between regions
+
+This section analyses the main 
+
+aspects of 
+
+data reusability dimensions, identifies common barriers observed across use cases, and 
+
+summarises
+
+ lessons 
+
+learned that are 
+
+relevant for broader uptake within EOSC and beyond AquaINFRA.
+
+Data/API heterogeneity and harmonisation requirements
+
+A recurring challenge across 
+
+the AquaINFRA 
+
+use cases is the heterogeneity of input datasets and related machine-readable Application Programming Interfaces (APIs), even when addressing similar environmental variables. Differences 
+
+occur
+
+ in data formats (e.g. CSV, NetCDF, JSON, proprietary formats), spatial and temporal resolution, variable naming conventions and units, quality flags and metadata richness
+
+. Additional challenges arise from differences
+
+ 
+
+in 
+
+data access mechanisms
+
+, such as
+
+ 
+
+manual download v
+
+ersus
+
+ machine-accessible APIs, 
+
+as well as variations in API functionality, including 
+
+data filtering capabilities.
+
+Several replication attempts described in Chapter 
+
+4.1
+
+ 
+
+demonstrated
+
+ that workflows developed for one region could in principle be reused elsewhere
+
+.
+
+ 
+
+However, their applications
+
+ 
+
+require manual data transformations, format conversions, or 
+
+additional
+
+ preprocessing before execution. 
+
+Effective reuse
+
+ requires explicit harmonisation
+
+ 
+
+layers that align datasets syntactically (formats), structurally (schemas), and semantically (
+
+variable meaning
+
+).
+
+Where harmonisation steps 
+
+such as 
+
+unit conversions, temporal aggregation, spatial alignment
+
+ w
+
+as
+
+ embedded within workflow
+
+, data reuse was substantially improved. 
+
+In contrast,
+
+ workflows 
+
+that 
+
+assumed a single data structure
+
+ were less
+
+ applicab
+
+le
+
+ to alternative datasets.
+
+In contrast, workflows that assumed a single predefined data structure were less applicable to alternative datasets.
+
+Metadata, provenance, and data citation
+
+Data reusability is strongly dependent on the availability of rich, machine-readable metadata describing at least provenance, spatial and temporal coverage, methods used for data
+
+ generation or derivation
+
+, and usage constraints. Across AquaINFRA use cases, metadata quality varies considerably depending on the originating data provider and 
+
+thematic 
+
+domain.
+
+S
+
+everal workflows
+
+ raised
+
+ questions regarding how datasets accessed through the AquaINFRA DDAS should be referenced, cited, and traced back to their authoritative sources. 
+
+Uncertainties about
+
+ whether 
+
+citations should refer 
+
+to the original data provider, the AquaINFRA DDAS endpoint, or an associated Data to Knowledge Package 
+
+highlight the
+
+ need for clear and consistent data citation practices.
+
+Where datasets were accompanied by persistent identifiers (e.g.
+
+,
+
+ DOIs
+
+ hosted in B2SHARE or 
+
+Zenodo
+
+) and detailed provenance information, 
+
+their 
+
+reuse in new analytical contexts was straightforward and transparent. In contrast, datasets lacking explicit versioning or provenance limited users’ confidence in reuse and interpretation, particularly when intermediate or derived data products were involved.
+
+Licensing and access constraints
+
+Although AquaINFRA promotes open science and reuse, licensing and access conditions remain limiting factor in some use cases. Even when data are publicly available, restrictions related to approval status, authentication requirements, or national reporting rules can prevent seamless integration of datasets into automated workflows. 
+
+A practical example is a service that requires users to interactively accept terms of use through a web interface before accessing its content. This 
+
+approach reflects an intention 
+
+to make the data openly available
+
+ while
+
+ 
+
+still 
+
+ensure compliance with usage conditions. However, 
+
+it also
+
+ 
+
+creates a 
+
+practical limitation
+
+:
+
+  although
+
+ the service supports 
+
+data 
+
+use in traditional, interactive environments such as desktop GIS, it effectively prevents use in automated workflows where manual interaction is not possible. As a result, the intended goal of enabling 
+
+seamless 
+
+reuse is not fully achieved in machine-driven processing environments.
+
+Several use cases noted that data could be accessed manually but were not available through fully open, standardised, machine-readable interfaces
+
+ This
+
+ reduc
+
+ed
+
+ their usability in reproducible
+
+ and
+
+ 
+
+scalable 
+
+analytical workflows
+
+. This is
+
+sue is
+
+ particularly relevant for long-term monitoring data and policy-relevant datasets, where access restrictions may persist despite technical readiness
+
+ for broader reuse.
+
+Ensuring 
+
+effective
+
+ data reuse
+
+ 
+
+therefore requires not only technical interoperability
+
+,
+
+ but also institutional alignment on licensing, access policies, and sustainable data provision.
+
+Reuse of derived and intermediate datasets
+
+Beyond raw observational data, AquaINFRA workflows generate a large number of intermediate and derived datasets, 
+
+including
+
+ aggregated time series, spatial indicators, model outputs, and assessment products. These datasets often represent substantial analytical value and
+
+, for some applications, 
+
+may be more reusable than 
+
+original
+
+.
+
+However, reuse of such derived data
+
+s
+
+e
+
+ts
+
+ depends on clear documentation of processing steps, explicit linkage to input datasets and 
+
+analytic 
+
+tools, availability in standard formats, and long-term storage and discoverability. Where intermediate outputs were retained, exposed, and exportable (e.g.
+
+,
+
+ as CSV or NetCDF files), they 
+
+supported
+
+ secondary analyses, alternative visualisations, and reuse in external platforms. 
+
+In contrast, w
+
+he
+
+n
+
+ outputs 
+
+remained
+
+ tightly bound to a specific workflow execution or user session, 
+
+their 
+
+reuse potential was 
+
+considerably 
+
+reduced.
+
+This observation underscores the importance of treating derived datasets as first-class research outputs
+
+ that should be
+
+ subject to the same FAIR considerations as primary data. It 
+
+also 
+
+challenges the traditional view that persistent identifiers should only be 
+
+assigned to
+
+ highly curated data
+
+sets
+
+. Instead, their use 
+
+cou
+
+l
+
+d 
+
+be extended to selected intermediate results that are well documented and 
+
+considered
+
+ value for future reuse.
+
+Implications for scaling and cross use case reuse
+
+The analysis across 
+
+the AquaINFRA 
+
+use cases demonstrates that meaningful data reuse 
+
+does not 
+
+emerge automatically, but 
+
+depends on 
+
+deliberate design choices at both data and workflow levels. Key enabling factors include:
+
+•
+
+early agreement on common data models, variable vocabularies, and
+
+ standardised
+
+ formats;
+
+•
+
+embedding data harmonisation and validation into reusable workflows;
+
+•
+
+consistent metadata and citation practices 
+
+throughout
+
+ the infrastructure;
+
+•
+
+making
+
+ intermediate data products 
+
+accessible 
+
+for inspection
+
+, validation
+
+ and reuse;
+
+•
+
+alignment of licensing
+
+ and access
+
+ conditions with automated EOSC services.
+
+Addressing these aspects strengthens not only the reuse within AquaINFRA use cases, but also the transferability of AquaINFRA methods and services to new regions,
+
+ research
+
+ communities, and policy contexts.
+
+Summary of lessons learned
+
+In summary, AquaINFRA use cases demonstrate that data reusability is a critical
+
+,
+
+ but 
+
+still
+
+ under
+
+ 
+
+addressed
+
+,
+
+ dimension of use case upscaling
+
+. The analysis further shows that
+
+ technical reusability of tools does not guarantee reusability of data,
+
+ and that
+
+ FAIR implementation must extend beyond discovery to 
+
+practical
+
+ workflow integration
+
+.
+
+ 
+
+In addition,
+
+ derived datasets represent an important reuse opportunity
+
+ for future reuse
+
+, 
+
+while
+
+ long
+
+-
+
+term impact 
+
+depends on
+
+ sustained attention to metadata, provenance, and access
+
+ con
+
+d
+
+itions
+
+.
+
+These findings complement the tool-focused reusability analysis in Chapter 3 and 
+
+support
+
+ future recommendations 
+
+for
+
+ interoperability and scaling in EOSC-oriented data-centric research infrastructures.
+
+platform
+
+Next steps towards broader 
+
+uptake
+
+ and expansion.
+
+One of the objectives of Task 5.3 was
+
+ to
+
+ 
+
+'
+
+Formulate a plan/roadmap for
+
+ 
+
+upscaling the use of the platform and services into pan-European level.
+
+' Thus, in this chapter we provide ways to address 
+
+the
+
+ 
+
+challenges identified above
+
+ and to incorporate the lessons learned during the implementation of WP5. Furthermore, we identify
+
+ additional user groups that 
+
+w
+
+ould 
+
+benefit from
+
+ the developments done in AquaINFRA.
+
+Meaning of uptake and expansion
+
+In this report we define 'uptake' as the process during which new users start utilizing the tools and methods developed by AquaINFRA partners. Uptake can take many forms from simply using a
+
+n
+
+ 
+
+existing 
+
+workflow 
+
+with original input
+
+ to taking the components of a workflow, further developing them and using the result for something completely new.
+
+'Expansion' is similar
+
+ to uptake
+
+.
+
+ Here it is understood as broadening the use of the tools and methods
+
+.
+
+ E.g., using an existing workflow with data from a new area, 
+
+or different time period, or using different parameters
+
+ and data sources in the analysis
+
+. 
+
+Potential large user groups and interest to uptake developed research tools
+
+AquaINFRA aimed its developments and services towards researchers
+
+ working in the 
+
+aquatic field
+
+. This decision was made
+
+ early in the project
+
+ due to the complexity of using the VRE and the associated datasets. 
+
+Now at the end of the project it is worthwhile to analyse the possibilities of going beyond this user group. 
+
+The main questions related to finding new users for VRE's are:
+
+What motivates a researcher, a student, a teacher or a local authority to start using developed research tools?
+
+What skills does a user need?
+
+Education
+
+: We see a role for
+
+ 
+
+VRE's 
+
+and
+
+ 
+
+open data
+
+ in university education at both master’s and PhD 
+
+student 
+
+levels. Introduction to the principles of open science and the use of VRE tools should start at an early stage of training future researchers. Teachers should design courses in a way that incorporates VRE's as a continuous element of the curriculum allowing students to develop their skills and understanding throughout their studies. 
+
+Guidelines for this already exist: 
+
+Galax
+
+y training page
+
+. The 
+
+Data-to-
+
+Knowledge packages
+
+ (
+
+an example
+
+)
+
+ created in AquaINFRA can be used as material in the courses allowing students to use real data and tools.
+
+Research
+
+: As explained above, 
+
+the development of 
+
+AquaINFRA 
+
+tools and datasets we have made available 
+
+w
+
+ere
+
+ aimed at 
+
+aquatic 
+
+researchers
+
+, who can now take direct advantage 
+
+of the results
+
+.
+
+ 
+
+The tools and methods, and possibly also the datasets, can be utilized also in other research fields. 
+
+Potential new researchers can be reached e.g. through scientific publications. AquaINFRA will publish a 
+
+Special Issue in journal E
+
+nvironmental
+
+ M
+
+odelling
+
+ 
+
+and
+
+ S
+
+oftware
+
+ for this purpose.
+
+ Presentations in conferences and workshops is another way to reach research audiences. 
+
+Policy and monitoring
+
+: There is often collaboration between a policy organization (such as a 
+
+M
+
+inistry of Environment) and an environmental research organization. 
+
+Typically
+
+,
+
+ the policy organization requests information or an analysis from the research organization.
+
+ In cases where the requested information needs to be updated regularly, e.g., every time a certain time interval has passed, the 
+
+use of 
+
+VRE's provide an opportunity to automate the process. The research organization can 
+
+set up 
+
+a process in a VRE which the people in the policy organization can use to compute the required result without direct interaction with the researcher
+
+s
+
+ every time
+
+. This 
+
+makes it faster for the policy people to get updated information when they need it.
+
+ 
+
+Promoting this kind of uptake requires reaching out to both the policy and research organizations. 
+
+This can be done e.g. by 
+
+organizing workshops, writing articles in professional journals and policy briefs. 
+
+ 
+
+Barriers and solutions 
+
+to
+
+ broader uptake and expansion
+
+During the 
+
+project the AquaINFRA team identif
+
+ied
+
+ the following challenges with the AquaINFRA VRE:
+
+Although Galaxy provides a reproducible analytical environment, 
+
+becom
+
+ing
+
+ familiar with workflow development and tool usage within the platform
+
+,
+
+ 
+
+and 
+
+adapting existing code and workflows to the platform require
+
+d
+
+ 
+
+time and 
+
+programming experience
+
+Galaxy user
+
+ 
+
+interface is insufficiently user friendly. This issue may turn into a bottleneck hampering attracting of larger user groups. More integrated and user-friendly output visualisation within a single interface would significantly improve usability.
+
+At present Galaxy does not provide DOIs for the tools created on it. 
+
+Workflow execution times within the Galaxy platform can be 
+
+relatively long
+
+, even for moderately sized analyses, which may discourage use, especially when no warning or information about the expected time needed for the analysis is not provided.
+
+ We recommend 
+
+to provide
+
+ enough computing resources to the VRE. 
+
+The use and development of Galaxy-based tools could be boosted by establishing a “GALAXY Service” that would serve as a contact point in development and maintenance of workflows. 
+
+Some of these are system features that might be solved in future updates while others are related to 
+
+the
+
+ user's 
+
+experience and capabilities in VRE's and programming
+
+. 
+
+We see the following VRE user categories:
+
+Beginner
+
+: Able to use the tools in the VRE as implemented by the author of the tool. Thus, can replicate a result, use different input data to provide results for a new (but similar to the original) case or area, and publish the modified workflow. Not able to modify the output of a tool (figures, tables) without assistance from the developer. 
+
+Intermediate: 
+
+Able to create new workflows by linking inputs and tools in new ways. …
+
+Expert
+
+: Able to create new and modify existing tools to accept new inputs (e.g. new data formats), and change the data processing steps, and the outputs.
+
+As explained in Chapter 5.3.2 
+
+programming with the help of AI complements the use of VRE’s allowing more people to use and further develop the tools and workflows
+
+ and we see this as a great way for beginner and Intermediate level people to start using VRE's
+
+.
+
+The following sub-chapters discuss the b
+
+arriers and 
+
+potential 
+
+solutions
+
+ to broader uptake.
+
+Programming skills and tool complexity 
+
+The overall 
+
+role
+
+ of 
+
+VRE
+
+ tools developed in AquaINFRA has been to take data as input and provide an output, typically
+
+ 
+
+more data
+
+,
+
+ a 
+
+figure 
+
+and/
+
+or a table
+
+. Such a tool can be either simple and limited in scope and capabilities, or complex and able to provide more options for the user. Based on the experiences gathered during AquaINFRA, it is rather simple to create a tool for Galaxy that e.g.
+
+,
+
+ utilizes input data from one or more sources, computes a result, and creates a plot as output. If, however, the user wants to use different kinds of data (different format, different parameters
+
+,
+
+ etc.) or have control over how the plots are created, the tool requires more options and thus coding. The coding requires extra time and effort and often the developer cannot include all options the users may want to have. Thus, more time and effort are needed in this typical cycle of software development. 
+
+The tool developers in 
+
+AquaINFRA
+
+ are 
+
+mainly researchers
+
+, not professional software 
+
+developer 
+
+experts. This slow
+
+ed
+
+ the development cycle and the complexity of the tools limiting the uptake and expansion for different purposes and data sources. In the 
+
+AquaINFRA
+
+ tool development process the tools were not added to Galaxy by the researchers who wrote the code. A process was in place for checking the code and ensuring it worked as expected together with software developers. This also took time, but the process went faster as the researchers learned what they were expected to do. Nevertheless, available worktime and specific skills w
+
+ere
+
+ usually the bottleneck for making the tools more versatile and thus expandable.
+
+Further uptake 
+
+is
+
+ 
+
+facilitated
+
+ with step-by-step instructions of how to create and publish a tool, supplemented with a library of examples
+
+ 
+
+of how to 
+
+utilize
+
+, analyse and visualize data
+
+. With these a tool developer 
+
+can 
+
+take a script that is close to what she wants to 
+
+accomplish
+
+ and modify the code according to the 
+
+new requirements.
+
+ 
+
+The role of artificial intelligence 
+
+in 
+
+the context of VRE’s
+
+T
+
+he use of AI tools is becoming 
+
+common
+
+ in programming as 
+
+they
+
+ allow people with low level programming skills to effectively use 
+
+programming 
+
+languages such as Python and R for scientific analysis. This could be seen as an alternative to using VRE’s such as Galaxy and community-based tools, but in our view it is not. VRE’s provide additional advantages for open science such as publication of the workflow as a 
+
+part
+
+ of a scientific article, which increases the credibility of the analysis. 
+
+Hence
+
+, both technologies should be used together to reach maximum impact. F
+
+uture projects 
+
+working with VRE's 
+
+could 
+
+include e.g. 
+
+AI assisted tutorials or a prompt that help
+
+s
+
+ researchers to code faster
+
+.
+
+ or to find 
+
+existing 
+
+tools and code that could be useful for the researcher
+
+.
+
+ AI could also help with data formats and harmonization and in modifying the output plots and tables without the need to change the tools.
+
+Towards 
+
+FAIR data
+
+The concept of FAIR data was published in 2016 
+
+(Wilkinson et al., 2016)
+
+. While a lot of progress has been made during the past decade, the 
+
+discuss
+
+ion
+
+ in Chapter 4.3
+
+ shows t
+
+he
+
+re still are many
+
+ challenges 
+
+remaining 
+
+related to 
+
+availability and use of 
+
+data
+
+ within the context of the AquaINFRA project
+
+.
+
+ The main issues are
+
+ related to
+
+:
+
+Data sharing
+
+ - Data storages may not be fully machine readable
+
+Data h
+
+armonization
+
+ - Datasets have different formats, naming conventions etc.
+
+Data quality assurance
+
+ – Datasets contain vast diversity of data different by 
+
+origin
+
+, quality and consequently application area
+
+.
+
+Metadata
+
+ - The descriptions are not sufficient
+
+ly detailed or accurate
+
+ 
+
+preventing findability and 
+
+re
+
+usability
+
+During the project AquaINFRA partners were able to make 
+
+publicly 
+
+available 
+
+several 
+
+new datasets. Th
+
+e publication p
+
+rocess
+
+es
+
+ 
+
+evolved throughout the project as new options became available and were tested for use. There now exist cases for publishing various types of data
+
+, which can be used as a 
+
+library of 
+
+example
+
+s
+
+ for those willing to share their data
+
+.
+
+ For many cases a simple data publication through e.g. 
+
+B2SHARE
+
+ would be sufficient.
+
+ 
+
+Our recommendations are:
+
+Utilize large data integrator services when publishing 
+
+data 
+
+in order to maximize findability
+
+ (B2SHARE, Zenodo, …) or ensure the service you are using is harvested by the large services
+
+.
+
+Establish 
+
+technical and 
+
+administrative procedures for data maintenance and update. 
+
+A
+
+utomated dataflows
+
+ 
+
+should be prioritized. H
+
+owever, 
+
+when 
+
+full automation is not possible respective workflows should be established.
+
+Utilize 
+
+standard 
+
+ 
+
+data formats whenever possible, and provide tools for 
+
+accessing and managing 
+
+ the data when not
+
+Ensure the quality of the data by using e.g. flags to identify uncertain data. Report any potential deficiencies in the metadata
+
+.
+
+Include a sufficient level of details in the metadata to allow the user to fully understand what the characteristics of the dataset are.
+
+To ensure transparency of data analysis, p
+
+ublish methodologies
+
+ used 
+
+for the 
+
+assessments
+
+ 
+
+and refer to respective methodological documents in metadata for
+
+ respective assessment datasets.
+
+S
+
+ustainability of 
+
+services
+
+The AquaINFRA project ends at the end of 2026, and with that ends the 
+
+direct 
+
+funding for various systems and services. While some elements of the AquaINFRA system and the practises formulated during the project will remain
+
+ based on the interest of the partners to keep them operating
+
+, the system as a whole may not. So, it is 
+
+relevant
+
+ to 
+
+consider what impacts the discontinuity in funding may cause.
+
+From the point of view of the use cases the main systems have been:
+
+Metadata and
+
+ data
+
+ publication
+
+, discovery
+
+ and access
+
+ system
+
+s
+
+AquaINFRA 
+
+created 
+
+its own metadata repository, 
+
+and a number of national or organizational services were 
+
+also 
+
+used
+
+.
+
+ 
+
+However, 
+
+especially
+
+ in the later phases of the project EU level systems such as
+
+ B2SHARE were 
+
+increasingly 
+
+employed to ensure the findability of the data
+
+ the partners made available
+
+.
+
+ 
+
+B2SHARE receives public funding and will thus remain after the end of AquaINFRA
+
+.
+
+B2SHARE and other
+
+ services 
+
+like it 
+
+do, however, have some limitations about 
+
+e.g. 
+
+the size of the dataset
+
+ that can be stored in it. In AquaINFRA the solution to large dataset
+
+s
+
+ had been to utilize 
+
+the 
+
+data lake of CSC
+
+.
+
+ 
+
+Another solution must be found if this service would cease to be available.
+
+ 
+
+The AquaINFRA Data Discovery and Access Service (DDAS) help
+
+s
+
+ a user to find data from over 20 data repositories. It also 
+
+helps with the data 
+
+access 
+
+by facilitating the importing of data to the Galaxy VRE. 
+
+Without the system the user would have to spend more time on data searches in different repositories and manually handle the Galaxy import.
+
+Virtual Research Environment
+
+Galaxy is maintained independently from individual research project
+
+s
+
+ and will thus remain after AquaINFRA ends. 
+
+Even if
+
+ the AquaINFRA community In Galaxy might not 
+
+stay
+
+ active, the tools, processes and workflows developed in AquaINFRA will remain available.
+
+ Adding new tools 
+
+and modifying the current ones 
+
+would require unfunded effort by the partners currently in charge of the process and is thus unlikely to continue.
+
+ Thus, another solution for making new tools is needed.
+
+ 
+
+This analysis shows that the 
+
+system
+
+s used in the use cases
+
+ 
+
+can continue functioning even after the project by 
+
+using alternative services or systems where necessary. 
+
+Nevertheless, the availability of all components should be the aim . 
+
+The AquaINFRA Data Discovery and Access Service (DDAS) is being sustained through its integration into the Finnish national Open Geospatial Information Infrastructure for Research (Geoportti), from which it will be onboarded to EOSC Node Finland, ensuring its continued availability and contribution to the EOSC federation beyond the project lifetime. AquaINFRA datasets and metadata are  published in EUDAT B2SHARE enabling their automatic integration into the EOSC Research Hub. The availability and reliability of AquaINFRA OGC services are monitored through the EOSC Monitoring. AquaINFRA’s interoperability and reusability solutions enable seamless data sharing and integration across disciplines and institutions.
+
+Our engagement with EOSC is driven by the need to provide researchers with seamless access to distributed aquatic research data, services, and computational resources across a European 
+
+coherent, user-centric ecosystem 
+
+. We plan to sustain and federate AquaINFRA’s DDAS and VRE through the EOSC Federation, ensuring their long-term discoverability, accessibility, and interoperability beyond the project lifetime. From the EOSC Federation, we expect a reliable framework for service onboarding, federation-wide interoperability, monitoring, and sustainable operation of research services. The EOSC Federation User Forum plays an important role in this context by enabling knowledge exchange, feedback 
+
+from a user-oriented and domain-science perspective
+
+ , and collaboration among service providers and users. Additional tools that would facilitate participation include interoperability validation services, federated identity and access management solutions.
+
+Overcoming policy barriers
+
+ and cross-border cooperation
+
+Sustainable management of the aquatic environment and 
+
+utilization
+
+ of
+
+ its
+
+ 
+
+ecos
+
+ystem s
+
+ervices
+
+ 
+
+without deterioration of ecosystem functionality requires integrative approach based on data describ
+
+ing the whole aquatic continuum. 
+
+AquaINFRA
+
+ demonstrated application of
+
+ the
+
+ source-to-
+
+sea
+
+ approach 
+
+which 
+
+centres the land-sea interaction with the coastal and open sea serving as the recipient of environmental pollutants transported from land-based sources. However, such approach demands coor
+
+dination of activities guided by various policies, which 
+
+often creates administrative b
+
+arrier
+
+s
+
+ for effective 
+
+data 
+
+collection and 
+
+sharing
+
+.
+
+ The most know case is the gap between WFD and MSFD which impedes coordinated effort to collect d
+
+ata 
+
+required
+
+ to assess the impact from land-based sources on the marine environment. 
+
+Moreover, 
+
+allocation of environmental measures
+
+ and assessment of their effects involves even broader spectrum of sectorial policy addressing agriculture, industries, municipal 
+
+waste
+
+ wa
+
+ters etc. 
+
+A comprehensive 
+
+policy
+
+ 
+
+framework coordinating various policies 
+
+and guiding joint effort towards a clear set system of targets should be 
+
+established
+
+ to overcame cross-sectorial 
+
+policy barriers. 
+
+This framework should be further realized in an operational administrative system enabling harmonized collection, 
+
+verification,
+
+ 
+
+processing and s
+
+haring of data in cross-border 
+
+context
+
+.
+
+Cross-border or transboundary nature of the aquatic environment demands 
+
+addit
+
+ional
+
+ coordination of 
+
+t
+
+he effort to c
+
+ollect comprehensive, 
+
+compatible
+
+ and reliable data 
+
+to assess its state and 
+
+identify
+
+ key pressures and impacts. 
+
+Thus, 
+
+the 
+
+p
+
+olicy framework 
+
+and administrative procedures 
+
+should overcome not only cross-sectorial, but also cross-border barriers 
+
+involving strong international cooperation. 
+
+Several study cases 
+
+demonstrated
+
+ 
+
+examples of such approach 
+
+which,
+
+ however, 
+
+should
+
+ be further advanced and potentially replicated 
+
+throu
+
+gh
+
+out
+
+ Europe.  
+
+Summary
+
+…
+
+Provide a library of examples for publishing data, developing workflows and using Galaxy
+
+References
+
+ 
+
+Aigars, J., Suhareva, N., Cepite-Frisfelde, D., Kokorite, I., Iital, A., Skudra, M., & Viska, M. (2024). 
+
+From green to brown: two decades of darkening coastal water in the Gulf of Riga, the Baltic Sea. Frontiers in Marine Science, 11, 1369537. 
+
+https://doi.org/10.3389/fmars.2024.1369537
+
+Barbagli A, Guastaldi E, Conti P, Giannuzzi M, Borsi I, Lotti F, Basile P, Favaro L, Mallia A, Xuereb R, Schembri M, Mamo JA, Sapiano M. 
+
+(2021) 
+
+Geological and hydrogeological reconstruction of the main aquifers of the Maltese islands. Hydrogeology Journal 2021, 29(8):2685–2703. (
+
+https://doi.org/10.1007/s10040-021-02406-z
+
+)
+
+ 
+
+Basooma, A., Schmidt‐Kloiber, A., Domisch, S., Torres‐Cambas, Y., Smederevac‐Lali
+
+ć
+
+, M., Bremerich, V., Meulenbroek, P., Tschikof, M., Funk, A., Hein, T., Borgwardt, F
+
+.
+
+ 
+
+(
+
+2025
+
+)
+
+. ‘specleanr’’: an R package for automated flagging of environmental outliers in ecological data for modeling workflows.’ Ecography. 
+
+https://doi.org/10.1002/ecog.08221
+
+Bi, S., & Hieronymi, M.
+
+ 
+
+(2024). Holistic optical water type classification for ocean, coastal, and inland waters. Limnol Oceanogr. 
+
+https://doi.org/10.1002/lno.12606
+
+Bi, S., Hieronymi, M., & Röttgers, R. (2024). Supplementary dataset to the publication "Bi, S., and Hieronymi, M. (2024). Holistic optical water type classification for ocean, coastal, and inland waters. Limnology & Oceanography" [Data set]. Zenodo. 
+
+https://doi.org/10.5281/zenodo.12803329
+
+Bi, S., Hieronymi, M., Behr, D., Buurman, M., & Konkol, M. (2026). pyOWT: python library for Optical Water Type classification (v0.66). Zenodo. 
+
+https://doi.org/10.5281/zenodo.18645698
+
+Bouchet L, Thoms MC, Parsons M. Groundwater as a social-ecological system: A framework for managing groundwater in Pacific Small Island Developing States. Groundwater for Sustainable Development 
+
+(
+
+2019
+
+).
+
+ 8:579–589. (
+
+https://doi.org/10.1016/j.gsd.2019.02.008
+
+)
+
+Choi H, Lee E, Park D, Park C, Schembri M, Schembri D, Pisani CM, Sapiano M, Kim Y. 
+
+(2024). 
+
+Assessment of spatio-temporal variations in groundwater quality for the groundwater-dependent Maltese islands. Journal of 
+
+Hydrology: Regional Studies
+
+, 54:101875. (
+
+https://doi.org/10.1016/j.ejrh.2024.101875
+
+)
+
+ 
+
+Elovaara, S., Ehrhart, S., Kaitala, S., Maunula, P., Seppälä, J. (2022) Trends in nutrient and chlorophyll a concentrations from FerryBox transect time series in the Baltic Sea. In: Copernicus Ocean State Repport. Journal of Operational Oceanography 15: s92–s100. 
+
+doi.org/10.1080/1755876X.2022.2095169
+
+ 
+
+European Environment Agency. (1999). Environmental Indicators: Typology and Overview. EEA Technical Report No. 25
+
+Finnish Environment Institute. 2018. 
+
+Corine Land Cover 2018, Finland, raster dataset
+
+. Finnish Environment Institute. Available via Syke Open Data / Syke metadata service. CC BY 4.0.
+
+HELCOM). HELCOM Monitoring Manual. Helsinki: Baltic Marine Environment Protection Commission (HELCOM), 2014. 
+
+https://helcom.fi/action-areas/monitoring-and-assessment/monitoring-manual/
+
+HELCOM Guidelines for the annual and periodical compilation and reporting of waterborne pollution inputs to the Baltic Sea (PLC-Water). HELCOM (2022) 
+
+https://helcom.fi/wp-content/uploads/2022/04/HELCOM-PLC-Water-Guidelines-2022.pdf
+
+ 
+
+HELCOM. (2021) Background Information on the Baltic Sea Catchment Area for the Seventh Baltic Sea Pollution Load Compilation (PLC 7). 
+
+https://helcom.fi/wp-content/uploads/2021/12/Background-information-on-the-Baltic-Sea-catchment-area-for-the-Seventh-Baltic-Sea-Pollution-load-compilation-PLC-7-211202.pdf
+
+HELCOM. (2023). State of the Baltic Sea 2023: The Third HELCOM Holistic Assessment (HOLAS 3), 2016–2021. 
+
+https://helcom.fi/post_type_publ/holas3_sobs
+
+HELCOM. (2025a). Inputs of nutrients by eleven selected rivers in the Baltic Sea region in 1995 to 2021. Baltic Sea Environment Proceedings n°204. 
+
+https://helcom.fi/post_type_publ/inputs-of-nutrients-by-eleven-selected-rivers-in-the-baltic-sea-region-in-1995-to-2021-plc-8/
+
+HELCOM. (2025b). HELCOM Indicator Manual - 2025 update. Baltic Sea Environment Proceedings n° 175. 
+
+https://helcom.fi/wp-content/uploads/2021/01/BSEP175.pdf
+
+Hieronymi, M., Behr, D., Bi, S., & Röttgers, R. (2026). 
+
+Optical complexity of North Sea, Baltic Sea, and adjacent coastal and inland waters derived from Sentinel-3 OLCI satellite data, Earth Syst. Sci. Data, 18, 1307–1329
+
+.
+
+ 
+
+https://doi.org/10.5194/essd-18-1307-2026
+
+Hieronymi, M., Bi, S., & Behr, D. (2025). 
+
+Sentinel-3 OLCI daily averaged earth observation data of water constituents (Version 2), World Data Center for Climate (WDCC) at DKRZ [data set]
+
+.
+
+ 
+
+https://doi.org/10.26050/WDCC/AquaINFRA_Sentinel3_v2
+
+Hieronymi, M., Bi, S., Müller, D., Schütt, E. M., Behr, D., Brockmann, C., Lebreton, C., Steinmetz, F., Stelzer, K., & Vanhellemont, Q. (2023). Ocean color atmospheric correction methods in view of usability for different optical water types, Front. 
+
+Mar. Sci., 10, 1129876
+
+.
+
+ 
+
+https://doi.org/10.3389/fmars.2023.1129876
+
+Holland PG, De Wiest RJ. 
+
+Ghyben–Herzberg theory. In: Encyclopedia of Hydrology and Water Resources. Dordrecht: Springer Netherlands; 2016. pp. 340–341
+
+Konkol M, Labuce A, Domisch S, Buurman M, Bremerich V. Encouraging reusability of computational research through Data-to-Knowledge Packages - A hydrological use case [version 3; peer review: 2 approved, 1 not approved]. Open Res Europe 2025, 5:123 (
+
+https://doi.org/10.12688/openreseurope.20221.3
+
+)
+
+Labuce, A., Konkol, M., & Buurman, M. (2025). Data-to-Knowledge Package for a Reproducible Spatiotemporal Trend Detection Analysis (1.6.1). 
+
+Zenodo. 
+
+https://doi.org/10.5281/zenodo.17175368
+
+Mathews, Ruth E., Anna Tengberg, Johanna Sjödin, and Birgitta Liss Lymer. 
+
+Implementing the Source to Sea Approach: A Guide for Practitioners. Stockholm: Stockholm International Water Institute (SIWI), 2019. 
+
+https://www.siwi.org/publications/implementing-the-source-to-sea-approach/
+
+Moore WS, Joye SB. Saltwater intrusion and submarine groundwater discharge: acceleration of biogeochemical reactions in changing coastal aquifers. Frontiers in Earth Science 2021, 9:600710. (
+
+https://doi.org/10.3389/feart.2021.600710
+
+)
+
+Müller, D., Hieronymi, M., Ruescas, A.B., Peters, M., Röttgers, R., König, M., Lebreton, C., Stelzer, K., Brockmann, C., & Doerffer, R. (2026). Case 2 Regional Coast Colour: a neural network-based framework for atmospheric correction and in-water retrievals across multiple ocean colour satellite sensors, Front. Remote Sens., 7, 1710758
+
+.
+
+ 
+
+https://doi.org/10.3389/frsen.2026.1710758
+
+Recinos Brizuela S, Funk A, Graf W, Basooma A, Hein T. 2025. Responses of Oligochaeta and Chironomidae to restoration of connectivity in a river–floodplain stretch of the Upper Danube River. Restoration Ecology DOI: 10.1111/rec.70238
+
+Ruddick, K. G., Voss, K., Banks, A. C., Boss, E., Castagna, A., Frouin, R., ... & Vendt, R. (2019). A review of protocols for fiducial reference measurements of downwelling irradiance for the validation of satellite remote sensing data over water. Remote Sensing, 11(15), 1742
+
+.
+
+ 
+
+https://doi.org/10.3390/rs11151742
+
+Ruddick, K. G., Voss, K., Boss, E., Castagna, A., Frouin, R., Gilerson, A., ... & Vendt, R. (2019). A review of protocols for fiducial reference measurements of water-leaving radiance for validation of satellite remote-sensing data over water. 
+
+Remote Sensing, 11(19), 2198
+
+.
+
+ 
+
+https://doi.org/10.3390/rs11192198
+
+Piniewski, M., Tattari, S., Koskiaho, J. 
+
+et al.
+
+ 
+
+How effective are River Basin Management Plans in reaching the nutrient load reduction targets?. 
+
+Ambio
+
+ 
+
+50
+
+, 706–722 (2021). https://doi.org/10.1007/s13280-020-01393-x
+
+Seppälä, J., Ylöstalo, P., Kaitala, S., Hällfors, S., Raateoja, M. & Maunula, P. (2007) Ship-of-opportunity based phycocyanin fluorescence monitoring of the filamentous cyanobacteria bloom dynamics in the Baltic Sea. Estuarine, Coastal and Shelf Science, 73, 489-500
+
+Spatola D, Agius J, Miceli M. A geological overview of the Maltese Archipelago with reference to the area of Sliema. 
+
+Xjenza Online 2023, 11(2):53–69
+
+. 
+
+https://www.um.edu.mt/library/oar/handle/123456789/117723
+
+United Nations Division for Ocean Affairs and the Law of the Sea (DOALOS), New York
+
+United Nations. (2016). The First Global Integrated Marine Assessment: World Ocean Assessment I
+
+Wilkinson, Mark D., Michel D. Dumontier, IJsbrand J. Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 
+
+(2016). “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018. 
+
+https://www.nature.com/articles/sdata201618
+
+Appendix
+
+ 
+
+AquaINFRA SI paper manuscripts.
+
+44
+
+
+
+---
+
+<div class="sequence-navigation">
+    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous</a>
+</div>
+<div class="wave-decoration"></div>
