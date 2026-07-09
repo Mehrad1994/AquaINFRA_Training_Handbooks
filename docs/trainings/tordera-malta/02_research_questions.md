@@ -16,7 +16,7 @@ Both case studies seek to understand how extreme environmental pressures—wheth
 
 The Tordera river system is prone to violent, sudden changes. The research questions focus on surface dynamics:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
         <li><strong>Storm Impact:</strong> How do extreme flood events alter the transport of sediments, nutrients, and pollutants from the Tordera basin into the Mediterranean Sea?</li>
         <li><strong>Model Reusability:</strong> Can the inland-marine coupled models developed for northern regions be adapted accurately for flashy, episodic Mediterranean rivers?</li>
@@ -27,7 +27,7 @@ The Tordera river system is prone to violent, sudden changes. The research quest
 
 The Maltese islands rely heavily on invisible subterranean water flows. The research questions focus on groundwater dynamics:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
         <li><strong>Submarine Discharge:</strong> How much freshwater (and associated agricultural nutrients) is being lost to the sea via Submarine Groundwater Discharge (SGD)?</li>
         <li><strong>Saltwater Intrusion:</strong> How is the delicate freshwater-saltwater interface within the coastal aquifers shifting in response to over-extraction and climate change?</li>

@@ -136,9 +136,7 @@ p {
     margin-bottom: 1rem;
     font-size: 1.05em;
     /* Scales with body */
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    text-align: left;
 }
 
 ul,
@@ -577,16 +575,15 @@ tr:hover {
 .table-wrapper th {
     word-wrap: normal;
     word-break: normal;
-    -webkit-hyphens: auto;
-    hyphens: auto;
     vertical-align: top;
 }
 
-/* Let the browser auto-distribute column widths */
+/* Let the browser auto-distribute column widths, prevent breaking first column */
 .table-wrapper th:first-child,
 .table-wrapper td:first-child {
     width: auto;
-    min-width: 150px;
+    min-width: 120px;
+    white-space: nowrap;
 }
 
 /* Small Screen Content Spacing */

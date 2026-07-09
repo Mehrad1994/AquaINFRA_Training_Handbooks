@@ -14,7 +14,7 @@ The Baltic Sea is heavily impacted by human activities and nutrient enrichment. 
 
 To support this objective, the workflow addresses the following core research questions:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
         <li><strong>Eutrophication Reduction:</strong> How effective have existing environmental measures been at reducing nutrient inputs into the Baltic Sea?</li>
         <li><strong>State Assessment:</strong> What is the current environmental state of the Baltic Sea, and how does it correlate with mapped pressures?</li>

@@ -14,11 +14,11 @@ There is currently a lack of research tools that integrate long-term catchment a
 
 The Vantaanjoki Use Case aims to address three primary research questions connecting the inland catchments to the marine environment:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
-        <li><strong>Riverine Loads:</strong> How have carbon loads from rivers to the sea varied over time?</li>
-        <li><strong>Land Use Impact:</strong> Is there a relationship between land use changes and river water quality or riverine material fluxes?</li>
-        <li><strong>Coastal Gradients:</strong> How do coastal water quality and phytoplankton variables change from nearshore areas towards the open sea?</li>
+        <li><strong>Terrestrial Input:</strong> How do freshwater discharge from the Vantaanjoki River and point-source loads (e.g., wastewater treatment plants) influence the concentration and distribution of suspended sediments, nutrients, and dissolved organic matter in the coastal region?</li>
+        <li><strong>Marine Observation:</strong> How effectively can FerryBox measurements (high-frequency transects) combined with Earth Observation satellite data (spatially expansive) capture the highly variable nature of these coastal plumes?</li>
+        <li><strong>Impact on Ecosystems:</strong> What is the resulting ecological impact of these specific load events on the local marine environment (e.g., on phytoplankton blooms)?</li>
     </ol>
 </div>
 

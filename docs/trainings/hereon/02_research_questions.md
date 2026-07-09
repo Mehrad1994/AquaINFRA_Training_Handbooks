@@ -14,7 +14,7 @@ Evaluating optical water types via satellite presents several technical and scie
 
 This workflow is designed to answer the following research questions:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
         <li><strong>Algorithm Validation:</strong> How accurately do existing remote-sensing algorithms classify Optical Water Types (OWTs) compared to physical in-situ measurements?</li>
         <li><strong>Spatial Mapping:</strong> Can we generate reliable, continuous maps of different water types across the highly variable conditions of the North Sea and Baltic Sea?</li>

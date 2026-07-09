@@ -14,7 +14,7 @@ Evaluating the environmental impact of storm events requires understanding how a
 
 This workflow is designed to answer the following research questions:
 
-<div class="use-case-card">
+<div class="question-list">
     <ol>
         <li><strong>Storm Transport:</strong> How do extreme weather events (such as heavy rainfall and storms) influence the transport of suspended sediments and dissolved organic matter from the Glomma River into the Oslofjord?</li>
         <li><strong>Coastal Footprint:</strong> How far into the coastal zone do the effects of these extreme riverine discharges reach, and how long does the marine environment take to recover?</li>

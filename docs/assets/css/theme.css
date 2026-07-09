@@ -655,3 +655,49 @@
     color: var(--text-muted);
     margin-top: 0.6rem;
 }
+
+/* =========================================
+   Research Questions List Styling
+   ========================================= */
+
+.question-list {
+    background: #f8fafd;
+    border: 1px solid var(--aqua-blue-light);
+    border-left: 4px solid var(--aqua-blue);
+    border-radius: 6px;
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.question-list ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--gray-800);
+}
+
+.question-list ol li {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.question-list ol li:last-child {
+    margin-bottom: 0;
+}
+
+.question-list ol li strong {
+    color: var(--aqua-blue-dark);
+}
+
+@media (max-width: 640px) {
+    .question-list {
+        padding: 1.25rem 1rem 1.25rem 0.5rem;
+    }
+    .question-list ol {
+        padding-left: 1.25rem;
+    }
+    .question-list ol li {
+        font-size: 0.95rem;
+    }
+}
