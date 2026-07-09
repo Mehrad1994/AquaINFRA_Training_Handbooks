@@ -37,7 +37,7 @@ The implementation process relies on established data flows and systematic workf
 
 <div class="use-case-card" style="margin-bottom: 2rem;">
     <figure style="text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image25.png" alt="Generalized data flows in HELCOM pollution load compilation process" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image25.png" alt="Generalized data flows in HELCOM pollution load compilation process" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1: Generalized data flows in the HELCOM pollution load compilation process.</figcaption>
     </figure>
 </div>
@@ -46,18 +46,18 @@ To assess the eutrophication state, the **HEAT** (HELCOM Eutrophication Assessme
 
 <div class="use-case-card" style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
     <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image26.png" alt="HELCOM eutrophication assessment tool workflow" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image26.png" alt="HELCOM eutrophication assessment tool workflow" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2a: Conceptual HELCOM eutrophication assessment tool workflow.</figcaption>
     </figure>
     <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image27.png" alt="HELCOM eutrophication assessment tool workflow in Galaxy platform" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image27.png" alt="HELCOM eutrophication assessment tool workflow in Galaxy platform" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2b: Tool workflow implemented in the Galaxy platform.</figcaption>
     </figure>
 </div>
 
 <div class="use-case-card" style="margin-bottom: 2rem;">
     <figure style="text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image28.png" alt="Visualization of final outputs of the eutrophication assessment tool workflow applied for the Baltic Sea" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image28.png" alt="Visualization of final outputs of the eutrophication assessment tool workflow applied for the Baltic Sea" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 3: Visualization of final outputs of the eutrophication assessment tool applied for the Baltic Sea.</figcaption>
     </figure>
 </div>

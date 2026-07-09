@@ -58,7 +58,7 @@ The processing stage consists of three interconnected components after datasets 
 The workflow exports all results for reporting and policy assessment while preserving full data provenance.
 
 <figure style="text-align: center; margin: 2rem 0;">
-  <img src="{{ relative_root }}/assets/images/gulf-of-finland/image12.png" alt="Overall chart of the Vantaanjoki River and Gulf of Finland workflow" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="../../assets/images/gulf-of-finland/image12.png" alt="Overall chart of the Vantaanjoki River and Gulf of Finland workflow" >
   <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1: Overall flowchart of the Vantaanjoki River and Gulf of Finland workflow.</figcaption>
 </figure>
 
@@ -68,21 +68,21 @@ The output of this workflow produces comprehensive time-series and correlation d
 
 <div class="use-case-card" style="margin-bottom: 2rem;">
     <figure style="text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/gulf-of-finland/image13.png" alt="Regression analysis of riverine and CORINE data" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/gulf-of-finland/image13.png" alt="Regression analysis of riverine and CORINE data" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2: Visual timeseries and regression analysis linking riverine loads and land-use (CORINE) data.</figcaption>
     </figure>
 </div>
 
 <div class="use-case-card" style="margin-bottom: 2rem;">
     <figure style="text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/gulf-of-finland/image15.png" alt="Map showing FerryBox and river station locations" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/gulf-of-finland/image15.png" alt="Map showing FerryBox and river station locations" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 3: Map showing the center points of marine FerryBox aggregation areas and automated river stations.</figcaption>
     </figure>
 </div>
 
 <div class="use-case-card" style="margin-bottom: 2rem;">
     <figure style="text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/gulf-of-finland/image16.png" alt="River discharge and satellite turbidity estimates" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/gulf-of-finland/image16.png" alt="River discharge and satellite turbidity estimates" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 4: River discharge and satellite (EO) turbidity estimates as a function of time from the same locations.</figcaption>
     </figure>
 </div>

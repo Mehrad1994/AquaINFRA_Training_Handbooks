@@ -14,11 +14,11 @@ The Helsinki Commission (HELCOM) is an intergovernmental organization dedicated 
 
 <div class="use-case-card" style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
     <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image17.png" alt="Illustration of source-to-sea system" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image17.png" alt="Illustration of source-to-sea system" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1a: Source-to-sea system for pollution data management.</figcaption>
     </figure>
     <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
-      <img src="{{ relative_root }}/assets/images/helcom/image18.png" alt="Map of Baltic Sea catchment" style="max-width: 100%; border-radius: 4px;">
+      <img src="../../assets/images/helcom/image18.png" alt="Map of Baltic Sea catchment" >
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1b: Map of Baltic Sea catchment colour coded to HELCOM PLC sub-basins.</figcaption>
     </figure>
 </div>

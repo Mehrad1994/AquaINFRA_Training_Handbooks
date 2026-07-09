@@ -29,6 +29,20 @@ The Oslofjord workflow focuses on combining high-frequency inland hydrological d
    - Perform trend analyses comparing baseline marine conditions to the post-storm marine conditions.
    - Generate spatial maps showing the extent of the freshwater plume and the dispersion of river-transported materials throughout the coastal zone.
 
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/oslofjord/image36.png" alt="Schematic workflow for calculating river fluxes" >
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2: Schematic workflow for calculating river fluxes and Marine-river chemistry trends based on either river fluxes or marine data.</figcaption>
+    </figure>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/oslofjord/image37.png" alt="Global workflow of FerryBox and River sensors" >
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 3: Global workflow of FerryBox and River sensors in the Oslofjord for analyses of spatial and temporal variation before, during, and after a storm event.</figcaption>
+    </figure>
+</div>
+
 > [!TIP]
 > This workflow is designed to be highly modular. While it defaults to the Glomma River and Oslofjord, the same algorithms can be applied to any coupled river-estuary system equipped with FerryBox monitoring.
 

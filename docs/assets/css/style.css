@@ -532,8 +532,22 @@ tr:hover {
 
 /* Responsive Images */
 .handbook-content img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+/* Let flex containers inside figures manage their own width */
+.handbook-content figure div[style*="display: flex"] img {
+    max-width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .handbook-content img {
+        max-width: 85%;
+    }
 }
 
 /* =========================================

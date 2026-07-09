@@ -82,7 +82,28 @@ We explore this through two parallel case studies:
   </g>
 
 </svg>
-<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 1: Conceptual comparison of surface extreme events (Tordera, Spain) and subterranean groundwater dynamics (Malta).</p>
+<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 3: Conceptual comparison of surface extreme events (Tordera, Spain) and subterranean groundwater dynamics (Malta).</p>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; align-items: center;">
+        <img src="../../assets/images/tordera-malta/image38.png" alt="Tordera catchment map" style="flex: 1; min-width: 250px;">
+        <img src="../../assets/images/tordera-malta/image39.jpg" alt="Tordera dry period" style="flex: 1; min-width: 200px;">
+        <img src="../../assets/images/tordera-malta/image40.jpg" alt="Tordera flash flood" style="flex: 1; min-width: 200px;">
+      </div>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 1: Tordera catchment (left) exhibiting high variability in water quantity and quality patterns, contrasting long dry periods (middle) with short flash floods (right).</figcaption>
+    </figure>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; align-items: center;">
+        <img src="../../assets/images/tordera-malta/image43.png" alt="Maltese Islands diagram" style="flex: 1; min-width: 250px;">
+        <img src="../../assets/images/tordera-malta/image44.png" alt="Malta maps" style="flex: 1; min-width: 250px;">
+      </div>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 2: The Maltese archipelago, highlighting the hydrogeological system dominated by permeable carbonate formations and groundwater resources.</figcaption>
+    </figure>
 </div>
 
 ### System Characteristics

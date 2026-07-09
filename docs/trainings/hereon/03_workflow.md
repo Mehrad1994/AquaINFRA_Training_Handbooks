@@ -32,6 +32,20 @@ The analytical pipeline is broken down into four core steps:
    - Output statistical validation reports.
    - Generate raster maps displaying the dominant Optical Water Type across the entire sea region for selected time periods.
 
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/hereon/image31.png" alt="Merging of satellite data with in-situ measurements" >
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2: Merging of satellite data with in-situ measurements of remote-sensing reflectance.</figcaption>
+    </figure>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/hereon/image32.png" alt="Workflow for Optical Water Type classification in Galaxy" >
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 3: Workflow for Optical Water Type classification from diverse sources in the Galaxy environment.</figcaption>
+    </figure>
+</div>
+
 > [!NOTE]
 > By executing this workflow in Aqua Galaxy, researchers can easily swap out different classification algorithms or atmospheric correction models and immediately benchmark their performance against the in-situ baseline.
 

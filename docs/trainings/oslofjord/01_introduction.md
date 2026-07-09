@@ -73,7 +73,18 @@ As climate change alters weather patterns, extreme events such as intense storms
   <text x="250" y="275" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Flux Transport</text>
 
 </svg>
-<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 1: Tracing the impact of extreme storm events from the Glomma River out into the Oslofjord using FerryBox transects.</p>
+<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 2: Tracing the impact of extreme storm events from the Glomma River out into the Oslofjord using FerryBox transects.</p>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <img src="../../assets/images/oslofjord/image33.png" alt="Glomma River landscape" >
+        <img src="../../assets/images/oslofjord/image34.png" alt="Catchment area of the Oslofjord" >
+        <img src="../../assets/images/oslofjord/image35.png" alt="Marine monitoring stations and FerryBox route" >
+      </div>
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Figure 1: Overview of the Oslofjord region, showing the Glomma River landscape, the catchment area, and the marine monitoring stations alongside the FerryBox route between Kiel and Oslo.</figcaption>
+    </figure>
 </div>
 
 ### System Characteristics

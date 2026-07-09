@@ -84,7 +84,14 @@ To overcome this, the HEREON use case leverages Earth Observation (EO) data to a
   <text x="600" y="315" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fcd34d" text-anchor="middle">OWT 3: CDOM-Rich</text>
 
 </svg>
-<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 1: Earth Observation satellites capture multi-spectral reflectance, classifying the sea into distinct Optical Water Types, validated by in-situ buoys.</p>
+<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 2: Earth Observation satellites capture multi-spectral reflectance, classifying the sea into distinct Optical Water Types, validated by in-situ buoys.</p>
+</div>
+
+<div class="use-case-card" style="margin-bottom: 2rem;">
+    <figure style="text-align: center; margin: 0;">
+      <img src="../../assets/images/hereon/image30.png" alt="Estimate of POC in North Sea-Baltic Sea region" >
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1: Estimate of the concentration of particulate organic carbon (POC) in the upper water column averaged for July 2023 within the North Sea-Baltic Sea region.</figcaption>
+    </figure>
 </div>
 
 ### System Characteristics
