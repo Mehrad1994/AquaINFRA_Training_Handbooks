@@ -1,0 +1,50 @@
+<w16cex:commentsExtensible xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" mc:Ignorable="w16 w16cex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+  <w16cex:commentExtensible w16cex:durableId="719F352E" w16cex:dateUtc="2026-06-02T07:49:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="62D81477" w16cex:dateUtc="2026-06-02T10:13:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="6ABE181B" w16cex:dateUtc="2026-06-03T10:41:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="5CED7E35" w16cex:dateUtc="2026-06-17T09:52:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="3C4F9F83" w16cex:dateUtc="2026-05-11T14:12:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="6BC21BD3" w16cex:dateUtc="2026-06-02T08:06:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="2AB9FE28" w16cex:dateUtc="2026-06-02T08:18:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="0CAEFBD1" w16cex:dateUtc="2026-06-02T08:20:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="7123ED4C" w16cex:dateUtc="2026-06-11T13:23:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="0908155E" w16cex:dateUtc="2026-06-12T14:29:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="7BDBD9E7" w16cex:dateUtc="2026-05-11T11:49:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="24C085B4" w16cex:dateUtc="2026-06-02T08:45:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="47AA8A26" w16cex:dateUtc="2026-06-02T11:13:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="66FCAA12" w16cex:dateUtc="2026-06-02T14:04:00Z">
+    <w16cex:extLst>
+      <w16:ext w16:uri="{CE6994B0-6A32-4C9F-8C6B-6E91EDA988CE}">
+        <cr:reactions xmlns:cr="http://schemas.microsoft.com/office/comments/2020/reactions">
+          <cr:reaction reactionType="1">
+            <cr:reactionInfo dateUtc="2026-06-02T15:27:41Z">
+              <cr:user userId="S::Sampsa.Koponen@syke.fi::c1780e5b-b8d9-40ba-b09e-18e85cac6f53" userProvider="AD" userName="Koponen Sampsa" />
+            </cr:reactionInfo>
+          </cr:reaction>
+        </cr:reactions>
+      </w16:ext>
+    </w16cex:extLst>
+  </w16cex:commentExtensible>
+  <w16cex:commentExtensible w16cex:durableId="777021BA" w16cex:dateUtc="2026-06-11T13:34:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="642A35AD" w16cex:dateUtc="2026-06-12T14:27:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="350C0470" w16cex:dateUtc="2026-06-11T13:38:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="41D7E607" w16cex:dateUtc="2026-06-12T14:30:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="74136E5E" w16cex:dateUtc="2026-06-12T09:26:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="172C7885" w16cex:dateUtc="2026-06-15T06:27:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="11E70BD9" w16cex:dateUtc="2026-06-15T10:40:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="3871C1CD" w16cex:dateUtc="2026-06-11T13:35:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="7D129413" w16cex:dateUtc="2026-06-12T14:34:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="654596EE" w16cex:dateUtc="2026-06-11T13:42:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="75AFD683" w16cex:dateUtc="2026-06-12T14:32:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="477388E4" w16cex:dateUtc="2026-06-15T14:09:00Z" />
+  <w16cex:commentExtensible w16cex:durableId="1092EAF6" w16cex:dateUtc="2026-07-07T08:27:14.153Z" />
+  <w16cex:commentExtensible w16cex:durableId="18C170C1" w16cex:dateUtc="2026-07-07T08:40:45.871Z" />
+  <w16cex:commentExtensible w16cex:durableId="61719A95" w16cex:dateUtc="2026-07-07T08:50:56.63Z" />
+  <w16cex:commentExtensible w16cex:durableId="616734E1" w16cex:dateUtc="2026-06-26T13:58:46.399Z" />
+  <w16cex:commentExtensible w16cex:durableId="1F2B9A02" w16cex:dateUtc="2026-06-26T14:09:46.289Z" />
+  <w16cex:commentExtensible w16cex:durableId="344A27BB" w16cex:dateUtc="2026-06-26T14:16:36.104Z" />
+  <w16cex:commentExtensible w16cex:durableId="72FDB3FD" w16cex:dateUtc="2026-06-26T14:31:13.024Z" />
+  <w16cex:commentExtensible w16cex:durableId="5060E289" w16cex:dateUtc="2026-06-29T09:13:50.851Z" />
+  <w16cex:commentExtensible w16cex:durableId="14E0B612" w16cex:dateUtc="2026-07-07T08:19:40.691Z" />
+  <w16cex:commentExtensible w16cex:durableId="0DE37A3C" w16cex:dateUtc="2026-07-07T08:38:35.554Z" />
+</w16cex:commentsExtensible>
