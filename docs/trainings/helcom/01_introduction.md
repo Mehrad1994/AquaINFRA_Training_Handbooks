@@ -12,6 +12,17 @@ title: "Introduction"
 
 The Helsinki Commission (HELCOM) is an intergovernmental organization dedicated to protecting the marine environment of the Baltic Sea from all sources of pollution. A core challenge for HELCOM is assessing the effectiveness of measures aimed at reducing nutrient enrichment and eutrophication.
 
+<div class="use-case-card" style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
+      <img src="{{ relative_root }}/assets/images/helcom/image17.png" alt="Illustration of source-to-sea system" style="max-width: 100%; border-radius: 4px;">
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1a: Source-to-sea system for pollution data management.</figcaption>
+    </figure>
+    <figure style="flex: 1; min-width: 300px; text-align: center; margin: 0;">
+      <img src="{{ relative_root }}/assets/images/helcom/image18.png" alt="Map of Baltic Sea catchment" style="max-width: 100%; border-radius: 4px;">
+      <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 1b: Map of Baltic Sea catchment colour coded to HELCOM PLC sub-basins.</figcaption>
+    </figure>
+</div>
+
 To achieve this, the AquaINFRA project applies the **DAPSIM** framework (Drivers, Activities, Pressures, States, Impacts, Measures), connecting societal drivers to marine impacts and evaluating the success of implemented policies.
 
 <div style="margin: 2.5rem 0; text-align: center;">
@@ -68,7 +79,7 @@ To achieve this, the AquaINFRA project applies the **DAPSIM** framework (Drivers
 
   </g>
 </svg>
-<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 1: The DAPSIM cycle connecting societal drivers to marine measures.</p>
+<p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 2: The DAPSIM cycle connecting societal drivers to marine measures.</p>
 </div>
 
 ### DAPSIM Data Maturity
