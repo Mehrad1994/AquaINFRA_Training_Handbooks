@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Results & Conclusion
+title: Analyzing Results & Conclusions
 ---
 
-# Findings and what's next
+# Analyzing Results & Conclusions
 
 <p class="chapter-meta">Chapter 7 of 7</p>
 
@@ -12,7 +12,7 @@ title: Results & Conclusion
 </div>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/rBlJ3jbJpP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/spm7vSlspQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="callout">

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: AIP and D2KP
+title: The Interaction Platform & D2K Packages
 ---
 
-# Interaction Platform and Data-to-Knowledge Package
+# The Interaction Platform & D2K Packages
 
 <p class="chapter-meta">Chapter 3 of 7</p>
 

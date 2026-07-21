@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Case Study Story
+title: The Research Story — Darkening of the Gulf of Riga
 ---
 
-# The Gulf of Riga and Daugava River case study
+# The Research Story — Darkening of the Gulf of Riga
 
 <p class="chapter-meta">Chapter 2 of 7</p>
 
@@ -12,7 +12,7 @@ title: Case Study Story
 </div>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/x0oDIoH6tFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/2M6ZhpqQz2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="use-case-card" style="margin-bottom: 2rem;">

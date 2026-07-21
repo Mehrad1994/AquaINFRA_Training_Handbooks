@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Aqua Galaxy (VRE)
+title: Setting Up the Virtual Research Environment
 ---
 
-# Aqua Galaxy as the workflow engine
+# Setting Up the Virtual Research Environment
 
 <p class="chapter-meta">Chapter 4 of 7</p>
 

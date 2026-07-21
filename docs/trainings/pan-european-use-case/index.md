@@ -14,7 +14,7 @@ nav_order: 3
 <p class="chapter-meta">Workshop recording · AquaINFRA YouTube channel · ~20 min</p>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=2pTTlx4abrqQShr5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/GJEoLfP1K9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Chapters
@@ -28,16 +28,12 @@ nav_order: 3
             </tr>
         </thead>
         <tbody>
-            <tr><td><a href="./01_introduction"><strong>Introduction</strong></a></td><td>Overview of AquaINFRA and the use case goals.</td></tr>
-            <tr><td><a href="./02_boku_researchers"><strong>Meet the researchers</strong></a></td><td>The team at BOKU University leading this work.</td></tr>
-            <tr><td><a href="./03_biodiversity_importance"><strong>Freshwater biodiversity</strong></a></td><td>Why rivers matter, and the use of bioindicators.</td></tr>
-            <tr><td><a href="./04_specleaner_package"><strong>Specleaner package</strong></a></td><td>Ensemble outlier detection, univariate and multivariate.</td></tr>
-            <tr><td><a href="./05_data_to_knowledge"><strong>Data-to-Knowledge Package</strong></a></td><td>The FAIR research-package resources.</td></tr>
-            <tr><td><a href="./06_galaxy_workflow_setup"><strong>Galaxy workflow setup</strong></a></td><td>Importing the workflow and Zenodo data into Aqua Galaxy.</td></tr>
-            <tr><td><a href="./07_workflow_acquisition"><strong>Workflow steps 1-4</strong></a></td><td>Data acquisition.</td></tr>
-            <tr><td><a href="./08_workflow_processing"><strong>Workflow steps 5-8</strong></a></td><td>Processing and detection.</td></tr>
-            <tr><td><a href="./09_reviewing_results"><strong>Reviewing the results</strong></a></td><td>Reading and interpreting the outlier classifications.</td></tr>
-            <tr><td><a href="./10_conclusion"><strong>Conclusion</strong></a></td><td>Applicability, accessibility, and endangered species.</td></tr>
+            <tr><td><a href="./01_introduction"><strong>Project Introduction & University Overview</strong></a></td><td>Overview of AquaINFRA and the use case goals.</td></tr>
+            <tr><td><a href="./02_biodiversity_context"><strong>Introduction to the Research Team</strong></a></td><td>Freshwater biodiversity and the team at BOKU University.</td></tr>
+            <tr><td><a href="./03_specleanr_package"><strong>Specleaner Documentation & Data Harmonization</strong></a></td><td>Ensemble outlier detection, univariate and multivariate.</td></tr>
+            <tr><td><a href="./04_aip_and_d2kp"><strong>Pan-European D2K Packages</strong></a></td><td>The FAIR research-package resources and importing into Aqua Galaxy.</td></tr>
+            <tr><td><a href="./05_workflow_acquisition"><strong>Functional Traits (fwtraits) Analysis</strong></a></td><td>Data acquisition.</td></tr>
+            <tr><td><a href="./06_workflow_processing"><strong>Conclusion & Synthesis Sequence</strong></a></td><td>Processing, outlier detection, and reviewing the results.</td></tr>
         </tbody>
     </table>
 </div>

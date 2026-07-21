@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Importing Data
+title: Importing Data into the VRE
 ---
 
-# Hands-on: Importing datasets
+# Importing Data into the VRE
 
 <p class="chapter-meta">Chapter 5 of 7</p>
 

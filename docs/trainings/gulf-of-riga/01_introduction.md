@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Introduction
+title: Introduction to the AquaINFRA Project
 ---
 
-# Introduction to AquaINFRA
+# Introduction to the AquaINFRA Project
 
 <p class="chapter-meta">Chapter 1 of 7</p>
 

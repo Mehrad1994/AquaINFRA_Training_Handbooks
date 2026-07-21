@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Workflow Details
+title: Running the Daugava Workflow
 ---
 
-# Workflow details and execution
+# Running the Daugava Workflow
 
 <p class="chapter-meta">Chapter 6 of 7</p>
 
