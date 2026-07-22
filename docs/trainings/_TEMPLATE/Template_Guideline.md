@@ -130,13 +130,6 @@ The handbook uses a centralised design system. **Do not use inline styles** beyo
     </div>
   </details>
   ```
-- **1-Click Launch Action Buttons**:
-  ```html
-  <div class="action-bar">
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">🚀 Launch in Aqua Galaxy</a>
-    <a href="https://mybinder.org/" target="_blank" class="btn-launch btn-launch--binder">🧪 Open Live Sandbox</a>
-  </div>
-  ```
 
 ---
 

@@ -10,15 +10,6 @@ title: "Workflow"
     <p>A sequential breakdown of how river fluxes and FerryBox marine data are integrated for extreme event analysis.</p>
 </div>
 
-<div class="action-bar">
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Open Oslofjord Workflow in Aqua Galaxy
-    </a>
-    <a href="https://aquainfra.dev.52north.org/" target="_blank" class="btn-launch btn-launch--d2kp">
-       🔍 Search Oslofjord D2KP on AIP
-    </a>
-</div>
-
 ```mermaid
 graph TD
     A["1. Ingest River Gauges & FerryBox Data<br>(Glomma River Discharge & Kiel-Oslo Transects)"] --> B["2. Calculate Mass Fluxes<br>(Interpolate Continuous Chemical Loads)"]

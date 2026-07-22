@@ -13,15 +13,6 @@ nav_order: 3
     <p>This chapter presents the end-to-end analytical workflow for the Elbe Estuary use case. It details how river discharge, salinity, and water quality datasets are ingested, processed through hydrodynamic transport models, and published as a FAIR Data-to-Knowledge Package (D2KP).</p>
 </div>
 
-<div class="action-bar">
-    <a href="https://aquainfra.dev.52north.org/result/zenodo:19919514" target="_blank" class="btn-launch btn-launch--d2kp">
-       🔍 View D2KP on AIP Search Interface
-    </a>
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Open Aqua Galaxy Platform
-    </a>
-</div>
-
 ---
 
 ## 4-Stage Processing Pipeline

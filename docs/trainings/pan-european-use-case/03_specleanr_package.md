@@ -17,15 +17,6 @@ nav_order: 3
     <iframe src="https://www.youtube.com/embed/MxSsaN1HvXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="action-bar">
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Run Specleaner in Aqua Galaxy
-    </a>
-    <a href="https://mybinder.org/" target="_blank" class="btn-launch btn-launch--binder">
-       🧪 Launch Interactive RStudio Sandbox
-    </a>
-</div>
-
 ## Execution options & implementation
 
 <div class="tool-tabs-container">

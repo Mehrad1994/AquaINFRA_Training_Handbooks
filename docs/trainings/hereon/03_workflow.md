@@ -10,15 +10,6 @@ title: "Workflow"
     <p>A step-by-step breakdown of how satellite and in-situ data are integrated to classify Optical Water Types.</p>
 </div>
 
-<div class="action-bar">
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Open HEREON Workflow in Aqua Galaxy
-    </a>
-    <a href="https://aquainfra.dev.52north.org/" target="_blank" class="btn-launch btn-launch--d2kp">
-       🔍 Search HEREON D2KP on AIP
-    </a>
-</div>
-
 ```mermaid
 graph TD
     A["1. Data Ingestion<br>(Sentinel-3 OLCI & FerryBox In-situ)"] --> B["2. Optical Classification<br>(Calculate OWT Probabilities)"]

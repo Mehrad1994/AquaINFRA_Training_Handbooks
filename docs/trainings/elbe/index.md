@@ -12,15 +12,6 @@ use_case: true
     <p>The Elbe Estuary connects the freshwater Elbe River basin to the coastal waters of the German Bight and North Sea. This use case models river-to-sea transport dynamics, nutrient fluxes, and estuarine water quality to support FAIR ecosystem assessment.</p>
 </div>
 
-<div class="action-bar">
-    <a href="https://aquainfra.dev.52north.org/result/zenodo:19919514" target="_blank" class="btn-launch btn-launch--d2kp">
-       🔍 View D2KP on AIP Search Interface
-    </a>
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Open Aqua Galaxy Platform
-    </a>
-</div>
-
 ## Course Chapters
 
 <div class="table-wrapper">

@@ -17,15 +17,6 @@ nav_order: 4
     <iframe src="https://www.youtube.com/embed/JmiQu58eDis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="action-bar">
-    <a href="https://aquainfra.dev.52north.org/" target="_blank" class="btn-launch btn-launch--d2kp">
-       🔍 Find D2KP on AIP Search Interface
-    </a>
-    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
-       🚀 Open Aqua Galaxy Platform
-    </a>
-</div>
-
 ## How a D2KP fits together
 
 <div class="diagram">
