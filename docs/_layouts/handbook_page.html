@@ -11,24 +11,26 @@ layout: default
 
     <div class="sequence-navigation">
         {% if current_num <= 1 %}
-            <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Home</a>
+            <a href="{{ base }}index" class="btn-seq btn-seq--prev">&larr; Home</a>
         {% else %}
             {% assign prev_page = site.pages | where: "nav_order", prev_num | where: "dir", "/" | first %}
             {% if prev_page %}
-                <a href="{{ relative_root }}{{ prev_page.url | remove_first: '/' }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
+                {% assign prev_filename = prev_page.url | split: '/' | last %}
+                <a href="{{ base }}{{ prev_filename }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
             {% else %}
-                <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
+                <a href="{{ base }}index" class="btn-seq btn-seq--prev">&larr; Previous</a>
             {% endif %}
         {% endif %}
 
         {% if current_num >= 7 %}
-            <a href="{{ base }}" class="btn-seq btn-seq--next">Back to Home &rarr;</a>
+            <a href="{{ base }}index" class="btn-seq btn-seq--next">Back to Home &rarr;</a>
         {% else %}
             {% assign next_page = site.pages | where: "nav_order", next_num | where: "dir", "/" | first %}
             {% if next_page %}
-                <a href="{{ relative_root }}{{ next_page.url | remove_first: '/' }}" class="btn-seq btn-seq--next">Next &rarr;</a>
+                {% assign next_filename = next_page.url | split: '/' | last %}
+                <a href="{{ base }}{{ next_filename }}" class="btn-seq btn-seq--next">Next &rarr;</a>
             {% else %}
-                <a href="{{ base }}" class="btn-seq btn-seq--next">Next &rarr;</a>
+                <a href="{{ base }}index" class="btn-seq btn-seq--next">Next &rarr;</a>
             {% endif %}
         {% endif %}
     </div>

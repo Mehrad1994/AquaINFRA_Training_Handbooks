@@ -9,7 +9,8 @@ layout: default
     <div class="sequence-navigation">
         <a href="{{ base }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
         {% if first_chap %}
-            <a href="{{ relative_root }}{{ first_chap.url | remove_first: '/' }}" class="btn-seq btn-seq--next">Start Training &rarr;</a>
+            {% assign first_filename = first_chap.url | split: '/' | last %}
+            <a href="./{{ first_filename }}" class="btn-seq btn-seq--next">Start Training &rarr;</a>
         {% else %}
             <a href="./01_introduction" class="btn-seq btn-seq--next">Start Training &rarr;</a>
         {% endif %}
