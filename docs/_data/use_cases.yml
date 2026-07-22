@@ -24,11 +24,11 @@
       url: "/trainings/oslofjord/"
       description: "Hydrological modeling and coastal impact analysis in Norway."
       status: "Planned"
-    - title: "Elbe River"
-      url: "/wp6_tasks"
-      description: "River to sea modelling and ecosystem assessment by the Elbe estuary."
-      status: "Planned"
-      d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:18607604"
+    - title: "Elbe Estuary"
+      url: "/trainings/elbe/"
+      description: "River-to-sea transport, nutrient dynamics, and estuarine ecosystem assessment in the Elbe Estuary."
+      status: "Active"
+      d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:19919514"
 
 - region: "Pan-European"
   trainings:
