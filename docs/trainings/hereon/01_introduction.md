@@ -72,10 +72,11 @@ To overcome this, the HEREON use case leverages Earth Observation (EO) data to a
     <!-- Antenna -->
     <line x1="0" y1="-30" x2="0" y2="-50" stroke="#cbd5e1" stroke-width="2"/>
     <circle cx="0" cy="-50" r="3" fill="#cbd5e1"/>
-    <!-- Pulse -->
+    <!-- Pulse & Label -->
     <path d="M 10 -40 A 10 10 0 0 1 15 -50" fill="none" stroke="#38bdf8" stroke-width="2"/>
     <path d="M 15 -35 A 15 15 0 0 1 22 -55" fill="none" stroke="#38bdf8" stroke-width="2"/>
-    <text x="30" y="-45" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">In-situ Validation</text>
+    <rect x="25" y="-62" width="135" height="26" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="32" y="-45" font-family="sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">In-situ Validation</text>
   </g>
 
   <!-- Labels for OWT -->

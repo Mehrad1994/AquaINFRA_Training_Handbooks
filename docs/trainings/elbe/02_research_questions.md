@@ -33,66 +33,62 @@ The primary objective of this use case is to provide an open, FAIR, and reproduc
 ## Oxygen Deficit & Hypoxia Mechanism
 
 <div style="margin: 2.5rem 0; text-align: center;">
-<svg viewBox="0 0 820 320" width="100%" style="max-width: 820px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.12)); border-radius: 12px; background: #0f172a;">
-  <defs>
-    <linearGradient id="hypoxiaBoxGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.2"/>
-      <stop offset="50%" stop-color="#ef4444" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.2"/>
-    </linearGradient>
-  </defs>
-
+<svg viewBox="0 0 920 340" width="100%" style="max-width: 920px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15)); border-radius: 12px; background: #0f172a;">
   <!-- Title -->
-  <text x="410" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">Hypoxia Trigger Cascade in the Deepened Navigation Channel</text>
+  <text x="460" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f8fafc" text-anchor="middle">Hypoxia Trigger Cascade in the Deepened Navigation Channel</text>
 
   <!-- Step 1: Upstream Nutrients -->
-  <g transform="translate(60, 80)">
-    <rect x="0" y="0" width="160" height="110" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
-    <text x="80" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">1. River Input</text>
-    <text x="80" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">High Nitrogen &</text>
-    <text x="80" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Organic Biomass Load</text>
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="175" height="115" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="87" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">1. River Input</text>
+    <text x="87" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">High Nitrogen &amp;</text>
+    <text x="87" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Organic Biomass Load</text>
+    <text x="87" y="95" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">(Upstream Catchment)</text>
   </g>
 
   <!-- Arrow 1-2 -->
-  <path d="M 220 135 L 260 135" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <polygon points="260,130 270,135 260,140" fill="#94a3b8"/>
+  <path d="M 215 137 L 255 137" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="255,132 265,137 255,142" fill="#94a3b8"/>
 
   <!-- Step 2: Slower Flow in Deep Port -->
-  <g transform="translate(270, 80)">
-    <rect x="0" y="0" width="170" height="110" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
-    <text x="85" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">2. Deepened Channel</text>
-    <text x="85" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Slower Flow Velocity</text>
-    <text x="85" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">& Higher Water Depth</text>
+  <g transform="translate(265, 80)">
+    <rect x="0" y="0" width="180" height="115" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">2. Deepened Channel</text>
+    <text x="90" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Slower Flow Velocity</text>
+    <text x="90" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">&amp; Higher Water Depth</text>
+    <text x="90" y="95" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">(Hamburg Port Basin)</text>
   </g>
 
   <!-- Arrow 2-3 -->
-  <path d="M 440 135 L 480 135" stroke="#94a3b8" stroke-width="2"/>
-  <polygon points="480,130 490,135 480,140" fill="#94a3b8"/>
+  <path d="M 445 137 L 485 137" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="485,132 495,137 485,142" fill="#94a3b8"/>
 
   <!-- Step 3: Microbial Respiration -->
-  <g transform="translate(490, 80)">
-    <rect x="0" y="0" width="160" height="110" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
-    <text x="80" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fca5a5" text-anchor="middle">3. Respiration</text>
-    <text x="80" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Microbial Decay Consumes</text>
-    <text x="80" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Dissolved Oxygen</text>
+  <g transform="translate(495, 80)">
+    <rect x="0" y="0" width="180" height="115" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+    <text x="90" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fda4af" text-anchor="middle">3. Respiration</text>
+    <text x="90" y="55" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Microbial Decay Consumes</text>
+    <text x="90" y="75" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Dissolved Oxygen</text>
+    <text x="90" y="95" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">(Bottom Water Layer)</text>
   </g>
 
   <!-- Arrow 3-4 -->
-  <path d="M 650 135 L 690 135" stroke="#94a3b8" stroke-width="2"/>
-  <polygon points="690,130 700,135 690,140" fill="#94a3b8"/>
+  <path d="M 675 137 L 715 137" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="715,132 725,137 715,142" fill="#94a3b8"/>
 
   <!-- Step 4: Hypoxic Crisis -->
-  <g transform="translate(700, 80)">
-    <rect x="0" y="0" width="105" height="110" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
-    <text x="52" y="30" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">4. Hypoxia</text>
-    <text x="52" y="55" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fca5a5" text-anchor="middle">< 3 mg/L O₂</text>
-    <text x="52" y="75" font-family="sans-serif" font-size="10" fill="#fecaca" text-anchor="middle">Fish Stress</text>
+  <g transform="translate(725, 80)">
+    <rect x="0" y="0" width="155" height="115" rx="8" fill="#4c0519" stroke="#fb7185" stroke-width="2"/>
+    <text x="77" y="30" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">4. Hypoxia</text>
+    <text x="77" y="55" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fecdd3" text-anchor="middle">&lt; 3.0 mg/L O₂</text>
+    <text x="77" y="75" font-family="sans-serif" font-size="11" fill="#fecaca" text-anchor="middle">Fish Stress Event</text>
+    <text x="77" y="95" font-family="sans-serif" font-size="10" fill="#fda4af" text-anchor="middle">(Summer Crisis)</text>
   </g>
 
   <!-- Environmental Drivers Banner -->
-  <rect x="60" y="225" width="745" height="55" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <text x="432" y="248" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Compounding Summer Drivers: High Temperatures (>22°C) + Low River Discharge (<400 m³/s)</text>
-  <text x="432" y="267" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Modelled via SCHISM hydrodynamic mesh and biogeochemical transport modules.</text>
+  <rect x="40" y="235" width="840" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="460" y="260" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Compounding Summer Drivers: Water Temp &gt; 22°C + Low Discharge (&lt; 400 m³/s)</text>
+  <text x="460" y="280" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Simulated using 3D Hydrodynamic (SCHISM) &amp; Biogeochemical Ecosystem Models (MOSSCO)</text>
 
 </svg>
 <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Figure 1: Cascade of biological and physical factors driving summer oxygen depletion in the Hamburg port region of the Elbe Estuary.</p>

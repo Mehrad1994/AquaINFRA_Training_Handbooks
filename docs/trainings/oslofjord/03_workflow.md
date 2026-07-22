@@ -10,7 +10,61 @@ title: "Workflow"
     <p>A sequential breakdown of how river fluxes and FerryBox marine data are integrated for extreme event analysis.</p>
 </div>
 
-The Oslofjord workflow focuses on combining high-frequency inland hydrological data with continuous marine observations. By processing this within a unified environment, researchers can isolate the specific impacts of individual storm events.
+<div class="action-bar">
+    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
+       🚀 Open Oslofjord Workflow in Aqua Galaxy
+    </a>
+    <a href="https://aquainfra.dev.52north.org/" target="_blank" class="btn-launch btn-launch--d2kp">
+       🔍 Search Oslofjord D2KP on AIP
+    </a>
+</div>
+
+```mermaid
+graph TD
+    A["1. Ingest River Gauges & FerryBox Data<br>(Glomma River Discharge & Kiel-Oslo Transects)"] --> B["2. Calculate Mass Fluxes<br>(Interpolate Continuous Chemical Loads)"]
+    B --> C["3. Isolate Storm Event Windows<br>(Threshold Filter for Extreme Run-off)"]
+    C --> D["4. Spatio-Temporal Plume Dispersion Maps<br>(Compare Baseline vs Post-Storm Conditions)"]
+
+    style A fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff
+    style B fill:#0f172a,stroke:#eab308,stroke-width:2px,color:#fff
+    style C fill:#0f172a,stroke:#ef4444,stroke-width:2px,color:#fff
+    style D fill:#0f172a,stroke:#22c55e,stroke-width:2px,color:#fff
+```
+
+### Execution Options & Tool Tabs
+
+<div class="tool-tabs-container">
+    <div class="tool-tabs">
+        <button class="tab-btn active" data-tab="galaxy">Aqua Galaxy (No-Code GUI)</button>
+        <button class="tab-btn" data-tab="r-code">R Trend Script</button>
+        <button class="tab-btn" data-tab="python-code">Python API</button>
+    </div>
+    <div class="tab-content active" data-tab-content="galaxy">
+        <p>Run the <strong>Oslofjord River-Marine Trend Analysis Tool</strong> in Aqua Galaxy. Input Glomma River discharge time series and FerryBox sensor transects to calculate storm plume dispersion.</p>
+    </div>
+    <div class="tab-content" data-tab-content="r-code">
+        <pre><code class="language-r"># Calculate Glomma river flux and FerryBox marine chemistry trends
+library(tidyverse)
+
+river_discharge <- read_csv("glomma_river_flux.csv")
+ferrybox_data <- read_csv("oslofjord_ferrybox.csv")
+
+# Filter storm event window
+storm_window <- filter(river_discharge, discharge_m3s > 1200)
+matched_marine <- inner_join(ferrybox_data, storm_window, by = "date")</code></pre>
+    </div>
+    <div class="tab-content" data-tab-content="python-code">
+        <pre><code class="language-python">import pandas as pd
+
+# Match FerryBox transect sensor readings with river storm events
+flux_df = pd.read_csv("glomma_river_flux.csv")
+ferry_df = pd.read_csv("oslofjord_ferrybox.csv")
+
+storm_events = flux_df[flux_df["discharge"] > 1200]
+merged_ds = pd.merge_asof(ferry_df.sort_values("time"), storm_events.sort_values("time"), on="time")
+print(merged_ds.head())</code></pre>
+    </div>
+</div>
 
 ### Processing Stages
 
@@ -43,12 +97,18 @@ The Oslofjord workflow focuses on combining high-frequency inland hydrological d
     </figure>
 </div>
 
-> [!TIP]
-> This workflow is designed to be highly modular. While it defaults to the Glomma River and Oslofjord, the same algorithms can be applied to any coupled river-estuary system equipped with FerryBox monitoring.
+<details class="knowledge-check">
+    <summary>Check Your Understanding: FerryBox &amp; River Matching</summary>
+    <div class="answer-content">
+        <p><strong>Question:</strong> Why is FerryBox monitoring uniquely suited for evaluating land-sea interactions after extreme storm events in the Oslofjord?</p>
+        <p><strong>Answer:</strong> FerryBox systems installed on commercial ferries travel fixed, high-frequency transects across the Oslofjord daily. This provides continuous spatial and temporal surface water quality data before, during, and after flash floods, capturing short-lived river plume dispersion that static monitoring stations might miss.</p>
+    </div>
+</details>
 
 ---
 
 <div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous</a>
+    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous: Research Questions</a>
+    <a href="../../06_use_cases" class="btn-seq btn-seq--next">Back to Use Case Library &rarr;</a>
 </div>
 <div class="wave-decoration"></div>
