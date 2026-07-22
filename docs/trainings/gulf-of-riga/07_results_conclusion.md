@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Analyzing Results & Conclusions
 ---
 
@@ -45,7 +45,7 @@ Cite the analysis via the <a href="https://aquainfra.dev.52north.org/result/zeno
 
 <div class="sequence-navigation">
     <a href="./06_workflow_details" class="btn-seq btn-seq--prev">← Previous: Workflow Details</a>
-    <a href="./" class="btn-seq btn-seq--next">Back to Training Overview →</a>
+    <a href="./" class="btn-seq btn-seq--next">Back to Course Overview &rarr;</a>
 </div>
 
 <div class="wave-decoration"></div>

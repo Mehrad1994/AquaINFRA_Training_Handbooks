@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: "Introduction & System Characteristics"
 parent: "Elbe Estuary"
 nav_order: 1
@@ -147,8 +147,8 @@ The Elbe Estuary stretches over 140 kilometers from the tidal weir at Geesthacht
 ---
 
 <div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
-    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next Chapter: Research Questions →</a>
+    <a href="./" class="btn-seq btn-seq--prev">&larr; Course Overview</a>
+    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next Chapter: Research Questions &rarr;</a>
 </div>
 
 <div class="wave-decoration"></div>

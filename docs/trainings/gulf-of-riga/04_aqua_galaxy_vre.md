@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Setting Up the Virtual Research Environment
 ---
 

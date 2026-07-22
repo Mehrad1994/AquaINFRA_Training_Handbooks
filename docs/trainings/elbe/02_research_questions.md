@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: "Research Questions & Key Objectives"
 parent: "Elbe Estuary"
 nav_order: 2

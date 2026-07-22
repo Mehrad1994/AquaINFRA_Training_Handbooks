@@ -40,7 +40,7 @@ Every chapter page should be built from these blocks (top to bottom):
 ### Index page (`index.md`)
 ```yaml
 ---
-layout: default
+layout: course_index
 title: "Your Training Title"
 hero_title: "Region or Theme"   # appears in the hero banner
 region: "Region Name"           # e.g. "Baltic Sea"
@@ -51,7 +51,7 @@ use_case: true
 ### Chapter pages (`NN_topic.md`)
 ```yaml
 ---
-layout: default
+layout: chapter
 title: "Chapter Title"
 ---
 ```

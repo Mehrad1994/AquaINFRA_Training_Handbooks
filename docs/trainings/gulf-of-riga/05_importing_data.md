@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Importing Data into the VRE
 ---
 

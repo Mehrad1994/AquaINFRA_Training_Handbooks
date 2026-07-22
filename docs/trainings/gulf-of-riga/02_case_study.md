@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: The Research Story — Darkening of the Gulf of Riga
 ---
 

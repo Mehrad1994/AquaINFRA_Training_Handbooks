@@ -47,9 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // 2. Inject "Mark Chapter as Complete" button on sequential navigation pages
+    // 2. Inject "Mark Chapter as Complete" button on sequential navigation pages (chapters only)
     const seqNav = document.querySelector('.sequence-navigation');
-    if (seqNav) {
+    const isOverviewPage = !!document.querySelector('.course-overview-wrapper, .course-overview-container') ||
+        currentPath.endsWith('/index') ||
+        window.location.pathname.endsWith('/') ||
+        window.location.pathname.endsWith('/index') ||
+        window.location.pathname.endsWith('/index.html');
+
+    if (seqNav && !isOverviewPage) {
         const isCompleted = !!completedMap[currentPath];
 
         const btnComplete = document.createElement('button');

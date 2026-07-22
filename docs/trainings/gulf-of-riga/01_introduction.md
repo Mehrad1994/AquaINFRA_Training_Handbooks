@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Introduction to the AquaINFRA Project
 ---
 
@@ -18,7 +18,7 @@ title: Introduction to the AquaINFRA Project
 ---
 
 <div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
+    <a href="./" class="btn-seq btn-seq--prev">&larr; Course Overview</a>
     <a href="./02_case_study" class="btn-seq btn-seq--next">Next Chapter: Case Study →</a>
 </div>
 

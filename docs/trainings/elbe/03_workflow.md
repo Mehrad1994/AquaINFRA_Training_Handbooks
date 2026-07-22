@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: "Analytical Workflow & D2KP Execution"
 parent: "Elbe Estuary"
 nav_order: 3
@@ -99,8 +99,8 @@ print("Execution Status:", result.get("status"))</code></pre>
 ---
 
 <div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">← Previous: Research Questions</a>
-    <a href="../../06_use_cases" class="btn-seq btn-seq--next">Back to Use Case Library →</a>
+    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous: Research Questions</a>
+    <a href="./" class="btn-seq btn-seq--next">Back to Course Overview &rarr;</a>
 </div>
 
 <div class="wave-decoration"></div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Project Introduction & University Overview
 parent: Pan-European Biodiversity Use Case
 nav_order: 1
@@ -20,7 +20,7 @@ nav_order: 1
 ---
 
 <div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
+    <a href="./" class="btn-seq btn-seq--prev">&larr; Course Overview</a>
     <a href="./02_biodiversity_context" class="btn-seq btn-seq--next">Next Chapter: Biodiversity Context →</a>
 </div>
 

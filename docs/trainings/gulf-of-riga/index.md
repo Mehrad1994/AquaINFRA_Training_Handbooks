@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: course_index
 title: Gulf of Riga Case Study
 hero_title: "Gulf of Riga: DGA workflow"
 region: "Baltic Sea"
@@ -42,6 +42,7 @@ use_case: true
 
 <div class="sequence-navigation">
     <a href="../../06_use_cases" class="btn-seq btn-seq--prev">← Back to Use Case Library</a>
+    <a href="./01_introduction" class="btn-seq btn-seq--next">Start Training: Chapter 1 &rarr;</a>
 </div>
 
 <div class="wave-decoration"></div>

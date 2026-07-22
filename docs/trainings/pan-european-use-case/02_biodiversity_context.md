@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Introduction to the Research Team
 parent: Pan-European Biodiversity Use Case
 nav_order: 2

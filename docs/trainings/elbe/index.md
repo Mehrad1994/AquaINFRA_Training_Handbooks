@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: course_index
 title: "Elbe Estuary"
 hero_title: "Elbe Estuary: River-to-Sea Ecological & Transport Modelling"
 region: "North Sea"
@@ -43,6 +43,7 @@ use_case: true
 
 <div class="sequence-navigation">
     <a href="../../06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
+    <a href="./01_introduction" class="btn-seq btn-seq--next">Start Training: Chapter 1 &rarr;</a>
 </div>
 
 <div class="wave-decoration"></div>

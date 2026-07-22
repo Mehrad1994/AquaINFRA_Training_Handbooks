@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Functional Traits (fwtraits) Analysis
 parent: Pan-European Biodiversity Use Case
 nav_order: 5

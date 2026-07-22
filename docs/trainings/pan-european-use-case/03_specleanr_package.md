@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Specleaner Documentation & Data Harmonization
 parent: Pan-European Biodiversity Use Case
 nav_order: 3

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: The Interaction Platform & D2K Packages
 ---
 

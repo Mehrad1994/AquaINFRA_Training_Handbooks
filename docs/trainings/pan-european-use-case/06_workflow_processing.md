@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Conclusion & Synthesis Sequence
 parent: Pan-European Biodiversity Use Case
 nav_order: 6

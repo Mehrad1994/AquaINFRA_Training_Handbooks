@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 title: Pan-European D2K Packages
 parent: Pan-European Biodiversity Use Case
 nav_order: 4
