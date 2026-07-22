@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reference_page
 title: Prerequisites & Sign-Up
 ---
 
@@ -109,10 +109,3 @@ Before starting Chapter 1 of any training, confirm you can:
 - [ ] Open both tabs side-by-side - most workflows switch between them.
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./glossary" class="btn-seq btn-seq--prev">← Glossary</a>
-    <a href="./faq" class="btn-seq btn-seq--next">Next: FAQ →</a>
-</div>
-
-<div class="wave-decoration"></div>

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 4
 title: AquaINFRA VRE
 ---
 # The AquaINFRA Virtual Research Environment
@@ -64,10 +65,3 @@ Every action you take is **logged in the history**, which makes the entire sessi
 ---
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}03_aip" class="btn-seq btn-seq--prev">← Previous: AIP</a>
-    <a href="{{ relative_root }}05_data_to_knowledge" class="btn-seq btn-seq--next">Next Step: D2KP →</a>
-</div>
-
-<div class="wave-decoration"></div>

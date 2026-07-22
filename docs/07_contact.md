@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 7
 title: Contact & Support
 hero_title: Contact & Support
 ---
@@ -24,7 +25,3 @@ hero_title: Contact & Support
 </div>
 
 <!-- Navigation Buttons -->
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">← Previous: Applied Use Case Training</a>
-    <a href="{{ relative_root }}index" class="btn-seq btn-seq--next">Back to Home</a>
-</div>

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 6
 title: Applied Use Case 
 ---
 # Applied Use Cases
@@ -46,8 +47,3 @@ Each module is co-designed with domain experts and provides:
 
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2KP</a>
-    <a href="{{ relative_root }}07_contact" class="btn-seq btn-seq--next">Next Step: Contact Us →</a>
-</div>

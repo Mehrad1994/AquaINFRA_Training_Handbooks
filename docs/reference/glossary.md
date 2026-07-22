@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reference_page
 title: Glossary
 ---
 
@@ -160,10 +160,3 @@ A set of global climate raster layers (e.g. mean annual temperature, annual prec
 An open research-output repository run by CERN. AquaINFRA D2KPs are published there with DOIs. Browse them via the AIP search filter "Data to Knowledge Package."
 
 ---
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}index" class="btn-seq btn-seq--prev">← Home</a>
-    <a href="./prerequisites" class="btn-seq btn-seq--next">Next: Prerequisites →</a>
-</div>
-
-<div class="wave-decoration"></div>

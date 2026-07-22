@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 3
 title: AIP
 ---
 # AquaINFRA Interaction Platform (AIP)
@@ -94,10 +95,3 @@ This is what makes the data **FAIR-by-construction**: anyone with the URL can re
 ---
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}02_aquainfra" class="btn-seq btn-seq--prev">← Previous: Introduction AquaINFRA</a>
-    <a href="{{ relative_root }}04_aquainfra_vre" class="btn-seq btn-seq--next">Next Step: VRE →</a>
-</div>
-
-<div class="wave-decoration"></div>

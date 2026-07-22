@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reference_page
 title: WP6 Tasks
 ---
 
@@ -52,8 +52,3 @@ This page provides an overview of the Work Package 6 (WP6) tasks, focus regions,
 ---
 
 <!-- Navigation Buttons -->
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
-</div>
-
-<div class="wave-decoration"></div>

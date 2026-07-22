@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 2
 title: AquaINFRA
 ---
 # The AquaINFRA Project
@@ -112,10 +113,3 @@ This page is your map. You'll work with three user-facing components throughout 
 ---
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}01_eosc" class="btn-seq btn-seq--prev">← Previous: EOSC</a>
-    <a href="{{ relative_root }}03_aip" class="btn-seq btn-seq--next">Next Step: AIP →</a>
-</div>
-
-<div class="wave-decoration"></div>

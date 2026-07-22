@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 1
 title: EOSC
 ---
 
@@ -70,10 +71,3 @@ Instead of worrying about hardware or securing funding for data centres, the Nod
 ---
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}index" class="btn-seq btn-seq--prev">← Home</a>
-    <a href="{{ relative_root }}02_aquainfra" class="btn-seq btn-seq--next">Next Step: AquaINFRA →</a>
-</div>
-
-<div class="wave-decoration"></div>

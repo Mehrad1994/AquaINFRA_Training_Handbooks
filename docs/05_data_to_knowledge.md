@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: handbook_page
+nav_order: 5
 title: Data-to-Knowledge Package
 ---
 # Data-to-Knowledge Package (D2KP)
@@ -97,10 +98,3 @@ The key idea: a reader can choose **their preferred level of engagement** - run 
 ---
 
 <!-- Navigation Buttons -->
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}04_aquainfra_vre" class="btn-seq btn-seq--prev">← Previous: VRE</a>
-    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--next">Next Step: Applied Use Case Training →</a>
-</div>
-
-<div class="wave-decoration"></div>

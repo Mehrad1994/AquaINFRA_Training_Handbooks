@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% include baseurl.html %}
+<article class="handbook-page-wrapper">
+    {{ content }}
+
+    {% assign current_num = page.nav_order | plus: 0 %}
+    {% assign prev_num = current_num | minus: 1 %}
+    {% assign next_num = current_num | plus: 1 %}
+
+    <div class="sequence-navigation">
+        {% if current_num <= 1 %}
+            <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Home</a>
+        {% else %}
+            {% assign prev_page = site.pages | where: "nav_order", prev_num | where: "dir", "/" | first %}
+            {% if prev_page %}
+                <a href="{{ prev_page.url | relative_url }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
+            {% else %}
+                <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
+            {% endif %}
+        {% endif %}
+
+        {% if current_num >= 7 %}
+            <a href="{{ base }}" class="btn-seq btn-seq--next">Back to Home &rarr;</a>
+        {% else %}
+            {% assign next_page = site.pages | where: "nav_order", next_num | where: "dir", "/" | first %}
+            {% if next_page %}
+                <a href="{{ next_page.url | relative_url }}" class="btn-seq btn-seq--next">Next &rarr;</a>
+            {% else %}
+                <a href="{{ base }}" class="btn-seq btn-seq--next">Next &rarr;</a>
+            {% endif %}
+        {% endif %}
+    </div>
+    <div class="wave-decoration"></div>
+</article>

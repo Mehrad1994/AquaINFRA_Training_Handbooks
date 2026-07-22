@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reference_page
 title: Quick-Task Index
 ---
 
@@ -110,10 +110,3 @@ title: Quick-Task Index
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./faq" class="btn-seq btn-seq--prev">← FAQ</a>
-    <a href="{{ relative_root }}index" class="btn-seq btn-seq--next">Home →</a>
-</div>
-
-<div class="wave-decoration"></div>

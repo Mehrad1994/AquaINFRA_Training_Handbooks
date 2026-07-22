@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reference_page
 title: FAQ & Troubleshooting
 ---
 
@@ -131,10 +131,3 @@ Yes - that's the whole point of FAIR workflows. After a successful run on the de
 </details>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./prerequisites" class="btn-seq btn-seq--prev">← Prerequisites</a>
-    <a href="./quick-tasks" class="btn-seq btn-seq--next">Next: Quick-Task Index →</a>
-</div>
-
-<div class="wave-decoration"></div>
