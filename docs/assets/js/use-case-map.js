@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 1. Initialize Fixed-Scale Leaflet Map (All zoom & drag disabled for stationary display)
     const map = L.map('use-case-map', {
-        center: [51.5, 13.0],
+        center: [52.0, 14.0],
         zoom: 3.8,
         zoomControl: false,
         dragging: false,
@@ -29,9 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fit map bounds to show all European points stationary
     map.fitBounds([
-        [34.5, -9.5],  # South/West (Malta & Spain)
-        [63.5, 30.5]   # North/East (Finland & Baltic)
+        [34.5, -9.5],  // South/West (Malta & Spain)
+        [63.5, 30.5]   // North/East (Finland & Baltic)
     ], { padding: [10, 10] });
+
+    setTimeout(function () {
+        map.invalidateSize();
+    }, 250);
 
     // 2. Define Use Case Geographic Locations & Popups
     const useCaseLocations = [
