@@ -1,25 +1,37 @@
 /**
- * AquaINFRA Training Handbook - Interactive Use Cases Map
- * Renders Leaflet map with use case markers & bi-directional card hover highlights.
+ * AquaINFRA Training Handbook - Fixed Scale Interactive Use Cases Map
+ * Fixed map scale to show all points across Europe without panning/moving.
+ * Bi-directional hover highlights between map pins and training cards.
  */
 document.addEventListener('DOMContentLoaded', function () {
     const mapContainer = document.getElementById('use-case-map');
     if (!mapContainer || typeof L === 'undefined') return;
 
-    // 1. Initialize Leaflet Map centered on Europe
+    // 1. Initialize Fixed-Scale Leaflet Map (All zoom & drag disabled for stationary display)
     const map = L.map('use-case-map', {
-        center: [53.5, 14.0],
-        zoom: 4,
-        zoomControl: true,
-        scrollWheelZoom: false
+        center: [51.5, 13.0],
+        zoom: 3.8,
+        zoomControl: false,
+        dragging: false,
+        touchZoom: false,
+        doubleClickZoom: false,
+        scrollWheelZoom: false,
+        boxZoom: false,
+        keyboard: false
     });
 
     // Sleek CartoDB Positron light tile layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
+
+    // Fit map bounds to show all European points stationary
+    map.fitBounds([
+        [34.5, -9.5],  # South/West (Malta & Spain)
+        [63.5, 30.5]   # North/East (Finland & Baltic)
+    ], { padding: [10, 10] });
 
     // 2. Define Use Case Geographic Locations & Popups
     const useCaseLocations = [
@@ -91,17 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const markersMap = {};
 
-    // Custom Map Pin Marker Icon Generator
     function createCustomIcon(isHighlighted) {
         return L.divIcon({
             className: 'custom-map-pin-wrapper',
             html: `<div class="custom-map-pin ${isHighlighted ? 'custom-map-pin--active' : ''}"></div>`,
-            iconSize: [24, 24],
-            iconAnchor: [12, 12]
+            iconSize: [22, 22],
+            iconAnchor: [11, 11]
         });
     }
 
-    // 3. Add Markers & Popups to Map
+    // 3. Add Markers & Popups to Stationary Map
     useCaseLocations.forEach(uc => {
         const marker = L.marker(uc.coords, {
             icon: createCustomIcon(false),
@@ -117,10 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         `;
 
-        marker.bindPopup(popupContent, { maxWidth: 260 });
+        marker.bindPopup(popupContent, { maxWidth: 240, autoPan: false });
         markersMap[uc.id] = marker;
 
-        // Hover marker highlights card below
+        // Hover marker highlights card below (without map movement)
         marker.on('mouseover', function () {
             this.openPopup();
             highlightCard(uc.id, true);
@@ -131,12 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 4. Bi-directional Hover: Hover Card highlights Map Pin & Opens Popup
+    // 4. Card Hover activates Marker Popup without moving map
     const cards = document.querySelectorAll('.use-case-card');
     cards.forEach(card => {
-        const cardLink = card.querySelector('a.use-case-card__footer, .use-case-card__title');
-        if (!cardLink) return;
-
         const href = card.querySelector('a.use-case-card__footer')?.getAttribute('href') || '';
         
         let matchingId = null;
@@ -154,7 +162,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (marker) {
                     marker.setIcon(createCustomIcon(true));
                     marker.openPopup();
-                    map.panTo(marker.getLatLng(), { animate: true, duration: 0.5 });
                 }
                 card.classList.add('use-case-card--highlighted');
             });

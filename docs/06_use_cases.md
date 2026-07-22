@@ -6,19 +6,12 @@ title: "Applied Use Case"
 
 # Applied Use Cases Library
 
-Explore our collection of 8 regional aquatic training modules demonstrating real-world applications across European marine and freshwater environments.
-
-> [!NOTE]
-> Each module includes step-by-step chapter guides, vector workflow diagrams, interactive code tool tabs, and published Zenodo D2KPs.
-
----
-
-<div class="use-cases-split-layout">
-    <div class="map-sticky-col">
+<div class="use-cases-single-screen">
+    <div class="map-fixed-panel">
         <div id="use-case-map" class="use-case-map-container"></div>
     </div>
 
-    <div class="cards-scroll-col">
+    <div class="cards-compact-panel">
         <div class="use-case-library">
             {% for region_group in site.data.use_cases %}
             <div class="region-group">
