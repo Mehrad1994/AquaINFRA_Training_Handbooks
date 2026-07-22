@@ -1068,7 +1068,7 @@ details.knowledge-check .answer-content {
 }
 
 .use-case-compact-grid .card-body {
-    padding: 0.65rem 0.85rem 0.4rem 0.85rem;
+    padding: 0.6rem 0.85rem 0.5rem 0.85rem;
 }
 
 .use-case-compact-grid .use-case-card__title {
@@ -1106,28 +1106,6 @@ details.knowledge-check .answer-content {
 .use-case-compact-grid .use-case-card__footer:hover {
     background: #e0f2fe;
     color: #0369a1 !important;
-}
-
-.use-case-compact-grid .resource-links {
-    margin-top: 0.45rem;
-}
-
-.use-case-compact-grid .resource-btn {
-    display: inline-block;
-    padding: 0.18rem 0.5rem;
-    font-size: 0.7rem;
-    font-weight: 700;
-    border-radius: 4px;
-    background: #059669;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    letter-spacing: 0.02em;
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.use-case-compact-grid .resource-btn:hover {
-    background: #047857;
-    transform: scale(1.05);
 }
 
 /* Custom Map Marker Pin Styling */

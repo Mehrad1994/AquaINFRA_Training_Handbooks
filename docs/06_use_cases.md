@@ -21,11 +21,11 @@ title: "Applied Use Cases"
                     <div class="card-body">
                         <span class="badge-region badge-region--{{ region_group.region | slugify }}">{{ region_group.region }}</span>
                         <h2 class="use-case-card__title">{{ training.title }}</h2>
+                        {% if training.d2kp_url %}
                         <div class="resource-links">
-                            {% if training.d2kp_url %}
                             <a href="{{ training.d2kp_url }}" target="_blank" rel="noopener" class="resource-btn resource-btn--zenodo" title="Data to Knowledge Package">D2KP</a>
-                            {% endif %}
                         </div>
+                        {% endif %}
                     </div>
                     <a href="{{ training.url | remove_first: '/' | prepend: relative_root }}" class="use-case-card__footer">
                         View Course &rarr;
