@@ -144,10 +144,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `;
 
-            // Insert above table wrapper
+            // Insert below table wrapper
             const parentContainer = tableWrapper.closest('.table-wrapper');
             if (parentContainer) {
-                parentContainer.parentNode.insertBefore(progressBanner, parentContainer);
+                parentContainer.parentNode.insertBefore(progressBanner, parentContainer.nextSibling);
             }
         }
     }
