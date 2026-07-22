@@ -1,6 +1,6 @@
 /**
  * AquaINFRA Training Handbook - Interactive Use Cases Map
- * Renders Leaflet map with all pins framed automatically & bi-directional card hover highlights.
+ * Clickable Popups & Touchscreen Support for Mobile, iPad, and Desktop.
  */
 document.addEventListener('DOMContentLoaded', function () {
     const mapContainer = document.getElementById('use-case-map');
@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const map = L.map('use-case-map', {
         zoomControl: true,
         scrollWheelZoom: false,
-        attributionControl: false
+        attributionControl: false,
+        closePopupOnClick: false
     });
 
     // Sleek CartoDB Positron light tile layer
@@ -89,6 +90,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const markersMap = {};
     const latLngs = [];
+    let popupTimer = null;
+    let activeId = null;
 
     function createCustomIcon(isHighlighted) {
         return L.divIcon({
@@ -99,7 +102,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // 3. Create Markers & Collect Bounds
+    function activateUseCase(id) {
+        if (activeId === id) return;
+        
+        // Deactivate previous
+        if (activeId && markersMap[activeId]) {
+            markersMap[activeId].setIcon(createCustomIcon(false));
+            highlightCard(activeId, false);
+        }
+
+        activeId = id;
+        if (id && markersMap[id]) {
+            const marker = markersMap[id];
+            marker.setIcon(createCustomIcon(true));
+            marker.openPopup();
+            highlightCard(id, true);
+        }
+    }
+
+    function deactivateUseCase(id) {
+        if (activeId === id) {
+            if (markersMap[id]) {
+                markersMap[id].setIcon(createCustomIcon(false));
+            }
+            highlightCard(id, false);
+            activeId = null;
+        }
+    }
+
+    // 3. Create Markers
     useCaseLocations.forEach(uc => {
         latLngs.push(uc.coords);
 
@@ -117,31 +148,33 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         `;
 
-        marker.bindPopup(popupContent, { maxWidth: 230, closeButton: false });
+        marker.bindPopup(popupContent, { maxWidth: 230, closeButton: true });
         markersMap[uc.id] = marker;
 
-        // Hover Marker: Open popup & highlight matching card
-        marker.on('mouseover', function () {
-            this.openPopup();
-            marker.setIcon(createCustomIcon(true));
-            highlightCard(uc.id, true);
+        // Desktop Mouseover & Touch Click
+        marker.on('mouseover click touchstart', function (e) {
+            clearTimeout(popupTimer);
+            activateUseCase(uc.id);
         });
 
-        // Mouse out Marker: Close popup & remove card highlight cleanly
         marker.on('mouseout', function () {
-            this.closePopup();
-            marker.setIcon(createCustomIcon(false));
-            highlightCard(uc.id, false);
+            // Short grace period so user can move mouse into popup link smoothly
+            popupTimer = setTimeout(function () {
+                const isHoveringPopup = document.querySelector('.leaflet-popup:hover');
+                if (!isHoveringPopup) {
+                    deactivateUseCase(uc.id);
+                }
+            }, 300);
         });
     });
 
-    // Automatically fit map bounds to show ALL 8 pins in frame comfortably
+    // Automatically fit map bounds to show ALL pins in frame
     if (latLngs.length > 0) {
         const bounds = L.latLngBounds(latLngs);
         map.fitBounds(bounds, { padding: [35, 35] });
     }
 
-    // 4. Hover Card: Highlights Map Pin & Opens Popup (NO page scrolling)
+    // 4. Touchscreen & Desktop Card Interaction
     const cards = document.querySelectorAll('.use-case-card');
     cards.forEach(card => {
         const href = card.querySelector('a.use-case-card__footer')?.getAttribute('href') || '';
@@ -156,23 +189,36 @@ document.addEventListener('DOMContentLoaded', function () {
         if (matchingId) {
             card.dataset.usecaseId = matchingId;
 
-            card.addEventListener('mouseenter', function () {
-                const marker = markersMap[matchingId];
-                if (marker) {
-                    marker.setIcon(createCustomIcon(true));
-                    marker.openPopup();
-                }
-                card.classList.add('use-case-card--highlighted');
+            // Hover & Touch Events
+            ['mouseenter', 'click', 'touchstart'].forEach(evtType => {
+                card.addEventListener(evtType, function () {
+                    clearTimeout(popupTimer);
+                    activateUseCase(matchingId);
+                });
             });
 
             card.addEventListener('mouseleave', function () {
-                const marker = markersMap[matchingId];
-                if (marker) {
-                    marker.setIcon(createCustomIcon(false));
-                    marker.closePopup();
-                }
-                card.classList.remove('use-case-card--highlighted');
+                popupTimer = setTimeout(function () {
+                    deactivateUseCase(matchingId);
+                }, 300);
             });
+        }
+    });
+
+    // Keep popup active if mouse enters the popup container
+    document.addEventListener('mouseover', function (e) {
+        if (e.target.closest('.leaflet-popup')) {
+            clearTimeout(popupTimer);
+        }
+    });
+
+    document.addEventListener('mouseout', function (e) {
+        if (e.target.closest('.leaflet-popup')) {
+            popupTimer = setTimeout(function () {
+                if (activeId) {
+                    deactivateUseCase(activeId);
+                }
+            }, 300);
         }
     });
 
