@@ -945,48 +945,132 @@ details.knowledge-check .answer-content {
 }
 
 /* =========================================
-   Interactive Use Cases Map & Library Refinement
+   Interactive Use Cases Map & Split Explorer
    ========================================= */
 
-.use-case-map-wrapper {
-    margin: 1rem 0 2rem 0;
+.use-case-explorer-split {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .use-case-explorer-split {
+        display: grid;
+        grid-template-columns: 40% 58%;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .use-case-map-column {
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .use-case-map-container {
+        height: 520px !important;
+    }
+
+    .use-case-compact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .use-case-map-container {
+        height: 280px !important;
+    }
+
+    .use-case-compact-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.65rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .use-case-map-container {
+        height: 220px !important;
+    }
+
+    .use-case-compact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
 }
 
 .use-case-map-container {
     width: 100%;
-    height: 330px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid var(--border-color, #cbd5e1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     z-index: 1;
 }
 
-@media (max-width: 768px) {
-    .use-case-map-container {
-        height: 240px;
-    }
-}
-
-.use-case-card__actions {
+/* Compact Card Adjustments */
+.use-case-compact-grid .use-case-card {
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    padding-top: 0.6rem;
-    margin-top: 0.6rem;
-    border-top: 1px solid var(--gray-100, #f1f5f9);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.2s ease;
 }
 
-.card-link-btn {
-    font-size: 0.84rem;
+.use-case-compact-grid .card-body {
+    padding: 0.65rem 0.85rem 0.4rem 0.85rem;
+}
+
+.use-case-compact-grid .badge-tag {
+    font-size: 0.68rem;
+    padding: 0.1rem 0.4rem;
+    margin-bottom: 0.35rem;
+    display: inline-block;
+}
+
+.use-case-compact-grid .use-case-card__title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.35rem 0;
+    color: #0f172a;
+}
+
+.use-case-compact-grid .use-case-card__desc {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #475569;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.use-case-compact-grid .use-case-card__footer {
+    display: block;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    color: var(--aqua-blue, #3564AC);
-    text-decoration: none;
-    transition: color 0.2s ease;
+    background: #f8fafc;
+    border-top: 1px solid #f1f5f9;
+    color: #3564AC !important;
+    text-decoration: none !important;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.2s ease;
 }
 
-.card-link-btn:hover {
-    color: var(--color-success, #10b981);
+.use-case-compact-grid .use-case-card__footer:hover {
+    background: #e0f2fe;
+    color: #0369a1 !important;
 }
 
 /* Custom Map Marker Pin Styling */
@@ -997,27 +1081,27 @@ details.knowledge-check .answer-content {
 }
 
 .custom-map-pin {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background: #3564AC;
-    border: 3px solid #ffffff;
+    border: 2.5 solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
 .custom-map-pin:hover,
 .custom-map-pin--active {
     background: #10b981;
-    transform: scale(1.4);
-    box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+    transform: scale(1.35);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
     border-color: #ffffff;
 }
 
 /* Map Tooltip Popup */
 .map-popup-card {
-    padding: 0.2rem;
+    padding: 0.15rem;
     font-family: inherit;
 }
 
@@ -1025,33 +1109,32 @@ details.knowledge-check .answer-content {
     display: inline-block;
     background: #e0f2fe;
     color: #0369a1;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    padding: 0.15rem 0.45rem;
+    padding: 0.1rem 0.4rem;
     border-radius: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
 }
 
 .map-popup-title {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-weight: 700;
     color: #0f172a;
-    margin: 0 0 0.3rem 0;
-    line-height: 1.25;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.2;
 }
 
 .map-popup-desc {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     color: #475569;
-    margin: 0 0 0.6rem 0;
-    line-height: 1.4;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.35;
 }
 
 .map-popup-link {
     display: inline-block;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: #3564AC !important;
     text-decoration: none !important;
@@ -1064,7 +1147,7 @@ details.knowledge-check .answer-content {
 /* Card Highlight State when Map Pin / Card is Hovered */
 .use-case-card--highlighted {
     border-color: #3564AC !important;
-    box-shadow: 0 6px 18px rgba(53, 100, 172, 0.2) !important;
+    box-shadow: 0 4px 14px rgba(53, 100, 172, 0.25) !important;
     transform: translateY(-2px);
 }
 
