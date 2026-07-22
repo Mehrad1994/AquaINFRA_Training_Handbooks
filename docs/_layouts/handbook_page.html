@@ -15,7 +15,7 @@ layout: default
         {% else %}
             {% assign prev_page = site.pages | where: "nav_order", prev_num | where: "dir", "/" | first %}
             {% if prev_page %}
-                <a href="{{ prev_page.url | relative_url }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
+                <a href="{{ relative_root }}{{ prev_page.url | remove_first: '/' }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
             {% else %}
                 <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Previous</a>
             {% endif %}
@@ -26,7 +26,7 @@ layout: default
         {% else %}
             {% assign next_page = site.pages | where: "nav_order", next_num | where: "dir", "/" | first %}
             {% if next_page %}
-                <a href="{{ next_page.url | relative_url }}" class="btn-seq btn-seq--next">Next &rarr;</a>
+                <a href="{{ relative_root }}{{ next_page.url | remove_first: '/' }}" class="btn-seq btn-seq--next">Next &rarr;</a>
             {% else %}
                 <a href="{{ base }}" class="btn-seq btn-seq--next">Next &rarr;</a>
             {% endif %}
