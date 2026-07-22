@@ -13,6 +13,14 @@ Explore our collection of 8 regional aquatic training modules demonstrating real
 
 ---
 
+<div class="use-case-map-wrapper">
+    <div class="use-case-map-header">
+        <h2 id="interactive-map">Interactive Use Case Map</h2>
+        <p>Hover over any pin or training card below to highlight the geographic area and view a quick summary popup.</p>
+    </div>
+    <div id="use-case-map" class="use-case-map-container"></div>
+</div>
+
 <div class="use-case-library">
     {% for region_group in site.data.use_cases %}
     <div class="region-group">

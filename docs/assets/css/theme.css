@@ -943,4 +943,106 @@ details.knowledge-check .answer-content {
     border-radius: 5px;
     transition: width 0.4s ease;
 }
+
+/* =========================================
+   Interactive Use Cases Map Component
+   ========================================= */
+
+.use-case-map-wrapper {
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.use-case-map-header {
+    margin-bottom: 0.75rem;
+}
+
+.use-case-map-container {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #cbd5e1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Custom Map Marker Pin Styling */
+.custom-map-pin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-map-pin {
+    width: 18px;
+    height: 18px;
+    background: #3564AC;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.custom-map-pin:hover,
+.custom-map-pin--active {
+    background: #10b981;
+    transform: scale(1.4);
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+    border-color: #ffffff;
+}
+
+/* Map Tooltip Popup */
+.map-popup-card {
+    padding: 0.2rem;
+    font-family: inherit;
+}
+
+.map-popup-badge {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.35rem;
+}
+
+.map-popup-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.3rem 0;
+    line-height: 1.25;
+}
+
+.map-popup-desc {
+    font-size: 0.82rem;
+    color: #475569;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.4;
+}
+
+.map-popup-link {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #3564AC !important;
+    text-decoration: none !important;
+}
+
+.map-popup-link:hover {
+    color: #10b981 !important;
+}
+
+/* Card Highlight State when Map Pin / Card is Hovered */
+.use-case-card--highlighted {
+    border-color: #3564AC !important;
+    box-shadow: 0 6px 18px rgba(53, 100, 172, 0.2) !important;
+    transform: translateY(-3px);
+}
+
 
