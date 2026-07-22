@@ -1039,7 +1039,8 @@ details.knowledge-check .answer-content {
     border-color: #bfdbfe;
 }
 
-/* Mediterranean Sea Badge */
+/* Mediterranean Badge */
+.badge-region--mediterranean,
 .badge-region--mediterranean-sea {
     background: #fff7ed;
     color: #c2410c;
@@ -1155,6 +1156,7 @@ details.knowledge-check .answer-content {
 
 .map-popup-badge--north-sea { background: #ecfdf5; color: #047857; }
 .map-popup-badge--baltic-sea { background: #eff6ff; color: #1d4ed8; }
+.map-popup-badge--mediterranean,
 .map-popup-badge--mediterranean-sea { background: #fff7ed; color: #c2410c; }
 .map-popup-badge--pan-european { background: #f5f3ff; color: #4338ca; }
 
