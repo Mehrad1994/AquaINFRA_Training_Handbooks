@@ -17,6 +17,15 @@ nav_order: 4
     <iframe src="https://www.youtube.com/embed/JmiQu58eDis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="action-bar">
+    <a href="https://aquainfra.dev.52north.org/" target="_blank" class="btn-launch btn-launch--d2kp">
+       🔍 Find D2KP on AIP Search Interface
+    </a>
+    <a href="https://aqua.usegalaxy.eu/" target="_blank" class="btn-launch btn-launch--galaxy">
+       🚀 Open Aqua Galaxy Platform
+    </a>
+</div>
+
 ## How a D2KP fits together
 
 <div class="diagram">
@@ -33,6 +42,19 @@ nav_order: 4
       <figcaption style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Figure 2: Workflow in the Galaxy Platform detailing the acquisition and merging of multiple data sources, the extraction of environmental predictors, and ensemble outlier detection and removal.</figcaption>
     </figure>
 </div>
+
+<details class="knowledge-check">
+    <summary>Check Your Understanding: D2KP Architecture</summary>
+    <div class="answer-content">
+        <p><strong>Question:</strong> What are the 4 interaction levels provided by an AquaINFRA Data-to-Knowledge Package (D2KP)?</p>
+        <p><strong>Answer:</strong> 
+        1. <em>Data & Code</em> (Raw CSV/NetCDF files + R/Python source scripts)<br>
+        2. <em>Aqua Galaxy Workflow</em> (No-code pipeline execution via <code>.ga</code> files)<br>
+        3. <em>Web API</em> (Direct pygeoapi endpoint access for software integration)<br>
+        4. <em>MyBinder Virtual Lab</em> (Live interactive RStudio/Jupyter container environment)
+        </p>
+    </div>
+</details>
 
 ---
 
