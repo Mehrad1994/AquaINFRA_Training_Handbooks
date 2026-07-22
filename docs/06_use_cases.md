@@ -1,18 +1,17 @@
 ---
 layout: handbook_page
 nav_order: 6
-title: Applied Use Case 
+title: "Applied Use Case"
 ---
-# Applied Use Cases
 
-Explore our comprehensive library of focused training modules. These materials demonstrate the practical application of the AquaINFRA Research Infrastructure across diverse European aquatic environments.
+# Applied Use Cases Library
 
-Each module is co-designed with domain experts and provides:
+Explore our collection of 8 regional aquatic training modules demonstrating real-world applications across European marine and freshwater environments.
 
-- **Guided Workflows**: Step-by-step technical instructions.
-- **D2KP**: Searchable and reproducible Data-to-Knowledge Packages.
+> [!NOTE]
+> Each module includes step-by-step chapter guides, vector workflow diagrams, interactive code tool tabs, and published Zenodo D2KPs.
 
-<!-- Use Case Library Section (Moved from Homepage) -->
+---
 
 <div class="use-case-library">
     {% for region_group in site.data.use_cases %}
@@ -29,21 +28,18 @@ Each module is co-designed with domain experts and provides:
                     <h2 class="use-case-card__title">{{ training.title }}</h2>
                     <p class="use-case-card__desc">{{ training.description }}</p>
 
-<div class="resource-links">
-                    {% if training.d2kp_url %}
-                    <a href="{{ training.d2kp_url }}" target="_blank" class="resource-btn resource-btn--zenodo" title="Data to Knowledge Package">D2KP</a>
-                    {% endif %}
+                    <div class="resource-links">
+                        {% if training.d2kp_url %}
+                        <a href="{{ training.d2kp_url }}" target="_blank" rel="noopener" class="resource-btn resource-btn--zenodo" title="Data to Knowledge Package">D2KP</a>
+                        {% endif %}
+                    </div>
                 </div>
+                <a href="{{ training.url | remove_first: '/' | prepend: relative_root }}" class="use-case-card__footer">
+                    View In Handbook &rarr;
+                </a>
             </div>
-            <a href="{{ training.url | remove_first: '/' | prepend: relative_root }}" class="use-case-card__footer">
-                View In Handbook →
-            </a>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </div>
-{% endfor %}
-</div>
-
-
-<!-- Navigation Buttons -->
