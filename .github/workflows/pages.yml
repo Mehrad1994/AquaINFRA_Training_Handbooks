@@ -1,10 +1,24 @@
 name: Deploy to GitHub Pages
 
+# ---------------------------------------------------------------------------
+# How to deploy:
+#   1. Go to: Settings > Pages > Source  →  select "GitHub Actions" → Save
+#      (one-time setup — never needs changing again)
+#   2. To publish any branch:
+#      Actions > "Deploy to GitHub Pages" > Run workflow > pick branch > Run
+#   3. Every push to "main" also auto-deploys (keeps live site in sync).
+#
+# To switch to a new branch in future:
+#   Just run the workflow from that branch (step 2 above).  No other changes.
+# ---------------------------------------------------------------------------
+
 on:
+  # Auto-deploy whenever main is updated
   push:
     branches:
-      - August_2026_Update
       - main
+
+  # Manual deploy: lets you pick ANY branch from the GitHub Actions UI
   workflow_dispatch:
 
 permissions:
@@ -14,7 +28,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -30,14 +44,14 @@ jobs:
           bundler-cache: true
           working-directory: docs
 
-      - name: Setup Pages
+      - name: Setup Pages (detects repo name → base_path)
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        # Pass the baseurl that GitHub Pages actually serves from.
-        # This keeps _config.yml clean (baseurl: "") for local/production use,
-        # while correctly prefixing all asset and navigation paths for GitHub Pages.
+        # Injects the correct baseurl (/AquaINFRA_Training_Handbooks) at build
+        # time only. The source _config.yml stays clean (baseurl: "") so the
+        # site works identically on localhost and aquainfra.eu without changes.
         run: |
           cd docs
           bundle exec jekyll build \
