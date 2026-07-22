@@ -6,7 +6,7 @@ This repository provides the high-performance, mobile-responsive source code for
 
 ## 🌐 Live Handbook
 Access the interactive training modules here:  
-**[mehrad1994.github.io/AquaINFRA_Training_Handbooks](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
+**[mehradmoradipour.github.io/AquaINFRA_Training_Handbooks](https://mehradmoradipour.github.io/AquaINFRA_Training_Handbooks/)**
 
 ## 📖 Project Scope
 The handbook covers the full research lifecycle within the project:
