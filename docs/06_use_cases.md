@@ -19,7 +19,7 @@ title: "Applied Use Cases"
                 {% for training in region_group.trainings %}
                 <div class="use-case-card">
                     <div class="card-body">
-                        <span class="badge-tag badge-tag--blue">{{ region_group.region }}</span>
+                        <span class="badge-region badge-region--{{ region_group.region | slugify }}">{{ region_group.region }}</span>
                         <h2 class="use-case-card__title">{{ training.title }}</h2>
                         <p class="use-case-card__desc">{{ training.description }}</p>
                     </div>

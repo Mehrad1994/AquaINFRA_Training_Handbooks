@@ -1,16 +1,13 @@
 /**
  * AquaINFRA Training Handbook - Interactive Use Cases Map
- * Renders Leaflet map with use case markers & bi-directional card hover highlights.
- * Compact split-screen compatible with zero unwanted auto-scrolling.
+ * Renders Leaflet map with all pins framed automatically & bi-directional card hover highlights.
  */
 document.addEventListener('DOMContentLoaded', function () {
     const mapContainer = document.getElementById('use-case-map');
     if (!mapContainer || typeof L === 'undefined') return;
 
-    // 1. Initialize Leaflet Map centered on Europe
+    // 1. Initialize Leaflet Map
     const map = L.map('use-case-map', {
-        center: [52.5, 14.0],
-        zoom: 3.8,
         zoomControl: true,
         scrollWheelZoom: false,
         attributionControl: false
@@ -75,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 'tordera-malta',
             title: 'Tordera Basin & Malta',
-            region: 'Mediterranean',
+            region: 'Mediterranean Sea',
             coords: [41.70, 2.75],
             desc: 'Flash floods in Tordera catchment and seawater intrusion in Maltese coastal aquifers.',
             url: './trainings/tordera-malta/'
@@ -91,18 +88,21 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const markersMap = {};
+    const latLngs = [];
 
     function createCustomIcon(isHighlighted) {
         return L.divIcon({
             className: 'custom-map-pin-wrapper',
             html: `<div class="custom-map-pin ${isHighlighted ? 'custom-map-pin--active' : ''}"></div>`,
-            iconSize: [20, 20],
-            iconAnchor: [10, 10]
+            iconSize: [22, 22],
+            iconAnchor: [11, 11]
         });
     }
 
-    // 3. Create Markers
+    // 3. Create Markers & Collect Bounds
     useCaseLocations.forEach(uc => {
+        latLngs.push(uc.coords);
+
         const marker = L.marker(uc.coords, {
             icon: createCustomIcon(false),
             title: uc.title
@@ -110,17 +110,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const popupContent = `
             <div class="map-popup-card">
-                <span class="map-popup-badge">${uc.region}</span>
+                <span class="map-popup-badge map-popup-badge--${uc.region.toLowerCase().replace(/\s+/g, '-')}">${uc.region}</span>
                 <h4 class="map-popup-title">${uc.title}</h4>
                 <p class="map-popup-desc">${uc.desc}</p>
                 <a href="${uc.url}" class="map-popup-link">Explore Course &rarr;</a>
             </div>
         `;
 
-        marker.bindPopup(popupContent, { maxWidth: 220, closeButton: false });
+        marker.bindPopup(popupContent, { maxWidth: 230, closeButton: false });
         markersMap[uc.id] = marker;
 
-        // Hover Marker: Open popup & highlight matching card (NO page scrolling)
+        // Hover Marker: Open popup & highlight matching card
         marker.on('mouseover', function () {
             this.openPopup();
             marker.setIcon(createCustomIcon(true));
@@ -135,7 +135,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 4. Hover Card: Highlights Map Pin & Opens Popup (NO page scrolling, NO panTo)
+    // Automatically fit map bounds to show ALL 8 pins in frame comfortably
+    if (latLngs.length > 0) {
+        const bounds = L.latLngBounds(latLngs);
+        map.fitBounds(bounds, { padding: [35, 35] });
+    }
+
+    // 4. Hover Card: Highlights Map Pin & Opens Popup (NO page scrolling)
     const cards = document.querySelectorAll('.use-case-card');
     cards.forEach(card => {
         const href = card.querySelector('a.use-case-card__footer')?.getAttribute('href') || '';

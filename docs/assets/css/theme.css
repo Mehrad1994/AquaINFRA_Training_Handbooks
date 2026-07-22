@@ -958,7 +958,7 @@ details.knowledge-check .answer-content {
 @media (min-width: 992px) {
     .use-case-explorer-split {
         display: grid;
-        grid-template-columns: 40% 58%;
+        grid-template-columns: 46% 52%;
         gap: 1.5rem;
         align-items: start;
     }
@@ -1012,6 +1012,47 @@ details.knowledge-check .answer-content {
     z-index: 1;
 }
 
+/* Region Badges with Distinct Region Highlights */
+.badge-region {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+/* North Sea Badge */
+.badge-region--north-sea {
+    background: #ecfdf5;
+    color: #047857;
+    border-color: #a7f3d0;
+}
+
+/* Baltic Sea Badge */
+.badge-region--baltic-sea {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+}
+
+/* Mediterranean Sea Badge */
+.badge-region--mediterranean-sea {
+    background: #fff7ed;
+    color: #c2410c;
+    border-color: #fed7aa;
+}
+
+/* Pan-European Badge */
+.badge-region--pan-european {
+    background: #f5f3ff;
+    color: #4338ca;
+    border-color: #ddd6fe;
+}
+
 /* Compact Card Adjustments */
 .use-case-compact-grid .use-case-card {
     margin: 0;
@@ -1027,13 +1068,6 @@ details.knowledge-check .answer-content {
 
 .use-case-compact-grid .card-body {
     padding: 0.65rem 0.85rem 0.4rem 0.85rem;
-}
-
-.use-case-compact-grid .badge-tag {
-    font-size: 0.68rem;
-    padding: 0.1rem 0.4rem;
-    margin-bottom: 0.35rem;
-    display: inline-block;
 }
 
 .use-case-compact-grid .use-case-card__title {
@@ -1084,7 +1118,7 @@ details.knowledge-check .answer-content {
     width: 16px;
     height: 16px;
     background: #3564AC;
-    border: 2.5 solid #ffffff;
+    border: 2.5px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
@@ -1095,7 +1129,7 @@ details.knowledge-check .answer-content {
 .custom-map-pin--active {
     background: #10b981;
     transform: scale(1.35);
-    box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.7);
     border-color: #ffffff;
 }
 
@@ -1107,8 +1141,6 @@ details.knowledge-check .answer-content {
 
 .map-popup-badge {
     display: inline-block;
-    background: #e0f2fe;
-    color: #0369a1;
     font-size: 0.68rem;
     font-weight: 700;
     padding: 0.1rem 0.4rem;
@@ -1116,6 +1148,11 @@ details.knowledge-check .answer-content {
     text-transform: uppercase;
     margin-bottom: 0.25rem;
 }
+
+.map-popup-badge--north-sea { background: #ecfdf5; color: #047857; }
+.map-popup-badge--baltic-sea { background: #eff6ff; color: #1d4ed8; }
+.map-popup-badge--mediterranean-sea { background: #fff7ed; color: #c2410c; }
+.map-popup-badge--pan-european { background: #f5f3ff; color: #4338ca; }
 
 .map-popup-title {
     font-size: 0.88rem;
@@ -1150,6 +1187,12 @@ details.knowledge-check .answer-content {
     box-shadow: 0 4px 14px rgba(53, 100, 172, 0.25) !important;
     transform: translateY(-2px);
 }
+
+.use-case-card--highlighted .badge-region {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
 
 
 
