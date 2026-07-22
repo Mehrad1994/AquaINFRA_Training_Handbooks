@@ -10,7 +10,7 @@ nav_order: 1
 <p class="chapter-meta">Chapter 1 of 6</p>
 
 <div class="chapter-intro">
-    <p>Species occurrence data is scattered across countries, projects, and quality standards - merge it naively and your estimates reflect sampling artefacts, not ecology. This use case shows AquaINFRA's end-to-end workflow: pull records, merge and harmonise them, and clean them with ensemble outlier detection to produce a reliable, <a href="{{ relative_root }}reference/glossary#fair">FAIR</a> dataset for species distribution modelling.</p>
+    <p>Species occurrence data is scattered across countries, projects, and quality standards - merge it naively and your estimates reflect sampling artefacts, not ecology. This use case shows AquaINFRA's end-to-end workflow: pull records, merge and harmonise them, and clean them with ensemble outlier detection to produce a reliable, <a href="../../reference/glossary#fair">FAIR</a> dataset for species distribution modelling.</p>
 </div>
 
 <div class="video-container">

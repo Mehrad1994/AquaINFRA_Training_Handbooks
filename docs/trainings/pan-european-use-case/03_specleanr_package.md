@@ -10,7 +10,7 @@ nav_order: 3
 <p class="chapter-meta">Chapter 3 of 6</p>
 
 <div class="chapter-intro">
-    <p>Any single outlier-detection method has a blind spot. <a href="{{ relative_root }}reference/glossary#specleanr">Specleaner</a> (the <code>specleanr</code> R package) runs around 20 methods - univariate and multivariate - and votes, classifying each record from "not an outlier" through to "perfect outlier". This chapter explains the ensemble idea and how you choose a removal threshold for your model.</p>
+    <p>Any single outlier-detection method has a blind spot. <a href="../../reference/glossary#specleanr">Specleaner</a> (the <code>specleanr</code> R package) runs around 20 methods - univariate and multivariate - and votes, classifying each record from "not an outlier" through to "perfect outlier". This chapter explains the ensemble idea and how you choose a removal threshold for your model.</p>
 </div>
 
 <div class="video-container">

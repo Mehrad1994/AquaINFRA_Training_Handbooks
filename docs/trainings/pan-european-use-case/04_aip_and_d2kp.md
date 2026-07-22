@@ -10,7 +10,7 @@ nav_order: 4
 <p class="chapter-meta">Chapter 4 of 6</p>
 
 <div class="chapter-intro">
-    <p>The Specleaner <a href="{{ relative_root }}reference/glossary#d2kp">Data-to-Knowledge Package</a> gathers the workflow, a Binder virtual lab, OGC web-API endpoints, the reproducible toolbox, and the demo datasets - all citable on Zenodo. This chapter shows how to find it on the AIP and set up the run in Aqua Galaxy. You need to be signed in to your <a href="{{ relative_root }}reference/prerequisites">Aqua Galaxy account</a> for the import to save.</p>
+    <p>The Specleaner <a href="../../reference/glossary#d2kp">Data-to-Knowledge Package</a> gathers the workflow, a Binder virtual lab, OGC web-API endpoints, the reproducible toolbox, and the demo datasets - all citable on Zenodo. This chapter shows how to find it on the AIP and set up the run in Aqua Galaxy. You need to be signed in to your <a href="../../reference/prerequisites">Aqua Galaxy account</a> for the import to save.</p>
 </div>
 
 <div class="video-container">
