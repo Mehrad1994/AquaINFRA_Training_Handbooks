@@ -945,25 +945,42 @@ details.knowledge-check .answer-content {
 }
 
 /* =========================================
-   Interactive Use Cases Map Component
+   Interactive Use Cases Split Layout (Compact Desktop/Tablet & Responsive Mobile)
    ========================================= */
 
-.use-case-map-wrapper {
-    margin: 1.5rem 0 2.5rem 0;
+.use-cases-split-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin: 1.5rem 0 2rem 0;
 }
 
-.use-case-map-header {
-    margin-bottom: 0.75rem;
+@media (max-width: 991px) {
+    .use-cases-split-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.map-sticky-col {
+    position: sticky;
+    top: 1.25rem;
 }
 
 .use-case-map-container {
     width: 100%;
-    height: 380px;
+    height: 480px;
     border-radius: 12px;
     border: 1px solid var(--border-color, #cbd5e1);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .use-case-map-container {
+        height: 250px;
+    }
 }
 
 /* Custom Map Marker Pin Styling */
@@ -1042,7 +1059,8 @@ details.knowledge-check .answer-content {
 .use-case-card--highlighted {
     border-color: #3564AC !important;
     box-shadow: 0 6px 18px rgba(53, 100, 172, 0.2) !important;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
+
 
 

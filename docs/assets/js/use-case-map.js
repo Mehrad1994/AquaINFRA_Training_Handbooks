@@ -174,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (card) {
             if (activate) {
                 card.classList.add('use-case-card--highlighted');
-                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             } else {
                 card.classList.remove('use-case-card--highlighted');
             }
