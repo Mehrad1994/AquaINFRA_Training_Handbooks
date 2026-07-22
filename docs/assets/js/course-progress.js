@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // 2. Inject "Mark Chapter as Complete" button on sequential navigation pages (chapters only)
+    // 2. Inject "Mark Chapter as Complete" button on Applied Use Case Training chapter pages ONLY
     const seqNav = document.querySelector('.sequence-navigation');
     const isOverviewPage = !!document.querySelector('.course-overview-wrapper, .course-overview-container') ||
         currentPath.endsWith('/index') ||
@@ -55,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.pathname.endsWith('/index') ||
         window.location.pathname.endsWith('/index.html');
 
-    if (seqNav && !isOverviewPage) {
+    const isTrainingChapter = window.location.pathname.includes('/trainings/') && !isOverviewPage;
+
+    if (seqNav && isTrainingChapter) {
         const isCompleted = !!completedMap[currentPath];
 
         const btnComplete = document.createElement('button');

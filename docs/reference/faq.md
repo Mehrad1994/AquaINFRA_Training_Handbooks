@@ -1,133 +1,129 @@
 ---
 layout: reference_page
-title: FAQ & Troubleshooting
+title: "FAQ & Troubleshooting"
 ---
 
 # FAQ & Troubleshooting
 
-Quick answers to common questions and concrete fixes for the issues most learners hit.
+Quick answers to common questions and concrete solutions for issues encountered during training workflows.
 
-<div class="callout">
-    <strong>Where to go from here</strong>
-    Can't find your issue? See <a href="../07_contact">Contact</a> to reach the AquaINFRA team.
-</div>
+> [!NOTE]
+> Can't find your issue? Visit [Contact & Support](../07_contact) to reach the AquaINFRA technical team.
 
 ---
 
-## Accounts & access
+## Accounts & Access
 
-<details>
-<summary><strong>Do I need an EOSC account to follow the trainings?</strong></summary>
-
-No. For every hands-on chapter in this handbook you only need an **Aqua Galaxy** account. EOSC is only useful if you need extra cloud compute or shared group workspaces. See [Prerequisites](./prerequisites).
+<details class="knowledge-check">
+    <summary>Do I need an EOSC account to follow the trainings?</summary>
+    <div class="answer-content">
+        <p>No. For every hands-on chapter in this handbook, you only need an <strong>Aqua Galaxy</strong> account. EOSC accounts are only needed if you require extra cloud compute or shared group workspaces. See <a href="./prerequisites">Prerequisites & Sign-Up</a>.</p>
+    </div>
 </details>
 
-<details>
-<summary><strong>I see "AIP" and "AquaINFRA Interaction Platform" and "DDAS" - are these the same?</strong></summary>
-
-AIP = AquaINFRA Interaction Platform - the user-facing portal at `aquainfra.dev.52north.org`. DDAS is the **backend** Data Discovery and Access Service that powers AIP search and exposes OGC APIs. As a user you interact with AIP; DDAS works under the hood.
+<details class="knowledge-check">
+    <summary>What is the difference between AIP, DDAS, and Aqua Galaxy?</summary>
+    <div class="answer-content">
+        <p><strong>AIP (AquaINFRA Interaction Platform)</strong> is the user-facing web portal at <code>aquainfra.dev.52north.org</code> where you search and discover datasets.</p>
+        <p><strong>DDAS (Data Discovery & Access Service)</strong> is the backend service that powers AIP search and exposes OGC Web APIs.</p>
+        <p><strong>Aqua Galaxy</strong> at <code>aqua.usegalaxy.eu</code> is the Virtual Research Environment (VRE) where workflow tools are executed.</p>
+    </div>
 </details>
 
-<details>
-<summary><strong>What's the difference between VRE and Aqua Galaxy?</strong></summary>
-
-In practice, they're the same thing. **VRE** is the conceptual name (Virtual Research Environment). **Aqua Galaxy** at `aqua.usegalaxy.eu` is its current implementation.
-</details>
-
----
-
-## AIP - finding data
-
-<details>
-<summary><strong>Why does my AIP search return too many results?</strong></summary>
-
-Use the **Data Provider** filter on the left to uncheck providers you don't need. For AquaINFRA's own datasets, keep only the **AquaINFRA** provider checked.
-</details>
-
-<details>
-<summary><strong>I can't find an "Import to Galaxy" button on a dataset page.</strong></summary>
-
-Not all data providers support direct OGC API import. When this happens:
-1. Open the dataset's external metadata page (the "Visit" or source link).
-2. Accept any data-usage disclaimer required by the provider.
-3. Copy the direct download URL.
-4. Back on AIP, paste the URL into the **Insert URL** field and click **Import**.
-
-This is documented in the Gulf of Riga Chapter 7 (HELCOM dataset example).
+<details class="knowledge-check">
+    <summary>What is the difference between VRE and Aqua Galaxy?</summary>
+    <div class="answer-content">
+        <p>In practice, they refer to the same platform. <strong>VRE</strong> (Virtual Research Environment) is the conceptual name, while <strong>Aqua Galaxy</strong> is its active online implementation.</p>
+    </div>
 </details>
 
 ---
 
-## Galaxy - running workflows
+## AIP - Finding & Ingesting Data
 
-<details>
-<summary><strong>My import is stuck on "Queued" (grey) for a long time.</strong></summary>
-
-Galaxy queues jobs when the server is busy. For small imports it usually clears within a couple of minutes. If it stays grey for >15 minutes, refresh the page; if it still doesn't move, check the [Galaxy status page](https://status.galaxyproject.org/) or try later.
+<details class="knowledge-check">
+    <summary>Why does my AIP search return too many results?</summary>
+    <div class="answer-content">
+        <p>Use the <strong>Data Provider</strong> filter panel on the left side of the AIP search interface to uncheck external data providers. To inspect native project datasets, keep only the <strong>AquaINFRA</strong> provider checked.</p>
+    </div>
 </details>
 
-<details>
-<summary><strong>My dataset turned <span style="color:#c62828">red</span> (Error). What now?</strong></summary>
-
-1. Click the dataset name in the history → expand details.
-2. Click the **bug icon** to see the error message.
-3. Common causes:
-   - **Broken or expired URL** (especially for HELCOM-style links - re-accept the disclaimer and copy a fresh URL).
-   - **Empty result** after subsetting (your bounding box has no data points - widen it).
-   - **Wrong file format** for the next tool (check the green checkmark file type matches what the workflow expects).
-4. Re-run the import / step after fixing.
-</details>
-
-<details>
-<summary><strong>The workflow runs but no map output appears.</strong></summary>
-
-Map outputs (HTML files) need to be opened explicitly:
-1. Find the `map_*.html` file in your history.
-2. Click the **eye icon** to preview, then **"Open in new tab"** for the full interactive view.
-</details>
-
-<details>
-<summary><strong>Can I re-run a workflow with different parameters?</strong></summary>
-
-Yes. In Workflows → click the dropdown → **Run** → expand to full workflow view → tweak parameters → **Run Workflow**. The new run gets its own history slice and won't overwrite previous results.
+<details class="knowledge-check">
+    <summary>I cannot find an "Import to Galaxy" button on a dataset page.</summary>
+    <div class="answer-content">
+        <p>Not all external providers support direct one-click OGC API imports. Follow these steps:</p>
+        <ol>
+            <li>Open the dataset source link on the provider website.</li>
+            <li>Accept any required data-usage disclaimer.</li>
+            <li>Copy the direct download URL.</li>
+            <li>In AIP or Galaxy, paste the URL into the <strong>Insert URL</strong> import dialog.</li>
+        </ol>
+    </div>
 </details>
 
 ---
 
-## D2KPs & reproducibility
+## Galaxy - Workflow Execution
 
-<details>
-<summary><strong>What's inside a D2KP exactly?</strong></summary>
-
-Four interaction levels in one bundle:
-1. **Data & code** - raw data links + R/Python source.
-2. **Galaxy workflow** - pre-configured `.ga` you can run without writing code.
-3. **OGC / Web API** - endpoints to call the same processing from your own systems.
-4. **MyBinder virtual lab** - containerised RStudio for live editing.
-
-See the [D2KP chapter](../05_data_to_knowledge).
+<details class="knowledge-check">
+    <summary>My dataset import is stuck on "Queued" (Grey Status).</summary>
+    <div class="answer-content">
+        <p>Galaxy queues jobs when server demand is high. Small imports typically clear within a few minutes. If a job remains queued for over 15 minutes, refresh your browser or check the official <a href="https://status.galaxyproject.org/" target="_blank" rel="noopener">Galaxy Status Page</a>.</p>
+    </div>
 </details>
 
-<details>
-<summary><strong>How do I cite a D2KP in a paper?</strong></summary>
+<details class="knowledge-check">
+    <summary>My dataset turned Red (Error Status). What should I do?</summary>
+    <div class="answer-content">
+        <p>Follow these diagnostic steps:</p>
+        <ol>
+            <li>Click the dataset entry in your history panel to expand details.</li>
+            <li>Click the <strong>Bug Icon</strong> to view error tracebacks.</li>
+            <li>Check for common causes:
+                <ul>
+                    <li><strong>Expired URL</strong>: Re-copy a fresh direct download link from the data provider.</li>
+                    <li><strong>Empty Result</strong>: Bounding box coordinates contained no sampling stations (widen spatial extent).</li>
+                    <li><strong>Format Mismatch</strong>: Ensure file format matches what the workflow step expects (e.g. CSV vs NetCDF).</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</details>
 
-Every published D2KP has a **DOI on Zenodo**. Use the DOI as you would for any dataset reference. The AIP dataset page lists the DOI alongside other metadata.
+<details class="knowledge-check">
+    <summary>The workflow completed, but no map visualization appears.</summary>
+    <div class="answer-content">
+        <p>Interactive HTML map outputs must be opened explicitly: click the <strong>Eye Icon</strong> on the <code>map_*.html</code> dataset in your history panel, then select <strong>Open in New Tab</strong>.</p>
+    </div>
+</details>
+
+<details class="knowledge-check">
+    <summary>Can I re-run a workflow with different parameters?</summary>
+    <div class="answer-content">
+        <p>Yes. Go to <strong>Workflows</strong> &rarr; click the dropdown menu &rarr; select <strong>Run</strong>. Adjust your parameters and click <strong>Run Workflow</strong>. The new execution creates a separate history slice without overwriting previous results.</p>
+    </div>
 </details>
 
 ---
 
-## General
+## D2KPs & Reproducibility
 
-<details>
-<summary><strong>The video timestamps in chapters don't match my YouTube playback time.</strong></summary>
-
-YouTube occasionally inserts a brief intro that shifts timestamps by 1-2 seconds. If a jump lands slightly off, scrub backward a few seconds.
+<details class="knowledge-check">
+    <summary>What components are included inside a D2KP?</summary>
+    <div class="answer-content">
+        <p>A Data-to-Knowledge Package (D2KP) bundles four key assets:</p>
+        <ul>
+            <li><strong>Data & Source Code</strong>: Input data links and R/Python scripts.</li>
+            <li><strong>Galaxy Workflow</strong>: Executable <code>.ga</code> workflow file.</li>
+            <li><strong>OGC Web APIs</strong>: Programmatic <code>pygeoapi</code> execution endpoints.</li>
+            <li><strong>Virtual Sandbox</strong>: MyBinder containerized RStudio/Jupyter environment.</li>
+        </ul>
+    </div>
 </details>
 
-<details>
-<summary><strong>Can I use the workflows on my own data?</strong></summary>
-
-Yes - that's the whole point of FAIR workflows. After a successful run on the demo data, swap the input datasets for your own and re-run. Make sure your data has the same structure (e.g. same coordinate system, comparable columns) as the demo inputs.
+<details class="knowledge-check">
+    <summary>How do I cite a D2KP in a research publication?</summary>
+    <div class="answer-content">
+        <p>Every published D2KP is assigned a persistent <strong>Digital Object Identifier (DOI) on Zenodo</strong>. Cite the DOI in your reference list as you would for a scientific paper or dataset.</p>
+    </div>
 </details>
-
----

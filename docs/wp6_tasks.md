@@ -1,54 +1,44 @@
 ---
 layout: reference_page
-title: WP6 Tasks
+title: "WP6 Tasks"
 ---
 
-# WP6 Tasks and Use Cases
+# WP6 Tasks & Deliverables Overview
 
-This page provides an overview of the Work Package 6 (WP6) tasks, focus regions, and the status of the associated training materials (OERs).
+Summary of Work Package 6 (WP6) training tasks, use cases, and training handbook development objectives.
 
-## Baltic Sea
-
-| Focus Area | Status / Activity |
-| :--- | :--- |
-| **Gulf Of Riga** | Video almost done (final adjustments); Text-based OERs in progress. |
-| **Gulf of Finland** | Video prep session planned (Helsinki, May 2026); Text-based OERs. |
-| **Helcom** | Video prep session planned (Helsinki, May 2026); Text-based OERs. |
-
-## North Sea
-
-| Focus Area | Status / Activity |
-| :--- | :--- |
-| **HEREON** | In planning phase. |
-| **Oslofjord & Glomma River** | Video prep session planned with NIVA (Copenhagen, July 2026); Text-based OERs. |
-| **Elbe** | In planning phase. |
-
-## Pan-European
-
-| Focus Area | Status / Activity |
-| :--- | :--- |
-| **BOKU** | Video almost done (final adjustments); Text-based OERs. |
-
-## Mediterranean
-
-| Focus Area | Status / Activity |
-| :--- | :--- |
-| **Tordera & Llobregat delta and Malta (Merged)** | Video prep session planned with CREAF, CSIC, and UMALTA (Barcelona, April 2026); Text-based OERs. |
-
-## General OERs
-
-| Focus Area | Status / Activity |
-| :--- | :--- |
-| **AIP & DDAS** | In planning phase. |
-| **D2KP Development** | Video prep session planned; Text-based OERs. |
-| **Local Data Usage** | In planning phase ("How to use your own local data"). |
-
-## Other WP6 Tasks
-
-- **Scientific Papers**: 2 papers planned (1 special issue, 1 for Elbe D2KP).
-- **Conference Workshop**: EGU Conference workshop.
-- **Reporting**: Final Report.
+> [!NOTE]
+> This overview aligns training handbook development with project deliverables D5.2 and WP6 milestones.
 
 ---
 
-<!-- Navigation Buttons -->
+## Work Package Deliverables & Status
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Task / Milestone</th>
+                <th>Focus Area</th>
+                <th>Implementation Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>D5.2 / WP6 Use Cases</strong></td>
+                <td>8 Regional Aquatic Use Cases (Baltic Sea, North Sea, Mediterranean, Pan-European)</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td><strong>D2KP Integration</strong></td>
+                <td>Multi-interface D2KP bundling (Galaxy, R/Python, OGC Web APIs, MyBinder)</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td><strong>Interactive Training Handbook</strong></td>
+                <td>Single-Template Architecture static Jekyll portal deployed at aquainfra.eu/training</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
