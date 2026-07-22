@@ -40,10 +40,3 @@ Endangered species like the Danube sturgeon and Huchen depend on clean, defensib
 - Reach the team via the [Contact page]({{ relative_root }}07_contact).
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./05_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>
-    <a href="../../" class="btn-seq btn-seq--next">Return Home</a>
-</div>
-
-<div class="wave-decoration"></div>

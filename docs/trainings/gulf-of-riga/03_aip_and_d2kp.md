@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 3
+parent: "Service by the Gulf of Riga"
 title: The Interaction Platform & D2K Packages
 ---
 
@@ -24,10 +26,3 @@ title: The Interaction Platform & D2K Packages
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_case_study" class="btn-seq btn-seq--prev">← Previous: Case Study</a>
-    <a href="./04_aqua_galaxy_vre" class="btn-seq btn-seq--next">Next Chapter: Aqua Galaxy (VRE) →</a>
-</div>
-
-<div class="wave-decoration"></div>

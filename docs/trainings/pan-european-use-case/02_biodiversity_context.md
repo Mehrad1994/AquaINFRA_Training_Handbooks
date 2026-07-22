@@ -44,10 +44,3 @@ nav_order: 2
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
-    <a href="./03_specleanr_package" class="btn-seq btn-seq--next">Next Chapter: Specleaner →</a>
-</div>
-
-<div class="wave-decoration"></div>

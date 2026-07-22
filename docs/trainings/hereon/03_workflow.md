@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 3
+parent: "HEREON"
 title: "Workflow"
 ---
 # Workflow
@@ -94,9 +96,3 @@ The analytical pipeline is broken down into four core steps:
 </details>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous: Research Questions</a>
-    <a href="./" class="btn-seq btn-seq--next">Back to Course Overview &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

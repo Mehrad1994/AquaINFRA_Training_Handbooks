@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 2
+parent: "Service by the Gulf of Riga"
 title: The Research Story — Darkening of the Gulf of Riga
 ---
 
@@ -31,10 +33,3 @@ title: The Research Story — Darkening of the Gulf of Riga
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
-    <a href="./03_aip_and_d2kp" class="btn-seq btn-seq--next">Next Chapter: AIP and D2KP →</a>
-</div>
-
-<div class="wave-decoration"></div>

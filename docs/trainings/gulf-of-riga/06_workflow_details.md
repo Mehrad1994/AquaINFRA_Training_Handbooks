@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 6
+parent: "Service by the Gulf of Riga"
 title: Running the Daugava Workflow
 ---
 
@@ -49,10 +51,3 @@ The reusability of this workflow has been demonstrated by successfully applying 
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./05_importing_data" class="btn-seq btn-seq--prev">← Previous: Importing Data</a>
-    <a href="./07_results_conclusion" class="btn-seq btn-seq--next">Next Chapter: Results & Conclusion →</a>
-</div>
-
-<div class="wave-decoration"></div>

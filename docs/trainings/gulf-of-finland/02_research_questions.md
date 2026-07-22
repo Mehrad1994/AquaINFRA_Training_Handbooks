@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 2
+parent: "Vantaanjoki River and Gulf of Finland"
 title: "Research questions"
 ---
 # Research questions
@@ -23,9 +25,3 @@ The Vantaanjoki Use Case aims to address three primary research questions connec
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./01_introduction" class="btn-seq btn-seq--prev">&larr; Previous</a>
-    <a href="./03_workflow" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 3
+parent: "HELCOM Baltic Sea"
 title: "Workflow"
 ---
 # Workflow
@@ -63,8 +65,3 @@ To assess the eutrophication state, the **HEAT** (HELCOM Eutrophication Assessme
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous</a>
-</div>
-<div class="wave-decoration"></div>

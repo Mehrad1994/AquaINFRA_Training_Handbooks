@@ -70,10 +70,3 @@ print(response.json())</code></pre>
 </details>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_biodiversity_context" class="btn-seq btn-seq--prev">← Previous: Biodiversity Context</a>
-    <a href="./04_aip_and_d2kp" class="btn-seq btn-seq--next">Next Chapter: AIP & D2KP →</a>
-</div>
-
-<div class="wave-decoration"></div>

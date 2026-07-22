@@ -1,6 +1,6 @@
 ---
 layout: course_index
-title: "Gulf of Finland"
+title: "Vantaanjoki River and Gulf of Finland"
 hero_title: "Vantaanjoki River and Gulf of Finland"
 region: "Baltic Sea"
 use_case: true
@@ -31,10 +31,3 @@ use_case: true
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="../../06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
-    <a href="./01_introduction" class="btn-seq btn-seq--next">Start Training: Chapter 1 &rarr;</a>
-</div>
-
-<div class="wave-decoration"></div>

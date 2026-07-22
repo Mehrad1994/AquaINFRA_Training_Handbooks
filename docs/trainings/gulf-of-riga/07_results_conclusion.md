@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 7
+parent: "Service by the Gulf of Riga"
 title: Analyzing Results & Conclusions
 ---
 
@@ -42,10 +44,3 @@ The workflow answered *what* is happening; the open questions are about *why*:
 Cite the analysis via the <a href="https://aquainfra.dev.52north.org/result/zenodo:17175368" target="_blank" rel="noopener">D2KP DOI on Zenodo</a>.
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./06_workflow_details" class="btn-seq btn-seq--prev">← Previous: Workflow Details</a>
-    <a href="./" class="btn-seq btn-seq--next">Back to Course Overview &rarr;</a>
-</div>
-
-<div class="wave-decoration"></div>

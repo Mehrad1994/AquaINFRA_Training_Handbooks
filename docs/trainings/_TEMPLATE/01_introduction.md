@@ -37,10 +37,3 @@ title: "Introduction"
 -->
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">← Overview</a>
-    <a href="./02_main_content" class="btn-seq btn-seq--next">Next Chapter →</a>
-</div>
-
-<div class="wave-decoration"></div>

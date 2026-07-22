@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 2
+parent: "Tordera River Basin & Malta"
 title: "Research questions"
 ---
 # Research questions
@@ -35,9 +37,3 @@ The Maltese islands rely heavily on invisible subterranean water flows. The rese
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./01_introduction" class="btn-seq btn-seq--prev">&larr; Previous</a>
-    <a href="./03_workflow" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

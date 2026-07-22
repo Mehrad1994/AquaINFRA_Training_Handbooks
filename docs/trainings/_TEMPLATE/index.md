@@ -69,9 +69,3 @@ After completing this training the reader will be able to:
 > First-time visitor? Start at Chapter 1 - every chapter links forward via the Next button at the bottom. Reviewing? Use the table above to jump to a specific chapter, or the in-chapter timestamp table to jump to a specific video moment.
 
 ---
-
-<div class="sequence-navigation">
-    <a href="{{ relative_root }}06_use_cases" class="btn-seq btn-seq--prev">&larr; Back to Use Case Library</a>
-</div>
-
-<div class="wave-decoration"></div>

@@ -105,10 +105,3 @@ The primary objective of this use case is to provide an open, FAIR, and reproduc
 </details>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./01_introduction" class="btn-seq btn-seq--prev">← Previous: Introduction</a>
-    <a href="./03_workflow" class="btn-seq btn-seq--next">Next Chapter: Analytical Workflow →</a>
-</div>
-
-<div class="wave-decoration"></div>

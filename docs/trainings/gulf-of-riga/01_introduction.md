@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 1
+parent: "Service by the Gulf of Riga"
 title: Introduction to the AquaINFRA Project
 ---
 
@@ -16,10 +18,3 @@ title: Introduction to the AquaINFRA Project
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">&larr; Course Overview</a>
-    <a href="./02_case_study" class="btn-seq btn-seq--next">Next Chapter: Case Study →</a>
-</div>
-
-<div class="wave-decoration"></div>

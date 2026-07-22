@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 1
+parent: "Tordera River Basin & Malta"
 title: "Introduction"
 ---
 # Introduction
@@ -133,8 +135,3 @@ We explore this through two parallel case studies:
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

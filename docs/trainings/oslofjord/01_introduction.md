@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 1
+parent: "Oslofjord and Glomma River"
 title: "Introduction"
 ---
 # Introduction
@@ -119,8 +121,3 @@ As climate change alters weather patterns, extreme events such as intense storms
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 1
+parent: "HEREON"
 title: "Introduction"
 ---
 # Introduction
@@ -127,8 +129,3 @@ To overcome this, the HEREON use case leverages Earth Observation (EO) data to a
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

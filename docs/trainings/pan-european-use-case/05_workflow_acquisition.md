@@ -33,10 +33,3 @@ flowchart LR
 ```
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./04_aip_and_d2kp" class="btn-seq btn-seq--prev">← Previous: AIP & D2KP</a>
-    <a href="./06_workflow_processing" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 2 →</a>
-</div>
-
-<div class="wave-decoration"></div>

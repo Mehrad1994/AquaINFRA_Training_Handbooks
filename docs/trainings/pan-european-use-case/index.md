@@ -1,7 +1,7 @@
 ---
 layout: course_index
 title: Pan-European Biodiversity Use Case
-hero_title: "Pan-European Biodiversity"
+hero_title: "Pan-European Biodiversity Use Case"
 region: "Pan-European"
 use_case: true
 nav_order: 3
@@ -39,10 +39,3 @@ nav_order: 3
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="../../06_use_cases" class="btn-seq btn-seq--prev">← Back to Use Case Library</a>
-    <a href="./01_introduction" class="btn-seq btn-seq--next">Start Training: Chapter 1 &rarr;</a>
-</div>
-
-<div class="wave-decoration"></div>

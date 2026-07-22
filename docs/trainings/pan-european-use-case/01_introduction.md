@@ -18,10 +18,3 @@ nav_order: 1
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./" class="btn-seq btn-seq--prev">&larr; Course Overview</a>
-    <a href="./02_biodiversity_context" class="btn-seq btn-seq--next">Next Chapter: Biodiversity Context →</a>
-</div>
-
-<div class="wave-decoration"></div>

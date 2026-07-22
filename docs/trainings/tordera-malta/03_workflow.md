@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 3
+parent: "Tordera River Basin & Malta"
 title: "Workflow"
 ---
 # Workflow
@@ -56,8 +58,3 @@ The Malta workflow shifts the focus entirely underground, utilizing specialized 
 > Together, these workflows demonstrate that the AquaINFRA platform is not limited to surface-level riverine transport; its tools can be successfully adapted for both episodic extreme events and subterranean variable-density flow.
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous</a>
-</div>
-<div class="wave-decoration"></div>

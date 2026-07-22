@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 3
+parent: "Vantaanjoki River and Gulf of Finland"
 title: "Workflow"
 ---
 # Workflow
@@ -88,8 +90,3 @@ The output of this workflow produces comprehensive time-series and correlation d
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--prev">&larr; Previous</a>
-</div>
-<div class="wave-decoration"></div>

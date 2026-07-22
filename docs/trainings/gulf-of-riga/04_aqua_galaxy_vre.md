@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 4
+parent: "Service by the Gulf of Riga"
 title: Setting Up the Virtual Research Environment
 ---
 
@@ -16,10 +18,3 @@ title: Setting Up the Virtual Research Environment
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./03_aip_and_d2kp" class="btn-seq btn-seq--prev">← Previous: AIP and D2KP</a>
-    <a href="./05_importing_data" class="btn-seq btn-seq--next">Next Chapter: Importing Data →</a>
-</div>
-
-<div class="wave-decoration"></div>

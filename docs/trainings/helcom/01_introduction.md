@@ -1,5 +1,7 @@
 ---
 layout: chapter
+nav_order: 1
+parent: "HELCOM Baltic Sea"
 title: "Introduction"
 ---
 # Introduction
@@ -111,8 +113,3 @@ Not all components of the DAPSIM framework are equally quantified. This use case
 </div>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./02_research_questions" class="btn-seq btn-seq--next">Next &rarr;</a>
-</div>
-<div class="wave-decoration"></div>

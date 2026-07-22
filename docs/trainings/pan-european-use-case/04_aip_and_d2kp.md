@@ -48,10 +48,3 @@ nav_order: 4
 </details>
 
 ---
-
-<div class="sequence-navigation">
-    <a href="./03_specleanr_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>
-    <a href="./05_workflow_acquisition" class="btn-seq btn-seq--next">Next Chapter: Workflow Pt. 1 →</a>
-</div>
-
-<div class="wave-decoration"></div>
