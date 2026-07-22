@@ -9,6 +9,7 @@ layout: default
     {% assign prev_num = current_num | minus: 1 %}
     {% assign next_num = current_num | plus: 1 %}
 
+    {% unless page.nav_order == 6 or page.title == "Applied Use Case" %}
     <div class="sequence-navigation">
         {% if current_num <= 1 %}
             <a href="{{ base }}" class="btn-seq btn-seq--prev">&larr; Home</a>
@@ -33,4 +34,5 @@ layout: default
         {% endif %}
     </div>
     <div class="wave-decoration"></div>
+    {% endunless %}
 </article>

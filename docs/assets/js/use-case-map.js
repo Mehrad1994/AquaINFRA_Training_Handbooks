@@ -1,16 +1,16 @@
 /**
- * AquaINFRA Training Handbook - Fixed Scale Interactive Use Cases Map
- * Fixed map scale to show all points across Europe without panning/moving.
+ * AquaINFRA Training Handbook - Interactive Use Cases Map
+ * Fixed map scale displaying all 8 European use cases statically.
  * Bi-directional hover highlights between map pins and training cards.
  */
 document.addEventListener('DOMContentLoaded', function () {
     const mapContainer = document.getElementById('use-case-map');
     if (!mapContainer || typeof L === 'undefined') return;
 
-    // 1. Initialize Fixed-Scale Leaflet Map (All zoom & drag disabled for stationary display)
+    // 1. Initialize Fixed-Scale Leaflet Map
     const map = L.map('use-case-map', {
-        center: [52.0, 14.0],
-        zoom: 3.8,
+        center: [53.5, 14.0],
+        zoom: 4,
         zoomControl: false,
         dragging: false,
         touchZoom: false,
@@ -24,14 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
         subdomains: 'abcd',
-        maxZoom: 19
+        maxZoom: 19,
+        noWrap: true
     }).addTo(map);
 
     // Fit map bounds to show all European points stationary
     map.fitBounds([
-        [34.5, -9.5],  // South/West (Malta & Spain)
-        [63.5, 30.5]   // North/East (Finland & Baltic)
-    ], { padding: [10, 10] });
+        [34.0, -9.5],  // South/West (Malta & Spain)
+        [64.0, 31.0]   // North/East (Finland & Baltic)
+    ], { padding: [15, 15] });
 
     setTimeout(function () {
         map.invalidateSize();
@@ -149,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 4. Card Hover activates Marker Popup without moving map
     const cards = document.querySelectorAll('.use-case-card');
     cards.forEach(card => {
-        const href = card.querySelector('a.use-case-card__footer')?.getAttribute('href') || '';
+        const href = card.querySelector('a.card-link-btn, a.use-case-card__footer')?.getAttribute('href') || '';
         
         let matchingId = null;
         useCaseLocations.forEach(uc => {
