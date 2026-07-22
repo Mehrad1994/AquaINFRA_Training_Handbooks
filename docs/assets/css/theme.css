@@ -220,6 +220,18 @@
     flex-wrap: wrap;
 }
 
+.use-case-compact-grid .resource-links {
+    margin-top: 0.3rem;
+}
+
+.use-case-compact-grid .resource-btn {
+    padding: 0.18rem 0.48rem;
+    font-size: 0.68rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
 .resource-btn {
     padding: 0.35rem 0.75rem;
     border-radius: 4px;
@@ -958,7 +970,7 @@ details.knowledge-check .answer-content {
 @media (min-width: 992px) {
     .use-case-explorer-split {
         display: grid;
-        grid-template-columns: 46% 52%;
+        grid-template-columns: 52% 46%;
         gap: 1.5rem;
         align-items: start;
     }
@@ -1072,10 +1084,10 @@ details.knowledge-check .answer-content {
 }
 
 .use-case-compact-grid .use-case-card__title {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     font-weight: 700;
     line-height: 1.25;
-    margin: 0 0 0.35rem 0;
+    margin: 0 0 0.3rem 0;
     color: #0f172a;
 }
 
