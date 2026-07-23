@@ -48,7 +48,7 @@ On first mention of an acronym, spell it out and link to the [Glossary](docs/ref
 
 > the **[AquaINFRA VRE]({{ relative_root }}reference/glossary#vre)** (Virtual Research Environment, powered by [Aqua Galaxy]({{ relative_root }}reference/glossary#aqua-galaxy) at `aqua.usegalaxy.eu`)
 
-Then plain "VRE" is fine.
+Then plain "VRE" is fine. Every glossary anchor linked from any training chapter **must** have a matching `<tr id>` entry in `docs/reference/glossary.md`. Check for broken anchors before committing.
 
 ---
 
