@@ -1,7 +1,7 @@
 /**
  * Glossary tooltips.
  * Any link whose href contains "reference/glossary#" gets a hover tooltip
- * showing the first paragraph below the corresponding term anchor in the
+ * showing the definition from the corresponding <tr id="..."> row in the
  * glossary page. The glossary is fetched once and cached.
  */
 (function () {
@@ -10,7 +10,7 @@
     let hideTimeout = null;
     let isTouch = false;
 
-    // Detect if the user is using a touch device
+    // Detect touch devices
     document.addEventListener('touchstart', () => { isTouch = true; }, { passive: true, once: true });
 
     async function loadGlossary(baseUrl) {
@@ -19,18 +19,19 @@
             const html = await fetch(baseUrl).then(r => r.text());
             const doc = new DOMParser().parseFromString(html, 'text/html');
             const terms = {};
-            // For each heading with an id, grab the next paragraph as the definition.
-            doc.querySelectorAll('h3[id], h4[id]').forEach(h => {
-                let sibling = h.nextElementSibling;
-                while (sibling && !['P', 'UL', 'OL'].includes(sibling.tagName)) {
-                    sibling = sibling.nextElementSibling;
-                }
-                if (sibling) {
-                    let text = sibling.textContent.trim();
-                    if (text.length > 280) text = text.slice(0, 277) + '...';
-                    terms[h.id] = text;
-                }
+
+            // Glossary uses <tr id="term"> — first <td> is name, second is definition.
+            doc.querySelectorAll('tr[id]').forEach(row => {
+                const cells = row.querySelectorAll('td');
+                if (cells.length < 2) return;
+
+                const termName = cells[0].textContent.trim().split('\n')[0].trim();
+                let defText = cells[1].textContent.trim();
+                if (defText.length > 280) defText = defText.slice(0, 277) + '...';
+
+                terms[row.id] = { name: termName, definition: defText };
             });
+
             glossaryCache = terms;
         } catch (err) {
             console.warn('Glossary tooltip load failed:', err);
@@ -44,39 +45,40 @@
         tooltipEl = document.createElement('div');
         tooltipEl.className = 'glossary-tooltip';
         tooltipEl.setAttribute('role', 'tooltip');
-        tooltipEl.style.pointerEvents = 'auto'; // Make interactive
+        tooltipEl.style.pointerEvents = 'auto';
 
-        // Keep tooltip open when hovering over it
-        tooltipEl.addEventListener('mouseenter', () => {
-            clearTimeout(hideTimeout);
-        });
-        tooltipEl.addEventListener('mouseleave', () => {
-            queueHide();
-        });
+        tooltipEl.addEventListener('mouseenter', () => { clearTimeout(hideTimeout); });
+        tooltipEl.addEventListener('mouseleave', () => { queueHide(); });
 
         document.body.appendChild(tooltipEl);
         return tooltipEl;
     }
 
-    function showTooltip(link, text) {
+    function showTooltip(link, entry) {
         clearTimeout(hideTimeout);
         const tip = ensureTooltip();
-        
+
         tip.innerHTML = '';
+
+        // Term name label
+        const label = document.createElement('strong');
+        label.className = 'glossary-tooltip__term';
+        label.textContent = entry.name;
+        tip.appendChild(label);
+
+        // Definition text
         const p = document.createElement('p');
-        p.textContent = text;
-        p.style.margin = '0 0 0.5rem 0';
+        p.className = 'glossary-tooltip__def';
+        p.textContent = entry.definition;
         tip.appendChild(p);
 
+        // Read more link
         const readMore = document.createElement('a');
         readMore.href = link.href;
         readMore.target = '_blank';
         readMore.rel = 'noopener';
-        readMore.textContent = 'Read more in Glossary →';
-        readMore.style.color = 'var(--aqua-blue, #6cb2eb)';
-        readMore.style.textDecoration = 'none';
-        readMore.style.fontWeight = 'bold';
-        readMore.style.display = 'inline-block';
+        readMore.textContent = 'Full definition \u2192';
+        readMore.className = 'glossary-tooltip__link';
         tip.appendChild(readMore);
 
         const rect = link.getBoundingClientRect();
@@ -94,22 +96,20 @@
     }
 
     function queueHide() {
-        hideTimeout = setTimeout(() => {
-            hideTooltip();
-        }, 300);
+        hideTimeout = setTimeout(hideTooltip, 300);
     }
 
     document.addEventListener('DOMContentLoaded', function () {
         const links = document.querySelectorAll('a[href*="reference/glossary#"]');
         if (links.length === 0) return;
 
-        // Derive the base glossary URL from the first link.
+        // Derive base glossary URL from the first link's href (relative to current page)
         const firstHref = links[0].getAttribute('href');
         const baseUrl = firstHref.split('#')[0];
 
         links.forEach(link => {
             link.classList.add('glossary-term');
-            
+
             if (!link.hasAttribute('target')) {
                 link.setAttribute('target', '_blank');
                 link.setAttribute('rel', 'noopener');
@@ -127,19 +127,19 @@
             link.addEventListener('focus', showHover);
             link.addEventListener('blur', queueHide);
 
-            link.addEventListener('click', (e) => {
+            link.addEventListener('click', e => {
                 if (isTouch) {
-                    // On touch devices, tapping the word only opens the tooltip.
-                    // The user must tap "Read more" inside the tooltip to navigate.
                     e.preventDefault();
                     showHover();
                 }
             });
         });
 
-        // Hide tooltip when tapping elsewhere on touch devices
-        document.addEventListener('click', (e) => {
-            if (isTouch && !e.target.closest('a[href*="reference/glossary#"]') && !e.target.closest('.glossary-tooltip')) {
+        // Hide tooltip when tapping elsewhere on touch
+        document.addEventListener('click', e => {
+            if (isTouch &&
+                !e.target.closest('a[href*="reference/glossary#"]') &&
+                !e.target.closest('.glossary-tooltip')) {
                 hideTooltip();
             }
         });

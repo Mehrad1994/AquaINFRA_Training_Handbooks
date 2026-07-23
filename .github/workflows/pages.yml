@@ -1,24 +1,10 @@
-name: Deploy to GitHub Pages
-
-# ---------------------------------------------------------------------------
-# How to deploy:
-#   1. Go to: Settings > Pages > Source  →  select "GitHub Actions" → Save
-#      (one-time setup — never needs changing again)
-#   2. To publish any branch:
-#      Actions > "Deploy to GitHub Pages" > Run workflow > pick branch > Run
-#   3. Every push to "main" also auto-deploys (keeps live site in sync).
-#
-# To switch to a new branch in future:
-#   Just run the workflow from that branch (step 2 above).  No other changes.
-# ---------------------------------------------------------------------------
+name: Deploy Jekyll site to GitHub Pages
 
 on:
-  # Auto-deploy whenever main is updated
   push:
     branches:
       - main
-
-  # Manual deploy: lets you pick ANY branch from the GitHub Actions UI
+      - August_2026_Update
   workflow_dispatch:
 
 permissions:
@@ -37,28 +23,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          working-directory: docs
-
-      - name: Setup Pages (detects repo name → base_path)
+      - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        # Injects the correct baseurl (/AquaINFRA_Training_Handbooks) at build
-        # time only. The source _config.yml stays clean (baseurl: "") so the
-        # site works identically on localhost and aquainfra.eu without changes.
-        run: |
-          cd docs
-          bundle exec jekyll build \
-            --baseurl "${{ steps.pages.outputs.base_path }}" \
-            --destination ../_site_gh
-        env:
-          JEKYLL_ENV: production
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./_site_gh
+          # configure-pages sets JEKYLL_ENV and injects the correct baseurl
+          # via a _config_pages.yml override — no manual baseurl needed.
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

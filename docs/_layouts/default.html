@@ -9,12 +9,12 @@
     <meta name="description" content="{{ page.description | default: site.description }}">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="{{ base }}assets/css/style.css">
-    <link rel="stylesheet" href="{{ base }}assets/css/theme.css">
-    <link rel="stylesheet" href="{{ base }}assets/css/sidebar.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
 
     <!-- Favicon/Brand Colors -->
-    <link rel="icon" type="image/svg+xml" href="{{ base }}assets/images/aquainfra_logo.svg">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/aquainfra_logo.svg' | relative_url }}">
 
     <!-- Leaflet Map CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -43,7 +43,7 @@
             <div class="handbook-content">
                 {% unless page.title == "Home" %}
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="{{ base }}index">Home</a>
+                    <a href="{{ '/' | relative_url }}">Home</a>
                     <span class="breadcrumb__sep">›</span>
                     <span class="breadcrumb__current">{{ page.title }}</span>
                 </nav>
@@ -92,14 +92,14 @@
         });
     </script>
     {% endif %}
-    <script src="{{ base }}assets/js/sidebar.js"></script>
-    <script src="{{ base }}assets/js/copy-code.js"></script>
-    <script src="{{ base }}assets/js/glossary-tooltips.js"></script>
-    <script src="{{ base }}assets/js/external-links.js"></script>
-    <script src="{{ base }}assets/js/tab-switcher.js"></script>
-    <script src="{{ base }}assets/js/course-progress.js"></script>
+    <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/glossary-tooltips.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/external-links.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/tab-switcher.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/course-progress.js' | relative_url }}"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="{{ base }}assets/js/use-case-map.js"></script>
+    <script src="{{ '/assets/js/use-case-map.js' | relative_url }}"></script>
 
     <!-- GitHub-style Alerts Transformer -->
     <script>
