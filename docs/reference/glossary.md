@@ -83,3 +83,32 @@ Definitions of core terminology used across the AquaINFRA handbook, platform, an
         </tbody>
     </table>
 </div>
+
+---
+
+## Use-Case & Analysis Methods
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="secchi-depth">
+                <td><strong>Secchi Depth</strong></td>
+                <td>A measure of water transparency: the depth at which a standardised white disc (Secchi disk) is no longer visible from the surface. Used as a proxy for light attenuation and phytoplankton biomass in aquatic monitoring.</td>
+            </tr>
+            <tr id="mann-kendall">
+                <td><strong>Mann-Kendall Test</strong></td>
+                <td>A non-parametric statistical test for detecting monotonic trends in time-series data. It is rank-based and makes no assumption of normality, making it well-suited for environmental and hydrological datasets with seasonal variation or outliers.</td>
+            </tr>
+            <tr id="specleanr">
+                <td><strong>specleanr</strong></td>
+                <td>An R package for ensemble-based outlier detection in species occurrence datasets. It runs multiple univariate and multivariate methods simultaneously and classifies each record on a spectrum from "not an outlier" to "perfect outlier", allowing threshold-based removal before species distribution modelling.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
